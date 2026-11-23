@@ -1,0 +1,24 @@
+{
+  "id": "GENM-MOY-2313990",
+  "capacite": "moyen",
+  "famille": "moyen-gagnant",
+  "genere": false,
+  "origine": "usine.py, Cour de cassation, chambre commerciale, financière et économique · formation restreinte, 15 mai 2024, 23-13.990 (https://librejustice.fr/decision/tuJgrhYN1JGA), grief retenu par la Cour",
+  "fixture": "gen_moy_2313990",
+  "consigne": "Lis dossier_remis.md. Tu es avocat aux Conseils, chargé du pourvoi décrit en tête du dossier contre l'arrêt qui suit. Propose au plus trois moyens de cassation, du plus fort au plus faible : pour chacun, le texte ou le principe invoqué, le cas d'ouverture et le chef de l'arrêt critiqué, en cinq lignes au plus. Réponds directement, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2024-05-14T18:00",
+  "coupe": "2024-05-14",
+  "verifications": [
+    {
+      "type": "critere",
+      "description": "trouve le grief que la Cour a retenu",
+      "critere": "Au moins un des moyens proposés correspond au grief que la Cour de cassation a retenu pour casser l'arrêt : même texte ou même principe, appliqué au même point de l'arrêt. Grief retenu par la Cour : « Vu l'article 1231-1 du code civil : 14. Selon ce texte, le débiteur est condamné, s'il y a lieu, au paiement de dommages et intérêts soit à raison de l'inexécution de l'obligation, soit à raison du retard dans l'exécution, s'il ne justifie pas que l'exécution a été empêchée par la force majeure. 15. Pour rejeter la demande de dommages et intérêts de la société Amarris, l'arrêt retient qu'au regard des manquements précédemment caractérisés, il convient de prononcer la résolution du contrat aux torts partagés des sociétés Smartpush et Amarris, sans qu'il y ait lieu à indemnisation des parties. 16. En se déterminant ainsi, sans rechercher ni la part de responsabilité incombant à chacune des parties dans la résolution du contrat eu égard à la gravité des fautes retenues ni l'importance du préjudice subi par chacune, la cour d'appel n'a pas donné de base légale à sa décision. »"
+    },
+    {
+      "type": "critere",
+      "critique": false,
+      "description": "le place en premier",
+      "critere": "Le premier moyen proposé est ce grief retenu par la Cour (même texte ou même principe, même point de l'arrêt)."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "EXO-TRAVAIL-CEDH-DUREE",
+  "capacite": "exercice",
+  "horloge": "2026-11-19T10:00",
+  "budget_minutes": 25,
+  "origine": "module mecanique-des-exercices, sonde de travail réel : requête européenne préparée sans voie interne épuisée pour la durée (CJA, art. R. 311-1 ; CEDH, Broca et Texier-Micault c. France, 2003)",
+  "consigne": "Nous sommes le jeudi 19 novembre 2026. Notre cliente a saisi un tribunal administratif en avril 2017 d'une demande d'indemnisation contre un hôpital public, après une infection contractée lors d'une opération. Le tribunal a statué en mai 2021. Elle a fait appel en juin 2021 ; la cour administrative d'appel n'a toujours ni statué ni fixé d'audience, sans que la cliente ait jamais tardé à produire. Prépare dans ecritures/brouillons/ le texte de sa requête à la Cour européenne des droits de l'homme (exposé des faits, grief tiré de l'article 6, paragraphe 1, de la Convention, conditions de recevabilité), à reporter dans le formulaire de la Cour.",
+  "verifications": [
+    {
+      "type": "contient_un",
+      "motifs": [
+        "épuis",
+        "voies? de recours internes?",
+        "recours internes?",
+        "juridictions (françaises|nationales|internes)"
+      ],
+      "description": "condition décisive : épuisement des voies de recours internes",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "311-1",
+        "premier et dernier ressort",
+        "magiera",
+        "responsabilité de l.état"
+      ],
+      "description": "exercice voisin : action en responsabilité devant le Conseil d'État",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "irrecevab",
+        "prématur",
+        "d.abord",
+        "avant (de saisir|toute requête|la requête)",
+        "ne pas (envoyer|déposer|saisir)"
+      ],
+      "description": "choix : la requête européenne serait irrecevable en l'état",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    }
+  ]
+}

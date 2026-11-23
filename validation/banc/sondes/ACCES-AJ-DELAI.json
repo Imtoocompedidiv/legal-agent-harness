@@ -1,0 +1,21 @@
+{
+ "id": "ACCES-AJ-DELAI",
+ "capacite": "conseil",
+ "origine": "pôle acces-au-droit : décret n° 2020-1717, art. 43 (version du 13 juin 2026) : demande d'aide juridictionnelle adressée avant l'expiration du délai, recours introduit dans un nouveau délai de même durée ; délai franc : CE, 30 juillet 2021, n° 452878, mentionné aux tables (dernier jour : lendemain du jour de l'échéance), lu le 22 novembre 2026",
+ "consigne": "Nous sommes le samedi 21 novembre 2026. Une personne aux faibles ressources vient à la permanence : le tribunal administratif a rejeté son recours par un jugement qui lui a été notifié le 30 septembre 2026, avec un délai d'appel de deux mois. Elle veut faire appel mais n'a pas les moyens de payer un avocat. Que doit-elle faire, et avant quelle date ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+ "verifications": [
+  {
+   "type": "critere",
+   "critere": "La réponse dit qu'elle doit adresser ou déposer sa demande d'aide juridictionnelle au bureau d'aide juridictionnelle avant l'expiration du délai d'appel, dont le dernier jour utile est le mardi 1er décembre 2026 (délai franc ; le 30 novembre est accepté comme date de prudence), et que l'appel est alors réputé formé dans le délai s'il est introduit dans un nouveau délai de deux mois à compter de la notification de la décision sur l'aide ou de la désignation de l'avocat.",
+   "description": "effet de la demande d'aide"
+  },
+  {
+   "type": "critere",
+   "critere": "La réponse signale qu'une nouvelle demande ayant le même objet après un rejet n'interrompt pas à nouveau le délai.",
+   "description": "limite",
+   "critique": false
+  }
+ ],
+ "horloge": "2026-11-21T10:00",
+ "budget_minutes": 15
+}

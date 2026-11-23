@@ -1,0 +1,18 @@
+{
+  "id": "GENP-URGT-2307676",
+  "capacite": "pronostic",
+  "famille": "urgence-titre-renouvellement",
+  "genere": true,
+  "origine": "usine.py, Tribunal administratif de Toulouse, magistrat désigné, 3 janvier 2024, 2307676 (https://librejustice.fr/decision/ryo4obk4y7vF), issue réelle : oui",
+  "fixture": "gen_urgt_2307676",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme le juge des référés, dis si la condition d'urgence de ce référé-suspension est remplie. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2024-01-02T18:00",
+  "coupe": "2024-01-02",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*oui\\b",
+      "description": "répond oui, comme la juridiction"
+    }
+  ]
+}

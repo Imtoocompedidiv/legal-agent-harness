@@ -1,0 +1,18 @@
+{
+  "id": "GENP-CASSN-2314643",
+  "capacite": "pronostic",
+  "famille": "cassation-a-chercher",
+  "genere": true,
+  "origine": "usine.py, Cour de cassation, 1re chambre civile · formation restreinte, 30 avril 2025, 23-14.643 (https://librejustice.fr/decision/HH-ftLTlaSAO), issue réelle : non",
+  "fixture": "gen_cassn_2314643",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme la chambre de la Cour de cassation, dis si l'arrêt attaqué doit être cassé, au moins en partie. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2025-04-29T18:00",
+  "coupe": "2025-04-29",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*non\\b",
+      "description": "répond non, comme la juridiction"
+    }
+  ]
+}

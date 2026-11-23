@@ -1,0 +1,192 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "decideurs.v1",
+  "title": "Profil des décideurs et de l'institution adverse (strategie/decideurs.json)",
+  "description": "Structure seulement. Les règles qui croisent les champs (sources existantes et lues, calibrage équilibré, taux cohérents, aucun magistrat nommé, aucune probabilité, choix rattachés aux leviers et aux risques) sont dans scripts/decideurs.py. Skill lecture-des-decideurs.",
+  "type": "object",
+  "required": ["schema", "date", "actes_couverts", "decideurs", "adversaire", "leviers", "risques", "choix", "inconnu", "sources"],
+  "properties": {
+    "schema": {"const": "decideurs/1"},
+    "date": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}(T\\d{2}:\\d{2}(:\\d{2})?([+-]\\d{2}:\\d{2}|Z)?)?$"},
+    "actes_couverts": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "decideurs": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/decideur"}},
+    "adversaire": {"$ref": "#/$defs/adversaire"},
+    "leviers": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/levier"}},
+    "risques": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/risque"}},
+    "choix": {"$ref": "#/$defs/choix"},
+    "inconnu": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "sources": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/source"}}
+  },
+  "$defs": {
+    "texte": {"type": "string", "minLength": 1},
+    "ids": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "statut": {"enum": ["droit_positif", "pratique_institutionnelle", "statistique_officielle", "decisions_publiees",
+                         "empirique_solide", "empirique_limite", "inference", "piece_du_dossier"]},
+    "constat": {
+      "type": "object",
+      "required": ["constat", "statut", "sources"],
+      "properties": {
+        "constat": {"$ref": "#/$defs/texte"},
+        "statut": {"$ref": "#/$defs/statut"},
+        "sources": {"$ref": "#/$defs/ids"}
+      }
+    },
+    "taux": {
+      "type": "object",
+      "required": ["mesure", "numerateur", "denominateur", "perimetre", "periode", "exclusions", "sources"],
+      "properties": {
+        "mesure": {"$ref": "#/$defs/texte"},
+        "numerateur": {"type": "integer", "minimum": 0},
+        "denominateur": {"type": "integer", "minimum": 1},
+        "perimetre": {"$ref": "#/$defs/texte"},
+        "periode": {"$ref": "#/$defs/texte"},
+        "exclusions": {"$ref": "#/$defs/texte"},
+        "sources": {"$ref": "#/$defs/ids"}
+      }
+    },
+    "cible": {"type": ["string", "array"], "minLength": 1, "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "decideur": {
+      "type": "object",
+      "required": ["id", "nature", "institution", "formation", "stade", "procedure", "matiere", "standard_de_controle",
+                   "taux_de_base", "culture", "ce_qui_passe", "ce_qui_echoue"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^D\\d+$"},
+        "nature": {"enum": ["juridiction", "autorite_administrative", "autorite_independante", "mediateur", "ministere_public", "autre"]},
+        "institution": {"$ref": "#/$defs/texte"},
+        "formation": {"$ref": "#/$defs/texte"},
+        "stade": {"enum": ["filtrage", "refere", "fond", "appel", "cassation", "renvoi", "recours_administratif", "mediation", "enquete", "autre"]},
+        "procedure": {"$ref": "#/$defs/texte"},
+        "matiere": {"$ref": "#/$defs/texte"},
+        "actes": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "standard_de_controle": {
+          "type": "object",
+          "required": ["niveau", "enonce", "sources"],
+          "properties": {
+            "niveau": {"enum": ["entier", "normal", "restreint", "souverain", "bilan", "evidence", "droit_seul", "opportunite", "sans_objet"]},
+            "enonce": {"$ref": "#/$defs/texte"},
+            "sources": {"$ref": "#/$defs/ids"}
+          }
+        },
+        "taux_de_base": {"type": "array", "items": {"$ref": "#/$defs/taux"}},
+        "taux_de_base_absent": {"type": "string"},
+        "charge": {"$ref": "#/$defs/constat"},
+        "premier_lecteur": {"$ref": "#/$defs/constat"},
+        "culture": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/constat"}},
+        "ce_qui_passe": {"type": "array", "items": {"$ref": "#/$defs/constat"}},
+        "ce_qui_echoue": {"type": "array", "items": {"$ref": "#/$defs/constat"}}
+      }
+    },
+    "adversaire": {
+      "type": "object",
+      "required": ["nature", "designation", "qui_decide", "contraintes", "ce_qu_il_peut_accorder", "saisines_exterieures"],
+      "properties": {
+        "nature": {"enum": ["personne_publique", "organisme_charge_d_un_service_public", "entreprise", "association", "ministere_public", "personne_physique"]},
+        "designation": {"$ref": "#/$defs/texte"},
+        "qui_decide": {"type": "array", "items": {
+          "type": "object",
+          "required": ["fonction", "role", "fondement", "sources"],
+          "properties": {
+            "fonction": {"$ref": "#/$defs/texte"},
+            "role": {"enum": ["signataire", "instructeur", "valideur", "deliberant", "payeur", "assureur", "tutelle", "conseil", "representant_en_justice", "autre"]},
+            "fondement": {"$ref": "#/$defs/texte"},
+            "sources": {"$ref": "#/$defs/ids"}
+          }
+        }},
+        "qui_defend": {"$ref": "#/$defs/constat"},
+        "culture_juridique": {"$ref": "#/$defs/constat"},
+        "aversion_au_precedent": {"$ref": "#/$defs/constat"},
+        "contraintes": {"type": "array", "items": {
+          "type": "object",
+          "required": ["type", "constat", "statut", "sources"],
+          "properties": {
+            "type": {"enum": ["juridique", "budgetaire", "reputationnelle", "hierarchique", "politique", "calendrier", "assurance", "organisationnelle"]},
+            "constat": {"$ref": "#/$defs/texte"},
+            "statut": {"$ref": "#/$defs/statut"},
+            "sources": {"$ref": "#/$defs/ids"}
+          }
+        }},
+        "ce_qu_il_peut_accorder": {"type": "array", "items": {
+          "type": "object",
+          "required": ["concession", "couverture", "statut", "sources"],
+          "properties": {
+            "concession": {"$ref": "#/$defs/texte"},
+            "couverture": {"$ref": "#/$defs/texte"},
+            "statut": {"$ref": "#/$defs/statut"},
+            "sources": {"$ref": "#/$defs/ids"}
+          }
+        }},
+        "comportement_procedural": {"type": "array", "items": {"$ref": "#/$defs/constat"}},
+        "saisines_exterieures": {"type": "array", "items": {
+          "type": "object",
+          "required": ["canal", "effet_attendu", "retenue", "raison", "sources"],
+          "properties": {
+            "canal": {"enum": ["mediateur", "defenseur_des_droits", "cada", "autorite_de_controle", "hierarchie", "elu", "presse",
+                                "cour_des_comptes", "assureur", "autre"]},
+            "effet_attendu": {"$ref": "#/$defs/texte"},
+            "retenue": {"type": "boolean"},
+            "raison": {"$ref": "#/$defs/texte"},
+            "sources": {"$ref": "#/$defs/ids"}
+          }
+        }}
+      }
+    },
+    "levier": {
+      "type": "object",
+      "required": ["id", "cible", "constat", "statut", "sources"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^L\\d+$"},
+        "cible": {"$ref": "#/$defs/cible"},
+        "constat": {"$ref": "#/$defs/texte"},
+        "statut": {"$ref": "#/$defs/statut"},
+        "sources": {"$ref": "#/$defs/ids"}
+      }
+    },
+    "risque": {
+      "type": "object",
+      "required": ["id", "cible", "risque", "parade", "statut", "sources"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^R\\d+$"},
+        "cible": {"$ref": "#/$defs/cible"},
+        "risque": {"$ref": "#/$defs/texte"},
+        "parade": {"$ref": "#/$defs/texte"},
+        "statut": {"$ref": "#/$defs/statut"},
+        "sources": {"$ref": "#/$defs/ids"}
+      }
+    },
+    "un_choix": {
+      "type": "object",
+      "required": ["decision", "raison", "appuis"],
+      "properties": {
+        "decision": {"$ref": "#/$defs/texte"},
+        "raison": {"$ref": "#/$defs/texte"},
+        "appuis": {"$ref": "#/$defs/ids"}
+      }
+    },
+    "choix": {
+      "type": "object",
+      "required": ["forum", "moment", "structure", "ton", "preuve", "demande"],
+      "properties": {
+        "forum": {"$ref": "#/$defs/un_choix"},
+        "moment": {"$ref": "#/$defs/un_choix"},
+        "structure": {"$ref": "#/$defs/un_choix"},
+        "ton": {"$ref": "#/$defs/un_choix"},
+        "preuve": {"$ref": "#/$defs/un_choix"},
+        "demande": {"$ref": "#/$defs/un_choix"}
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": ["id", "type", "reference", "lu", "public"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^S\\d+$"},
+        "type": {"enum": ["texte", "decision", "decisions_publiees", "statistique_officielle", "rapport", "acte_publie", "organigramme",
+                           "deliberation", "etude", "presse", "piece_du_dossier", "autre"]},
+        "reference": {"$ref": "#/$defs/texte"},
+        "url": {"type": "string"},
+        "lu": {"enum": ["en_entier", "extraits", "resume", "non_lu"]},
+        "public": {"type": "boolean"},
+        "consulte_le": {"type": "string"}
+      }
+    }
+  }
+}

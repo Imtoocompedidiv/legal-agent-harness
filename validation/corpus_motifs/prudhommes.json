@@ -1,0 +1,662 @@
+[
+  {
+    "condition": "bien_fonde",
+    "sous_domaine": "heures supplémentaires : preuve partagée",
+    "sens": "remplit",
+    "texte": "Le salarié qui produit des éléments suffisamment précis sur les heures non payées (tableau des heures de début et de fin, décompte hebdomadaire, courriels envoyés hors horaire) oblige l'employeur, chargé du contrôle du temps de travail, à répondre par ses propres éléments ; le juge ne peut rejeter la demande pour l'imprécision d'un décompte mêlant des temps de trajet, et l'employeur dépourvu de tout relevé est condamné, le nombre d'heures étant fixé souverainement. Signal : décompte du salarié face à un dossier patronal sans badgeuse, planning ni registre.",
+    "marqueurs": [
+      "heures suppl[ée]mentaires",
+      "d[ée]compte (?:des |de ses )?heures",
+      "[ée]l[ée]ments suffisamment pr[ée]cis",
+      "badgeuse|pointeuse|registre des heures|relev[ée]s? d'heures",
+      "l\\.? ?3171-[24]"
+    ],
+    "sources": [
+      {
+        "juridiction": "Cass. soc.",
+        "date": "2026-09-02",
+        "numero": "25-16.106",
+        "url": "https://librejustice.fr/decision/Glw6uXYpmNXV",
+        "point": "§ 12 à 17 : tableau d'heures par demi-journée suffisamment précis, cassation pour charge de la preuve pesant sur le seul salarié",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "CA Aix-en-Provence",
+        "date": "2026-11-06",
+        "numero": "22/15310",
+        "url": "https://librejustice.fr/decision/QjoVl9UP3QLZ",
+        "point": "employeur qui « ne produit pas d'éléments de contrôle du temps de travail » : rappel d'heures confirmé",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CA Montpellier, 12 novembre 2026, n° 24/04542 : éléments jugés suffisamment précis mais demande rejetée faute d'accord au moins implicite de l'employeur (https://librejustice.fr/decision/icTX-xs8ZCrk).",
+    "frequence": "17 sur 21 décisions de cour d'appel sur les heures supplémentaires vues (résumés) accordent un rappel ; 8 de ces 17 relèvent l'absence ou le défaut de fiabilité des éléments de contrôle de l'employeur.",
+    "depuis": "18 mars 2020 (éléments suffisamment précis substitués à l'exigence d'étayer la demande), formule reprise le 2 septembre 2026"
+  },
+  {
+    "condition": "bien_fonde",
+    "sous_domaine": "heures supplémentaires : accord de l'employeur",
+    "sens": "tombe",
+    "texte": "Même appuyées sur un décompte précis, les heures supplémentaires ne sont payées que si elles ont été accomplies avec l'accord au moins implicite de l'employeur ou rendues nécessaires par les tâches confiées, ce qui fait tomber la demande lorsque rien ne montre que l'employeur les a demandées, connues ou rendues inévitables. Signal : réclamation tardive, attestation de la direction niant toute demande, aucune pièce sur la charge de travail ou sur la connaissance des dépassements.",
+    "marqueurs": [
+      "accord (?:au moins )?implicite",
+      "rendues? n[ée]cessaires? par les t[âa]ches",
+      "(?:jamais|pas) demand[ée] (?:d'|l'accomplissement d')?heures",
+      "sans autorisation (?:pr[ée]alable )?(?:de la hi[ée]rarchie|de l'employeur)",
+      "heures suppl[ée]mentaires (?:non )?(?:demand|autoris)[ée]es"
+    ],
+    "sources": [
+      {
+        "juridiction": "CA Montpellier",
+        "date": "2026-11-12",
+        "numero": "24/04542",
+        "url": "https://librejustice.fr/decision/icTX-xs8ZCrk",
+        "point": "« il n'est pas établi que ces heures aient été réalisées avec l'accord au moins implicite de l'employeur »",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CA Aix-en-Provence, 6 novembre 2026, n° 22/15310 : rappel accordé au vu d'un courriel d'embauche annonçant des journées longues, l'employeur ne produisant aucun élément de contrôle (https://librejustice.fr/decision/QjoVl9UP3QLZ).",
+    "frequence": "2 sur 4 décisions de rejet vues (résumés) ; les 2 autres rejettent faute d'heures établies ou parce qu'elles avaient été payées.",
+    "depuis": "1er mai 2008 (article L. 3171-4 du code recodifié ; exigence jurisprudentielle constante dont l'origine n'a pas été vérifiée par lecture)"
+  },
+  {
+    "condition": "bien_fonde",
+    "sous_domaine": "heures supplémentaires : travail dissimulé",
+    "sens": "partage",
+    "texte": "L'indemnité forfaitaire de six mois (C. trav., art. L. 8221-5 et L. 8223-1) exige l'intention de dissimuler, qui ne se déduit ni du seul défaut de paiement d'heures supplémentaires ni d'une mention inexacte des bulletins ; l'issue dépend des indices réunis, la chambre sociale cassant l'arrêt qui ne caractérise pas l'intention et approuvant celui qui la tire de bulletins visant sciemment une convention de forfait inexistante. Signal : volume et récurrence des heures impayées, forfait non signé mentionné sur les bulletins, absence totale de contrôle du temps.",
+    "marqueurs": [
+      "travail dissimul[ée]",
+      "l\\.? ?8221-5",
+      "l\\.? ?8223-1",
+      "indemnit[ée] forfaitaire",
+      "forfait (?:de )?2\\d\\d jours"
+    ],
+    "sources": [
+      {
+        "juridiction": "Cass. soc.",
+        "date": "2025-10-22",
+        "numero": "24-14.424",
+        "url": "https://librejustice.fr/decision/CaoO5pZP6EwD",
+        "point": "§ 9 : cassation, élément intentionnel de la dissimulation non caractérisé",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Cass. soc.",
+        "date": "2025-06-18",
+        "numero": "24-11.767",
+        "url": "https://librejustice.fr/decision/tBJ0YKnX0ty7",
+        "point": "§ 6 : bulletins visant un forfait de 217 jours sans convention signée, intention retenue",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "CA Aix-en-Provence",
+        "date": "2026-11-06",
+        "numero": "22/15310",
+        "url": "https://librejustice.fr/decision/QjoVl9UP3QLZ",
+        "point": "716,10 euros d'heures impayées sur 37 mois : intention frauduleuse non caractérisée",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Cass. soc., 18 juin 2025, n° 24-11.767 : intention déduite de bulletins mentionnant sciemment un forfait inexistant, pourvoi rejeté (https://librejustice.fr/decision/tBJ0YKnX0ty7).",
+    "frequence": "4 indemnités accordées et 3 refusées sur 7 décisions de cour d'appel vues (résumés) où le chef est tranché ; 3 cassations sur 4 arrêts de la chambre sociale vus, faute d'intention caractérisée.",
+    "depuis": "1er mai 2008 (article L. 8221-5, qui exige l'intention)"
+  },
+  {
+    "condition": "bien_fonde",
+    "sous_domaine": "harcèlement moral : présomption et preuve contraire",
+    "sens": "remplit",
+    "texte": "Le juge examine chacun des faits invoqués puis leur ensemble, documents médicaux compris (C. trav., art. L. 1152-1 et L. 1154-1) : des pressions et cris rapportés par des témoins directs, des préconisations du médecin du travail ignorées, des alertes écrites restées sans réponse et des pièces médicales concordantes laissent supposer le harcèlement, et l'employeur qui se borne à contester la crédibilité des témoins sans justification objective est condamné. Signal : attestations de collègues ayant vu les faits, courriers d'alerte datés, arrêts de travail contemporains des faits.",
+    "marqueurs": [
+      "harc[èe]lement moral",
+      "l\\.? ?1154-1",
+      "laiss(?:e|ent) (?:supposer|pr[ée]sumer)",
+      "alertes? (?:adress[ée]e?s? )?(?:[àa] )?(?:la direction|l'employeur|sa hi[ée]rarchie)",
+      "pr[ée]conisations du m[ée]decin du travail"
+    ],
+    "sources": [
+      {
+        "juridiction": "CA Versailles",
+        "date": "2026-11-12",
+        "numero": "24/02011",
+        "url": "https://librejustice.fr/decision/4WzKbsSpgKIg",
+        "point": "témoins directs des cris du supérieur, préconisations médicales ignorées, alertes sans réponse : harcèlement retenu",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Cass. soc.",
+        "date": "2024-07-10",
+        "numero": "23-14.900",
+        "url": "https://librejustice.fr/decision/CUAxzgvR0-iG",
+        "point": "§ 15 et 17 : examen de tous les faits invoqués avec les éléments médicaux, cassation à défaut",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CA Saint-Denis de la Réunion, 12 novembre 2026, n° 25/00365 : faits non matériellement établis, pièces médicales rattachées au seul licenciement (https://librejustice.fr/decision/xIOibeZMAeD8).",
+    "frequence": "16 sur 25 décisions vues sur un harcèlement moral (cours d'appel et conseils de prud'hommes, résumés) le retiennent ; échantillon tiré de recherches ciblées dans les deux sens.",
+    "depuis": "8 août 2016 (article L. 1154-1 : éléments de fait laissant supposer le harcèlement)"
+  },
+  {
+    "condition": "bien_fonde",
+    "sous_domaine": "harcèlement moral : faits non établis ou pouvoir de direction",
+    "sens": "tombe",
+    "texte": "La demande tombe quand les faits ne sont pas matériellement établis (attestations reprenant les dires du salarié, formules générales), quand ils relèvent de l'exercice ordinaire du pouvoir de direction ou disciplinaire, ou quand les pièces médicales ne rattachent la souffrance qu'à la rupture ; la contestation des motifs d'un licenciement dont l'action est prescrite ne devient pas un fait de harcèlement. Signal : témoins indirects, griefs confondus avec la contestation du licenciement, certificats postérieurs à la rupture.",
+    "marqueurs": [
+      "harc[èe]lement moral",
+      "pouvoir (?:de direction|disciplinaire)",
+      "pas mat[ée]riellement [ée]tabli",
+      "(?:t[ée]moin|attestation)s? indirect",
+      "r[ée]organisation"
+    ],
+    "sources": [
+      {
+        "juridiction": "CA Saint-Denis de la Réunion",
+        "date": "2026-11-12",
+        "numero": "25/00365",
+        "url": "https://librejustice.fr/decision/xIOibeZMAeD8",
+        "point": "licenciement relevant du pouvoir disciplinaire, action contre la rupture prescrite, souffrance liée au seul licenciement",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "CA Versailles",
+        "date": "2026-11-12",
+        "numero": "24/02011",
+        "url": "https://librejustice.fr/decision/4WzKbsSpgKIg",
+        "point": "attestations ne relatant que les propos de la salariée ou des termes généraux écartées",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Cass. soc., 10 juillet 2024, n° 23-14.900 : cassation de l'arrêt qui écarte le harcèlement sans examiner le défaut de formation et les sanctions répétées invoqués avec les éléments médicaux (https://librejustice.fr/decision/CUAxzgvR0-iG).",
+    "frequence": "9 sur 25 décisions vues rejettent le harcèlement (résumés) ; au moins 6 des 9 parce que les faits ne sont pas établis ou relèvent du pouvoir de direction.",
+    "depuis": "8 août 2016 (article L. 1154-1)"
+  },
+  {
+    "condition": "bien_fonde",
+    "sous_domaine": "inaptitude : causée par un harcèlement",
+    "sens": "remplit",
+    "texte": "Le licenciement pour inaptitude est nul (C. trav., art. L. 1152-3) lorsque la dégradation de l'état de santé qui a conduit à l'inaptitude résulte d'un harcèlement moral établi que l'employeur n'a pas fait cesser, même si l'avis du médecin du travail dispensait de tout reclassement, et l'indemnité ne peut alors être inférieure aux salaires des six derniers mois. Signal : arrêts de travail concordant avec les faits dénoncés, certificats liant l'état anxio-dépressif aux conditions de travail, alertes sans suite.",
+    "marqueurs": [
+      "inaptitude",
+      "licenciement (?:pour inaptitude )?(?:est |serait )?nul",
+      "l\\.? ?1152-3",
+      "anxio[- ]?d[ée]pressi",
+      "harc[èe]lement moral"
+    ],
+    "sources": [
+      {
+        "juridiction": "CA Versailles",
+        "date": "2026-11-12",
+        "numero": "24/02011",
+        "url": "https://librejustice.fr/decision/4WzKbsSpgKIg",
+        "point": "avis portant dispense de reclassement, inaptitude liée au harcèlement : licenciement nul, 12 000 euros",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Cass. soc., 11 juin 2025, n° 24-15.297 : la mention expresse de l'avis dispense de toute recherche et de la notification écrite ; l'arrêt ne tranche pas le cas d'une inaptitude imputée à l'employeur (https://librejustice.fr/decision/TjcDs4IhrptQ).",
+    "frequence": "4 nullités sur 7 décisions vues de licenciement pour inaptitude où un harcèlement était invoqué (résumés) ; les 3 rejets tiennent à l'absence de faits laissant présumer le harcèlement.",
+    "depuis": "1er mai 2008 (article L. 1152-3)"
+  },
+  {
+    "condition": "bien_fonde",
+    "sous_domaine": "inaptitude : dispense de reclassement",
+    "sens": "tombe",
+    "texte": "La mention expresse, dans l'avis d'inaptitude, que tout maintien dans un emploi serait gravement préjudiciable à la santé du salarié ou que son état fait obstacle à tout reclassement (C. trav., art. L. 1226-2-1 et L. 1226-12) dispense l'employeur de toute recherche, y compris dans ses autres établissements, et de la notification écrite des motifs, ce qui fait tomber le grief de reclassement insuffisant ; la dispense ne couvre pas une inaptitude imputable à un harcèlement ou à un manquement de l'employeur. Signal : case cochée sur l'avis du médecin du travail, licenciement notifié sans recherche.",
+    "marqueurs": [
+      "gravement pr[ée]judiciable [àa] (?:sa|la|son)",
+      "fait obstacle [àa] tout reclassement",
+      "dispens(?:e|é)e? (?:de (?:l'obligation de |toute )?(?:recherche de )?reclassement)",
+      "l\\.? ?1226-2-1",
+      "l\\.? ?1226-12"
+    ],
+    "sources": [
+      {
+        "juridiction": "Cass. soc.",
+        "date": "2025-06-11",
+        "numero": "24-15.297",
+        "url": "https://librejustice.fr/decision/TjcDs4IhrptQ",
+        "point": "§ 8 : ni notification écrite des motifs, ni recherche dans les autres établissements",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CA Versailles, 12 novembre 2026, n° 24/02011 : licenciement nul malgré la dispense, l'inaptitude résultant du harcèlement (https://librejustice.fr/decision/4WzKbsSpgKIg).",
+    "frequence": "3 sur 14 décisions de cour d'appel vues sur le reclassement du salarié inapte (résumés) relèvent une mention de dispense ; l'employeur l'emporte dans 2, la troisième discutant un manquement antérieur à l'origine de l'inaptitude.",
+    "depuis": "1er janvier 2017 (articles L. 1226-2-1 et L. 1226-12 dans leur rédaction issue de la loi n° 2016-1088)"
+  },
+  {
+    "condition": "bien_fonde",
+    "sous_domaine": "inaptitude : recherche de reclassement non justifiée",
+    "sens": "remplit",
+    "texte": "L'employeur doit prouver une recherche loyale et sérieuse de reclassement dans l'entreprise et dans les sociétés du groupe permettant la permutation du personnel (C. trav., art. L. 1226-2 et L. 1226-10) : sans pièce fixant le périmètre du groupe, des courriels adressés à des destinataires non identifiés ne suffisent pas et le licenciement est sans cause, l'indemnité étant d'au moins six mois de salaire si l'inaptitude a, même partiellement, une origine professionnelle connue de l'employeur (art. L. 1226-15). Signal : employeur membre d'un groupe, aucun organigramme produit, aucune offre écrite.",
+    "marqueurs": [
+      "inaptitude",
+      "recherches? de reclassement",
+      "permutation (?:de tout ou partie )?du personnel",
+      "l\\.? ?1226-1[05]",
+      "origine professionnelle"
+    ],
+    "sources": [
+      {
+        "juridiction": "CA Versailles",
+        "date": "2026-11-05",
+        "numero": "24/02038",
+        "url": "https://librejustice.fr/decision/jgLfWWBGmue6",
+        "point": "aucun élément sur le périmètre du groupe : recherche non démontrée, 15 000 euros au titre de l'article L. 1226-15",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CA Paris, 12 novembre 2026, n° 23/00676 : courriels aux sociétés du groupe et réponses produits, aucun poste compatible, licenciement fondé (https://librejustice.fr/decision/8AsM3MoEROfB).",
+    "frequence": "8 sur 14 décisions de cour d'appel vues sur le reclassement du salarié inapte (résumés) jugent le licenciement sans cause ; 6 de ces 8 sanctionnent une recherche non justifiée dans le groupe ou une offre imprécise.",
+    "depuis": "1er janvier 2017 (règles de reclassement unifiées, inaptitude professionnelle ou non)"
+  },
+  {
+    "condition": "bien_fonde",
+    "sous_domaine": "inaptitude : reclassement satisfait",
+    "sens": "tombe",
+    "texte": "L'employeur l'emporte quand il produit l'avis du CSE, les réponses du médecin du travail sur les capacités restantes et les réponses des sociétés du groupe établissant l'absence de poste compatible, sans devoir assurer une formation à un autre métier, ou quand le salarié refuse un poste conforme aux préconisations médicales, l'obligation étant alors réputée satisfaite même si ce poste à mi-temps réduit la rémunération. Signal : proposition validée par le médecin du travail puis refusée, ou tableau des postes disponibles avec les réponses des filiales.",
+    "marqueurs": [
+      "r[ée]put[ée]e? satisfaite",
+      "conforme aux pr[ée]conisations",
+      "refus(?:é)? (?:du|le) poste (?:de reclassement|propos[ée])",
+      "aucun poste (?:disponible )?compatible",
+      "avis du (?:cse|comit[ée] social)"
+    ],
+    "sources": [
+      {
+        "juridiction": "Cass. soc.",
+        "date": "2024-03-13",
+        "numero": "22-18.758",
+        "url": "https://librejustice.fr/decision/H0GmoNuFs6Y7",
+        "point": "§ 9 et 13 : refus d'un poste à mi-temps conforme aux préconisations, obligation réputée satisfaite",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "CA Paris",
+        "date": "2026-11-12",
+        "numero": "23/00676",
+        "url": "https://librejustice.fr/decision/8AsM3MoEROfB",
+        "point": "absence de poste compatible avec les restrictions et le profil, pas de formation à un autre métier",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CA Versailles, 5 novembre 2026, n° 24/02038 : courriels de recherche produits sans le périmètre du groupe, licenciement sans cause (https://librejustice.fr/decision/jgLfWWBGmue6).",
+    "frequence": "6 sur 14 décisions de cour d'appel vues sur le reclassement (résumés) donnent raison à l'employeur ; 4 sur l'absence documentée de poste compatible, 2 sur la dispense portée par l'avis.",
+    "depuis": "1er janvier 2017 (présomption de l'article L. 1226-2-1, alinéa 3)"
+  },
+  {
+    "condition": "bien_fonde",
+    "sous_domaine": "licenciement disciplinaire : prescription des faits fautifs",
+    "sens": "remplit",
+    "texte": "Lorsque le salarié oppose la prescription de deux mois (C. trav., art. L. 1332-4), l'employeur doit prouver qu'il n'a eu une connaissance exacte des faits (réalité, nature, ampleur) que dans les deux mois précédant la convocation, et la lettre qui situe la découverte à une réunion non documentée ne suffit pas : le licenciement disciplinaire est alors sans cause. Signal : plus de deux mois entre les faits et la convocation, aucune pièce datant la découverte.",
+    "marqueurs": [
+      "l\\.? ?1332-4",
+      "prescription des faits",
+      "faits (?:fautifs )?(?:sont )?prescrits",
+      "connaissance (?:exacte )?des faits",
+      "plus de deux mois"
+    ],
+    "sources": [
+      {
+        "juridiction": "CA Versailles",
+        "date": "2026-11-05",
+        "numero": "24/02043",
+        "url": "https://librejustice.fr/decision/0FPBebYFkB79",
+        "point": "aucune pièce datant la connaissance des faits : prescription acquise, licenciement sans cause",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CPH Bayonne, 10 novembre 2026, n° 2025-00052695 : connaissance exacte du caractère réitéré des faits acquise début octobre, convocation du 28 octobre, délai respecté (https://librejustice.fr/decision/1OTYy9RdwJz1).",
+    "frequence": "4 sur 8 décisions vues écartant une faute (résumés, recherche orientée sur la prescription) retiennent la prescription de l'article L. 1332-4.",
+    "depuis": "1er mai 2008 (article L. 1332-4)"
+  },
+  {
+    "condition": "bien_fonde",
+    "sous_domaine": "licenciement pour faute grave : preuve et doute",
+    "sens": "remplit",
+    "texte": "L'employeur prouve la faute grave dans les limites de la lettre de licenciement et le doute profite au salarié (C. trav., art. L. 1235-1) : des photographies ou un constat de commissaire de justice qui ne montrent pas la nature de ce qui est remis n'établissent pas la faute, et le salarié obtient rappel de mise à pied, préavis, indemnité de licenciement et indemnité de l'article L. 1235-3. Signal : pièces patronales équivoques, aucun témoin direct, aucune procédure interne dont la méconnaissance serait prouvée.",
+    "marqueurs": [
+      "faute grave",
+      "doute (?:subsistant )?(?:profite|doit profiter) au salari[ée]",
+      "l\\.? ?1235-1",
+      "mise [àa] pied (?:[àa] titre )?conservatoire",
+      "constat (?:de|d'un) (?:commissaire de justice|huissier)"
+    ],
+    "sources": [
+      {
+        "juridiction": "CPH Nanterre",
+        "date": "2026-10-23",
+        "numero": "2025-00052528",
+        "url": "https://librejustice.fr/decision/N741WB4fJFtB",
+        "point": "photographies et constat n'établissant pas une remise d'espèces : doute au salarié, 37 000 euros",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CA Versailles, 1er avril 2026, n° 23/01181 : faits établis par un signalement précis et un témoin direct, faute grave retenue (https://librejustice.fr/decision/jLxNDj23q6Dp).",
+    "frequence": "5 sur 8 décisions vues écartant une faute (résumés) tiennent au défaut de preuve des faits ou au doute ; 4 tiennent à la prescription, une décision cumulant les deux.",
+    "depuis": "1er mai 2008 (article L. 1235-1)"
+  },
+  {
+    "condition": "bien_fonde",
+    "sous_domaine": "licenciement pour faute grave : violences et injures",
+    "sens": "tombe",
+    "texte": "Les violences, menaces, crachats, injures ou propos racistes et sexistes envers un collègue sur le lieu de travail caractérisent la faute grave, peu important qui a engagé l'altercation ou que le différend soit d'origine privée, l'obligation de sécurité imposant l'éviction immédiate ; la fonction d'encadrement et la pluralité des griefs renforcent la gravité. Signal : témoin direct, accident du travail déclaré par la victime, règlement intérieur visant les agressions.",
+    "marqueurs": [
+      "agress(?:ion|[ée])",
+      "insult(?:e|[ée])",
+      "menac(?:e|[ée])",
+      "propos (?:racistes?|sexistes?|injurieux|homophobes?)",
+      "altercation"
+    ],
+    "sources": [
+      {
+        "juridiction": "CA Versailles",
+        "date": "2026-04-01",
+        "numero": "23/01181",
+        "url": "https://librejustice.fr/decision/jLxNDj23q6Dp",
+        "point": "agression d'une collègue devant témoins : faute grave, « peu important la personne à l'origine de l'altercation »",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "CPH Bayonne",
+        "date": "2026-11-10",
+        "numero": "2025-00052695",
+        "url": "https://librejustice.fr/decision/1OTYy9RdwJz1",
+        "point": "propos racistes et sexistes réitérés d'un assistant manager, attestations concordantes : faute grave",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "aucune trouvée",
+    "frequence": "9 sur 11 décisions vues validant une faute grave (résumés) portent sur des violences, menaces ou propos injurieux envers des collègues ou la hiérarchie.",
+    "depuis": "9 juillet 2014 (arrêt de la chambre sociale cité par la décision lue du 1er avril 2026)"
+  },
+  {
+    "condition": "bien_fonde",
+    "sous_domaine": "économique : durée de la baisse d'activité",
+    "sens": "remplit",
+    "texte": "Pour une baisse des commandes ou du chiffre d'affaires (C. trav., art. L. 1233-3), l'employeur doit établir l'effectif qui fixe la durée exigée et une baisse couvrant toute cette durée, comparée à la même période de l'année précédente et contemporaine de la notification : une attestation comptable ne couvrant pas deux trimestres entiers, ou un effectif inférieur à onze affirmé sans justificatif sur les douze derniers mois, laisse le licenciement sans cause. Signal : comparaison annuelle ou mensuelle au lieu de trimestres consécutifs, baisse ancienne sans lien de temps avec la rupture.",
+    "marqueurs": [
+      "l\\.? ?1233-3",
+      "baisse (?:significative )?(?:du chiffre d'affaires|des commandes)",
+      "trimestres? cons[ée]cutifs?",
+      "difficult[ée]s [ée]conomiques",
+      "effectif (?:de|inf[ée]rieur [àa]) onze"
+    ],
+    "sources": [
+      {
+        "juridiction": "CA Lyon",
+        "date": "2026-11-06",
+        "numero": "22/05299",
+        "url": "https://librejustice.fr/decision/UzT0hIwNLaad",
+        "point": "effectif non justifié sur douze mois, baisse prouvée de février à juin seulement : sans cause",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Cass. soc.",
+        "date": "2022-06-01",
+        "numero": "20-19.957",
+        "url": "https://librejustice.fr/decision/xdrT963ssYFn",
+        "point": "§ 10 : durée de la baisse appréciée sur la période contemporaine de la notification",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CA Douai, 27 mars 2026, n° 24/02097 : entreprise de trois salariés, baisse de 54 % sur le trimestre contemporain, motif établi (https://librejustice.fr/decision/c22_L6bhLutf).",
+    "frequence": "2 sur 9 décisions vues donnant raison au salarié sur le motif économique (résumés) tiennent à la durée ou à la preuve de la baisse ; 4 tiennent au périmètre du groupe, 3 au reclassement.",
+    "depuis": "1er décembre 2016 (article L. 1233-3 dans sa rédaction issue de la loi n° 2016-1088) ; période contemporaine de la notification précisée le 1er juin 2022"
+  },
+  {
+    "condition": "bien_fonde",
+    "sous_domaine": "économique : périmètre du groupe",
+    "sens": "remplit",
+    "texte": "Si l'employeur appartient à un groupe, la cause économique s'apprécie au niveau du secteur d'activité commun aux entreprises du groupe établies en France et il doit justifier la consistance du groupe et du secteur ; des comptes limités à une succursale ou à un établissement dépourvu de personnalité juridique ne prouvent pas le motif et le licenciement est sans cause. Signal : société étrangère avec établissement en France, lettre visant les seuls résultats français, aucune pièce sur les autres sociétés du groupe.",
+    "marqueurs": [
+      "secteur d'activit[ée]",
+      "succursale",
+      "sauvegarde de (?:la|sa) comp[ée]titivit[ée]",
+      "(?:appartient|appartenant) [àa] un groupe",
+      "l\\.? ?233-16"
+    ],
+    "sources": [
+      {
+        "juridiction": "CA Paris",
+        "date": "2026-10-27",
+        "numero": "23/03996",
+        "url": "https://librejustice.fr/decision/23vtBOPNspxM",
+        "point": "consistance du groupe non justifiée, succursale insusceptible de fixer le périmètre : sans cause",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CA Douai, 27 mars 2026, n° 24/02097 : société hors groupe, motif apprécié au niveau de l'entreprise et établi (https://librejustice.fr/decision/c22_L6bhLutf).",
+    "frequence": "4 sur 9 décisions vues donnant raison au salarié sur le motif économique (résumés).",
+    "depuis": "24 septembre 2017 (secteur d'activité limité aux entreprises du groupe établies en France, ordonnance n° 2017-1387)"
+  },
+  {
+    "condition": "bien_fonde",
+    "sous_domaine": "économique : motif établi et reclassement impossible",
+    "sens": "tombe",
+    "texte": "Le motif tient quand l'entreprise hors groupe de moins de onze salariés établit, par une attestation comptable trimestre par trimestre, une baisse du chiffre d'affaires sur le trimestre contemporain de la rupture comparé au même trimestre de l'année précédente, le maintien du bénéfice obtenu grâce aux suppressions de postes étant indifférent, et que l'absence de tout poste disponible rend le reclassement impossible. Signal : très petite entreprise, chiffres trimestriels comparés, emplois supprimés non recréés avant plusieurs mois.",
+    "marqueurs": [
+      "moins de onze salari[ée]s",
+      "attestation (?:de l')?expert[- ]comptable",
+      "contrat de s[ée]curisation professionnelle",
+      "aucun poste (?:n'[ée]tait )?disponible",
+      "licenciement (?:pour motif )?[ée]conomique"
+    ],
+    "sources": [
+      {
+        "juridiction": "CA Douai",
+        "date": "2026-03-27",
+        "numero": "24/02097",
+        "url": "https://librejustice.fr/decision/c22_L6bhLutf",
+        "point": "baisse de 54 % au deuxième trimestre 2020, aucun poste disponible : licenciement fondé",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CA Lyon, 6 novembre 2026, n° 22/05299 : effectif inférieur à onze non justifié et baisse ne couvrant pas deux trimestres entiers (https://librejustice.fr/decision/UzT0hIwNLaad).",
+    "frequence": "4 sur 13 décisions vues sur le motif économique (résumés) le jugent fondé.",
+    "depuis": "1er décembre 2016 (article L. 1233-3)"
+  },
+  {
+    "condition": "bien_fonde",
+    "sous_domaine": "rupture conventionnelle : remise d'un exemplaire",
+    "sens": "remplit",
+    "texte": "La rupture conventionnelle est nulle, avec les effets d'un licenciement sans cause, si le salarié n'a pas reçu un exemplaire de la convention, nécessaire pour demander l'homologation et se rétracter en connaissance de cause ; en cas de contestation la preuve de la remise pèse sur celui qui l'invoque, et un formulaire paraphé sans mention de remise ou une attestation interne muette sur ce point ne la font pas. Signal : formulaire sans mention d'exemplaire remis, aucun témoin de la remise, le salarié restituant l'indemnité spécifique par compensation.",
+    "marqueurs": [
+      "rupture conventionnelle",
+      "exemplaire (?:de la convention|du (?:formulaire|cerfa))",
+      "(?:droit|d[ée]lai) de r[ée]tractation",
+      "homologation",
+      "l\\.? ?1237-1[134]"
+    ],
+    "sources": [
+      {
+        "juridiction": "Cass. soc.",
+        "date": "2021-03-10",
+        "numero": "20-12.801",
+        "url": "https://librejustice.fr/decision/Vwns27gDiyGB",
+        "point": "§ 5 : nullité à défaut de remise ; preuve à la charge de celui qui invoque la remise",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "CA Reims",
+        "date": "2023-05-03",
+        "numero": "22/01377",
+        "url": "https://librejustice.fr/decision/LgfZzNMN0f7d",
+        "point": "documents signés sans mention de remise, attestation interne muette : convention nulle",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "aucune trouvée",
+    "frequence": "4 sur 6 décisions vues annulant une rupture conventionnelle (résumés) le font pour défaut de preuve de la remise d'un exemplaire.",
+    "depuis": "6 février 2013 (nullité faute de remise d'un exemplaire) ; charge de la preuve de la remise rappelée le 10 mars 2021"
+  },
+  {
+    "condition": "bien_fonde",
+    "sous_domaine": "rupture conventionnelle : vice du consentement et harcèlement",
+    "sens": "partage",
+    "texte": "Ni un différend ni même un harcèlement n'affectent par eux-mêmes la validité de la convention, le salarié devant prouver un vice du consentement au jour de la signature, et les décisions divergent selon cette preuve : nullité, avec les effets d'un licenciement nul, quand le harcèlement et la dépression suivie qui en résulte placent le salarié en situation de violence morale ; validité quand le harcèlement est établi mais que seule une ordonnance sans certificat contemporain décrit son état. Signal : suivi psychiatrique ou certificat daté autour de la signature, mise à l'écart précédant la proposition de rupture.",
+    "marqueurs": [
+      "rupture conventionnelle",
+      "violence morale",
+      "vice du consentement",
+      "diff[ée]rend",
+      "abolition du discernement"
+    ],
+    "sources": [
+      {
+        "juridiction": "CA Saint-Denis de la Réunion",
+        "date": "2026-04-23",
+        "numero": "24/01573",
+        "url": "https://librejustice.fr/decision/SO3MUysB427E",
+        "point": "harcèlement et dépression suivie : violence morale, convention annulée, licenciement nul, 70 000 euros",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "CA Paris",
+        "date": "2025-09-16",
+        "numero": "22/06973",
+        "url": "https://librejustice.fr/decision/nG-1ElZ17DLv",
+        "point": "harcèlement retenu, aucun certificat sur l'état à la signature : convention valable",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "CA Pau",
+        "date": "2023-09-28",
+        "numero": "22/00100",
+        "url": "https://librejustice.fr/decision/vNqLWrDnD0S5",
+        "point": "différend indifférent, signature au domicile sans incidence, vice non prouvé par le salarié",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CA Paris, 16 septembre 2025, n° 22/06973 : harcèlement établi, convention maintenue faute de preuve de l'état de la salariée au jour de la signature (https://librejustice.fr/decision/nG-1ElZ17DLv).",
+    "frequence": "2 annulations pour violence morale contre 3 rejets jugeant le harcèlement insuffisant à lui seul, et 3 autres rejets sur un différend ou une maladie, sur 12 décisions de cour d'appel vues sur la validité d'une rupture conventionnelle (résumés).",
+    "depuis": "25 juin 2008 (article L. 1237-11) ; différend sans effet par lui-même depuis le 23 mai 2013"
+  },
+  {
+    "condition": "bien_fonde",
+    "sous_domaine": "prise d'acte : manquements insuffisamment graves",
+    "sens": "tombe",
+    "texte": "La prise d'acte ne produit les effets d'un licenciement sans cause que si le salarié prouve des manquements empêchant la poursuite du contrat, le doute profitant à l'employeur : des manquements avérés mais mineurs (exemplaire signé du contrat non remis sans réclamation, congés validés tardivement, reproche d'un retard, restriction d'accès relevant du pouvoir de direction) valent démission, et le salarié doit l'indemnité de préavis sans que l'employeur prouve un préjudice. Signal : griefs de vexation ou d'organisation, aucun arriéré de salaire.",
+    "marqueurs": [
+      "prise d'acte",
+      "pris acte de la rupture",
+      "effets d'une d[ée]mission",
+      "poursuite du contrat",
+      "l\\.? ?1237-2"
+    ],
+    "sources": [
+      {
+        "juridiction": "CA Paris",
+        "date": "2026-09-03",
+        "numero": "23/01756",
+        "url": "https://librejustice.fr/decision/r1W2zkmHjpel",
+        "point": "faits avérés mais de faible gravité : démission, préavis de 3 586,48 euros dû par la salariée",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CA Aix-en-Provence, 6 novembre 2026, n° 22/15310 : salaire incomplètement payé et complément de prévoyance différé, résiliation aux torts de l'employeur (https://librejustice.fr/decision/QjoVl9UP3QLZ).",
+    "frequence": "5 sur 11 décisions vues sur une prise d'acte ou une résiliation judiciaire (résumés) concluent à une démission ou au rejet ; recherche orientée en partie vers ce sens.",
+    "depuis": "26 mars 2014 (manquement empêchant la poursuite du contrat)"
+  },
+  {
+    "condition": "bien_fonde",
+    "sous_domaine": "prise d'acte et résiliation judiciaire : salaire impayé",
+    "sens": "remplit",
+    "texte": "Le non-paiement d'une partie du salaire à la date de la rupture ou la privation du complément de prévoyance pendant un arrêt maladie justifient la résiliation judiciaire ou la prise d'acte aux torts de l'employeur, et une régularisation partielle intervenue après le terme du préavis n'efface pas le manquement ; le préavis est dû même si la maladie empêchait de l'exécuter. Signal : arriérés chiffrés à la date de la rupture, chèque de régularisation postérieur.",
+    "marqueurs": [
+      "r[ée]siliation judiciaire",
+      "prise d'acte",
+      "(?:non[- ]paiement|d[ée]faut de paiement|retards? de paiement) (?:du|des) salaires?",
+      "compl[ée]ment de salaire",
+      "pr[ée]voyance"
+    ],
+    "sources": [
+      {
+        "juridiction": "CA Aix-en-Provence",
+        "date": "2026-11-06",
+        "numero": "22/15310",
+        "url": "https://librejustice.fr/decision/QjoVl9UP3QLZ",
+        "point": "régularisation « tardive partielle » postérieure au préavis sans effet sur l'imputabilité",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CA Paris, 3 septembre 2026, n° 23/01756 : manquements avérés mais sans gravité suffisante, prise d'acte valant démission (https://librejustice.fr/decision/r1W2zkmHjpel).",
+    "frequence": "6 sur 11 décisions vues (résumés) imputent la rupture à l'employeur ; 3 de ces 6 sur un défaut de paiement du salaire ou des heures, 3 sur un harcèlement.",
+    "depuis": "26 mars 2014"
+  },
+  {
+    "condition": "bien_fonde",
+    "sous_domaine": "CDD : preuve du motif de recours",
+    "sens": "remplit",
+    "texte": "En cas de litige sur le motif du recours, l'employeur doit prouver la réalité de l'accroissement temporaire d'activité ou de l'absence du salarié remplacé : à défaut, la relation est requalifiée en contrat à durée indéterminée depuis le premier contrat irrégulier, avec indemnité de requalification d'au moins un mois, ancienneté reconstituée et rupture au dernier terme valant licenciement sans cause. Signal : longue succession de contrats sur le même poste, employeur sans pièce sur les périodes anciennes.",
+    "marqueurs": [
+      "contrats? [àa] dur[ée]e d[ée]termin[ée]e",
+      "\\bcdd\\b",
+      "requalification",
+      "accroissement temporaire d'activit[ée]",
+      "indemnit[ée] de requalification"
+    ],
+    "sources": [
+      {
+        "juridiction": "CA Aix-en-Provence",
+        "date": "2026-04-30",
+        "numero": "22/09874",
+        "url": "https://librejustice.fr/decision/8Gei5BSxhhFX",
+        "point": "aucune pièce sur le motif du premier contrat de 2001 : requalification à cette date, licenciement sans cause",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CA Nîmes, 21 mars 2023, n° 20/03464 : remplacements successifs de salariés réellement absents, requalification refusée (https://librejustice.fr/decision/TW1mJ01NH7eF).",
+    "frequence": "5 sur 7 décisions vues sur une requalification de contrats à durée déterminée (résumés) l'accordent ; 3 de ces 5 faute pour l'employeur de prouver le motif.",
+    "depuis": "1er mai 2008 (articles L. 1242-1 et L. 1242-2) ; preuve du motif à la charge de l'employeur rappelée le 15 septembre 2010, arrêt cité par la décision lue"
+  },
+  {
+    "condition": "bien_fonde",
+    "sous_domaine": "CDD : remplacements successifs",
+    "sens": "tombe",
+    "texte": "Les contrats de remplacement peuvent se succéder avec le même salarié, au-delà de dix-huit mois et pour des remplacés différents, sans requalification lorsque chacun correspond à une absence réelle (congés, maladie, congé parental), le recours récurrent au remplacement ne prouvant pas à lui seul le pourvoi durable d'un emploi permanent ; la requalification du terme laisserait d'ailleurs intacte la durée du travail stipulée. Signal : chaque avenant désigne un salarié absent dont l'absence est justifiée.",
+    "marqueurs": [
+      "contrats? de remplacement",
+      "remplacement d'une? salari[ée]e? absent",
+      "avenants? successifs",
+      "pourvoir durablement",
+      "l\\.? ?1244-1"
+    ],
+    "sources": [
+      {
+        "juridiction": "CA Nîmes",
+        "date": "2023-03-21",
+        "numero": "20/03464",
+        "url": "https://librejustice.fr/decision/TW1mJ01NH7eF",
+        "point": "24 avenants de remplacement pour congés, maladie puis congé parental : pas d'emploi permanent pourvu",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CA Aix-en-Provence, 30 avril 2026, n° 22/09874 : motif du premier contrat non prouvé, requalification sur dix-huit ans de contrats (https://librejustice.fr/decision/8Gei5BSxhhFX).",
+    "frequence": "1 sur 7 décisions vues sur une requalification (résumés) la refuse entièrement ; une autre la refuse pour les remplacements mais l'accorde pour les missions d'intérim.",
+    "depuis": "1er mai 2008 (article L. 1244-1)"
+  },
+  {
+    "condition": "action_non_prescrite_selon_la_nature_de_chaque_demande",
+    "sous_domaine": "prescription : requalification de contrats à durée déterminée",
+    "sens": "tombe",
+    "texte": "Le délai de deux ans de l'action en requalification (C. trav., art. L. 1471-1) court, pour un grief de forme, de la conclusion du contrat (mention manquante) ou du premier jour du contrat suivant (délai de carence), de sorte qu'une saisine tardive fait tomber ce fondement contrat par contrat ; le grief tiré du motif du recours ou du pourvoi durable d'un emploi permanent court seulement du terme du dernier contrat, inactivité intercalaire comprise, et sauve l'action avec une ancienneté remontant au premier contrat irrégulier. Signal : date de saisine comparée au dernier terme et fondement exact invoqué.",
+    "marqueurs": [
+      "requalification",
+      "d[ée]lai de carence",
+      "terme du dernier contrat",
+      "l\\.? ?1471-1",
+      "prescri(?:te|ption)"
+    ],
+    "sources": [
+      {
+        "juridiction": "CA Aix-en-Provence",
+        "date": "2026-04-30",
+        "numero": "22/09874",
+        "url": "https://librejustice.fr/decision/8Gei5BSxhhFX",
+        "point": "fondement tiré de la carence prescrit contrat par contrat ; fondement tiré du motif recevable, délai couru du dernier terme",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CA Nîmes, 21 mars 2023, n° 20/03464 : grief tiré du remplacement successif de plusieurs salariés, relatif au motif, déclaré prescrit à compter du premier contrat (https://librejustice.fr/decision/TW1mJ01NH7eF).",
+    "frequence": "3 sur 7 décisions vues sur une requalification (résumés) tranchent la prescription ; 2 déclarent un fondement prescrit en partant d'une date de contrat autre que le dernier terme.",
+    "depuis": "16 juin 2013 (délai de deux ans de l'article L. 1471-1) ; point de départ au terme du dernier contrat depuis le 29 janvier 2020 et au premier jour du second contrat pour le délai de carence depuis le 5 mai 2021, arrêts cités par la décision lue"
+  }
+]

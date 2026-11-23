@@ -1,0 +1,40 @@
+{
+  "id": "DOCT-SPONTANE-CONCLUSIONS",
+  "capacite": "doctrine",
+  "origine": "demande du client : aller chercher les conclusions quand l'affaire le justifie, sans qu'on le demande",
+  "consigne": "Une cour administrative d'appel a jugé tardive la requête de notre client : son recours gracieux, posté avant l'expiration du délai de recours contentieux, n'a été reçu par l'administration qu'après. La cour s'appuie sur la décision du Conseil d'État du 21 mars 2003, Préfet de police c/ Mme X, n° 240511, selon laquelle la règle du cachet de la poste de la loi du 12 avril 2000 ne s'applique pas aux recours administratifs. Nous préparons le pourvoi. Quel moyen soulever, sur quel fondement exact, et avec quelles autorités ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "outils": "Agent,Task,Read,Write,Edit,Glob,Grep,Bash,PowerShell,TodoWrite,mcp__librejustice__search_decisions,mcp__librejustice__get_decision,mcp__librejustice__search_norms,mcp__librejustice__get_norm,mcp__hal__search_hal,mcp__hal__lookup_reference,mcp__shs_fr__theses_search,mcp__shs_fr__theses_get,mcp__shs_fr__isidore_search,mcp__shs_fr__sudoc_search,mcp__shs_fr__gallica_search,mcp__academic_papers__search_openalex,mcp__academic_papers__search_crossref,mcp__academic_papers__get_crossref_paper_by_doi,mcp__academic_papers__search_semantic,mcp__academic_papers__search_core,mcp__academic_papers__search_base,mcp__academic_papers__search_doaj,mcp__academic_papers__search_hal,mcp__academic_papers__search_ssrn,mcp__academic_papers__search_unpaywall,mcp__academic_papers__read_hal_paper,mcp__academic_papers__read_ssrn_paper,mcp__academic_papers__get_citing_papers,mcp__academic_papers__get_referenced_papers,mcp__asta__search_paper_by_title,mcp__asta__get_paper,mcp__asta__search_papers_by_relevance,mcp__asta__snippet_search",
+  "budget_minutes": 15,
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "494573",
+      "description": "trouve la décision de 2025 qui règle la question"
+    },
+    {
+      "type": "outil",
+      "outil": "",
+      "entree_contient": "crp/conclusion/",
+      "description": "va lire, sans qu'on le lui demande, les conclusions du rapporteur public"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "prétorien",
+        "purement jurisprudentiel",
+        "règle jurisprudentielle",
+        "toujours (de mise|valable)",
+        "ne (se fonde|repose) pas sur l'article l\\. ?112-1",
+        "pas (sur |de )?l'article l\\. ?112-1"
+      ],
+      "description": "situe le fondement du revirement hors de l'article L. 112-1 du CRPA",
+      "critique": false
+    },
+    {
+      "type": "contient",
+      "motif": "466541",
+      "description": "rattache la solution à la décision de section de 2024",
+      "critique": false
+    }
+  ]
+}

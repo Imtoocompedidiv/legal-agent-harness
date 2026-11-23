@@ -1,0 +1,26 @@
+{
+  "id": "RECH2-APPEL-CERTIFICAT-TACITE",
+  "capacite": "recherche",
+  "origine": "sonde durcie : requête d'appel sur une prémisse fausse, que corrige une décision récente trouvable par l'article (CE, 2 mars 2026, n° 508188, mentionné aux tables : R. 811-1-1 s'applique au refus de certificat de permis tacite ; jugement en dernier ressort, pourvoi en cassation)",
+  "consigne": "Par un jugement du 2 octobre 2026, notifié le 6 octobre, le tribunal administratif de Toulon a annulé le refus implicite du maire d'Hyères de délivrer à une société le certificat attestant qu'elle est titulaire d'un permis de construire tacite pour un immeuble de vingt logements, et lui a enjoint de le délivrer. La requête avait été enregistrée le 20 septembre 2024. Rédige la requête d'appel de la commune, notre cliente, devant la cour administrative d'appel de Marseille (juridiction, parties, jugement attaqué, faits, moyens à développer, conclusions). Réponds par la requête, sans dérouler la chaîne complète de prise en main du dossier.",
+  "budget_minutes": 15,
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "508188",
+      "description": "trouve la décision qui rend le jugement en dernier ressort"
+    },
+    {
+      "type": "contient",
+      "motif": "cassation",
+      "description": "réoriente vers le pourvoi en cassation"
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__search_decisions",
+      "entree_contient": "legal_article",
+      "description": "méthode : cherche la jurisprudence par l'article (legal_article)",
+      "critique": false
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+ "id": "CONS-SASU-COMPTES",
+ "capacite": "conseil",
+ "origine": "pôle societes-et-operations : C. com., art. L. 227-9, al. 3 (approbation par l'associé unique dans les six mois ; dépôt valant approbation quand l'associé unique personne physique est président) et L. 232-23 (dépôt dans le mois, deux mois par voie électronique)",
+ "consigne": "Nous sommes le samedi 21 novembre 2026. Notre cliente est associée unique et présidente de sa SASU, qui clôture ses comptes le 30 juin. Les comptes de l'exercice clos le 30 juin 2026 sont prêts. Que doit-elle faire, et avant quelles dates ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+ "verifications": [
+  {
+   "type": "critere",
+   "critere": "La réponse dit que l'associée unique approuve les comptes dans les six mois de la clôture, soit au plus tard le 31 décembre 2026, et que la décision est répertoriée dans le registre des décisions.",
+   "description": "approbation"
+  },
+  {
+   "type": "critere",
+   "critere": "La réponse dit que les comptes se déposent au greffe dans le mois suivant l'approbation, ou dans les deux mois en cas de dépôt électronique.",
+   "description": "dépôt"
+  },
+  {
+   "type": "critere",
+   "critere": "La réponse signale que, l'associée unique personne physique étant présidente, le dépôt au registre du commerce et des sociétés de l'inventaire et des comptes annuels signés vaut approbation des comptes.",
+   "description": "dépôt valant approbation",
+   "critique": false
+  }
+ ],
+ "horloge": "2026-11-21T10:00",
+ "budget_minutes": 15
+}

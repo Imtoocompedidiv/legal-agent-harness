@@ -1,0 +1,38 @@
+{
+  "id": "EXO-TRAVAIL-APPEL-ORDONNANCE-TRI",
+  "capacite": "exercice",
+  "horloge": "2026-11-19T10:00",
+  "budget_minutes": 25,
+  "origine": "module mecanique-des-exercices, sonde de travail réel : ordonnance de tri rendue sur un référé-liberté, seule voie de la cassation (CJA, art. L. 523-1, R. 523-1 ; CE, Sect., 28 février 2001, Casanovas, n° 229163)",
+  "consigne": "Nous sommes le jeudi 19 novembre 2026. Le juge des référés du tribunal administratif de Lyon a rejeté le 17 novembre 2026 le référé-liberté que nous avions déposé pour un client contre la fermeture administrative de son restaurant. L'ordonnance, notifiée le 18 novembre, vise l'article L. 522-3 du code de justice administrative et a été rendue sans communication de la requête ni audience ; elle retient que l'urgence n'est pas caractérisée. Prépare dans ecritures/brouillons/ la requête d'appel devant le juge des référés du Conseil d'État et sa fiche de l'acte.",
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "cassation",
+      "description": "exercice voisin : pourvoi en cassation",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "avocat aux conseils",
+        "avocat au conseil d.état"
+      ],
+      "description": "exigence implicite : avocat aux Conseils",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "quinze jours",
+        "15 jours",
+        "3 décembre"
+      ],
+      "description": "exigence implicite : délai de quinze jours",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    }
+  ]
+}

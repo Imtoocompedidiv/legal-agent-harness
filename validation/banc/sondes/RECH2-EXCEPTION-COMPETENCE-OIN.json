@@ -1,0 +1,43 @@
+{
+  "id": "RECH2-EXCEPTION-COMPETENCE-OIN",
+  "capacite": "recherche",
+  "origine": "refonte recherche : exception de compétence placée hors de l'article lu d'abord (CJA, R. 311-5, I, 5° et II, issu du décret n° 2026-302, actes pris à compter du 1er juillet 2026 ; R. 811-1-1 renvoie à cette exception)",
+  "consigne": "Le maire de Bordeaux a délivré le 10 septembre 2026 un permis de construire un immeuble de 80 logements situé dans le périmètre de l'opération d'intérêt national Bordeaux-Euratlantique et réalisé dans le cadre de cette opération. Le permis est affiché sur le terrain depuis le 2 octobre 2026. Nos clients, voisins, veulent le contester. Devant quelle juridiction faut-il déposer la requête, et quelle voie restera ouverte contre la décision qu'elle rendra ? Lis les textes applicables à la source. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier. Termine par une ligne de la forme « JURIDICTION : <juridiction à saisir> ».",
+  "budget_minutes": 15,
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "311-5",
+      "description": "trouve l'article R. 311-5 du code de justice administrative"
+    },
+    {
+      "type": "contient",
+      "motif": "juridiction ?\\*{0,2} ?: ?\\*{0,2} ?(la )?cour administrative d.appel",
+      "description": "désigne la cour administrative d'appel comme juridiction à saisir"
+    },
+    {
+      "type": "contient",
+      "motif": "premier et dernier ressort",
+      "description": "dit que la cour statue en premier et dernier ressort"
+    },
+    {
+      "type": "contient",
+      "motif": "cassation",
+      "description": "seule voie ouverte ensuite : le pourvoi en cassation",
+      "critique": false
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__get_norm",
+      "description": "lit les textes",
+      "critique": false
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__get_norm",
+      "entree_contient": "/(partie|livre|titre|chapitre|section)-",
+      "description": "méthode : lit la section qui contient l'article (articles voisins)",
+      "critique": false
+    }
+  ]
+}

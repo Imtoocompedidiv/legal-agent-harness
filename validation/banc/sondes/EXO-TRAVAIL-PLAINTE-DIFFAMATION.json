@@ -1,0 +1,46 @@
+{
+  "id": "EXO-TRAVAIL-PLAINTE-DIFFAMATION",
+  "capacite": "exercice",
+  "horloge": "2026-11-19T10:00",
+  "budget_minutes": 25,
+  "origine": "module mecanique-des-exercices, sonde de travail réel : plainte simple sans effet sur la prescription de trois mois en matière de presse (loi du 29 juillet 1881, art. 65)",
+  "consigne": "Nous sommes le jeudi 19 novembre 2026. Le 2 septembre 2026, un concurrent identifié de notre client, artisan plombier, a publié sur son site internet un article qui affirme que notre client facture des travaux qu'il ne réalise pas et escroque les personnes âgées. L'article est toujours en ligne. Le client a déjà déposé une main courante le 15 septembre. Il veut maintenant porter plainte auprès du procureur de la République : rédige dans ecritures/brouillons/ la plainte qu'il déposera lundi, et dis-moi ce qui reste à faire.",
+  "verifications": [
+    {
+      "type": "contient_tous",
+      "motifs": [
+        "trois mois",
+        "prescription"
+      ],
+      "description": "condition décisive : prescription de trois mois",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "n.interromp",
+        "pas interruptive",
+        "aucun effet interruptif",
+        "ne suspend",
+        "n.a (aucun|pas d.)effet sur la prescription",
+        "n.arrête(nt)? (pas )?(le|ce) délai",
+        "ne protège pas",
+        "n.empêche(nt)? pas (la )?prescription"
+      ],
+      "description": "la plainte simple ne protège pas la prescription",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "citation directe",
+        "constitution de partie civile"
+      ],
+      "description": "choix : citation directe ou plainte avec constitution de partie civile",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    }
+  ]
+}

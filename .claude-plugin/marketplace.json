@@ -1,0 +1,18 @@
+{
+  "name": "legal-agent-harness",
+  "owner": {
+    "name": "legal-agent-harness"
+  },
+  "metadata": {
+    "description": "Harness juridique français pour Claude Code : contentieux et conseil, avec pseudonymisation des dossiers.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "contentieux",
+      "description": "Pratique juridique française, contentieux et conseil : dossier persistant, verrous déterministes avant dépôt, sous-agents contradicteur et juge simulé, exercices juridictionnels ; pôles de conseil adaptés de Claude for Legal au droit français (contrats, sociétés, social, données personnelles, IA, propriété intellectuelle, conformité, précontentieux, formation, accès au droit), profil et positions du cabinet, échéancier, registres publics et veille.",
+      "version": "2.0.0",
+      "source": "./plugins/contentieux"
+    }
+  ]
+}

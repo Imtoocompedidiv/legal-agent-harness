@@ -1,0 +1,59 @@
+{
+  "objet": "Mesures provisoires et mesure définitive qu'elles préparent. Textes lus dans leur version en vigueur le 22 novembre 2026 ; décisions lues en entier. Le hook Stop injecte la ligne quand une réponse qui recommande des actes face à la mesure provisoire ne prépare pas la suivante.",
+  "mesures": [
+    {
+      "id": "suspension_agrement_assistant",
+      "marqueurs": ["suspension (?:de (?:son |l['’]|leur ))?agréments?", "agréments?[^.]{0,60}suspendu", "suspend\\w*[^.]{0,60}agrément"],
+      "suite": "retrait[^.]{0,220}(?:observations|attestations|témoignages|évaluations|pièces|consulter (?:le|son) dossier)|(?:observations|attestations|témoignages|évaluations)[^.]{0,220}retrait",
+      "ligne": "La suspension de l'agrément d'un assistant familial ou maternel est provisoire (quatre mois au plus) : elle prépare le retrait, qui exige l'avis de la commission consultative paritaire départementale, une information par lettre recommandée quinze jours avant la séance sur les motifs, l'accès au dossier et des observations écrites ou orales, avec l'assistance d'une personne choisie, et qui entraîne le licenciement. Dès la suspension, demander par écrit la teneur des faits reprochés, préparer les observations, les témoignages et les évaluations pour la commission et surveiller l'échéance des quatre mois (CASF, art. L. 421-6, L. 423-8, R. 421-23 et R. 421-24 ; CE, 9 nov. 2023, n° 473633)."
+    },
+    {
+      "id": "suspension_fonctionnaire",
+      "marqueurs": ["suspendue? de ses fonctions", "suspension (?:de|des) fonctions", "suspension à titre conservatoire[^.]{0,80}(?:agent|fonctionnaire)"],
+      "suite": "conseil de discipline|procédure disciplinaire|sanction disciplinaire",
+      "ligne": "La suspension d'un fonctionnaire est provisoire (quatre mois, traitement maintenu) : elle prépare la sanction, qui exige la saisine sans délai du conseil de discipline, la communication intégrale du dossier, une convocation quinze jours à l'avance et l'information préalable du droit de se taire. Dès la suspension, demander le dossier, compter l'échéance des quatre mois, ne rien déclarer sans avoir été informé du droit de se taire et anticiper une voie non disciplinaire comme l'insuffisance professionnelle (CGFP, art. L. 531-1 à L. 532-5 ; CE, Sect., 19 déc. 2024, n° 490157)."
+    },
+    {
+      "id": "mise_a_pied_conservatoire",
+      "marqueurs": ["mise à pied (?:à titre )?conservatoire"],
+      "suite": "entretien préalable|lettre de licenciement|procédure de licenciement",
+      "ligne": "La mise à pied conservatoire est provisoire et ne vaut que si la procédure suit sans délai injustifié : elle prépare le licenciement pour faute, qui exige un entretien préalable convoqué cinq jours ouvrables à l'avance avec assistance, puis une lettre motivée envoyée deux jours ouvrables au moins après l'entretien et au plus tard un mois après. Dès la mise à pied, dater l'écart avec la convocation (un délai injustifié la rend disciplinaire), vérifier la prescription de deux mois et préparer l'entretien (C. trav., art. L. 1232-2, L. 1232-4, L. 1232-6, L. 1332-2 à L. 1332-4 ; Cass. soc., 30 oct. 2013, n° 12-22.962)."
+    },
+    {
+      "id": "suspension_permis",
+      "marqueurs": ["rétention (?:immédiate )?du permis", "suspension (?:administrative )?du permis", "avis de rétention"],
+      "suite": "tribunal (?:correctionnel|de police)|poursuites|peine|juge pénal|ordonnance pénale|composition pénale",
+      "ligne": "La suspension administrative du permis est provisoire (six mois, un an pour l'alcool ou les stupéfiants) : elle prépare la peine judiciaire, qui la remplace et sur laquelle elle s'impute, et elle devient non avenue en cas de relaxe. Dès la rétention, vérifier le délai de 72 ou 120 heures et la régularité du dépistage, préparer la défense pénale et les pièces professionnelles utiles au choix de la peine, et ne pas conduire (C. route, art. L. 224-1, L. 224-2, L. 224-9, L. 224-16 et L. 234-2)."
+    },
+    {
+      "id": "fermeture_administrative",
+      "marqueurs": ["fermeture administrative"],
+      "suite": "réitération|permis d'exploitation|annulation du permis",
+      "ligne": "L'avertissement et la première fermeture administrative d'un débit de boissons ou d'un restaurant sont des paliers : ils préparent une fermeture plus longue en cas de réitération, voire l'annulation du permis d'exploitation après des délits, toujours après une procédure contradictoire. Dès le premier acte, répondre par écrit et demander à être entendu, démontrer l'absence de lien avec la fréquentation et les mesures correctrices (CSP, art. L. 3332-15 ; CRPA, art. L. 121-1, L. 121-2 et L. 122-1)."
+    },
+    {
+      "id": "mise_en_demeure_icpe",
+      "marqueurs": ["mise en demeure[^.]{0,120}(?:installations? classées?|ICPE|L\\. 171-8)", "arrêté de mise en demeure"],
+      "suite": "consignation|astreinte|amende administrative|suspension du fonctionnement|travaux d'office",
+      "ligne": "La mise en demeure en matière d'installations classées fixe un délai : elle prépare les sanctions de l'article L. 171-8, II du code de l'environnement (consignation, travaux d'office, suspension, amende jusqu'à 45 000 euros, astreinte), après communication des éléments retenus et délai d'observations, et le délit d'exploitation en violation de la mise en demeure. Le préfet étant en compétence liée, la discussion porte sur la réalité du manquement et la légalité des prescriptions. Dès la mise en demeure, répondre au rapport, exécuter et documenter dans le délai (C. env., art. L. 171-6, L. 171-8 et L. 173-1 ; CE, 10 mai 2023, n° 447189)."
+    },
+    {
+      "id": "assignation_retention_etranger",
+      "marqueurs": ["assignation à résidence", "placement en rétention", "centre de rétention"],
+      "suite": "sept jours|48 heures|quarante-huit heures|recours contre l'obligation",
+      "ligne": "L'assignation à résidence (45 jours, renouvelable deux fois) et la rétention (96 heures, puis prolongations judiciaires jusqu'à 90 jours) sont provisoires : elles préparent l'éloignement, contre lequel le recours se forme en sept jours si l'étranger est assigné et en 48 heures s'il est retenu, sans prorogation. Dès l'assignation, former le recours contre l'obligation de quitter le territoire, réunir les garanties de représentation et respecter les obligations de présentation (CESEDA, art. L. 731-1, L. 732-3, L. 741-1, L. 742-3, L. 742-4, L. 921-1, L. 921-2 et R. 921-1 à R. 921-3)."
+    },
+    {
+      "id": "mise_a_pied_salarie_protege",
+      "marqueurs": ["mise à pied[^.]{0,120}(?:délégué|membre du CSE|salarié protégé|mandat)", "(?:délégué|membre du CSE|salarié protégé)[^.]{0,120}mise à pied"],
+      "suite": "inspect\\w+ du travail|autorisation de licenciement",
+      "ligne": "La mise à pied d'un salarié protégé dure jusqu'à la décision de l'inspecteur du travail : elle prépare la demande d'autorisation de licenciement, qui exige la consultation du CSE dans les dix jours, une demande dans les quarante-huit heures ou huit jours, puis une enquête contradictoire où le salarié peut être assisté. Dès la mise à pied, compter ces délais, préparer l'audition devant le CSE et l'enquête, et réunir les éléments sur le lien avec le mandat (C. trav., art. L. 2421-1, L. 2421-3, R. 2421-6, R. 2421-11 et R. 2421-14)."
+    },
+    {
+      "id": "suspension_praticien",
+      "marqueurs": ["suspension immédiate du droit d'exercer", "suspension[^.]{0,60}(?:directeur général de l['’]agence régionale|ARS)"],
+      "suite": "chambre disciplinaire|conseil (?:régional|interrégional) de l'ordre|instance ordinale",
+      "ligne": "La suspension immédiate d'un praticien par le directeur général de l'agence régionale de santé est provisoire (cinq mois au plus, audition dans les trois jours) : elle prépare la décision de l'instance ordinale, qui doit statuer en deux mois. Dès la suspension, préparer l'audition, identifier la qualification retenue (insuffisance professionnelle ou discipline) et réunir les preuves de compétence et de sécurité des soins (CSP, art. L. 4113-14)."
+    }
+  ]
+}

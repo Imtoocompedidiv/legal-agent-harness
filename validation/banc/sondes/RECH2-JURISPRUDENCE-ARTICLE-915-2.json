@@ -1,0 +1,44 @@
+{
+  "id": "RECH2-JURISPRUDENCE-ARTICLE-915-2",
+  "capacite": "recherche",
+  "origine": "refonte recherche : jurisprudence trouvée par l'article qu'elle interprète (Cass., avis, 2e civ., section, 20 novembre 2025, n° 25-70.017, publié au Bulletin ; CPC, art. 915-2 et 954 issus du décret n° 2023-1391, appels formés à compter du 1er septembre 2024)",
+  "consigne": "Nous représentons l'appelant devant la cour d'appel de Versailles, dans une procédure avec représentation obligatoire. La déclaration d'appel, formée le 14 mars 2025 contre un jugement du tribunal judiciaire de Nanterre, énumère les chefs du dispositif critiqués. Le dispositif de nos premières conclusions demande l'infirmation du jugement sans reprendre ces chefs, et ne les modifie pas. L'intimé soutient que, faute d'énoncer les chefs critiqués dans le dispositif des conclusions, la cour n'est saisie d'aucun chef du jugement. Que vaut cette défense ? Appuie la réponse sur les textes et la jurisprudence lus à la source, avec le numéro des décisions. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier. Termine par une ligne de la forme « VERDICT : FONDEE » ou « VERDICT : NON FONDEE », qui qualifie la défense de l'intimé.",
+  "budget_minutes": 15,
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "25-70\\.017",
+      "description": "trouve l'avis de la Cour de cassation qui interprète l'article 915-2"
+    },
+    {
+      "type": "contient",
+      "motif": "verdict ?\\*{0,2} ?: ?\\*{0,2} ?non fond",
+      "description": "la défense de l'intimé n'est pas fondée"
+    },
+    {
+      "type": "contient",
+      "motif": "915-2",
+      "description": "article 915-2 du code de procédure civile"
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__search_decisions",
+      "entree_contient": "legal_article",
+      "description": "cherche la jurisprudence par l'article cité",
+      "critique": false
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__get_decision",
+      "description": "lit la décision",
+      "critique": false
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__get_norm",
+      "entree_contient": "/(partie|livre|titre|chapitre|section)-",
+      "description": "méthode : lit la section qui contient l'article (articles voisins)",
+      "critique": false
+    }
+  ]
+}

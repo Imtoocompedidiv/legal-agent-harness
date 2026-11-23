@@ -1,0 +1,40 @@
+{
+  "id": "RECH2-ARRET-CAA-ANNULE",
+  "capacite": "recherche",
+  "origine": "refonte recherche : suite d'une décision citée (CAA Marseille, 6 mai 2025, n° 24MA00153, annulé par CE, 2 juillet 2026, n° 505796, la cour ayant statué alors que le tribunal jugeait en premier et dernier ressort)",
+  "consigne": "Notre client a obtenu un permis de construire une maison sur une parcelle située à quarante mètres d'une bergerie. L'éleveur voisin attaque le permis devant le tribunal administratif en invoquant la règle de réciprocité de l'article L. 111-3 du code rural et de la pêche maritime. Nous voulons opposer l'arrêt de la cour administrative d'appel de Marseille du 6 mai 2025, n° 24MA00153, qui juge que ces règles de distance ne s'appliquent qu'en présence de bâtiments agricoles régulièrement édifiés et exploités. Peut-on s'appuyer sur cet arrêt ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier. Termine par une ligne de la forme « VERDICT : OUI » ou « VERDICT : NON », qui répond à la question.",
+  "budget_minutes": 15,
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "505796",
+      "description": "trouve la décision du Conseil d'État qui a annulé l'arrêt"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "annul",
+        "cass"
+      ],
+      "description": "dit que l'arrêt a été annulé"
+    },
+    {
+      "type": "contient",
+      "motif": "verdict ?\\*{0,2} ?: ?\\*{0,2} ?non\\b",
+      "description": "ne s'appuie pas sur un arrêt annulé"
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__get_decision",
+      "description": "lit l'arrêt et sa suite",
+      "critique": false
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__search_decisions",
+      "entree_contient": "legal_article",
+      "description": "méthode : cherche la jurisprudence par l'article (legal_article)",
+      "critique": false
+    }
+  ]
+}

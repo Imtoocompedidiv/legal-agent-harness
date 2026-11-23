@@ -1,0 +1,46 @@
+{
+  "id": "EXO-DIFFAMATION-PRESCRIPTION",
+  "capacite": "exercice",
+  "horloge": "2026-11-19T10:00",
+  "budget_minutes": 12,
+  "origine": "module mecanique-des-exercices : pénal, plainte simple sans effet sur la prescription de trois mois (loi du 29 juillet 1881, art. 53 et 65)",
+  "consigne": "Nous sommes le jeudi 19 novembre 2026. Le 2 septembre 2026, un concurrent identifié de notre client, artisan plombier, a publié sur son site internet un article qui affirme que notre client facture des travaux qu'il ne réalise pas et escroque les personnes âgées. L'article est toujours en ligne. Le 15 septembre, le client a déposé une plainte au commissariat ; il n'a eu aucune nouvelle depuis. Il veut obtenir la condamnation de l'auteur et la réparation de son préjudice. Quel acte engages-tu, devant qui, dans quel délai, et quelle condition décide de son succès ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier. Termine par une ligne de la forme « EXERCICE RETENU : … » qui nomme l'acte ou la démarche que tu engages en premier, avec son texte.",
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "exercice retenu.{0,200}(citation directe|partie civile)",
+      "description": "choix : citation directe ou plainte avec constitution de partie civile"
+    },
+    {
+      "type": "contient_tous",
+      "motifs": [
+        "trois mois",
+        "prescription"
+      ],
+      "description": "condition décisive : prescription de trois mois"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "article 53",
+        "art\\. 53",
+        "53 de la loi",
+        "qualifi",
+        "texte de loi applicable"
+      ],
+      "description": "exigence implicite : formalisme de l'article 53 (qualification et texte applicable)"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "n.interromp",
+        "pas interruptive",
+        "n.a pas interrompu",
+        "aucun effet interruptif",
+        "ne suspend"
+      ],
+      "description": "la plainte simple n'a pas interrompu la prescription",
+      "critique": false
+    }
+  ]
+}

@@ -1,0 +1,362 @@
+[
+  {
+    "type": "rupture_contrat_travail",
+    "si": {},
+    "libelle": "Prescription de l'action portant sur la rupture du contrat de travail",
+    "mois": 12, "jours": 0, "franc": false, "depart": "notification",
+    "texte": "C. trav., art. L. 1471-1, al. 2 ; C. civ., art. 2228 et 2229 ; Cass. soc., 18 févr. 2026, n° 24-22.645 (F-D)",
+    "effet": "Au-delà, l'action est irrecevable comme prescrite (CPC, art. 122). Le jour de la notification ne compte pas et la chambre sociale vise la réception de la lettre recommandée ; retenir par prudence l'échéance calculée depuis l'envoi. La prorogation au premier jour ouvrable (CPC, art. 642) n'est pas établie pour un délai de prescription.",
+    "source_url": "https://librejustice.fr/norm/fr/code-du-travail/l1471-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "licenciement_economique_notifie",
+    "si": {"contestation": "individuelle"},
+    "libelle": "Prescription de la contestation individuelle du licenciement pour motif économique",
+    "mois": 12, "jours": 0, "franc": false, "depart": "notification",
+    "texte": "C. trav., art. L. 1235-7",
+    "effet": "Contestation prescrite au-delà ; pour une contestation portant sur la procédure collective de licenciement, le délai court de la dernière réunion du comité social et économique.",
+    "source_url": "https://librejustice.fr/norm/fr/code-du-travail/l1235-7",
+    "lu_en_entier": true
+  },
+  {
+    "type": "faits_execution_contrat_travail",
+    "si": {},
+    "libelle": "Prescription de l'action portant sur l'exécution du contrat de travail",
+    "mois": 24, "jours": 0, "franc": false, "depart": "connaissance",
+    "texte": "C. trav., art. L. 1471-1, al. 1 et 3",
+    "effet": "Ne s'applique pas aux actions en paiement du salaire, en réparation d'un dommage corporel, ni aux actions fondées sur L. 1132-1, L. 1152-1 et L. 1153-1.",
+    "source_url": "https://librejustice.fr/norm/fr/code-du-travail/l1471-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "salaire_exigible",
+    "si": {},
+    "libelle": "Prescription de l'action en paiement ou en répétition du salaire",
+    "mois": 36, "jours": 0, "franc": false, "depart": "connaissance",
+    "texte": "C. trav., art. L. 3245-1",
+    "effet": "La demande peut porter sur les trois années précédant le jour de la connaissance ou, après la rupture, sur les trois années précédant la rupture.",
+    "source_url": "https://librejustice.fr/norm/fr/code-du-travail/l3245-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "revelation_discrimination",
+    "si": {},
+    "libelle": "Prescription de l'action en réparation d'une discrimination",
+    "mois": 60, "jours": 0, "franc": false, "depart": "connaissance",
+    "texte": "C. trav., art. L. 1134-5",
+    "effet": "Le point de départ est la révélation de la discrimination ; le délai n'est pas aménageable conventionnellement.",
+    "source_url": "https://librejustice.fr/norm/fr/code-du-travail/l1134-5",
+    "lu_en_entier": true
+  },
+  {
+    "type": "homologation_rupture_conventionnelle",
+    "si": {},
+    "libelle": "Recours juridictionnel contre la convention de rupture ou son homologation",
+    "mois": 12, "jours": 0, "franc": false, "depart": "date",
+    "texte": "C. trav., art. L. 1237-14, al. 4",
+    "effet": "Recours irrecevable au-delà ; compétence exclusive du conseil de prud'hommes. Point de départ : date d'homologation.",
+    "source_url": "https://librejustice.fr/norm/fr/code-du-travail/l1237-14",
+    "lu_en_entier": true
+  },
+  {
+    "type": "signature_recu_solde_de_tout_compte",
+    "si": {},
+    "libelle": "Dénonciation du reçu pour solde de tout compte",
+    "mois": 6, "jours": 0, "franc": false, "depart": "date",
+    "texte": "C. trav., art. L. 1234-20",
+    "effet": "Au-delà, le reçu devient libératoire pour l'employeur pour les sommes qui y sont mentionnées. Point de départ : signature du reçu.",
+    "source_url": "https://librejustice.fr/norm/fr/code-du-travail/l1234-20",
+    "lu_en_entier": true
+  },
+  {
+    "type": "jugement_prudhomal",
+    "si": {"ressort": "premier"},
+    "libelle": "Fin du délai d'appel du jugement du conseil de prud'hommes",
+    "mois": 1, "jours": 0, "franc": false, "depart": "notification",
+    "texte": "C. trav., art. R. 1461-1, R. 1461-2, R. 1454-26 ; CPC, art. 528, 640 à 643, 668",
+    "effet": "Appel devant la chambre sociale avec avocat ou défenseur syndical. La notification par le greffe vaut à la date de réception de la lettre recommandée. Pas d'appel si le jugement est en dernier ressort (R. 1462-1, D. 1462-3 : 5 000 euros).",
+    "source_url": "https://librejustice.fr/norm/fr/code-du-travail/r1461-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "ordonnance_refere_prudhomal",
+    "si": {},
+    "libelle": "Fin du délai d'appel de l'ordonnance de référé prud'homale",
+    "mois": 0, "jours": 15, "franc": false, "depart": "notification",
+    "texte": "C. trav., art. R. 1455-11 ; CPC, art. 528, 640 à 643",
+    "effet": "Appel formé, instruit et jugé selon R. 1461-1 et R. 1461-2.",
+    "source_url": "https://librejustice.fr/norm/fr/code-du-travail/r1455-11",
+    "lu_en_entier": true
+  },
+  {
+    "type": "jugement_tribunal_commerce",
+    "si": {"ressort": "premier"},
+    "libelle": "Fin du délai d'appel du jugement du tribunal de commerce",
+    "mois": 1, "jours": 0, "franc": false, "depart": "notification",
+    "texte": "CPC, art. 538, 528, 640 à 643 ; C. com., art. R. 721-6",
+    "effet": "Pas d'appel pour les demandes jusqu'à 5 000 euros (R. 721-6). Les décisions rendues en matière de procédures collectives suivent un délai de dix jours (R. 661-3).",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/538",
+    "lu_en_entier": true
+  },
+  {
+    "type": "jugement_competence",
+    "si": {},
+    "libelle": "Fin du délai d'appel du jugement statuant exclusivement sur la compétence",
+    "mois": 0, "jours": 15, "franc": false, "depart": "notification",
+    "texte": "CPC, art. 84",
+    "effet": "L'appelant doit saisir le premier président dans le même délai pour être autorisé à assigner à jour fixe ou obtenir une fixation prioritaire, à peine de caducité de la déclaration d'appel.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/84",
+    "lu_en_entier": true
+  },
+  {
+    "type": "ordonnance_refere_civile_ou_commerciale",
+    "si": {"dernier_ressort": false},
+    "libelle": "Fin du délai d'appel de l'ordonnance de référé",
+    "mois": 0, "jours": 15, "franc": false, "depart": "notification",
+    "texte": "CPC, art. 490, 528, 640 à 643",
+    "effet": "Ordonnance rendue en dernier ressort : pas d'appel ; si elle est rendue par défaut, opposition dans le même délai.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/490",
+    "lu_en_entier": true
+  },
+  {
+    "type": "signification_ordonnance_injonction_payer",
+    "si": {"a_personne": true},
+    "libelle": "Fin du délai d'opposition à l'ordonnance d'injonction de payer signifiée à personne",
+    "mois": 1, "jours": 0, "franc": false, "depart": "signification",
+    "texte": "CPC, art. 1416, al. 1 ; art. 1413, 1415",
+    "effet": "Opposition tardive irrecevable ; l'ordonnance devient titre exécutoire après l'expiration des causes suspensives et d'un délai de deux mois suivant la signification, sans appel possible (CPC, art. 1422).",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/1416",
+    "lu_en_entier": true
+  },
+  {
+    "type": "premier_acte_a_personne_ou_premiere_mesure_indisponibilite",
+    "si": {"signification_ordonnance_a_personne": false},
+    "libelle": "Fin du délai d'opposition lorsque l'ordonnance n'a pas été signifiée à personne",
+    "mois": 1, "jours": 0, "franc": false, "depart": "signification",
+    "texte": "CPC, art. 1416, al. 2 ; Cass. 2e civ., 6 mars 2025, n° 22-18.166 (publié)",
+    "effet": "Le délai court du premier acte signifié à personne ou, à défaut, de la première mesure d'exécution rendant indisponibles tout ou partie des biens du débiteur ; une saisie-attribution de compte constitue une telle mesure.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/1416",
+    "lu_en_entier": true
+  },
+  {
+    "type": "ordonnance_injonction_payer_rendue",
+    "si": {"rendue_a_compter_du_2026_09_01": true},
+    "libelle": "Signification de l'ordonnance d'injonction de payer",
+    "mois": 3, "jours": 0, "franc": false, "depart": "prononce",
+    "texte": "CPC, art. 1411, al. 3 (rédaction issue du décret n° 2026-96 du 16 février 2026, applicable aux ordonnances rendues à compter du 1er septembre 2026)",
+    "effet": "Faute de signification dans ce délai, l'ordonnance est non avenue.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/1411",
+    "lu_en_entier": true
+  },
+  {
+    "type": "ordonnance_injonction_payer_rendue",
+    "si": {"rendue_a_compter_du_2026_09_01": false},
+    "libelle": "Signification de l'ordonnance d'injonction de payer (régime antérieur)",
+    "mois": 6, "jours": 0, "franc": false, "depart": "prononce",
+    "texte": "CPC, art. 1411, al. 3, version du 1er mars 2022 au 31 mars 2026 (lue à la date du 1er juin 2025)",
+    "effet": "Faute de signification dans ce délai, l'ordonnance est non avenue. Pour une ordonnance rendue entre le 1er avril et le 31 août 2026, relire la note d'application du décret du 16 février 2026 avant de retenir ce délai.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/1411",
+    "lu_en_entier": true
+  },
+  {
+    "type": "depot_requete_injonction_payer",
+    "si": {"juridiction": "tribunal_de_commerce"},
+    "libelle": "Consignation des frais de la requête en injonction de payer devant le tribunal de commerce",
+    "mois": 0, "jours": 15, "franc": false, "depart": "date",
+    "texte": "CPC, art. 1425, al. 1",
+    "effet": "Faute de consignation dans les quinze jours de la demande, celle-ci est caduque.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/1425",
+    "lu_en_entier": true
+  },
+  {
+    "type": "publication_jugement_ouverture",
+    "si": {"creancier_hors_territoire": false},
+    "libelle": "Fin du délai de déclaration de créance",
+    "mois": 2, "jours": 0, "franc": false, "depart": "publication",
+    "texte": "C. com., art. R. 622-24, al. 1 ; L. 622-24 ; L. 641-3",
+    "effet": "Au-delà, le créancier n'est pas admis aux répartitions sauf relevé de forclusion (L. 622-26). Publication au BODACC. Le titulaire d'une sûreté publiée court de la notification de l'avertissement personnel.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-commerce/r622-24",
+    "lu_en_entier": true
+  },
+  {
+    "type": "publication_jugement_ouverture",
+    "si": {"creancier_hors_territoire": true},
+    "libelle": "Fin du délai de déclaration de créance pour le créancier qui ne demeure pas sur le territoire de la juridiction d'ouverture",
+    "mois": 4, "jours": 0, "franc": false, "depart": "publication",
+    "texte": "C. com., art. R. 622-24, al. 2 et 3",
+    "effet": "Délai de deux mois augmenté de deux mois pour le créancier qui ne demeure pas en France métropolitaine (procédure ouverte en métropole) ou dans le département ou la collectivité d'outre-mer du siège de la juridiction.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-commerce/r622-24",
+    "lu_en_entier": true
+  },
+  {
+    "type": "publication_jugement_ouverture",
+    "si": {"objet": "releve_de_forclusion"},
+    "libelle": "Fin du délai de l'action en relevé de forclusion",
+    "mois": 6, "jours": 0, "franc": false, "depart": "publication",
+    "texte": "C. com., art. L. 622-26, al. 3 ; Cass. com., 23 mai 2024, n° 23-10.699 (F-D)",
+    "effet": "Requête irrecevable au-delà, sauf impossibilité, établie par le créancier, de connaître l'obligation du débiteur avant l'expiration du délai ; le délai court alors du jour où il ne pouvait plus ignorer sa créance. Pour le titulaire d'une sûreté ou d'un contrat publiés, départ à la réception de l'avis.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-commerce/l622-26",
+    "lu_en_entier": true
+  },
+  {
+    "type": "publication_jugement_ouverture",
+    "si": {"objet": "revendication"},
+    "libelle": "Fin du délai de revendication des meubles",
+    "mois": 3, "jours": 0, "franc": false, "depart": "publication",
+    "texte": "C. com., art. L. 624-9 ; R. 624-13, al. 1",
+    "effet": "La demande, adressée par lettre recommandée à l'administrateur ou au débiteur avec copie au mandataire, doit être faite dans ce délai.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-commerce/l624-9",
+    "lu_en_entier": true
+  },
+  {
+    "type": "reception_demande_revendication",
+    "si": {"acquiescement": false},
+    "libelle": "Fin du délai de saisine du juge-commissaire après une demande de revendication sans acquiescement",
+    "mois": 2, "jours": 0, "franc": false, "depart": "reception",
+    "texte": "C. com., art. R. 624-13, al. 2",
+    "effet": "Un mois de réponse à compter de la réception de la demande, puis un mois pour saisir le juge-commissaire, sous peine de forclusion.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-commerce/r624-13",
+    "lu_en_entier": true
+  },
+  {
+    "type": "reception_lettre_discussion_creance",
+    "si": {},
+    "libelle": "Fin du délai de réponse du créancier à la discussion de sa créance par le mandataire",
+    "mois": 0, "jours": 30, "franc": false, "depart": "reception",
+    "texte": "C. com., art. L. 622-27 ; R. 624-1, al. 2",
+    "effet": "Sans réponse, le créancier ne peut plus contester la proposition du mandataire, sauf si la discussion porte sur la régularité de la déclaration.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-commerce/l622-27",
+    "lu_en_entier": true
+  },
+  {
+    "type": "ordonnance_juge_commissaire",
+    "si": {"objet": "autre_que_admission"},
+    "libelle": "Fin du délai de recours contre l'ordonnance du juge-commissaire",
+    "mois": 0, "jours": 10, "franc": false, "depart": "notification",
+    "texte": "C. com., art. R. 621-21, al. 4",
+    "effet": "Recours devant le tribunal par déclaration contre récépissé ou lettre recommandée avec demande d'avis de réception au greffe ; le délai court de la communication ou de la notification.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-commerce/r621-21",
+    "lu_en_entier": true
+  },
+  {
+    "type": "ordonnance_juge_commissaire",
+    "si": {"objet": "admission_des_creances"},
+    "libelle": "Fin du délai d'appel de la décision du juge-commissaire statuant sur l'admission",
+    "mois": 0, "jours": 10, "franc": false, "depart": "notification",
+    "texte": "C. com., art. R. 624-7 et R. 661-3, al. 1",
+    "effet": "Recours porté devant la cour d'appel.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-commerce/r661-3",
+    "lu_en_entier": true
+  },
+  {
+    "type": "ordonnance_juge_commissaire",
+    "si": {"objet": "renvoi_contestation_serieuse_ou_incompetence"},
+    "libelle": "Fin du délai de saisine de la juridiction compétente après renvoi par le juge-commissaire",
+    "mois": 1, "jours": 0, "franc": false, "depart": "notification",
+    "texte": "C. com., art. R. 624-5, al. 1",
+    "effet": "À peine de forclusion, sauf appel lorsque cette voie est ouverte ; le délai court de la notification ou de la réception de l'avis.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-commerce/r624-5",
+    "lu_en_entier": true
+  },
+  {
+    "type": "decision_procedure_collective",
+    "si": {},
+    "libelle": "Fin du délai d'appel des décisions rendues en matière de sauvegarde, redressement ou liquidation judiciaires",
+    "mois": 0, "jours": 10, "franc": false, "depart": "notification",
+    "texte": "C. com., art. R. 661-3, al. 1",
+    "effet": "Sauf dispositions contraires ; le débiteur qui fait appel du jugement arrêtant ou rejetant le plan de cession dispose de dix jours à compter du prononcé (al. 2).",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-commerce/r661-3",
+    "lu_en_entier": true
+  },
+  {
+    "type": "ordonnance_autorisation_mesure_conservatoire",
+    "si": {},
+    "libelle": "Caducité de l'autorisation non exécutée",
+    "mois": 3, "jours": 0, "franc": false, "depart": "prononce",
+    "texte": "CPCE, art. R. 511-6",
+    "effet": "L'autorisation est caduque si la mesure n'a pas été exécutée dans les trois mois de l'ordonnance.",
+    "source_url": "https://librejustice.fr/norm/fr/code-des-procedures-civiles-d-execution/r511-6",
+    "lu_en_entier": true
+  },
+  {
+    "type": "execution_mesure_conservatoire",
+    "si": {"titre_executoire": false},
+    "libelle": "Introduction de la procédure tendant à l'obtention d'un titre exécutoire",
+    "mois": 1, "jours": 0, "franc": false, "depart": "date",
+    "texte": "CPCE, art. R. 511-7 ; L. 511-4",
+    "effet": "À peine de caducité de la mesure ; après rejet d'une requête en injonction de payer présentée dans ce délai, le juge du fond peut être saisi dans le mois de l'ordonnance de rejet. Point de départ : exécution de la mesure.",
+    "source_url": "https://librejustice.fr/norm/fr/code-des-procedures-civiles-d-execution/r511-7",
+    "lu_en_entier": true
+  },
+  {
+    "type": "saisie_conservatoire_creances_pratiquee",
+    "si": {},
+    "libelle": "Dénonciation de la saisie conservatoire de créances au débiteur",
+    "mois": 0, "jours": 8, "franc": false, "depart": "date",
+    "texte": "CPCE, art. R. 523-3",
+    "effet": "À peine de caducité ; l'acte de dénonciation contient à peine de nullité les mentions de l'article R. 523-3.",
+    "source_url": "https://librejustice.fr/norm/fr/code-des-procedures-civiles-d-execution/r523-3",
+    "lu_en_entier": true
+  },
+  {
+    "type": "actes_diligences_titre_executoire",
+    "si": {"mesure_entre_les_mains_d_un_tiers": true},
+    "libelle": "Signification au tiers des actes attestant les diligences de l'article R. 511-7",
+    "mois": 0, "jours": 8, "franc": false, "depart": "date",
+    "texte": "CPCE, art. R. 511-8",
+    "effet": "À défaut, la mesure conservatoire est caduque. Point de départ : date des actes.",
+    "source_url": "https://librejustice.fr/norm/fr/code-des-procedures-civiles-d-execution/r511-8",
+    "lu_en_entier": true
+  },
+  {
+    "type": "denonciation_saisie_attribution",
+    "si": {},
+    "libelle": "Fin du délai de contestation de la saisie-attribution",
+    "mois": 1, "jours": 0, "franc": false, "depart": "signification",
+    "texte": "CPCE, art. R. 211-11, al. 1",
+    "effet": "À peine d'irrecevabilité ; la contestation est dénoncée le même jour ou le premier jour ouvrable suivant au commissaire de justice qui a saisi, par lettre recommandée avec demande d'avis de réception. Point de départ : dénonciation de la saisie au débiteur.",
+    "source_url": "https://librejustice.fr/norm/fr/code-des-procedures-civiles-d-execution/r211-11",
+    "lu_en_entier": true
+  },
+  {
+    "type": "jugement_juge_execution",
+    "si": {},
+    "libelle": "Fin du délai d'appel de la décision du juge de l'exécution",
+    "mois": 0, "jours": 15, "franc": false, "depart": "notification",
+    "texte": "CPCE, art. R. 121-19, R. 121-20, R. 121-15, R. 121-21",
+    "effet": "Appel selon la procédure à bref délai ou à jour fixe ; ni le délai ni l'appel ne sont suspensifs.",
+    "source_url": "https://librejustice.fr/norm/fr/code-des-procedures-civiles-d-execution/r121-20",
+    "lu_en_entier": true
+  },
+  {
+    "type": "evenement_defaillance_emprunteur",
+    "si": {},
+    "libelle": "Forclusion de l'action en paiement du prêteur (crédit à la consommation)",
+    "mois": 24, "jours": 0, "franc": false, "depart": "date",
+    "texte": "C. consom., art. R. 312-35 ; R. 632-1",
+    "effet": "Action forclose au-delà, relevée d'office. Point de départ : non-paiement après résiliation ou terme, premier incident de paiement non régularisé, dépassement non régularisé du crédit renouvelable ou du découvert ; reporté en cas de réaménagement ou rééchelonnement convenu ou de mesures de surendettement.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-la-consommation/r312-35",
+    "lu_en_entier": true
+  },
+  {
+    "type": "obligation_nee_entre_commercants",
+    "si": {},
+    "libelle": "Prescription des obligations nées à l'occasion de leur commerce entre commerçants ou avec des non-commerçants",
+    "mois": 60, "jours": 0, "franc": false, "depart": "connaissance",
+    "texte": "C. com., art. L. 110-4, I ; C. civ., art. 2224",
+    "effet": "Sauf prescription spéciale plus courte. L. 110-4 ne fixe pas de point de départ ; celui de l'article 2224 (connaissance des faits) est retenu ici sans vérification jurisprudentielle.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-commerce/l110-4",
+    "lu_en_entier": true
+  },
+  {
+    "type": "fait_generateur_action_personnelle",
+    "si": {},
+    "libelle": "Prescription de droit commun des actions personnelles ou mobilières",
+    "mois": 60, "jours": 0, "franc": false, "depart": "connaissance",
+    "texte": "C. civ., art. 2224, 2241",
+    "effet": "Interrompue par la demande en justice, même en référé ou devant une juridiction incompétente (2241).",
+    "source_url": "https://librejustice.fr/norm/fr/code-civil/2224",
+    "lu_en_entier": true
+  }
+]

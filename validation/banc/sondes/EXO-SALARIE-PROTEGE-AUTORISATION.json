@@ -1,0 +1,49 @@
+{
+  "id": "EXO-SALARIE-PROTEGE-AUTORISATION",
+  "capacite": "exercice",
+  "horloge": "2026-11-19T10:00",
+  "budget_minutes": 12,
+  "origine": "module mecanique-des-exercices : prud'homal, juge lié par l'autorisation administrative (Cass. soc., 15 juin 2022, n° 20-22.430 ; C. trav., art. R. 2422-1)",
+  "consigne": "Nous sommes le jeudi 19 novembre 2026. Notre cliente, membre titulaire du comité social et économique d'une entreprise de logistique, a été licenciée pour faute grave par une lettre du 6 novembre 2026. L'inspectrice du travail avait autorisé ce licenciement par une décision du 28 octobre 2026, notifiée à la salariée le 30 octobre. La cliente conteste la réalité des faits reprochés et pense que son licenciement est lié à son mandat. Elle veut saisir le conseil de prud'hommes pour faire juger que son licenciement est sans cause réelle et sérieuse. Quel acte engages-tu, devant qui, dans quel délai, et quelle condition décide de son succès ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier. Termine par une ligne de la forme « EXERCICE RETENU : … » qui nomme l'acte ou la démarche que tu engages en premier, avec son texte.",
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "exercice retenu.{0,220}(autorisation|inspect|ministre|hiérarchique|excès de pouvoir|tribunal administratif|2422)",
+      "description": "choix : recours contre l'autorisation administrative"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "séparation des pouvoirs",
+        "ne peut (pas )?(apprécier|juger|contrôler|remettre en cause|se prononcer)",
+        "lié par (l.|cette )autorisation"
+      ],
+      "description": "voisin écarté : le juge prud'homal ne peut apprécier la cause d'un licenciement autorisé"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "(rapport|lien) avec (le|son|ses) mandat",
+        "lié (à|au) (son )?mandat",
+        "gravité suffisante",
+        "suffisamment grave"
+      ],
+      "description": "condition décisive : contrôle du lien avec le mandat et de la gravité de la faute"
+    },
+    {
+      "type": "contient",
+      "motif": "deux mois",
+      "description": "exigence implicite : délai de deux mois"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "réintégration",
+        "2422-4",
+        "2422-1"
+      ],
+      "description": "droits nés de l'annulation",
+      "critique": false
+    }
+  ]
+}

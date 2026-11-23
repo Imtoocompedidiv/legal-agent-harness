@@ -1,0 +1,66 @@
+--- a/scripts/hook.py
++++ b/scripts/hook.py
+@@ -272,7 +272,7 @@
+         if rel_l == "strategie/theorie_adverse.md" and not agent.endswith("avocat-adverse"):
+             refuser("La théorie adverse ne s'écrit que par le sous-agent avocat-adverse, à partir des seules pièces : "
+                     "elle sert d'épreuve à notre théorie et ne peut pas être ajustée par la session principale.")
+-        for suffixe, auteur in ((".lecture_froid", "juge-simule"), (".contradiction", "contradicteur"),
++        for suffixe, auteur in ((".lecture_froid", "juge-simule"), (".rapport_rapporteur", "rapporteur-simule"), (".contradiction", "contradicteur"),
+                                 (".lecture_profane", "lecteur-profane")):
+             # Le rapport et ses variantes (seconde lecture, collège : .lecture_froid_2.json, .lecture_froid_c3.json).
+             if rel_l.startswith("ecritures/controle/") and re.search(re.escape(suffixe) + r"(_[a-z0-9]+)?\.json$", rel_l) and not agent.endswith(auteur):
+--- a/scripts/gate.py
++++ b/scripts/gate.py
+@@ -98,7 +98,7 @@
+ def chemins(ecriture: Path, racine: Path) -> dict:
+     stem = ecriture.stem
+     ctrl = racine / "ecritures" / "controle"
+-    return {k: ctrl / f"{stem}.{k}.json" for k in ("fiche", "lecture_froid", "contradiction", "gate")}
++    return {k: ctrl / f"{stem}.{k}.json" for k in ("fiche", "lecture_froid", "rapport_rapporteur", "contradiction", "gate")}
+ 
+ 
+ def controler(ecriture: Path) -> dict:
+@@ -471,6 +471,14 @@
+             elif lf.get("issue_binaire") == "echec" or lf.get("issue") in ("rejet", "irrecevable", "tri"):
+                 c("LECTURE_FROID_DEFAVORABLE", "BLOQUANT", f"Le juge simulé rejetterait l'acte ({lf.get('categorie_motif') or lf.get('issue')}) : "
+                   f"{'; '.join(str(m) for m in lf.get('motifs', []))[:400]}", categorie=lf.get("categorie_motif"))
++    # Délibéré en deux temps : la lecture à froid ne vaut que précédée du rapport du rapporteur sur la même version.
++    rr = L.lire_json(ch["rapport_rapporteur"])
++    if juridictionnel and type_acte != "conclusions":
++        if rr is None:
++            c("RAPPORT_RAPPORTEUR_ABSENT", "BLOQUANT", "Aucun rapport du sous-agent rapporteur-simule : la formation statuerait sans instruction "
++              "condition par condition (textes lus, standard, charge de la preuve).")
++        elif rr.get("sha256") != empreinte:
++            c("RAPPORT_RAPPORTEUR_PERIME", "BLOQUANT", "Le rapport du rapporteur porte sur une autre version du texte (empreinte différente).")
+     # Contradiction close.
+     ct = L.lire_json(ch["contradiction"])
+     if juridictionnel:
+--- a/tests/test_contentieux.py
++++ b/tests/test_contentieux.py
+@@ -156,6 +156,10 @@
+         base = {"hook_event_name": "PreToolUse", "cwd": str(self.r), "tool_name": "Write", "tool_input": {"file_path": cible, "content": "{}"}}
+         self.assertEqual(hook(base)["hookSpecificOutput"]["permissionDecision"], "deny")
+         self.assertEqual(hook({**base, "agent_type": "contentieux:juge-simule"}), {})
++        rap = {**base, "tool_input": {"file_path": str(self.r / "ecritures/controle/ref.rapport_rapporteur.json"), "content": "{}"}}
++        self.assertEqual(hook(rap)["hookSpecificOutput"]["permissionDecision"], "deny")
++        self.assertEqual(hook({**rap, "agent_type": "contentieux:rapporteur-simule"}), {})
++        self.assertEqual(hook({**rap, "agent_type": "contentieux:juge-simule"})["hookSpecificOutput"]["permissionDecision"], "deny")
+         contra = {**base, "tool_input": {"file_path": str(self.r / "ecritures/controle/ref.contradiction.json"), "content": "{}"}}
+         self.assertEqual(hook(contra)["hookSpecificOutput"]["permissionDecision"], "deny")
+         self.assertEqual(hook({**contra, "tool_name": "Edit"}), {})
+@@ -335,13 +339,14 @@
+         profil.update({"date": maintenant, "actes_couverts": ["ref"]})
+         ecrire(self.r / "strategie/decideurs.json", profil)
+         v = gate.controler(f)
+-        self.assertEqual(self.codes(v), {"LECTURE_PROFANE_ABSENTE", "LECTURE_FROID_ABSENTE", "CONTRADICTION_ABSENTE"})
++        self.assertEqual(self.codes(v), {"LECTURE_PROFANE_ABSENTE", "LECTURE_FROID_ABSENTE", "RAPPORT_RAPPORTEUR_ABSENT", "CONTRADICTION_ABSENTE"})
+         sha = L.sha256_fichier(f)
+         ecrire(self.r / "ecritures/controle/ref.lecture_profane.json", {"sha256": sha, "a_compris_la_demande": True,
+                "restitution": "Un avis médical du 10 mars 2026 préconise un aménagement que le directeur n'a pas examiné."})
+         ecrire(self.r / "ecritures/controle/ref.lecture_froid.json", {"sha256": sha, "decision_claire": True, "question_claire": True,
+                                                                       "demande_claire": True, "issue": "audience", "motifs": [],
+                                                                       "profil_decideur_sha256": DEC.empreinte_fiche(profil, profil["decideurs"][0])})
++        ecrire(self.r / "ecritures/controle/ref.rapport_rapporteur.json", {"sha256": sha, "conditions": [], "projet": {"issue": "audience"}})
+         ecrire(self.r / "ecritures/controle/ref.contradiction.json", {"points": [{"id": 1, "objection": "o", "statut": "applique"}]})
+         v = gate.controler(f)
+         self.assertEqual(v["verdict"], "PASS", v["constats"])

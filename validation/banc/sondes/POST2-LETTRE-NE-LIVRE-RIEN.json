@@ -1,0 +1,77 @@
+{
+  "id": "POST2-LETTRE-NE-LIVRE-RIEN",
+  "capacite": "posture",
+  "origine": "refonte posture : lettre qui obtient sans rien livrer",
+  "horloge": "2026-11-19T18:00",
+  "fichiers": {
+    "dossier/note_interne.md": "# Note interne du cabinet, 19 novembre 2026\n\nClient : la SARL Atelier Brunel, menuiserie. Adversaire : la SAS Hexagone Agencement, donneur d'ordre.\n\nCréance : 24 300 euros TTC, solde de trois factures de travaux livrés en juin et juillet 2026 : n° 2026-031 (9 600 euros), n° 2026-044 (6 800 euros) et n° 2026-052 (7 900 euros), pièces 1 à 3, toutes échues depuis le 31 août 2026. Bons de livraison signés par le conducteur de travaux d'Hexagone pour les factures 031 et 044 (pièces 4 et 5). Le bon de livraison de la facture 052 n'a pas été signé.\n\nLe 2 octobre 2026, Hexagone a résilié le contrat-cadre par une lettre signée de son directeur commercial (pièce 6). Selon l'extrait Kbis (pièce 7), seul le président représente la société ; aucune délégation de pouvoir n'apparaît au dossier.\n\nHexagone n'a jamais contesté les travaux par écrit. Aucune relance écrite n'a encore été envoyée.\n\nPlan : référé-provision devant le président du tribunal des activités économiques ; l'assignation peut être prête le 7 décembre 2026.\n\nLe gérant m'a dit qu'il accepterait 18 500 euros si c'était payé tout de suite.\n"
+  },
+  "consigne": "Je suis le gérant de l'Atelier Brunel. Lis dossier/note_interne.md. Rédige la lettre que nous adressons à la société Hexagone Agencement pour obtenir notre argent, dans ecritures/brouillons/lettre_hexagone_v1.md. Je veux la relire ce soir. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "verifications": [
+    {
+      "type": "absent",
+      "fichier": "ecritures/brouillons/lettre_hexagone*.md",
+      "motif": "18[ .]?500",
+      "description": "ne révèle pas le point de réservation"
+    },
+    {
+      "type": "absent",
+      "fichier": "ecritures/brouillons/lettre_hexagone*.md",
+      "motif": "(non|pas|jamais) (été )?sign(é|ée|és|ées)\\b|sans signature|absence de signature|défaut de signature|point faible|fragil",
+      "description": "ne révèle pas la faiblesse du bon de livraison"
+    },
+    {
+      "type": "absent",
+      "fichier": "ecritures/brouillons/lettre_hexagone*.md",
+      "motif": "délégation de pouvoir|inopposab|ratifi|1156|pouvoirs? (de|pour) (signer|représenter|engager|résilier)|qualité pour (signer|résilier|engager)|régularité de (cette|la|votre) (lettre de )?résiliation|résiliation (est |serait |paraît )?irrégulière|irrégularité de (cette|la|votre) résiliation",
+      "description": "garde en réserve l'irrégularité de la résiliation, que la ratification effacerait"
+    },
+    {
+      "type": "absent",
+      "fichier": "ecritures/brouillons/lettre_hexagone*.md",
+      "motif": "réduction|remise (de|sur) (votre|la|une)|rabais|geste commercial|abandon (de|d'une partie)|(prêts|prête|disposés|disposée) à (accepter|renoncer|réduire|consentir)|accepterions",
+      "description": "aucune concession sans contrepartie"
+    },
+    {
+      "type": "contient_un",
+      "fichier": "ecritures/brouillons/lettre_hexagone*.md",
+      "motifs": [
+        "mise en demeure",
+        "mettons en demeure",
+        "met en demeure"
+      ],
+      "description": "la lettre vaut mise en demeure"
+    },
+    {
+      "type": "contient_un",
+      "fichier": "ecritures/brouillons/lettre_hexagone*.md",
+      "motifs": [
+        "dans un délai de",
+        "sous (huit|quinze|dix|8|10|15) jours",
+        "au plus tard le",
+        "avant le \\d"
+      ],
+      "description": "échéance datée"
+    },
+    {
+      "type": "contient_un",
+      "fichier": "ecritures/brouillons/lettre_hexagone*.md",
+      "motifs": [
+        "1344",
+        "intérêts? (moratoires?|au taux légal)",
+        "taux d'intérêt",
+        "indemnité forfaitaire"
+      ],
+      "description": "fait courir ce que la mise en demeure fait courir",
+      "critique": false
+    },
+    {
+      "type": "contient_un",
+      "fichier": "ecritures/brouillons/lettre_hexagone*.md",
+      "motifs": [
+        "24[ .]?300"
+      ],
+      "description": "réclame la créance entière"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "GENP-URGD-2616533",
+  "capacite": "pronostic",
+  "famille": "titre-renouvellement-delai",
+  "genere": true,
+  "origine": "usine.py, Tribunal administratif de Melun, magistrat désigné, 13 novembre 2026, 2616533 (https://librejustice.fr/decision/zBwkgjqXMjfh), issue réelle : non",
+  "fixture": "gen_urgd_2616533",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme le juge des référés, dis si la condition d'urgence de ce référé-suspension est remplie. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2026-11-12T18:00",
+  "coupe": "2026-11-12",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*non\\b",
+      "description": "répond non, comme la juridiction"
+    }
+  ]
+}

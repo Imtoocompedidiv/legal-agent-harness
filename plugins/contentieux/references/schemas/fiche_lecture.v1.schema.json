@@ -1,0 +1,159 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fiche_lecture.v1.schema.json",
+  "title": "Fiche de lecture d'une norme ou d'une décision (recherche/fiches/<id>.json)",
+  "description": "Écrite par le sous-agent lecteur-de-texte. Les extraits se recopient mot pour mot depuis une lecture capturée au registre (recherche/lectures/) ; lectures.py verifier les retrouve. Identifiant : <code>__<article en minuscules>[__<date utile AAAA-MM-JJ>] pour une norme, le numéro en minuscules avec des tirets à la place des autres signes pour une décision ; le squelette de lectures.py fiche le donne. Ce qui n'a pas été lu se dit dans non_lu.",
+  "$defs": {
+    "chaine": {"type": "string"},
+    "chaine_pleine": {"type": "string", "minLength": 1},
+    "liste_chaines": {"type": "array", "items": {"type": "string"}},
+    "extrait": {
+      "type": "object",
+      "required": ["extrait"],
+      "properties": {"alinea": {"type": "string"}, "extrait": {"type": "string"}}
+    },
+    "commun": {
+      "type": "object",
+      "required": ["schema", "id", "nature", "reference", "lu_le", "lectures", "non_lu"],
+      "properties": {
+        "schema": {"const": "fiche_lecture/1"},
+        "id": {"$ref": "#/$defs/chaine_pleine"},
+        "reference": {"$ref": "#/$defs/chaine_pleine"},
+        "lu_le": {"$ref": "#/$defs/chaine_pleine"},
+        "lectures": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "non_lu": {"$ref": "#/$defs/liste_chaines"}
+      }
+    },
+    "norme": {
+      "type": "object",
+      "required": ["schema", "id", "nature", "reference", "code", "article", "lu_le", "lectures", "version", "lettre", "champ_application",
+                   "conditions", "exceptions", "renvois", "effets", "interpretation", "portee_limites", "non_lu"],
+      "properties": {
+        "schema": {"const": "fiche_lecture/1"},
+        "id": {"$ref": "#/$defs/chaine_pleine"},
+        "nature": {"const": "norme"},
+        "reference": {"$ref": "#/$defs/chaine_pleine"},
+        "code": {"$ref": "#/$defs/chaine_pleine"},
+        "article": {"$ref": "#/$defs/chaine_pleine"},
+        "lu_le": {"$ref": "#/$defs/chaine_pleine"},
+        "lectures": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "version": {
+          "type": "object",
+          "required": ["date_utile", "valid_from", "valid_to", "statut"],
+          "properties": {
+            "date_utile": {"type": "string"},
+            "valid_from": {"type": "string"},
+            "valid_to": {"type": "string"},
+            "statut": {"type": "string"},
+            "versions_connues": {"type": "array"},
+            "disposition_transitoire": {"type": "string"}
+          }
+        },
+        "lettre": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/extrait"}},
+        "champ_application": {"$ref": "#/$defs/chaine_pleine"},
+        "conditions": {
+          "type": "object",
+          "required": ["articulation", "liste"],
+          "properties": {
+            "articulation": {"enum": ["cumulatives", "alternatives", "mixtes", "condition_unique", "sans_condition"]},
+            "liste": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["id", "enonce", "extrait"],
+                "properties": {"id": {"type": "string"}, "enonce": {"type": "string", "minLength": 1}, "extrait": {"type": "string"}}
+              }
+            }
+          }
+        },
+        "exceptions": {
+          "type": "object",
+          "required": ["section_lue", "liste"],
+          "properties": {
+            "section_lue": {"type": "string"},
+            "liste": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["article", "enonce", "extrait"],
+                "properties": {"article": {"type": "string"}, "enonce": {"type": "string", "minLength": 1}, "extrait": {"type": "string"}}
+              }
+            }
+          }
+        },
+        "renvois": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["article", "suivi", "objet"],
+            "properties": {"article": {"type": "string", "minLength": 1}, "suivi": {"type": "boolean"}, "objet": {"type": "string"}}
+          }
+        },
+        "effets": {"$ref": "#/$defs/chaine_pleine"},
+        "interpretation": {
+          "type": "object",
+          "required": ["recherches", "decisions"],
+          "properties": {
+            "recherches": {"$ref": "#/$defs/liste_chaines"},
+            "decisions": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["numero", "apport", "lue"],
+                "properties": {"numero": {"type": "string", "minLength": 1}, "juridiction": {"type": "string"}, "date": {"type": "string"},
+                               "publication": {"type": "string"}, "apport": {"type": "string"}, "lue": {"type": "boolean"}}
+              }
+            }
+          }
+        },
+        "portee_limites": {"$ref": "#/$defs/chaine_pleine"},
+        "non_lu": {"$ref": "#/$defs/liste_chaines"}
+      }
+    },
+    "decision": {
+      "type": "object",
+      "required": ["schema", "id", "nature", "reference", "numero", "juridiction", "formation", "date", "publication", "lu_le", "lectures",
+                   "question", "motif_decisif", "solution", "portee", "limites", "suite", "commentaires", "non_lu"],
+      "properties": {
+        "schema": {"const": "fiche_lecture/1"},
+        "id": {"$ref": "#/$defs/chaine_pleine"},
+        "nature": {"const": "decision"},
+        "reference": {"$ref": "#/$defs/chaine_pleine"},
+        "numero": {"$ref": "#/$defs/chaine_pleine"},
+        "juridiction": {"$ref": "#/$defs/chaine_pleine"},
+        "formation": {"type": "string"},
+        "date": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}"},
+        "publication": {"type": "string"},
+        "lu_le": {"$ref": "#/$defs/chaine_pleine"},
+        "lectures": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "question": {"$ref": "#/$defs/chaine_pleine"},
+        "motif_decisif": {
+          "type": "object",
+          "required": ["point", "extrait"],
+          "properties": {"point": {"type": "string"}, "extrait": {"type": "string"}}
+        },
+        "solution": {"$ref": "#/$defs/chaine_pleine"},
+        "portee": {
+          "type": "object",
+          "required": ["nature", "raisons"],
+          "properties": {"nature": {"type": "string"}, "raisons": {"type": "string", "minLength": 1}}
+        },
+        "limites": {"$ref": "#/$defs/chaine_pleine"},
+        "suite": {
+          "type": "object",
+          "required": ["standing", "chronologie", "decisions_contraires"],
+          "properties": {"standing": {"type": "string"}, "chronologie": {"type": "array"}, "decisions_contraires": {"type": "array"}}
+        },
+        "commentaires": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["nature", "url", "lu"],
+            "properties": {"nature": {"type": "string"}, "titre": {"type": "string"}, "url": {"type": "string"}, "lu": {"type": "boolean"}}
+          }
+        },
+        "non_lu": {"$ref": "#/$defs/liste_chaines"}
+      }
+    }
+  }
+}

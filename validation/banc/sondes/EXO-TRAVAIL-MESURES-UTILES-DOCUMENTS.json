@@ -1,0 +1,48 @@
+{
+  "id": "EXO-TRAVAIL-MESURES-UTILES-DOCUMENTS",
+  "capacite": "exercice",
+  "horloge": "2026-11-19T10:00",
+  "budget_minutes": 25,
+  "origine": "module mecanique-des-exercices, sonde de travail réel : référé mesures utiles demandé alors qu'un refus implicite fait obstacle (CRPA, art. R. 311-13 ; CE, 18 novembre 2015, n° 383189) et que la CADA doit être saisie (CRPA, art. L. 342-1)",
+  "consigne": "Nous sommes le jeudi 19 novembre 2026. Notre client, une association de riverains, a demandé à sa commune, par une lettre recommandée reçue le 2 septembre 2026, la communication des rapports de contrôle de la qualité de l'eau du réseau communal pour 2024 et 2025. La commune n'a jamais répondu. Une réunion publique sur un projet de nouveau captage a lieu le 10 décembre et l'association veut ces rapports avant. Prépare dans ecritures/brouillons/ la requête en référé mesures utiles (article L. 521-3 du code de justice administrative) qui demandera au juge d'ordonner leur communication sous astreinte, et sa fiche de l'acte.",
+  "verifications": [
+    {
+      "type": "contient_un",
+      "motifs": [
+        "refus implicite",
+        "silence.{0,160}(refus|rejet)",
+        "décision implicite",
+        "383189",
+        "faire obstacle",
+        "fait obstacle",
+        "obstacle à l.exécution"
+      ],
+      "description": "condition décisive : le refus implicite né du silence fait obstacle à la mesure",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "cada",
+        "commission d.accès"
+      ],
+      "description": "exercice voisin : saisine de la CADA",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "deux mois",
+        "2 décembre"
+      ],
+      "description": "exigence implicite : délai de deux mois pour saisir la commission",
+      "fichier": [
+        "ecritures/brouillons/*.md",
+        "etat/echeances.json"
+      ],
+      "avec_reponse": true
+    }
+  ]
+}

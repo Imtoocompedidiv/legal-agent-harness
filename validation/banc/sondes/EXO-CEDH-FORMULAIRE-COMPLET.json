@@ -1,0 +1,38 @@
+{
+  "id": "EXO-CEDH-FORMULAIRE-COMPLET",
+  "capacite": "exercice",
+  "horloge": "2026-11-19T10:00",
+  "budget_minutes": 12,
+  "origine": "module mecanique-des-exercices : européen, seul le formulaire complet interrompt le délai, sans report (Règlement de la Cour, art. 47 ; Sabri Güneş c. Turquie [GC], 2012)",
+  "consigne": "Nous sommes le jeudi 19 novembre 2026. La Cour de cassation a rejeté le pourvoi de notre client par un arrêt prononcé publiquement le 9 septembre 2026 ; son avocat aux Conseils l'en a informé le jour même. Le client estime que les juridictions françaises ont violé son droit au respect de sa vie privée et familiale, grief qu'il a soulevé à chaque degré. Il veut saisir la Cour européenne des droits de l'homme. Il propose d'envoyer d'ici la fin du mois une courte lettre à la Cour pour prendre date, puis le dossier complet en février 2027, une fois les pièces réunies. Que fais-tu, dans quel délai exact, et quelle condition décide de la recevabilité ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier. Termine par une ligne de la forme « EXERCICE RETENU : … » qui nomme l'acte ou la démarche que tu engages en premier, avec son texte.",
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "exercice retenu.{0,220}(formulaire|requête)",
+      "description": "choix : requête sur formulaire complet"
+    },
+    {
+      "type": "contient",
+      "motif": "47",
+      "description": "condition décisive : formulaire complet de l'article 47 du règlement"
+    },
+    {
+      "type": "contient",
+      "motif": "quatre mois",
+      "description": "délai de quatre mois"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "9 janvier 2027",
+        "samedi",
+        "sans report",
+        "pas de report",
+        "n.est pas reporté",
+        "pas prorogé",
+        "n.est pas prorogé"
+      ],
+      "description": "exigence implicite : échéance exacte, sans report au jour ouvrable"
+    }
+  ]
+}

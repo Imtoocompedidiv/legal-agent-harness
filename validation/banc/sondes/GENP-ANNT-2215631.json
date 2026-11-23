@@ -1,0 +1,18 @@
+{
+  "id": "GENP-ANNT-2215631",
+  "capacite": "pronostic",
+  "famille": "annulation-ta",
+  "genere": true,
+  "origine": "usine.py, Tribunal administratif de Nantes, 10e chambre · formation à trois, 27 avril 2023, 2215631 (https://librejustice.fr/decision/Jw8pn-ABRjcT), issue réelle : oui",
+  "fixture": "gen_annt_2215631",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme le tribunal administratif, dis s'il annulera, au moins en partie, la décision attaquée. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2023-04-26T18:00",
+  "coupe": "2023-04-26",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*oui\\b",
+      "description": "répond oui, comme la juridiction"
+    }
+  ]
+}

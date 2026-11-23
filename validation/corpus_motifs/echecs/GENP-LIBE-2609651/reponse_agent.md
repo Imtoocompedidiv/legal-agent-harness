@@ -1,0 +1,12 @@
+Version : iso-v50-neuves
+Issue réelle : oui
+
+**Non, 60 %.** L'issue tient, avec moins de certitude qu'avant. Le requérant a une thèse sérieuse et le préfet se défend mal. Mais la même juridiction a rejeté une demande fondée sur le même enfant six jours plus tôt, et rien au dossier ne montre de pièce nouvelle qui la ferait changer d'avis.
+
+1. **L'urgence est remplie, et c'est la meilleure carte du requérant.** Il est en rétention et la mesure peut être exécutée à tout moment. Rien au dossier ne montre de retard ou de négligence qui lui serait imputable.
+2. **La voie est ouverte contre l'éloignement.** Le référé-liberté peut viser une obligation de quitter le territoire devenue définitive. Il faut pour cela que des faits survenus depuis donnent à son exécution des effets anormaux. La naissance d'un enfant français, le 28 juillet 2026, en est l'exemple type (CE, réf., 11 juin 2015, n° 390704 ; CE, réf., 19 nov. 2021, n° 458056). Si cette naissance a été signalée au préfet et qu'il n'a pas réexaminé la situation, l'atteinte peut être retenue. La protection du parent qui contribue à l'entretien de l'enfant « depuis la naissance » (CESEDA, art. L. 611-3, 5°) donne du poids à cette thèse.
+3. **Le préfet se défend mal.** Il soutient seulement que les moyens « ne sont pas fondés », sans pièce. L'instruction étant close, la juge peut tenir pour établies les allégations précises, datées et étayées qu'il n'a pas contestées. Elle ne retiendra aucune menace pour l'ordre public qu'il n'aurait pas prouvée.
+4. **Ce qui fait pencher vers le rejet : l'ordonnance du 21 octobre 2026.** Elle a rejeté une demande fondée sur le même enfant, né trois mois plus tôt. Une seconde saisine est recevable, mais des pièces simplement non produites la première fois ne suffisent pas. Il faut un fait nouveau sérieux. Le dossier n'en montre aucun survenu entre le 21 et le 24 octobre. La requête allègue une contribution « effective » sans dater ni décrire de pièce. Une allégation aussi générale n'est pas tenue pour établie, même face à une défense sommaire.
+5. **Le report de la clôture à 14 heures laisse une porte ouverte.** Si les pièces attendues prouvent la reconnaissance de l'enfant et une contribution réelle depuis sa naissance, la juge pourra suspendre l'exécution jusqu'au réexamen. Ni l'autorisation de séjour avec droit au travail ni l'effacement du signalement Schengen ne seraient accordés à ce stade.
+
+Lu en entier : dossier_remis.md, ainsi que la fiche de l'exercice du référé-liberté. Ni textes ni décisions lus à la source.

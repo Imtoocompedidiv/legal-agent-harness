@@ -1,0 +1,49 @@
+{
+  "id": "EXO-PROVISION-ADMIN-SANS-DECISION",
+  "capacite": "exercice",
+  "horloge": "2026-11-19T10:00",
+  "budget_minutes": 12,
+  "origine": "module mecanique-des-exercices : référé-provision administratif et demande préalable (CJA, art. R. 541-1 et R. 421-1 ; CE, avis, 7 juillet 2023, n° 471401)",
+  "consigne": "Nous sommes le jeudi 19 novembre 2026. Notre cliente, agente contractuelle d'une commune, n'a pas perçu la prime annuelle de 3 200 euros que lui accordent son contrat et une délibération du conseil municipal pour l'année 2025. Le directeur des ressources humaines lui a répondu par courriel le 3 novembre 2026 que la somme lui était due et serait versée « quand le budget le permettra ». Elle n'a fait aucune autre démarche. Elle veut obtenir rapidement le paiement par le juge. Quel acte engages-tu, devant qui, et quelle condition décide de son succès ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier. Termine par une ligne de la forme « EXERCICE RETENU : … » qui nomme l'acte ou la démarche que tu engages en premier, avec son texte.",
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "exercice retenu.{0,250}(provision|541-1|demande préalable|réclamation préalable|demande de paiement)",
+      "description": "choix : référé-provision, précédé de la demande préalable"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "référé.provision",
+        "541-1"
+      ],
+      "description": "exercice : référé-provision"
+    },
+    {
+      "type": "contient",
+      "motif": "(non|n.est pas|pas)\\W{0,3}(?:être\\W{0,3})?sérieusement contestable",
+      "description": "condition décisive : obligation non sérieusement contestable"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "demande préalable",
+        "réclamation préalable",
+        "décision préalable",
+        "liaison du contentieux",
+        "421-1"
+      ],
+      "description": "exigence implicite : décision de l'administration sur une demande préalable"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "471401",
+        "426472",
+        "en cours d.instance"
+      ],
+      "description": "régularisation en cours d'instance",
+      "critique": false
+    }
+  ]
+}

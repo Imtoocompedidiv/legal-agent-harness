@@ -1,0 +1,1376 @@
+[
+  {
+    "type_acte": "assignation",
+    "domaine": "procedure_civile_droit_commun",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": [
+      "competence",
+      "interet_et_qualite",
+      "fondement_de_la_pretention",
+      "prealable_amiable_750_1_ou_dispense",
+      "action_non_prescrite",
+      "mentions_obligatoires_54_56_752",
+      "representation_avocat_ou_dispense_761",
+      "placement_au_greffe_dans_le_delai_754"
+    ],
+    "texte": "CPC, art. 31, 42, 46, 54, 56, 74, 122, 750, 750-1, 752, 754, 760, 761 ; COJ, art. L. 211-3 ; C. civ., art. 2224, 2226, 2241",
+    "sources": [
+      {
+        "reference": "CPC, art. 31",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/31",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 42",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/42",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 46",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/46",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 54",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/54",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 56",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/56",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 74",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/74",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 122",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/122",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 750",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/750",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 750-1",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/750-1",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 752",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/752",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 754",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/754",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 760",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/760",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 761",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/761",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "COJ, art. L. 211-3",
+        "url": "https://librejustice.fr/norm/fr/code-de-l-organisation-judiciaire/l211-3",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "COJ, art. R. 211-3-4",
+        "url": "https://librejustice.fr/norm/fr/code-de-l-organisation-judiciaire/r211-3-4",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "COJ, art. R. 211-3-8",
+        "url": "https://librejustice.fr/norm/fr/code-de-l-organisation-judiciaire/r211-3-8",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "Loi n° 2016-1547 du 18 novembre 2016, art. 4",
+        "url": "https://librejustice.fr/norm/fr/loi-n-2016-1547-du-18-novembre-2016-de-modernisation-de-la-justice-du-xxie/4",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "C. civ., art. 2224",
+        "url": "https://librejustice.fr/norm/fr/code-civil/2224",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "C. civ., art. 2226",
+        "url": "https://librejustice.fr/norm/fr/code-civil/2226",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "C. civ., art. 2241",
+        "url": "https://librejustice.fr/norm/fr/code-civil/2241",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "Cass. 2e civ., 6 février 2025, n° 22-20.070 (F-B, publié au Bulletin)",
+        "url": "https://librejustice.fr/decision/jc5GhvZdQ2CD",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      }
+    ],
+    "pieges": [
+      "Demande n'excédant pas 5 000 euros, bornage, actions de l'article R. 211-3-8 du COJ ou trouble anormal de voisinage : sans tentative de conciliation, de médiation ou de procédure participative, ni dispense justifiée, la demande est irrecevable et le juge peut le relever d'office (CPC, art. 750-1, version applicable aux instances introduites depuis le 1er octobre 2023).",
+      "L'assignation doit mentionner les diligences amiables ou la justification de la dispense (CPC, art. 54, 5°).",
+      "Pour une instance introduite depuis le 1er octobre 2026, l'avertissement du 4° de l'article 56 doit viser le troisième alinéa de l'article 472.",
+      "Copie de l'assignation à remettre au greffe au moins quinze jours avant l'audience lorsque la date a été communiquée plus de quinze jours à l'avance, sous peine de caducité (CPC, art. 754).",
+      "Représentation obligatoire sauf dispenses de l'article 761, dont le seuil de 10 000 euros hors compétence exclusive du tribunal judiciaire.",
+      "Vérifier la prescription au jour de l'assignation : cinq ans à compter de la connaissance des faits (C. civ., art. 2224), dix ans à compter de la consolidation pour le dommage corporel (C. civ., art. 2226)."
+    ]
+  },
+  {
+    "type_acte": "requete_tj",
+    "domaine": "procedure_civile_droit_commun",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": [
+      "competence",
+      "interet_et_qualite",
+      "fondement_de_la_pretention",
+      "requete_admise_par_750_montant_ou_matiere",
+      "prealable_amiable_750_1_ou_dispense",
+      "action_non_prescrite",
+      "mentions_obligatoires_54_57"
+    ],
+    "texte": "CPC, art. 54, 57, 750, 750-1, 761 ; COJ, art. R. 211-3-4, R. 211-3-8",
+    "sources": [
+      {
+        "reference": "CPC, art. 54",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/54",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 57",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/57",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 750",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/750",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 750-1",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/750-1",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 761",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/761",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "COJ, art. R. 211-3-4",
+        "url": "https://librejustice.fr/norm/fr/code-de-l-organisation-judiciaire/r211-3-4",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "COJ, art. R. 211-3-8",
+        "url": "https://librejustice.fr/norm/fr/code-de-l-organisation-judiciaire/r211-3-8",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "Loi n° 2016-1547 du 18 novembre 2016, art. 4",
+        "url": "https://librejustice.fr/norm/fr/loi-n-2016-1547-du-18-novembre-2016-de-modernisation-de-la-justice-du-xxie/4",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      }
+    ],
+    "pieges": [
+      "La requête unilatérale n'est ouverte que si la demande n'excède pas 5 000 euros en procédure orale ordinaire ou dans les matières fixées par un texte (CPC, art. 750).",
+      "Le seuil de 5 000 euros qui ouvre la requête est aussi celui qui déclenche le préalable amiable de l'article 750-1 : les deux se vérifient ensemble.",
+      "La requête indique, à peine de nullité, l'identité du défendeur et les pièces sur lesquelles la demande est fondée ; elle est datée et signée (CPC, art. 57)."
+    ]
+  },
+  {
+    "type_acte": "refere_civil_834",
+    "domaine": "referes_civils",
+    "juge": "judiciaire",
+    "refere": true,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": [
+      "urgence",
+      "absence_de_contestation_serieuse_ou_differend",
+      "competence_du_juge_des_referes"
+    ],
+    "texte": "CPC, art. 484 à 491, 834, 836 ; COJ, art. L. 213-2",
+    "sources": [
+      {
+        "reference": "CPC, art. 484",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/484",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 485",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/485",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 486",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/486",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 488",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/488",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 490",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/490",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 834",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/834",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 836",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/836",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "COJ, art. L. 213-2",
+        "url": "https://librejustice.fr/norm/fr/code-de-l-organisation-judiciaire/l213-2",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "C. civ., art. 2241",
+        "url": "https://librejustice.fr/norm/fr/code-civil/2241",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 754, 755, 760 et 761",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/754",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-20"
+      },
+      {
+        "reference": "Cass. 2e civ., 21 décembre 2023, n° 21-25.162 (F-B, publié au Bulletin)",
+        "url": "https://librejustice.fr/decision/vTKaeFbPYyV3",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-20"
+      },
+      {
+        "reference": "Cass. 2e civ., 15 janvier 2026, n° 23-14.171 (F-D, inédit)",
+        "url": "https://librejustice.fr/decision/KNs6W1ISn24H",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-20"
+      }
+    ],
+    "pieges": [
+      "L'urgence doit être démontrée par des faits datés et des pièces ; une contestation sérieuse fait obstacle à la mesure, sauf si elle est justifiée par l'existence d'un différend (CPC, art. 834).",
+      "Le juge des contentieux de la protection n'exerce ces pouvoirs que dans les limites de sa compétence (CPC, art. 834).",
+      "L'ordonnance est provisoire et sans autorité de chose jugée au principal ; elle ne peut être modifiée en référé qu'en cas de circonstances nouvelles (CPC, art. 488).",
+      "Appel dans les quinze jours (CPC, art. 490), puis circuit à bref délai devant la cour (CPC, art. 906, 2°).",
+      "En référé aussi, la copie de l'assignation est remise au greffe au moins quinze jours avant l'audience, à peine de caducité, sauf réduction autorisée en cas d'urgence (CPC, art. 754 et 755 ; Cass. 2e civ., 21 décembre 2023, n° 21-25.162) ; l'assignation caduque n'interrompt pas la prescription (Cass. 2e civ., 15 janvier 2026, n° 23-14.171). Avocat obligatoire hors dispenses de l'article 761, aucune n'étant propre au référé (CPC, art. 760 et 761)."
+    ]
+  },
+  {
+    "type_acte": "refere_civil_835_1",
+    "domaine": "referes_civils",
+    "juge": "judiciaire",
+    "refere": true,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": [
+      "trouble_manifestement_illicite_ou_dommage_imminent",
+      "mesure_conservatoire_ou_de_remise_en_etat_qui_s_impose",
+      "competence_du_juge_des_referes"
+    ],
+    "texte": "CPC, art. 484 à 491, 835, al. 1er, 836 ; COJ, art. L. 213-2",
+    "sources": [
+      {
+        "reference": "CPC, art. 484",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/484",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 485",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/485",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 488",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/488",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 490",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/490",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 491",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/491",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 835",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/835",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 836",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/836",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "COJ, art. L. 213-2",
+        "url": "https://librejustice.fr/norm/fr/code-de-l-organisation-judiciaire/l213-2",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 754, 755, 760 et 761",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/754",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-20"
+      },
+      {
+        "reference": "Cass. 2e civ., 21 décembre 2023, n° 21-25.162 (F-B, publié au Bulletin)",
+        "url": "https://librejustice.fr/decision/vTKaeFbPYyV3",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-20"
+      },
+      {
+        "reference": "Cass. 2e civ., 15 janvier 2026, n° 23-14.171 (F-D, inédit)",
+        "url": "https://librejustice.fr/decision/KNs6W1ISn24H",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-20"
+      }
+    ],
+    "pieges": [
+      "Le texte ne requiert ni urgence ni absence de contestation sérieuse, mais le caractère manifestement illicite du trouble ou l'imminence du dommage doit ressortir des pièces.",
+      "Le texte ne vise que des mesures conservatoires ou de remise en état : la demande doit être formulée en ces termes.",
+      "En référé aussi, la copie de l'assignation est remise au greffe au moins quinze jours avant l'audience, à peine de caducité, sauf réduction autorisée en cas d'urgence (CPC, art. 754 et 755 ; Cass. 2e civ., 21 décembre 2023, n° 21-25.162) ; l'assignation caduque n'interrompt pas la prescription (Cass. 2e civ., 15 janvier 2026, n° 23-14.171). Avocat obligatoire hors dispenses de l'article 761, aucune n'étant propre au référé (CPC, art. 760 et 761)."
+    ]
+  },
+  {
+    "type_acte": "refere_civil_835_2",
+    "domaine": "referes_civils",
+    "juge": "judiciaire",
+    "refere": true,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": [
+      "obligation_non_serieusement_contestable",
+      "montant_non_serieusement_contestable",
+      "competence_du_juge_des_referes"
+    ],
+    "texte": "CPC, art. 484 à 491, 835, al. 2, 836 ; COJ, art. L. 213-2",
+    "sources": [
+      {
+        "reference": "CPC, art. 484",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/484",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 485",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/485",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 488",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/488",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 490",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/490",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 835",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/835",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 836",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/836",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "COJ, art. L. 213-2",
+        "url": "https://librejustice.fr/norm/fr/code-de-l-organisation-judiciaire/l213-2",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 754, 755, 760 et 761",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/754",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-20"
+      },
+      {
+        "reference": "Cass. 2e civ., 21 décembre 2023, n° 21-25.162 (F-B, publié au Bulletin)",
+        "url": "https://librejustice.fr/decision/vTKaeFbPYyV3",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-20"
+      },
+      {
+        "reference": "Cass. 2e civ., 15 janvier 2026, n° 23-14.171 (F-D, inédit)",
+        "url": "https://librejustice.fr/decision/KNs6W1ISn24H",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-20"
+      }
+    ],
+    "pieges": [
+      "La provision n'est accordée qu'à hauteur du montant non sérieusement contestable : un décompte vérifiable doit accompagner la demande.",
+      "Une fois désigné, le juge de la mise en état peut lui aussi accorder une provision lorsque l'obligation n'est pas sérieusement contestable (CPC, art. 789, 3°) ; l'articulation avec le juge des référés lorsqu'une instance au fond est en cours n'a pas été vérifiée.",
+      "En référé aussi, la copie de l'assignation est remise au greffe au moins quinze jours avant l'audience, à peine de caducité, sauf réduction autorisée en cas d'urgence (CPC, art. 754 et 755 ; Cass. 2e civ., 21 décembre 2023, n° 21-25.162) ; l'assignation caduque n'interrompt pas la prescription (Cass. 2e civ., 15 janvier 2026, n° 23-14.171). Avocat obligatoire hors dispenses de l'article 761, aucune n'étant propre au référé (CPC, art. 760 et 761)."
+    ]
+  },
+  {
+    "type_acte": "refere_145",
+    "domaine": "referes_civils",
+    "juge": "judiciaire",
+    "refere": true,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": [
+      "motif_legitime",
+      "absence_de_proces_au_fond",
+      "mesure_legalement_admissible",
+      "juridiction_territorialement_competente_145"
+    ],
+    "texte": "CPC, art. 145, 493 à 497",
+    "sources": [
+      {
+        "reference": "CPC, art. 145",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/145",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 493",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/493",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 494",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/494",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 495",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/495",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 496",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/496",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 497",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/497",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "Cass. 2e civ., 26 octobre 2023, n° 21-18.619 (FS-B, publié au Bulletin)",
+        "url": "https://librejustice.fr/decision/dj2TzYkaCQY_",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "Décret n° 2026-683 du 27 juillet 2026, art. 21",
+        "url": "https://librejustice.fr/norm/fr/decret-n-2026-683-du-27-juillet-2026-portant-diverses-mesures-de-simplification/21",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 754, 755, 760 et 761",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/754",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-20"
+      },
+      {
+        "reference": "Cass. 2e civ., 21 décembre 2023, n° 21-25.162 (F-B, publié au Bulletin)",
+        "url": "https://librejustice.fr/decision/vTKaeFbPYyV3",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-20"
+      },
+      {
+        "reference": "Cass. 2e civ., 15 janvier 2026, n° 23-14.171 (F-D, inédit)",
+        "url": "https://librejustice.fr/decision/KNs6W1ISn24H",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-20"
+      }
+    ],
+    "pieges": [
+      "L'absence d'instance au fond sur le même litige s'apprécie au jour du dépôt de la requête ou de l'assignation ; il suffit que le demandeur soit partie à l'instance au fond déjà ouverte (Cass. 2e civ., 26 octobre 2023, n° 21-18.619).",
+      "Compétence territoriale pour les instances introduites depuis le 1er septembre 2025 : juge du fond ou juge du lieu d'exécution de la mesure, et juge du lieu de l'immeuble seul compétent si la mesure porte sur un immeuble (CPC, art. 145).",
+      "Sur requête, la dérogation au contradictoire doit être justifiée par les circonstances propres au litige, pièces à l'appui (CPC, art. 493 ; Cass. 2e civ., 26 octobre 2023, n° 21-18.619).",
+      "Ordonnance sur requête rendue depuis le 1er octobre 2026 : exécution dans les trois mois à peine de caducité et rétractation à demander dans le mois de la signification (CPC, art. 495 et 496).",
+      "En référé aussi, la copie de l'assignation est remise au greffe au moins quinze jours avant l'audience, à peine de caducité, sauf réduction autorisée en cas d'urgence (CPC, art. 754 et 755 ; Cass. 2e civ., 21 décembre 2023, n° 21-25.162) ; l'assignation caduque n'interrompt pas la prescription (Cass. 2e civ., 15 janvier 2026, n° 23-14.171). Avocat obligatoire hors dispenses de l'article 761, aucune n'étant propre au référé (CPC, art. 760 et 761)."
+    ]
+  },
+  {
+    "type_acte": "requete_ordonnance_sur_requete",
+    "domaine": "referes_civils",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": [
+      "cas_prevu_par_la_loi_ou_mesure_urgente",
+      "derogation_au_contradictoire_justifiee",
+      "requete_motivee_avec_pieces_indiquees",
+      "competence_du_juge_saisi"
+    ],
+    "texte": "CPC, art. 493 à 498, 845 ; COJ, art. L. 213-2",
+    "sources": [
+      {
+        "reference": "CPC, art. 493",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/493",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 494",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/494",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 495",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/495",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 496",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/496",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 497",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/497",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 845",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/845",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "COJ, art. L. 213-2",
+        "url": "https://librejustice.fr/norm/fr/code-de-l-organisation-judiciaire/l213-2",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "Cass. 2e civ., 26 octobre 2023, n° 21-18.619 (FS-B, publié au Bulletin)",
+        "url": "https://librejustice.fr/decision/dj2TzYkaCQY_",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      }
+    ],
+    "pieges": [
+      "Hors cas prévus par la loi, la mesure doit être urgente et les circonstances doivent exiger qu'elle ne soit pas prise contradictoirement (CPC, art. 845) ; une motivation générale ne suffit pas.",
+      "Requête en double exemplaire, motivée, avec l'indication précise des pièces ; en cours d'instance, présentée au juge déjà saisi (CPC, art. 494 et 845).",
+      "Rejet : appel dans les quinze jours, comme en matière gracieuse ; accueil : référé-rétractation devant le même juge (CPC, art. 496)."
+    ]
+  },
+  {
+    "type_acte": "requete_jaf",
+    "domaine": "contentieux_familial",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": [
+      "competence_materielle_jaf",
+      "competence_territoriale_1070",
+      "mentions_et_mode_de_saisine_1137",
+      "interet_et_qualite",
+      "prealable_mediation_familiale_si_applicable"
+    ],
+    "texte": "COJ, art. L. 213-3 ; CPC, art. 1070, 1107, 1137, 1139 ; loi n° 2016-1547, art. 7",
+    "sources": [
+      {
+        "reference": "COJ, art. L. 213-3",
+        "url": "https://librejustice.fr/norm/fr/code-de-l-organisation-judiciaire/l213-3",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 1070",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/1070",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 1107",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/1107",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 1137",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/1137",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 1139",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/1139",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "Loi n° 2016-1547 du 18 novembre 2016, art. 7",
+        "url": "https://librejustice.fr/norm/fr/loi-n-2016-1547-du-18-novembre-2016-de-modernisation-de-la-justice-du-xxie/7",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      }
+    ],
+    "pieges": [
+      "Compétence territoriale fixée par la résidence au jour de la demande (CPC, art. 1070) : la résidence habituelle des enfants mineurs commande en cas de séparation des parents.",
+      "Assignation : remise au greffe au plus tard la veille de l'audience, à peine de caducité (CPC, art. 1137).",
+      "Divorce : l'acte introductif ne doit indiquer ni le fondement relevant de l'article 242 du code civil ni les faits, à peine d'irrecevabilité (CPC, art. 1107).",
+      "Médiation familiale préalable : expérimentation de l'article 7 de la loi n° 2016-1547 prévue jusqu'au 31 décembre 2024 ; son application après cette date est non vérifiée et doit être contrôlée pour le tribunal saisi.",
+      "Avocat obligatoire pour la révision de la prestation compensatoire (CPC, art. 1139)."
+    ]
+  },
+  {
+    "type_acte": "declaration_appel_civil",
+    "domaine": "voies_de_recours_civiles",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": true,
+    "fond_distinct": false,
+    "conditions": [
+      "decision_susceptible_d_appel",
+      "appel_dans_le_delai",
+      "mentions_901_et_chefs_critiques",
+      "constitution_d_avocat",
+      "remise_electronique_930_1",
+      "signification_902_ou_906_1_dans_le_delai"
+    ],
+    "texte": "CPC, art. 490, 496, 528, 538, 640 à 643, 680, 901, 902, 905, 906, 906-1, 930-1",
+    "sources": [
+      {
+        "reference": "CPC, art. 490",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/490",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 496",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/496",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 528",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/528",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 538",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/538",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 640",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/640",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 641",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/641",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 642",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/642",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 643",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/643",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 680",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/680",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 125",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/125",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 901",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/901",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 902",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/902",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 905",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/905",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 906",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/906",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 906-1",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/906-1",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 930-1",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/930-1",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 913-5",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/913-5",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      }
+    ],
+    "pieges": [
+      "Délai d'un mois en matière contentieuse, quinze jours en matière gracieuse, en référé et contre le rejet d'une requête ; point de départ à la notification ; expiration un samedi, dimanche ou jour férié reportée au premier jour ouvrable (CPC, art. 490, 496, 528, 538, 642). Appel tardif : fin de non-recevoir d'ordre public (CPC, art. 125).",
+      "Mentions de l'article 901 à peine de nullité, dont les chefs du dispositif expressément critiqués sauf appel en annulation, et copie de la décision jointe.",
+      "Remise par voie électronique à peine d'irrecevabilité relevée d'office (CPC, art. 930-1).",
+      "Procédure ordinaire : signification dans le mois de l'avis du greffe (CPC, art. 902). Bref délai : signification dans les vingt jours de l'avis de fixation, avec copie de l'avis (CPC, art. 906-1). Sanction : caducité relevée d'office.",
+      "Règles applicables aux appels formés depuis le 1er septembre 2024 ; pour un appel antérieur, relire les versions abrogées."
+    ]
+  },
+  {
+    "type_acte": "conclusions_appel",
+    "domaine": "voies_de_recours_civiles",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": true,
+    "fond_distinct": false,
+    "conditions": [
+      "remise_dans_le_delai_908_909_910_ou_906_2",
+      "notification_ou_signification_911_ou_906_2",
+      "structure_et_dispositif_954",
+      "concentration_des_pretentions_915_2",
+      "conclusions_distinctes_pour_incidents_913_5_ou_906_3"
+    ],
+    "texte": "CPC, art. 906-2, 906-3, 908 à 912, 913-5, 913-8, 915-2, 930-1, 954",
+    "sources": [
+      {
+        "reference": "CPC, art. 906-2",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/906-2",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 906-3",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/906-3",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 908",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/908",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 909",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/909",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 910",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/910",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 911",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/911",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 912",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/912",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 913-5",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/913-5",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 913-8",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/913-8",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 915-2",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/915-2",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 930-1",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/930-1",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 954",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/954",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      }
+    ],
+    "pieges": [
+      "Mise en état : conclusions de l'appelant remises dans les trois mois de la déclaration d'appel à peine de caducité (CPC, art. 908) ; intimé dans les trois mois de la notification des conclusions de l'appelant à peine d'irrecevabilité (CPC, art. 909).",
+      "Bref délai : deux mois à compter de la réception de l'avis de fixation pour l'appelant, deux mois à compter de la notification pour l'intimé (CPC, art. 906-2).",
+      "La remise au greffe et la notification à l'avocat adverse sont deux formalités ; la signification aux parties non constituées intervient au plus tard dans le mois suivant l'expiration du délai (CPC, art. 911 et 906-2).",
+      "L'ordonnance de caducité ne peut être rapportée ; seule la force majeure, circonstance non imputable et insurmontable, permet d'écarter la sanction (CPC, art. 911).",
+      "Toutes les prétentions au fond doivent figurer dans les premières conclusions (CPC, art. 915-2) ; le dispositif doit demander l'infirmation ou l'annulation et énoncer les chefs critiqués (CPC, art. 954).",
+      "Les incidents (caducité, irrecevabilité) se plaident par des conclusions spécialement adressées au conseiller de la mise en état ou au président de chambre (CPC, art. 913-5 et 906-3) ; déféré dans les quinze jours de l'ordonnance (CPC, art. 913-8 et 906-3)."
+    ]
+  },
+  {
+    "type_acte": "pourvoi_civil",
+    "domaine": "voies_de_recours_civiles",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": true,
+    "fond_distinct": false,
+    "conditions": [
+      "recevabilite_et_delai",
+      "representation_obligatoire",
+      "cas_d_ouverture",
+      "decision_rendue_en_dernier_ressort",
+      "memoire_ampliatif_dans_les_quatre_mois",
+      "execution_de_la_decision_attaquee_ou_justification"
+    ],
+    "texte": "CPC, art. 528, 604, 605, 608, 612, 643, 973, 974, 975, 978, 1009-1",
+    "sources": [
+      {
+        "reference": "CPC, art. 528",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/528",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 604",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/604",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 605",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/605",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 608",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/608",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 612",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/612",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 643",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/643",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 973",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/973",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 974",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/974",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 975",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/975",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 978",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/978",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CPC, art. 1009-1",
+        "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/1009-1",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      }
+    ],
+    "pieges": [
+      "Pourvoi ouvert contre les seuls jugements en dernier ressort ; les décisions qui ne tranchent pas le fond ne sont en principe attaquables qu'avec le jugement sur le fond (CPC, art. 605 et 608).",
+      "Délai de deux mois à compter de la notification, augmenté des délais de distance (CPC, art. 528, 612, 643).",
+      "Avocat au Conseil d'État et à la Cour de cassation obligatoire ; déclaration au greffe de la Cour avec les mentions de l'article 975 à peine de nullité.",
+      "Mémoire ampliatif dans les quatre mois du pourvoi à peine de déchéance ; un seul cas d'ouverture par moyen ou élément de moyen, avec la partie critiquée et le reproche (CPC, art. 978).",
+      "Défaut d'exécution de la décision attaquée : risque de radiation à la demande du défendeur, sans suspension des délais du demandeur (CPC, art. 1009-1).",
+      "Correspond au volet civil du régime pourvoi_cassation de scripts/gate.py ; les conditions recevabilite_et_delai, representation_obligatoire et cas_d_ouverture en reprennent les noms."
+    ]
+  },
+  {
+    "type_acte": "requete_fond_admin",
+    "domaine": "contentieux_administratif_general",
+    "juge": "admin",
+    "refere": false,
+    "acte": true,
+    "fond_distinct": false,
+    "conditions": [
+      "recevabilite_et_delai",
+      "interet_a_agir",
+      "decision_faisant_grief",
+      "acte_attaque_produit_r412_1",
+      "decision_prealable_si_somme_d_argent",
+      "representation_si_requise_r431_2",
+      "moyens_exposes_avant_expiration_du_delai",
+      "juridiction_territorialement_competente"
+    ],
+    "texte": "CJA, art. R. 222-1, R. 312-1, R. 411-1, R. 412-1, R. 421-1, R. 421-2, R. 421-5, R. 421-7, R. 431-2, R. 431-3, R. 612-1 ; CRPA, art. L. 112-6, L. 231-1, L. 231-4, L. 411-2",
+    "sources": [
+      {
+        "reference": "CJA, art. R. 222-1",
+        "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r222-1",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CJA, art. R. 312-1",
+        "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r312-1",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CJA, art. R. 411-1",
+        "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r411-1",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CJA, art. R. 412-1",
+        "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r412-1",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CJA, art. R. 421-1",
+        "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r421-1",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CJA, art. R. 421-2",
+        "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r421-2",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CJA, art. R. 421-5",
+        "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r421-5",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CJA, art. R. 421-7",
+        "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r421-7",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CJA, art. R. 431-2",
+        "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r431-2",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CJA, art. R. 431-3",
+        "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r431-3",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CJA, art. R. 612-1",
+        "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r612-1",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CRPA, art. L. 112-6",
+        "url": "https://librejustice.fr/norm/fr/code-des-relations-entre-le-public-et-l-administration/l112-6",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CRPA, art. L. 231-1",
+        "url": "https://librejustice.fr/norm/fr/code-des-relations-entre-le-public-et-l-administration/l231-1",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CRPA, art. L. 231-4",
+        "url": "https://librejustice.fr/norm/fr/code-des-relations-entre-le-public-et-l-administration/l231-4",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CRPA, art. L. 411-2",
+        "url": "https://librejustice.fr/norm/fr/code-des-relations-entre-le-public-et-l-administration/l411-2",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CE, Ass., 13 juillet 2016, Czabaj, n° 387763 (Recueil)",
+        "url": "https://librejustice.fr/decision/Ye9s-UgHzbOV",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CEDH, 13 février 2025, Sellam c. France, n° 48145/19 (définitif)",
+        "url": "https://librejustice.fr/decision/gKAYtPDv74wX",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CE, 19 septembre 2014, n° 362568 (Tables)",
+        "url": "https://librejustice.fr/decision/4ZM7KOfV5RiJ",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-20"
+      }
+    ],
+    "pieges": [
+      "La requête doit viser une décision qui modifie l'ordonnancement juridique : une délibération approuvant un procès-verbal a été rejetée comme insusceptible de recours par ordonnance du 4° de l'article R. 222-1 (TA Rouen, 5 juin 2026, n° 2603012).",
+      "Deux mois à compter de la notification ou de la publication, opposables seulement si les voies et délais ont été mentionnés (CJA, art. R. 421-1 et R. 421-5) ; à défaut, délai raisonnable d'un an en règle générale pour une décision individuelle connue (CE, Ass., 13 juillet 2016, Czabaj).",
+      "Décision implicite de rejet : deux mois à compter de sa naissance, la date de dépôt de la demande devant être établie (CJA, art. R. 421-2) ; délais inopposables sans accusé de réception conforme (CRPA, art. L. 112-6).",
+      "Joindre l'acte attaqué, ou la preuve du dépôt de la demande, et une copie, à peine d'irrecevabilité (CJA, art. R. 412-1).",
+      "Conclusions pécuniaires : demande préalable à l'administration (CJA, art. R. 421-1, al. 2) et avocat obligatoire hors exceptions de l'article R. 431-3 (CJA, art. R. 431-2).",
+      "Une requête sans moyen ne se régularise que jusqu'à l'expiration du délai de recours (CJA, art. R. 411-1).",
+      "Le délai de deux mois de l'article R. 421-1 est franc et prorogé au premier jour ouvrable s'il expire un samedi, un dimanche ou un jour férié ou chômé (CE, 19 septembre 2014, n° 362568) ; déposer néanmoins à la date calculée sans jour franc."
+    ]
+  },
+  {
+    "type_acte": "refere_suspension",
+    "domaine": "contentieux_administratif_general",
+    "juge": "admin",
+    "refere": true,
+    "acte": true,
+    "fond_distinct": true,
+    "conditions": [
+      "urgence",
+      "doute_serieux",
+      "requete_au_fond_distincte_et_copie",
+      "decision_administrative_susceptible_de_recours",
+      "requete_au_fond_recevable_et_dans_le_delai"
+    ],
+    "texte": "CJA, art. L. 521-1, L. 522-1, L. 522-3, L. 523-1, R. 522-1, R. 523-1, R. 612-5-2",
+    "sources": [
+      {
+        "reference": "CJA, art. L. 521-1",
+        "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/l521-1",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CJA, art. L. 522-1",
+        "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/l522-1",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CJA, art. L. 522-3",
+        "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/l522-3",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CJA, art. L. 523-1",
+        "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/l523-1",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CJA, art. R. 522-1",
+        "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r522-1",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CJA, art. R. 523-1",
+        "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r523-1",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CJA, art. R. 612-5-2",
+        "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r612-5-2",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CE, Sect., 19 janvier 2001, Confédération nationale des radios libres, n° 228815 (Recueil)",
+        "url": "https://librejustice.fr/decision/Pf-dkAEI5v7B",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CE, 29 avril 2002, n° 236633 (tables)",
+        "url": "https://librejustice.fr/decision/35KuTWZ_chjp",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CE, 30 juin 2004, Commune de Bertrange, n° 264295 (tables)",
+        "url": "https://librejustice.fr/decision/PvB2Ywz4CIjy",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CE, Sect., 22 septembre 2023, n° 472210 (Recueil)",
+        "url": "https://librejustice.fr/decision/qOw6Rrnywlar",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      }
+    ],
+    "pieges": [
+      "Sans requête au fond distincte, la demande est atteinte d'une irrecevabilité d'ordre public, rejetée par tri (CE, 29 avril 2002, n° 236633) ; la copie manquante, elle, peut être régularisée jusqu'à l'audience (CE, 30 juin 2004, Commune de Bertrange).",
+      "L'urgence s'apprécie concrètement sur les justifications fournies par le requérant (CE, Sect., 19 janvier 2001, n° 228815) : la requête doit la démontrer par des faits datés et des pièces, sous peine de tri (CJA, art. L. 522-3 et R. 522-1).",
+      "La requête au fond doit être déposée dans le délai de recours (CJA, art. R. 421-1) ; l'effet d'une requête au fond irrecevable ou tardive sur la demande de suspension n'a pas été vérifié dans une décision lue.",
+      "Après un rejet faute de doute sérieux, confirmer le maintien de la requête au fond dans le mois, sauf pourvoi, à peine de désistement réputé (CJA, art. R. 612-5-2).",
+      "Ordonnance en dernier ressort : pourvoi en cassation dans les quinze jours de la notification (CJA, art. L. 523-1 et R. 523-1) ; une seconde demande rejetée pendant le pourvoi prive celui-ci d'objet (CE, Sect., 22 septembre 2023, n° 472210)."
+    ]
+  },
+  {
+    "type_acte": "refere_liberte",
+    "domaine": "contentieux_administratif_general",
+    "juge": "admin",
+    "refere": true,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": [
+      "urgence_particuliere",
+      "liberte_fondamentale",
+      "atteinte_grave_manifestement_illegale",
+      "auteur_personne_publique_ou_organisme_charge_d_un_service_public",
+      "urgence_non_imputable_au_requerant"
+    ],
+    "texte": "CJA, art. L. 521-2, L. 522-1, L. 522-3, L. 523-1, R. 523-1",
+    "sources": [
+      {
+        "reference": "CJA, art. L. 521-2",
+        "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/l521-2",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CJA, art. L. 522-1",
+        "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/l522-1",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CJA, art. L. 522-3",
+        "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/l522-3",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CJA, art. L. 523-1",
+        "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/l523-1",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CJA, art. R. 523-1",
+        "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r523-1",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CE, réf., 28 mars 2008, Commune du Raincy, n° 314368 (Recueil)",
+        "url": "https://librejustice.fr/decision/nPlEN8YTSJTX",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      }
+    ],
+    "pieges": [
+      "Le requérant doit justifier de circonstances particulières imposant une mesure à très bref délai ; l'urgence résultant de sa propre négligence ne compte pas (CE, réf., 28 mars 2008, Commune du Raincy).",
+      "L'atteinte doit être le fait d'une personne publique ou d'un organisme privé chargé d'un service public dans l'exercice de ses pouvoirs (CJA, art. L. 521-2).",
+      "Demander la suspension d'un acte jusqu'au jugement au fond relève en principe du référé-suspension ; le choix du fondement se vérifie avant le dépôt.",
+      "Voie de recours : appel devant le juge des référés du Conseil d'État dans les quinze jours si l'ordonnance a été rendue après instruction ; pourvoi en cassation dans les quinze jours si elle a été prise par tri sur le fondement de l'article L. 522-3 (CJA, art. L. 523-1 et R. 523-1)."
+    ]
+  },
+  {
+    "type_acte": "refere_mesures_utiles",
+    "domaine": "contentieux_administratif_general",
+    "juge": "admin",
+    "refere": true,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": [
+      "urgence",
+      "utilite",
+      "absence_obstacle_a_une_decision",
+      "absence_de_contestation_serieuse",
+      "subsidiarite_par_rapport_aux_l521_1_et_l521_2"
+    ],
+    "texte": "CJA, art. L. 521-3, L. 522-3, L. 523-1, R. 523-1",
+    "sources": [
+      {
+        "reference": "CJA, art. L. 521-3",
+        "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/l521-3",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CJA, art. L. 522-3",
+        "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/l522-3",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CJA, art. L. 523-1",
+        "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/l523-1",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CJA, art. R. 523-1",
+        "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r523-1",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      },
+      {
+        "reference": "CE, Sect., 5 février 2016, Benabdellah, n° 393540 (Recueil)",
+        "url": "https://librejustice.fr/decision/OQ7TNyp1RiEt",
+        "lu_en_entier": true,
+        "lu_le": "2026-11-18"
+      }
+    ],
+    "pieges": [
+      "La mesure ne peut faire obstacle à l'exécution d'aucune décision administrative, y compris le refus opposé à la même demande, sauf péril grave (CJA, art. L. 521-3 ; CE, Sect., 5 février 2016, Benabdellah) : vérifier qu'aucun refus, même implicite, n'a été opposé et qu'aucun ne peut naître avant l'ordonnance, le refus né en cours d'instance imposant aussi le rejet (CE, 18 novembre 2015, n° 383189).",
+      "Le juge ne prescrit pas ce qui pourrait être obtenu par un référé-suspension ou un référé-liberté (CE, Sect., 5 février 2016, Benabdellah).",
+      "La mesure doit être utile et ne se heurter à aucune contestation sérieuse.",
+      "Ordonnance en dernier ressort : pourvoi en cassation dans les quinze jours (CJA, art. L. 523-1 et R. 523-1)."
+    ]
+  }
+]

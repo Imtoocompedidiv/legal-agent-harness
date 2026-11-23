@@ -1,0 +1,18 @@
+{
+  "id": "GENP-ANNT-2301774",
+  "capacite": "pronostic",
+  "famille": "annulation-ta",
+  "genere": true,
+  "origine": "usine.py, Tribunal administratif de Nice, 1re chambre · formation à trois, 27 juin 2024, 2301774 (https://librejustice.fr/decision/VahnRCBeM57u), issue réelle : oui",
+  "fixture": "gen_annt_2301774",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme le tribunal administratif, dis s'il annulera, au moins en partie, la décision attaquée. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2024-06-26T18:00",
+  "coupe": "2024-06-26",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*oui\\b",
+      "description": "répond oui, comme la juridiction"
+    }
+  ]
+}

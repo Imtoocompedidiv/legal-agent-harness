@@ -1,0 +1,11 @@
+Version : iso-v50-neuves
+Issue réelle : non
+
+**Oui, 75 %.**
+
+1. **Le refus de renouvellement fait présumer l'urgence.** Le Conseil d'État présume l'urgence quand l'administration refuse de renouveler un titre de séjour (CE, sect., 14 mars 2001, *Ameur*, n° 229773). La présomption s'applique même si l'étranger conserve un récépissé ou une autorisation provisoire. La décision du 3 juin 2026 refuse à la fois le renouvellement de la carte pluriannuelle et la carte de résident. Pour la suspendre en entier, il suffit que l'urgence soit acquise sur l'un des deux refus.
+2. **Rien au dossier ne renverse cette présomption.** Pour la renverser, le préfet de police doit invoquer des circonstances particulières et les prouver, puis la juge doit les exposer. Le dossier ne mentionne ni défense ni menace à l'ordre public. L'attestation de prolongation d'instruction ne suffit pas : c'est justement le type de document que la présomption neutralise.
+3. **La meilleure réponse du préfet : traiter la demande comme une première demande.** Si M. O... a déposé sa demande de renouvellement après l'expiration de sa carte, ou hors des délais de l'article R. 431-5 du CESEDA, le préfet dira qu'il s'agit d'une première demande, qui ne fait pas présumer l'urgence. Il faudrait alors prouver par pièces une perte imminente, et les arguments de M. O... sur ses voyages et la stabilité de son foyer sont trop généraux pour y suffire. Mais la délivrance d'une attestation de prolongation d'instruction indique en principe une demande de renouvellement déposée à temps. La date de dépôt de cette demande et la date d'expiration de la carte restent les faits à vérifier.
+4. **Le risque de rejet porte plutôt sur le doute sérieux.** Saisir le juge quatre mois et demi après la décision ne fait pas tomber, à lui seul, la présomption d'urgence. Si la demande est rejetée, ce sera plus probablement faute de moyen propre à faire naître un doute sérieux, par une ordonnance de tri rendue sans audience.
+
+Lu en entier : `dossier_remis.md` et la fiche « Référé-suspension » ; non relus à la source pour cette réponse : l'arrêt *Ameur* et l'article R. 431-5 du CESEDA.

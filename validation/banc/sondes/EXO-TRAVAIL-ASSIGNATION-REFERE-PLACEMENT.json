@@ -1,0 +1,45 @@
+{
+  "id": "EXO-TRAVAIL-ASSIGNATION-REFERE-PLACEMENT",
+  "capacite": "exercice",
+  "horloge": "2026-11-19T10:00",
+  "budget_minutes": 25,
+  "origine": "module mecanique-des-exercices, sonde de travail réel : caducité de l'assignation en référé non remise au greffe quinze jours avant l'audience (CPC, art. 754 et 755 ; Cass. 2e civ., 21 décembre 2023, n° 21-25.162)",
+  "consigne": "Nous sommes le jeudi 19 novembre 2026. Notre cliente, une copropriété, veut faire cesser l'occupation de son parking privé par les camions d'une entreprise voisine, qui y stationnent chaque nuit depuis septembre malgré deux mises en demeure. Le greffe du tribunal judiciaire nous a communiqué le 20 octobre 2026 la date d'audience de référé du mardi 24 novembre 2026 à 9 h 30. Le commissaire de justice signifiera l'assignation demain matin. Rédige l'assignation en référé dans ecritures/brouillons/ et la note d'instructions au commissaire de justice.",
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "caduc",
+      "description": "condition décisive : la caducité de l'assignation",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "754",
+        "quinze jours avant",
+        "15 jours avant"
+      ],
+      "description": "exigence implicite : remise au greffe quinze jours avant l'audience",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "755",
+        "réduction des délais",
+        "réduire les délais",
+        "abréger",
+        "heure à heure",
+        "heure indiquée",
+        "nouvelle date",
+        "autre date",
+        "renvoi de l.audience"
+      ],
+      "description": "choix : autorisation d'abréger les délais ou nouvelle date",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    }
+  ]
+}

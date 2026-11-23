@@ -1,0 +1,18 @@
+{
+  "id": "GENP-PROV-2400582",
+  "capacite": "pronostic",
+  "famille": "refere-provision-civil",
+  "genere": true,
+  "origine": "usine.py, Tribunal judiciaire de Créteil, juge unique, 6 septembre 2024, 24/00582 (https://librejustice.fr/decision/-9Rg3IuaHWZi), issue réelle : non",
+  "fixture": "gen_prov_2400582",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme le juge des référés, dis s'il allouera, au moins en partie, la provision demandée. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2024-09-05T18:00",
+  "coupe": "2024-09-05",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*non\\b",
+      "description": "répond non, comme la juridiction"
+    }
+  ]
+}

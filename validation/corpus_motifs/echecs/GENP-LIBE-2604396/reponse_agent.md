@@ -1,0 +1,13 @@
+Version : iso-v50-neuves
+Issue réelle : oui
+
+**Non, 70 %.** Le juge des référés rejettera très probablement la suspension de l'obligation de quitter le territoire et les injonctions. Il n'accordera sans doute que l'aide juridictionnelle provisoire, qui est accessoire. Je maintiens cette issue après examen au siège du juge : l'urgence est acquise, mais le dossier ne montre aucune illégalité manifeste.
+
+1. **Urgence.** Elle est remplie. Le requérant est en rétention et son éloignement est imminent, et le préfet ne conteste pas l'urgence. Tout se joue donc sur l'existence d'une atteinte grave et manifestement illégale.
+2. **Ce que le juge peut tenir pour établi.** L'instruction est close : le préfet a produit sa défense et l'audience s'est tenue. Le juge peut alors tenir pour établies les allégations précises, datées et étayées que l'administration n'a pas contestées. Or le requérant se borne à dire qu'il réside à Mayotte « depuis sa prime jeunesse ». Il ne donne ni date d'arrivée, ni scolarité, ni attaches familiales précises. Une allégation aussi générale ne s'impose pas au juge.
+3. **Le refus de titre du 22 juin 2026.** Le préfet a produit cet arrêté, qui contredit la thèse d'une demande jamais enregistrée faute de rendez-vous. Le requérant ne dit pas l'avoir attaqué. L'article L. 423-13 exige en outre d'être né en France, d'y avoir résidé huit ans de façon continue et d'y avoir suivi au moins cinq ans de scolarité après l'âge de dix ans. Aucune de ces conditions n'est même alléguée. Un défaut d'examen relève du juge du fond, pas d'une illégalité manifeste.
+4. **Recours effectif (art. L. 761-9, 2°).** Ce texte interdit d'éloigner l'étranger tant que le juge n'a pas statué, et c'est là qu'aurait pu se trouver la meilleure carte du requérant. Mais il a présenté ses observations à l'audience du 12 octobre, et rien n'indique une exécution de la mesure. Le grief reste sans fait à l'appui, et la demande d'organiser son retour devient sans objet.
+
+Les 30 % restants tiennent aux pièces versées que le dossier ne reproduit pas. Un acte de naissance et des certificats de scolarité à Mayotte, non contestés, pourraient conduire à une suspension au titre de l'article 8 de la Convention européenne des droits de l'homme.
+
+Lu : le dossier remis en entier, et les articles L. 423-13 et L. 761-9 du CESEDA dans leur version au 12 octobre 2026. Non lus : l'article L. 613-1, les pièces de la procédure et les décisions citées par la fiche de l'exercice.

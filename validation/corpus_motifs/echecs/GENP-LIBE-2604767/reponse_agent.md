@@ -1,0 +1,12 @@
+Version : iso-v50-neuves
+Issue réelle : oui
+
+**Non, 55 %.** Je maintiens le non avec moins de certitude : l'audience a eu lieu et le requérant y a été interrogé, mais rien dans la procédure ne montre d'attaches familiales précises et étayées que le préfet n'aurait pas contestées.
+
+1. **L'urgence est acquise pour l'obligation de quitter le territoire.** À Mayotte, le recours au fond ne suspend pas l'éloignement, et la mesure peut être exécutée à tout moment. Le préfet ne discute l'urgence que pour l'interdiction de retour. Le requérant, présent à l'audience, n'a pas été éloigné, et l'éloignement est interdit pendant l'instance (CESEDA, art. L. 761-9). Aucun grief tiré du recours effectif (article 13) ne peut donc naître de l'exécution.
+2. **Tout se joue sur l'atteinte grave et manifestement illégale à la vie familiale (article 8).** L'instruction étant close, la juge peut tenir pour établi ce qu'avance le requérant si c'est précis, daté et étayé, et que le préfet ne l'a contesté ni en défense ni à l'audience. Or le préfet conteste l'atteinte. Le résumé des moyens n'allègue ni enfant, ni conjoint, ni durée de séjour, ni pièce.
+3. **Le seuil est plus haut qu'au fond.** Le référé-liberté exige une illégalité manifeste, pas une simple erreur d'appréciation. Sans enfant français ou à charge, ni séjour long et prouvé, la mise en balance avec l'intérêt de l'éloignement ne se renverse pas à ce degré.
+4. **Le scénario contraire existe.** Si l'audition a fait apparaître des liens forts et documentés que le préfet n'a pas réfutés, notamment un enfant français à l'entretien duquel le requérant contribue, la juge suspendrait l'exécution de la mesure. Elle n'irait pas jusqu'à enjoindre la délivrance d'une autorisation de séjour sous huit jours, ce qui dépasse l'office du référé-liberté. La demande d'organiser le retour est, elle, sans objet puisque le requérant n'a pas été éloigné.
+5. **L'issue la plus probable :** aide juridictionnelle provisoire accordée et rejet du surplus. Si l'on compte cette admission provisoire comme une satisfaction partielle, la réponse devient « oui ».
+
+Lu en entier : `dossier_remis.md`. Non lus : les pièces de la requête et de la défense, et les décisions et textes cités, que je n'ai pas vérifiés à la source.

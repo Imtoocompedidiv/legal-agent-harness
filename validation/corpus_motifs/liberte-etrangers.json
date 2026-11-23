@@ -1,0 +1,738 @@
+[
+  {
+    "condition": "atteinte_grave_manifestement_illegale",
+    "sous_domaine": "execution_oqtf",
+    "sens": "tombe",
+    "texte": "Contre une obligation de quitter le territoire relevant des procédures spéciales du livre IX du CESEDA, le référé-liberté n'est recevable qu'en cas de changement de droit ou de fait survenu après le jugement du recours spécial ou l'expiration de son délai, qui donne à l'exécution des effets excédant ceux qui s'y attachent normalement. Des circonstances préexistantes et connues à la date de la mesure, des pièces ou moyens que l'intéressé pouvait soumettre au juge de l'éloignement, ou une OQTF laissée sans recours et devenue définitive ne constituent pas ce changement, et la requête est rejetée comme irrecevable ou manifestement mal fondée, souvent au tri.",
+    "marqueurs": [
+      "obligation de quitter le territoire",
+      "\\boqtf\\b",
+      "devenue? définitive",
+      "n['’]a pas (?:été )?contest",
+      "centre de rétention",
+      "vol (?:réservé|programmé)",
+      "laissez-passer"
+    ],
+    "sources": [
+      {
+        "juridiction": "TA Lyon, juge des référés",
+        "date": "2025-12-22",
+        "numero": "2515958",
+        "url": "https://librejustice.fr/decision/-Eu_-zve9W69",
+        "point": "pts 3 et 4 (OQTF non contestée, circonstances préexistantes et connues, rejet au tri)",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "CE, juge des référés",
+        "date": "2024-12-26",
+        "numero": "499617",
+        "url": "https://librejustice.fr/decision/heLg467RJIpG",
+        "point": "pt 3 (procédures du livre IX exclusives du livre V du CJA, sauf changement de circonstances) et pt 6",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TA Grenoble, réf., 21 mai 2026, n° 2605300 (lu) : naissance d'un enfant français trois semaines avant l'audience, vie commune et contribution présumée, regardée comme changement de circonstances justifiant la suspension de l'OQTF et de l'assignation à résidence.",
+    "frequence": "13 sur 17 rejets vus (OQTF) ; aucun des 17 accueils vus",
+    "depuis": "CE, réf., 11 juin 2015, n° 390704 (analyse vue en recherche, texte non lu) ; règle reprise au visa du livre IX du CESEDA et de l'article L. 776-1 du CJA par CE, réf., 26 déc. 2024, n° 499617 (lu)"
+  },
+  {
+    "condition": "atteinte_grave_manifestement_illegale",
+    "sous_domaine": "execution_oqtf",
+    "sens": "tombe",
+    "texte": "La naissance d'un enfant français après l'OQTF n'ouvre le référé-liberté que si le parent établit une vie commune ou une contribution effective à l'entretien et à l'éducation de l'enfant (CESEDA, art. L. 423-7 et L. 611-3, 5°), et le juge concilie ce droit avec l'ordre public en n'annulant qu'une atteinte manifestement disproportionnée. Des achats ponctuels de fournitures, l'absence de vie commune, des condamnations répétées dont des violences sur la mère enceinte, ou une relation nouée alors qu'une mesure d'éloignement était déjà prise font écarter l'atteinte, le parent pouvant contribuer depuis son pays et demander l'abrogation de l'interdiction de retour.",
+    "marqueurs": [
+      "enfant (?:de nationalité )?français",
+      "naissance",
+      "contribu\\w* (?:effectivement )?à l['’]entretien",
+      "l\\. ?423-7",
+      "l\\. ?611-3",
+      "menace (?:pour|à) l['’]ordre public",
+      "condamn\\w*"
+    ],
+    "sources": [
+      {
+        "juridiction": "TA Rouen, juge des référés",
+        "date": "2024-12-06",
+        "numero": "2404918",
+        "url": "https://librejustice.fr/decision/cLAh1SpUyAPw",
+        "point": "pts 6 à 8 (atteinte non manifestement disproportionnée malgré la naissance, menace à l'ordre public)",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "CE, juge des référés",
+        "date": "2024-12-26",
+        "numero": "499617",
+        "url": "https://librejustice.fr/decision/heLg467RJIpG",
+        "point": "pts 5 et 6 (appel rejeté au tri, contribution non établie, violences sur la mère)",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TA Grenoble, réf., 21 mai 2026, n° 2605300 (lu) : mariage puis naissance d'un enfant français, contribution présumée par la vie commune, assignation à résidence ; suspension et autorisation provisoire de séjour.",
+    "frequence": "2 sur 17 rejets vus ; à l'inverse 8 sur 17 accueils vus reposent sur une naissance, une grossesse ou un mariage postérieurs à la mesure",
+    "depuis": "CESEDA, art. L. 423-7 et L. 611-3 (cités par les ordonnances lues, historique non contrôlé) ; exigence d'une disproportion manifeste posée par CE, Sect., 30 oct. 2001, n° 238211 (déjà dans la fiche)"
+  },
+  {
+    "condition": "atteinte_grave_manifestement_illegale",
+    "sous_domaine": "execution_oqtf",
+    "sens": "remplit",
+    "texte": "Le recours contre l'OQTF étant suspensif (CESEDA, art. L. 722-7), l'éloignement exécuté alors que le tribunal était saisi porte au droit au recours effectif une atteinte grave et immédiate qui justifie l'injonction d'organiser le retour aux frais de l'État, même si le préfet ignorait la requête et même face à un passé pénal chargé, sans préjudice d'un placement en rétention au retour. Tant que le recours spécial est pendant et que l'éloignement n'a pas eu lieu, l'effet suspensif suffit au contraire et le référé-liberté est rejeté comme manifestement mal fondé.",
+    "marqueurs": [
+      "l\\. ?722-7",
+      "effet suspensif",
+      "éloign\\w* (?:effectif|exécuté)",
+      "retour en france",
+      "organiser (?:le|son) retour",
+      "levée d['’]écrou",
+      "l\\. ?921-[12]"
+    ],
+    "sources": [
+      {
+        "juridiction": "CE, juge des référés",
+        "date": "2023-06-02",
+        "numero": "474063",
+        "url": "https://librejustice.fr/decision/0gGFeK0gAzS_",
+        "point": "pts 3 à 6 (éloignement malgré l'effet suspensif, atteinte grave et immédiate, retour aux frais de l'État)",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Rouen, juge des référés",
+        "date": "2026-08-29",
+        "numero": "2604847",
+        "url": "https://librejustice.fr/decision/EySRJYGh7TTo",
+        "point": "motif sur L. 722-7 et L. 921-2 (recours pendant devant le juge de l'éloignement, rejet au tri)",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Aucune trouvée pour le régime de l'article L. 722-7. Pour le référé-liberté suspensif de Mayotte, CE, réf., 18 juill. 2024, n° 495939 (lu) refuse le retour quand la requête n'a été transmise au préfet qu'après l'embarquement.",
+    "frequence": "1 sur 17 rejets vus (recours spécial pendant) ; 1 sur 17 accueils vus porte sur un éloignement exécuté avant l'expiration d'un délai de recours (résumé seulement)",
+    "depuis": "CESEDA, art. L. 722-7, version en vigueur depuis le 1er mai 2021 (ordonnance n° 2020-1733), lue ; CE, réf., 2 juin 2023, n° 474063"
+  },
+  {
+    "condition": "atteinte_grave_manifestement_illegale",
+    "sous_domaine": "mayotte_outre_mer",
+    "sens": "partage",
+    "texte": "À Mayotte, l'éloignement exécuté en méconnaissance du différé de l'article L. 761-9, 2° du CESEDA viole le droit au recours effectif, mais les ordonnances rendues depuis 2025 n'en tirent une injonction de retour que si l'OQTF elle-même porte une atteinte grave et manifestement illégale à une liberté fondamentale, alors que des ordonnances de 2023 et 2024 jugeaient que la violation du différé caractérisait par elle-même l'urgence et l'atteinte. Le Conseil d'État a ordonné le retour sur une double atteinte, au recours effectif et à la vie privée et familiale, d'un jeune majeur scolarisé sur l'île dont le préfet avait reçu une demande de mise en attente avant l'embarquement, et l'a refusé quand la requête ne lui était parvenue qu'après.",
+    "marqueurs": [
+      "mayotte",
+      "l\\. ?761-9",
+      "différé",
+      "mise en attente",
+      "organiser (?:le|son) retour",
+      "comores|anjouan",
+      "interdiction de retour"
+    ],
+    "sources": [
+      {
+        "juridiction": "TA Mayotte, juge des référés",
+        "date": "2025-10-13",
+        "numero": "2502240",
+        "url": "https://librejustice.fr/decision/3ESEt1ZRttCd",
+        "point": "pt 6 (retour seulement si la mesure d'éloignement porte elle-même une atteinte grave et manifestement illégale)",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Mayotte, juge des référés",
+        "date": "2024-07-13",
+        "numero": "2401282",
+        "url": "https://librejustice.fr/decision/f00DD-pS43ER",
+        "point": "pt 5 (violation du différé regardée comme caractérisant par elle-même urgence et atteinte) et pts 8 à 10",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "CE, juge des référés",
+        "date": "2025-07-15",
+        "numero": "505559",
+        "url": "https://librejustice.fr/decision/5YdHkcJl8iB3",
+        "point": "pts 4, 6, 8 et 9 (double atteinte, circonstances très particulières de l'espèce)",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "CE, juge des référés",
+        "date": "2024-07-18",
+        "numero": "495939",
+        "url": "https://librejustice.fr/decision/_4hU1_BpgH_K",
+        "point": "pt 4 (requête transmise au préfet après l'embarquement, pas d'injonction de retour)",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "La ligne Mayotte actuelle de la fiche, qui fait de l'exécution après information de la saisine une atteinte justifiant à elle seule le retour, généralise CE n° 505559 ; l'ordonnance lue retient en réalité une double atteinte, et la pratique dominante depuis 2025 exige l'atteinte propre à la mesure.",
+    "frequence": "15 sur 20 rejets vus énoncent l'exigence d'une atteinte propre à la mesure ; 3 sur 20 accueils vus (2023-2024) jugent la violation du différé suffisante",
+    "depuis": "CESEDA, art. L. 761-9, version en vigueur depuis le 1er mai 2021 (lue) ; inflexion visible dans les ordonnances rendues depuis 2025, après CE, réf., 18 juill. 2024, n° 495939 et CE, réf., 15 juill. 2025, n° 505559 ; corrige la ligne Mayotte existante"
+  },
+  {
+    "condition": "atteinte_grave_manifestement_illegale",
+    "sous_domaine": "mayotte_outre_mer",
+    "sens": "tombe",
+    "texte": "La seule qualité de parent d'un enfant français ou d'enfants scolarisés à Mayotte ne caractérise pas l'atteinte grave et manifestement illégale à la vie familiale ou à l'intérêt supérieur de l'enfant : le juge exige la preuve d'une vie commune ou d'une contribution effective, que quelques factures alimentaires ou de collation scolaire ne fournissent pas, et tient compte de la possibilité de reconstituer la cellule familiale aux Comores. Les moyens de pure légalité, tel le défaut de motivation de l'OQTF ou de l'interdiction de retour, sont inopérants devant le juge du référé-liberté.",
+    "marqueurs": [
+      "mayotte",
+      "enfant (?:de nationalité )?français",
+      "factures?",
+      "vie commune",
+      "contribu\\w* (?:effectivement )?à l['’]entretien",
+      "défaut de motivation",
+      "cellule familiale"
+    ],
+    "sources": [
+      {
+        "juridiction": "TA Mayotte, juge des référés",
+        "date": "2025-10-13",
+        "numero": "2502240",
+        "url": "https://librejustice.fr/decision/3ESEt1ZRttCd",
+        "point": "pt 4 (moyens de légalité inopérants) et pt 8 (factures alimentaires, absence de vie commune, rejet au tri)",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Mayotte, juge des référés",
+        "date": "2026-01-06",
+        "numero": "2600035",
+        "url": "https://librejustice.fr/decision/vUs-czq2vK5Y",
+        "point": "motif final (père en situation régulière, une seule facture, cellule familiale reconstituable aux Comores)",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TA Mayotte, réf., 13 juill. 2024, n° 2401282 (lu), pt 8 : père vivant avec la mère en situation régulière et quatre enfants nés et scolarisés à Mayotte, atteinte grave et manifestement illégale retenue.",
+    "frequence": "12 sur 20 rejets vus ; à l'inverse 8 sur 20 accueils vus retiennent une vie commune ou une contribution prouvée",
+    "depuis": "CJA, art. L. 521-2 ; CIDE, art. 3-1 ; règle appliquée dans les ordonnances vues depuis 2023"
+  },
+  {
+    "condition": "atteinte_grave_manifestement_illegale",
+    "sous_domaine": "mayotte_outre_mer",
+    "sens": "remplit",
+    "texte": "Un mineur ne peut faire l'objet d'une OQTF (CESEDA, art. L. 611-3) et son éloignement par rattachement à un majeur n'est légal que si le préfet a vérifié, dans toute la mesure du possible, son identité et la nature exacte de ses liens avec l'accompagnant. Le rattachement d'un enfant scolarisé sur l'île à un adulte sans lien établi porte une atteinte grave et manifestement illégale à l'intérêt supérieur de l'enfant, justifie l'urgence du seul fait du caractère exécutoire de la mesure et entraîne la suspension en tant qu'elle le vise, ses parents ou lui-même étant recevables à agir.",
+    "marqueurs": [
+      "mineur",
+      "rattach\\w*",
+      "l\\. ?611-3",
+      "accompagné de",
+      "l\\. ?744-2",
+      "scolaris\\w*",
+      "embarcation"
+    ],
+    "sources": [
+      {
+        "juridiction": "TA Mayotte, juge des référés",
+        "date": "2024-08-23",
+        "numero": "2401580",
+        "url": "https://librejustice.fr/decision/7f26HcZnulTA",
+        "point": "pt 2 (recevabilité du mineur), pt 4 (urgence) et pts 6 et 7 (absence de vérification du lien, suspension partielle)",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TA Mayotte, réf., 6 janv. 2026, n° 2600035 (lu) : enfant de cinq ans rattaché à sa mère qui l'élève, filiation établie, père régulier sans contribution prouvée ; rejet.",
+    "frequence": "7 sur 20 accueils vus ; 1 sur 20 rejets vus (rattachement à un parent vérifié)",
+    "depuis": "CESEDA, art. L. 611-3 et L. 744-2 (cités, historique non contrôlé) ; CEDH, 25 juin 2020, Moustahi c. France, visée par l'ordonnance lue"
+  },
+  {
+    "condition": "urgence_particuliere",
+    "sous_domaine": "enregistrement_demande_asile",
+    "sens": "partage",
+    "texte": "Pour un rendez-vous d'enregistrement fixé très au-delà des trois ou dix jours ouvrés de l'article L. 521-4 du CESEDA, les juges sont partagés sur le point de savoir si le délai suffit à l'urgence des quarante-huit heures. Certaines ordonnances voient dans un délai de près de deux ans, qui prive de l'accès aux conditions d'accueil, une urgence particulière et une atteinte manifeste, l'État étant tenu d'une obligation de résultat, tandis que la majorité des rejets exige une vulnérabilité, une précarité ou un risque d'éloignement établis par pièces et tient compte d'une forte hausse des demandes ou d'un rendez-vous avancé.",
+    "marqueurs": [
+      "guichet unique",
+      "\\bguda\\b",
+      "\\bspada\\b",
+      "enregistrement de (?:sa|la|leur|leurs) demandes? d['’]asile",
+      "l\\. ?521-4",
+      "premier accueil",
+      "rendez-vous"
+    ],
+    "sources": [
+      {
+        "juridiction": "TA Guyane, juge des référés",
+        "date": "2025-02-27",
+        "numero": "2500257",
+        "url": "https://librejustice.fr/decision/LVbV36mqHkw8",
+        "point": "pt 5 (délai de plus de 500 jours, urgence particulière) et pts 7 et 8 (obligation de résultat, enregistrement sous trois jours)",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Guyane, juge des référés",
+        "date": "2025-08-05",
+        "numero": "2501195",
+        "url": "https://librejustice.fr/decision/wfi6v1305aaR",
+        "point": "pts 2 et 3 (délai de 463 jours, aucune pièce de vulnérabilité, hausse considérable des demandes)",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CE, réf., 21 avr. 2017, n° 409806 (lu), pt 9 : rejet malgré le dépassement, au vu de l'extrême tension du dispositif, d'un rendez-vous avancé et d'un examen régulier de priorité.",
+    "frequence": "18 sur 20 rejets vus pour défaut d'urgence ; 7 sur 20 accueils vus fondés sur le seul délai manifestement excessif",
+    "depuis": "CESEDA, art. L. 521-4, version en vigueur depuis le 1er mai 2021 (lue) ; même règle sous l'ancien article L. 741-1 (CE, réf., 21 avr. 2017, n° 409806)"
+  },
+  {
+    "condition": "atteinte_grave_manifestement_illegale",
+    "sous_domaine": "enregistrement_demande_asile",
+    "sens": "remplit",
+    "texte": "La privation des conditions matérielles d'accueil causée par un enregistrement tardif de la demande d'asile justifie l'intervention du juge lorsqu'elle est manifestement illégale et a des conséquences graves, appréciées selon les diligences et les moyens de l'administration ainsi que l'âge, la santé et la situation familiale. Une mère seule avec enfants, sans hébergement, convoquée plus d'un mois après sa présentation alors que la préfecture n'invoque ni difficulté conjoncturelle ni afflux récent et significatif, obtient un rendez-vous sous trois jours ouvrés, au besoin sous astreinte.",
+    "marqueurs": [
+      "enregistrement de (?:sa|la|leur|leurs) demandes? d['’]asile",
+      "conditions matérielles d['’]accueil",
+      "sans (?:hébergement|abri)",
+      "\\b115\\b",
+      "enfants? mineur",
+      "capacités? maximales?",
+      "trois jours ouvrés"
+    ],
+    "sources": [
+      {
+        "juridiction": "TA Grenoble, juge des référés",
+        "date": "2025-01-22",
+        "numero": "2500600",
+        "url": "https://librejustice.fr/decision/nSpaYyGXNm3X",
+        "point": "pt 4 (règle), pt 6 (ni difficulté conjoncturelle ni afflux) et pts 7 et 8 (urgence, injonction sous astreinte)",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "CE, juge des référés",
+        "date": "2017-04-21",
+        "numero": "409806",
+        "url": "https://librejustice.fr/decision/1PK0ts0cxtCF",
+        "point": "pt 6 (privation manifestement illégale et conséquences graves) et pt 8 (diligences, moyens, âge, santé, famille)",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TA Guyane, réf., 5 août 2025, n° 2501195 (lu) : demandeur seul, sans pièce de précarité ni risque d'éloignement établi, dans un contexte de forte hausse des demandes ; rejet.",
+    "frequence": "13 sur 20 accueils vus ; aucun des 20 rejets vus ne concerne une famille dont la vulnérabilité était établie",
+    "depuis": "CE, réf., 21 avr. 2017, n° 409806 ; CESEDA, art. L. 521-4 (version du 1er mai 2021, lue) et L. 551-9 (cité, non contrôlé)"
+  },
+  {
+    "condition": "urgence_particuliere",
+    "sous_domaine": "rendez_vous_titre_sejour",
+    "sens": "tombe",
+    "texte": "L'impossibilité d'obtenir en ligne un rendez-vous ou de déposer une demande de titre de séjour se traite par le référé mesures utiles de l'article L. 521-3 du CJA, où le juge peut fixer un délai bref en cas d'urgence particulière. Saisi en référé-liberté, le juge écarte l'urgence des quarante-huit heures lorsque la précarité ou le risque de perte d'emploi ne sont pas établis par une pièce montrant la suspension imminente du contrat de travail ou une autre conséquence immédiate.",
+    "marqueurs": [
+      "rendez-vous",
+      "\\banef\\b",
+      "téléservice",
+      "demande de (?:titre de séjour|renouvellement)",
+      "captures? d['’]écran",
+      "promesse d['’]embauche",
+      "contrat de travail"
+    ],
+    "sources": [
+      {
+        "juridiction": "TA Montreuil, juge des référés",
+        "date": "2024-12-30",
+        "numero": "2418373",
+        "url": "https://librejustice.fr/decision/aTPIOpHfGtcs",
+        "point": "pts 3 et 4 (urgence extrême non démontrée, voie de l'article L. 521-3 rappelée, rejet au tri)",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TA Melun, réf., 7 avr. 2026, n° 2605593 (lu) : courrier de l'employeur prononçant une mise à pied et exigeant un document sous deux jours, urgence admise en référé-liberté (objet voisin, attestation de prolongation).",
+    "frequence": "11 sur 15 rejets vus en référé-liberté ; les 20 décisions de la recherche générale sur les rendez-vous avaient été rendues sur l'article L. 521-3",
+    "depuis": "CE, 10 juin 2020, n° 435594 (analyse officielle lue en recherche, texte non lu) pour la voie de l'article L. 521-3 ; CJA, art. L. 521-2"
+  },
+  {
+    "condition": "atteinte_grave_manifestement_illegale",
+    "sous_domaine": "recepisse_document_sejour",
+    "sens": "tombe",
+    "texte": "L'obligation de mettre à disposition l'attestation de prolongation d'instruction ne dure que tant que le préfet n'a pas statué, et le silence gardé quatre mois (quatre-vingt-dix ou soixante jours pour certains titres) fait naître un rejet implicite qu'un document provisoire délivré ensuite n'empêche pas. Passé ce délai, l'absence d'attestation n'est plus une atteinte manifestement illégale, et le récépissé de l'article R. 431-12 n'est de toute façon pas dû pour une demande déposée sur l'ANEF.",
+    "marqueurs": [
+      "attestation de prolongation",
+      "récépissé",
+      "\\banef\\b",
+      "r\\. ?431-15-1",
+      "r\\. ?432-2",
+      "décision implicite de rejet",
+      "quatre mois"
+    ],
+    "sources": [
+      {
+        "juridiction": "TA Marseille, juge des référés",
+        "date": "2025-04-07",
+        "numero": "2503737",
+        "url": "https://librejustice.fr/decision/tKMbM1cyJ4xe",
+        "point": "pt 4 (pas de récépissé pour une demande ANEF) et pts 6 à 8 (rejet implicite né après quatre mois, pas d'atteinte manifestement illégale)",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "CE, avis contentieux",
+        "date": "2025-05-06",
+        "numero": "499904",
+        "url": "https://librejustice.fr/decision/O4UEoAiJl06A",
+        "point": "pt 5 (récépissé ou attestation délivrés après le délai sans incidence sur le rejet implicite)",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TA Melun, réf., 7 avr. 2026, n° 2605593 (lu) : demande de renouvellement tentée dans le délai, instruction en cours, mise à pied imminente ; attestation ordonnée sous vingt-quatre heures.",
+    "frequence": "9 sur 20 rejets vus (référé-liberté et mesures utiles confondus) ; aucun des 12 accueils vus en référé-liberté",
+    "depuis": "CESEDA, art. R. 432-1 et R. 432-2 (cités) ; CE, avis, 6 mai 2025, n° 499904 (lu)"
+  },
+  {
+    "condition": "atteinte_grave_manifestement_illegale",
+    "sous_domaine": "conditions_materielles_accueil",
+    "sens": "remplit",
+    "texte": "La privation des conditions matérielles d'accueil peut constituer une atteinte grave et manifestement illégale au droit d'asile si le comportement de l'OFII méconnaît manifestement ses exigences et entraîne des conséquences graves au regard de l'âge, de la santé et de la situation familiale, compte tenu de ses moyens et diligences. Un nourrisson à la rue avec ses parents, sans proposition d'orientation ni d'hébergement de l'OFII et malgré de nombreux appels au 115, fait ordonner la mise à l'abri sans délai, l'office ne pouvant subordonner la protection de l'enfant à la production de pièces accessoires.",
+    "marqueurs": [
+      "\\bofii\\b",
+      "conditions matérielles d['’]accueil",
+      "allocation pour demandeur d['’]asile",
+      "nourrisson",
+      "enfant en bas[- ]âge",
+      "\\b115\\b",
+      "à la rue"
+    ],
+    "sources": [
+      {
+        "juridiction": "TA Paris, juge des référés",
+        "date": "2024-10-31",
+        "numero": "2428962",
+        "url": "https://librejustice.fr/decision/eju-egGQopi5",
+        "point": "pt 3 (urgence, nourrisson, pièces accessoires), pt 5 (règle) et pt 6 (aucune mesure effective de l'OFII)",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Nantes, juge des référés",
+        "date": "2024-01-16",
+        "numero": "2400428",
+        "url": "https://librejustice.fr/decision/1WwEAZQeygcy",
+        "point": "pt 2 (énoncé de la règle de la méconnaissance manifeste et des conséquences graves)",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TA Nice, réf., 28 févr. 2025, n° 2501098 (lu), pt 4 : famille récemment arrivée, conditions d'accueil acceptées, pénurie locale d'hébergement ; pas d'atteinte. Voir aussi TA Nantes, n° 2400428, pt 4 : allocation majorée versée, certificats médicaux non retournés, pas de carence de l'OFII.",
+    "frequence": "18 sur 20 accueils vus ; 8 sur 20 rejets vus retiennent au contraire les diligences de l'OFII, l'allocation majorée ou une vulnérabilité non établie",
+    "depuis": "règle appliquée par les ordonnances vues depuis 2023 ; appréciation selon les moyens et la situation posée par CE, réf., 21 avr. 2017, n° 409806"
+  },
+  {
+    "condition": "atteinte_grave_manifestement_illegale",
+    "sous_domaine": "conditions_materielles_accueil",
+    "sens": "tombe",
+    "texte": "Depuis le 15 juillet 2024, les décisions qui refusent ou retirent, même partiellement ou implicitement, les conditions matérielles d'accueil se contestent dans les sept jours selon la procédure de l'article L. 921-1 du CESEDA (art. L. 555-1), qui exclut le référé-liberté. Celui-ci ne redevient ouvert qu'en cas de changement de droit ou de fait postérieur au jugement de ce recours ou à l'expiration de son délai, et la requête qui omet la voie spéciale est rejetée comme irrecevable, souvent au tri.",
+    "marqueurs": [
+      "l\\. ?555-1",
+      "l\\. ?921-1",
+      "refus\\w* (?:des|le bénéfice des) conditions matérielles",
+      "(?:mis|mettre) fin aux conditions matérielles",
+      "réexamen",
+      "sept jours",
+      "décision implicite"
+    ],
+    "sources": [
+      {
+        "juridiction": "TA Lyon, juge des référés",
+        "date": "2026-02-03",
+        "numero": "2601364",
+        "url": "https://librejustice.fr/decision/a0WR9hIEAkwI",
+        "point": "motif unique (procédure spéciale exclusive sauf changement de circonstances, requête manifestement irrecevable)",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Toulouse, juge des référés",
+        "date": "2026-07-15",
+        "numero": "2605824",
+        "url": "https://librejustice.fr/decision/TFcJRhPnLd47",
+        "point": "pts 4 et 5 (refus partiel implicite, procédure exclusive du référé-liberté)",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TA Paris, réf., 31 oct. 2024, n° 2428962 (lu) : en l'absence de toute décision de refus, l'inaction de l'OFII face à un nourrisson à la rue reste attaquable en référé-liberté ; la question de savoir quand le silence de l'OFII vaut refus implicite reste ouverte.",
+    "frequence": "15 sur 15 décisions vues citant l'article L. 555-1 depuis le 15 juillet 2024 (recherche dédiée, rejets ou irrecevabilités) ; 1 sur 20 rejets de l'échantillon général",
+    "depuis": "CESEDA, art. L. 555-1 et L. 921-1, issus de la loi n° 2024-42 du 26 janv. 2024 (art. 72), en vigueur le 15 juillet 2024 (décret n° 2024-799, art. 9), lus"
+  },
+  {
+    "condition": "auteur_personne_publique_ou_organisme_charge_d_un_service_public",
+    "sous_domaine": "conditions_materielles_accueil",
+    "sens": "partage",
+    "texte": "Pour le demandeur d'asile enregistré mais laissé sans hébergement, les juges sont partagés sur l'appel au préfet au titre de l'hébergement d'urgence (CASF, art. L. 345-2-2). Les uns enjoignent à l'État de désigner un lieu d'accueil, fût-il provisoire, quand l'OFII n'a pas de place et que la famille est en détresse l'hiver, les autres jugent que le préfet n'a aucune compétence simultanée ou subsidiaire à celle de l'OFII, sauf circonstances exceptionnelles, dès lors que les conditions d'accueil ou l'allocation majorée sont accordées.",
+    "marqueurs": [
+      "l\\. ?345-2-2",
+      "hébergement d['’]urgence",
+      "\\bofii\\b",
+      "demandeurs? d['’]asile",
+      "majorée",
+      "compétence (?:simultanée|subsidiaire)",
+      "\\b115\\b"
+    ],
+    "sources": [
+      {
+        "juridiction": "TA Nantes, juge des référés",
+        "date": "2024-01-16",
+        "numero": "2400428",
+        "url": "https://librejustice.fr/decision/1WwEAZQeygcy",
+        "point": "pts 6 à 8 (injonction au préfet de désigner un hébergement d'urgence sous vingt-quatre heures)",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Nice, juge des référés",
+        "date": "2025-02-28",
+        "numero": "2501098",
+        "url": "https://librejustice.fr/decision/qYbekCsGFQ-o",
+        "point": "pt 6 (aucune compétence simultanée ou subsidiaire du préfet)",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Toulouse, juge des référés",
+        "date": "2026-07-15",
+        "numero": "2605824",
+        "url": "https://librejustice.fr/decision/TFcJRhPnLd47",
+        "point": "pts 8 et 9 (pas de vocation à l'hébergement d'urgence sauf circonstances exceptionnelles)",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Aucune décision du Conseil d'État lue pour le demandeur déjà enregistré ; avant l'enregistrement, CE, réf., 21 avr. 2017, n° 409806 (lu), pts 7, 8 et 10, rattache l'hébergement à l'État et non à l'OFII.",
+    "frequence": "8 sur 20 rejets vus (absence de compétence du préfet) ; 4 sur 20 accueils vus (injonction au préfet)",
+    "depuis": "CASF, art. L. 345-2-2 et L. 345-2-3 ; CESEDA, art. L. 552-8 (cité) ; divergence visible dans les ordonnances vues de 2023 à 2026"
+  },
+  {
+    "condition": "atteinte_grave_manifestement_illegale",
+    "sous_domaine": "hebergement_urgence",
+    "sens": "partage",
+    "texte": "Dans un dispositif d'hébergement saturé, une partie des ordonnances juge que l'intérêt supérieur de l'enfant interdit d'opposer la saturation à une famille vivant à la rue avec de très jeunes enfants et appelant régulièrement le 115, tandis que d'autres exigent que la famille établisse être parmi les plus vulnérables de celles qui attendent. Dans les deux lignes échouent la famille qui ne prouve pas d'appels récents au 115 ou de démarches auprès du SIAO, celle dont l'enfant, plus âgé, ne présente pas de pathologie, et celle qui a eu le temps de s'organiser avant une expulsion annoncée de longue date.",
+    "marqueurs": [
+      "\\b115\\b",
+      "\\bsiao\\b",
+      "hébergement d['’]urgence",
+      "l\\. ?345-2-2",
+      "saturation",
+      "à la rue",
+      "expuls\\w*"
+    ],
+    "sources": [
+      {
+        "juridiction": "TA Paris, juge des référés",
+        "date": "2023-09-13",
+        "numero": "2320692",
+        "url": "https://librejustice.fr/decision/sZsrOvn3xGjx",
+        "point": "pts 5 et 6 (appels réguliers au 115, enfants d'un et trois ans, saturation inopposable)",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Paris, juge des référés",
+        "date": "2026-09-24",
+        "numero": "2628744",
+        "url": "https://librejustice.fr/decision/cjaNauqrrQsf",
+        "point": "pt 5 (enfant malade, appels non traités, famille parmi les plus vulnérables malgré la saturation)",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Toulouse, juge des référés",
+        "date": "2026-11-10",
+        "numero": "2608893",
+        "url": "https://librejustice.fr/decision/23KoYr3L2Aru",
+        "point": "pts 6 à 8 (expulsion annoncée seize mois avant, démarches tardives, famille non prioritaire, rejet au tri)",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Les sources citées se contredisent sur l'opposabilité de la saturation ; aucune décision du Conseil d'État lue sur ce point, la règle de principe restant CE, Sect., 13 juill. 2016, n° 400074 (déjà dans la fiche).",
+    "frequence": "13 sur 20 rejets vus (priorité non établie, démarches 115 non prouvées ou non récentes) ; 16 sur 20 accueils vus (jeunes enfants ou enfant malade à la rue, appels répétés)",
+    "depuis": "CASF, art. L. 345-2, L. 345-2-2 et L. 345-2-3 ; CE, Sect., 13 juill. 2016, n° 400074 (fiche)"
+  },
+  {
+    "condition": "atteinte_grave_manifestement_illegale",
+    "sous_domaine": "mineurs_non_accompagnes",
+    "sens": "tombe",
+    "texte": "Après une évaluation concluant à la majorité ou à l'absence d'isolement, le refus du département relève du juge des enfants, et le juge des référés n'ordonne la poursuite de l'accueil provisoire que si l'appréciation est manifestement erronée et que l'intéressé court un risque immédiat pour sa santé ou sa sécurité. Un acte d'état civil étranger dont les conditions d'obtention ne sont pas expliquées ou qui contredit le récit, ou une évaluation fondée sur l'apparence et le parcours que rien ne contredit utilement, suffisent à écarter l'erreur manifeste, la saisine du juge des enfants ne créant pas de droit au maintien.",
+    "marqueurs": [
+      "mineur (?:non accompagné|isolé)",
+      "évaluation",
+      "aide sociale à l['’]enfance",
+      "juge des enfants",
+      "jugement supplétif",
+      "acte de naissance",
+      "article 47 du code civil"
+    ],
+    "sources": [
+      {
+        "juridiction": "TA Paris, juge des référés",
+        "date": "2025-11-18",
+        "numero": "2533172",
+        "url": "https://librejustice.fr/decision/rcEU68G4nSVS",
+        "point": "pts 7 et 8 (règle) et pt 11 (actes obtenus depuis la France, incohérences, pas d'erreur manifeste)",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "CE, juge des référés",
+        "date": "2022-11-10",
+        "numero": "468382",
+        "url": "https://librejustice.fr/decision/JB8F3ONx3m4i",
+        "point": "pts 5 et 6 (office du juge) et pts 10 et 11 (force probante combattue par tout moyen, injonction annulée)",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TA Bordeaux, réf., 16 janv. 2023, n° 2300145 (lu), pts 2 et 3 : évaluation départementale concluant à la minorité, classement sans suite du parquet et avis défavorable de la police aux frontières insuffisants, reprise de l'accueil sous douze heures.",
+    "frequence": "20 sur 20 rejets vus ; à l'inverse 9 sur 20 accueils vus retiennent une appréciation manifestement erronée",
+    "depuis": "CE, réf., 10 nov. 2022, n° 468382 (lu) ; C. civ., art. 47 et 375 ; CASF, art. L. 223-2 et R. 221-11"
+  },
+  {
+    "condition": "atteinte_grave_manifestement_illegale",
+    "sous_domaine": "mineurs_non_accompagnes",
+    "sens": "remplit",
+    "texte": "Sauf minorité manifestement exclue, le département doit mettre à l'abri et évaluer, dans le cadre de l'accueil provisoire d'urgence, toute personne qui se déclare mineure et privée de la protection de sa famille, et ni une pré-évaluation non prévue par les textes, ni un rendez-vous d'évaluation fixé à plusieurs semaines, ni l'insuffisance non démontrée de ses capacités ne l'en dispensent. L'attente n'est admise que si une saturation exceptionnelle est établie et que la date d'évaluation a été fixée en tenant compte de l'âge et de la santé du jeune, qui n'apporte alors aucun élément concret sur sa situation.",
+    "marqueurs": [
+      "se déclar\\w* mineur",
+      "accueil provisoire d['’]urgence",
+      "pré-évaluation",
+      "r\\. ?221-11",
+      "l\\. ?221-2-4",
+      "mise à l['’]abri",
+      "rendez-vous"
+    ],
+    "sources": [
+      {
+        "juridiction": "CE, juge des référés",
+        "date": "2017-08-25",
+        "numero": "413549",
+        "url": "https://librejustice.fr/decision/Yn7Bkg4P11ob",
+        "point": "pts 6 et 7 (refus d'accès au dispositif, moyens du département non démontrés insuffisants)",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "CE, juge des référés",
+        "date": "2024-07-18",
+        "numero": "496014",
+        "url": "https://librejustice.fr/decision/V4edGCmNUnxV",
+        "point": "pts 4 et 5 (rendez-vous à plusieurs semaines, carence caractérisée) et pts 6 et 7 (exception de saturation exceptionnelle)",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Rouen, juge des référés",
+        "date": "2024-01-22",
+        "numero": "2400240",
+        "url": "https://librejustice.fr/decision/rprgP4u9Smln",
+        "point": "pts 7 et 8 (démarches vaines, pré-évaluation sans base textuelle, accueil sous quarante-huit heures)",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CE, réf., 18 juill. 2024, n° 496014 (lu), pts 6 à 8 : saturation exceptionnelle du dispositif, date d'évaluation fixée selon l'âge et la santé, absence d'éléments concrets ; rejet.",
+    "frequence": "11 sur 20 accueils vus ; aucun des 20 rejets vus ne porte sur l'accueil avant évaluation",
+    "depuis": "CE, réf., 25 août 2017, Département de l'Isère, n° 413549 ; CASF, art. L. 221-2-4 et R. 221-11 dans sa rédaction issue du décret n° 2023-1240 du 22 déc. 2023 (cités par CE n° 496014)"
+  },
+  {
+    "condition": "atteinte_grave_manifestement_illegale",
+    "sous_domaine": "detention",
+    "sens": "remplit",
+    "texte": "En détention, le juge ordonne les mesures que l'administration pénitentiaire peut prendre dans les quarante-huit heures face à une carence exposant les détenus, de manière caractérisée, à un traitement inhumain ou dégradant, en tenant compte de ses moyens et des mesures déjà prises, et refuse les mesures structurelles (surpopulation, travaux lourds, moyens nouveaux), l'administration ne maîtrisant pas les mises sous écrou. Sont ainsi ordonnées des mesures d'organisation du service, par exemple, pour un détenu lourdement handicapé, le lever quotidien, des douches régulières, l'accès normal aux besoins élémentaires et une vêture décente, quand l'administration ne justifie pas les assurer.",
+    "marqueurs": [
+      "détenus?",
+      "établissement pénitentiaire",
+      "maison d['’]arrêt|centre (?:de détention|pénitentiaire)",
+      "cellules?",
+      "nuisibles",
+      "contrôleur général des lieux de privation de liberté",
+      "traitements? inhumains? ou dégradants?"
+    ],
+    "sources": [
+      {
+        "juridiction": "CE (formation de jugement, Recueil)",
+        "date": "2017-07-28",
+        "numero": "410677",
+        "url": "https://librejustice.fr/decision/V576dL3NMbWk",
+        "point": "pt 4 (conditions d'intervention), pt 8 (pouvoirs), pt 11 (mesures structurelles exclues) et pt 14 (moyens et mises sous écrou)",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Nancy, juge des référés",
+        "date": "2025-01-29",
+        "numero": "2500208",
+        "url": "https://librejustice.fr/decision/AeubHk_9e7gY",
+        "point": "pt 8 (règle), pts 11 et 12 (injonction sous quarante-huit heures) et pt 13 (nuisibles non établis)",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TA Nancy, réf., 8 juill. 2026, n° 2602387 (lu) : détenu à l'isolement n'apportant que son témoignage et ceux de codétenus ; rejet au tri.",
+    "frequence": "15 sur 15 accueils vus rendus en référé-liberté (10 sur requête d'associations, 2 de détenus groupés, 3 individuels) ; 3 sur 20 rejets vus écartent des mesures structurelles",
+    "depuis": "CE, 28 juill. 2017, n° 410677 (Recueil, lu) ; code pénitentiaire, art. L. 6 (cité)"
+  },
+  {
+    "condition": "urgence_particuliere",
+    "sous_domaine": "detention",
+    "sens": "tombe",
+    "texte": "Le détenu qui agit seul doit justifier de circonstances particulières imposant une mesure dans les quarante-huit heures, l'atteinte alléguée ne suffisant pas à caractériser l'urgence et aucune présomption ne jouant en référé-liberté, même au quartier d'isolement. Des témoignages de codétenus, l'absence de toute demande préalable à la direction ou au médecin et des mesures de sécurité que le profil pénal justifie conduisent au rejet, souvent au tri.",
+    "marqueurs": [
+      "quartier d['’]isolement",
+      "détenu",
+      "fouilles?",
+      "codétenus",
+      "mesures de sécurité",
+      "palpations?",
+      "extraction"
+    ],
+    "sources": [
+      {
+        "juridiction": "TA Nancy, juge des référés",
+        "date": "2026-07-08",
+        "numero": "2602387",
+        "url": "https://librejustice.fr/decision/pTmtTuPpIEc9",
+        "point": "motifs sur l'urgence (atteinte avérée insuffisante) et sur l'absence de pièces et de demandes préalables",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TA Nancy, réf., 29 janv. 2025, n° 2500208 (lu) : manquements établis par des déclarations concordantes et par l'insuffisance des justifications de l'administration ; injonction sous quarante-huit heures.",
+    "frequence": "12 sur 20 rejets vus (6 pour défaut d'urgence particulière, 6 pour allégations non étayées ou mesures de sécurité justifiées)",
+    "depuis": "CE, 28 juill. 2017, n° 410677 (conditions d'intervention) ; exigence d'urgence particulière de la fiche (CE, réf., 28 mars 2008, n° 314368)"
+  },
+  {
+    "condition": "atteinte_grave_manifestement_illegale",
+    "sous_domaine": "libertes_publiques",
+    "sens": "remplit",
+    "texte": "L'interdiction d'une manifestation déclarée n'est légale qu'en dernier recours, si elle est adaptée, nécessaire et proportionnée au regard des moyens humains, matériels et juridiques de l'autorité de police, et peut viser des violences, des dégradations ou des infractions suffisamment certaines et imminentes. Le préfet qui invoque des troubles passés sans montrer que le parcours ou le lieu les aggraverait ni que les forces de l'ordre ne pourraient les prévenir, chiffres à l'appui, voit son arrêté suspendu, de même qu'une interdiction dont le périmètre ou la durée sont imprécis.",
+    "marqueurs": [
+      "interdi\\w* (?:de )?(?:la |toute )?manifestation",
+      "rassemblement",
+      "cortège",
+      "l\\. ?211-4",
+      "liberté de manifester",
+      "parcours",
+      "déclaration préalable"
+    ],
+    "sources": [
+      {
+        "juridiction": "TA Lyon, formation de trois juges des référés",
+        "date": "2026-11-16",
+        "numero": "2615315",
+        "url": "https://librejustice.fr/decision/Y-c5r5d9pu0u",
+        "point": "pt 6 (règle) et pts 8 et 9 (incidents indépendants du parcours, effectifs non chiffrés, suspension partielle)",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "CE, juge des référés",
+        "date": "2023-10-22",
+        "numero": "488973",
+        "url": "https://librejustice.fr/decision/k9AQhKkkSMOx",
+        "point": "pt 4 (formule de principe sur l'interdiction en dernier recours)",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TA Châlons-en-Champagne, réf., 5 oct. 2026, n° 2603577 (lu), pt 9 : troubles graves de la veille aux abords des lycées visés, interdiction limitée à deux jours et à ces abords ; rejet.",
+    "frequence": "19 sur 20 accueils vus (16 faute de nécessité démontrée, 3 pour imprécision du périmètre ou de la durée)",
+    "depuis": "CSI, art. L. 211-1 à L. 211-4 ; formule de principe reprise par CE, réf., 22 oct. 2023, n° 488973 (lu)"
+  },
+  {
+    "condition": "atteinte_grave_manifestement_illegale",
+    "sous_domaine": "libertes_publiques",
+    "sens": "tombe",
+    "texte": "L'interdiction est maintenue quand elle répond à des troubles graves et récents survenus aux mêmes lieux ou lors d'actions comparables, qu'elle est limitée dans le temps et l'espace et laisse possibles des rassemblements hors du périmètre, ou quand la mobilisation des forces de l'ordre sur des événements concomitants empêche l'encadrement. Le requérant qui conteste le risque par de simples allégations, sans pièce, échoue, l'interdiction circonstanciée ne valant pas interdiction de principe de toute manifestation ayant le même objet.",
+    "marqueurs": [
+      "interdi\\w* (?:de )?(?:la |tout )?(?:manifestation|rassemblement)",
+      "abords",
+      "lycées?",
+      "périmètre",
+      "dégradations",
+      "forces de l['’]ordre",
+      "vigipirate"
+    ],
+    "sources": [
+      {
+        "juridiction": "TA Châlons-en-Champagne, juge des référés",
+        "date": "2026-10-05",
+        "numero": "2603577",
+        "url": "https://librejustice.fr/decision/1cbXeX_FDQvH",
+        "point": "pt 5 (règle) et pt 9 (incendies et violences de la veille, interdiction de deux jours aux abords des établissements)",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "CE, juge des référés",
+        "date": "2023-10-22",
+        "numero": "488973",
+        "url": "https://librejustice.fr/decision/k9AQhKkkSMOx",
+        "point": "pts 5 et 6 (forces mobilisées, allégations non étayées, interdiction circonstanciée)",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TA Lyon, réf. (formation de trois juges), 16 nov. 2026, n° 2615315 (lu) : contexte social tendu, mais incidents survenus indépendamment du parcours et effectifs non chiffrés ; suspension.",
+    "frequence": "17 sur 19 rejets vus (12 pour troubles récents ou risque établi et mesure limitée, 2 pour forces mobilisées ailleurs, 2 pour risque d'affrontements, 1 pour incitation à la haine lors de rassemblements antérieurs)",
+    "depuis": "CSI, art. L. 211-4 ; CE, réf., 22 oct. 2023, n° 488973"
+  }
+]

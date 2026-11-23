@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "matrice/2",
+  "title": "Matrice des preuves, format 2 (preuves/matrice.json)",
+  "description": "Chaque fait renvoie aux extraits littéraux des fiches d'analyse. force_probante dit l'état de la preuve (ce que font les extraits) ; force, hérité du format 1, dit le poids de la source pour le juge. Les règles propres à chaque état (prouvé, corroboré, contesté, contredit) et la conformité des extraits aux fiches sont contrôlées par scripts/pieces.py.",
+  "type": "object",
+  "required": ["version", "faits_a_prouver"],
+  "properties": {
+    "version": {"const": 2},
+    "faits_a_prouver": {"type": "array", "items": {"$ref": "#/$defs/fait"}}
+  },
+  "$defs": {
+    "fait": {
+      "type": "object",
+      "required": ["id", "fait", "charge", "pieces", "force", "force_probante", "extraits"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "fait": {"type": "string", "minLength": 1},
+        "date_du_fait": {"type": ["string", "null"]},
+        "charge": {"enum": ["nous", "adversaire", "partagee", "juge"]},
+        "regle_de_charge": {"type": "string"},
+        "pieces": {"type": "array", "items": {"type": ["string", "integer"]}},
+        "force_probante": {"enum": ["prouve", "corrobore", "allegue", "conteste", "contredit"]},
+        "force": {"enum": ["forte", "moyenne", "faible", "nulle"]},
+        "extraits": {"type": "array", "items": {"$ref": "#/$defs/extrait"}},
+        "contre_extraits": {"type": "array", "items": {"$ref": "#/$defs/extrait"}},
+        "contestation": {
+          "type": "object", "required": ["par", "ou", "resume"],
+          "properties": {"par": {"type": "string", "minLength": 1}, "ou": {"type": "string", "minLength": 1}, "resume": {"type": "string", "minLength": 1}}
+        },
+        "decisif": {"type": "boolean"},
+        "actes": {"type": "array", "items": {"type": "string"}},
+        "chronologie": {"type": "array", "items": {"type": "string"}},
+        "lacune": {"type": "string"},
+        "action": {"type": ["string", "null"]}
+      }
+    },
+    "extrait": {
+      "type": "object",
+      "required": ["cote", "extrait", "page", "citation"],
+      "properties": {
+        "cote": {"type": ["string", "integer"]},
+        "extrait": {"type": "string", "pattern": "^E\\d+$"},
+        "page": {"type": "integer", "minimum": 1},
+        "citation": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

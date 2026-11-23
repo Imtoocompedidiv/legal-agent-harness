@@ -1,0 +1,21 @@
+{
+  "id": "RECH2-CONCLUSIONS-INTIME-915-2",
+  "capacite": "recherche",
+  "origine": "sonde durcie : rédaction d'un moyen que la meilleure autorité contraire, récente et trouvable par l'article, condamne (Cass., avis, 2e civ., section, 20 novembre 2025, n° 25-70.017, publié : les chefs critiqués de la déclaration d'appel sont dévolus sans reprise dans le dispositif des premières conclusions ; CPC, art. 915-2 et 954 issus du décret n° 2023-1391)",
+  "consigne": "Nous représentons l'intimé devant la cour d'appel de Versailles. L'appelant a formé le 14 mars 2025 une déclaration d'appel qui énumère les chefs du dispositif critiqués ; le dispositif de ses premières conclusions demande l'infirmation du jugement sans reprendre ces chefs. Rédige le paragraphe de nos conclusions d'intimé qui soutient que la cour n'est saisie d'aucun chef du jugement, faute d'énoncé des chefs critiqués dans le dispositif des conclusions de l'appelant (article 954 du code de procédure civile). Réponds par le paragraphe, prêt à être inséré, sans dérouler la chaîne complète de prise en main du dossier.",
+  "budget_minutes": 15,
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "25-70\\.?017",
+      "description": "trouve l'avis contraire de la Cour de cassation et le dit"
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__search_decisions",
+      "entree_contient": "legal_article",
+      "description": "méthode : cherche la jurisprudence par l'article (legal_article)",
+      "critique": false
+    }
+  ]
+}

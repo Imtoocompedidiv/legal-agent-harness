@@ -1,0 +1,12 @@
+Version : ech-v50
+Issue réelle : oui
+
+**Non, 80 %.**
+
+1. **Le refus ne bénéficie pas de la présomption d'urgence.** L'arrêté du 15 novembre 2022 refuse la « délivrance » d'un titre, et Mme B demande un titre « salarié » sur le fondement de l'article L. 421-3. Rien au dossier ne montre qu'elle avait déjà un titre ni qu'on lui en refuse le renouvellement. Or l'urgence n'est présumée que pour un refus de renouvellement ou un retrait de titre (CE, Sect., 14 mars 2001, n° 229773). Pour une première demande, elle doit être prouvée.
+2. **Aucune urgence n'est démontrée.** Pour l'établir, il faudrait une pièce montrant une perte imminente : emploi perdu, ressources coupées, prise en charge interrompue. Le dossier n'en contient aucune. Ses moyens portent sur la légalité de l'arrêté (motivation, examen particulier, L. 421-3, article 8 de la convention européenne, erreur manifeste) et aucun ne décrit un préjudice précis et daté.
+3. **Le fait que l'instruction soit close ne l'aide pas.** Certes, le préfet n'a répondu qu'en termes généraux, et le juge peut tenir pour établies des allégations précises, datées et étayées que l'administration n'a pas contestées. Mais Mme B n'a rien avancé de tel sur l'urgence. Le silence du préfet ne remplit donc pas la condition à sa place.
+4. **L'éloignement n'est pas imminent.** Le recours au fond contre l'obligation de quitter le territoire empêche son exécution forcée tant que le tribunal n'a pas statué. De plus, Mme B a attendu de décembre 2022 à avril 2023 sans rien demander en urgence, et le jugement au fond est maintenant rendu.
+5. **Le meilleur argument de Mme B et ce qui ferait basculer la réponse.** Elle pourrait soutenir qu'elle avait déjà un titre, ce qui ferait jouer la présomption. Elle pourrait aussi produire une promesse d'embauche perdue faute de titre. Le premier point se vérifie en comparant la date de sa demande à la date d'expiration d'un éventuel ancien titre, dans le délai de l'article R. 431-5 du CESEDA ; aucune de ces deux dates n'est au dossier. Si elle avait un ancien titre et l'a fait renouveler à temps, la réponse serait oui.
+
+J'ai lu `dossier_remis.md` en entier. Je n'ai pas relu à la source les textes et décisions cités ; ils viennent de la fiche de l'exercice.

@@ -1,0 +1,282 @@
+[
+ {
+  "id": "GENP-PROV-2400717",
+  "etiquette_actuelle": "oui",
+  "issue_dispositif": "oui",
+  "juridiction": "TJ",
+  "extrait": "CONDAMNONS le syndicat des copropriétaires du [Adresse 1], représenté par son syndic, la SAS [4], à payer à la SAS [5] la somme de 19.860,04 euros à titre de provision à valeur sur les factures suivantes"
+ },
+ {
+  "id": "GENP-PROV-2203394",
+  "etiquette_actuelle": "oui",
+  "issue_dispositif": "ambigu",
+  "juridiction": "CA",
+  "extrait": "Infirme l'ordonnance en ce qu'elle a rejeté les demandes de provisions [...] Statuant à nouveau sur ces points, Dit n'y avoir lieu au paiement d'une nouvelle provision, Condamne la société XL Insurance Company SE à payer à Mme [Y] une provision ad litem de 1 500 euros"
+ },
+ {
+  "id": "GENP-PROV-2203200",
+  "etiquette_actuelle": "non",
+  "issue_dispositif": "oui",
+  "juridiction": "CA",
+  "extrait": "Confirme l'ordonnance entreprise [qui avait condamné la SA AXA FRANCE IARD à payer à Mme [O] [L], une somme provisionnelle de 5 000 € à valoir sur la réparation de son préjudice corporel]"
+ },
+ {
+  "id": "GENP-PROV-2456478",
+  "etiquette_actuelle": "oui",
+  "issue_dispositif": "oui",
+  "juridiction": "TJ",
+  "extrait": "Condamnons la société civile FONCIERE DE FRANCE à restituer à la SCCV [Localité 16] la somme de 700 000 euros à titre de provision à valoir sur le dépôt de garantie"
+ },
+ {
+  "id": "GENP-PROV-2300952",
+  "etiquette_actuelle": "non",
+  "issue_dispositif": "non",
+  "juridiction": "CA",
+  "extrait": "Confirme l'ordonnance de référé rendue le 2 décembre 2022 par le Tribunal Judiciaire de Lyon [...] en toutes ses dispositions [ordonnance : Rejette la demande de provision formulée par monsieur [H] [G]]"
+ },
+ {
+  "id": "GENP-PROV-2654556",
+  "etiquette_actuelle": "non",
+  "issue_dispositif": "non",
+  "juridiction": "TJ",
+  "extrait": "Rejetons la demande de provision formée par Mme [Y] [M] ;"
+ },
+ {
+  "id": "GENP-PROV-2302170",
+  "etiquette_actuelle": "non",
+  "issue_dispositif": "non",
+  "juridiction": "TJ",
+  "extrait": "Disons n'y avoir lieu à référé ; Rejetons la demande formée sur le fondement de l'article 700 du code de procédure civile ; Condamnons M. [Y] [J] aux dépens. [motifs : demande de condamnation provisionnelle de 16 230 euros rejetée]"
+ },
+ {
+  "id": "GENP-PROV-2500022",
+  "etiquette_actuelle": "non",
+  "issue_dispositif": "non",
+  "juridiction": "TJ",
+  "extrait": "CONSTATONS l'existence de contestations sérieuses au fond quant aux demandes de la SAS PROLAFITTE ; DISONS en conséquence n'y avoir lieu à référé ;"
+ },
+ {
+  "id": "GENP-PROV-2302704",
+  "etiquette_actuelle": "oui",
+  "issue_dispositif": "oui",
+  "juridiction": "TJ",
+  "extrait": "CONDAMNE la SAS RCA BATI à payer à Monsieur [B] [Z] et Madame [K] [P] une provision de 22 203,58 euros euros à valoir sur l'acompte versé par les requérants à la SAS RCA BATI"
+ },
+ {
+  "id": "GENP-PROV-2202237",
+  "etiquette_actuelle": "oui",
+  "issue_dispositif": "oui",
+  "juridiction": "CA",
+  "extrait": "Confirme l'ordonnance déférée [...] sauf quant au montant de la provision due au titre des loyers et charges impayés, Statuant à nouveau du chef infirmé, Condamne Mme [B] [L] [I] à verser à la SA Patrimoine Languedocienne à titre provisionnel la somme de 2072,65 euros"
+ },
+ {
+  "id": "GENP-PROV-2350104",
+  "etiquette_actuelle": "oui",
+  "issue_dispositif": "oui",
+  "juridiction": "TJ",
+  "extrait": "Condamnons la SAS Latour 66 à payer à la SARL Société de gestion financière et immobilière au titre de l'arriéré des loyers, charges, accessoires au 31 mai 2023 en deniers ou quittances la somme de 12 720,18 euros [...] Disons n' y avoir lieu à référé sur le surplus des demandes de provision"
+ },
+ {
+  "id": "GENP-PROV-2400632",
+  "etiquette_actuelle": "non",
+  "issue_dispositif": "non",
+  "juridiction": "TJ",
+  "extrait": "Déboutons la société [Localité 4] BEAUSEJOUR de sa demande en paiement provisionnel au titre des arriérés locatifs et des intérêts de retard ;"
+ },
+ {
+  "id": "GENP-PROV-2600154",
+  "etiquette_actuelle": "non",
+  "issue_dispositif": "non",
+  "juridiction": "TJ",
+  "extrait": "Au principal, renvoyons les parties à se pourvoir ainsi qu'elles aviseront, mais dès à présent : Déboutons la SARL GM CONCEPT de l'ensemble de ses demandes ;"
+ },
+ {
+  "id": "GENP-PROV-2600397",
+  "etiquette_actuelle": "non",
+  "issue_dispositif": "non",
+  "juridiction": "TJ",
+  "extrait": "DISONS n'y avoir lieu à référé sur la demande de provision formulée par la SARL ACTILEC, ainsi que sur les demandes provisionnelles subséquentes ;"
+ },
+ {
+  "id": "GENP-PROV-2305487",
+  "etiquette_actuelle": "non",
+  "issue_dispositif": "non",
+  "juridiction": "TJ",
+  "extrait": "Constate l'existence de contestations sérieuses concernant le montant de la dette locative ; Dit n'y avoir lieu à référé sur l'ensemble des demandes présentées respectivement par chacune des parties ;"
+ },
+ {
+  "id": "GENP-PROV-2400017",
+  "etiquette_actuelle": "oui",
+  "issue_dispositif": "oui",
+  "juridiction": "TJ",
+  "extrait": "Condamnons la société ILYTEX à payer à la société [4] la somme provisionnelle de 146.236,80 euros au titre des loyers charges taxes et accessoires impayés, arrêtée au 15 mai 2024"
+ },
+ {
+  "id": "GENP-PROV-2500973",
+  "etiquette_actuelle": "oui",
+  "issue_dispositif": "oui",
+  "juridiction": "TJ",
+  "extrait": "Condamnons M. [C] [O] à payer à la SAS Etablissements Sariva Antonio une provision de 7242,45 euros [...] à valoir sur le solde des factures des 7 mai 2021, 4 novembre 2022 et 28 avril 2023 ;"
+ },
+ {
+  "id": "GENP-PROV-2359562",
+  "etiquette_actuelle": "oui",
+  "issue_dispositif": "oui",
+  "juridiction": "TJ",
+  "extrait": "Condamnons Monsieur [O] [M] à verser à Monsieur [Z] [F] : - la somme de 13.000 euros à titre de provision à valoir sur le remboursement du prêt"
+ },
+ {
+  "id": "GENP-PROV-2401485",
+  "etiquette_actuelle": "oui",
+  "issue_dispositif": "oui",
+  "juridiction": "TJ",
+  "extrait": "Condamnons la société AXA FRANCE IARD à verser à Monsieur [L] [P] une provision de 113.245,25 euros à valoir sur l'indemnisation de son préjudice,"
+ },
+ {
+  "id": "GENP-PROV-2500017",
+  "etiquette_actuelle": "non",
+  "issue_dispositif": "non",
+  "juridiction": "TJ",
+  "extrait": "DISONS n'y avoir lieu à référé ; CONDAMNONS la SAS HR LEVAGE à verser à la SCI BADAOR la somme de 900 euros au titre de l'article 700 du Code de procédure civile ;"
+ },
+ {
+  "id": "GENP-PROV-2652932",
+  "etiquette_actuelle": "non",
+  "issue_dispositif": "oui",
+  "juridiction": "TJ",
+  "extrait": "Condamnons l'association Institut du Risk & Compliance au paiement à la société Hôtel George V B. V. de la somme de 13.260 euros [...] au titre des factures impayées [motifs : la provision de 13.260 euros au titre des factures impayées]"
+ },
+ {
+  "id": "GENP-PROV-2457970",
+  "etiquette_actuelle": "oui",
+  "issue_dispositif": "oui",
+  "juridiction": "TJ",
+  "extrait": "Condamnons la SCCV [Localité 5] SUBSISTANCES à verser à la SARL PROGEXIAL : * la somme de 16 470 euros à titre de provision à valoir sur la facture n°F2022-1436 [...] - la somme de 4 020 euros à titre de provision à valoir sur la facture n°F2023-1188"
+ },
+ {
+  "id": "GENP-PROV-2212141",
+  "etiquette_actuelle": "non",
+  "issue_dispositif": "oui",
+  "juridiction": "CA",
+  "extrait": "Confirme l'ordonnance entreprise en toutes ses dispositions [ordonnance : condamné M. [X] [K] à payer à M. [O] [Y] la somme de 20 000 euros à titre provisionnel ; n'y avoir lieu à référé sur le surplus]"
+ },
+ {
+  "id": "GENP-PROV-2502167",
+  "etiquette_actuelle": "non",
+  "issue_dispositif": "non",
+  "juridiction": "TJ",
+  "extrait": "DEBOUTONS le syndicat des copropriétaires [...] de sa demande de dommages et intérêts ; DEBOUTONS les parties de leurs demandes plus amples ou contraires ; [motifs : le syndicat sera débouté de sa demande de provision]"
+ },
+ {
+  "id": "GENP-PROV-2300056",
+  "etiquette_actuelle": "non",
+  "issue_dispositif": "non",
+  "juridiction": "CA",
+  "extrait": "Dit n'y avoir lieu à référé sur la demande de condamnation solidaire de M. [I] [M] et Mme [N] [X] au paiement de la somme de 3 780,70 € à titre de provision, Confirme l'ordonnance de référé rendue le 28 novembre 2022"
+ },
+ {
+  "id": "GENP-PROV-2200911",
+  "etiquette_actuelle": "oui",
+  "issue_dispositif": "non",
+  "juridiction": "CA",
+  "extrait": "Infirme l'ordonnance entreprise en toutes ses dispositions ; Statuant à nouveau et y ajoutant : Dit n'y avoir lieu à référé sur la demande de provision formulée par M. [M] [R] ;"
+ },
+ {
+  "id": "GENP-PROV-2400802",
+  "etiquette_actuelle": "non",
+  "issue_dispositif": "non",
+  "juridiction": "TJ",
+  "extrait": "Au principal, RENVOYONS les parties à se pourvoir comme elles aviseront mais dès à présent, [...] LAISSONS les dépens à la charge de Monsieur [I] [Z]. [motifs : il convient dès lors de dire n'y avoir lieu à référé]"
+ },
+ {
+  "id": "GENP-PROV-2400823",
+  "etiquette_actuelle": "non",
+  "issue_dispositif": "non",
+  "juridiction": "TJ",
+  "extrait": "DIT n'y avoir lieu à référé sur la demande en paiement provisionnel sous astreinte formée par la SAS RM AUCTIONS FRANCE ;"
+ },
+ {
+  "id": "GENP-PROV-2301686",
+  "etiquette_actuelle": "oui",
+  "issue_dispositif": "oui",
+  "juridiction": "TJ",
+  "extrait": "Condamnons M. [Y] [U] à payer à M. [F] [M] et Mme [I] [R] épouse [M] la somme provisionnelle de 35.500 euros ;"
+ },
+ {
+  "id": "GENP-PROV-2210320",
+  "etiquette_actuelle": "oui",
+  "issue_dispositif": "oui",
+  "juridiction": "CA",
+  "extrait": "Infirme l'ordonnance entreprise en toutes ses dispositions, [...] Condamne la SA MMA IARD à payer à M. [U] [D] la somme de 1 000 euros à titre de provision à valoir sur l'indemnisation de son préjudice corporel ;"
+ },
+ {
+  "id": "GENP-PROV-2550881",
+  "etiquette_actuelle": "oui",
+  "issue_dispositif": "oui",
+  "juridiction": "TJ",
+  "extrait": "Condamnons le syndicat des copropriétaires du [Adresse 2] à verser à la SARL [F] [V] Architecture : * la somme de 6423,65 euros TTC à titre de provision à valoir sur sa note d'honoraires n°28721 du 5 octobre 2021 ;"
+ },
+ {
+  "id": "GENP-PROV-2401114",
+  "etiquette_actuelle": "non",
+  "issue_dispositif": "non",
+  "juridiction": "TJ",
+  "extrait": "Nous déclarons compétent, Disons n'y avoir lieu à référé ; Condamnons Mme [V] [W] [N] [G] aux dépens ; Déboutons pour le surplus ;"
+ },
+ {
+  "id": "GENP-PROV-2400786",
+  "etiquette_actuelle": "non",
+  "issue_dispositif": "non",
+  "juridiction": "TJ",
+  "extrait": "Disons n'y avoir lieu à référé sur la demande de provision formée par Monsieur [C] [S] ;"
+ },
+ {
+  "id": "GENP-PROV-2355695",
+  "etiquette_actuelle": "oui",
+  "issue_dispositif": "oui",
+  "juridiction": "TJ",
+  "extrait": "Condamnons la société LA GUINGUETTE DE [5] à payer à la société CELSIUS LE MURIER la somme provisionnelle de 114.444, 33 euros au titre de l'arriéré locatif au 04 juillet 2023"
+ },
+ {
+  "id": "GENP-PROV-2206656",
+  "etiquette_actuelle": "oui",
+  "issue_dispositif": "oui",
+  "juridiction": "CA",
+  "extrait": "Statuant à nouveau et y ajoutant : Condamne Madame [Z] [N] à payer à Mme [B] [S] épouse [Y] et Monsieur [R] [Y], à titre provisionnel, la somme de 9 728,46 euros"
+ },
+ {
+  "id": "GENP-PROV-2401276",
+  "etiquette_actuelle": "oui",
+  "issue_dispositif": "oui",
+  "juridiction": "TJ",
+  "extrait": "Condamnons à titre provisionnel la société SCCV 10 JULES PRINCET à payer à la société L'ETANCHEITE RATIONNELLE la somme de 76.709,56 euros"
+ },
+ {
+  "id": "GENP-PROV-2454205",
+  "etiquette_actuelle": "oui",
+  "issue_dispositif": "oui",
+  "juridiction": "TJ",
+  "extrait": "CONDAMNONS la SASU Rt roquette à payer à Mme [S] [U] épouse [V] une provision d'un montant de 14441,61 euros [...] à valoir sur les échéances impayées de loyers, charges et l'éventuelle indemnité d'occupation exigibles au 5 avril 2024"
+ },
+ {
+  "id": "GENP-PROV-2201247",
+  "etiquette_actuelle": "non",
+  "issue_dispositif": "oui",
+  "juridiction": "CA",
+  "extrait": "CONFIRME en toutes ses dispositions l'ordonnance n°22-49 prononcée le 18 mai 2022 par le juge des référés du tribunal judiciaire de Cusset [ordonnance : condamnons M.[S] à payer par provision à M.[Z] la somme de 2.500 euros]"
+ },
+ {
+  "id": "GENP-PROV-2458890",
+  "etiquette_actuelle": "non",
+  "issue_dispositif": "non",
+  "juridiction": "TJ",
+  "extrait": "REJETONS l'ensemble des demandes de la société SA KONE,"
+ },
+ {
+  "id": "GENP-PROV-2551712",
+  "etiquette_actuelle": "oui",
+  "issue_dispositif": "oui",
+  "juridiction": "TJ",
+  "extrait": "Condamnons Monsieur [L] [P] à verser à Madame [Y] [H] : - la somme de 62 5000 euros à titre de provision à valoir sur le prêt et les intérêts échus au 17 janvier 2025"
+ }
+]

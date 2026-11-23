@@ -1,0 +1,299 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "negociation.v1",
+  "title": "Plan de négociation et de persuasion (strategie/negociation.json)",
+  "description": "Structure seulement. Les règles qui croisent les champs (parties et sources existantes, solution de repli de chaque partie, effet de chaque voie amiable sur les délais, préalables obligatoires, offre ordonnée, concessions avec contrepartie, conditions de forme d'un accord avec une personne publique, aucune probabilité, aucun aveu de faiblesse ni menace illicite dans ce qui s'adresse à l'adversaire) sont dans scripts/negociation.py. Skill negociation-et-persuasion.",
+  "type": "object",
+  "required": ["schema", "date", "actes_couverts", "etat", "parties", "repli", "voies_amiables", "options", "offre", "contreparties",
+               "interlocuteurs", "calendrier", "risques", "persuasion", "sources"],
+  "properties": {
+    "schema": {"const": "negociation/1"},
+    "date": {"$ref": "#/$defs/date"},
+    "ligne_examinee": {"type": "string"},
+    "actes_couverts": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/texte"}},
+    "etat": {"enum": ["a_ouvrir", "en_cours", "suspendue", "accord_conclu", "echec", "ecartee"]},
+    "etat_motif": {"type": "string"},
+    "parties": {"type": "array", "minItems": 2, "items": {"$ref": "#/$defs/partie"}},
+    "repli": {"type": "array", "minItems": 2, "items": {"$ref": "#/$defs/repli"}},
+    "voies_amiables": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/voie"}},
+    "objets": {"type": "array", "items": {"$ref": "#/$defs/objet"}},
+    "options": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/option"}},
+    "offre": {"$ref": "#/$defs/offre"},
+    "contreparties": {"type": "array", "items": {"$ref": "#/$defs/contrepartie"}},
+    "interlocuteurs": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/interlocuteur"}},
+    "calendrier": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/jalon"}},
+    "conditions_de_forme": {"type": "array", "items": {"$ref": "#/$defs/condition"}},
+    "leviers": {"type": "array", "items": {"$ref": "#/$defs/levier"}},
+    "risques": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/risque"}},
+    "persuasion": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/persuasion"}},
+    "urgence": {"$ref": "#/$defs/urgence"},
+    "revisions": {"type": "array", "items": {"$ref": "#/$defs/revision"}},
+    "sources": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/source"}}
+  },
+  "$defs": {
+    "texte": {"type": "string", "minLength": 1},
+    "date": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}(T\\d{2}:\\d{2}(:\\d{2})?([+-]\\d{2}:\\d{2}|Z)?)?$"},
+    "ids": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "montant": {"type": ["number", "null"]},
+    "statut": {"enum": ["droit_positif", "pratique_institutionnelle", "empirique_solide", "empirique_limite", "inference",
+                        "piece_du_dossier", "declaration_adverse"]},
+    "interet": {
+      "type": "object",
+      "required": ["interet", "priorite", "statut"],
+      "properties": {
+        "interet": {"$ref": "#/$defs/texte"},
+        "priorite": {"enum": ["haute", "moyenne", "basse"]},
+        "statut": {"$ref": "#/$defs/statut"},
+        "sources": {"$ref": "#/$defs/ids"},
+        "pieces": {"type": "array"}
+      }
+    },
+    "partie": {
+      "type": "object",
+      "required": ["id", "role", "nature", "designation", "position_affichee", "interets"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^P\\d+$"},
+        "role": {"enum": ["client", "adversaire", "tiers_payeur", "assureur", "autorite", "autre"]},
+        "nature": {"enum": ["personne_physique", "personne_morale_privee", "personne_publique", "organisme_social", "autre"]},
+        "personne_publique": {"enum": ["etat", "collectivite", "etablissement_public", "organisme_social", "autre"]},
+        "designation": {"$ref": "#/$defs/texte"},
+        "position_affichee": {"$ref": "#/$defs/texte"},
+        "interets": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/interet"}},
+        "sans_perdre_la_face": {"type": "array", "items": {"$ref": "#/$defs/texte"}},
+        "contraintes": {"type": "array", "items": {"$ref": "#/$defs/texte"}}
+      }
+    },
+    "seuil": {
+      "type": "object",
+      "required": ["contenu", "justification"],
+      "properties": {
+        "contenu": {"$ref": "#/$defs/texte"},
+        "montant": {"$ref": "#/$defs/montant"},
+        "justification": {"$ref": "#/$defs/texte"}
+      }
+    },
+    "repli": {
+      "type": "object",
+      "required": ["partie", "alternative", "issue_probable", "delai", "couts", "valeur_nette", "sources"],
+      "properties": {
+        "partie": {"type": "string", "pattern": "^P\\d+$"},
+        "alternative": {"$ref": "#/$defs/texte"},
+        "issue_probable": {"$ref": "#/$defs/texte"},
+        "montant_bas": {"$ref": "#/$defs/montant"},
+        "montant_haut": {"$ref": "#/$defs/montant"},
+        "delai": {"$ref": "#/$defs/texte"},
+        "couts": {"$ref": "#/$defs/texte"},
+        "alea": {"type": "string"},
+        "valeur_nette": {"$ref": "#/$defs/texte"},
+        "sources": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "voie": {
+      "type": "object",
+      "required": ["id", "voie", "ouverte", "obligatoire", "fondement", "effet_sur_delais", "repli_compare", "retenue", "raison"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^V\\d+$"},
+        "voie": {"enum": ["negociation_directe", "correspondance_avocats", "demande_prealable", "recours_administratif",
+                          "mediation_conventionnelle", "mediation_administrative", "mediation_prealable_obligatoire",
+                          "mediation_judiciaire", "conciliation_conciliateur", "conciliation_juge", "audience_reglement_amiable",
+                          "procedure_participative", "mediateur_institutionnel", "mediateur_consommation", "defenseur_des_droits",
+                          "transaction", "conciliation_prudhomale", "mesure_alternative_penale", "transaction_fiscale", "autre"]},
+        "ouverte": {"type": "boolean"},
+        "obligatoire": {"type": "boolean"},
+        "actes": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "fondement": {"$ref": "#/$defs/texte"},
+        "effet_sur_delais": {"enum": ["interrompt", "suspend", "interrompt_peremption", "aucun", "sans_objet"]},
+        "acte_conservatoire": {"type": "string"},
+        "repli_compare": {"$ref": "#/$defs/texte"},
+        "retenue": {"type": "boolean"},
+        "raison": {"$ref": "#/$defs/texte"},
+        "dispense": {
+          "type": "object",
+          "required": ["motif", "source"],
+          "properties": {"motif": {"$ref": "#/$defs/texte"}, "source": {"$ref": "#/$defs/texte"}}
+        }
+      }
+    },
+    "objet": {
+      "type": "object",
+      "required": ["id", "objet", "valeur_client", "valeur_adversaire_estimee"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^B\\d+$"},
+        "objet": {"$ref": "#/$defs/texte"},
+        "valeur_client": {"enum": ["haute", "moyenne", "basse"]},
+        "valeur_adversaire_estimee": {"enum": ["haute", "moyenne", "basse", "inconnue"]}
+      }
+    },
+    "option": {
+      "type": "object",
+      "required": ["id", "description", "acceptable_client", "fondement"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^O\\d+$"},
+        "description": {"$ref": "#/$defs/texte"},
+        "objets": {"$ref": "#/$defs/ids"},
+        "acceptable_client": {"type": "boolean"},
+        "acceptable_adversaire": {"enum": ["oui", "non", "incertain"]},
+        "fondement": {"$ref": "#/$defs/texte"}
+      }
+    },
+    "offre": {
+      "type": "object",
+      "required": ["sens", "premier_a_ouvrir", "raison", "premiere_offre", "cible", "point_de_reservation"],
+      "properties": {
+        "sens": {"enum": ["nous_recevons", "nous_payons", "non_monetaire"]},
+        "premier_a_ouvrir": {"enum": ["nous", "adversaire", "tiers"]},
+        "raison": {"$ref": "#/$defs/texte"},
+        "premiere_offre": {
+          "type": "object",
+          "required": ["contenu", "calcul", "sources"],
+          "properties": {
+            "contenu": {"$ref": "#/$defs/texte"},
+            "montant": {"$ref": "#/$defs/montant"},
+            "calcul": {"$ref": "#/$defs/texte"},
+            "sources": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+            "formulation": {"type": "string"}
+          }
+        },
+        "cible": {"$ref": "#/$defs/seuil"},
+        "point_de_reservation": {"$ref": "#/$defs/seuil"},
+        "derniere_offre_adverse": {
+          "type": "object",
+          "required": ["contenu", "date"],
+          "properties": {"contenu": {"$ref": "#/$defs/texte"}, "montant": {"$ref": "#/$defs/montant"}, "date": {"$ref": "#/$defs/date"}}
+        }
+      }
+    },
+    "contrepartie": {
+      "type": "object",
+      "required": ["id", "nous_cedons", "en_echange_de", "condition", "ordre"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^C\\d+$"},
+        "nous_cedons": {"$ref": "#/$defs/texte"},
+        "montant": {"$ref": "#/$defs/montant"},
+        "en_echange_de": {"$ref": "#/$defs/texte"},
+        "condition": {"$ref": "#/$defs/texte"},
+        "ordre": {"type": "integer", "minimum": 1},
+        "raison_exterieure": {"type": "string"},
+        "formulation": {"type": "string"}
+      }
+    },
+    "interlocuteur": {
+      "type": "object",
+      "required": ["id", "partie", "fonction", "pouvoir", "canal"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^I\\d+$"},
+        "partie": {"type": "string", "pattern": "^P\\d+$"},
+        "fonction": {"$ref": "#/$defs/texte"},
+        "pouvoir": {"enum": ["signe", "propose", "conseille", "instruit", "inconnu"]},
+        "habilitation": {"type": "string"},
+        "chaine_de_validation": {"type": "string"},
+        "canal": {"enum": ["avocat", "direct", "mediateur", "juge", "service_juridique", "assureur", "autre"]}
+      }
+    },
+    "jalon": {
+      "type": "object",
+      "required": ["date", "evenement", "type"],
+      "properties": {
+        "date": {"$ref": "#/$defs/date"},
+        "evenement": {"$ref": "#/$defs/texte"},
+        "type": {"enum": ["delai_contentieux", "prescription", "forclusion", "audience", "cloture", "expiration_offre", "reunion",
+                          "decision_attendue", "acte_prevu", "autre"]},
+        "protege_par": {"type": "string"},
+        "source": {"type": "string"},
+        "statut": {"enum": ["a_venir", "passe", "respecte"]}
+      }
+    },
+    "condition": {
+      "type": "object",
+      "required": ["type", "exigence", "source"],
+      "properties": {
+        "type": {"enum": ["ecrit", "homologation", "absence_de_liberalite", "habilitation_signataire", "deliberation", "comite_transaction",
+                          "controle_de_legalite", "desistement", "confidentialite", "formule_executoire", "renonciation", "autre"]},
+        "exigence": {"$ref": "#/$defs/texte"},
+        "source": {"$ref": "#/$defs/texte"}
+      }
+    },
+    "levier": {
+      "type": "object",
+      "required": ["levier", "nature", "source"],
+      "properties": {
+        "levier": {"$ref": "#/$defs/texte"},
+        "nature": {"enum": ["voie_de_droit_liee", "calendrier", "cout_du_conflit", "information", "tiers", "reputation"]},
+        "source": {"$ref": "#/$defs/texte"}
+      }
+    },
+    "risque": {
+      "type": "object",
+      "required": ["id", "risque", "parade"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^R\\d+$"},
+        "risque": {"$ref": "#/$defs/texte"},
+        "parade": {"$ref": "#/$defs/texte"},
+        "gravite": {"enum": ["dirimante", "serieuse", "mineure"]}
+      }
+    },
+    "fait_defavorable": {
+      "type": "object",
+      "required": ["fait", "traitement"],
+      "properties": {
+        "fait": {"$ref": "#/$defs/texte"},
+        "traitement": {"enum": ["question_qui_le_rend_indifferent", "fait_posterieur_ou_regle_superieure", "retournement_contre_son_auteur",
+                                "hors_debat"]},
+        "comment": {"type": "string"},
+        "pieces": {"type": "array"}
+      }
+    },
+    "persuasion": {
+      "type": "object",
+      "required": ["id", "decideur", "ce_qu_il_doit_croire", "raison_de_decider", "moyen_de_decider", "faits_defavorables", "forme"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^PS\\d+$"},
+        "decideur": {"enum": ["juge", "juge_du_tri", "juge_des_referes", "formation_collegiale", "rapporteur_public", "juge_homologation",
+                              "autorite_administrative", "service_juridique", "mediateur", "conciliateur", "defenseur_des_droits",
+                              "adversaire", "assureur", "autre"]},
+        "ref_decideur": {"type": "string"},
+        "actes": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "ce_qu_il_doit_croire": {"$ref": "#/$defs/texte"},
+        "raison_de_decider": {"$ref": "#/$defs/texte"},
+        "moyen_de_decider": {"$ref": "#/$defs/texte"},
+        "ordre": {"type": "array", "items": {"$ref": "#/$defs/texte"}},
+        "faits_defavorables": {"type": "array", "items": {"$ref": "#/$defs/fait_defavorable"}},
+        "forme": {"$ref": "#/$defs/texte"},
+        "ton": {"type": "string"},
+        "a_ne_pas_dire": {"type": "array", "items": {"type": "string"}},
+        "message_cle": {"type": "string"}
+      }
+    },
+    "urgence": {
+      "type": "object",
+      "required": ["motivee", "motif", "source"],
+      "properties": {
+        "motivee": {"type": "boolean"},
+        "motif": {"$ref": "#/$defs/texte"},
+        "source": {"$ref": "#/$defs/texte"},
+        "date_limite": {"type": "string"}
+      }
+    },
+    "revision": {
+      "type": "object",
+      "required": ["date", "tournant", "changement"],
+      "properties": {
+        "date": {"$ref": "#/$defs/date"},
+        "tournant": {"$ref": "#/$defs/texte"},
+        "changement": {"$ref": "#/$defs/texte"}
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": ["id", "reference", "lu"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^S\\d+$"},
+        "type": {"type": "string"},
+        "reference": {"$ref": "#/$defs/texte"},
+        "url": {"type": "string"},
+        "lu": {"enum": ["en_entier", "extraits", "resume", "non"]},
+        "public": {"type": "boolean"}
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "GENP-ANNT-2306723",
+  "capacite": "pronostic",
+  "famille": "annulation-ta",
+  "genere": true,
+  "origine": "usine.py, Tribunal administratif de Toulouse, 6e chambre · formation à trois, 25 mars 2026, 2306723 (https://librejustice.fr/decision/BZkuy6FKNutq), issue réelle : non",
+  "fixture": "gen_annt_2306723",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme le tribunal administratif, dis s'il annulera, au moins en partie, la décision attaquée. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2026-03-24T18:00",
+  "coupe": "2026-03-24",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*non\\b",
+      "description": "répond non, comme la juridiction"
+    }
+  ]
+}

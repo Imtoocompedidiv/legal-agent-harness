@@ -1,0 +1,18 @@
+{
+  "id": "GENP-CASSA-2310667",
+  "capacite": "pronostic",
+  "famille": "cassation-civile",
+  "genere": true,
+  "origine": "usine.py, Cour de cassation, 2e chambre civile · formation restreinte, 2 octobre 2025, 23-10.667 (https://librejustice.fr/decision/GdKXxheYG3pf), issue réelle : non",
+  "fixture": "gen_cassa_2310667",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme la chambre de la Cour de cassation, dis si l'arrêt attaqué doit être cassé, au moins en partie. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2025-10-01T18:00",
+  "coupe": "2025-10-01",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*non\\b",
+      "description": "répond non, comme la juridiction"
+    }
+  ]
+}

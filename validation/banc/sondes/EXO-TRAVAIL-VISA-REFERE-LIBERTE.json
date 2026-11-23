@@ -1,0 +1,43 @@
+{
+  "id": "EXO-TRAVAIL-VISA-REFERE-LIBERTE",
+  "capacite": "exercice",
+  "horloge": "2026-11-19T10:00",
+  "budget_minutes": 25,
+  "origine": "module mecanique-des-exercices, sonde de travail réel : recours préalable obligatoire devant la commission des refus de visa (CESEDA, art. D. 312-3 et D. 312-4) et urgence particulière du référé-liberté non remplie pour un refus de visa (CE, réf., 17 juillet 2025, n° 506080)",
+  "consigne": "Nous sommes le jeudi 19 novembre 2026. Notre client, réfugié statutaire en France depuis 2024, a obtenu le bénéfice de la réunification familiale pour sa femme et leurs deux enfants de six et neuf ans, qui vivent hors de France. Le consulat général de France compétent leur a refusé les visas de long séjour par des décisions du 12 novembre 2026, notifiées le jour même. Les enfants vivent dans des conditions précaires. Le client veut que nous saisissions cette semaine le juge des référés du tribunal administratif de Nantes pour obtenir la délivrance des visas sous quarante-huit heures. Prépare dans ecritures/brouillons/ la requête en référé-liberté et sa fiche de l'acte, prêtes pour le contrôle avant dépôt.",
+  "verifications": [
+    {
+      "type": "contient_un",
+      "motifs": [
+        "commission de recours",
+        "recours (administratif )?préalable obligatoire",
+        "312-3",
+        "crrv"
+      ],
+      "description": "exigence implicite : recours préalable obligatoire devant la commission",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "trente jours",
+        "30 jours",
+        "12 décembre"
+      ],
+      "description": "exigence implicite : délai de trente jours du recours préalable",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "référé.suspension",
+        "521-1"
+      ],
+      "description": "exercice voisin : référé-suspension une fois le recours formé",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    }
+  ]
+}

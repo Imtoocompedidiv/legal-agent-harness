@@ -1,0 +1,18 @@
+{
+  "id": "GENP-LIBE-2412185",
+  "capacite": "pronostic",
+  "famille": "liberte-eloignement",
+  "genere": true,
+  "origine": "usine.py, Tribunal administratif de Lyon, magistrat désigné, 9 décembre 2024, 2412185 (https://librejustice.fr/decision/xTTGAwzocgVW), issue réelle : non",
+  "fixture": "gen_libe_2412185",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme le juge des référés, dis s'il fera droit, au moins en partie, à cette demande de référé-liberté. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2024-12-08T18:00",
+  "coupe": "2024-12-08",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*non\\b",
+      "description": "répond non, comme la juridiction"
+    }
+  ]
+}

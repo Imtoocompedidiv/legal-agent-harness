@@ -1,0 +1,64 @@
+--- a/scripts/gate.py
++++ b/scripts/gate.py
+@@ -402,6 +402,11 @@
+         import decideurs as DECIDEURS
+         DECIDEURS.controler(racine, ecriture, fiche, c)
+ 
++    # La négociation : une voie amiable examinée avec la solution de repli de chaque partie avant tout acte juridictionnel,
++    # sauf urgence motivée dans la fiche ; aucun chiffre de la négociation dans l'écrit (skill negociation-et-persuasion).
++    import negociation as NEGOCIATION
++    NEGOCIATION.controler(racine, ecriture, fiche, c, juridictionnel=juridictionnel, texte=texte)
++
+     # Le récit : théorie du cas écrite et éprouvée par un lecteur profane sur la version exacte.
+     if juridictionnel:
+         recit = L.lire_json(racine / "ecritures/controle" / f"{ecriture.stem}.recit.json")
+--- a/scripts/hook.py
++++ b/scripts/hook.py
+@@ -99,6 +99,17 @@
+                       f"{(d0.get('standard_de_controle') or {}).get('niveau')} ; adversaire « {(profil.get('adversaire') or {}).get('designation')} ».")
+     else:
+         lignes.append("Aucun profil des décideurs (strategie/decideurs.json) : l'établir avant tout acte juridictionnel (skill lecture-des-decideurs).")
++    nego = L.lire_json(racine / "strategie/negociation.json") or {}
++    if isinstance(nego, dict) and nego.get("etat"):
++        jour = L.maintenant().date().isoformat()
++        prochain = sorted((j for j in nego.get("calendrier") or [] if isinstance(j, dict) and str(j.get("date", "")) >= jour),
++                          key=lambda j: str(j.get("date")))
++        suite = f" ; prochaine étape {prochain[0].get('date')} : {prochain[0].get('evenement')}" if prochain else ""
++        lignes.append(f"Négociation ({nego.get('date')}) : état « {nego.get('etat')} »{suite}. Aucun chiffre de la négociation "
++                      "dans un écrit au juge.")
++    else:
++        lignes.append("Aucun plan de négociation (strategie/negociation.json) : examiner les voies amiables et la solution de repli "
++                      "de chaque partie avant tout acte juridictionnel (skill negociation-et-persuasion).")
+     sequence = L.lire_json(racine / "strategie/sequence.json") or {}
+     coups = [k for k in sequence.get("ordre_des_coups", []) or [] if isinstance(k, dict) and k.get("statut") not in ("joue", "abandonne")]
+     if coups:
+@@ -339,6 +350,16 @@
+         if alertes:
+             contexte("PostToolUse", "Profil des décideurs enregistré, avec des alertes :\n- " + "\n- ".join(alertes[:10]))
+         sys.exit(0)
++    if rel == "strategie/negociation.json":
++        import negociation as NEGOCIATION
++        _, constats = NEGOCIATION.charger(racine)
++        bloquants = [f"{k['code']} : {k['message']}" for k in constats if k["gravite"] == "BLOQUANT"]
++        alertes = [f"{k['code']} : {k['message']}" for k in constats if k["gravite"] == "ALERTE"]
++        if bloquants:
++            sortie({"decision": "block", "reason": "Plan de négociation invalide, à reprendre maintenant :\n- " + "\n- ".join(bloquants[:20])})
++        if alertes:
++            contexte("PostToolUse", "Plan de négociation enregistré, avec des alertes :\n- " + "\n- ".join(alertes[:10]))
++        sys.exit(0)
+     if rel in L.SCHEMAS:
+         erreurs = L.valider_fichier(racine, rel)
+         if rel == "preuves/matrice.json" and not erreurs:
+--- a/tests/test_contentieux.py
++++ b/tests/test_contentieux.py
+@@ -338,6 +338,10 @@
+         profil = profil_complet()
+         profil.update({"date": maintenant, "actes_couverts": ["ref"]})
+         ecrire(self.r / "strategie/decideurs.json", profil)
++        from test_negociation import plan_complet
++        plan = plan_complet()
++        plan.update({"date": maintenant, "actes_couverts": ["ref"]})
++        ecrire(self.r / "strategie/negociation.json", plan)
+         v = gate.controler(f)
+         self.assertEqual(self.codes(v), {"LECTURE_PROFANE_ABSENTE", "LECTURE_FROID_ABSENTE", "RAPPORT_RAPPORTEUR_ABSENT", "CONTRADICTION_ABSENTE"})
+         sha = L.sha256_fichier(f)

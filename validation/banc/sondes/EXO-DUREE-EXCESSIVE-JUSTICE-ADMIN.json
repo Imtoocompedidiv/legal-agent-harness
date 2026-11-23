@@ -1,0 +1,45 @@
+{
+  "id": "EXO-DUREE-EXCESSIVE-JUSTICE-ADMIN",
+  "capacite": "exercice",
+  "horloge": "2026-11-19T10:00",
+  "budget_minutes": 12,
+  "origine": "module mecanique-des-exercices : européen, voie interne à épuiser pour la durée (CJA, art. R. 311-1 ; CE, Ass., 28 juin 2002, Magiera, n° 239575 ; CEDH, Broca et Texier-Micault c. France, 2003)",
+  "consigne": "Nous sommes le jeudi 19 novembre 2026. Notre cliente a saisi un tribunal administratif en avril 2017 d'une demande d'indemnisation contre un hôpital public, après une infection contractée lors d'une opération. Le tribunal a statué en mai 2021. Elle a fait appel en juin 2021 ; la cour administrative d'appel n'a toujours ni statué ni fixé d'audience, sans que la cliente ait jamais tardé à produire. Elle veut saisir la Cour européenne des droits de l'homme pour violation de son droit à être jugée dans un délai raisonnable. Quel acte engages-tu, devant qui, et quelle condition décide de son succès ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier. Termine par une ligne de la forme « EXERCICE RETENU : … » qui nomme l'acte ou la démarche que tu engages en premier, avec son texte.",
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "exercice retenu.{0,220}(conseil d.état|responsabilité|indemn|311-1)",
+      "description": "choix : action en responsabilité de l'État devant le Conseil d'État"
+    },
+    {
+      "type": "absent",
+      "motif": "exercice retenu.{0,120}(cour européenne|cedh|strasbourg)",
+      "description": "ne retient pas la requête européenne en premier"
+    },
+    {
+      "type": "contient",
+      "motif": "épuis",
+      "description": "voisin écarté : non-épuisement des voies internes"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "311-1",
+        "premier et dernier ressort"
+      ],
+      "description": "exigence implicite : compétence du Conseil d'État en premier et dernier ressort"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "demande préalable",
+        "réclamation préalable",
+        "garde des sceaux",
+        "ministre de la justice",
+        "421-1"
+      ],
+      "description": "liaison du contentieux",
+      "critique": false
+    }
+  ]
+}

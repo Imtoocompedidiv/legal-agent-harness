@@ -1,0 +1,51 @@
+{
+  "id": "LECT2-R421-1-TRAVAUX-PUBLICS-2016",
+  "capacite": "lecture",
+  "origine": "refonte recherche : conditions d'un texte lues à la date utile (CJA, R. 421-1 en vigueur du 1er janvier au 31 décembre 2016 ; décret n° 2016-1480, art. 35, II : nouvelle rédaction applicable aux requêtes enregistrées à compter du 1er janvier 2017)",
+  "consigne": "Nos clients, propriétaires d'une maison à Rennes, ont saisi le tribunal administratif de Rennes d'une requête enregistrée le 12 décembre 2016, qui demande la condamnation de la commune à réparer les fissures causées à leur maison par les travaux de réfection de la voirie communale menés au printemps 2016. Ils n'avaient adressé aucune demande préalable à la commune. Dans son mémoire en défense, la commune soutient que la requête est irrecevable faute de décision préalable. Que vaut cette fin de non-recevoir ? Lis les textes applicables à la source. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier. Termine par une ligne de la forme « VERDICT : RECEVABLE » ou « VERDICT : IRRECEVABLE », qui dit si la requête est recevable.",
+  "horloge": "2017-09-15T10:00",
+  "coupe": "2017-09-15",
+  "budget_minutes": 15,
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "421-1",
+      "description": "article R. 421-1 du code de justice administrative"
+    },
+    {
+      "type": "contient",
+      "motif": "verdict ?\\*{0,2} ?: ?\\*{0,2} ?recevable",
+      "description": "la requête est recevable"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "2016-1480",
+        "1er janvier 2017",
+        "1 janvier 2017",
+        "enregistrées à compter"
+      ],
+      "description": "applique la disposition transitoire du décret du 2 novembre 2016"
+    },
+    {
+      "type": "contient",
+      "motif": "travaux publics",
+      "description": "nomme l'exception propre aux travaux publics",
+      "critique": false
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__get_norm",
+      "entree_contient": "2016-",
+      "description": "lit le texte dans sa version de 2016",
+      "critique": false
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__get_norm",
+      "entree_contient": "/(partie|livre|titre|chapitre|section)-",
+      "description": "méthode : lit la section qui contient l'article (articles voisins)",
+      "critique": false
+    }
+  ]
+}

@@ -1,0 +1,440 @@
+[
+  {
+    "condition": "cas_d_ouverture",
+    "sens": "remplit",
+    "texte": "Défaut de réponse à conclusions (CPC, art. 455) : la cassation suit lorsque les conclusions d'appel articulaient un moyen opérant sur le chef attaqué (clause d'exclusion, franchise contractuelle, somme non comprise dans la contrainte) et que l'arrêt statue sans en dire un mot. Signal : un moyen distinct dans les conclusions, absent des motifs, dont l'admission changerait le dispositif.",
+    "marqueurs": [
+      "sans r[ée]pondre (?:aux|à ces|à ses|à leurs) conclusions",
+      "sans r[ée]pondre (?:à ce|au) moyen",
+      "d[ée]faut de r[ée]ponse (?:à|aux) conclusions?",
+      "moyen op[ée]rant",
+      "n'a pas satisfait aux exigences de l'article 455"
+    ],
+    "sources": [
+      {
+        "juridiction": "Cass. civ. 3e",
+        "date": "2023-07-13",
+        "numero": "21-19.045",
+        "url": "https://librejustice.fr/decision/vma4MmBNddoO",
+        "point": "§ 3 à 10 : exclusion et franchises invoquées par l'assureur, restées sans réponse",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Cass. civ. 2e",
+        "date": "2026-09-03",
+        "numero": "24-13.718",
+        "url": "https://librejustice.fr/decision/uOEPhdmN4RfS",
+        "point": "§ 7 à 10 : sommes de 2015-2016 non comprises dans la contrainte, moyen sans réponse",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Cass. civ. 3e, 11 septembre 2025, n° 24-10.376, § 8 : conclusions que les constatations de l'arrêt rendaient inopérantes, rejet (https://librejustice.fr/decision/PDVB6wDg8p8J).",
+    "frequence": "11 sur 30 arrêts de cassation vus (2 sur 20 en recherche générale, 9 sur 10 en recherche sur la formule) ; la formule « n'a pas satisfait aux exigences du texte susvisé » figure dans 340 cassations totales ou partielles des chambres civiles, commerciale et sociale depuis 2023 (décompte du moteur, tous griefs de l'article 455 confondus).",
+    "depuis": "CPC, art. 455 ; constant de 2023 à 2026 dans l'échantillon"
+  },
+  {
+    "condition": "cas_d_ouverture",
+    "sens": "tombe",
+    "texte": "Le juge ne doit réponse qu'aux conclusions opérantes : la branche échoue quand les constatations de l'arrêt privent l'argument de portée, quand il ne s'agit que d'un élément d'argumentation (doctrine médicale, détail d'un rapport) ou quand l'arrêt y répond implicitement par ses motifs. Signal : avant de prédire la cassation, supposer l'argument délaissé fondé et vérifier s'il changerait le dispositif au regard des constatations non critiquées.",
+    "marqueurs": [
+      "n'[ée]tait pas tenue? de r[ée]pondre",
+      "conclusions? (?:que ses constatations rendaient )?inop[ée]rantes?",
+      "simple argument",
+      "d[ée]tail de (?:leur|son|sa) argumentation",
+      "conclusions pr[ée]tendument d[ée]laiss[ée]es"
+    ],
+    "sources": [
+      {
+        "juridiction": "Cass. civ. 3e",
+        "date": "2025-09-11",
+        "numero": "24-10.376",
+        "url": "https://librejustice.fr/decision/PDVB6wDg8p8J",
+        "point": "§ 8 : « n'était pas tenue de répondre à des conclusions que ses constatations rendaient inopérantes »",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Cass. civ. 1re",
+        "date": "2023-03-08",
+        "numero": "21-50.020",
+        "url": "https://librejustice.fr/decision/ejUfNBbfvks3",
+        "point": "§ 20 et 22 à 24 : requête en responsabilité contre un avocat aux Conseils ; les défauts de réponse omis n'auraient pas prospéré",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Cass. civ. 3e",
+        "date": "2023-03-30",
+        "numero": "22-10.299",
+        "url": "https://librejustice.fr/decision/gyTj_9qitSZY",
+        "point": "§ 6 à 9 : la cour d'appel a répondu « aux conclusions prétendument délaissées » par ses constatations",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Cass. civ. 3e, 13 juillet 2023, n° 21-19.045, § 3 à 10 : clause d'exclusion et franchises, moyens opérants laissés sans réponse, cassation (https://librejustice.fr/decision/vma4MmBNddoO).",
+    "frequence": "12 sur 30 arrêts de rejet vus (10 sur 10 en recherche ciblée sur « n'était pas tenue de répondre », 2 sur 20 en recherche générale).",
+    "depuis": "CPC, art. 455"
+  },
+  {
+    "condition": "cas_d_ouverture",
+    "sens": "remplit",
+    "texte": "Méconnaissance de l'objet du litige (CPC, art. 4) : cassation quand l'arrêt tranche contre l'accord des parties sur un point (bien que toutes deux tenaient pour indivis, jugé propre) ou statue sur ce qui n'était pas demandé. Limite : le juge ne méconnaît pas l'objet du litige en tirant les conséquences de plein droit de la prétention accueillie, comme les restitutions après annulation. Signal : rapprocher les points concédés et les dispositifs des deux jeux de conclusions des motifs de l'arrêt.",
+    "marqueurs": [
+      "objet du litige",
+      "termes du litige",
+      "s'accordai(?:en)?t",
+      "non contest[ée]e?s?",
+      "n'[ée]tait saisie? d'aucune demande",
+      "articles? 4 et 5 du code de proc[ée]dure civile"
+    ],
+    "sources": [
+      {
+        "juridiction": "Cass. civ. 1re",
+        "date": "2024-02-07",
+        "numero": "22-13.392",
+        "url": "https://librejustice.fr/decision/pY_qAPt4uRnE",
+        "point": "§ 3 à 5 : les parties s'accordaient sur le caractère indivis de l'immeuble",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Cass. civ. 1re, 24 janvier 2024, n° 21-20.693, § 10 et 11 : restitution du prix ordonnée sans demande après annulation de la vente, pas de méconnaissance de l'objet du litige (https://librejustice.fr/decision/-htD_sRTI_k2).",
+    "frequence": "6 cassations sur 6 arrêts vus sur la formule ; 3 rejets pertinents sur 5 vus en recherche filtrée sur les rejets ; décompte du moteur sur « méconnu l'objet du litige », « méconnu les termes du litige » ou « modifié l'objet du litige » : 415 cassations totales ou partielles, 185 rejets.",
+    "depuis": "CPC, art. 4 et 5"
+  },
+  {
+    "condition": "cas_d_ouverture",
+    "sens": "remplit",
+    "texte": "Dénaturation d'un écrit clair : cassation quand le motif décisoire prête à un écrit soumis au juge (bon de commande, contrat, rapport d'expertise, bordereau de pièces, conclusions) un sens contraire à ses termes ou nie une mention qu'il porte. Limite : la branche doit viser l'écrit sur lequel repose le motif décisoire ; elle est inopérante si l'arrêt ne s'est pas fondé sur cette pièce ou si le passage dénaturé est surabondant. Signal : l'arrêt affirme qu'un document « ne comporte aucune mention » ou « ne prévoit pas » ce qu'il énonce en toutes lettres.",
+    "marqueurs": [
+      "d[ée]natur",
+      "termes clairs et pr[ée]cis",
+      "ne comporte aucune mention",
+      "ne pas d[ée]naturer l'[ée]crit"
+    ],
+    "sources": [
+      {
+        "juridiction": "Cass. com.",
+        "date": "2024-11-14",
+        "numero": "23-17.777",
+        "url": "https://librejustice.fr/decision/bZK46L5oOIb8",
+        "point": "§ 3 et 4 : bon de commande dit sans mention du signataire alors qu'il nommait la société, sa responsable et portait une signature",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Cass. civ. 3e, 13 juillet 2023, n° 22-13.176, § 5 : motif tiré d'un autre document que les pièces arguées de dénaturation, rejet (https://librejustice.fr/decision/GQvA54EdHQ5y) ; Cass. civ. 1re, 8 mars 2023, n° 21-50.020, § 18 : dénaturation de motifs surabondants, grief sans chance (https://librejustice.fr/decision/ejUfNBbfvks3).",
+    "frequence": "11 cassations et 1 rejet sur 12 arrêts vus sur la formule ; décompte du moteur sur « obligation pour le juge de ne pas dénaturer l'écrit qui lui est soumis » : 469 cassations totales ou partielles, 63 rejets (la Cour place la formule dans le visa de ses cassations, ce qui grossit ce côté).",
+    "depuis": "principe constant, visé comme « l'obligation pour le juge de ne pas dénaturer l'écrit qui lui est soumis »"
+  },
+  {
+    "condition": "cas_d_ouverture",
+    "sens": "remplit",
+    "texte": "Inversion de la charge de la preuve (C. civ., art. 1353, ou texte spécial) : cassation quand l'arrêt reproche à une partie de ne pas prouver un fait dont la preuve incombait à l'autre, par exemple au vendeur de ne pas démontrer le bon fonctionnement du matériel alors que le locataire devait établir les dysfonctionnements contestés. Limite : si l'arrêt fonde aussi sa solution sur des constatations positives tirées des preuves, notamment un rapport d'expertise fait sien, la Cour y voit une appréciation souveraine. Signal : « ne démontre pas » ou « allègue sans le démontrer » dirigé contre la partie qui n'avait pas la charge, sans constatation positive à côté.",
+    "marqueurs": [
+      "charge de la preuve",
+      "ne (?:d[ée]montre|prouve|justifie|[ée]tablit) pas",
+      "all[èe]gue sans (?:le )?d[ée]montrer",
+      "obligation de r[ée]sultat qu'(?:il|elle) ne prouve pas"
+    ],
+    "sources": [
+      {
+        "juridiction": "Cass. com.",
+        "date": "2023-02-08",
+        "numero": "21-18.042",
+        "url": "https://librejustice.fr/decision/TV5h7mJQ8saM",
+        "point": "§ 5 à 10 : il incombait au locataire de prouver les défaillances que contestait le vendeur",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Cass. civ. 3e, 13 juillet 2023, n° 22-13.176, § 6 : « sans inverser la charge de la preuve », appréciation souveraine des preuves et conclusions de l'expert, rejet (https://librejustice.fr/decision/GQvA54EdHQ5y).",
+    "frequence": "8 cassations sur 8 arrêts vus sur la formule ; décompte du moteur sur « inversé la charge de la preuve » : 298 cassations totales ou partielles, 175 rejets ; la chambre sociale fournit 176 des 474 arrêts.",
+    "depuis": "C. civ., art. 1353 (ancien art. 1315)"
+  },
+  {
+    "condition": "cas_d_ouverture",
+    "sens": "remplit",
+    "texte": "Contradiction de motifs, ou entre motifs et dispositif (CPC, art. 455) : cassation quand deux énonciations ne peuvent coexister sur le même chef, comme l'arrêt qui infirme le jugement ayant prononcé une faillite personnelle de dix ans puis prononce la même mesure. Limite : si la discordance n'est qu'une erreur matérielle (nom, chiffre), la Cour la rectifie au titre de l'article 462 et rejette. Signal : discordance de fond entre deux motifs décisoires du même chef, qu'une simple coquille n'explique pas.",
+    "marqueurs": [
+      "s'est contredit",
+      "contradiction (?:de|entre les) motifs",
+      "contradiction entre les motifs et le dispositif",
+      "infirme.{0,80}prononce"
+    ],
+    "sources": [
+      {
+        "juridiction": "Cass. com.",
+        "date": "2024-03-06",
+        "numero": "21-19.326",
+        "url": "https://librejustice.fr/decision/bzXbnrcXJyAe",
+        "point": "§ 5 à 7 : infirmation puis prononcé de la même faillite personnelle",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Cass. civ. 3e, 19 mars 2026, n° 24-15.396, § 4 et 5 : discordance de nom réduite à une erreur matérielle rectifiée, rejet (https://librejustice.fr/decision/mvnBQrBtevfW).",
+    "frequence": "6 cassations, 2 rejets sur 8 arrêts vus ; décompte du moteur : 185 cassations totales ou partielles, 135 rejets.",
+    "depuis": "CPC, art. 455 et 462"
+  },
+  {
+    "condition": "cas_d_ouverture",
+    "sens": "remplit",
+    "texte": "Moyen relevé d'office sans débat (CPC, art. 16) : cassation quand l'arrêt se fonde sur un texte, une qualification ou une fin de non-recevoir qu'aucune partie n'avait invoqué (seuil de cinq salariés de l'article L. 221-3 du code de la consommation, perte de chance, autorité de chose jugée, défaut d'effet dévolutif) sans avoir invité les parties à s'expliquer. Limite : pas de cassation si le juge s'est borné à vérifier les conditions d'application de la règle invoquée par une partie, ou à apprécier des faits débattus. Signal : un fondement absent des deux jeux de conclusions apparaît dans les motifs, sans réouverture des débats ni note en délibéré sollicitée.",
+    "marqueurs": [
+      "relev[ée]e? d'office",
+      "sans (?:avoir )?(?:au pr[ée]alable |pr[ée]alablement )?invit[ée]r? les parties",
+      "qui n'[ée]tait (?:ni [ée]voqu[ée] ni d[ée]battu|pas dans le d[ée]bat)",
+      "principe (?:de la contradiction|du contradictoire)",
+      "note en d[ée]lib[ée]r[ée]"
+    ],
+    "sources": [
+      {
+        "juridiction": "Cass. com.",
+        "date": "2025-12-10",
+        "numero": "24-18.834",
+        "url": "https://librejustice.fr/decision/_uLrPRuPe0On",
+        "point": "§ 4 à 6 : application de l'article L. 221-3 du code de la consommation qui n'était pas dans le débat",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Cass. civ. 3e, 13 juillet 2023, n° 22-13.176, § 9 : la cour d'appel « s'est bornée à vérifier les conditions d'application de la règle de droit invoquée », rejet (https://librejustice.fr/decision/GQvA54EdHQ5y).",
+    "frequence": "11 cassations sur 12 arrêts vus sur la formule (le douzième classé « Autre ») ; 4 rejets sur 6 arrêts vus en recherche ciblée sur l'exception ; décompte du moteur : 199 cassations totales ou partielles, 25 rejets.",
+    "depuis": "CPC, art. 16"
+  },
+  {
+    "condition": "cas_d_ouverture",
+    "sens": "tombe",
+    "texte": "Grief qui manque sa cible : le moyen manque en fait quand il prête à l'arrêt une constatation qu'il ne contient pas, comme l'existence d'un préjudice que l'arrêt n'a pas retenue ; il est irrecevable ou inopérant quand les motifs critiqués ne fondent pas le chef de dispositif visé par la branche. Signal : confronter la citation de l'arrêt faite par le moyen au texte de l'arrêt, et chaque branche au chef qu'elle attaque.",
+    "marqueurs": [
+      "manque en fait",
+      "ne fondent pas le chef de dispositif",
+      "motifs critiqu[ée]s"
+    ],
+    "sources": [
+      {
+        "juridiction": "Cass. civ. 3e",
+        "date": "2023-06-08",
+        "numero": "22-14.532",
+        "url": "https://librejustice.fr/decision/dS3vlxbfYWqi",
+        "point": "§ 3 : préjudice « dont elle n'a pas constaté l'existence », le moyen manque en fait",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Cass. com.",
+        "date": "2023-10-25",
+        "numero": "22-17.215",
+        "url": "https://librejustice.fr/decision/LmZ88MwJuRtn",
+        "point": "§ 3, 4, 9 et 10 : « Les motifs critiqués ne fondent pas le chef de dispositif attaqué »",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "aucune trouvée",
+    "frequence": "Manque en fait : 4 rejets et 2 cassations partielles acquises sur d'autres branches, sur 6 arrêts vus ; décompte du moteur : 92 rejets, 44 cassations totales ou partielles. Formule « ne fondent pas le chef de dispositif » : 10 arrêts, tous de la chambre commerciale, cassations acquises sur d'autres branches.",
+    "depuis": "CPC, art. 978 (partie critiquée de la décision)"
+  },
+  {
+    "condition": "cas_d_ouverture",
+    "sens": "remplit",
+    "texte": "Moyen de pur droit : l'objection de nouveauté échoue quand le moyen ne se réfère à aucun fait qui ne résulte des énonciations de l'arrêt, même s'il n'a pas été soutenu en appel, comme le non-appel en cause du bailleur avant l'annulation du bail (CPC, art. 14). Il reste irrecevable s'il suppose une thèse ou un fait que ni l'arrêt ni les conclusions ne mentionnent. Signal : retrouver dans l'arrêt attaqué chacun des faits que le moyen mobilise ; s'ils y figurent tous, la recevabilité est probable.",
+    "marqueurs": [
+      "de pur droit",
+      "nouveau,? m[ée]lang[ée] de fait et de droit",
+      "pour la premi[èe]re fois devant la cour de cassation",
+      "il ne r[ée]sulte ni de l'(?:arr[êe]t|ordonnance) ni des conclusions"
+    ],
+    "sources": [
+      {
+        "juridiction": "Cass. civ. 3e",
+        "date": "2023-11-16",
+        "numero": "22-13.643",
+        "url": "https://librejustice.fr/decision/3gMaXuA17HOE",
+        "point": "§ 4 à 7 : « le moyen est de pur droit », puis cassation au visa de l'article 14",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Cass. civ. 3e, 5 mars 2026, n° 24-12.332, § 3 et 4 : dissolution du syndicat initial et clef de répartition jamais soutenues, moyen nouveau, rejet (https://librejustice.fr/decision/mrBVyt5_YUJj).",
+    "frequence": "Sur 8 arrêts vus où la nouveauté était discutée : 3 moyens jugés de pur droit puis accueillis, 4 déclarés irrecevables, 1 issue non vérifiée ; décompte du moteur sur « nouveau, mélangé de fait et de droit » : 93 cassations totales ou partielles, 25 rejets ; la chambre sociale fournit 53 des 118 arrêts.",
+    "depuis": "CPC, art. 619"
+  },
+  {
+    "condition": "cas_d_ouverture",
+    "sens": "tombe",
+    "texte": "Écrit ambigu : lorsque l'acte appelle une interprétation, ou que le juge doit le rapprocher d'autres documents (état descriptif de division, tantièmes, conditions générales), son interprétation est souveraine et exclusive de dénaturation, et il n'a pas à s'expliquer sur les pièces qu'il écarte. Signal : l'arrêt relève lui-même une ambiguïté ou combine plusieurs écrits pour fixer le sens ; le grief de dénaturation a alors peu de chances.",
+    "marqueurs": [
+      "ambigu",
+      "interpr[ée]tation (?:souveraine|n[ée]cessaire)",
+      "commune intention",
+      "exclusive de d[ée]naturation"
+    ],
+    "sources": [
+      {
+        "juridiction": "Cass. civ. 3e",
+        "date": "2024-07-04",
+        "numero": "23-10.395",
+        "url": "https://librejustice.fr/decision/RCkHpzFLnbao",
+        "point": "§ 6 : « interprétation souveraine, exclusive de dénaturation, que l'ambiguïté de l'attestation de vente rendait nécessaire »",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Cass. civ. 3e",
+        "date": "2023-12-21",
+        "numero": "22-21.727",
+        "url": "https://librejustice.fr/decision/b7O4erib6Dgw",
+        "point": "§ 5 : dénaturation par omission d'une lettre jugée inopérante, appréciation souveraine des preuves",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Cass. com., 14 novembre 2024, n° 23-17.777, § 3 et 4 : bon de commande clair, dénaturation, cassation (https://librejustice.fr/decision/bZK46L5oOIb8).",
+    "frequence": "12 rejets sur 12 arrêts vus en recherche filtrée sur les rejets (58 arrêts répondent à la requête), dont 4 arrêts de la chambre commerciale d'une même série de déclarations de créance.",
+    "depuis": "principe constant"
+  },
+  {
+    "condition": "cas_d_ouverture",
+    "sens": "tombe",
+    "texte": "Manque de base légale par défaut de recherche : la branche n'aboutit que si les conclusions invitaient précisément le juge à la recherche omise ; à défaut, la Cour rejette au motif que le juge n'avait pas à procéder à une recherche qui ne lui était pas demandée. Signal : le moyen dit « comme elle y était invitée » ; retrouver dans les conclusions d'appel le passage qui demandait cette recherche (autre garantie du contrat, droit étranger applicable). Sans ce passage, prédire le rejet.",
+    "marqueurs": [
+      "sans rechercher",
+      "(?:comme|ainsi qu')(?:elle|il) y [ée]tait invit[ée]",
+      "priv[ée] sa d[ée]cision de base l[ée]gale",
+      "recherche qui ne lui [ée]tait pas demand[ée]e"
+    ],
+    "sources": [
+      {
+        "juridiction": "Cass. civ. 2e",
+        "date": "2026-06-18",
+        "numero": "25-10.900",
+        "url": "https://librejustice.fr/decision/OO2ylluIgKcO",
+        "point": "§ 3 à 6 : « sans avoir à procéder à une recherche qui ne lui était pas demandée »",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Cass. civ. 1re, 15 janvier 2025, n° 22-22.336, § 8 et 9 : recherche sur le droit procédural polonais demandée et omise, manque de base légale, cassation (https://librejustice.fr/decision/VQd482KoG-gs).",
+    "frequence": "5 rejets et 1 décision « Autre » sur 6 arrêts vus ; décompte du moteur sur « recherche qui ne lui était pas demandée » : 45 rejets, 12 cassations partielles acquises sur d'autres branches, aucune cassation totale ; la formule « sans rechercher, comme elle y était invitée » figure dans 483 cassations totales ou partielles et 318 rejets, les moyens rejetés la reprenant.",
+    "depuis": "CPC, art. 604 ; constant"
+  },
+  {
+    "condition": "cas_d_ouverture",
+    "sens": "tombe",
+    "texte": "Motif hypothétique ou dubitatif : le grief échoue le plus souvent, parce que la phrase conditionnelle est surabondante ou que l'arrêt a fait siennes, par une appréciation souveraine, les conclusions d'un expert qui s'exprimait au conditionnel. Il réussit quand le doute est le seul fondement du chef attaqué (« il existe un doute sur la volonté des parties »). Signal : vérifier si le chef tient sans la phrase au conditionnel ; s'il tient, prédire le rejet.",
+    "marqueurs": [
+      "motifs? (?:hypoth[ée]tiques?|dubitatifs?)",
+      "il existe un doute",
+      "vraisemblabl",
+      "il est possible que",
+      "n'auraient? pas manqu[ée]",
+      "en toute hypoth[èe]se"
+    ],
+    "sources": [
+      {
+        "juridiction": "Cass. civ. 3e",
+        "date": "2023-12-21",
+        "numero": "22-21.727",
+        "url": "https://librejustice.fr/decision/b7O4erib6Dgw",
+        "point": "§ 4 et 5 : la seconde branche « vise un motif surabondant »",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Cass. civ. 3e",
+        "date": "2023-07-13",
+        "numero": "22-13.176",
+        "url": "https://librejustice.fr/decision/GQvA54EdHQ5y",
+        "point": "§ 4 et 6 : expert au conditionnel, « sans […] statuer par des motifs hypothétiques »",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Cass. civ. 3e, 6 février 2025, n° 23-21.567, § 4 à 7 : rejet de la demande fondé sur un doute, motifs hypothétiques, cassation (https://librejustice.fr/decision/935UKPaEClAs).",
+    "frequence": "7 rejets, 1 cassation sur 8 arrêts vus ; décompte du moteur sur les formules : 42 rejets, 15 cassations totales ou partielles.",
+    "depuis": "CPC, art. 455"
+  },
+  {
+    "condition": "cas_d_ouverture",
+    "sens": "remplit",
+    "texte": "Pièce régulièrement produite non examinée (CPC, art. 455) : cassation quand l'arrêt affirme qu'une partie « ne justifie pas » d'un fait alors que ses conclusions désignaient une pièce numérotée qui l'établit directement, sans que l'arrêt l'examine même sommairement. Limite : le juge n'a pas à s'expliquer sur les pièces qu'il écarte ; la branche échoue quand la pièce n'est pas déterminante au regard des autres constatations. Signal : un constat de carence probatoire dans l'arrêt face à une pièce identifiée par son numéro dans les conclusions et qui dit le contraire.",
+    "marqueurs": [
+      "sans (?:examiner|s'expliquer),? (?:m[êe]me|ne serait-ce que) sommairement",
+      "ne justifie pas",
+      "pi[èe]ce n° ?[0-9]+",
+      "pi[èe]ces? qu'(?:elle|il) d[ée]cidai(?:en)?t d'[ée]carter"
+    ],
+    "sources": [
+      {
+        "juridiction": "Cass. civ. 2e",
+        "date": "2026-09-03",
+        "numero": "24-13.718",
+        "url": "https://librejustice.fr/decision/uOEPhdmN4RfS",
+        "point": "§ 3 à 6 : adhésion de 2014 produite en pièce n° 16, non examinée",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Cass. civ. 3e, 30 mars 2023, n° 22-10.299, § 6 à 9 : rapport d'un expert d'assurance jugé non déterminant, rejet (https://librejustice.fr/decision/gyTj_9qitSZY) ; Cass. civ. 3e, 4 juillet 2024, n° 23-10.395, § 6 (https://librejustice.fr/decision/RCkHpzFLnbao).",
+    "frequence": "6 rejets sur 6 arrêts vus sur la formule, le grief figurant au moyen ; décompte du moteur sur « sans examiner, même sommairement » : 27 cassations totales ou partielles, 25 rejets.",
+    "depuis": "CPC, art. 455"
+  },
+  {
+    "condition": "cas_d_ouverture",
+    "sens": "remplit",
+    "texte": "Motif décisoire qui ajoute une condition à la loi : violation de la loi quand l'arrêt subordonne l'effet légal à un élément que le texte n'exige pas, comme une faute pour étendre la liquidation pour confusion des patrimoines (C. com., art. L. 621-2). Limite : la branche échoue si un autre motif, non critiqué, justifie le dispositif, ou si la condition résulte du texte tel que la chambre le lit. Signal : un « faute de », « à défaut de » ou « dès lors que » qui porte seul le dispositif et ne trouve aucun appui dans la lettre du texte.",
+    "marqueurs": [
+      "ajout[ée] (?:à la loi )?une condition",
+      "subordonn[ée]",
+      "condition qu'(?:elle|il) ne (?:comporte|pr[ée]voit) pas",
+      "faute de (?:justifier|d[ée]montrer|rapporter)"
+    ],
+    "sources": [
+      {
+        "juridiction": "Cass. com.",
+        "date": "2025-03-26",
+        "numero": "24-10.254",
+        "url": "https://librejustice.fr/decision/bqmzwtUXHzSS",
+        "point": "§ 4 à 7 : faute exigée pour la confusion des patrimoines",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Cass. soc., 6 mars 2024, n° 22-10.382, § 5 et 6 : motif sur l'urgence critiqué, dispositif justifié par l'absence de pouvoir du juge des référés (https://librejustice.fr/decision/1VrHfBfIy48O) ; Cass. civ. 1re, 24 janvier 2024, n° 21-20.693, § 7, « abstraction faite du motif surabondant » (https://librejustice.fr/decision/-htD_sRTI_k2) ; Cass. civ. 2e, 8 février 2024, n° 21-24.126, § 8 (https://librejustice.fr/decision/xRpcM88oEu3a).",
+    "frequence": "7 cassations, 5 rejets sur 12 arrêts civils vus (un arrêt pénal écarté) ; décompte du moteur sur « ajoute à la loi une condition qu'elle ne comporte pas » : 23 cassations totales ou partielles, 20 rejets, chambre criminelle comprise.",
+    "depuis": "principe constant"
+  },
+  {
+    "condition": "cas_d_ouverture",
+    "sens": "remplit",
+    "texte": "Refus d'évaluer un dommage constaté (C. civ., art. 4) : cassation quand l'arrêt tient pour établis les manquements ou dysfonctionnements puis rejette la demande faute de pièces permettant de chiffrer le préjudice ; il lui incombait d'évaluer, au besoin par une mesure d'instruction. Limite : si l'arrêt n'a pas constaté l'existence du préjudice et relève seulement l'absence de preuve de sa réalité, le grief manque en fait. Signal : dans le même chef, un motif qui constate le dommage et un motif qui rejette pour défaut de justification du montant.",
+    "marqueurs": [
+      "ne produit aucune pi[èe]ce permettant",
+      "[ée]valuer (?:son|le) pr[ée]judice",
+      "d[ée]ni de justice",
+      "existence (?:en|dans) son principe",
+      "pr[ée]judice exact"
+    ],
+    "sources": [
+      {
+        "juridiction": "Cass. com.",
+        "date": "2025-11-05",
+        "numero": "24-15.314",
+        "url": "https://librejustice.fr/decision/kZnR-gnb5QjV",
+        "point": "§ 7 à 9 : dysfonctionnements constatés, préjudice matériel non évalué",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Cass. civ. 3e, 8 juin 2023, n° 22-14.532, § 3 : existence du préjudice non constatée, le moyen manque en fait (https://librejustice.fr/decision/dS3vlxbfYWqi).",
+    "frequence": "4 cassations sur 4 arrêts vus sur la formule exacte ; 1 rejet lu en sens contraire ; pas de décompte plus large établi.",
+    "depuis": "C. civ., art. 4"
+  },
+  {
+    "condition": "cas_d_ouverture",
+    "sens": "remplit",
+    "texte": "Arrêt rendu au vu de conclusions dépassées (CPC, art. 455 et 954) : cassation quand les motifs montrent que la cour d'appel a statué sur un fondement ou un montant que les dernières conclusions avaient abandonné. Limite : si les conclusions omises n'apportaient aucun moyen nouveau, le grief ne prospère pas. Signal : les sommes, fondements ou pièces discutés dans les motifs correspondent à des conclusions antérieures aux dernières.",
+    "marqueurs": [
+      "derni[èe]res conclusions",
+      "conclusions (?:r[ée]capitulatives|ant[ée]rieures|post[ée]rieures)",
+      "articles? 455 et 954"
+    ],
+    "sources": [
+      {
+        "juridiction": "Cass. com.",
+        "date": "2023-10-25",
+        "numero": "22-17.215",
+        "url": "https://librejustice.fr/decision/LmZ88MwJuRtn",
+        "point": "§ 12 à 14 : demande fondée sur la perte de chance dans les dernières conclusions, motifs répondant à l'ancien fondement",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Cass. civ. 1re, 8 mars 2023, n° 21-50.020, § 22 à 24 : arrêt visant des conclusions antérieures, les dernières ne contenant aucun moyen nouveau, grief sans chance (https://librejustice.fr/decision/ejUfNBbfvks3).",
+    "frequence": "1 cassation vue et lue, 1 décision lue en sens contraire ; pas de décompte établi.",
+    "depuis": "CPC, art. 954 (décret n° 2017-891)"
+  }
+]

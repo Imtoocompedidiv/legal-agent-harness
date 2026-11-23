@@ -1,0 +1,61 @@
+{
+  "id": "LECT2-CITATIONS-SUBTILES",
+  "capacite": "lecture",
+  "origine": "refonte recherche : altérations d'un mot ou d'une date dans des citations longues, aperçu de recherche cité comme motif, citation exacte d'un arrêt annulé (1 et 5 exactes, 5 annulée par CE n° 505796 ; 2 porte « 31 août 2022 » ; 3 vient de l'aperçu machine, la décision dit « obéit nécessairement aux mêmes règles de procédure contentieuse » ; 4 porte « plus de deux logements »)",
+  "consigne": "Un collaborateur a rédigé la note recherche/notes/note_zone_tendue.md, qui doit partir au client ce soir. Vérifie chacune de ses citations entre guillemets contre la source à laquelle elle est attribuée, et la valeur actuelle de chaque source citée. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier. Termine par cinq lignes de la forme « CITATION n : CONFORME », « CITATION n : INEXACTE » ou « CITATION n : INTROUVABLE », et recopie le passage exact de la source pour chaque citation inexacte.",
+  "budget_minutes": 15,
+  "fichiers": {
+    "recherche/notes/note_zone_tendue.md": "# Recours contre les jugements rendus sur les autorisations d'urbanisme en zone tendue\n\n1. Le refus de certifier un permis tacite suit le régime du permis lui-même : « Elles s'appliquent également aux refus de délivrance de certificats attestant de la naissance de telles autorisations tacites ou de telles décisions tacites de non-opposition à déclaration préalable. » (CE, 2 mars 2026, n° 508188, point 2).\n\n2. L'inscription de la commune sur la liste s'apprécie au jour du jugement : « Ces dispositions s'appliquent aux recours introduits entre le 1er décembre 2013 et le 31 décembre 2022 contre les décisions relatives à l'occupation des sols qu'elles mentionnent portant en tout ou partie sur le territoire d'une commune lorsque celle-ci figure, à la date du jugement statuant sur le recours, sur la liste annexée au décret du 10 mai 2013 » (CE, 2 juillet 2026, n° 505796, point 2).\n\n3. Le permis modificatif ne s'en détache pas : « les permis modificatifs suivent le régime contentieux du permis initial auquel ils se rattachent » (CE, 25 mars 2025, n° 499142, point 2).\n\n4. Le texte vise aujourd'hui : « Les permis de construire ou de démolir un bâtiment comportant au moins deux logements, les permis d'aménager un lotissement » (CJA, art. R. 811-1-1, 1°).\n\n5. Sur le fond, la réciprocité agricole cède devant un élevage irrégulier : « Les règles de distance instaurées par ces dispositions et qui s'imposent tant aux bâtiments d'élevage qu'aux constructions alentours, en application du principe de réciprocité, ne s'appliquent qu'en présence de bâtiments agricoles régulièrement édifiés et exploités. » (CAA Marseille, 6 mai 2025, n° 24MA00153, point 14).\n"
+  },
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "citation 1 \\*{0,2} ?: ?\\*{0,2} ?conforme",
+      "description": "citation 1 exacte"
+    },
+    {
+      "type": "contient",
+      "motif": "citation 2 \\*{0,2} ?: ?\\*{0,2} ?inexacte",
+      "description": "citation 2 : date altérée"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "citation 3 \\*{0,2} ?: ?\\*{0,2} ?inexacte",
+        "citation 3 \\*{0,2} ?: ?\\*{0,2} ?introuvable"
+      ],
+      "description": "citation 3 : aperçu de recherche, pas la décision"
+    },
+    {
+      "type": "contient",
+      "motif": "citation 4 \\*{0,2} ?: ?\\*{0,2} ?inexacte",
+      "description": "citation 4 : un mot du texte altéré"
+    },
+    {
+      "type": "contient",
+      "motif": "citation 5 \\*{0,2} ?: ?\\*{0,2} ?conforme",
+      "description": "citation 5 exacte"
+    },
+    {
+      "type": "contient",
+      "motif": "31 août 2022",
+      "description": "recopie la date exacte de la décision n° 505796"
+    },
+    {
+      "type": "contient",
+      "motif": "plus de deux logements",
+      "description": "recopie le texte exact de l'article R. 811-1-1"
+    },
+    {
+      "type": "contient",
+      "motif": "24ma00153[\\s\\S]{0,600}(annul|cass)|(annul|cass)[\\s\\S]{0,300}24ma00153",
+      "description": "signale que l'arrêt de la citation 5 a été annulé"
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__get_decision",
+      "description": "lit les décisions",
+      "critique": false
+    }
+  ]
+}

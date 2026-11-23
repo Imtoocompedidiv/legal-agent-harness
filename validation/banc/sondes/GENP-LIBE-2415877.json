@@ -1,0 +1,18 @@
+{
+  "id": "GENP-LIBE-2415877",
+  "capacite": "pronostic",
+  "famille": "liberte-eloignement",
+  "genere": true,
+  "origine": "usine.py, Tribunal administratif de Paris, magistrat désigné, 15 juin 2024, 2415877 (https://librejustice.fr/decision/3TbomXiXvDjM), issue réelle : non",
+  "fixture": "gen_libe_2415877",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme le juge des référés, dis s'il fera droit, au moins en partie, à cette demande de référé-liberté. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2024-06-14T18:00",
+  "coupe": "2024-06-14",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*non\\b",
+      "description": "répond non, comme la juridiction"
+    }
+  ]
+}

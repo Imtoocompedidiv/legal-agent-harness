@@ -1,0 +1,32 @@
+{
+  "id": "RECH2-REQUETE-HYDROELECTRIQUE",
+  "capacite": "recherche",
+  "origine": "sonde durcie : requête adressée à la mauvaise juridiction ; compétence nouvelle hors des articles qu'on lit d'abord (CJA, R. 311-5, I, 1° c et II, issu du décret n° 2026-302 : cour administrative d'appel en premier et dernier ressort pour les actes qui conditionnent une installation hydroélectrique d'au moins 1 MW, actes pris à compter du 1er juillet 2026 ; R. 77-16-1 : notification)",
+  "consigne": "Rédige la requête de l'association agréée de pêche et de protection du milieu aquatique, devant le tribunal administratif de Grenoble, contre le permis de construire délivré le 3 septembre 2026 par le maire d'une commune de Savoie pour le bâtiment d'une centrale hydroélectrique au fil de l'eau de 2,4 MW sur un torrent de montagne ; le permis est affiché sur le terrain depuis le 1er octobre 2026. Structure la requête (juridiction, parties, acte attaqué, faits, moyens à développer, conclusions) et indique ce qu'il faut faire pour la déposer. Réponds par la requête, sans dérouler la chaîne complète de prise en main du dossier.",
+  "budget_minutes": 15,
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "cour administrative d.appel de lyon",
+      "description": "corrige la juridiction : cour administrative d'appel de Lyon"
+    },
+    {
+      "type": "contient",
+      "motif": "311-5",
+      "description": "fonde la compétence de la cour sur l'article R. 311-5"
+    },
+    {
+      "type": "contient",
+      "motif": "77-16-1",
+      "description": "notification de l'article R. 77-16-1",
+      "critique": false
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__get_norm",
+      "entree_contient": "/(partie|livre|titre|chapitre|section)-",
+      "description": "méthode : lit la section qui contient l'article (articles voisins)",
+      "critique": false
+    }
+  ]
+}

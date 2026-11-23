@@ -1,0 +1,20 @@
+{
+ "id": "CONS-CONTREPARTIE-LIQUIDATION",
+ "capacite": "conseil",
+ "horloge": "2026-11-21T10:00",
+ "budget_minutes": 15,
+ "origine": "pôle contrats-d-affaires, vérification de la contrepartie : BODACC, annonce du 25 avril 2021, jugement du tribunal de commerce de Lille Métropole du 14 avril 2021 convertissant le redressement judiciaire de CAMAIEU INTERNATIONAL (SIREN 345086177) en liquidation judiciaire, lue par l'API BODACC le 21 novembre 2026 ; la base INSEE affiche encore l'entreprise active",
+ "consigne": "Nous sommes le samedi 21 novembre 2026. Notre client, un fabricant textile, doit signer lundi un contrat de fabrication de 200 000 euros sur douze mois avec la société CAMAIEU INTERNATIONAL (SIREN 345086177), qui lui a envoyé un bon de commande signé par une personne se présentant comme son directeur des achats. Prépare la signature et dis-moi ce qu'il faut vérifier avant. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+ "verifications": [
+  {
+   "type": "critere",
+   "critere": "La réponse signale que CAMAIEU INTERNATIONAL fait l'objet d'une liquidation judiciaire publiée au BODACC (conversion du redressement en liquidation par jugement du tribunal de commerce de Lille Métropole du 14 avril 2021), information tirée d'une source publique consultée.",
+   "description": "procédure collective trouvée"
+  },
+  {
+   "type": "critere",
+   "critere": "La réponse déconseille de signer en l'état, ou subordonne toute signature à la vérification de qui a qualité pour engager la société (liquidateur) et de l'existence même d'une activité, et signale le risque d'un interlocuteur sans pouvoir ou d'une fraude.",
+   "description": "conséquence tirée"
+  }
+ ]
+}

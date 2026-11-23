@@ -1,0 +1,249 @@
+--- a/scripts/gate.py
++++ b/scripts/gate.py
+@@ -472,6 +472,17 @@
+             k = {**k, "gravite": "ALERTE", "message": k["message"] + " (alerte seulement : l'écrit n'est pas porté devant un juge)"}
+         constats.append(k)
+ 
++    # Lectures : décision citée jamais lue au registre des lectures, citation introuvable mot pour mot, décision défaite par
++    # sa suite sans le dire, article cité sans lecture à la date utile (skill recherche-juridique ; règles dans lectures.py).
++    import lectures as LECTURES
++    avant = len(constats)
++    LECTURES.controler(racine, ecriture, fiche, texte, c)
++    if not juridictionnel:
++        for k in constats[avant:]:
++            if k["gravite"] == "BLOQUANT":
++                k["gravite"] = "ALERTE"
++                k["message"] += " (alerte seulement : l'écrit n'est pas porté devant un juge)"
++
+     # Objections dirimantes encore ouvertes pour cet acte.
+     for o in L.objections_bloquantes(racine, ecriture.stem):
+         c("OBJECTION_DIRIMANTE_OUVERTE", "BLOQUANT", f"Objection {o.get('id')} ouverte : {o.get('enonce', '')[:160]}. "
+--- a/scripts/hook.py
++++ b/scripts/hook.py
+@@ -4,7 +4,8 @@
+ SessionStart        briefing d'état (au démarrage, à la reprise et après compaction).
+ UserPromptSubmit    rappel des échéances proches, des canaux non contrôlés et des objections dirimantes.
+ PreToolUse          protège pièces originales, journal, constitution, versions finales et verdicts.
+-PostToolUse         valide les fichiers d'état, passe le linter sur les écritures modifiées.
++PostToolUse         valide les fichiers d'état et les fiches de lecture, passe le linter sur les écritures modifiées,
++                    capture chaque lecture LibreJustice et read_document dans le registre des lectures.
+ Stop                exige une passation à jour quand le dossier a changé pendant la session.
+ """
+ from __future__ import annotations
+@@ -27,9 +28,12 @@
+     (re.compile(r"^ecritures/final/"), "Les versions finales s'obtiennent seulement par : python <plugin>/scripts/affaire.py finaliser <brouillon.md>, qui exige un contrôle PASS sur l'empreinte exacte."),
+     (re.compile(r"^pieces/inventaire\.json$|^pieces/texte/.+\.extraction\.txt$"), "L'inventaire et les extractions ne s'écrivent que par pieces.py inventaire : les citations des fiches d'analyse sont vérifiées contre eux. Relancer : python <plugin>/scripts/pieces.py inventaire."),
+     (re.compile(r"\.gate\.json$"), "Le verdict du contrôle avant dépôt n'est écrit que par gate.py. Relancer : python <plugin>/scripts/gate.py <brouillon.md>."),
++    (re.compile(r"^recherche/lectures/"), "Le registre des lectures ne s'écrit que par le hook PostToolUse, qui capture chaque appel LibreJustice et read_document. "
++     "Relire la source pour créer une capture ; consulter le registre par python <plugin>/scripts/lectures.py couverture|citations|portee|requetes."),
+ ]
+ DESTRUCTIF = re.compile(r"\b(rm|del|erase|rmdir|mv|move|cp|copy|Remove-Item|Move-Item|Copy-Item|Rename-Item|Set-Content|Add-Content|Out-File|Clear-Content|truncate|sed\s+-i)\b|>", re.I)
+-CHEMINS_SENSIBLES = re.compile(r"pieces[\\/]+originaux|pieces[\\/]+inventaire\.json|\.extraction\.txt|journal[\\/]+journal\.md|ecritures[\\/]+final|\.gate\.json|(^|[\\/\s\"'])(claude|agents)\.md", re.I)
++CHEMINS_SENSIBLES = re.compile(r"pieces[\\/]+originaux|pieces[\\/]+inventaire\.json|\.extraction\.txt|journal[\\/]+journal\.md|ecritures[\\/]+final|\.gate\.json|"
++                               r"recherche[\\/]+lectures|(^|[\\/\s\"'])(claude|agents)\.md", re.I)
+ 
+ 
+ def sortie(obj: dict) -> None:
+@@ -62,6 +66,13 @@
+         lignes.append("REPRISE APRÈS COMPACTION. Le résumé ne vaut pas lecture : relire etat/passation.md, les échéances et les objections avant toute position.")
+     lignes.append(f"Dossier : {a.get('intitule')} (id {a.get('id')}). Client : {a.get('client')}. Adversaire(s) : {', '.join(a.get('adversaires', [])) or 'non renseigné'}.")
+     lignes.append(f"Objectif du client : {a.get('objectif')}")
++    # Le briefing est le seul contexte que reçoit à coup sûr une session lancée en mode non interactif (claude -p) : le protocole
++    # de recherche s'y rappelle, comme dans user_prompt.
++    lignes.append("Recherche : toute question de droit et toute rédaction suivent les passes de la skill recherche-juridique (texte décisif lu "
++                  "à la date utile avec sa section, ses renvois et son texte modificatif ; jurisprudence par legal_article ; suite de chaque "
++                  "décision citée, même reprise d'une note ; meilleure autorité contraire ; prémisses de la demande vérifiées à la source). "
++                  "Les lectures LibreJustice sont capturées dans recherche/lectures/ et les citations se contrôlent par python "
++                  f"\"{os.environ.get('CLAUDE_PLUGIN_ROOT', '<plugin>')}/scripts/lectures.py\" citations <note>.")
+     for inst in a.get("instances", []):
+         lignes.append(f"Instance : {inst.get('juridiction')} n° {inst.get('numero')} ({inst.get('nature')}), {inst.get('statut')}.")
+     ech = L.echeances_ouvertes(racine)
+@@ -188,6 +199,17 @@
+     n = len(L.objections_bloquantes(racine))
+     if n:
+         lignes.append(f"{n} objection(s) dirimante(s) ouverte(s).")
++    demande = ev.get("prompt") or ""
++    if "?" in demande or re.search(r"\b(r[ée]dig|pr[ée]par|v[ée]rifi|note|m[ée]moire|requ[êe]te|r[ée]plique|conclusions|courriel|lettre|moyen|"
++                                   r"pourvoi|assignation|recours)", demande, re.I):
++        # Les sondes du banc montrent que la skill de recherche n'est pas chargée pour une question directe ni pour une rédaction :
++        # le protocole se rappelle donc ici, en deux phrases.
++        lignes.append("Une question de droit ou une rédaction se traite par les passes de la skill recherche-juridique : chaque texte décisif lu "
++                      "à la date utile avec sa section (exceptions voisines), ses renvois et son texte modificatif ; la jurisprudence cherchée par "
++                      "l'article (filtre legal_article), publiée puis inédite ; la suite de chaque décision citée, même reprise d'une note "
++                      "(standing, case_chronology) ; la meilleure autorité contraire ; les prémisses de la demande (délai, juridiction, autorité "
++                      "d'une décision) vérifiées à la source comme le reste. Les citations se recopient depuis la source lue et se contrôlent par "
++                      f"python \"{os.environ.get('CLAUDE_PLUGIN_ROOT', '<plugin>')}/scripts/lectures.py\" citations <note>.")
+     prompt = ev.get("prompt") or ""
+     if "?" in prompt:
+         lignes.append("Une question du client appelle une réponse argumentée sur le fond, sources lues à l'appui. Reprendre le "
+@@ -300,6 +322,9 @@
+         if rel_l.startswith("pieces/analyses/") and not agent.endswith("analyste-documentaire"):
+             refuser("Les fiches d'analyse ne s'écrivent que par le sous-agent analyste-documentaire, qui lit la pièce en entier sans le récit du client. "
+                     "Le relancer sur la cote (skill analyse-documentaire) ; une fiche en erreur se refait, elle ne se corrige pas à la main.")
++        if rel_l.startswith("recherche/fiches/") and not agent.endswith("lecteur-de-texte"):
++            refuser("Les fiches de lecture ne s'écrivent que par le sous-agent lecteur-de-texte, qui lit la source dans l'outil et recopie ses extraits "
++                    "depuis le registre des lectures. Le lancer sur la source (skill recherche-juridique, section 5).")
+         if rel_l == "strategie/revue_charpente.json" and outil == "Write" and not agent.endswith("architecte-strategique"):
+             refuser("La revue de charpente ne s'écrit que par le sous-agent architecte-strategique ; la session principale peut seulement porter le statut des points par Edit.")
+         if rel_l in ("strategie/theorie_adverse.md", "strategie/theorie_adverse.json") and not agent.endswith("avocat-adverse"):
+@@ -349,11 +374,29 @@
+     racine = racine_evenement(ev)
+     if racine is None:
+         sys.exit(0)
++    outil = str(ev.get("tool_name") or "")
++    if outil.startswith("mcp__"):
++        # Registre des lectures : chaque appel LibreJustice et read_document est capturé avec sa réponse brute.
++        import lectures as LECTURES
++        if LECTURES.est_capturable(outil):
++            try:
++                LECTURES.capturer(racine, ev)
++            except Exception as e:  # noqa: BLE001
++                contexte("PostToolUse", f"Lecture non capturée ({type(e).__name__} : {e}) : elle ne figure pas au registre des lectures ; la refaire.")
++        sys.exit(0)
+     ti = ev.get("tool_input") or {}
+     cible = ti.get("file_path")
+     rel = L.relatif(racine, cible) if cible else None
+     if rel is None:
+         sys.exit(0)
++    if re.fullmatch(r"recherche/fiches/[^/]+\.json", rel):
++        import lectures as LECTURES
++        erreurs, alertes = LECTURES.valider_fiche(racine, Path(rel).stem)
++        if erreurs:
++            sortie({"decision": "block", "reason": "Fiche de lecture invalide, à reprendre sur la source :\n- " + "\n- ".join(erreurs[:20])})
++        if alertes:
++            contexte("PostToolUse", "Fiche de lecture écrite, avec des alertes :\n- " + "\n- ".join(alertes[:10]))
++        sys.exit(0)
+     if re.fullmatch(r"pieces/analyses/[^/]+\.json", rel):
+         import pieces as PIECES
+         erreurs, alertes, _ = PIECES.valider_fiche(racine, Path(rel).stem)
+@@ -460,6 +503,8 @@
+     bordereau = {str(p.get("cote")): p.get("fichier", "") for p in (L.lire_json(racine / "pieces/bordereau.json", {}) or {}).get("pieces", [])}
+     sources = {str(s.get("numero")): s for s in (L.lire_json(racine / "etat/sources.json", {}) or {}).get("sources", []) if s.get("numero")}
+     propres = {str(i.get("numero")) for i in (L.lire_json(racine / "etat/affaire.json", {}) or {}).get("instances", [])}
++    import lectures as LECTURES
++    lues_registre = LECTURES.Registre(racine).decisions
+     manquants = []
+     for m in RE_PIECE_CITEE.finditer(msg):
+         voisinage = msg[m.start():m.end() + 60].lower()
+@@ -476,7 +521,7 @@
+         if num in propres or "non relu" in msg[m.start():m.end() + 60].lower():
+             continue
+         s = sources.get(num)
+-        if not (s and s.get("lu_en_entier")) and num.lower() not in lus:
++        if not (s and s.get("lu_en_entier")) and num.lower() not in lus and LECTURES.numero(num) not in lues_registre:
+             manquants.append(f"décision n° {num}")
+     manquants = sorted(set(manquants))
+     if not manquants:
+--- a/hooks/hooks.json
++++ b/hooks/hooks.json
+@@ -1,5 +1,5 @@
+ {
+-  "description": "Verrous du dossier contentieux : briefing d'état, protection des pièces et du journal, contrôle des écritures, passation obligatoire. Sans effet hors d'un dossier d'affaire (etat/affaire.json).",
++  "description": "Verrous du dossier contentieux : briefing d'état, protection des pièces et du journal, contrôle des écritures, registre des lectures, passation obligatoire. Sans effet hors d'un dossier d'affaire (etat/affaire.json).",
+   "hooks": {
+     "SessionStart": [
+       {
+@@ -58,6 +58,19 @@
+             "timeout": 60
+           }
+         ]
++      },
++      {
++        "matcher": "mcp__librejustice__.*|mcp__legal_harness__read_document",
++        "hooks": [
++          {
++            "type": "command",
++            "command": "python",
++            "args": [
++              "${CLAUDE_PLUGIN_ROOT}/scripts/hook.py"
++            ],
++            "timeout": 30
++          }
++        ]
+       }
+     ],
+     "PreCompact": [
+--- a/skills/controle-avant-depot/SKILL.md
++++ b/skills/controle-avant-depot/SKILL.md
+@@ -24,6 +24,7 @@
+ - `requete_fond_distincte` : `reference` et `piece`, pour un référé-suspension.
+ - `delai` : `echeance` (AAAA-MM-JJTHH:MM), `regle`, `point_de_depart`, et `evenement`, identifiant de l'événement de `chronologie/chronologie.json` qui fait courir le délai (types et attributs donnés par `voies.py --types`). Le contrôle recalcule alors l'échéance par `voies.py` et bloque si elle tombe plus tôt que l'échéance déclarée ou si elle est dépassée ; `regle_calcul` restreint le recalcul à une règle (mot du libellé ou du texte).
+ - `numeros_non_jurisprudentiels` : numéros qui ressemblent à des décisions sans en être (numéros de dossier, de recommandé), pour ne pas les confondre avec des citations.
++- `date_droit_applicable` (AAAA-MM-JJ) : date à laquelle se lisent les textes cités ; `dates_utiles` : la date propre d'un article quand elle diffère, sous la clé « <code>|<article> » (recevabilité à l'enregistrement de la requête, légalité à la date de l'acte, voie de recours selon la disposition transitoire).
+ - `urgence_amiable` : `motif` et `source`, quand l'acte doit partir avant que les voies amiables aient été examinées (skill `negociation-et-persuasion`) ; le contrôle n'émet alors qu'une alerte, et le plan s'écrit dès l'acte déposé.
+ 
+ ## 1 bis. Préalables exigés par le contrôle
+@@ -45,9 +46,20 @@
+ 
+ Restent bloquants le délai, la compétence, l'acte attaquable et le préalable obligatoire. Le mode est refusé pour un référé, qui est jugé sur ce qu'il contient. Le mémoire complémentaire passe le contrôle entier.
+ 
++## 1 quinquies. Lectures
++
++Le contrôle des lectures (`lectures.py`, appelé par `gate.py`) confronte l'écriture au registre des lectures que le hook tient dans `recherche/lectures/` (skill `recherche-juridique`). Il bloque :
++- une décision citée jamais lue par `get_decision` ;
++- une décision citée dont la suite connue (`standing`, `case_chronology`) montre une annulation, une cassation ou une infirmation que l'écriture ne dit pas ;
++- une citation attribuée à une décision, à un article ou à une pièce qui ne se retrouve pas mot pour mot dans la source lue, ou qui ne se lit que dans un aperçu de recherche ;
++- un article dont le texte est nommé et qui n'a pas été lu dans la version applicable à la date utile ;
++- une capture du registre altérée ou écrite à la main.
++
++Il alerte sur la section d'un article cité restée non lue, ses renvois non suivis, l'absence de recherche par `legal_article`, une date utile non déclarée pour un texte qui a connu plusieurs versions, une citation non attribuée et introuvable, attribuée à une autre source que celle où elle se lit, prise dans le sommaire ou dans une version inapplicable, une décision sans suite connue, une décision défaite que l'écriture signale, un article dont le texte n'est pas identifié, et une décision déclarée lue dans `etat/sources.json` sans capture au registre. Pour un écrit qui n'est pas porté devant un juge, les blocages deviennent des alertes. `python "${CLAUDE_PLUGIN_ROOT}/scripts/lectures.py" couverture|citations|portee <brouillon>` donne ces constats seuls.
++
+ ## 2. Registres
+ 
+-Inscrire chaque décision et chaque texte cités dans `etat/sources.json`, lus en entier, avec leur portée exacte (sous-agent `verificateur-sources` pour un contrôle indépendant). Coter chaque pièce citée par `affaire.py piece ajouter`. Inscrire les objections dirimantes connues par `affaire.py objection ajouter`.
++Inscrire chaque décision et chaque texte cités dans `etat/sources.json`, lus en entier, avec leur portée exacte ; `lu_en_entier` n'est vrai que si le registre des lectures capture leur texte (sous-agent `verificateur-sources` pour un contrôle indépendant). Coter chaque pièce citée par `affaire.py piece ajouter`. Inscrire les objections dirimantes connues par `affaire.py objection ajouter`.
+ 
+ ## 3. Lecture à froid
+ 
+--- a/templates/affaire/LISEZMOI.md
++++ b/templates/affaire/LISEZMOI.md
+@@ -17,6 +17,8 @@
+ | `preuves/matrice.json` | faits à prouver (format 2), charge, pièces, extraits littéraux, état de la preuve, poids, lacune, action de terrain | Claude |
+ | `procedure/cartographie.md` | instances, voies, recevabilité, délais, ce qui ferme chaque voie | Claude |
+ | `recherche/notes/` | notes de recherche par question, sources lues | Claude, `chercheur-juridique` |
++| `recherche/lectures/` | registre des lectures : chaque appel LibreJustice et read_document, avec son entrée, son heure et sa réponse brute ; empreintes dans `registre.jsonl` ; écriture à la main refusée | hook PostToolUse (`lectures.py`) |
++| `recherche/fiches/` | fiches de lecture des normes et décisions décisives, extraits vérifiés dans le registre | `lecteur-de-texte` |
+ | `strategie/journal_strategique.md` | décisions de ligne et leurs raisons | Claude |
+ | `strategie/ligne.json` | ligne en vigueur, exigée par le contrôle avant dépôt | Claude |
+ | `strategie/negociation.json` | plan de négociation et de persuasion : intérêts, solutions de repli, voies amiables et délais, offre, contreparties, interlocuteurs, calendrier, conditions de forme, persuasion de chaque décideur ; exigé par le contrôle avant dépôt | `negociateur`, `negociation.py` |
+--- a/README.md
++++ b/README.md
+@@ -27,7 +27,7 @@
+ 
+ Skills : `prise-en-main-affaire`, `action-sur-le-reel`, `strategie-contentieuse`, `recherche-juridique`, `recit-judiciaire`, `ecriture-juridictionnelle`, `refere-administratif`, `refere-civil`, `contentieux-du-fond`, `controle-de-la-norme`, `cassation`, `controle-avant-depot`, `analyse-documentaire`, `theorie-de-l-affaire`, `conduite-de-la-sequence`, `lecture-des-decideurs`, `negociation-et-persuasion`.
+ 
+-Sous-agents : `architecte-strategique`, `contradicteur`, `juge-simule`, `rapporteur-simule`, `lecteur-profane`, `avocat-adverse`, `analyste-adverse`, `chercheur-juridique`, `verificateur-sources`, `stratege-terrain`, `negociateur`, `plume`, `analyste-documentaire`, `sociologue-institution`.
++Sous-agents : `architecte-strategique`, `contradicteur`, `juge-simule`, `rapporteur-simule`, `lecteur-profane`, `avocat-adverse`, `analyste-adverse`, `chercheur-juridique`, `lecteur-de-texte`, `verificateur-sources`, `stratege-terrain`, `negociateur`, `plume`, `analyste-documentaire`, `sociologue-institution`.
+ 
+ Outils offensifs :
+ - `scripts/juridiction.py` calibre le juge simulé sur la juridiction réelle. `profil` tire de la base ouverte de la justice administrative les décisions publiées, classe ce qu'elle trie, instruit et accorde, sans aucun décompte par magistrat (CJA, art. L. 10, al. 4) ; `calibrage` écrit `calibrage_<code>.md`, qui montre en nombre égal refus et accueils, au filtre et après instruction, avec les taux publiés, depuis la base ouverte ou depuis un relevé LibreJustice, borné strictement avant le jour du dépôt et la décision de l'affaire exclue ; `conditions` écrit les conditions du régime remises au rapporteur.
+--- a/docs/ARCHITECTURE.md
++++ b/docs/ARCHITECTURE.md
+@@ -25,7 +25,7 @@
+ 1. **Ouverture ou reprise** (`prise-en-main-affaire`). `affaire.py init` crée l'arborescence. Au démarrage, à la reprise et après chaque compaction, le hook SessionStart injecte l'objectif, les instances, les échéances avec le temps restant, les canaux de notification en retard, les objections dirimantes, les consignes du client, la passation et la fin du journal. Le résumé de compaction ne remplace plus la relecture : l'état revient de lui-même.
+ 2. **Réel** (`action-sur-le-reel`, `stratege-terrain`). Audit des évidences (actes, notifications, plis, réceptions), puis actions licites qui créent la preuve ou provoquent la décision attaquable, chacune validée par le client avant tout acte extérieur.
+ 3. **Ligne** (`strategie-contentieuse`). Écrite avant toute mission : adversaire, autorité qui décide, temps réel, meilleur coup adverse, parade. Chaque acte passe le filtre en trois questions.
+-4. **Recherche** (`recherche-juridique`, `chercheur-juridique`, `verificateur-sources`). Toute source citée est lue en entier et inscrite au registre.
++4. **Recherche** (`recherche-juridique`, `chercheur-juridique`, `lecteur-de-texte`, `verificateur-sources`). Ratissage par passes obligatoires (proposition et contraire, texte à la date utile, section, renvois et texte modificatif, texte spécial, dispositions transitoires, jurisprudence par article, conclusions, suite de chaque décision, meilleure autorité contraire). Le hook PostToolUse capture chaque lecture LibreJustice dans `recherche/lectures/` ; `lectures.py` confronte notes et écritures à ce registre (couverture, citations mot pour mot, portée), et le contrôle avant dépôt bloque la décision jamais lue, la citation introuvable, la décision défaite tue et l'article non lu à sa date utile.
+ 5. **Écriture** (`ecriture-juridictionnelle`, `refere-administratif`, `refere-civil`, `cassation`, `plume`). Théorie du cas, question, première page, faits datés et cotés, moyens affirmés, conclusions accordables. À chaque enregistrement, le hook PostToolUse signale les défauts mécaniques.
+ 6. **Contrôle avant dépôt** (`controle-avant-depot`). Fiche de l'acte, extrait de tri lu par `juge-simule`, contradiction tranchée, registre des sources, `gate.py` jusqu'au PASS, `affaire.py finaliser`, accord exprès du client, `affaire.py depot`.
+ 7. **Fin de session**. Le hook Stop refuse de terminer si le dernier message cite une pièce ou une décision ni ouverte ni inscrite comme lue, ou si le dossier a changé sans passation réécrite.
+--- a/tests/test_contentieux.py
++++ b/tests/test_contentieux.py
+@@ -356,6 +356,16 @@
+         plan = plan_complet()
+         plan.update({"date": maintenant, "actes_couverts": ["ref"]})
+         ecrire(self.r / "strategie/negociation.json", plan)
++        # Lectures capturées des sources citées : l'article L. 521-1 du CJA et la décision n° 123456 (réponses synthétiques).
++        import lectures as LECTURES
++        for outil, entree, reponse in (
++                ("mcp__librejustice__get_norm", {"code": "code-de-justice-administrative", "article": "l521-1"},
++                 {"code": "code-de-justice-administrative", "number": "L521-1", "text": "Texte synthétique de l'article.", "valid_from": "2001-01-01",
++                  "versions": [{"status": "VIGUEUR", "valid_from": "2001-01-01"}]}),
++                ("mcp__librejustice__get_decision", {"url": "https://librejustice.fr/decision/synthetique"},
++                 {"docket_numbers": ["123456"], "title": "Conseil d'État, 1er janvier 2020, 123456", "text": "Texte synthétique de la décision.",
++                  "standing": "FINAL"})):
++            LECTURES.capturer(self.r, {"tool_name": outil, "tool_input": entree, "tool_response": json.dumps(reponse, ensure_ascii=False)})
+         v = gate.controler(f)
+         self.assertEqual(self.codes(v), {"LECTURE_PROFANE_ABSENTE", "LECTURE_FROID_ABSENTE", "RAPPORT_RAPPORTEUR_ABSENT", "CONTRADICTION_ABSENTE"})
+         sha = L.sha256_fichier(f)

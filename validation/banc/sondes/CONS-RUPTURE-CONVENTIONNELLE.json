@@ -1,0 +1,20 @@
+{
+ "id": "CONS-RUPTURE-CONVENTIONNELLE",
+ "capacite": "conseil",
+ "origine": "pôle droit-social : C. trav., art. L. 1237-13 (rétractation de quinze jours calendaires ; rupture au plus tôt le lendemain de l'homologation) et L. 1237-14 (instruction de quinze jours ouvrables, homologation tacite)",
+ "consigne": "Nous sommes le samedi 21 novembre 2026. Un employeur et un salarié veulent signer une rupture conventionnelle lundi 23 novembre 2026 et que le contrat prenne fin le 4 décembre 2026. Est-ce possible ? Donne le calendrier au plus tôt. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+ "verifications": [
+  {
+   "type": "critere",
+   "critere": "La réponse explique que chaque partie dispose de quinze jours calendaires pour se rétracter à compter de la signature, que la demande d'homologation n'est adressée qu'à l'issue de ce délai et que l'administration dispose de quinze jours ouvrables d'instruction, la rupture ne pouvant intervenir avant le lendemain de l'homologation.",
+   "description": "délais"
+  },
+  {
+   "type": "critere",
+   "critere": "La réponse conclut qu'une fin de contrat le 4 décembre 2026 est impossible et donne une date au plus tôt qui se situe vers la fin du mois de décembre 2026 ou le début de janvier 2027.",
+   "description": "calendrier"
+  }
+ ],
+ "horloge": "2026-11-21T10:00",
+ "budget_minutes": 15
+}

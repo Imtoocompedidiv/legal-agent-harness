@@ -1,0 +1,10 @@
+legal-agent-harness
+Harness juridique français pour Claude Code (plugin « contentieux »).
+
+Les méthodes de travail des pôles de conseil sont adaptées de la suite « Claude for Legal » (anthropics/claude-for-legal),
+publiée par Anthropic sous licence Apache 2.0. Les modifications apportées et la correspondance procédé par procédé sont décrites
+dans plugins/contentieux/docs/conseil/NOTICE.md ; une copie de la licence d'origine figure dans
+plugins/contentieux/docs/conseil/LICENCE-claude-for-legal.txt.
+
+Les décisions de justice reproduites dans validation/banc/fixtures/ sont des décisions publiques diffusées en open data par les
+juridictions (Licence Ouverte), déjà pseudonymisées à la source ; les noms des magistrats en ont été occultés.

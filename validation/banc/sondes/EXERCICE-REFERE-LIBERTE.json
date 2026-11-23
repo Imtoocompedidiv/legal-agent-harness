@@ -1,0 +1,31 @@
+{
+  "id": "EXERCICE-REFERE-LIBERTE",
+  "capacite": "exercice",
+  "origine": "demande du client : bon exercice, bonne cible",
+  "consigne": "Hier soir, le maire d'une commune a interdit par arrêté une réunion publique que notre client, une association, organise après-demain dans une salle privée. Quelle procédure engages-tu, devant quel juge, dans quel délai de jugement, et quelle est la condition qui fait le plus souvent échouer ce recours ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "521-2",
+      "description": "référé-liberté"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "quarante-huit heures",
+        "48 heures",
+        "48 h"
+      ],
+      "description": "délai de jugement"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "urgence",
+        "gravité",
+        "manifestement illégale"
+      ],
+      "description": "condition décisive"
+    }
+  ]
+}

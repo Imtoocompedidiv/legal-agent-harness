@@ -1,0 +1,32 @@
+{
+  "id": "RECH2-REQUETE-METHANISATION",
+  "capacite": "recherche",
+  "origine": "sonde durcie : requête adressée à la mauvaise juridiction ; compétence nouvelle hors des articles qu'on lit d'abord (CJA, R. 311-5, I, 1° d et II, issu du décret n° 2026-302 : cour administrative d'appel en premier et dernier ressort pour les actes qui conditionnent une installation de méthanisation de matière végétale brute, actes pris à compter du 1er juillet 2026 ; R. 77-16-1 : notification)",
+  "consigne": "Rédige la requête de nos clients, riverains, devant le tribunal administratif de Rennes, contre le permis de construire délivré le 8 septembre 2026 par le maire d'une commune d'Ille-et-Vilaine pour une unité de méthanisation agricole qui traitera les effluents de trois élevages et des cultures intermédiaires ; le permis est affiché sur le terrain depuis le 1er octobre 2026. Structure la requête (juridiction, parties, acte attaqué, faits, moyens à développer, conclusions) et indique ce qu'il faut faire pour la déposer. Réponds par la requête, sans dérouler la chaîne complète de prise en main du dossier.",
+  "budget_minutes": 15,
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "cour administrative d.appel de nantes",
+      "description": "corrige la juridiction : cour administrative d'appel de Nantes"
+    },
+    {
+      "type": "contient",
+      "motif": "311-5",
+      "description": "fonde la compétence de la cour sur l'article R. 311-5"
+    },
+    {
+      "type": "contient",
+      "motif": "77-16-1",
+      "description": "notification de l'article R. 77-16-1",
+      "critique": false
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__get_norm",
+      "entree_contient": "/(partie|livre|titre|chapitre|section)-",
+      "description": "méthode : lit la section qui contient l'article (articles voisins)",
+      "critique": false
+    }
+  ]
+}

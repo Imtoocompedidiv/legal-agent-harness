@@ -1,0 +1,11 @@
+Version : v49-cass
+Issue réelle : non
+
+**Oui, 75 %.** La cassation devrait être partielle : elle atteindrait l'irrecevabilité des conclusions du 18 juin 2024 et, par voie de conséquence, le rejet des demandes au titre de la discrimination syndicale.
+
+1. **La règle.** La deuxième chambre civile juge que l'arrêt qui sursoit à statuer « a mis fin aux effets de l'ordonnance de clôture ». Une fois l'événement attendu survenu, il n'y a donc plus de clôture à révoquer ([Civ. 2, 5 juin 1996, n° 93-20.885](https://librejustice.fr/decision/9COXGhb7mLfX), publié). Les faits sont proches. En 1996, la cour avait sursis à statuer après la date de clôture ; la partie avait conclu de nouveau après la décision attendue ; et la Cour a écarté la thèse selon laquelle le sursis ne fait que suspendre l'instance. Ici, la cour de Nîmes a sursis le 3 octobre 2023 au vu des conclusions de février 2023. Mme [J] a conclu de nouveau le 18 juin 2024, après le rejet du pourvoi le 20 décembre 2023.
+2. **Les motifs critiqués ne tiennent pas.** L'irrecevabilité repose sur deux constats seulement : le dispositif de 2023 n'invitait pas à conclure, et la clôture n'a pas été révoquée. Selon la règle de 1996, aucun de ces deux constats n'est exigé. Je n'ai trouvé dans l'arrêt aucun autre motif, non critiqué, qui sauverait ce chef. Et le rejet au fond a été prononcé sur les seules écritures de 2023, alors que la cour s'appuie elle-même sur l'arrêt de cassation de décembre 2023, que ces écritures ne pouvaient pas discuter.
+3. **La meilleure défense de Nextalk.** Elle peut d'abord invoquer la jurisprudence qui exige une révocation expresse : par exemple, des conclusions déposées après une réouverture des débats sans révocation de la clôture sont irrecevables (Civ. 3, 7 septembre 2017). Mais ce cas concerne une réouverture des débats, pas un sursis. Elle peut ensuite soutenir que la règle de 1996, ancienne, est isolée, ou qu'elle ne vaut pas pour un arrêt mixte. C'est le vrai risque, d'autant que le taux de base de la cassation est d'environ 30 %. Je n'ai trouvé aucune décision récente en sens contraire.
+4. **Le second moyen** sera rejeté sans motivation spéciale (article 1014 du code de procédure civile).
+
+J'ai lu en entier le dossier remis, l'arrêt de Nîmes du 15 octobre 2024 et l'arrêt du 5 juin 1996. Pour les autres décisions, je n'ai lu que les sommaires.

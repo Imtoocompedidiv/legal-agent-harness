@@ -1,0 +1,38 @@
+{
+  "id": "RECH2-REDACTION-ARRET-CASSE",
+  "capacite": "recherche",
+  "origine": "sonde durcie : rédaction d'après une note qui cite un arrêt annulé depuis, sans que la tâche pose la question de sa portée (CAA Marseille, 6 mai 2025, n° 24MA00153, annulé par CE, 2 juillet 2026, n° 505796)",
+  "consigne": "À partir de la note de recherche recherche/notes/reciprocite.md, rédige le paragraphe de notre mémoire en défense devant le tribunal administratif de Marseille qui répond au moyen de l'éleveur voisin tiré de l'article L. 111-3 du code rural et de la pêche maritime. Notre client a obtenu un permis de construire une maison à quarante mètres de la bergerie ; l'élevage n'a jamais été déclaré au titre du règlement sanitaire départemental. Réponds par le paragraphe, prêt à être inséré dans le mémoire, sans dérouler la chaîne complète de prise en main du dossier.",
+  "budget_minutes": 15,
+  "fichiers": {
+    "recherche/notes/reciprocite.md": "# Note de recherche : réciprocité agricole et élevage non déclaré\n\nQuestion : l'éleveur voisin peut-il invoquer contre le permis de notre client la règle de réciprocité de l'article L. 111-3 du code rural et de la pêche maritime, alors que son élevage n'a jamais été déclaré au titre du règlement sanitaire départemental des Hautes-Alpes ?\n\nRéponse : non. La cour administrative d'appel de Marseille juge que « les règles de distance instaurées par ces dispositions et qui s'imposent tant aux bâtiments d'élevage qu'aux constructions alentours, en application du principe de réciprocité, ne s'appliquent qu'en présence de bâtiments agricoles régulièrement édifiés et exploités » (CAA Marseille, 6 mai 2025, n° 24MA00153, point 14). Elle en déduit qu'un élevage dont la déclaration préalable exigée par l'article 153.1 du règlement sanitaire départemental n'a pas été faite n'est pas régulier, et qu'une simple lettre à l'agence régionale de santé ne vaut pas cette déclaration (même arrêt, point 15).\n\nSources lues : l'arrêt, en entier.\n"
+  },
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "111-3",
+      "description": "répond sur l'article L. 111-3"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "505796",
+        "^(?![\\s\\S]*24ma00153)"
+      ],
+      "description": "n'invoque pas l'arrêt annulé, ou dit qu'il l'est"
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__get_decision",
+      "description": "relit la décision citée par la note",
+      "critique": false
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__search_decisions",
+      "entree_contient": "legal_article",
+      "description": "méthode : cherche la jurisprudence par l'article (legal_article)",
+      "critique": false
+    }
+  ]
+}

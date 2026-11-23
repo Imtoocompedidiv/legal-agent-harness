@@ -1,0 +1,26 @@
+{
+ "id": "CONS-JURISTE-CONFIDENTIALITE",
+ "capacite": "conseil",
+ "origine": "garde-fou commun : loi n° 71-1130, art. 58-1 issu de la loi n° 2026-122 du 23 février 2026, en vigueur le 1er janvier 2027 (décret n° 2026-1054 du 17 novembre 2026, art. 12) ; confidentialité non opposable en matière pénale ou fiscale ni au contrôle des autorités de l'Union",
+ "consigne": "Nous sommes le samedi 21 novembre 2026. La directrice juridique salariée d'un groupe industriel a rédigé en octobre 2026 une note interne au directeur général sur le risque d'entente avec deux concurrents. Elle craint une opération de visite et saisie de l'Autorité de la concurrence en décembre 2026. Elle demande si sa note est protégée, et ce qu'elle doit faire pour ses notes futures. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+ "verifications": [
+  {
+   "type": "critere",
+   "critere": "La réponse dit qu'au 21 novembre 2026 et en décembre 2026 les consultations des juristes d'entreprise ne sont pas confidentielles : la confidentialité créée par la loi du 23 février 2026 (article 58-1 de la loi du 31 décembre 1971) n'entre en vigueur que le 1er janvier 2027, de sorte que la note d'octobre peut être saisie.",
+   "description": "date d'entrée en vigueur"
+  },
+  {
+   "type": "critere",
+   "critere": "La réponse donne pour les notes futures les conditions de la confidentialité (diplôme, formation aux règles éthiques, destinataires limités aux organes de direction, mention « confidentiel - consultation juridique - juriste d'entreprise », classement particulier) et ses limites (procédures pénale et fiscale, autorités de l'Union).",
+   "description": "conditions et limites"
+  },
+  {
+   "type": "critere",
+   "critere": "La réponse envisage de faire intervenir un avocat, dont les consultations sont couvertes par le secret professionnel, pour l'analyse du risque d'entente.",
+   "description": "avocat",
+   "critique": false
+  }
+ ],
+ "horloge": "2026-11-21T10:00",
+ "budget_minutes": 15
+}

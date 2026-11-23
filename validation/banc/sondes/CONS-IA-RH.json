@@ -1,0 +1,26 @@
+{
+ "id": "CONS-IA-RH",
+ "capacite": "conseil",
+ "origine": "pôle intelligence-artificielle : règlement (UE) 2024/1689, art. 5, § 1, f) (inférence des émotions sur le lieu de travail interdite depuis le 2 février 2025) ; règlement (UE) 2026/1744 du 8 juillet 2026 modifiant l'art. 113 (obligations des systèmes à haut risque de l'annexe III applicables à compter du 2 décembre 2027)",
+ "consigne": "Nous sommes le samedi 21 novembre 2026. Une entreprise cliente de 400 salariés veut déployer en janvier 2027 deux outils fournis par un éditeur : un logiciel qui trie et classe automatiquement les candidatures reçues, et un module qui analyse pendant les visioconférences internes les expressions du visage des salariés pour mesurer leur stress et leur engagement. Quelles règles s'appliquent et à partir de quand ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+ "verifications": [
+  {
+   "type": "critere",
+   "critere": "La réponse dit que l'analyse des expressions du visage pour inférer les émotions des salariés sur le lieu de travail est une pratique interdite par l'article 5 du règlement sur l'IA, applicable depuis le 2 février 2025, sauf raisons médicales ou de sécurité, et déconseille ce module.",
+   "description": "pratique interdite"
+  },
+  {
+   "type": "critere",
+   "critere": "La réponse classe le tri des candidatures parmi les systèmes à haut risque de l'annexe III (emploi) et dit que les obligations correspondantes ne s'appliquent qu'à compter du 2 décembre 2027, du fait du règlement (UE) 2026/1744 qui a reporté la date initiale du 2 août 2026.",
+   "description": "date du haut risque"
+  },
+  {
+   "type": "critere",
+   "critere": "La réponse rappelle que le RGPD s'applique dès maintenant au tri des candidatures (analyse d'impact, décision automatisée, information des candidats) et que l'introduction de ces technologies suppose la consultation du CSE.",
+   "description": "règles applicables dès maintenant",
+   "critique": false
+  }
+ ],
+ "horloge": "2026-11-21T10:00",
+ "budget_minutes": 15
+}

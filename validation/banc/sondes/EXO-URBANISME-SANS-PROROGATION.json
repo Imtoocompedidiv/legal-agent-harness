@@ -1,0 +1,51 @@
+{
+  "id": "EXO-URBANISME-SANS-PROROGATION",
+  "capacite": "exercice",
+  "horloge": "2026-11-19T10:00",
+  "budget_minutes": 12,
+  "origine": "module mecanique-des-exercices : régime spécial non vu, recours gracieux sans effet prorogatif contre une autorisation d'urbanisme (C. urb., art. L. 600-12-2, loi n° 2025-1129 ; Cons. const., n° 2025-896 DC, point 45)",
+  "consigne": "Nous sommes le jeudi 19 novembre 2026. Le maire d'une commune a délivré le 15 septembre 2026 un permis de construire un immeuble de quatre étages sur la parcelle voisine de la maison de nos clients, qui en sont propriétaires. Le permis est affiché sur le terrain depuis le 1er octobre 2026, de façon régulière et continue. Nos clients veulent d'abord écrire au maire pour lui demander de retirer le permis, afin de garder une chance d'arrangement, et ne saisir le juge qu'ensuite si le maire refuse. Quel acte engages-tu, devant qui, dans quel délai, et quelle condition décide de son succès ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier. Termine par une ligne de la forme « EXERCICE RETENU : … » qui nomme l'acte ou la démarche que tu engages en premier, avec son texte.",
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "exercice retenu.{0,220}(requête|recours (pour excès de pouvoir|en annulation|contentieux)|tribunal administratif)",
+      "description": "choix : requête au tribunal administratif dans le délai initial"
+    },
+    {
+      "type": "absent",
+      "motif": "exercice retenu.{0,80}gracieux",
+      "description": "ne retient pas le recours gracieux en premier"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "600-12-2",
+        "2025-1129",
+        "ne proroge (plus|pas)",
+        "n.est (plus|pas) prorog",
+        "(plus|pas|aucun) d.effet prorogatif",
+        "plus prorogatif",
+        "pas prorogatif"
+      ],
+      "description": "condition décisive : le recours gracieux ne proroge plus le délai contre une autorisation d'urbanisme"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "notifi.{0,160}(quinze|15) jours",
+        "(quinze|15) jours.{0,160}notifi"
+      ],
+      "description": "exigence implicite : notification du recours à l'auteur et au titulaire dans les quinze jours"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "600-4",
+        "titre de propriété",
+        "600-1-2"
+      ],
+      "description": "intérêt à agir et titre",
+      "critique": false
+    }
+  ]
+}

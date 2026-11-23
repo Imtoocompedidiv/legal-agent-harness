@@ -1,0 +1,372 @@
+[
+  {
+    "id": "GENP-ANNT-2205984",
+    "famille": "ANNT",
+    "issue_reelle": "non",
+    "motif_decisif": "Défaut d'intérêt à agir (L. 600-1-2) : l'extension de 19 m² est en sous-sol, sa seule fenêtre de 1 m x 0,40 m donne sur la cour du pétitionnaire derrière un mur de clôture, et les travaux invoqués relevaient de déclarations préalables dont le recours avait été rejeté (points 5 à 7).",
+    "fait_au_dossier": "indice",
+    "citation_indice": "« création d'une extension de 19 m² sous le parking existant » ; la commune soutient que « la requête est irrecevable faute pour M. F d'établir que le projet concerné est susceptible de nuire aux conditions d'occupation, d'utilisation et de jouissance de son bien »",
+    "erreur": "b",
+    "regle_generale": "Quand l'intérêt à agir d'un voisin est contesté, le confronter à la nature, à l'importance et à la localisation du projet : une petite extension en sous-sol, sans vue sur le fonds voisin, peut priver même le voisin immédiat d'intérêt, et cette fin de non-recevoir se juge avant tout moyen de fond."
+  },
+  {
+    "id": "GENP-ANNT-2208475",
+    "famille": "ANNT",
+    "issue_reelle": "non",
+    "motif_decisif": "L'erreur sur la surface de l'EARL (classée à tort au rang 4) est sans incidence, car le préfet a retenu le GAEC concurrent au rang 2 (moins de 60 ha par UMO après reprise) ; l'erreur d'appréciation est inopérante, la décision reposant sur la seule différence de rang (motifs du jugement).",
+    "fait_au_dossier": "indice",
+    "citation_indice": "Indice faible : « le préfet du Nord a autorisé le groupement agricole d'exploitation en commun (GAEC) Manidren à exploiter une superficie totale de 64 hectares (ha) 51 ares » ; l'erreur de fait alléguée ne porte que sur « la surface mise en valeur » par la requérante",
+    "erreur": "a",
+    "regle_generale": "Une erreur de fait ou de motif n'emporte l'annulation que si elle a pu changer le sens de la décision : en procédure concurrente (contrôle des structures, attribution), vérifier si le rang du bénéficiaire suffit à justifier le choix avant de prédire l'annulation, et ne pas tenir une défense laconique pour un acquiescement aux faits."
+  },
+  {
+    "id": "GENP-ANNT-2300569",
+    "famille": "ANNT",
+    "issue_reelle": "non",
+    "motif_decisif": "Défaut d'intérêt à agir : les requérants, voisins immédiats, ne font état dans leurs écritures d'aucune nuisance ni d'aucun élément relatif à la nature, à l'importance ou à la localisation du projet, l'usage d'une servitude de passage ne suffisant pas (point 4).",
+    "fait_au_dossier": "présent",
+    "citation_indice": "La Polynésie oppose que les requérants « ne justifient pas d'une quelconque atteinte aux conditions d'occupation, d'utilisation et de jouissance de leurs biens » ; la requête ne défend sa recevabilité que sur l'affichage et n'allègue aucune atteinte",
+    "erreur": "a",
+    "regle_generale": "La qualité de voisin immédiat ne dispense pas le requérant d'alléguer lui-même une atteinte précise à la jouissance de son bien : l'agent ne doit pas la reconstituer à partir des moyens de légalité (recul, piscines), et une fin de non-recevoir sur l'intérêt à agir laissée sans réponse argumentée doit faire pencher vers le rejet."
+  },
+  {
+    "id": "GENP-ANNT-2304496",
+    "famille": "ANNT",
+    "issue_reelle": "oui",
+    "motif_decisif": "Le refus implicite est né quatre mois après la réception de la demande, et faute de communication des motifs demandés le 25 septembre 2023 dans le délai d'un mois de l'article L. 232-4 du CRPA, il est illégal (points 3 et 5).",
+    "fait_au_dossier": "indice",
+    "citation_indice": "Le requérant soutient que « cette décision n'est pas motivée » alors qu'elle est implicite, et le préfet ne répond qu'en niant l'existence d'une décision, sans discuter ce moyen",
+    "erreur": "b",
+    "regle_generale": "Un moyen de défaut de motivation dirigé contre une décision implicite signale normalement une demande de communication des motifs (L. 232-4 CRPA) ; s'il n'est pas contesté en défense, le tenir pour sérieux plutôt que de présumer l'absence de demande ou un dépôt irrégulier que rien au dossier n'établit."
+  },
+  {
+    "id": "GENP-ANNT-2326684",
+    "famille": "ANNT",
+    "issue_reelle": "oui",
+    "motif_decisif": "Les motifs du refus implicite de titre ont été demandés par courrier reçu le 3 novembre 2023 et n'ont pas été communiqués : la décision implicite est illégale au regard de l'article L. 232-4 du CRPA (points 3 et 4).",
+    "fait_au_dossier": "indice",
+    "citation_indice": "« la décision attaquée est insuffisamment motivée » soulevé contre une « décision implicite », et « La requête a été communiquée au préfet de police, qui n'a pas produit de mémoire en défense »",
+    "erreur": "b",
+    "regle_generale": "Un moyen de défaut de motivation dirigé contre une décision implicite signale normalement une demande de communication des motifs (L. 232-4 CRPA) ; s'il n'est pas contesté en défense, le tenir pour sérieux plutôt que de présumer l'absence de demande, et ne pas fonder le pronostic sur les seuls moyens de fond (article 8, erreur manifeste)."
+  },
+  {
+    "id": "GENP-ANNT-2400850",
+    "famille": "ANNT",
+    "issue_reelle": "non",
+    "motif_decisif": "Le préambule du règlement et le rapport de présentation du PLU décrivent la zone Ue comme réservée aux équipements publics, ce qui exclut les maisons d'habitation malgré le silence des articles du règlement (point 2).",
+    "fait_au_dossier": "indice",
+    "citation_indice": "« les constructions à usage d'habitation, dans la mesure où elles ne sont ni interdites ni limitées en zone Ue, y sont autorisées sans condition » : le refus porte sur trois maisons en zone « Ue », et l'argument du requérant repose sur le seul silence des articles",
+    "erreur": "b",
+    "regle_generale": "Quand un refus repose sur la vocation d'une zone de PLU, tenir compte de ce que le juge lit le règlement à la lumière du caractère de la zone (préambule, rapport de présentation) : un requérant qui n'invoque que le silence des articles d'interdiction a peu de chances, et une défense laconique ne vaut pas abandon du motif."
+  },
+  {
+    "id": "GENP-ANNT-2403312",
+    "famille": "ANNT",
+    "issue_reelle": "oui",
+    "motif_decisif": "La demande de communication des motifs du refus implicite, reçue le 24 janvier 2024, est restée sans réponse : la décision implicite est illégale au regard de l'article L. 232-4 du CRPA (points 3 et 4).",
+    "fait_au_dossier": "indice",
+    "citation_indice": "« la décision attaquée est insuffisamment motivée » contre une « décision implicite », le dossier ne mentionnant aucun mémoire en défense du préfet ; le CRPA figure dans les visas",
+    "erreur": "b",
+    "regle_generale": "Un moyen de défaut de motivation dirigé contre une décision implicite signale normalement une demande de communication des motifs (L. 232-4 CRPA) ; s'il n'est pas contesté en défense, le tenir pour sérieux plutôt que de présumer l'absence de demande, et ne pas fonder le pronostic sur les seuls moyens de fond."
+  },
+  {
+    "id": "GENP-ANNT-2406099",
+    "famille": "ANNT",
+    "issue_reelle": "oui",
+    "motif_decisif": "La demande de communication des motifs du refus implicite, faite le 17 septembre 2023, est restée sans réponse : la décision implicite est illégale au regard de l'article L. 232-4 du CRPA (point 4).",
+    "fait_au_dossier": "indice",
+    "citation_indice": "« [la décision attaquée] est insuffisamment motivée » contre une « décision implicite », et « La requête a été communiquée au préfet de police, qui n'a pas produit de mémoire en défense »",
+    "erreur": "b",
+    "regle_generale": "Un moyen de défaut de motivation dirigé contre une décision implicite signale normalement une demande de communication des motifs (L. 232-4 CRPA) ; s'il n'est pas contesté en défense, le tenir pour sérieux plutôt que de présumer l'absence de demande, et ne pas fonder le pronostic sur les seuls moyens de fond."
+  },
+  {
+    "id": "GENP-ANNT-2427751",
+    "famille": "ANNT",
+    "issue_reelle": "oui",
+    "motif_decisif": "La demande de communication des motifs du refus implicite, reçue le 16 septembre 2024, est restée sans réponse : la décision implicite est illégale au regard de l'article L. 232-4 du CRPA, les moyens de fond étant par ailleurs écartés faute de pièces (points 4 et 5).",
+    "fait_au_dossier": "indice",
+    "citation_indice": "« la décision attaquée est insuffisamment motivée » contre une « décision implicite », et « La requête a été communiquée au préfet de police, qui n'a pas produit d'observations en défense » ; le CRPA est visé",
+    "erreur": "b",
+    "regle_generale": "Un moyen de défaut de motivation dirigé contre une décision implicite signale normalement une demande de communication des motifs (L. 232-4 CRPA) ; s'il n'est pas contesté en défense, le tenir pour sérieux plutôt que de présumer l'absence de demande, et ne pas fonder le pronostic sur les seuls moyens de fond."
+  },
+  {
+    "id": "GENP-ANNT-2428202",
+    "famille": "ANNT",
+    "issue_reelle": "oui",
+    "motif_decisif": "La demande de communication des motifs du refus implicite, reçue le 22 mai 2024, est restée sans réponse : la décision implicite est illégale au regard de l'article L. 232-4 du CRPA (point 4).",
+    "fait_au_dossier": "indice",
+    "citation_indice": "« la décision attaquée est insuffisamment motivée » contre une « décision implicite », et « La requête a été communiquée au préfet de police, qui n'a pas produit d'observations en défense » ; le CRPA est visé",
+    "erreur": "b",
+    "regle_generale": "Un moyen de défaut de motivation dirigé contre une décision implicite signale normalement une demande de communication des motifs (L. 232-4 CRPA) ; s'il n'est pas contesté en défense, le tenir pour sérieux plutôt que de présumer l'absence de demande, et ne pas fonder le pronostic sur les seuls moyens de fond."
+  },
+  {
+    "id": "GENP-ANNT-2504989",
+    "famille": "ANNT",
+    "issue_reelle": "oui",
+    "motif_decisif": "Le refus, fondé sur la non-exécution d'une OQTF et le caractère dilatoire de la demande, ne vise ni ne mentionne l'article L. 432-1-1 du CESEDA qu'il applique : faute d'énoncer ses considérations de droit, il est insuffisamment motivé (point 3).",
+    "fait_au_dossier": "absent",
+    "citation_indice": "Seul le moyen nu figure au dossier : « elle est insuffisamment motivée » ; le contenu de la décision du 21 août 2025, et l'absence de visa de son fondement légal, n'y apparaissent pas",
+    "erreur": "aucune (fait absent)",
+    "regle_generale": "aucune"
+  },
+  {
+    "id": "GENP-CASSA-2320716",
+    "famille": "CASSA",
+    "issue_reelle": "non",
+    "motif_decisif": "La cour d'appel a relevé des termes injurieux et excessifs (surnom dénigrant, « le PD » pour le directeur général), ce qui caractérise l'abus de la liberté d'expression peu important la diffusion restreinte ; les SMS envoyés du téléphone professionnel sont présumés professionnels (points 6-7 et 10-11).",
+    "fait_au_dossier": "présent",
+    "citation_indice": "Arrêt d'appel reproduit : « M. [W] avait désigné un membre de la société sous la dénomination dénigrante 'popo' et avait détourné l'appellation 'l'EPD' [...] 'on peut vraiment dire : le PD' pour désigner le directeur général »",
+    "erreur": "a",
+    "regle_generale": "En cassation, quand l'arrêt attaqué contient des constatations souveraines qui satisfont le critère même invoqué par le moyen (ici des termes injurieux), prévoir le rejet : la Cour s'appuie sur ces constatations et tient pour surabondants les motifs critiqués ; un contre-argument décisif identifié doit l'emporter sur l'intuition contraire."
+  },
+  {
+    "id": "GENP-CASSA-2413697",
+    "famille": "CASSA",
+    "issue_reelle": "oui",
+    "motif_decisif": "Le premier moyen (exclusivité du régime des articles L. 133-18 et suivants) est rejeté, mais la cassation totale est prononcée sur le second moyen : la cour d'appel n'a pas recherché, comme elle y était invitée, si la banque avait satisfait à son devoir de vigilance en obtenant confirmation des ordres auprès d'une personne habilitée (points 5 et 8-9).",
+    "fait_au_dossier": "indice",
+    "citation_indice": "Arrêt d'appel reproduit : la banque « indique avoir effectué la validation des virements en appelant [N], habilité à cet effet » et la cour admet que « La vérification par demande de confirmation par la banque [...] pouvait donc avoir lieu par un appel téléphonique de la banque à M. [M] », puis lui reproche de ne pas avoir vérifié « auprès du dirigeant de la société » ; le dossier signale « deux moyens de cassation » dont un seul est reproduit",
+    "erreur": "b",
+    "regle_generale": "L'issue d'un pourvoi se joue sur son moyen le plus fort, non sur sa question de principe : évaluer chaque moyen, y compris celui qui n'est pas reproduit, en cherchant dans l'arrêt attaqué les constatations en tension et les recherches demandées mais non faites (défaut de base légale), une seule branche accueillie suffisant à la cassation."
+  },
+  {
+    "id": "GENP-CASSA-2422427",
+    "famille": "CASSA",
+    "issue_reelle": "non",
+    "motif_decisif": "Selon l'article 803 du CPC issu du décret du 11 décembre 2019, dispositions impératives, l'ordonnance de clôture ne peut être révoquée implicitement : l'arrêt de sursis ne comportant aucun rabat et aucune révocation n'ayant été demandée, les conclusions postérieures étaient irrecevables (points 5 à 7).",
+    "fait_au_dossier": "présent",
+    "citation_indice": "Arrêt d'appel et moyen : « aucun rabat de l'ordonnance de clôture n'a été prononcé par la cour » ; « le dispositif de l'arrêt mixte du 3 octobre 2023 ne comporte aucune demande de dépôt de nouvelles conclusions »",
+    "erreur": "e",
+    "regle_generale": "Avant d'asseoir un pronostic sur un précédent, vérifier qu'il a été rendu sous la même rédaction du texte appliqué (ici l'article 803 CPC refondu en 2019) ; un arrêt ancien non confirmé ne justifie pas une forte probabilité, surtout quand la cour d'appel s'en est tenue à la lettre d'un texte de procédure impératif."
+  },
+  {
+    "id": "GENP-CASSN-2413697",
+    "famille": "CASSN",
+    "issue_reelle": "oui",
+    "motif_decisif": "Cassation sur le second moyen, branche 2 : la cour d'appel n'a pas recherché si la banque avait satisfait à son devoir de vigilance en obtenant confirmation des ordres auprès d'une personne habilitée ; le premier moyen, seul reproduit, est rejeté (points 5 et 8-9).",
+    "fait_au_dossier": "absent",
+    "citation_indice": "Le dossier ne reproduit ni l'arrêt d'appel ni le second moyen ; il indique seulement que la banque « invoque, à l'appui de son recours, deux moyens de cassation » (l'agent dit avoir lu l'arrêt d'Angers hors du dossier remis)",
+    "erreur": "aucune (fait absent)",
+    "regle_generale": "aucune"
+  },
+  {
+    "id": "GENP-CASSN-2414061",
+    "famille": "CASSN",
+    "issue_reelle": "oui",
+    "motif_decisif": "L'article R. 243-59 du code de la sécurité sociale est d'application stricte : l'inspecteur du recouvrement ne peut emporter des documents, même en copie, sans avoir informé l'employeur et obtenu son accord, et la cour d'appel n'a pas fait la vérification demandée (points 5 à 7).",
+    "fait_au_dossier": "présent",
+    "citation_indice": "Moyen reproduit : « l'agent de contrôle ne peut pas emporter de documents, même sous forme de copies, sans autorisation ni information de l'entreprise contrôlée ; qu'en énonçant que l'agent de contrôle avait pu emporter des copies [...] sans vérifier, comme cela lui était demandé [...] » ; le dossier n'examine que la « première branche » du moyen unique, sans renvoi à l'article 1014 pour les autres",
+    "erreur": "a",
+    "regle_generale": "Les textes qui organisent les prérogatives de contrôle d'un organisme (URSSAF, administration fiscale, inspection) sont d'application stricte : quand le juge du fond reconnaît à l'agent un pouvoir que le texte ne donne pas expressément et omet la recherche qu'on lui demandait, le défaut de base légale est sérieux et l'absence de grief ne le couvre pas."
+  },
+  {
+    "id": "GENP-CASSN-2422427",
+    "famille": "CASSN",
+    "issue_reelle": "non",
+    "motif_decisif": "Selon l'article 803 du CPC issu du décret du 11 décembre 2019, dispositions impératives, l'ordonnance de clôture ne peut être révoquée implicitement : l'arrêt de sursis ne comportant aucun rabat et aucune révocation n'ayant été demandée, les conclusions postérieures étaient irrecevables (points 5 à 7).",
+    "fait_au_dossier": "présent",
+    "citation_indice": "Moyen reproduit, citant l'arrêt attaqué : « aucun rabat de l'ordonnance de clôture n'a été prononcé par la cour » et « le dispositif de l'arrêt mixte du 3 octobre 2023 ne comporte aucune demande de dépôt de nouvelles conclusions »",
+    "erreur": "e",
+    "regle_generale": "Avant d'asseoir un pronostic sur un précédent, vérifier qu'il a été rendu sous la même rédaction du texte appliqué (ici l'article 803 CPC refondu en 2019) ; un arrêt ancien non confirmé ne justifie pas une forte probabilité, surtout quand la cour d'appel s'en est tenue à la lettre d'un texte de procédure impératif."
+  },
+  {
+    "id": "GENP-LIB-2500511",
+    "famille": "LIB",
+    "issue_reelle": "oui",
+    "motif_decisif": "L'éloignement a été exécuté le matin du 31 mars 2025 alors que le référé-liberté était enregistré à 7 h 25 et l'administration avertie, en violation du caractère suspensif prévu par l'article L. 761-9 du CESEDA, ce qui, au vu de la vie familiale établie à l'audience (compagne française, petites-filles à charge), porte une atteinte grave et manifestement illégale au droit à un recours effectif et à la vie familiale (points 3 à 5).",
+    "fait_au_dossier": "indice",
+    "citation_indice": "OQTF du « 30 mars 2025 », requête « enregistrée le 31 mars 2025 », et à l'audience le requérant soutient que « la mesure d'éloignement a été prématurément exécutée, en méconnaissance du droit à un recours effectif » et demande son retour ; la convention internationale relative aux droits de l'enfant figure dans les visas",
+    "erreur": "b",
+    "regle_generale": "En référé-liberté contre un éloignement depuis Mayotte, une exécution intervenue le jour même de l'enregistrement de la requête rend probable la méconnaissance de l'effet suspensif de l'article L. 761-9 du CESEDA, que le juge sanctionne par une injonction de retour ; et les textes visés par le juge (CIDE, par exemple) signalent des faits débattus (enfants) que le résumé des écritures omet."
+  },
+  {
+    "id": "GENP-LIB-2604470",
+    "famille": "LIB",
+    "issue_reelle": "oui",
+    "motif_decisif": "Des circonstances nouvelles justifiées et non contestées par le préfet, absent de l'instance (attestation du laboratoire sur l'absence de commercialisation de la trithérapie au Cameroun, certificat sur la gravité d'une interruption, isolement au pays, rôle auprès d'un petit-fils polyhandicapé), rendent le référé-liberté recevable et caractérisent l'atteinte grave ; l'interdiction de retour d'un an maintient l'urgence, d'où l'injonction de retour (points 8, 11 et 12).",
+    "fait_au_dossier": "présent",
+    "citation_indice": "« elle [...] dispose de nouveaux éléments médicaux pour prouver que l'obligation de quitter le territoire français n'a pas lieu d'être car elle ne peut pas se faire soigner au Cameroun » ; « Le préfet du Nord n'étant ni présent ni représenté », sa seule écriture concluant au non-lieu ; clôture différée et pièce produite le 23 avril",
+    "erreur": "c",
+    "regle_generale": "Quand l'administration ne défend pas au fond, des allégations précises et étayées par des pièces (certificat médical, attestation d'indisponibilité d'un traitement) sont tenues pour établies en l'état de l'instruction : l'agent ne doit pas leur opposer ses propres connaissances générales (disponibilité d'un traitement dans un pays) pour retenir l'issue habituelle."
+  },
+  {
+    "id": "GENP-LIB-2604807",
+    "famille": "LIB",
+    "issue_reelle": "oui",
+    "motif_decisif": "Le requérant, 22 ans, vit à Mayotte depuis 2016 chez sa tante en situation régulière, y a été scolarisé (brevet, baccalauréat professionnel, admission à l'université) et y est engagé dans un club de football, tandis que le risque d'ordre public n'est étayé que par un extrait du TAJ : l'OQTF sans délai porte une atteinte grave et manifestement illégale à sa vie privée et familiale (point 7).",
+    "fait_au_dossier": "absent",
+    "citation_indice": "Le dossier ne contient qu'une invocation générale de l'article 8 ; seul signe : l'audience s'est tenue « en présence de l'intéressé qui a pu répondre aux questions de la juge des référés »",
+    "erreur": "aucune (fait absent)",
+    "regle_generale": "aucune"
+  },
+  {
+    "id": "GENP-LIBE-2601791",
+    "famille": "LIBE",
+    "issue_reelle": "oui",
+    "motif_decisif": "L'arrêté vise une personne née le 16 mars 1989, à qui a été délivrée une carte de séjour pluriannuelle valable jusqu'en juillet 2027 en qualité de parent d'un enfant français : l'éloignement d'un titulaire d'un titre en cours de validité porte une atteinte grave et manifestement illégale à sa vie familiale, la discordance de date de naissance invoquée par le préfet étant inopérante (point 6).",
+    "fait_au_dossier": "indice",
+    "citation_indice": "Défense du préfet : « il se prévaut d'un titre de séjour délivré à une personne née le 16 mars 1989, alors qu'il se présente comme né le 31 décembre 1972 » ; requête : « il est père d'un enfant français dont la mère est décédée »",
+    "erreur": "b",
+    "regle_generale": "Vérifier d'abord si l'étranger éloigné détient un droit au séjour en cours de validité : une OQTF prise contre le titulaire d'un titre valable est en principe manifestement illégale, et une discordance d'état civil soulevée en défense ne fait pas obstacle si le titre correspond à l'identité visée par l'arrêté."
+  },
+  {
+    "id": "GENP-LIBE-2604396",
+    "famille": "LIBE",
+    "issue_reelle": "oui",
+    "motif_decisif": "Les pièces versées établissent une scolarité complète à Mayotte de 2008 à 2022 jusqu'au baccalauréat, des parents titulaires de cartes de résident de dix ans et des frères français ; une condamnation unique avec sursis, suivie d'un service civique, ne caractérise pas une menace : l'OQTF sans délai porte une atteinte grave et manifestement illégale à la vie privée et familiale (point 7).",
+    "fait_au_dossier": "indice",
+    "citation_indice": "« il vit à Mayotte depuis sa prime jeunesse et [...] sa présence en France ne constitue pas une menace pour l'ordre public » ; « depuis qu'il a atteint l'âge de seize ans, il a sollicité la délivrance de plein droit d'un titre de séjour sur le fondement de l'article L. 423-13 » et entend « y poursuivre des études supérieures » ; le préfet ne conteste les moyens qu'en bloc",
+    "erreur": "c",
+    "regle_generale": "En référé-liberté contre une OQTF, le résumé des écritures est sommaire : une résidence alléguée depuis l'enfance, une scolarité et un droit au titre de plein droit invoqué, que le préfet ne réfute pas point par point, laissent présumer des pièces décisives ; ne pas exiger du résumé la précision que portent les pièces, ni conclure au rejet faute de dates."
+  },
+  {
+    "id": "GENP-LIBE-2604691",
+    "famille": "LIBE",
+    "issue_reelle": "oui",
+    "motif_decisif": "Extrait du centre de rétention à 11 h 10 pour la navette de fin de matinée, le requérant a été éloigné après l'enregistrement de sa requête à 12 h 01, en violation de l'article L. 761-9 du CESEDA, ce qui l'a privé d'étayer ses liens ; né à Mayotte, scolarisé jusqu'en troisième, parents en situation régulière, il subit une atteinte grave et manifestement illégale à sa vie privée et familiale (points 10 et 12).",
+    "fait_au_dossier": "indice",
+    "citation_indice": "Indice faible : OQTF du « 25 octobre 2026 », requête « enregistrée le 26 octobre 2026 à 12h01 (heure de Mayotte) », demande d'organiser « son retour sur le territoire de Mayotte », et l'avocat « insiste sur la méconnaissance par le préfet de Mayotte du droit au recours » ; la naissance à Mayotte et la situation des parents n'y figurent pas",
+    "erreur": "d",
+    "regle_generale": "Quand l'avocat insiste à l'audience sur le droit au recours et demande le retour, l'éloignement a eu lieu pendant l'instance : la chronologie se vérifie sur le registre du centre de rétention détenu par l'administration, et le doute sur l'heure ne doit pas être résolu en faveur du préfet ; un éloignement prématuré qui empêche l'étranger d'étayer ses liens pousse le juge de Mayotte à suspendre."
+  },
+  {
+    "id": "GENP-LIBE-2604767",
+    "famille": "LIBE",
+    "issue_reelle": "oui",
+    "motif_decisif": "Le requérant, 19 ans, né à Mayotte, y est scolarisé depuis 2017 (brevet, baccalauréat professionnel mention bien, inscription en BTS) et a demandé un titre en mars 2026, tandis que la menace à l'ordre public n'est étayée que par un extrait du TAJ : l'OQTF sans délai porte une atteinte grave et manifestement illégale à sa vie privée et familiale (point 7).",
+    "fait_au_dossier": "absent",
+    "citation_indice": "Le dossier ne contient qu'une invocation générale de l'article 8 ; seul signe : l'audience s'est tenue « en présence de l'intéressé qui a pu répondre aux questions de la juge des référés »",
+    "erreur": "aucune (fait absent)",
+    "regle_generale": "aucune"
+  },
+  {
+    "id": "GENP-LIBE-2609651",
+    "famille": "LIBE",
+    "issue_reelle": "oui",
+    "motif_decisif": "Devenu père d'un enfant français le 28 juillet 2026, après l'OQTF, en communauté de vie avec la mère française depuis 2025 et participant à l'éducation de l'enfant (confirmé à l'audience, parloirs pendant sa détention), le requérant subit une exécution dont les effets excèdent ceux d'un éloignement normal, sa condamnation restant isolée (point 9).",
+    "fait_au_dossier": "présent",
+    "citation_indice": "Suspension demandée « au regard des circonstances nouvelles résultant de la naissance de son enfant français et de sa participation effective à son entretien et à son éducation » ; la nouvelle saisine est recevable « y compris lorsque ceux-ci auraient pu être soumis au juge dès la première saisine » ; le préfet soutient seulement que les moyens « ne sont pas fondés » ; clôture différée",
+    "erreur": "a",
+    "regle_generale": "Le rejet d'un premier référé-liberté n'a pas autorité de chose jugée : une nouvelle saisine peut reposer sur des éléments produisables dès la première ; et la naissance d'un enfant français postérieure à l'OQTF, avec communauté de vie et contribution à l'éducation non réfutées, est le cas type d'une exécution aux effets excessifs."
+  },
+  {
+    "id": "GENP-LIBE-2634785",
+    "famille": "LIBE",
+    "issue_reelle": "oui",
+    "motif_decisif": "La CNDA, tout en excluant le requérant sur le fondement de l'article 1er F, a reconnu sa crainte fondée de persécution pour refus de mobilisation ; les témoignages nouveaux et les rapports sur le recrutement forcé de Tchétchènes, non sérieusement contestés, imposaient au préfet de réexaminer lui-même le risque avant l'éloignement, ce qu'il n'a pas fait en se bornant à invoquer la décision de l'OFPRA : suspension limitée au pays de destination (points 5 à 7).",
+    "fait_au_dossier": "indice",
+    "citation_indice": "Indice faible : Suspension demandée « en tant que cette exécution emporterait son éloignement à destination de la Fédération de Russie » ; faits nouveaux : « ses proches ont été interpellés en Russie aux fins de les contraindre à collaborer », témoignage de la veuve du premier président de Tchétchénie ; les préfets se bornent à invoquer l'examen de l'OFPRA du 30 octobre 2026 (la motivation de la CNDA de 2025 n'y figure pas)",
+    "erreur": "a",
+    "regle_generale": "L'irrecevabilité d'une demande de réexamen prononcée par l'OFPRA ne dispense pas le préfet d'apprécier lui-même, avant d'exécuter, le risque de traitements contraires à l'article 3 dans le pays de destination ; une demande limitée au pays de renvoi, étayée d'éléments nouveaux non sérieusement contestés, aboutit souvent à une suspension partielle, qui compte comme un succès."
+  },
+  {
+    "id": "GENP-PROV-2500344",
+    "famille": "PROV",
+    "issue_reelle": "non",
+    "motif_decisif": "Bien que la réception ait été prononcée avec une réserve levée, un constat de commissaire de justice du 8 juillet 2024 relève des finitions très grossières, des jours obstrués à la mousse isolante et un ouvrant qui frotte : la créance souffre d'une contestation sérieuse (motifs, « Sur la demande de provision »).",
+    "fait_au_dossier": "indice",
+    "citation_indice": "Indice faible : Les époux « déclarent s'opposer à régler cette somme au motif que les travaux sont affectés de malfaçons. Selon eux, ces malfaçons nécessitent un débat contradictoire au fond » (le constat lui-même n'est pas mentionné)",
+    "erreur": "d",
+    "regle_generale": "En référé-provision, un moyen de défense qui n'est pas immédiatement vain suffit à faire échouer la demande : des malfaçons alléguées par un maître d'ouvrage consommateur, normalement appuyées d'un constat, créent une contestation sérieuse, et le juge des référés ne tranche pas les questions de fond comme l'effet purgatif de la réception."
+  },
+  {
+    "id": "GENP-PROV-2501572",
+    "famille": "PROV",
+    "issue_reelle": "non",
+    "motif_decisif": "La nature et la validité du contrat liant les parties ne présentent aucun caractère d'évidence, leur appréciation relevant du juge du fond : il n'y a pas lieu à référé, et faute d'urgence le renvoi au fond est refusé (motifs).",
+    "fait_au_dossier": "indice",
+    "citation_indice": "Indice faible : Les demandeurs sollicitent « subsidiairement, renvoyer l'affaire au fond en application de l'article 837 » et la défenderesse demande de « dire ne pas y avoir lieu à référé » ; le dossier ne mentionne aucun bail écrit",
+    "erreur": "b",
+    "regle_generale": "Ne pas compléter un dossier de référé-provision par des hypothèses favorables au demandeur (bail écrit, occupation paisible) : quand le défendeur conclut à l'absence de lieu à référé et que le demandeur demande lui-même un renvoi au fond à titre subsidiaire, la contestation sérieuse est le scénario le plus probable."
+  },
+  {
+    "id": "GENP-PROV-2502018",
+    "famille": "PROV",
+    "issue_reelle": "non",
+    "motif_decisif": "L'assureur justifie d'une offre définitive d'indemnisation du 16 juin 2025 restée sans suite (pli avisé non réclamé), et la seconde provision de 18 000 euros repose sur une évaluation poste par poste qui ne relève pas du juge de l'évidence, une provision ayant déjà été versée (motifs, « Sur la demande de provision »).",
+    "fait_au_dossier": "absent",
+    "citation_indice": "Le dossier mentionne la première provision de 6 000 euros, le rapport d'expertise du 28 février 2025 et le rejet global soutenu par la MATMUT, mais ni l'offre définitive du 16 juin 2025 ni son non-retrait",
+    "erreur": "aucune (fait absent)",
+    "regle_generale": "aucune"
+  },
+  {
+    "id": "GENP-PROV-2552287",
+    "famille": "PROV",
+    "issue_reelle": "non",
+    "motif_decisif": "La reconnaissance de dette produite ne porte pas la mention en toutes lettres de la somme : elle ne vaut que commencement de preuve par écrit, non corroboré, de sorte que l'obligation est sérieusement contestable, le juge vérifiant d'office le bien-fondé face au défendeur défaillant (article 472 CPC) (motifs).",
+    "fait_au_dossier": "absent",
+    "citation_indice": "Le dossier ne décrit pas le titre de la créance de 422 000 euros ; il indique seulement que le défendeur, assigné selon l'article 654, n'a pas constitué avocat",
+    "erreur": "aucune (fait absent)",
+    "regle_generale": "aucune"
+  },
+  {
+    "id": "GENP-URG-2405086",
+    "famille": "URG",
+    "issue_reelle": "oui",
+    "motif_decisif": "Urgence admise parce que l'attestation de prolongation d'instruction, qui l'autorisait à travailler, a expiré le 4 juillet 2024, exposant le requérant à perdre l'emploi qui fait vivre un foyer de deux très jeunes enfants ; doute sérieux tiré de la non-communication des motifs demandés (L. 232-4 CRPA) et de l'article 8, l'épouse étant réfugiée (points 4 à 6).",
+    "fait_au_dossier": "absent",
+    "citation_indice": "Pour l'urgence, le dossier ne contient que « la condition d'urgence est remplie » ; l'expiration de l'attestation et l'emploi n'y figurent pas (les indices du doute sérieux, « défaut de motivation » d'un refus implicite non défendu et CIDE visée, y figurent)",
+    "erreur": "aucune (fait absent)",
+    "regle_generale": "aucune"
+  },
+  {
+    "id": "GENP-URG-2407071",
+    "famille": "URG",
+    "issue_reelle": "non",
+    "motif_decisif": "Le litige relève de l'article R. 311-6 du CJA (méthanisation) : le tribunal doit statuer au fond dans les dix mois du recours du 2 août 2024, une audience est fixée au 7 mars 2025 et rien n'établit que les travaux commenceront avant ; la présomption d'urgence de l'article L. 600-3 est renversée et la requête rejetée par ordonnance de tri (L. 522-3) (point 4).",
+    "fait_au_dossier": "indice",
+    "citation_indice": "Projet d'« unité de méthanisation » et « requête au fond n° 2404607 enregistrée le 2 août 2024 » ; le dossier ne mentionne ni communication au préfet ou au pétitionnaire, ni convocation à une audience (ordonnance sans instruction contradictoire)",
+    "erreur": "a",
+    "regle_generale": "Une présomption légale d'urgence se renverse quand le jugement au fond est proche, notamment dans les contentieux à délai de jugement encadré (article R. 311-6 du CJA : éolien, méthanisation) ; et un dossier de référé sans communication au défendeur ni audience annonce une ordonnance de tri (L. 522-3), donc un rejet."
+  },
+  {
+    "id": "GENP-URG-2603118",
+    "famille": "URG",
+    "issue_reelle": "non",
+    "motif_decisif": "Les constructions sont quasiment achevées et les travaux restants sont réversibles : la commune a renversé la présomption d'urgence de l'article L. 600-3 du code de l'urbanisme (point 4).",
+    "fait_au_dossier": "indice",
+    "citation_indice": "Permis du « 22 juillet 2025 », référés enregistrés le « 22 juin 2026 » après recours gracieux, et la commune soutient que « l'urgence n'est pas avérée »",
+    "erreur": "b",
+    "regle_generale": "Contre un permis de construire, mesurer le temps écoulé depuis sa délivrance : près d'un an après, les travaux sont vraisemblablement avancés et la présomption d'urgence de l'article L. 600-3 tombe si la construction est quasiment achevée ; la contestation de l'urgence résumée en une ligne ne signifie pas que la défense n'a rien produit."
+  },
+  {
+    "id": "GENP-URG-2613805",
+    "famille": "URG",
+    "issue_reelle": "oui",
+    "motif_decisif": "Diplômé le 9 février 2026 en physique médicale, profession en pénurie, titulaire de plusieurs promesses d'embauche, le requérant ne peut l'exercer du fait de l'OQTF et de l'inscription au SIS, et ne le pourrait pas dans son pays d'origine : l'urgence est caractérisée et l'erreur manifeste d'appréciation crée un doute sérieux sur le refus d'abroger (points 7 et 8).",
+    "fait_au_dossier": "présent",
+    "citation_indice": "« obtenu le 13 février 2026 le diplôme de qualification en physique radiologique et médicale » ; « disposant de plusieurs promesses d'embauche d'établissements de santé » ; « le métier de physicien médical ne peut pas être exercé dans son pays d'origine » ; « Le préfet du Rhône n'était ni présent, ni représenté »",
+    "erreur": "c",
+    "regle_generale": "En référé-suspension, l'urgence s'apprécie concrètement : l'impossibilité, créée par la décision, d'exercer une profession qualifiée en pénurie (diplôme récent, promesses d'embauche, intérêt de santé publique) suffit sans contrat daté, et des faits précis non contestés par un préfet absent à l'audience sont tenus pour établis."
+  },
+  {
+    "id": "GENP-URG-2614381",
+    "famille": "URG",
+    "issue_reelle": "oui",
+    "motif_decisif": "Titulaire d'un document de circulation pour étranger mineur expiré le 1er janvier 2025, la requérante a demandé son titre dans le délai de l'article R. 431-5 du CESEDA : elle bénéficie de la présomption d'urgence attachée au refus de renouvellement, et le moyen tiré de l'article 8 crée un doute sérieux (points 5 et 6).",
+    "fait_au_dossier": "indice",
+    "citation_indice": "« la condition d'urgence, présumée en l'espèce, est remplie » ; « elle est entrée en France au titre du regroupement familial » ; moyen tiré de « l'article L. 423-21 » du CESEDA (titre du jeune majeur entré par regroupement familial)",
+    "erreur": "a",
+    "regle_generale": "La présomption d'urgence du refus de renouvellement s'étend au jeune majeur, entré mineur (regroupement familial, document de circulation pour étranger mineur), qui demande son premier titre dans les délais à sa majorité : l'invocation de l'article L. 423-21 du CESEDA et d'une urgence « présumée » doit faire envisager ce cas avant de conclure au défaut d'urgence."
+  },
+  {
+    "id": "GENP-URGT-2602142",
+    "famille": "URGT",
+    "issue_reelle": "oui",
+    "motif_decisif": "L'urgence est présumée en cas de refus de renouvellement et l'autorisation provisoire de séjour délivrée au requérant ne la renverse pas ; la menace grave à l'ordre public n'est pas caractérisée par des faits de 2009 à 2015 et une peine de jours-amende de 2023 chez un étranger présent régulièrement depuis 1990, d'où un doute sérieux (motifs sur l'urgence et le doute sérieux).",
+    "fait_au_dossier": "présent",
+    "citation_indice": "« la condition d'urgence est présumée en matière de refus de renouvellement d'un titre de séjour » ; la préfète oppose seulement que le requérant « est titulaire d'une autorisation provisoire de séjour l'autorisant à travailler ayant vocation à être renouvelée »",
+    "erreur": "a",
+    "regle_generale": "Quand une règle jurisprudentielle établie tranche la question (présomption d'urgence du refus de renouvellement, qu'une autorisation provisoire de séjour ne renverse pas), la suivre : l'agent qui connaît la règle ne doit pas parier sur un écart du juge sans indice précis au dossier."
+  },
+  {
+    "id": "GENP-URGT-2631949",
+    "famille": "URGT",
+    "issue_reelle": "non",
+    "motif_decisif": "Faute d'établir que sa demande de renouvellement a été déposée dans les délais, le requérant est regardé comme primo-demandeur et ne bénéficie pas de la présomption d'urgence ; ses considérations générales ne caractérisent pas l'urgence alors qu'il est en situation régulière : rejet par ordonnance de tri (L. 522-3) (points 4 et 5).",
+    "fait_au_dossier": "indice",
+    "citation_indice": "Indice faible : le dossier ne mentionne ni communication au préfet ni audience (ordonnance de tri), la requête est formée plus de quatre mois après la décision du 3 juin 2026, et l'urgence est soutenue par des considérations générales (« impossibilité de voyager », « stabilité et l'équilibre de son foyer familial ») ; la date de dépôt de la demande n'y figure pas",
+    "erreur": "b",
+    "regle_generale": "Un dossier de référé sans communication au défendeur ni audience annonce une ordonnance de tri (L. 522-3), donc un rejet ; et la présomption d'urgence du refus de renouvellement suppose une demande déposée dans les délais, ce que l'agent doit tenir pour incertain tant que le dossier ne le montre pas."
+  }
+]

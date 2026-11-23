@@ -1,0 +1,269 @@
+diff -ruN -x __pycache__ -x .pytest_cache a/README.md b/README.md
+--- a/README.md	2026-11-18 16:49:34.014310900 +0100
++++ b/README.md	2026-11-18 16:56:15.894940900 +0100
+@@ -25,13 +25,14 @@
+ 
+ ## Composants
+ 
+-Skills : `prise-en-main-affaire`, `action-sur-le-reel`, `strategie-contentieuse`, `recherche-juridique`, `recit-judiciaire`, `ecriture-juridictionnelle`, `refere-administratif`, `refere-civil`, `contentieux-du-fond`, `controle-de-la-norme`, `cassation`, `controle-avant-depot`.
++Skills : `prise-en-main-affaire`, `action-sur-le-reel`, `strategie-contentieuse`, `recherche-juridique`, `recit-judiciaire`, `ecriture-juridictionnelle`, `refere-administratif`, `refere-civil`, `contentieux-du-fond`, `controle-de-la-norme`, `cassation`, `controle-avant-depot`, `analyse-documentaire`.
+ 
+-Sous-agents : `architecte-strategique`, `contradicteur`, `juge-simule`, `lecteur-profane`, `avocat-adverse`, `analyste-adverse`, `chercheur-juridique`, `verificateur-sources`, `stratege-terrain`, `plume`.
++Sous-agents : `architecte-strategique`, `contradicteur`, `juge-simule`, `lecteur-profane`, `avocat-adverse`, `analyste-adverse`, `chercheur-juridique`, `verificateur-sources`, `stratege-terrain`, `plume`, `analyste-documentaire`.
+ 
+ Outils offensifs :
+ - `scripts/juridiction.py profil` tire de la base ouverte de la justice administrative les décisions publiées d'une juridiction, classe ce qu'elle trie, instruit et accorde, par juge désigné, et écrit deux fichiers de calibrage du juge simulé : les motifs littéraux de ses ordonnances de tri (`exemples_tri_<code>.md`) et ceux de ses jugements au fond, annulations et rejets ensemble (`exemples_fond_<code>.md`). `--jusqu-au` et `--exclure` bornent le profil pour rejouer un dossier à une date passée.
+ - `scripts/voies.py` calcule depuis la chronologie typée les naissances de décisions implicites et les délais de recours, d'appel, de pourvoi, d'opposition, de prescription et de maintien, avec jours fériés et date prudente, pour tous les domaines ; `--types` liste les événements reconnus, `--inscrire` ajoute les délais comme scénarios.
++- `scripts/pieces.py` inventorie les pièces sans rien envoyer hors du poste (empreinte, format réel, pages, métadonnées, champs et cases de formulaire, signatures, versions antérieures d'un PDF, texte page par page, dates, montants, numéros d'envoi, auteurs, documents mentionnés), rend les pages en image pour l'examen visuel, vérifie chaque fiche d'analyse (chaque citation retrouvée sur sa page) et la matrice des preuves au format 2, dresse les manques (pièces citées hors bordereau, pièces non analysées, faits sans pièce, documents détenus par l'adversaire) et bloque un fait décisif sans extrait littéral d'une pièce analysée.
+ - `scripts/gate.py --regimes` liste les soixante-cinq régimes et, pour chaque condition, la sanction qu'entraîne son défaut.
+ - Registre `adverse/declarations.json`, tenu par l'analyste adverse : déclarations de l'adversaire avec leur paragraphe entier, les autres pièces du même auteur lues, les contradictions vérifiées, les silences et les usages proposés.
+ 
+diff -ruN -x __pycache__ -x .pytest_cache a/scripts/affaire.py b/scripts/affaire.py
+--- a/scripts/affaire.py	2026-11-18 16:49:33.774293900 +0100
++++ b/scripts/affaire.py	2026-11-18 16:56:15.889288100 +0100
+@@ -165,6 +165,16 @@
+         for e in L.valider_fichier(r, rel):
+             print(e)
+             total += 1
++    import pieces as PIECES
++    ctx = PIECES.Contexte(r)
++    for cote in ctx.bordereau:
++        if ctx.fiche(cote) is not None:
++            for e in ctx.validation(cote)[0]:
++                print(e)
++                total += 1
++    for e in PIECES.valider_matrice(r, ctx)[0]:
++        print(e)
++        total += 1
+     print(f"{total} défaut(s) de structure.")
+     raise SystemExit(1 if total else 0)
+ 
+diff -ruN -x __pycache__ -x .pytest_cache a/scripts/gate.py b/scripts/gate.py
+--- a/scripts/gate.py	2026-11-18 16:49:33.760383900 +0100
++++ b/scripts/gate.py	2026-11-18 16:56:15.887024800 +0100
+@@ -439,6 +439,11 @@
+         if f_.get("force") == "forte" and ecriture.stem.split("_v")[0] in (f_.get("actes") or []) and not set(map(str, f_.get("pieces", []))) & {str(p) for p in LINT.analyser(texte).pieces_citees}:
+             c("PIECE_DECISIVE_OMISE", "ALERTE", f"Fait à prouver « {f_.get('fait', '')[:80]} » : aucune de ses pièces fortes n'est citée.")
+ 
++    # Analyse documentaire : un fait que l'écriture présente comme décisif renvoie, dans la matrice, à un extrait
++    # littéral d'une pièce analysée ; une pièce citée sans fiche d'analyse donne une alerte (skill analyse-documentaire).
++    import pieces as PIECES
++    constats.extend(PIECES.controle_documentaire(racine, ecriture, fiche, texte))
++
+     # Objections dirimantes encore ouvertes pour cet acte.
+     for o in L.objections_bloquantes(racine, ecriture.stem):
+         c("OBJECTION_DIRIMANTE_OUVERTE", "BLOQUANT", f"Objection {o.get('id')} ouverte : {o.get('enonce', '')[:160]}. "
+diff -ruN -x __pycache__ -x .pytest_cache a/scripts/hook.py b/scripts/hook.py
+--- a/scripts/hook.py	2026-11-18 16:49:33.772756100 +0100
++++ b/scripts/hook.py	2026-11-18 16:56:15.885148700 +0100
+@@ -25,10 +25,11 @@
+     (re.compile(r"^journal/journal\.md$"), "Le journal s'écrit par script, avec l'heure lue sur le poste : python <plugin>/scripts/affaire.py journal \"texte\" --type fait|acte|strategie|decision_client."),
+     (re.compile(r"^(claude|agents)\.md$"), "La constitution du dossier (AGENTS.md, importé par CLAUDE.md) ne se modifie que par le client. Les consignes propres à l'affaire vont dans etat/consignes_affaire.md."),
+     (re.compile(r"^ecritures/final/"), "Les versions finales s'obtiennent seulement par : python <plugin>/scripts/affaire.py finaliser <brouillon.md>, qui exige un contrôle PASS sur l'empreinte exacte."),
++    (re.compile(r"^pieces/inventaire\.json$|^pieces/texte/.+\.extraction\.txt$"), "L'inventaire et les extractions ne s'écrivent que par pieces.py inventaire : les citations des fiches d'analyse sont vérifiées contre eux. Relancer : python <plugin>/scripts/pieces.py inventaire."),
+     (re.compile(r"\.gate\.json$"), "Le verdict du contrôle avant dépôt n'est écrit que par gate.py. Relancer : python <plugin>/scripts/gate.py <brouillon.md>."),
+ ]
+ DESTRUCTIF = re.compile(r"\b(rm|del|erase|rmdir|mv|move|cp|copy|Remove-Item|Move-Item|Copy-Item|Rename-Item|Set-Content|Add-Content|Out-File|Clear-Content|truncate|sed\s+-i)\b|>", re.I)
+-CHEMINS_SENSIBLES = re.compile(r"pieces[\\/]+originaux|journal[\\/]+journal\.md|ecritures[\\/]+final|\.gate\.json|(^|[\\/\s\"'])(claude|agents)\.md", re.I)
++CHEMINS_SENSIBLES = re.compile(r"pieces[\\/]+originaux|pieces[\\/]+inventaire\.json|\.extraction\.txt|journal[\\/]+journal\.md|ecritures[\\/]+final|\.gate\.json|(^|[\\/\s\"'])(claude|agents)\.md", re.I)
+ 
+ 
+ def sortie(obj: dict) -> None:
+@@ -256,6 +257,9 @@
+         # Les rapports des lecteurs indépendants ne s'écrivent que par eux : la session principale
+         # ne peut pas fabriquer une lecture à froid favorable ni clore une contradiction à leur place.
+         agent = str(ev.get("agent_type") or "")
++        if rel_l.startswith("pieces/analyses/") and not agent.endswith("analyste-documentaire"):
++            refuser("Les fiches d'analyse ne s'écrivent que par le sous-agent analyste-documentaire, qui lit la pièce en entier sans le récit du client. "
++                    "Le relancer sur la cote (skill analyse-documentaire) ; une fiche en erreur se refait, elle ne se corrige pas à la main.")
+         if rel_l == "strategie/revue_charpente.json" and outil == "Write" and not agent.endswith("architecte-strategique"):
+             refuser("La revue de charpente ne s'écrit que par le sous-agent architecte-strategique ; la session principale peut seulement porter le statut des points par Edit.")
+         if rel_l == "strategie/theorie_adverse.md" and not agent.endswith("avocat-adverse"):
+@@ -295,7 +299,7 @@
+             if posterieurs:
+                 refuser("Dépôt suspendu : un message du client postérieur à son accord demande d'attendre ou de ne pas déposer "
+                         f"(« {posterieurs[-1][:160]} »). Lui reposer la question en clair.")
+-        if CHEMINS_SENSIBLES.search(cmd) and DESTRUCTIF.search(cmd) and not re.search(r"affaire\.py|gate\.py", cmd):
++        if CHEMINS_SENSIBLES.search(cmd) and DESTRUCTIF.search(cmd) and not re.search(r"affaire\.py|gate\.py|pieces\.py", cmd):
+             refuser("Commande refusée : elle peut modifier une pièce originale, le journal, la constitution, une version finale ou un verdict de contrôle. "
+                     "Passer par affaire.py ou gate.py ; une lecture (cat, Get-Content, rg) reste permise si elle n'écrit rien.")
+     sys.exit(0)
+@@ -310,8 +314,21 @@
+     rel = L.relatif(racine, cible) if cible else None
+     if rel is None:
+         sys.exit(0)
++    if re.fullmatch(r"pieces/analyses/[^/]+\.json", rel):
++        import pieces as PIECES
++        erreurs, alertes, _ = PIECES.valider_fiche(racine, Path(rel).stem)
++        if erreurs:
++            sortie({"decision": "block", "reason": "Fiche d'analyse invalide, à reprendre maintenant :\n- " + "\n- ".join(erreurs[:20])})
++        if alertes:
++            contexte("PostToolUse", "Fiche d'analyse écrite, avec des alertes :\n- " + "\n- ".join(alertes[:10]))
++        sys.exit(0)
+     if rel in L.SCHEMAS:
+         erreurs = L.valider_fichier(racine, rel)
++        if rel == "preuves/matrice.json" and not erreurs:
++            import pieces as PIECES
++            erreurs, problemes, alertes = PIECES.valider_matrice(racine)
++            if not erreurs and (problemes or alertes):
++                contexte("PostToolUse", "Matrice des preuves enregistrée ; faits encore sans preuve conforme :\n- " + "\n- ".join((problemes + alertes)[:15]))
+         if erreurs:
+             sortie({"decision": "block", "reason": "Fichier d'état invalide, à corriger maintenant :\n- " + "\n- ".join(erreurs[:20])})
+         sys.exit(0)
+diff -ruN -x __pycache__ -x .pytest_cache a/scripts/lib_affaire.py b/scripts/lib_affaire.py
+--- a/scripts/lib_affaire.py	2026-11-18 16:49:33.761379000 +0100
++++ b/scripts/lib_affaire.py	2026-11-18 16:56:15.885657500 +0100
+@@ -41,6 +41,7 @@
+     ("chronologie/chronologie.json", "statut"): {"prouve", "allegue", "conteste"},
+     ("preuves/matrice.json", "charge"): {"nous", "adversaire", "partagee", "juge"},
+     ("preuves/matrice.json", "force"): {"forte", "moyenne", "faible", "nulle"},
++    ("preuves/matrice.json", "force_probante"): {"prouve", "corrobore", "allegue", "conteste", "contredit"},
+     ("terrain/actions.json", "statut"): {"proposee", "validee_client", "faite", "abandonnee"},
+ }
+ 
+diff -ruN -x __pycache__ -x .pytest_cache a/skills/controle-avant-depot/SKILL.md b/skills/controle-avant-depot/SKILL.md
+--- a/skills/controle-avant-depot/SKILL.md	2026-11-18 16:49:33.784856500 +0100
++++ b/skills/controle-avant-depot/SKILL.md	2026-11-18 16:56:15.893422800 +0100
+@@ -14,6 +14,7 @@
+ - `type_acte` : un régime de `scripts/gate.py` ou des fichiers `references/domaines/*_regimes.json` (civil, référés, travail, commercial, procédures collectives, exécution, pénal, administratif général et spécial). `python gate.py --regimes` les liste avec leurs conditions ; une condition qui manque à la fiche bloque, avec la sanction qu'elle entraîne.
+ - `question` : la question soumise au juge, en une phrase ; elle doit se retrouver en première page.
+ - `fait_decisif` : le fait qui fait basculer l'affaire ; il doit se retrouver en première page (référés).
++- `faits_decisifs` : identifiants, dans `preuves/matrice.json`, des faits que l'écriture présente comme décisifs. Chacun doit y renvoyer à un extrait littéral d'une pièce analysée (skill `analyse-documentaire`) ; sinon le contrôle bloque. Chaque fait d'une condition ou d'un moyen porte de même le champ `matrice`.
+ - `au_nom_du_client` : vrai si le texte est signé par le client (contrôle de ses consignes de ponctuation).
+ - `actes_attaques` : liste d'objets `id`, `designation`, `date` (AAAA-MM-JJ), `auteur`, `auteur_competent`, `qualification` (decision_expresse, decision_implicite, confirmative, preparatoire, information, mesure_ordre_interieur, refus_de_rendez_vous), `justification`, `sources` (identifiants du registre). Plusieurs actes en référé exigent `justification_pluralite_actes`.
+ - `conditions` : une entrée par condition du régime, avec `condition`, `etat` (etablie, fragile, absente), `faits` (objets `fait`, `date`, `pieces`), `sources`, et `objection` (identifiant au registre) si l'état est fragile.
+@@ -27,6 +28,10 @@
+ 
+ Pour toute écriture juridictionnelle, `gate.py` bloque tant que manquent : les canaux de notification relevés dans leur fréquence (`etat/canaux.json`, `affaire.py canal controle`) ; un audit de terrain récent (`terrain/audit.json`, moins de trois jours pour un référé, quatorze sinon, skill `action-sur-le-reel`) ; une ligne stratégique complète et postérieure à la dernière pièce citée (`strategie/ligne.json`, skill `strategie-contentieuse`) ; une revue de charpente du dossier entier par l'`architecte-strategique`, postérieure à la ligne, couvrant l'acte, sans point dirimant ouvert ; le récit (`<nom>.recit.json`) et sa lecture par le `lecteur-profane` sur l'empreinte exacte (skill `recit-judiciaire`). Un moyen qui s'appuie sur une déclaration de l'adversaire la référence dans la fiche (`declarations_adverses`) ; le registre `adverse/declarations.json`, tenu par l'`analyste-adverse`, doit en donner le paragraphe entier et les autres pièces du même auteur lues, et ne pas la dire contredite.
+ 
++## 1 ter. Preuve documentaire
++
++Le contrôle documentaire (`pieces.py`, appelé par `gate.py`) bloque un fait décisif non rattaché à la matrice, absent de la matrice, sans extrait littéral conforme d'une pièce analysée et à jour, seulement allégué, contredit par une pièce, ou dit corroboré sur une seule pièce. Il alerte sur un fait décisif contesté, établi seulement par des extraits lus sur image, reposant sur une pièce qui porte une anomalie majeure ou dont aucune pièce n'est citée, sur les faits de conditions et de moyens sans renvoi à la matrice, et sur toute pièce citée sans fiche d'analyse à jour et valide. `python "${CLAUDE_PLUGIN_ROOT}/scripts/pieces.py" controle <brouillon>` donne ces constats seuls.
++
+ ## 2. Registres
+ 
+ Inscrire chaque décision et chaque texte cités dans `etat/sources.json`, lus en entier, avec leur portée exacte (sous-agent `verificateur-sources` pour un contrôle indépendant). Coter chaque pièce citée par `affaire.py piece ajouter`. Inscrire les objections dirimantes connues par `affaire.py objection ajouter`.
+diff -ruN -x __pycache__ -x .pytest_cache a/skills/prise-en-main-affaire/SKILL.md b/skills/prise-en-main-affaire/SKILL.md
+--- a/skills/prise-en-main-affaire/SKILL.md	2026-11-18 16:49:33.844425200 +0100
++++ b/skills/prise-en-main-affaire/SKILL.md	2026-11-18 16:56:15.888271000 +0100
+@@ -15,12 +15,12 @@
+ 
+ ## Inventaire en six passes
+ 
+-1. **Pièces.** Chaque document reçu devient une pièce cotée par `affaire.py piece ajouter`, avec date, auteur et description neutre. Une transcription va dans `pieces/texte/`. Une extraction de PDF ne vaut pas vérification visuelle d'une signature, d'un tampon, d'une date manuscrite ou d'une case cochée : le noter. Un formulaire se transcrit avec l'état de chaque case, vu sur l'original rendu en image ; un moyen ne s'appuie jamais sur une rubrique dont l'état n'a pas été vu.
+-2. **Chronologie.** Chaque fait daté entre dans `chronologie/chronologie.json` avec ses pièces et son statut (prouvé, allégué, contesté). Les dates de connaissance, de notification et de présentation des plis se distinguent de la date des actes.
++1. **Pièces.** Chaque document reçu devient une pièce cotée par `affaire.py piece ajouter`, avec date, auteur et description neutre, puis passe par le skill `analyse-documentaire` : `pieces.py inventaire`, `pieces.py rendre --a-examiner`, fiche d'analyse par le sous-agent `analyste-documentaire`, `pieces.py verifier`. Une transcription va dans `pieces/texte/`. Une extraction de PDF ne vaut pas vérification visuelle d'une signature, d'un tampon, d'une date manuscrite ou d'une case cochée : le noter. Un formulaire se transcrit avec l'état de chaque case, vu sur l'original rendu en image ; un moyen ne s'appuie jamais sur une rubrique dont l'état n'a pas été vu.
++2. **Chronologie.** Chaque fait daté entre dans `chronologie/chronologie.json` avec ses pièces et son statut (prouvé, allégué, contesté), à partir des dates lues dans les fiches d'analyse (`pieces.py chronologie`), jamais du seul récit du client. Les dates de connaissance, de notification et de présentation des plis se distinguent de la date des actes.
+ 3. **Actes et décisions.** Pour chaque acte de l'adversaire ou de la juridiction : auteur, date, objet exact, demande à laquelle il répond, notification (mode, date de première présentation, retrait), voies et délais. Une demande restée sans réponse a une date de naissance de décision implicite à calculer et à inscrire.
+ 4. **Échéances.** Chaque délai s'inscrit par `affaire.py echeance ajouter` avec sa règle lue (article et version), son point de départ prouvé et sa certitude. Un délai calculé sur un point de départ supposé reste un scénario. Les délais de garde postale, de distance, de prorogation par recours administratif et les jours fériés se vérifient.
+ 5. **Canaux de notification.** Recenser toutes les voies par lesquelles une décision peut arriver : chaque adresse postale connue de l'adversaire (y compris l'adresse déclarée dans les écritures), avis de passage et retours à l'expéditeur, messageries et leurs dossiers indésirables, espaces numériques, téléprocédures. Compléter `etat/canaux.json` (adresse, fréquence, responsable). Une décision peut attendre dans un bureau de poste pendant que l'équipe plaide son absence : un canal non relevé est un risque de délai et un risque de stratégie.
+-6. **Matrice probatoire.** Pour chaque fait à prouver : qui en a la charge et selon quelle règle, les pièces, leur force, la lacune, et l'action qui comblerait la lacune. Elle alimente `terrain/actions.json`.
++6. **Matrice probatoire.** Au format 2 (skill `analyse-documentaire`, étape 7) : pour chaque fait à prouver, qui en a la charge et selon quelle règle, les pièces, les extraits littéraux recopiés des fiches, l'état de la preuve (prouvé, corroboré, allégué, contesté, contredit), le poids de la source, la lacune et l'action qui la comblerait. `pieces.py manques` donne ce qui manque, ce que l'adversaire détient sans l'avoir produit et les preuves à obtenir ; elle alimente `terrain/actions.json`.
+ 
+ ## Outils de prise en main
+ 
+diff -ruN -x __pycache__ -x .pytest_cache a/templates/affaire/LISEZMOI.md b/templates/affaire/LISEZMOI.md
+--- a/templates/affaire/LISEZMOI.md	2026-11-18 16:49:33.892266300 +0100
++++ b/templates/affaire/LISEZMOI.md	2026-11-18 16:56:15.887024800 +0100
+@@ -6,10 +6,15 @@
+ | --- | --- | --- |
+ | `etat/` | identité de l'affaire, échéances, objections, registre des sources, canaux de notification, consignes, passation | Claude, contrôlé par les hooks |
+ | `pieces/originaux/` | pièces cotées, immuables, avec empreinte | `affaire.py piece ajouter` seulement |
+-| `pieces/texte/` | transcriptions des pièces pour la recherche | Claude |
++| `pieces/texte/` | transcriptions des pièces ; extractions page par page `*.extraction.txt` | Claude ; extractions par `pieces.py inventaire` seulement |
++| `pieces/inventaire.json` | empreinte, format, pages, métadonnées, formulaires, signatures, repérages, indices de chaque pièce | `pieces.py inventaire` seulement |
++| `pieces/rendus/` | pages rendues en image, versions antérieures des PDF | `pieces.py rendre`, `pieces.py inventaire` |
++| `pieces/analyses/<cote>.json` | fiche d'analyse de chaque pièce, extraits littéraux et leur page | `analyste-documentaire` seulement |
++| `pieces/manques.json` | pièces citées hors bordereau, pièces non analysées, faits sans pièce, documents absents | `pieces.py manques` |
+ | `pieces/bordereau.json` | cote, fichier, empreinte, date, description | `affaire.py` |
+ | `chronologie/chronologie.json` | faits datés, pièces, statut prouvé, allégué ou contesté | Claude |
+-| `preuves/matrice.json` | faits à prouver, charge, pièces, force, lacune, action de terrain | Claude |
++| `chronologie/depuis_pieces.json` | dates lues dans les fiches d'analyse, avec pièce et extrait | `pieces.py chronologie` |
++| `preuves/matrice.json` | faits à prouver (format 2), charge, pièces, extraits littéraux, état de la preuve, poids, lacune, action de terrain | Claude |
+ | `procedure/cartographie.md` | instances, voies, recevabilité, délais, ce qui ferme chaque voie | Claude |
+ | `recherche/notes/` | notes de recherche par question, sources lues | Claude, `chercheur-juridique` |
+ | `strategie/journal_strategique.md` | décisions de ligne et leurs raisons | Claude |
+@@ -25,13 +30,19 @@
+ 
+ ## Commandes
+ 
+-`P` désigne `python "<racine du plugin>/scripts/affaire.py"`, lancé depuis ce dossier.
++`P` désigne `python "<racine du plugin>/scripts/affaire.py"` et `D` désigne `python "<racine du plugin>/scripts/pieces.py"`, lancés depuis ce dossier.
+ 
+ ```
+ P etat
+ P journal "texte" --type fait|acte|strategie|decision_client|note
+ P piece ajouter <fichier> --cote 12 --date 2026-10-09 --description "Lettre de mise en demeure"
+ P piece verifier
++D inventaire
++D rendre --a-examiner
++D verifier
++D chronologie
++D manques
++D controle ecritures/brouillons/refere_v3.md
+ P echeance ajouter --objet "Dépôt du référé" --date 2026-11-19T15:00 --regle "..." --depart "..." --source "..."
+ P canal controle courrier --resultat "deux avis de passage retirés"
+ P objection ajouter --acte refere_v3 --enonce "..." --gravite dirimante --auteur contradicteur
+diff -ruN -x __pycache__ -x .pytest_cache a/tests/test_contentieux.py b/tests/test_contentieux.py
+--- a/tests/test_contentieux.py	2026-11-18 16:49:33.982098300 +0100
++++ b/tests/test_contentieux.py	2026-11-18 16:56:15.891799500 +0100
+@@ -92,6 +92,39 @@
+             "coherence": {"theorie_date": theorie_date}}
+ 
+ 
++def preuve_documentaire(r: Path, cote: int, texte: str, citation: str, fid: str, fait: str) -> None:
++    """Pièce texte réelle, inventoriée et analysée, et l'entrée de la matrice qui cite son extrait (skill analyse-documentaire)."""
++    import pieces as PIECES
++    rel = f"pieces/originaux/{cote:03d}_x.txt"
++    (r / rel).parent.mkdir(parents=True, exist_ok=True)
++    (r / rel).write_text(texte, encoding="utf-8")
++    b = L.lire_json(r / "pieces/bordereau.json")
++    for p in b["pieces"]:
++        if p["cote"] == str(cote):
++            p.update({"fichier": rel, "sha256": L.sha256_fichier(r / rel)})
++    L.ecrire_json(r / "pieces/bordereau.json", b)
++    PIECES.cmd_inventaire(r, [str(cote)])
++    fiche = PIECES.squelette(r, str(cote))
++    fiche["lecture"].update({"pages_lues": [1], "limites": "aucune"})
++    fiche["nature"] = {"type": "certificat", "intitule": "Avis médical", "forme": "copie"}
++    fiche["auteur"]["fondement"] = "en-tête"
++    fiche["objet"] = fait
++    fiche["extraits"] = [{"id": "E1", "page": 1, "citation": citation, "lu_sur": "texte"}]
++    fiche["prouve"] = [{"fait": fait, "extraits": ["E1"], "portee": "préconisation datée"}]
++    fiche["ne_prouve_pas"] = [{"point": "la suite donnée à l'avis", "raison": "l'avis ne la relate pas"}]
++    for i in fiche["indices_examines"]:
++        i["conclusion"] = "ecarte"
++    ecrire(r / f"pieces/analyses/{cote}.json", fiche)
++    # L'analyse précède la théorie et la ligne datées à la minute dans le test : elle ne doit pas les rendre périmées.
++    avant = L.maintenant().timestamp() - 120
++    os.utime(r / f"pieces/analyses/{cote}.json", (avant, avant))
++    m = L.lire_json(r / "preuves/matrice.json") or {}
++    m["version"] = 2
++    m.setdefault("faits_a_prouver", []).append({"id": fid, "fait": fait, "charge": "nous", "pieces": [str(cote)], "force": "forte",
++                                                "force_probante": "prouve", "extraits": [{"cote": str(cote), "extrait": "E1", "page": 1, "citation": citation}]})
++    L.ecrire_json(r / "preuves/matrice.json", m)
++
++
+ def hook(ev: dict) -> dict:
+     r = subprocess.run([PY, str(SCRIPTS / "hook.py")], input=json.dumps(ev), capture_output=True, text=True, encoding="utf-8")
+     return json.loads(r.stdout) if r.stdout.strip() else {}
+@@ -259,6 +292,7 @@
+         fiche = {"type_acte": "refere_suspension", "au_nom_du_client": False,
+                  "question": "Le directeur pouvait-il rejeter sans l'examiner la demande fondée sur l'avis médical du 10 mars ?",
+                  "fait_decisif": "avis médical du 10 mars 2026 préconise un aménagement",
++                 "faits_decisifs": ["F1"],
+                  "urgence_premiere_page": "urgence examens du 1er mai 2026 que l'aménagement doit précéder",
+                  "actes_attaques": [{"id": "A", "designation": "décision du 20 mars 2026", "date": "2026-03-20", "qualification": "decision_expresse",
+                                      "justification": "décision de l'autorité compétente sur la demande du 12 mars", "sources": ["T"]}],
+@@ -275,7 +309,10 @@
+                    {"id": "D", "type": "decision", "reference": "CE n° 123456", "numero": "123456", "lu_en_entier": True}]
+         f = self.preparer(REFERE_BON, fiche, sources, [1, 2, 3])
+         v = gate.controler(f)
+-        self.assertTrue({"CANAL_NON_CONTROLE", "AUDIT_TERRAIN_PERIME", "LIGNE_INCOMPLETE", "RECIT_ABSENT", "LECTURE_PROFANE_ABSENTE"} <= self.codes(v))
++        self.assertTrue({"CANAL_NON_CONTROLE", "AUDIT_TERRAIN_PERIME", "LIGNE_INCOMPLETE", "RECIT_ABSENT", "LECTURE_PROFANE_ABSENTE",
++                         "FAIT_DECISIF_HORS_MATRICE"} <= self.codes(v))
++        preuve_documentaire(self.r, 2, "Avis médical du 10 mars 2026.\nUn aménagement des épreuves est préconisé.\n",
++                            "Un aménagement des épreuves est préconisé.", "F1", "L'avis médical du 10 mars 2026 préconise un aménagement.")
+         maintenant = L.maintenant().isoformat(timespec="minutes")
+         canaux = L.lire_json(self.r / "etat/canaux.json")
+         for c in canaux["canaux"]:

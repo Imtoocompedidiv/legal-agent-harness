@@ -1,0 +1,28 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"{{RACINE}}/validation/banc/borne_banc.py\"",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "mcp__librejustice__get_decision",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"{{RACINE}}/validation/banc/borne_banc.py\"",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

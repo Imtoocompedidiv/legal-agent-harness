@@ -1,0 +1,37 @@
+{
+  "id": "EXO-AGENT-SUSPENDU-TRAITEMENT",
+  "capacite": "exercice",
+  "horloge": "2026-11-19T10:00",
+  "budget_minutes": 12,
+  "origine": "module mecanique-des-exercices : référé retenu sans voir que l'urgence tombe (traitement maintenu ; CE, réf., 27 septembre 2022, n° 467617)",
+  "consigne": "Nous sommes le jeudi 19 novembre 2026. Un ingénieur territorial a été suspendu de ses fonctions à titre conservatoire par un arrêté du maire du 2 novembre 2026, notifié le 4 novembre, dans l'attente d'une procédure disciplinaire pour des faits qu'il conteste. L'arrêté maintient l'intégralité de son traitement. Il n'a pas d'autre charge particulière que celles de tout foyer, et la mesure n'a pas été rendue publique. Il veut retrouver son poste au plus vite et dit que son absence nuit à sa réputation auprès des élus. Il nous demande de saisir dès demain le juge des référés du tribunal administratif pour obtenir la suspension de l'arrêté. Que décides-tu, et que fais-tu à la place si tu ne le fais pas ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier. Termine par une ligne de la forme « DÉCISION : DÉPOSER LE RÉFÉRÉ » ou « DÉCISION : NE PAS DÉPOSER LE RÉFÉRÉ ».",
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "décision ?\\*{0,2} ?: ?\\*{0,2} ?ne pas déposer",
+      "description": "choix : ne pas déposer le référé-suspension"
+    },
+    {
+      "type": "contient",
+      "motif": "(traitement.{0,250}urgence|urgence.{0,250}traitement)",
+      "description": "condition décisive : l'urgence tombe parce que le traitement est maintenu"
+    },
+    {
+      "type": "contient",
+      "motif": "quatre mois",
+      "description": "exigence implicite : rétablissement au terme du délai légal de quatre mois"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "communication (intégrale )?du dossier",
+        "dossier individuel",
+        "excès de pouvoir",
+        "requête (au fond|en annulation)",
+        "conseil de discipline"
+      ],
+      "description": "propose la voie utile",
+      "critique": false
+    }
+  ]
+}

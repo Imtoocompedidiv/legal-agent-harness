@@ -1,0 +1,20 @@
+{
+ "id": "CONS-VIOLATION-DONNEES",
+ "capacite": "conseil",
+ "origine": "pôle donnees-personnelles : RGPD, art. 33 (notification dans les 72 heures, documentation) et art. 34 (communication aux personnes en cas de risque élevé)",
+ "consigne": "Nous sommes le samedi 21 novembre 2026, 10 heures. Une PME cliente a constaté hier, vendredi 20 novembre à 18 heures, qu'un rançongiciel a chiffré son serveur de ressources humaines (fiches de paie, arrêts maladie, coordonnées bancaires des 80 salariés). Une copie des fichiers a peut-être été exfiltrée. Le dirigeant veut attendre lundi pour en parler à son prestataire informatique. Que doit-il faire, et quand ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+ "verifications": [
+  {
+   "type": "critere",
+   "critere": "La réponse dit que la violation doit être notifiée à la CNIL dans les meilleurs délais et si possible dans les 72 heures après en avoir pris connaissance, soit au plus tard le lundi 23 novembre 2026 vers 18 heures, au besoin de manière échelonnée, et qu'attendre lundi pour commencer n'est pas une option.",
+   "description": "notification 72 heures"
+  },
+  {
+   "type": "critere",
+   "critere": "La réponse dit que les salariés doivent être informés lorsque la violation est susceptible d'engendrer un risque élevé pour leurs droits et libertés, ce qui est probable vu les données de santé et bancaires, et que la violation doit être documentée.",
+   "description": "communication aux personnes"
+  }
+ ],
+ "horloge": "2026-11-21T10:00",
+ "budget_minutes": 15
+}

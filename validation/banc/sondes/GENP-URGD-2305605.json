@@ -1,0 +1,18 @@
+{
+  "id": "GENP-URGD-2305605",
+  "capacite": "pronostic",
+  "famille": "titre-renouvellement-delai",
+  "genere": true,
+  "origine": "usine.py, Tribunal administratif de Toulouse, magistrat désigné, 5 octobre 2023, 2305605 (https://librejustice.fr/decision/t1aX7u5_fVGl), issue réelle : oui",
+  "fixture": "gen_urgd_2305605",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme le juge des référés, dis si la condition d'urgence de ce référé-suspension est remplie. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2023-10-04T18:00",
+  "coupe": "2023-10-04",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*oui\\b",
+      "description": "répond oui, comme la juridiction"
+    }
+  ]
+}

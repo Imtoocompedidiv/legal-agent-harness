@@ -1,0 +1,24 @@
+{
+  "id": "GENM-MOY-2318142",
+  "capacite": "moyen",
+  "famille": "moyen-gagnant",
+  "genere": false,
+  "origine": "usine.py, Cour de cassation, 2e chambre civile · formation de section, 8 janvier 2026, 23-18.142 (https://librejustice.fr/decision/b5YBEdLlVOHI), grief retenu par la Cour",
+  "fixture": "gen_moy_2318142",
+  "consigne": "Lis dossier_remis.md. Tu es avocat aux Conseils, chargé du pourvoi décrit en tête du dossier contre l'arrêt qui suit. Propose au plus trois moyens de cassation, du plus fort au plus faible : pour chacun, le texte ou le principe invoqué, le cas d'ouverture et le chef de l'arrêt critiqué, en cinq lignes au plus. Réponds directement, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2026-01-07T18:00",
+  "coupe": "2026-01-07",
+  "verifications": [
+    {
+      "type": "critere",
+      "description": "trouve le grief que la Cour a retenu",
+      "critere": "Au moins un des moyens proposés correspond au grief que la Cour de cassation a retenu pour casser l'arrêt : même texte ou même principe, appliqué au même point de l'arrêt. Grief retenu par la Cour : « Vu les articles L. 313-1, 3°, L. 331-3, R. 313-1, 3° et R. 313-3 du code de la sécurité sociale, les deux premiers dans leur rédaction issue de la loi n° 2016-1827 du 23 décembre 2016, le dernier dans sa rédaction issue du décret n° 2015-86 du 30 janvier 2015, applicable au litige : 4. Selon le premier et le dernier de ces textes, pour avoir droit aux prestations en espèces des assurances maternité, l'assuré social doit justifier, au cours d'une période de référence, soit avoir cotisé sur la base d'un salaire au moins égal à un montant fixé par référence au salaire minimum de croissance, soit avoir effectué un nombre minimum d'heures de travail salarié ou assimilé. 5. Selon le deuxième, pendant une période qui débute six semaines avant la date présumée de l'accouchement et se termine dix semaines après celui-ci, l'assurée reçoit une indemnité journalière de repos à condition de cesser tout travail salarié durant la période d'indemnisation et au moins pendant huit semaines. 6. Selon le troisième de ces textes, les conditions d'ouverture du droit aux prestations en espèces de l'assurance maternité s'apprécient au début du 9ème mois avant la date présumée de l'accouchement ou à la date du début du repos prénatal. 7. Pour dire que le refus de la caisse de verser les indemnités journalières de maternité est justifié, l'arrêt relève que l'assurée n'exerçait aucune activité salariée effective à la date de début de son congé maternité. 8. En se déterminant ainsi, sans vérifier, comme il lui appartenait, dès lors qu'il n'était pas contesté qu'à la date du début de sa grossesse, le 12 mars 2017, le contrat de travail de l'assurée était en cours, si celle-ci satisfaisait à cette date aux conditions relatives au salaire minimum perçu et au nombre d'heures minimales de travail salar »"
+    },
+    {
+      "type": "critere",
+      "critique": false,
+      "description": "le place en premier",
+      "critere": "Le premier moyen proposé est ce grief retenu par la Cour (même texte ou même principe, même point de l'arrêt)."
+    }
+  ]
+}

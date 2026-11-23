@@ -1,0 +1,645 @@
+[
+  {
+    "condition": "doute_serieux",
+    "sous_domaine": "fonction publique : sanction disciplinaire (exclusion temporaire)",
+    "sens": "tombe",
+    "texte": "Le juge des référés vérifie, comme le juge du fond, que les faits sont matériellement établis, fautifs et sanctionnés dans une juste mesure ; le doute tombe quand une enquête administrative ou des témoignages concordants établissent des faits touchant à la dignité, à la sécurité ou à la probité (agissements à connotation sexuelle, violences, négligences ayant facilité une fraude) et que la sanction n'est pas la plus lourde de l'échelle, la seule dénégation de l'agent ne suffisant pas.",
+    "marqueurs": [
+      "exclusion temporaire de fonctions",
+      "sanction disciplinaire",
+      "enquête administrative",
+      "connotation sexuelle|harcèlement|violences?",
+      "témoignages? concordants?",
+      "fraude"
+    ],
+    "sources": [
+      {
+        "juridiction": "Tribunal administratif de Grenoble (juge des référés)",
+        "date": "2024-07-11",
+        "numero": "2404599",
+        "url": "https://librejustice.fr/decision/KZQ0lTiXDAcR",
+        "point": "pt 7 : négligences ayant facilité une fraude, sanction « qui n'est pas la plus lourde » ; urgence pourtant retenue au pt 4",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Conseil d'État",
+        "date": "2025-04-17",
+        "numero": "497033",
+        "url": "https://librejustice.fr/decision/RuTysVvQBKpu",
+        "point": "pts 11 à 14 : contrôle des faits, de la faute et de la proportion ; exclusion d'un an dont six mois avec sursis non disproportionnée pour des propos et gestes répétés à connotation sexuelle",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TA Cergy-Pontoise, 23 juin 2025, n° 2509619 (lu) : exclusion de six mois dont trois avec sursis jugée, en l'état, disproportionnée aux fautes retenues.",
+    "frequence": "14 sur 15 refus de suspendre une sanction vus (41 rejets vus en fonction publique) écartent le doute sérieux",
+    "depuis": "Contrôle de proportionnalité lu dans CE, 17 avr. 2025, n° 497033, pt 11 ; son origine jurisprudentielle antérieure n'a pas été relue"
+  },
+  {
+    "condition": "doute_serieux",
+    "sous_domaine": "fonction publique : sanction disciplinaire (exclusion temporaire)",
+    "sens": "remplit",
+    "texte": "Contre une exclusion dont la part ferme dépasse un mois, l'urgence est présumée et la partie se joue sur la proportionnalité ; le doute naît quand une exclusion ferme de plusieurs mois ou années frappe un agent sans antécédent pour des faits isolés, en partie non établis ou sans incidence démontrée sur le service, l'employeur ne renversant pas la présomption par de simples allégations sur les ressources de l'agent ou les besoins du service.",
+    "marqueurs": [
+      "exclusion temporaire de fonctions",
+      "sanction disciplinaire",
+      "conseil de discipline",
+      "disproportionn",
+      "(?:sans|aucun) antécédent",
+      "sursis"
+    ],
+    "sources": [
+      {
+        "juridiction": "Tribunal administratif de Cergy-Pontoise (juge des référés)",
+        "date": "2025-06-23",
+        "numero": "2509619",
+        "url": "https://librejustice.fr/decision/O9-dX2zNcXce",
+        "point": "pts 3 à 5 : présomption non renversée par des « allégations non établies » ; sanction disproportionnée aux fautes retenues",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Conseil d'État",
+        "date": "2025-04-17",
+        "numero": "497033",
+        "url": "https://librejustice.fr/decision/RuTysVvQBKpu",
+        "point": "pt 11 : le juge recherche si les faits sont établis, fautifs et si la sanction est proportionnée à leur gravité",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TA Grenoble, 11 juill. 2024, n° 2404599 (lu) : urgence retenue, mais exclusion de dix-huit mois dont douze fermes maintenue faute de doute.",
+    "frequence": "12 sur 15 suspensions de sanctions accordées vues (42 décisions accordées vues en fonction publique) retiennent la disproportion ou l'erreur d'appréciation",
+    "depuis": "Présomption d'urgence : CE, 18 déc. 2024, n° 492519 (déjà dans la fiche), appliquée par n° 2509619, pt 3 ; contrôle lu dans CE, 17 avr. 2025, n° 497033, pt 11"
+  },
+  {
+    "condition": "doute_serieux",
+    "sous_domaine": "fonction publique : non-renouvellement d'un contrat à durée déterminée",
+    "sens": "tombe",
+    "texte": "L'agent en contrat à durée déterminée n'a aucun droit au renouvellement ; le doute ne naît que si les pièces rendent plausible un motif étranger à l'intérêt du service, le juge recherchant seulement si les arguments de l'administration établissent un tel motif, et une fois le terme du contrat passé il ne peut plus suspendre le refus ni imposer le maintien provisoire de la relation, la demande perdant alors son objet.",
+    "marqueurs": [
+      "non[- ]renouvellement",
+      "refus de renouvel",
+      "contrat à durée déterminée",
+      "terme (?:de son|du) contrat",
+      "intérêt du service"
+    ],
+    "sources": [
+      {
+        "juridiction": "Conseil d'État",
+        "date": "2017-05-17",
+        "numero": "405871",
+        "url": "https://librejustice.fr/decision/aVpCvqvyW0Ba",
+        "point": "pts 3 et 4 : aucun droit au renouvellement, le juge recherche si les arguments établissent un motif d'intérêt du service ; pt 6 : non-lieu après le terme",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Conseil d'État",
+        "date": "2006-07-10",
+        "numero": "290017",
+        "url": "https://librejustice.fr/decision/r0YZsAC5Rp7K",
+        "point": "« le juge des référés ne peut plus suspendre, après le terme d'un contrat à durée déterminée, la décision de ne pas renouveler ce contrat »",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Tribunal administratif de Lyon (juge des référés)",
+        "date": "2024-04-18",
+        "numero": "2403684",
+        "url": "https://librejustice.fr/decision/ni5iZgHssuVn",
+        "point": "pts 3 et 4 : contrat expiré le 31 décembre, non-lieu prononcé en avril",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Aucune trouvée parmi les décisions lues.",
+    "frequence": "9 sur 12 rejets vus en matière de contractuels écartent le doute et 2 sur 12 constatent le terme échu (41 rejets vus en fonction publique) ; 1 suspension accordée sur 12 vues du côté accordé",
+    "depuis": "Non-lieu au terme : CE, 10 juill. 2006, n° 290017 (tables) ; contrôle du motif d'intérêt du service en référé : CE, 17 mai 2017, n° 405871"
+  },
+  {
+    "condition": "doute_serieux",
+    "sous_domaine": "fonction publique : suspension de fonctions (prolongation)",
+    "sens": "remplit",
+    "texte": "Faute de décision disciplinaire dans les quatre mois, la suspension ne peut être prolongée que si l'action publique a été mise en mouvement contre l'agent et ne s'est pas éteinte ; un signalement au procureur ou une enquête préliminaire en cours ne suffit pas, alors qu'un jugement pénal frappé d'appel maintient les poursuites, et l'urgence suit quand la perte des primes laisse un revenu inférieur aux charges justifiées.",
+    "marqueurs": [
+      "suspension (?:de (?:ses )?fonctions|conservatoire)",
+      "prolong\\w*",
+      "quatre mois",
+      "poursuites? pénales?",
+      "l\\. ?531-[12]",
+      "procureur de la république|enquête préliminaire"
+    ],
+    "sources": [
+      {
+        "juridiction": "Conseil d'État",
+        "date": "2021-10-12",
+        "numero": "443903",
+        "url": "https://librejustice.fr/decision/d6ILFqF7k8TH",
+        "point": "pts 4 et 5 : poursuites pénales quand l'action publique a été mise en mouvement et ne s'est pas éteinte ; l'appel empêche l'extinction",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Tribunal administratif de Dijon (juge des référés)",
+        "date": "2025-06-24",
+        "numero": "2501945",
+        "url": "https://librejustice.fr/decision/71o6aiY0Eg-h",
+        "point": "pt 4 : revenus tombés sous 900 euros pour un loyer de 820 euros ; pt 5 : signalement au parquet et enquête en cours, action publique non mise en mouvement",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Aucune trouvée sur le doute ; quand le traitement est maintenu et qu'aucune charge n'est justifiée, la demande échoue sur l'urgence (TA Paris, 26 juill. 2023, n° 2317418, lu, première suspension de quatre mois).",
+    "frequence": "9 sur 15 suspensions accordées vues en matière de suspension et de mutation (42 accordées vues en fonction publique)",
+    "depuis": "Loi du 13 juillet 1983, art. 30, repris au CGFP, art. L. 531-2 (version unique en vigueur depuis le 1er mars 2022, lue) ; critère de l'action publique mise en mouvement : CE, 12 oct. 2021, n° 443903 (tables)"
+  },
+  {
+    "condition": "urgence",
+    "sous_domaine": "fonction publique : mutation dans l'intérêt du service",
+    "sens": "tombe",
+    "texte": "En l'absence de circonstances particulières, une mutation dans l'intérêt du service ne crée pas d'urgence, et l'intérêt public au fonctionnement du service (climat dégradé, période d'examens) peut s'opposer à la suspension ; l'urgence n'est retenue que si l'agent prouve une rupture concrète de sa vie familiale, telle une garde alternée rendue impossible, et que l'administration n'établit pas le trouble au service qu'elle invoque.",
+    "marqueurs": [
+      "mutation (?:d['’]office|dans l['’]intérêt du service)",
+      "changement d['’]affectation",
+      "nouvelle affectation",
+      "garde alternée"
+    ],
+    "sources": [
+      {
+        "juridiction": "Conseil d'État",
+        "date": "2023-06-12",
+        "numero": "468684",
+        "url": "https://librejustice.fr/decision/HmayzZaPsdqn",
+        "point": "pt 8 : la mutation « n'a pas de conséquences telles » qu'elle constitue une urgence ; pts 10 et 11 : circonstances non établies et intérêt public à l'exécution",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TA Caen, 8 juill. 2025, n° 2501964 (lu), pts 3 et 4 : gendarme muté à 1 h 30, garde alternée compromise, aucun trouble au service établi ; urgence et erreur manifeste retenues.",
+    "frequence": "4 sur 14 rejets vus en matière de suspension et de mutation (41 rejets vus en fonction publique) ; à l'inverse 3 sur 15 accordées retiennent l'urgence sur des circonstances familiales",
+    "depuis": "Formule constante du Conseil d'État (déjà en 2009, CE, réf., 10 juill. 2009, n° 328620, résumé seul), lue dans CE, 12 juin 2023, n° 468684, pt 8"
+  },
+  {
+    "condition": "doute_serieux",
+    "sous_domaine": "urbanisme : permis de construire contesté par un voisin",
+    "sens": "remplit",
+    "texte": "L'urgence étant présumée, le doute vient presque toujours d'une règle mesurable du plan local d'urbanisme ou du code méconnue sur plan (hauteur, recul ou implantation, stationnement, accès, eaux pluviales, emplacement réservé) ; les moyens d'appréciation (insertion paysagère, erreur manifeste, constructibilité limitée) sont plus volontiers écartés en l'état de l'instruction.",
+    "marqueurs": [
+      "permis de construire",
+      "plan local d['’]urbanisme|\\bplui?\\b",
+      "hauteur|recul|limite séparative|stationnement|implantation|eaux pluviales",
+      "voisin"
+    ],
+    "sources": [
+      {
+        "juridiction": "Tribunal administratif de Lyon (juge des référés)",
+        "date": "2026-09-18",
+        "numero": "2611946",
+        "url": "https://librejustice.fr/decision/A4bD3pFsCjld",
+        "point": "doute tiré de l'article 8 du règlement du PLU (eaux pluviales) ; absence de commencement des travaux sans effet sur la présomption",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TA Amiens, 20 oct. 2025, n° 2504031 (lu), pt 5 : constructibilité limitée et insertion (R. 111-27) non propres à créer un doute pour un hangar agricole.",
+    "frequence": "15 sur 15 suspensions de permis accordées vues reposent sur au moins une règle précise du PLU ou du code ; 15 rejets vus pour défaut de doute du côté rejeté (et 15 autres sur des travaux achevés)",
+    "depuis": "Présomption d'urgence de l'article L. 600-3 du code de l'urbanisme (fiche) ; pratique observée de 2023 à 2026, sans règle datée"
+  },
+  {
+    "condition": "doute_serieux",
+    "sous_domaine": "urbanisme : permis de construire contesté par un voisin",
+    "sens": "partage",
+    "texte": "Une pièce manquante ou inexacte au dossier ne vicie le permis que si elle a pu fausser l'appréciation de l'autorité ; les juges du fond accueillent l'absence d'une attestation que le terrain rendait obligatoire (règles parasismiques, étude imposée par un plan de prévention), mais écartent le moyen quand la pièce n'était pas requise ou que le reste du dossier permettait d'apprécier le projet.",
+    "marqueurs": [
+      "dossier de (?:la )?demande de permis",
+      "r\\. ?431-\\d+",
+      "attestation",
+      "incomplet|incomplétude|insuffisan"
+    ],
+    "sources": [
+      {
+        "juridiction": "Conseil d'État",
+        "date": "2015-12-23",
+        "numero": "393134",
+        "url": "https://librejustice.fr/decision/vhfYqfCPPE32",
+        "point": "pt 4 : illégalité seulement si les omissions ont été « de nature à fausser l'appréciation »",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Tribunal administratif de Lyon (juge des référés)",
+        "date": "2026-09-18",
+        "numero": "2611946",
+        "url": "https://librejustice.fr/decision/A4bD3pFsCjld",
+        "point": "absence de l'attestation du e) de l'article R. 431-16 (parasismique) propre à créer un doute",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Tribunal administratif d'Amiens (juge des référés)",
+        "date": "2025-10-20",
+        "numero": "2504031",
+        "url": "https://librejustice.fr/decision/tLi6iIGISu2G",
+        "point": "pts 3 et 4 : plans et photographies jugés suffisants ; attestation du f) de R. 431-16 non requise faute de plan imposant une étude",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Les deux sens sont dans les sources : n° 2611946 accueille, n° 2504031 écarte.",
+    "frequence": "3 sur 15 permis suspendus vus retiennent un vice du dossier ; des moyens de dossier (articles R. 431-x cités) apparaissent dans 7 des 15 rejets vus pour défaut de doute",
+    "depuis": "CE, 23 déc. 2015, n° 393134 (tables)"
+  },
+  {
+    "condition": "doute_serieux",
+    "sous_domaine": "environnement : dérogation espèces protégées, autorisation environnementale",
+    "sens": "remplit",
+    "texte": "La dérogation suppose trois conditions cumulatives (absence de solution alternative satisfaisante, maintien des populations dans un état de conservation favorable, motif limitatif dont la raison impérative d'intérêt public majeur) et devient obligatoire dès que le risque reste suffisamment caractérisé après évitement et réduction ; le doute naît quand l'administration n'établit ni cette raison ni l'absence d'alternative par des données précises, sauf pour les projets où la loi répute cette raison acquise (énergies renouvelables et stockage remplissant les conditions du code de l'énergie, ouvrages labellisés de prévention des inondations, projets d'intérêt national majeur reconnus par décret).",
+    "marqueurs": [
+      "espèces? protégées?",
+      "dérogation",
+      "l\\. ?411-[12]",
+      "raison impérative d['’]intérêt public majeur|riipm",
+      "solution alternative"
+    ],
+    "sources": [
+      {
+        "juridiction": "Conseil d'État (avis, section du contentieux)",
+        "date": "2022-12-09",
+        "numero": "463563",
+        "url": "https://librejustice.fr/decision/DRNuu-chjNQs",
+        "point": "pts 3, 5 et 6 : trois conditions cumulatives ; dérogation requise si le risque est « suffisamment caractérisé »",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Tribunal administratif de Lille (juge des référés)",
+        "date": "2024-11-14",
+        "numero": "2410491",
+        "url": "https://librejustice.fr/decision/LM-LUVFBj83X",
+        "point": "pts 7 et 8 : bassin de rétention d'un centre de tri ne caractérisant pas, en l'état, une raison impérative d'intérêt public majeur",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "C. env., art. L. 411-2-1 (lu, version du 19 août 2026) : raison impérative réputée acquise pour les projets qu'il énumère, et non contestable contre la dérogation quand elle résulte du décret de projet d'intérêt national majeur.",
+    "frequence": "11 sur 12 suspensions accordées vues en environnement ; 4 sur 12 rejets vus écartent un moyen tiré de L. 411-2",
+    "depuis": "CE, avis, 9 déc. 2022, n° 463563 (Recueil) ; L. 411-2-1 dans sa première version du 12 mars 2023, lu dans celle du 19 août 2026"
+  },
+  {
+    "condition": "urgence",
+    "sous_domaine": "environnement : dérogation espèces protégées, autorisation environnementale",
+    "sens": "remplit",
+    "texte": "Aucune présomption ne joue hors des autorisations d'urbanisme ; l'urgence est retenue quand des travaux imminents détruiront ou perturberont de façon irréversible des spécimens ou habitats protégés et que l'intérêt public invoqué ne dépend pas de l'exécution immédiate, et elle tombe quand les travaux ne peuvent démarrer à court terme (financement incertain, permis modificatif à obtenir) ou sont déjà achevés.",
+    "marqueurs": [
+      "autorisation environnementale",
+      "espèces? protégées?",
+      "irréversib",
+      "début des travaux|démarr\\w* (?:des )?travaux|imminen"
+    ],
+    "sources": [
+      {
+        "juridiction": "Tribunal administratif de Lille (juge des référés)",
+        "date": "2024-11-14",
+        "numero": "2410491",
+        "url": "https://librejustice.fr/decision/LM-LUVFBj83X",
+        "point": "pts 4 et 5 : travaux de septembre à mars sur l'habitat de lézards, hérissons et oiseaux protégés ; objectif public non compromis par la suspension",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TA Lyon, 8 juill. 2025, n° 2507479 (lu), pt 3 : parc photovoltaïque « en pause », financement non bouclé et permis modificatif non déposé, urgence écartée.",
+    "frequence": "Urgence fondée sur l'irréversibilité explicite dans 4 sur 12 suspensions accordées vues (les autres la retiennent sans motif visible au résumé) ; 4 sur 12 rejets vus écartent l'urgence (travaux non imminents, achevés, arrêté interruptif, audience au fond proche)",
+    "depuis": "CJA, art. L. 521-1 ; la présomption de l'article L. 600-3 du code de l'urbanisme ne vise que les autorisations d'urbanisme (lecture de la fiche)"
+  },
+  {
+    "condition": "urgence",
+    "sous_domaine": "aide et action sociale : revenu de solidarité active",
+    "sens": "partage",
+    "texte": "La suppression, la suspension ou la réduction du RSA ne fait pas présumer l'urgence ; elle est retenue quand l'allocataire prouve, à la date de l'audience, que l'allocation est sa seule ressource face à des charges chiffrées, et écartée sur un avis d'imposition ancien ou quand il est hébergé et invité à reformuler sa demande, les juges du fond divergeant sur le poids de son propre manquement (absence de contrat d'engagement), que certains jugent indifférent.",
+    "marqueurs": [
+      "revenu de solidarité active|\\brsa\\b",
+      "suspension du versement|radiation|réduction",
+      "seule ressource|précarit",
+      "contrat d['’]engagements?"
+    ],
+    "sources": [
+      {
+        "juridiction": "Tribunal administratif de Caen (juge des référés)",
+        "date": "2025-07-02",
+        "numero": "2501735",
+        "url": "https://librejustice.fr/decision/SFjhbZIxtfh8",
+        "point": "pt 5 : allocation ramenée à 139,42 euros ; urgence « alors même qu'il serait à l'origine de cette situation »",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Tribunal administratif de Cergy-Pontoise (juge des référés)",
+        "date": "2026-03-04",
+        "numero": "2600792",
+        "url": "https://librejustice.fr/decision/ixxz7phevCPP",
+        "point": "l'urgence « ne doit pas, par principe, être regardée comme remplie » ; seul l'avis d'imposition 2024 produit, requérant hébergé",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Les deux sens sont dans les sources : n° 2501735 retient l'urgence malgré la faute, n° 2600792 l'écarte faute de pièces actuelles.",
+    "frequence": "12 sur 12 suspensions de RSA accordées vues retiennent l'urgence, le plus souvent sur la précarité (15 accordées vues en aide sociale) ; 1 sur 5 rejets de RSA au titre de L. 521-1 l'écarte (15 rejets vus en aide sociale, dont 7 hors L. 521-1)",
+    "depuis": "Pratique des juges du fond de 2024 à 2026 ; aucune décision du Conseil d'État trouvée sur l'urgence en matière de RSA"
+  },
+  {
+    "condition": "doute_serieux",
+    "sous_domaine": "aide et action sociale : revenu de solidarité active",
+    "sens": "tombe",
+    "texte": "Contre une décision qui fixe ou refuse les droits au RSA sans remettre en cause des versements, le juge de plein contentieux ne s'arrête pas aux vices propres (incompétence, motivation) et le doute doit porter sur le droit lui-même (résidence, concubinage, ressources, condition de séjour) ; contre une réduction ou une suspension prononcée à titre de sanction, la méconnaissance de la procédure de l'article L. 262-37 reste en revanche opérante, comme pour un indu, dont la régularité est examinée.",
+    "marqueurs": [
+      "revenu de solidarité active|\\brsa\\b",
+      "refus (?:d['’]ouverture|du rsa|de lui accorder)",
+      "l\\. ?262-37",
+      "équipe pluridisciplinaire",
+      "insuffisamment motivée|incompétence"
+    ],
+    "sources": [
+      {
+        "juridiction": "Conseil d'État (section du contentieux)",
+        "date": "2016-12-16",
+        "numero": "389642",
+        "url": "https://librejustice.fr/decision/owkcqNPBPNEX",
+        "point": "pt 2 : « non de se prononcer sur les éventuels vices propres » ; pt 3 : régularité et bien-fondé examinés pour un indu",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Tribunal administratif de Caen (juge des référés)",
+        "date": "2025-07-02",
+        "numero": "2501735",
+        "url": "https://librejustice.fr/decision/SFjhbZIxtfh8",
+        "point": "pt 6 : non-respect de la procédure de L. 262-37 propre à créer un doute contre une réduction-sanction",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "La limite figure dans les sources (sanction et indu) ; aucune décision lue n'applique l'inopérance des vices propres à une sanction.",
+    "frequence": "2 sur 5 rejets de RSA au titre de L. 521-1 vus (vices propres inopérants ou droits non établis) ; côté accordé, 7 sur 12 sur le droit lui-même et 2 à 3 sur 12 sur la procédure de sanction",
+    "depuis": "CE, Sect., 16 déc. 2016, n° 389642 (Recueil)"
+  },
+  {
+    "condition": "urgence",
+    "sous_domaine": "aide et action sociale : aide sociale à l'enfance (jeune majeur)",
+    "sens": "remplit",
+    "texte": "Le refus de poursuivre la prise en charge d'un jeune majeur confié à l'aide sociale à l'enfance fait en principe présumer l'urgence, sauf circonstances particulières que le département établit ; la présomption cède devant un récépissé autorisant à travailler, une promesse d'embauche non remise en cause et une épargne significative, et le droit invoqué au fond suppose une prise en charge effective avant la majorité.",
+    "marqueurs": [
+      "jeune majeur",
+      "contrat jeune majeur",
+      "aide sociale à l['’]enfance",
+      "l\\. ?222-5"
+    ],
+    "sources": [
+      {
+        "juridiction": "Tribunal administratif de Melun (juge des référés)",
+        "date": "2026-10-29",
+        "numero": "2616316",
+        "url": "https://librejustice.fr/decision/IsHJQWTDhUmP",
+        "point": "pt 6 : urgence « en principe » constatée ; pt 7 : présomption renversée par titre professionnel, récépissé, promesse d'embauche et plus de 10 000 euros d'épargne",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Conseil d'État",
+        "date": "2024-10-16",
+        "numero": "475849",
+        "url": "https://librejustice.fr/decision/snRr4BK_--N0",
+        "point": "pts 3 et 4 : droit à une nouvelle prise en charge jusqu'à 21 ans pour le jeune effectivement pris en charge avant sa majorité et sans ressources ni soutien familial suffisants",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Aucune lue ; une suspension accordée sur ce fondement a été vue en résumé seulement.",
+    "frequence": "1 sur 15 accordées vues en aide sociale ; 2 sur 15 rejets vus renversent la présomption",
+    "depuis": "Droit du 5° de l'article L. 222-5 du CASF depuis l'article 10 de la loi n° 2022-140 du 7 février 2022 (CE, 16 oct. 2024, n° 475849, tables) ; présomption d'urgence posée par les juges du fond, aucune décision du Conseil d'État trouvée"
+  },
+  {
+    "condition": "doute_serieux",
+    "sous_domaine": "agréments : assistant maternel ou familial (retrait)",
+    "sens": "remplit",
+    "texte": "Avant de retirer un agrément sur des suspicions, le département doit communiquer à l'intéressé et à la commission consultative paritaire les éléments retenus, ou au moins leur teneur, sans pouvoir opposer le secret de l'enquête pénale ; le doute naît de ce silence comme de griefs qui ne sont pas assez établis pour faire raisonnablement penser qu'un enfant est exposé (conditions d'accueil inchangées depuis des années, aucune plainte ni signalement).",
+    "marqueurs": [
+      "agrément",
+      "assistante? (?:maternelle?|familiale?)|assistant (?:maternel|familial)",
+      "commission consultative paritaire",
+      "information préoccupante|suspicions?",
+      "secret de l['’]instruction"
+    ],
+    "sources": [
+      {
+        "juridiction": "Conseil d'État",
+        "date": "2023-11-09",
+        "numero": "473633",
+        "url": "https://librejustice.fr/decision/MUrLqFgAifur",
+        "point": "pts 3 et 4 : communication des éléments ou de leur teneur, secret de l'instruction inopposable ; pt 8 : doute retenu par le juge des référés, appréciation souveraine",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Tribunal administratif de Montreuil (juge des référés)",
+        "date": "2025-08-25",
+        "numero": "2513629",
+        "url": "https://librejustice.fr/decision/D7pH0C61VUPl",
+        "point": "erreur d'appréciation des conditions d'accueil (L. 421-3 et L. 421-6) pour un agrément exercé depuis 2001, l'audience faisant état d'aucune plainte ni signalement",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Aucune lue sur le doute ; 8 des 10 rejets vus en référé l'écartent (résumés seulement).",
+    "frequence": "12 sur 12 suspensions d'agrément accordées vues (10 sur l'appréciation des faits, 2 à 3 sur la communication des éléments) ; 8 sur 10 rejets vus en référé écartent le doute",
+    "depuis": "CE, 9 nov. 2023, n° 473633 (tables) ; critère des éléments suffisamment établis appliqué par le Conseil d'État au moins depuis 2012 (n° 339851, analyse seule)"
+  },
+  {
+    "condition": "urgence",
+    "sous_domaine": "agréments : assistant maternel ou familial (retrait)",
+    "sens": "remplit",
+    "texte": "Le retrait d'agrément ne fait pas présumer l'urgence, mais elle est retenue quand une assistante maternelle à plein temps perd l'intégralité de ses revenus face à des charges chiffrées et qu'aucun événement n'a mis en danger les enfants accueillis ; elle cède devant des suspicions graves (enquête pénale visant un membre du foyer, plainte de parents) et devant un délai de plusieurs mois mis à saisir le juge.",
+    "marqueurs": [
+      "retrait (?:de (?:son |l['’]))?agrément",
+      "assistante? maternelle|assistant maternel",
+      "plein temps|perte de (?:ses |sa )?(?:revenus|rémunération)",
+      "enquête (?:préliminaire|pénale)|plainte"
+    ],
+    "sources": [
+      {
+        "juridiction": "Tribunal administratif de Montreuil (juge des référés)",
+        "date": "2025-08-25",
+        "numero": "2513629",
+        "url": "https://librejustice.fr/decision/D7pH0C61VUPl",
+        "point": "3 300 euros mensuels perdus, 1 800 euros de charges, « en l'absence d'intervention d'un évènement qui aurait mis en danger les enfants »",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TA Cergy-Pontoise, 22 janv. 2026, n° 2600111 (lu) : époux visé par une enquête pour viol sur mineur, plainte de parents, juge saisi plus de cinq mois après la suspension ; urgence écartée.",
+    "frequence": "Urgence retenue dans 12 sur 12 suspensions accordées vues ; écartée dans 2 sur 10 rejets vus en référé",
+    "depuis": "Pratique des juges du fond de 2023 à 2026 ; l'absence de présomption figure déjà dans la fiche (CE, 23 févr. 2024, n° 476382)"
+  },
+  {
+    "condition": "urgence",
+    "sous_domaine": "police administrative : invalidation du permis de conduire (48 SI)",
+    "sens": "tombe",
+    "texte": "L'urgence se pèse entre l'atteinte à la profession (chauffeur, artisan sans transport de substitution) et la gravité et la répétition des infractions sur une brève période ; des infractions graves et rapprochées l'excluent même au prix de l'emploi, mais le juge ne peut l'écarter sur la seule répétition sans rechercher la gravité (petits excès de vitesse à un point) ni quand les infractions graves sont anciennes.",
+    "marqueurs": [
+      "48 ?si",
+      "invalid|solde (?:de points )?nul",
+      "permis de conduire",
+      "chauffeur|poids lourds?|taxi|vtc|ambulanc|livreur"
+    ],
+    "sources": [
+      {
+        "juridiction": "Tribunal administratif de Rouen (juge des référés)",
+        "date": "2024-07-03",
+        "numero": "2402570",
+        "url": "https://librejustice.fr/decision/amka220i2_Kr",
+        "point": "pt 3 : huit infractions en dix mois dont trois à trois points, urgence écartée malgré la perte d'emploi",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Conseil d'État",
+        "date": "2023-05-04",
+        "numero": "461895",
+        "url": "https://librejustice.fr/decision/shUqmf8xHXSr",
+        "point": "pts 3 et 4 : balance obligatoire, erreur de droit à ne pas rechercher la gravité ; pt 6 : excès de moins de 20 km/h non graves",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CE, 3 nov. 2026, n° 517120 (lu), pts 4 et 5 : infractions graves datant de 2020 et 2021, aucune depuis 2023, urgence souverainement retenue.",
+    "frequence": "11 sur 12 rejets vus écartent l'urgence au nom de la sécurité routière (1 autre faute de preuve d'absence de transport de substitution) ; 12 sur 12 accordées retiennent l'atteinte à la profession",
+    "depuis": "Formule du Conseil d'État lue dans CE, 4 mai 2023, n° 461895, pt 3, et reprise par CE, 3 nov. 2026, n° 517120, pt 4"
+  },
+  {
+    "condition": "doute_serieux",
+    "sous_domaine": "police administrative : invalidation du permis de conduire (48 SI)",
+    "sens": "remplit",
+    "texte": "Le retrait de points suppose que l'administration prouve avoir délivré l'information des articles L. 223-3 et R. 223-3 du code de la route, formalité substantielle ; pour une amende forfaitaire ou une composition pénale, elle doit dire que le paiement ou l'exécution établit la réalité de l'infraction, et un avis de rétention ou une notice muets sur ce point ne suffisent pas.",
+    "marqueurs": [
+      "48 ?si",
+      "retrait de points?",
+      "l\\. ?223-3|r\\. ?223-3",
+      "amende forfaitaire|composition pénale",
+      "information préalable"
+    ],
+    "sources": [
+      {
+        "juridiction": "Conseil d'État",
+        "date": "2026-11-03",
+        "numero": "517120",
+        "url": "https://librejustice.fr/decision/rtHuXXubUDXp",
+        "point": "pts 6 et 7 : formalité substantielle ; notice signée ne mentionnant pas l'effet de la composition pénale",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Tribunal administratif de Strasbourg (juge des référés)",
+        "date": "2026-01-19",
+        "numero": "2510773",
+        "url": "https://librejustice.fr/decision/jEEGxaEV3fVr",
+        "point": "chauffeur routier ; défaut d'information « ce que le ministre de l'Intérieur ne conteste pas »",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Aucune lue.",
+    "frequence": "10 sur 12 suspensions accordées vues",
+    "depuis": "Règle rappelée par CE, 4 mai 2023, n° 461895, pt 7, et CE, 3 nov. 2026, n° 517120, pt 6 ; historique des articles L. 223-3 et R. 223-3 non relu"
+  },
+  {
+    "condition": "doute_serieux",
+    "sous_domaine": "police administrative : fermeture d'un débit de boissons ou d'un restaurant",
+    "sens": "remplit",
+    "texte": "Les fermetures fondées sur les 2 et 3 de l'article L. 3332-15 du code de la santé publique exigent des troubles ou infractions en relation avec la fréquentation de l'établissement ou ses conditions d'exploitation ; le doute naît quand l'arrêté retient une rixe survenue à proximité, des faits commis dehors après la fermeture ou une seule plainte pour bruit, et la durée reste contrôlée au regard des plafonds relevés le 20 août 2026 (trois mois, six en cas de réitération, pour le 2).",
+    "marqueurs": [
+      "fermeture administrative",
+      "l\\. ?3332-15",
+      "débit de boissons|discothèque|restaurant|\\bbar\\b",
+      "fréquentation|conditions d['’]exploitation",
+      "rixe|tapage"
+    ],
+    "sources": [
+      {
+        "juridiction": "Tribunal administratif de Toulon (juge des référés)",
+        "date": "2026-03-02",
+        "numero": "2601039",
+        "url": "https://librejustice.fr/decision/MBeWo9lQqQkg",
+        "point": "pts 5 et 6 : rixe à proximité, absence de relation avec la fréquentation, fermeture de quinze jours suspendue",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Aucune lue sur ce moyen ; le rejet lu statue sur l'urgence, la perte de 272 132 euros n'étant pas rapportée à la trésorerie (TA Pau, 15 avr. 2025, n° 2500958, pt 6).",
+    "frequence": "6 sur 9 suspensions accordées au titre de L. 521-1 vues (12 accordées vues dont 3 en référé-liberté) et 4 sur 9 la disproportion de la durée, une décision retenant les deux ; 9 sur 11 rejets vus en référé écartent le doute",
+    "depuis": "Point 4 de l'article L. 3332-15, cité par la décision lue dans la version en vigueur du 29 déc. 2019 au 19 août 2026 et lu dans celle du 20 août 2026 ; plafonds relevés par la loi n° 2026-798 du 18 août 2026"
+  },
+  {
+    "condition": "urgence",
+    "sous_domaine": "décisions scolaires : exclusion définitive d'un élève",
+    "sens": "tombe",
+    "texte": "L'exclusion définitive d'un élève soumis à l'obligation scolaire ne l'exclut pas du système scolaire, le recteur devant pourvoir aussitôt à son inscription ailleurs ; l'affectation effective dans un autre établissement fait obstacle à l'urgence, sauf impossibilité concrète d'y suivre la scolarité, et depuis le 31 mai 2026 le texte ne mentionne plus le centre d'enseignement par correspondance, ce qui fragilise l'argument d'une scolarité à distance seule.",
+    "marqueurs": [
+      "exclusion définitive",
+      "conseil de discipline",
+      "collège|lycée",
+      "élève",
+      "affect\\w* (?:dans|au) (?:un autre )?(?:établissement|collège|lycée)|d\\. ?511-43"
+    ],
+    "sources": [
+      {
+        "juridiction": "Tribunal administratif de Paris (juge des référés)",
+        "date": "2025-07-04",
+        "numero": "2518377",
+        "url": "https://librejustice.fr/decision/9wuTtSk66Ih1",
+        "point": "pts 3 et 5 : élève affecté dans un autre collège depuis mars, urgence écartée par ordonnance de tri",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Aucune suspension d'exclusion d'élève trouvée dans l'échantillon (les 15 suspensions scolaires accordées vues concernent l'enseignement supérieur).",
+    "frequence": "12 sur 14 rejets scolaires vus au titre de L. 521-1 (15 vus, dont 1 en référé-liberté)",
+    "depuis": "C. éduc., art. D. 511-43 (lu dans sa version du 31 mai 2026 issue du décret n° 2026-414) ; la décision lue applique la version antérieure qui visait aussi le centre public d'enseignement par correspondance"
+  },
+  {
+    "condition": "doute_serieux",
+    "sous_domaine": "décisions universitaires : sanction disciplinaire d'un étudiant",
+    "sens": "remplit",
+    "texte": "Une exclusion qui empêche d'achever un diplôme en cours (fin de master, études médicales avancées) crée l'urgence, et le doute naît de la disproportion, surtout quand l'exclusion vise tous les établissements publics d'enseignement supérieur ou plusieurs années là où l'exclusion du seul établissement aurait suffi.",
+    "marqueurs": [
+      "section disciplinaire|commission de discipline",
+      "exclusion",
+      "enseignement supérieur",
+      "étudiante?",
+      "master|licence|doctorat"
+    ],
+    "sources": [
+      {
+        "juridiction": "Tribunal administratif d'Amiens (juge des référés)",
+        "date": "2025-12-18",
+        "numero": "2505083",
+        "url": "https://librejustice.fr/decision/fPxTrRyZFIMk",
+        "point": "pt 4 : exclusion d'un an empêchant d'achever le master 2 ; pt 5 : disproportion",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Aucune trouvée : aucun rejet de suspension d'une sanction étudiante dans l'échantillon.",
+    "frequence": "9 sur 15 suspensions scolaires et universitaires accordées vues (1 autre sur la matérialité des faits)",
+    "depuis": "Pratique des juges du fond de 2023 à 2026 ; échelle des sanctions du code de l'éducation non relue"
+  },
+  {
+    "condition": "doute_serieux",
+    "sous_domaine": "décisions universitaires : refus d'admission en master",
+    "sens": "partage",
+    "texte": "Le refus d'admission en master manque de base légale si le conseil d'administration n'a pas fixé, avant la décision, les capacités d'accueil et les modalités de sélection, ou si l'université ne prouve ni l'existence ni la publication de la délibération ; mais elle n'a pas à détailler les éléments d'appréciation des mérites, une publication au recueil des actes accessible en ligne suffit, et le juge ne contrôle pas l'appréciation pédagogique du dossier.",
+    "marqueurs": [
+      "refus d['’]admission",
+      "master",
+      "capacités? d['’]accueil",
+      "conseil d['’]administration",
+      "l\\. ?612-6"
+    ],
+    "sources": [
+      {
+        "juridiction": "Conseil d'État",
+        "date": "2022-04-27",
+        "numero": "450490",
+        "url": "https://librejustice.fr/decision/DoXWM0BXMtnS",
+        "point": "pts 3 et 4 : compétence du conseil d'administration ; refus illégal, la délibération étant postérieure",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Conseil d'État",
+        "date": "2023-10-13",
+        "numero": "467671",
+        "url": "https://librejustice.fr/decision/QXA9BCLxxJ5W",
+        "point": "pt 6 : pas d'obligation de préciser les éléments d'appréciation ; pts 10 et 11 : publication au recueil des actes suffisante",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Tribunal administratif de Montreuil (juge des référés)",
+        "date": "2023-10-24",
+        "numero": "2311491",
+        "url": "https://librejustice.fr/decision/BxBkScY7ZJe_",
+        "point": "pt 4 : sept candidatures refusées, urgence ; pt 7 : université silencieuse, ni existence ni publicité de la délibération démontrées",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Les deux sens sont dans les sources : n° 450490 et n° 2311491 accueillent, n° 467671 borne le moyen.",
+    "frequence": "4 sur 15 suspensions scolaires et universitaires accordées vues ; 8 sur 8 rejets de référé en master vus écartent le doute (10 vus, dont 2 jugements au fond)",
+    "depuis": "CE, 27 avr. 2022, n° 450490 (tables) ; CE, 13 oct. 2023, n° 467671 (tables)"
+  }
+]

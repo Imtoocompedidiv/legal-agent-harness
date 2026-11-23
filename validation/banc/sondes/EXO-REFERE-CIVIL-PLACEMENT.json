@@ -1,0 +1,47 @@
+{
+  "id": "EXO-REFERE-CIVIL-PLACEMENT",
+  "capacite": "exercice",
+  "horloge": "2026-11-19T10:00",
+  "budget_minutes": 12,
+  "origine": "module mecanique-des-exercices : civil, caducité de l'assignation en référé non placée quinze jours avant l'audience (CPC, art. 754 et 755 ; Cass. 2e civ., 21 décembre 2023, n° 21-25.162)",
+  "consigne": "Nous sommes le jeudi 19 novembre 2026. Pour faire cesser l'occupation du parking privé de notre client, une copropriété, par les véhicules d'une entreprise voisine, nous avons demandé au greffe du tribunal judiciaire une date d'audience de référé ; le greffe nous a communiqué le 20 octobre 2026 la date du mardi 24 novembre 2026. L'assignation en référé a été délivrée par commissaire de justice le 12 novembre 2026. Le client propose de remettre la copie de l'assignation au greffe le matin de l'audience. Que fais-tu, et quelle condition décide du sort de cette instance ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier. Termine par une ligne de la forme « EXERCICE RETENU : … » qui nomme l'acte ou la démarche que tu engages en premier, avec son texte.",
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "caduc",
+      "description": "condition décisive : caducité de l'assignation"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "754",
+        "quinze jours avant",
+        "15 jours avant"
+      ],
+      "description": "exigence implicite : remise au greffe quinze jours avant l'audience"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "nouvelle assignation",
+        "réassign",
+        "assigner (à nouveau|de nouveau)",
+        "nouvelle date",
+        "755",
+        "réduction des délais",
+        "heure à heure",
+        "jour fixe"
+      ],
+      "description": "choix : nouvelle assignation ou autorisation d'abréger les délais"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "835",
+        "trouble manifestement illicite"
+      ],
+      "description": "fondement du référé",
+      "critique": false
+    }
+  ]
+}

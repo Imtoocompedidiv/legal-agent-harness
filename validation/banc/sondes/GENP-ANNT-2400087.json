@@ -1,0 +1,18 @@
+{
+  "id": "GENP-ANNT-2400087",
+  "capacite": "pronostic",
+  "famille": "annulation-ta",
+  "genere": true,
+  "origine": "usine.py, Tribunal administratif de La Réunion, 3e chambre · formation à trois, 4 mars 2026, 2400087 (https://librejustice.fr/decision/rFwPcq8Rwler), issue réelle : non",
+  "fixture": "gen_annt_2400087",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme le tribunal administratif, dis s'il annulera, au moins en partie, la décision attaquée. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2026-03-03T18:00",
+  "coupe": "2026-03-03",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*non\\b",
+      "description": "répond non, comme la juridiction"
+    }
+  ]
+}

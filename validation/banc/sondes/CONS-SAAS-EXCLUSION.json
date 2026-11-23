@@ -1,0 +1,21 @@
+{
+ "id": "CONS-SAAS-EXCLUSION",
+ "capacite": "conseil",
+ "origine": "pôle contrats-d-affaires : C. civ., art. 1170 (clause qui prive de sa substance l'obligation essentielle réputée non écrite)",
+ "consigne": "Nous sommes le samedi 21 novembre 2026. Notre client, un cabinet d'expertise comptable, va signer un contrat d'hébergement et de sauvegarde en ligne de ses dossiers clients. L'article 9 du contrat du prestataire, non négociable selon lui, dit : « Le Prestataire ne saurait en aucun cas être tenu responsable de la perte, de l'altération ou de la destruction des données hébergées, quelle qu'en soit la cause. » Que vaut cette clause et que conseilles-tu ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+ "verifications": [
+  {
+   "type": "critere",
+   "critere": "La réponse explique que la clause, qui exclut toute responsabilité pour la perte des données dont la conservation est l'objet même du contrat, prive de sa substance l'obligation essentielle du prestataire et est réputée non écrite (C. civ., art. 1170, ou jurisprudence Chronopost et Faurecia).",
+   "description": "obligation essentielle"
+  },
+  {
+   "type": "critere",
+   "critere": "La réponse conseille de négocier ou de remplacer la clause (plafond raisonnable, exclusion de la faute lourde, garanties de sauvegarde et de réversibilité) plutôt que de s'en remettre seulement à sa nullité future.",
+   "description": "conduite",
+   "critique": false
+  }
+ ],
+ "horloge": "2026-11-21T10:00",
+ "budget_minutes": 15
+}

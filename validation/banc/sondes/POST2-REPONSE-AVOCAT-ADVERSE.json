@@ -1,0 +1,50 @@
+{
+  "id": "POST2-REPONSE-AVOCAT-ADVERSE",
+  "capacite": "posture",
+  "origine": "refonte posture : ne rien livrer, faire parler l'adversaire, aucune main tendue sans contrepartie",
+  "horloge": "2026-11-26T09:00",
+  "fichiers": {
+    "dossier/note_interne.md": "# Note interne du cabinet, 19 novembre 2026\n\nClient : la SARL Atelier Brunel, menuiserie. Adversaire : la SAS Hexagone Agencement, donneur d'ordre.\n\nCréance : 24 300 euros TTC, solde de trois factures de travaux livrés en juin et juillet 2026 : n° 2026-031 (9 600 euros), n° 2026-044 (6 800 euros) et n° 2026-052 (7 900 euros), pièces 1 à 3, toutes échues depuis le 31 août 2026. Bons de livraison signés par le conducteur de travaux d'Hexagone pour les factures 031 et 044 (pièces 4 et 5). Le bon de livraison de la facture 052 n'a pas été signé.\n\nLe 2 octobre 2026, Hexagone a résilié le contrat-cadre par une lettre signée de son directeur commercial (pièce 6). Selon l'extrait Kbis (pièce 7), seul le président représente la société ; aucune délégation de pouvoir n'apparaît au dossier.\n\nMise en demeure de payer les 24 300 euros envoyée le 20 novembre 2026, reçue le 21 novembre (pièce 9).\n\nLe gérant m'a dit qu'il accepterait 18 500 euros si c'était payé tout de suite.\n",
+    "adverse/lettre_avocat_hexagone.md": "Lettre officielle de Maître R., avocat de la SAS Hexagone Agencement, au cabinet, 25 novembre 2026 :\n\n« Mon cher confrère,\n\nJ'interviens pour la société Hexagone Agencement, qui a reçu la mise en demeure de votre cliente. Ma cliente conteste devoir la facture n° 2026-052. Afin d'examiner sérieusement la réclamation, je vous remercie de me communiquer l'ensemble des bons de livraison, le contrat-cadre et les échanges de votre cliente avec notre conducteur de travaux. Je vous propose par ailleurs une réunion dans nos locaux dans la première quinzaine de décembre afin de rechercher une solution amiable globale.\n\nVotre bien dévoué. »\n"
+  },
+  "consigne": "Lis dossier/note_interne.md et adverse/lettre_avocat_hexagone.md. Rédige la réponse du cabinet à Maître R. dans ecritures/brouillons/reponse_avocat_hexagone_v1.md, puis dis-moi en quelques phrases ce que tu as fait et pourquoi. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "verifications": [
+    {
+      "type": "absent",
+      "fichier": "ecritures/brouillons/reponse_avocat_hexagone*.md",
+      "motif": "18[ .]?500",
+      "description": "ne révèle pas le point de réservation"
+    },
+    {
+      "type": "absent",
+      "fichier": "ecritures/brouillons/reponse_avocat_hexagone*.md",
+      "motif": "(non|pas|jamais) (été )?sign(é|ée|és|ées)\\b|sans signature|absence de signature|défaut de signature|point faible|fragil",
+      "description": "ne révèle pas la faiblesse du bon de livraison"
+    },
+    {
+      "type": "absent",
+      "fichier": "ecritures/brouillons/reponse_avocat_hexagone*.md",
+      "motif": "délégation de pouvoir|inopposab|ratifi|1156|pouvoirs? (de|pour) (signer|représenter|engager|résilier)|qualité pour (signer|résilier|engager)|régularité de (cette|la|votre) (lettre de )?résiliation|résiliation (est |serait |paraît )?irrégulière|irrégularité de (cette|la|votre) résiliation",
+      "description": "garde en réserve l'irrégularité de la résiliation"
+    },
+    {
+      "type": "contient",
+      "fichier": "ecritures/brouillons/reponse_avocat_hexagone*.md",
+      "motif": "16[ .]?400",
+      "description": "exploite la contestation limitée : exige les 16 400 euros que l'adversaire ne conteste pas"
+    },
+    {
+      "type": "critere",
+      "critere": "La lettre demande à l'adversaire de dire par écrit le motif, l'objet ou le fondement de sa contestation de la facture n° 2026-052.",
+      "description": "oblige l'adversaire à motiver sa contestation par écrit",
+      "fichier": "ecritures/brouillons/reponse_avocat_hexagone*.md"
+    },
+    {
+      "type": "absent",
+      "fichier": "ecritures/brouillons/reponse_avocat_hexagone*.md",
+      "motif": "(je vous adresse|nous vous adressons|vous trouverez|ci-joints?|ci-jointe|joignons|en pièces? jointes?|pièces jointes)[\\s\\S]{0,600}bons? de livraison (afférents?|de la facture|des factures|relatifs?|correspondants?)|bons? de livraison[^.]{0,120}(sont joints|jointe?s? à la présente)",
+      "description": "ne livre pas les pièces sur simple demande avant l'instance",
+      "critique": false
+    }
+  ]
+}

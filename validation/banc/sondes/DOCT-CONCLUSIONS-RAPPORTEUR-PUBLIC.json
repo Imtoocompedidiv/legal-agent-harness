@@ -1,0 +1,61 @@
+{
+  "id": "DOCT-CONCLUSIONS-RAPPORTEUR-PUBLIC",
+  "capacite": "doctrine",
+  "origine": "demande du client : conclusions des rapporteurs publics lues à la source",
+  "consigne": "Le Conseil d'État a jugé le 30 juin 2025 (n° 494573) que la date d'expédition d'un recours gracieux posté détermine s'il conserve le délai de recours contentieux. Nous voulons reprendre devant une cour administrative d'appel le raisonnement qui a conduit à cette solution. Trouve et lis les conclusions du rapporteur public prononcées dans cette affaire. Dis ce qu'il proposait et pour quelles raisons, quelle décision rendue en 2003 il citait au sujet de la règle du cachet de la poste et des recours administratifs, et ce qu'il recommandait quant au fondement à donner au revirement. Indique d'où tu as lu le texte et ce que tu peux en citer dans une écriture. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "outils": "Agent,Task,Read,Write,Edit,Glob,Grep,Bash,PowerShell,TodoWrite,mcp__librejustice__search_decisions,mcp__librejustice__get_decision,mcp__librejustice__search_norms,mcp__librejustice__get_norm,mcp__hal__search_hal,mcp__hal__lookup_reference,mcp__shs_fr__theses_search,mcp__shs_fr__theses_get,mcp__shs_fr__isidore_search,mcp__shs_fr__sudoc_search,mcp__shs_fr__gallica_search,mcp__academic_papers__search_openalex,mcp__academic_papers__search_crossref,mcp__academic_papers__get_crossref_paper_by_doi,mcp__academic_papers__search_semantic,mcp__academic_papers__search_core,mcp__academic_papers__search_base,mcp__academic_papers__search_doaj,mcp__academic_papers__search_hal,mcp__academic_papers__search_ssrn,mcp__academic_papers__search_unpaywall,mcp__academic_papers__read_hal_paper,mcp__academic_papers__read_ssrn_paper,mcp__academic_papers__get_citing_papers,mcp__academic_papers__get_referenced_papers,mcp__asta__search_paper_by_title,mcp__asta__get_paper,mcp__asta__search_papers_by_relevance,mcp__asta__snippet_search",
+  "budget_minutes": 15,
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "240511",
+      "description": "donne la décision de 2003 que seules les conclusions citent"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "prétorien",
+        "purement jurisprudentiel",
+        "ne pas (le )?(justifier|fonder|asseoir|appuyer)"
+      ],
+      "description": "rapporte sa recommandation sur le fondement du revirement"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "l\\. ?112-1",
+        "l112-1"
+      ],
+      "description": "nomme l'article du CRPA écarté comme fondement",
+      "critique": false
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "466541",
+        "13 mai 2024"
+      ],
+      "description": "rattache la proposition à la décision de section de 2024",
+      "critique": false
+    },
+    {
+      "type": "outil",
+      "outil": "",
+      "entree_contient": "crp/conclusion/",
+      "description": "lit les conclusions à leur source officielle",
+      "critique": false
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "droit d'auteur",
+        "libres de droits",
+        "propriété intellectuelle",
+        "courte citation",
+        "accord du rapporteur"
+      ],
+      "description": "signale le régime de citation des conclusions",
+      "critique": false
+    }
+  ]
+}

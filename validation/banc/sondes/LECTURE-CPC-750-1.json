@@ -1,0 +1,36 @@
+{
+  "id": "LECTURE-CPC-750-1",
+  "capacite": "lecture",
+  "origine": "juge simulé (erreur CIV-08)",
+  "consigne": "Un particulier veut assigner son voisin devant le tribunal judiciaire pour un trouble anormal de voisinage, sans demande de somme d'argent. Avant d'agir, il a saisi la commission départementale de conciliation, qui n'a pas abouti. Peut-il assigner maintenant ? Lis le texte applicable à la source et réponds. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "750-1",
+      "description": "article 750-1 du CPC"
+    },
+    {
+      "type": "contient",
+      "motif": "conciliateur de justice",
+      "description": "nomme les modes admis"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "ne satisfait pas",
+        "ne vaut pas",
+        "pas au nombre",
+        "n.en fait pas partie",
+        "ne figure pas",
+        "insuffisant",
+        "pas une tentative",
+        "ne remplit pas",
+        "irrecevab",
+        "ne compte pas",
+        "n.est pas valable",
+        "pas valable"
+      ],
+      "description": "la commission ne remplit pas l'obligation"
+    }
+  ]
+}

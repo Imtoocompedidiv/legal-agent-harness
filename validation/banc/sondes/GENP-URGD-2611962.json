@@ -1,0 +1,18 @@
+{
+  "id": "GENP-URGD-2611962",
+  "capacite": "pronostic",
+  "famille": "titre-renouvellement-delai",
+  "genere": true,
+  "origine": "usine.py, Tribunal administratif de Lille, magistrat désigné, 9 novembre 2026, 2611962 (https://librejustice.fr/decision/41Xf0vvVjFXv), issue réelle : non",
+  "fixture": "gen_urgd_2611962",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme le juge des référés, dis si la condition d'urgence de ce référé-suspension est remplie. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2026-11-08T18:00",
+  "coupe": "2026-11-08",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*non\\b",
+      "description": "répond non, comme la juridiction"
+    }
+  ]
+}

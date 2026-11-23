@@ -1,0 +1,12 @@
+Version : ech-v50
+Issue réelle : oui
+
+**Non, 60 %.** Le plus probable est que le juge dira n'y avoir lieu à référé : la locataire invoque des paiements qui dépassent la dette, et aucune part de la créance n'échappe à cette contestation.
+
+1. **L'obligation est établie dans son principe.** Le protocole du 15 janvier 2024 fixe une indemnité forfaitaire de 130 000 € HT, en contrepartie de la dispense de travaux. Ni la clause ni le fondement de la dette ne posent de difficulté. Sur ce seul terrain, l'article 835 alinéa 2 du code de procédure civile justifierait une provision.
+2. **Le débat porte sur le paiement, et c'est une cause classique de contestation sérieuse.** La locataire invoque deux versements, 72 000 € et 70 000 €, soit 142 000 €. Ce total dépasse les 130 017,64 € réclamés à l'origine. Les bailleresses ne disent pas que ces fonds n'ont pas été reçus. En ramenant leur demande à 53 387,60 €, elles admettent avoir encaissé de quoi solder 76 630,04 €. Le reste des versements est donc affecté à une autre dette.
+3. **Aucune part de la somme ne reste hors de discussion.** Les parties ont d'autres relations d'affaires en cours sur d'autres immeubles. Savoir à quelle dette chaque versement s'applique dépend des règles d'imputation des paiements (art. 1342-10 du code civil), et d'abord de ce que le débiteur a désigné en payant. C'est une question de fond. Si l'imputation de la locataire est retenue, elle ne doit plus rien. Le juge des référés ne peut donc pas isoler un solde incontestable sur lequel limiter la provision.
+4. **Le décompte des bailleresses ne permet pas non plus de trancher.** Le protocole est daté du 15 janvier 2024 dans l'exposé, puis du 15 février dans les demandes. Une indemnité de 130 000 € HT devient 130 017,64 € TTC. La base des intérêts varie entre 130 017,64 € et 130 057,64 €. Le décompte ne montre pas quelle part de la créance échappe à toute contestation.
+5. **Ce qui ferait gagner les bailleresses (40 %).** Elles l'emportent si elles produisent les ordres de virement montrant qu'une partie des 142 000 € visait expressément un autre bail. Le juge accorderait alors la provision sur le solde. Symétriquement, la demande de la locataire en remboursement du trop-perçu de 24 612,40 € se heurte à la même contestation et devrait être rejetée.
+
+J'ai lu `dossier_remis.md` en entier, qui ne contient que la procédure et les prétentions des parties, sans aucune pièce. Je n'ai consulté aucune source extérieure : les articles cités le sont de mémoire, sans vérification.

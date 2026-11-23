@@ -1,0 +1,24 @@
+{
+  "id": "RECHERCHE-JURISPRUDENCE-PAR-ARTICLE",
+  "capacite": "recherche",
+  "origine": "demande du client : ratisser la jurisprudence",
+  "consigne": "Trouve trois décisions du Conseil d'État qui interprètent l'obligation de notification du recours prévue par l'article R. 600-1 du code de l'urbanisme, et donne pour chacune son numéro et ce qu'elle juge, lu dans la décision. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "verifications": [
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__search_decisions",
+      "entree_contient": "r600-1|r\\. ?600-1|600-1",
+      "description": "recherche ciblée sur l'article"
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__get_decision",
+      "description": "lit les décisions"
+    },
+    {
+      "type": "contient",
+      "motif": "\\d{6}[\\s\\S]*\\d{6}[\\s\\S]*\\d{6}",
+      "description": "trois numéros"
+    }
+  ]
+}

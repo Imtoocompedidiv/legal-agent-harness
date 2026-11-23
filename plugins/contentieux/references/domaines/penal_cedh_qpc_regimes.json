@@ -1,0 +1,444 @@
+[
+  {
+    "type_acte": "plainte_simple",
+    "domaine": "penal",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": [
+      "faits_susceptibles_de_qualification_penale",
+      "action_publique_non_prescrite",
+      "depot_au_procureur_contre_recepisse_ou_lrar_si_plainte_avec_constitution_envisagee"
+    ],
+    "texte": "CPP, art. 15-3, 40, 40-1, 85 al. 2, 7 à 9-3",
+    "sources": [
+      {"reference": "CPP, art. 15-3 (version du 20 août 2026)", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/15-3", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 40", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/40", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 40-1", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/40-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 85", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/85", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 9-2", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/9-2", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Crim., 23 juin 2026, n° 25-87.950 (F-B, publié au Bulletin)", "url": "https://librejustice.fr/decision/4rK82xyOTbhT", "lu_en_entier": true, "lu_le": "2026-11-20"}
+    ],
+    "pieges": [
+      "Pour une plainte déposée devant un service de police judiciaire, le délai de trois mois ne court que de l'envoi au procureur d'une copie de cette plainte contre récépissé ou par lettre recommandée avec avis de réception (art. 85, al. 2).",
+      "La plainte simple ne figure pas parmi les actes interruptifs du 1° de l'article 9-2 ; elle suspend la prescription au profit de la victime jusqu'à la réponse du procureur ou, au plus tard, l'expiration du délai de trois mois de l'article 85, alinéa 2 (art. 9-3 ; Crim., 23 juin 2026, n° 25-87.950).",
+      "Conserver le récépissé prévu par l'article 15-3 : il sert de preuve du dépôt et rappelle les délais de prescription."
+    ]
+  },
+  {
+    "type_acte": "recours_classement_sans_suite",
+    "domaine": "penal",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": true,
+    "fond_distinct": false,
+    "conditions": [
+      "auteur_de_la_denonciation_au_procureur",
+      "decision_de_classement_sans_suite"
+    ],
+    "texte": "CPP, art. 40-1, 40-3",
+    "sources": [
+      {"reference": "CPP, art. 40-3", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/40-3", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 40-1", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/40-1", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Le recours est porté devant le procureur général, autorité du parquet et non juridiction ; l'article 40-3 ne fixe aucun délai.",
+      "L'article 40-3 ne prévoit aucun effet sur la prescription ; la voie qui met en mouvement l'action publique reste la plainte avec constitution de partie civile ou la citation directe."
+    ]
+  },
+  {
+    "type_acte": "plainte_partie_civile",
+    "domaine": "penal",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": [
+      "crime_ou_delit",
+      "prejudice_personnel_et_direct",
+      "plainte_prealable_et_reponse_du_procureur_ou_delai_de_trois_mois",
+      "absence_d_option_irrevocable_pour_la_voie_civile",
+      "justification_des_ressources_si_personne_morale_a_but_lucratif",
+      "consignation_versee_dans_le_delai_ou_aide_juridictionnelle",
+      "action_publique_non_prescrite",
+      "declaration_d_adresse"
+    ],
+    "texte": "CPP, art. 1, 2, 5, 85, 86, 87, 88, 88-1, 89 ; art. 7 à 9-3",
+    "sources": [
+      {"reference": "CPP, art. 85 (version du 25 mars 2019)", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/85", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 86", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/86", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 87", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/87", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 88", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/88", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 88-1", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/88-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 89", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/89", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 2", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/2", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 5", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/5", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 9-3", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/9-3", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Le préalable de l'article 85, alinéa 2, ne vaut que pour les délits hors presse et hors délits électoraux visés ; il ne s'applique pas aux crimes.",
+      "La plainte simple doit être déposée devant le procureur contre récépissé ou par lettre recommandée, ou sa copie lui être adressée selon ces modalités si elle a été déposée devant un service de police judiciaire (art. 85, al. 2).",
+      "La consignation doit être versée dans le délai fixé par l'ordonnance du juge d'instruction, sauf aide juridictionnelle ou dispense (art. 88) ; le dépôt de la plainte n'interrompt la prescription que si elle l'est, et la prescription est suspendue entre le dépôt et le réquisitoire du procureur (art. 9-2, 1°, et 9-3 ; Crim., 8 mars 2022, n° 21-83.037).",
+      "Une personne morale à but lucratif doit joindre bilan et compte de résultat (art. 85, al. 4).",
+      "Le choix antérieur de la voie civile ferme la voie pénale, sauf désistement dans le cas de l'article 85, alinéa 3, ou saisine préalable par le ministère public (art. 5).",
+      "Vérifier la prescription de l'action publique au jour de la plainte (art. 7 à 9-3).",
+      "Déclarer une adresse au juge d'instruction : à défaut, le défaut de notification des actes ne peut être opposé (art. 89)."
+    ]
+  },
+  {
+    "type_acte": "citation_directe",
+    "domaine": "penal",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": [
+      "prejudice_personnel_et_direct",
+      "mentions_obligatoires_de_la_citation",
+      "election_de_domicile_dans_le_ressort",
+      "delai_de_citation_respecte",
+      "consignation_versee_dans_le_delai_ou_aide_juridictionnelle",
+      "justification_des_ressources_si_personne_morale_a_but_lucratif",
+      "action_publique_non_prescrite"
+    ],
+    "texte": "CPP, art. 2, 388, 392, 392-1, 551, 552",
+    "sources": [
+      {"reference": "CPP, art. 392-1", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/392-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 392", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/392", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 551", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/551", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 552 (version du 23 octobre 2026)", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/552", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 388", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/388", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Loi du 29 juillet 1881, art. 65", "url": "https://librejustice.fr/norm/fr/loi-du-29-juillet-1881-sur-la-liberte-de-la-presse/65", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Crim., 18 décembre 2007, n° 07-82.106, publié au Bulletin", "url": "https://librejustice.fr/decision/RIWuY98U-8rX", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Crim., 10 mai 2000, n° 99-84.157, inédit", "url": "https://librejustice.fr/decision/KS0an9Cx5FYg", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Le défaut de versement de la consignation avant l'expiration du délai initialement fixé rend la poursuite irrecevable ; un nouveau délai accordé ensuite n'y remédie pas (Crim., 18 décembre 2007).",
+      "Le délai entre la délivrance de la citation et l'audience est d'au moins quinze jours depuis le 23 octobre 2026 (dix jours auparavant), augmenté pour l'outre-mer et l'étranger.",
+      "En matière de presse, la prescription est de trois mois (loi du 29 juillet 1881, art. 65) : la citation et la consignation doivent intervenir dans ce délai.",
+      "La partie civile ne peut faire appel du jugement de relaxe que pour ses intérêts civils (art. 497, 3°)."
+    ]
+  },
+  {
+    "type_acte": "constitution_partie_civile_audience",
+    "domaine": "penal",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": [
+      "delit_poursuivi",
+      "prejudice_personnel_et_direct",
+      "absence_de_constitution_anterieure"
+    ],
+    "texte": "CPP, art. 2, 3, 418",
+    "sources": [
+      {"reference": "CPP, art. 418", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/418", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 2", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/2", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 3", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/3", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Le ministère d'avocat n'est pas obligatoire (art. 418, al. 2), mais la demande de dommages-intérêts doit correspondre au préjudice causé par les faits poursuivis (art. 3)."
+    ]
+  },
+  {
+    "type_acte": "requete_nullite_instruction",
+    "domaine": "penal",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": true,
+    "fond_distinct": false,
+    "conditions": [
+      "qualite_de_partie_ou_de_temoin_assiste",
+      "requete_motivee",
+      "copie_adressee_au_juge_d_instruction",
+      "declaration_au_greffe_de_la_chambre_de_l_instruction",
+      "acte_non_susceptible_d_appel",
+      "delai_de_forclusion_de_l_article_173_1_respecte",
+      "requete_presentee_avant_l_expiration_du_delai_de_l_article_175",
+      "moyens_non_purges_par_une_saisine_anterieure",
+      "grief_atteinte_aux_interets_de_la_partie"
+    ],
+    "texte": "CPP, art. 171, 173, 173-1, 174, 175, 179, 802",
+    "sources": [
+      {"reference": "CPP, art. 173 (version du 15 juin 2025)", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/173", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 173-1 (version du 23 octobre 2026, délai de quatre mois)", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/173-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 173-1 (version en vigueur du 5 juin 2016 au 22 octobre 2026, délai de six mois, lue au 1er octobre 2026)", "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032655992/2026-10-01", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 174", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/174", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 175", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/175", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 171", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/171", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 802", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/802", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 179", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/179", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Délai de forclusion de quatre mois pour les requêtes formées depuis le 23 octobre 2026, de six mois auparavant  (art. 173-1, versions successives).",
+      "Le point de départ est la délivrance de la première copie du dossier si elle a été demandée dans les sept jours francs de la mise en examen, sinon la notification de la mise en examen ; pour les actes postérieurs, chaque interrogatoire ou notification.",
+      "La copie au juge d'instruction et la déclaration au greffe de la chambre de l'instruction sont prescrites à peine d'irrecevabilité (art. 173, al. 3).",
+      "Tous les moyens connus doivent être proposés lors de la saisine de la chambre de l'instruction (art. 174).",
+      "Après l'avis de fin d'information, la requête doit être présentée dans le mois (personne détenue) ou les trois mois (art. 175, al. 4).",
+      "La forclusion est écartée lorsque la personne n'aurait pu connaître les moyens de nullité (art. 173-1)."
+    ]
+  },
+  {
+    "type_acte": "conclusions_nullite_penale",
+    "domaine": "penal",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": true,
+    "fond_distinct": false,
+    "conditions": [
+      "nullite_non_purgee_par_l_ordonnance_de_renvoi",
+      "exception_presentee_avant_toute_defense_au_fond",
+      "conclusions_deposees_au_greffe_trois_jours_avant_l_audience",
+      "grief_atteinte_aux_interets_de_la_partie"
+    ],
+    "texte": "CPP, art. 179, 385, 802",
+    "sources": [
+      {"reference": "CPP, art. 385 (version du 23 octobre 2026)", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/385", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 385 (version du 15 juin 2025 au 22 octobre 2026, lue au 1er octobre 2026)", "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051743062/2026-10-01", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 179", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/179", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 802", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/802", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Saisi par une ordonnance de renvoi, le tribunal ne connaît que des nullités qui n'ont pu être connues avant la clôture de l'instruction, sauf ordonnance rendue sans respect de l'article 175.",
+      "Depuis le 23 octobre 2026, les conclusions écrites de nullité sont déposées au greffe trois jours avant l'audience, sous peine d'irrecevabilité, hors comparution immédiate et sauf citation à moins de vingt jours ou nullité inconnue.",
+      "L'exception doit précéder toute défense au fond.",
+      "La nullité de la citation relève de l'article 565 (non lu)."
+    ]
+  },
+  {
+    "type_acte": "appel_ordonnance_juge_instruction",
+    "domaine": "penal",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": true,
+    "fond_distinct": false,
+    "conditions": [
+      "ordonnance_susceptible_d_appel_par_la_partie",
+      "delai_de_dix_jours_a_compter_de_la_notification",
+      "declaration_d_appel_conforme_aux_articles_502_et_503"
+    ],
+    "texte": "CPP, art. 87, 186, 502, 503, 801",
+    "sources": [
+      {"reference": "CPP, art. 186", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/186", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 87", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/87", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 502", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/502", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 503", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/503", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Crim., 27 mars 1995, n° 94-82.758, publié au Bulletin", "url": "https://librejustice.fr/decision/tczGvjLzoAaI", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "La partie civile ne peut appeler que des ordonnances de non-informer, de non-lieu, faisant grief à ses intérêts civils ou statuant sur la compétence, jamais des dispositions relatives à la détention ou au contrôle judiciaire.",
+      "Le délai court du lendemain de l'expédition de la lettre recommandée de notification (Crim., 27 mars 1995) ; déclarer l'appel pendant les heures d'ouverture du greffe.",
+      "L'appel tardif ou dirigé contre une ordonnance non visée donne lieu à une ordonnance de non-admission sans recours (art. 186, dernier al.)."
+    ]
+  },
+  {
+    "type_acte": "appel_penal",
+    "domaine": "penal",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": true,
+    "fond_distinct": false,
+    "conditions": [
+      "qualite_pour_appeler",
+      "appel_de_la_partie_civile_limite_aux_interets_civils",
+      "delai_de_dix_jours_respecte",
+      "declaration_d_appel_au_greffe_conforme"
+    ],
+    "texte": "CPP, art. 496, 497, 498, 498-1, 500, 502, 503, 505, 801",
+    "sources": [
+      {"reference": "CPP, art. 498", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/498", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 497", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/497", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 496", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/496", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 498-1", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/498-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 500", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/500", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 502 (version du 11 juillet 2025)", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/502", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 505", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/505", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 801", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/801", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Crim., 30 janvier 1973, n° 72-92.400, publié au Bulletin", "url": "https://librejustice.fr/decision/ool-72bzWNWx", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Crim., 6 janvier 2009, n° 08-84.141, publié au Bulletin", "url": "https://librejustice.fr/decision/8xvk1BZz9S9m", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "L'appel incident doit être formé dans le délai global de quinze jours après le prononcé (art. 500 ; Crim., 6 janvier 2009) ou dans les cinq jours de l'appel du procureur général (art. 505).",
+      "La déclaration doit préciser la portée de l'appel (action publique, action civile, peines) ; à défaut, elle vaut sur toute la décision (art. 502)."
+    ]
+  },
+  {
+    "type_acte": "appel_criminel",
+    "domaine": "penal",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": true,
+    "fond_distinct": false,
+    "conditions": [
+      "arret_de_cour_d_assises_susceptible_d_appel",
+      "qualite_pour_appeler",
+      "delai_de_dix_jours_respecte",
+      "declaration_au_greffe_de_la_cour_d_assises"
+    ],
+    "texte": "CPP, art. 380-1, 380-2, 380-9, 380-12",
+    "sources": [
+      {"reference": "CPP, art. 380-1 (version du 25 juillet 2026)", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/380-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 380-2", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/380-2", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 380-9", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/380-9", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 380-12", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/380-12", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "La partie civile n'appelle que pour ses intérêts civils (art. 380-2, 4°).",
+      "Une question prioritaire de constitutionnalité ne peut être soulevée devant la cour d'assises ; elle peut l'être dans un écrit accompagnant la déclaration d'appel (ord. n° 58-1067, art. 23-1)."
+    ]
+  },
+  {
+    "type_acte": "pourvoi_penal",
+    "domaine": "penal",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": true,
+    "fond_distinct": false,
+    "conditions": [
+      "decision_en_dernier_ressort_ou_arret_de_chambre_de_l_instruction",
+      "grief_pour_le_demandeur",
+      "decision_immediatement_attaquable",
+      "delai_de_dix_jours_francs_respecte",
+      "declaration_au_greffe_de_la_juridiction_qui_a_statue",
+      "memoire_depose_dans_les_delais",
+      "avocat_aux_conseils_lorsque_requis",
+      "moyen_de_violation_de_la_loi"
+    ],
+    "texte": "CPP, art. 567, 568, 570, 574, 576, 584, 585, 585-1, 590, 590-1, 591",
+    "sources": [
+      {"reference": "CPP, art. 567", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/567", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 568 (version du 30 septembre 2024)", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/568", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 568 (version du 1er octobre 2004 au 29 septembre 2024, cinq jours francs, lue au 1er septembre 2024)", "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006576979/2024-09-01", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 570", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/570", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 574", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/574", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 576", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/576", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 584", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/584", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 585", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/585", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 585-1", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/585-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 590", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/590", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. 590-1", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/590-1", "lu_en_entier": true, "lu_le": "2026-11-20"},
+      {"reference": "CPP, art. 591", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/591", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Cons. const., 23 juillet 2010, n° 2010-15/23 QPC (abrogation de l'article 575)", "url": "https://librejustice.fr/norm/fr/decision-n-2010-15-23-qpc-du-23-juillet-2010", "lu_en_entier": true, "lu_le": "2026-11-20"}
+    ],
+    "pieges": [
+      "L'arrêt de la chambre de l'instruction qui renvoie devant le tribunal correctionnel ou de police n'est attaquable que s'il statue sur la compétence ou contient des dispositions définitives (art. 574).",
+      "Contre une décision distincte qui ne met pas fin à la procédure, déposer avant l'expiration du délai la requête en examen immédiat de l'article 570.",
+      "Délai de dix jours francs depuis le 30 septembre 2024 (cinq jours francs auparavant) ; retenir le dixième jour suivant le prononcé comme date prudente.",
+      "Hors le demandeur condamné pénalement, le mémoire déposé après les dix jours de la déclaration exige un avocat aux Conseils (art. 584 et 585).",
+      "Aucun mémoire additionnel après le dépôt du rapport du conseiller (art. 590).",
+      "Le demandeur sans avocat qui n'a pas déposé son mémoire dans le délai de l'article 584 est déchu ; de même, sauf dérogation, le condamné sans avocat et le ministère public dont le mémoire n'est pas parvenu dans le mois du pourvoi ; jamais le condamné à une peine non prévue par la loi (art. 590-1).",
+      "Le pourvoi est ouvert à la partie à laquelle la décision fait grief (art. 567) ; l'article 575, qui limitait le pourvoi de la partie civile seule contre les arrêts de la chambre de l'instruction, est abrogé depuis le 24 juillet 2010 (Cons. const., n° 2010-15/23 QPC)."
+    ]
+  },
+  {
+    "type_acte": "requete_cedh",
+    "domaine": "cedh",
+    "juge": "cedh",
+    "refere": false,
+    "acte": true,
+    "fond_distinct": false,
+    "conditions": [
+      "qualite_de_victime",
+      "epuisement_des_voies_de_recours_internes",
+      "grief_souleve_en_substance_devant_les_juridictions_internes",
+      "delai_de_quatre_mois_a_compter_de_la_decision_interne_definitive",
+      "formulaire_complet_conforme_a_l_article_47",
+      "pouvoir_du_representant",
+      "requete_ni_anonyme_ni_identique_a_une_requete_anterieure",
+      "prejudice_important",
+      "grief_non_manifestement_mal_fonde"
+    ],
+    "texte": "Convention EDH, art. 27, 34, 35, 43, 44 ; Protocole n° 15, art. 4 et 8 § 3 ; Règlement de la Cour, art. 36, 45, 47",
+    "sources": [
+      {"reference": "Convention EDH, art. 35", "url": "https://librejustice.fr/norm/intl/convention-de-sauvegarde-des-droits-de-l-homme-et-des-libertes-fondamentales/35", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Convention EDH, art. 34", "url": "https://librejustice.fr/norm/intl/convention-de-sauvegarde-des-droits-de-l-homme-et-des-libertes-fondamentales/34", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Convention EDH, art. 27, 43 et 44", "url": "https://librejustice.fr/norm/intl/convention-de-sauvegarde-des-droits-de-l-homme-et-des-libertes-fondamentales/43", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Convention EDH, édition officielle de la Cour (amendée par le Protocole n° 15, entré en vigueur le 1er août 2021)", "url": "https://www.echr.coe.int/documents/d/echr/Convention_FRA", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Protocole n° 15 (STCE n° 213), art. 4 et 8", "url": "https://www.echr.coe.int/documents/d/echr/Protocol_15_FRA", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Règlement de la Cour, édition du 15 septembre 2025, art. 36, 45 et 47", "url": "https://www.echr.coe.int/documents/d/echr/Rules_Court_FRA", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CEDH, N.Z. c. France, déc., 15 septembre 2022, n° 40401/20", "url": "https://hudoc.echr.coe.int/fre?i=001-220042", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Le délai est de quatre mois pour les décisions internes définitives prises à compter du 1er février 2022, de six mois pour les décisions antérieures (Protocole n° 15, art. 8, § 3).",
+      "Le grief doit avoir été soumis, au moins en substance, aux juridictions internes compétentes (art. 35, § 1 ; formulation jurisprudentielle non relue dans une décision de principe : non vérifié).",
+      "La date d'introduction est celle de l'envoi d'un formulaire complet ; un formulaire incomplet n'est pas examiné et n'arrête pas le délai (Règlement, art. 47, §§ 5.1 et 6).",
+      "Joindre les décisions internes et les pièces prouvant l'épuisement et le respect du délai, listées par ordre chronologique (art. 47, § 3).",
+      "Après communication au gouvernement, la représentation par un conseil devient obligatoire, sauf autorisation (Règlement, art. 36, § 2).",
+      "La décision d'un juge unique est définitive (art. 27, § 2) ; le renvoi en Grande Chambre se demande dans les trois mois de l'arrêt de chambre (art. 43)."
+    ]
+  },
+  {
+    "type_acte": "memoire_qpc",
+    "domaine": "qpc",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": [
+      "disposition_de_nature_legislative",
+      "atteinte_alleguee_a_un_droit_ou_une_liberte_garanti_par_la_constitution",
+      "ecrit_distinct_et_motive",
+      "disposition_applicable_au_litige_ou_fondement_des_poursuites",
+      "absence_de_declaration_de_conformite_anterieure_sauf_changement_des_circonstances",
+      "question_serieuse_ou_nouvelle",
+      "juridiction_autre_que_la_cour_d_assises",
+      "contestation_du_refus_de_transmission_avec_le_recours_au_fond"
+    ],
+    "texte": "Constitution, art. 61-1, 62 ; ord. n° 58-1067 du 7 novembre 1958, art. 23-1 à 23-5, 23-7, 23-10 ; CPP, art. R*49-21 à R*49-34 ; CPC, art. 126-2",
+    "sources": [
+      {"reference": "Constitution, art. 61-1", "url": "https://librejustice.fr/norm/fr/constitution-du-4-octobre-1958/61-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Constitution, art. 62", "url": "https://librejustice.fr/norm/fr/constitution-du-4-octobre-1958/62", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Ord. n° 58-1067, art. 23-1", "url": "https://librejustice.fr/norm/fr/ordonnance-n-58-1067-du-7-novembre-1958-portant-loi-organique-sur-le-conseil/23-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Ord. n° 58-1067, art. 23-2", "url": "https://librejustice.fr/norm/fr/ordonnance-n-58-1067-du-7-novembre-1958-portant-loi-organique-sur-le-conseil/23-2", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Ord. n° 58-1067, art. 23-3", "url": "https://librejustice.fr/norm/fr/ordonnance-n-58-1067-du-7-novembre-1958-portant-loi-organique-sur-le-conseil/23-3", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Ord. n° 58-1067, art. 23-4", "url": "https://librejustice.fr/norm/fr/ordonnance-n-58-1067-du-7-novembre-1958-portant-loi-organique-sur-le-conseil/23-4", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Ord. n° 58-1067, art. 23-5", "url": "https://librejustice.fr/norm/fr/ordonnance-n-58-1067-du-7-novembre-1958-portant-loi-organique-sur-le-conseil/23-5", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Ord. n° 58-1067, art. 23-7", "url": "https://librejustice.fr/norm/fr/ordonnance-n-58-1067-du-7-novembre-1958-portant-loi-organique-sur-le-conseil/23-7", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Ord. n° 58-1067, art. 23-10", "url": "https://librejustice.fr/norm/fr/ordonnance-n-58-1067-du-7-novembre-1958-portant-loi-organique-sur-le-conseil/23-10", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. R*49-21 à R*49-29", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/partie-reglementaire-decrets-en-conseil/livre-iv/titre-i-bis/chapitre-i", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPP, art. R*49-30 à R*49-34", "url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/partie-reglementaire-decrets-en-conseil/livre-iv/titre-i-bis/chapitre-ii", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPC, art. 126-2", "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/126-2", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Rechercher, avant le dépôt, toute décision du Conseil constitutionnel ayant déclaré la disposition conforme dans ses motifs et son dispositif ; à défaut de changement des circonstances démontré, la question n'est pas transmise (ord. n° 58-1067, art. 23-2, 2°, et 23-5).",
+      "L'écrit distinct et motivé est exigé à peine d'irrecevabilité, que le juge pénal relève d'office (CPP, art. R*49-21) ; devant la Cour de cassation, le mémoire porte la mention « question prioritaire de constitutionnalité » (art. R*49-31).",
+      "Le moyen ne peut être soulevé devant la cour d'assises ; pendant l'instruction, il est porté devant la chambre de l'instruction (ord. n° 58-1067, art. 23-1 ; CPP, art. R*49-22).",
+      "Le refus de transmettre ne se conteste qu'avec le recours contre la décision qui règle le litige, par un écrit distinct qui pose de nouveau la question (art. 23-2 ; CPP, art. R*49-29) ; le mémoire qui se borne à contester le refus et le pourvoi distinct dirigé contre la seule non-transmission sont irrecevables (Cass. 1re civ., 18 décembre 2014, n° 14-18.944 ; Crim., 7 juin 2011, n° 11-81.826).",
+      "Devant la Cour de cassation, les observations sur une question transmise sont produites dans le mois, par avocat aux Conseils sauf exceptions (CPP, art. R*49-30).",
+      "Présenter la question avec le pourvoi, avant le dépôt du rapport du conseiller : l'article 590 du CPP exclut tout mémoire additionnel après ce dépôt (son application au mémoire distinct n'a pas été vérifiée sur une décision lue)."
+    ]
+  },
+  {
+    "type_acte": "memoire_qpc_admin",
+    "domaine": "qpc",
+    "juge": "admin",
+    "refere": false,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": [
+      "disposition_de_nature_legislative",
+      "atteinte_alleguee_a_un_droit_ou_une_liberte_garanti_par_la_constitution",
+      "memoire_distinct_et_motive_portant_la_mention_qpc",
+      "disposition_applicable_au_litige",
+      "absence_de_declaration_de_conformite_anterieure_sauf_changement_des_circonstances",
+      "question_serieuse_ou_nouvelle",
+      "contestation_du_refus_dans_le_delai_de_recours_par_memoire_distinct_avec_copie"
+    ],
+    "texte": "Constitution, art. 61-1 ; ord. n° 58-1067, art. 23-1 à 23-5, 23-7 ; CJA, art. R*771-3 à R*771-21",
+    "sources": [
+      {"reference": "CJA, art. R*771-3 à R*771-12", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/partie-reglementaire-decrets-en-conseil/livre-vii/titre-vii/chapitre-i-bis/section-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CJA, art. R*771-13 à R*771-21", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/partie-reglementaire-decrets-en-conseil/livre-vii/titre-vii/chapitre-i-bis/section-2", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Ord. n° 58-1067, art. 23-1", "url": "https://librejustice.fr/norm/fr/ordonnance-n-58-1067-du-7-novembre-1958-portant-loi-organique-sur-le-conseil/23-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Ord. n° 58-1067, art. 23-2", "url": "https://librejustice.fr/norm/fr/ordonnance-n-58-1067-du-7-novembre-1958-portant-loi-organique-sur-le-conseil/23-2", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Ord. n° 58-1067, art. 23-5", "url": "https://librejustice.fr/norm/fr/ordonnance-n-58-1067-du-7-novembre-1958-portant-loi-organique-sur-le-conseil/23-5", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Constitution, art. 61-1", "url": "https://librejustice.fr/norm/fr/constitution-du-4-octobre-1958/61-1", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Le mémoire distinct et son enveloppe portent la mention « question prioritaire de constitutionnalité » (CJA, art. R*771-3) ; l'irrecevabilité peut être opposée sans invitation à régulariser (art. R*771-4).",
+      "Pour contester en appel ou en cassation un refus de transmission, présenter avant l'expiration du délai de recours un mémoire distinct et motivé accompagné de la copie du refus (art. R*771-12 et R*771-16).",
+      "Les observations devant le Conseil d'État sur une question transmise sont produites dans le mois de la notification, par avocat aux Conseils sauf dispense applicable devant la juridiction de renvoi (art. R*771-20)."
+    ]
+  }
+]

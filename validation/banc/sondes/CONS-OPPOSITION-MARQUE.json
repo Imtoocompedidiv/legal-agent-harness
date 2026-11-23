@@ -1,0 +1,21 @@
+{
+ "id": "CONS-OPPOSITION-MARQUE",
+ "capacite": "conseil",
+ "origine": "pôle propriete-intellectuelle : CPI, art. L. 712-4 (opposition dans les deux mois suivant la publication de la demande)",
+ "consigne": "Nous sommes le samedi 21 novembre 2026. Notre client exploite depuis 2015 la marque française enregistrée « BRASSEO » pour des bières. Il découvre qu'un concurrent a déposé à l'INPI la marque « BRASSÉO » pour des bières et des boissons, demande publiée au BOPI le 6 novembre 2026. Que peut-il faire et avant quelle date ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+ "verifications": [
+  {
+   "type": "critere",
+   "critere": "La réponse dit que le client peut former opposition auprès du directeur général de l'INPI dans le délai de deux mois suivant la publication de la demande, soit au plus tard le 6 janvier 2027, sur le fondement de sa marque antérieure et du risque de confusion.",
+   "description": "opposition et délai"
+  },
+  {
+   "type": "critere",
+   "critere": "La réponse mentionne aussi la voie de l'action en nullité ou en contrefaçon si le délai est manqué ou si le signe est exploité, sans en faire la voie principale.",
+   "description": "voies voisines",
+   "critique": false
+  }
+ ],
+ "horloge": "2026-11-21T10:00",
+ "budget_minutes": 15
+}

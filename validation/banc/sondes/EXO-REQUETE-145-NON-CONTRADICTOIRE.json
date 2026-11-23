@@ -1,0 +1,49 @@
+{
+  "id": "EXO-REQUETE-145-NON-CONTRADICTOIRE",
+  "capacite": "exercice",
+  "horloge": "2026-11-19T10:00",
+  "budget_minutes": 12,
+  "origine": "module mecanique-des-exercices : civil, mesure in futurum sur requête et motivation de la dérogation au contradictoire (CPC, art. 145, 493 et 495 à 497)",
+  "consigne": "Nous sommes le jeudi 19 novembre 2026. Notre client, une société d'ingénierie, constate que trois de ses ingénieurs, partis le mois dernier chez un concurrent direct, ont copié la veille de leur départ ses fichiers de clients et ses devis en cours : le journal informatique de l'entreprise montre les téléchargements, datés. Depuis, deux clients importants ont signé avec ce concurrent. Le client veut agir contre le concurrent en concurrence déloyale, mais il n'a aucune preuve de l'usage des fichiers chez lui et craint qu'ils disparaissent si le concurrent est prévenu. Aucune procédure n'est engagée. Quel acte engages-tu, devant qui, pour obtenir quoi, et quelle condition décide de son succès ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier. Termine par une ligne de la forme « EXERCICE RETENU : … » qui nomme l'acte ou la démarche que tu engages en premier, avec son texte.",
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "exercice retenu.{0,700}(requête.{0,600}145|145.{0,400}requête)",
+      "description": "choix : requête de l'article 145, non contradictoire"
+    },
+    {
+      "type": "contient_tous",
+      "motifs": [
+        "contradictoire",
+        "(déroger|dérogation|surprise)"
+      ],
+      "description": "condition décisive : circonstances qui justifient de déroger au contradictoire"
+    },
+    {
+      "type": "contient",
+      "motif": "motif légitime",
+      "description": "condition du motif légitime"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "séquestre",
+        "mots.clés",
+        "circonscri",
+        "proportionn",
+        "limitée? dans le temps"
+      ],
+      "description": "exigence implicite : mesure circonscrite et proportionnée, séquestre"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "rétractation",
+        "496",
+        "497"
+      ],
+      "description": "prévoit la rétractation",
+      "critique": false
+    }
+  ]
+}

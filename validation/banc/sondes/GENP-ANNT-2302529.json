@@ -1,0 +1,18 @@
+{
+  "id": "GENP-ANNT-2302529",
+  "capacite": "pronostic",
+  "famille": "annulation-ta",
+  "genere": true,
+  "origine": "usine.py, Tribunal administratif de Lyon, 2e chambre · formation à trois, 15 mai 2025, 2302529 (https://librejustice.fr/decision/2Sp6D5thCx-y), issue réelle : non",
+  "fixture": "gen_annt_2302529",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme le tribunal administratif, dis s'il annulera, au moins en partie, la décision attaquée. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2025-05-14T18:00",
+  "coupe": "2025-05-14",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*non\\b",
+      "description": "répond non, comme la juridiction"
+    }
+  ]
+}

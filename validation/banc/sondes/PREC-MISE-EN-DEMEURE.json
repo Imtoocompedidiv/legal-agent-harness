@@ -1,0 +1,20 @@
+{
+ "id": "PREC-MISE-EN-DEMEURE",
+ "capacite": "conseil",
+ "origine": "pôle precontentieux-et-portefeuille : C. com., art. L. 441-10, II (pénalités exigibles sans rappel, indemnité forfaitaire de plein droit) ; C. civ., art. 2240 à 2244 (causes d'interruption de la prescription)",
+ "consigne": "Nous sommes le samedi 21 novembre 2026. Notre client, une entreprise de travaux, n'est pas payé d'une facture de 18 000 euros émise le 15 juillet 2026 à un promoteur, payable à 45 jours. Il veut envoyer une mise en demeure « pour interrompre la prescription et faire courir les pénalités ». Que lui dis-tu, et que doit contenir la lettre ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+ "verifications": [
+  {
+   "type": "critere",
+   "critere": "La réponse corrige le client : une mise en demeure n'interrompt pas la prescription, qui ne l'est que par une demande en justice, une mesure conservatoire, un acte d'exécution forcée ou une reconnaissance du débiteur.",
+   "description": "prescription"
+  },
+  {
+   "type": "critere",
+   "critere": "La réponse dit qu'entre professionnels les pénalités de retard sont exigibles sans rappel le jour suivant la date de règlement et que l'indemnité forfaitaire pour frais de recouvrement est due de plein droit, de sorte que la lettre les réclame sans en faire dépendre la naissance.",
+   "description": "pénalités"
+  }
+ ],
+ "horloge": "2026-11-21T10:00",
+ "budget_minutes": 15
+}

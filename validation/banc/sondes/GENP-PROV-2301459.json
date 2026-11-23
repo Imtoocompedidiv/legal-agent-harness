@@ -1,0 +1,23 @@
+{
+  "id": "GENP-PROV-2301459",
+  "capacite": "pronostic",
+  "famille": "refere-provision-civil",
+  "genere": true,
+  "origine": "usine.py, Cour d'appel de Poitiers, 1re chambre civile, 12 décembre 2023, 23/01459 (https://librejustice.fr/decision/cQioiB3SKWyV), issue réelle relue dans le dispositif le 23 novembre 2026 (champ solution de la base : non) : oui",
+  "fixture": "gen_prov_2301459",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme le juge des référés, dis s'il allouera, au moins en partie, la provision demandée. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2023-12-11T18:00",
+  "coupe": "2023-12-11",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*oui\\b",
+      "description": "répond oui, comme la juridiction (issue relue dans le dispositif le 23 novembre 2026)"
+    }
+  ],
+  "etiquette_corrigee": {
+    "ancienne": "non",
+    "nouvelle": "oui",
+    "raison": "en appel, le champ solution dit si l'appel réussit, pas si la provision est allouée"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "GENP-URGT-2325221",
+  "capacite": "pronostic",
+  "famille": "urgence-titre-renouvellement",
+  "genere": true,
+  "origine": "usine.py, Tribunal administratif de Paris, magistrat désigné, 16 novembre 2023, 2325221 (https://librejustice.fr/decision/_0Tc7De7-PV2), issue réelle : oui",
+  "fixture": "gen_urgt_2325221",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme le juge des référés, dis si la condition d'urgence de ce référé-suspension est remplie. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2023-11-15T18:00",
+  "coupe": "2023-11-15",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*oui\\b",
+      "description": "répond oui, comme la juridiction"
+    }
+  ]
+}

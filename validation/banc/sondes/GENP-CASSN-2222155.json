@@ -1,0 +1,18 @@
+{
+  "id": "GENP-CASSN-2222155",
+  "capacite": "pronostic",
+  "famille": "cassation-a-chercher",
+  "genere": true,
+  "origine": "usine.py, Cour de cassation, 2e chambre civile · formation de section, 11 septembre 2025, 22-22.155 (https://librejustice.fr/decision/E6zjs6_2NbRN), issue réelle : non",
+  "fixture": "gen_cassn_2222155",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme la chambre de la Cour de cassation, dis si l'arrêt attaqué doit être cassé, au moins en partie. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2025-09-10T18:00",
+  "coupe": "2025-09-10",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*non\\b",
+      "description": "répond non, comme la juridiction"
+    }
+  ]
+}

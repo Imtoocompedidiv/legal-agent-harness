@@ -1,0 +1,21 @@
+{
+ "id": "CONS-LOGO-FREELANCE",
+ "capacite": "conseil",
+ "origine": "pôle propriete-intellectuelle : CPI, art. L. 131-3 (mention distincte de chaque droit cédé et délimitation du domaine d'exploitation)",
+ "consigne": "Nous sommes le samedi 21 novembre 2026. Notre client, une jeune société, a fait créer son logo par un graphiste indépendant en 2025, sur simple devis accepté et facture payée de 1 200 euros. Aucun autre document n'a été signé. Il veut maintenant déposer ce logo comme marque et l'imprimer sur ses produits. Est-il propriétaire du logo ? Que faire ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+ "verifications": [
+  {
+   "type": "critere",
+   "critere": "La réponse dit que le paiement de la facture ne transfère pas les droits d'auteur du graphiste et que la cession suppose un écrit mentionnant distinctement chaque droit cédé et délimitant le domaine d'exploitation (étendue, destination, lieu, durée) (CPI, art. L. 131-3).",
+   "description": "formalisme de la cession"
+  },
+  {
+   "type": "critere",
+   "critere": "La réponse recommande de faire signer au graphiste une cession écrite conforme avant le dépôt de la marque et l'exploitation, en signalant le risque qu'un droit d'auteur antérieur fasse obstacle à la marque.",
+   "description": "conduite",
+   "critique": false
+  }
+ ],
+ "horloge": "2026-11-21T10:00",
+ "budget_minutes": 15
+}

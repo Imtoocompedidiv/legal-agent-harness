@@ -1,0 +1,26 @@
+{
+  "id": "RECHERCHE-ARRET-CASSE",
+  "capacite": "recherche",
+  "origine": "demande du client : portée réelle des arrêts",
+  "consigne": "Le client veut invoquer l'arrêt de la cour administrative d'appel de Toulouse du 28 mai 2025, n° 24TL02275, selon lequel un recours gracieux reçu par la mairie après l'expiration du délai ne conserve pas le délai de recours contentieux. Peut-on s'appuyer sur cet arrêt ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "506435",
+      "description": "trouve la décision du Conseil d'État qui l'a cassé"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "cass",
+        "annul"
+      ],
+      "description": "dit que l'arrêt a été annulé"
+    },
+    {
+      "type": "contient",
+      "motif": "expédition",
+      "description": "dit la règle de la date d'expédition"
+    }
+  ]
+}

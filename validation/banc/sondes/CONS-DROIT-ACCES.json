@@ -1,0 +1,21 @@
+{
+ "id": "CONS-DROIT-ACCES",
+ "capacite": "conseil",
+ "origine": "pôle donnees-personnelles : RGPD, art. 12, § 3 (un mois, prolongeable de deux mois avec information dans le premier mois) et art. 15, § 3 et 4",
+ "consigne": "Nous sommes le samedi 21 novembre 2026. Une ancienne salariée de notre client, licenciée en septembre, a envoyé le 2 novembre 2026 un courrier recommandé demandant « la copie de toutes les données me concernant, y compris tous les courriels où je suis mentionnée ». Le client n'a pas encore répondu et pense qu'il a trois mois. Que lui dis-tu ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+ "verifications": [
+  {
+   "type": "critere",
+   "critere": "La réponse dit que le responsable du traitement doit répondre dans un délai d'un mois à compter de la réception de la demande, prolongeable de deux mois compte tenu de la complexité ou du nombre de demandes à condition d'informer la personne de la prolongation et de ses motifs dans le premier mois.",
+   "description": "délai"
+  },
+  {
+   "type": "critere",
+   "critere": "La réponse indique que la copie porte sur les données de la demandeuse, y compris celles contenues dans des courriels, et que le droit d'obtenir une copie ne doit pas porter atteinte aux droits et libertés d'autrui, ce qui peut conduire à occulter les données de tiers.",
+   "description": "étendue",
+   "critique": false
+  }
+ ],
+ "horloge": "2026-11-21T10:00",
+ "budget_minutes": 15
+}

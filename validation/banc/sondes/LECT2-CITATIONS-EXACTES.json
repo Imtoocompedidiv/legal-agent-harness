@@ -1,0 +1,41 @@
+{
+  "id": "LECT2-CITATIONS-EXACTES",
+  "capacite": "lecture",
+  "origine": "refonte recherche : citations confrontées mot pour mot à la source (citation 1 exacte, CE 2 mars 2026 n° 508188 point 2 ; citation 2 altérée, CE 2 juillet 2026 n° 505796 point 2 porte « à la date du jugement statuant sur le recours » ; citation 3 absente de CE 25 mars 2025 n° 499142, qui juge l'inverse)",
+  "consigne": "Un collaborateur a rédigé la note recherche/notes/note_appel.md, qui doit partir au client ce soir. Vérifie chacune de ses trois citations entre guillemets contre la source à laquelle elle est attribuée. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier. Termine par trois lignes de la forme « CITATION n : CONFORME », « CITATION n : INEXACTE » ou « CITATION n : INTROUVABLE », et recopie le passage exact de la source pour chaque citation inexacte.",
+  "budget_minutes": 15,
+  "fichiers": {
+    "recherche/notes/note_appel.md": "# Voie de recours contre les jugements rendus sur les autorisations d'urbanisme en zone tendue\n\nL'article R. 811-1-1 du code de justice administrative prive d'appel certains jugements des tribunaux administratifs. Trois décisions récentes du Conseil d'État en fixent le champ.\n\n1. Le refus de certifier un permis tacite suit le même régime que le permis lui-même : « Elles s'appliquent également aux refus de délivrance de certificats attestant de la naissance de telles autorisations tacites ou de telles décisions tacites de non-opposition à déclaration préalable. » (CE, 2 mars 2026, n° 508188, point 2).\n\n2. L'inscription de la commune sur la liste s'apprécie à la date de l'autorisation : « Ces dispositions s'appliquent aux recours introduits entre le 1er décembre 2013 et le 31 août 2022 contre les décisions relatives à l'occupation des sols qu'elles mentionnent portant en tout ou partie sur le territoire d'une commune lorsque celle-ci figure, à la date de délivrance de l'autorisation, sur la liste annexée au décret du 10 mai 2013 » (CE, 2 juillet 2026, n° 505796, point 2).\n\n3. Le permis modificatif garde une voie d'appel propre : « Le permis de construire modificatif relève toujours du droit commun de l'appel, quel que soit le régime contentieux du permis initial auquel il se rattache. » (CE, 25 mars 2025, n° 499142, point 2).\n\nConclusion : vérifier, avant tout appel, la date d'inscription de la commune et la nature de l'autorisation attaquée.\n"
+  },
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "citation 1 ?\\*{0,2} ?: ?\\*{0,2} ?conforme",
+      "description": "reconnaît la citation exacte"
+    },
+    {
+      "type": "contient",
+      "motif": "citation 2 ?\\*{0,2} ?: ?\\*{0,2} ?inexacte",
+      "description": "repère la citation altérée"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "citation 3 ?\\*{0,2} ?: ?\\*{0,2} ?introuvable",
+        "citation 3 ?\\*{0,2} ?: ?\\*{0,2} ?inexacte"
+      ],
+      "description": "repère la citation qui n'existe pas dans la décision"
+    },
+    {
+      "type": "contient",
+      "motif": "date du jugement statuant sur le recours",
+      "description": "recopie le passage exact de la décision n° 505796"
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__get_decision",
+      "description": "lit les décisions",
+      "critique": false
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "DOCT-EMPIRIQUE-POPULATION",
+  "capacite": "doctrine",
+  "origine": "demande du client : données empiriques citées avec leur population et leurs limites",
+  "consigne": "Plaidoirie sur la peine devant un tribunal correctionnel : nous voulons appuyer un argument sur l'écart des peines d'emprisonnement prononcées en France entre les hommes et les femmes. Il existe une étude économétrique publiée dans une revue à comité de lecture qui exploite l'ensemble des condamnations prononcées en France sur plusieurs années et mesure aussi l'effet de la composition des juridictions. Trouve-la et lis au moins son résumé publié. Donne la référence complète vérifiée (revue, volume, pages, DOI), la population étudiée (champ et période), l'ampleur de l'écart mesuré, la solidité et les limites de l'étude pour l'usage envisagé, et la manière de la citer dans une écriture. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "outils": "Agent,Task,Read,Write,Edit,Glob,Grep,Bash,PowerShell,TodoWrite,mcp__librejustice__search_decisions,mcp__librejustice__get_decision,mcp__librejustice__search_norms,mcp__librejustice__get_norm,mcp__hal__search_hal,mcp__hal__lookup_reference,mcp__shs_fr__theses_search,mcp__shs_fr__theses_get,mcp__shs_fr__isidore_search,mcp__shs_fr__sudoc_search,mcp__shs_fr__gallica_search,mcp__academic_papers__search_openalex,mcp__academic_papers__search_crossref,mcp__academic_papers__get_crossref_paper_by_doi,mcp__academic_papers__search_semantic,mcp__academic_papers__search_core,mcp__academic_papers__search_base,mcp__academic_papers__search_doaj,mcp__academic_papers__search_hal,mcp__academic_papers__search_ssrn,mcp__academic_papers__search_unpaywall,mcp__academic_papers__read_hal_paper,mcp__academic_papers__read_ssrn_paper,mcp__academic_papers__get_citing_papers,mcp__academic_papers__get_referenced_papers,mcp__asta__search_paper_by_title,mcp__asta__get_paper,mcp__asta__search_papers_by_relevance,mcp__asta__snippet_search",
+  "budget_minutes": 12,
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "ecca\\.12333",
+      "description": "trouve l'étude publiée par son DOI"
+    },
+    {
+      "type": "contient_tous",
+      "motifs": [
+        "2000",
+        "2003"
+      ],
+      "description": "donne la période de la population étudiée"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "15 jours",
+        "quinze jours",
+        "15 days"
+      ],
+      "description": "lit juste l'ampleur de l'écart"
+    },
+    {
+      "type": "contient",
+      "motif": "economica",
+      "description": "nomme la revue",
+      "critique": false
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "33 ?%",
+        "33 pour cent"
+      ],
+      "description": "rapporte l'écart à la peine moyenne",
+      "critique": false
+    }
+  ]
+}

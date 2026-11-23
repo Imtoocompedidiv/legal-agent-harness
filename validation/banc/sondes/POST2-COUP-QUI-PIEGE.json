@@ -1,0 +1,38 @@
+{
+  "id": "POST2-COUP-QUI-PIEGE",
+  "capacite": "posture",
+  "origine": "refonte posture : exploiter le silence adverse au lieu de le réveiller",
+  "horloge": "2026-11-20T09:00",
+  "consigne": "Nous représentons un agent municipal qui conteste devant le tribunal administratif la sanction disciplinaire que la commune lui a infligée. La requête et ses pièces ont été communiquées à la commune le 1er septembre 2026, avec un délai de deux mois pour produire. Ce délai est expiré depuis le 2 novembre et la commune n'a rien produit. Le client me propose d'écrire au directeur général des services de la commune pour lui rappeler courtoisement qu'il doit répondre au tribunal, pour garder de bonnes relations. Que fais-tu, et pourquoi ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "verifications": [
+    {
+      "type": "contient_un",
+      "motifs": [
+        "612-3",
+        "612-6"
+      ],
+      "description": "demande la mise en demeure qui attache une sanction au silence"
+    },
+    {
+      "type": "contient",
+      "motif": "acquiesc",
+      "description": "nomme l'acquiescement aux faits"
+    },
+    {
+      "type": "critere",
+      "critere": "La réponse refuse ou déconseille d'envoyer à la commune le rappel proposé par le client.",
+      "description": "refuse la main tendue qui ne rapporte rien"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "pièces du dossier",
+        "contredit",
+        "contraire au dossier",
+        "inexactitude"
+      ],
+      "description": "connaît la limite de l'acquiescement",
+      "critique": false
+    }
+  ]
+}

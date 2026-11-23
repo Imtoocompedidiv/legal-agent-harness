@@ -1,0 +1,39 @@
+{
+  "id": "EXO-CADA-SAISINE-PREALABLE",
+  "capacite": "exercice",
+  "horloge": "2026-11-19T10:00",
+  "budget_minutes": 12,
+  "origine": "module mecanique-des-exercices : administratif, recours préalable obligatoire devant la CADA (CRPA, art. L. 342-1, R. 311-13, R. 343-1 ; CE, 18 novembre 2015, n° 383189)",
+  "consigne": "Nous sommes le jeudi 19 novembre 2026. Notre client, une association de riverains, a demandé à sa commune, par une lettre recommandée reçue le 2 septembre 2026, la communication des rapports de contrôle de la qualité de l'eau du réseau communal pour les années 2024 et 2025. La commune n'a jamais répondu. Le président de l'association veut saisir dès cette semaine le tribunal administratif pour obtenir ces documents. Quel acte engages-tu, devant qui, dans quel délai, et quelle condition décide de son succès ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier. Termine par une ligne de la forme « EXERCICE RETENU : … » qui nomme l'acte ou la démarche que tu engages en premier, avec son texte.",
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "exercice retenu.{0,200}(cada|commission d.accès)",
+      "description": "choix : saisine de la CADA"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "irrecevab",
+        "obligatoire",
+        "342-1"
+      ],
+      "description": "condition décisive : saisine préalable obligatoire de la commission"
+    },
+    {
+      "type": "contient",
+      "motif": "deux mois",
+      "description": "exigence implicite : délai de deux mois pour saisir la commission"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "refus implicite",
+        "silence.{0,80}(un mois|refus)",
+        "2 octobre"
+      ],
+      "description": "refus implicite né après un mois",
+      "critique": false
+    }
+  ]
+}

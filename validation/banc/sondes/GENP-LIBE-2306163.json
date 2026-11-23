@@ -1,0 +1,18 @@
+{
+  "id": "GENP-LIBE-2306163",
+  "capacite": "pronostic",
+  "famille": "liberte-eloignement",
+  "genere": true,
+  "origine": "usine.py, Tribunal administratif de Lille, magistrat désigné, 25 juillet 2023, 2306163 (https://librejustice.fr/decision/nYR2esVEdohV), issue réelle : non",
+  "fixture": "gen_libe_2306163",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme le juge des référés, dis s'il fera droit, au moins en partie, à cette demande de référé-liberté. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2023-07-24T18:00",
+  "coupe": "2023-07-24",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*non\\b",
+      "description": "répond non, comme la juridiction"
+    }
+  ]
+}

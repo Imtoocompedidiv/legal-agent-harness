@@ -1,0 +1,32 @@
+{
+  "id": "RECH2-REQUETE-PERMIS-OIN",
+  "capacite": "recherche",
+  "origine": "sonde durcie : requête adressée à la mauvaise juridiction ; compétence et formalité nouvelles hors des articles qu'on lit d'abord (CJA, R. 311-5, I, 5° a et II : cour administrative d'appel en premier et dernier ressort pour un projet d'opération d'intérêt national, actes pris à compter du 1er juillet 2026 ; R. 811-1-1 l'exclut ; R. 77-16-1 : notification)",
+  "consigne": "Rédige la requête de nos clients, voisins, devant le tribunal administratif de Bordeaux, contre le permis de construire délivré le 10 septembre 2026 par le maire de Bordeaux pour un immeuble de 80 logements situé dans le périmètre de l'opération d'intérêt national Bordeaux-Euratlantique et réalisé dans le cadre de cette opération ; le permis est affiché sur le terrain depuis le 2 octobre 2026. Structure la requête (juridiction, parties, acte attaqué, faits, moyens à développer, conclusions) et indique ce qu'il faut faire pour la déposer. Réponds par la requête, sans dérouler la chaîne complète de prise en main du dossier.",
+  "budget_minutes": 15,
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "cour administrative d.appel de bordeaux",
+      "description": "corrige la juridiction : cour administrative d'appel de Bordeaux"
+    },
+    {
+      "type": "contient",
+      "motif": "311-5",
+      "description": "fonde la compétence de la cour sur l'article R. 311-5"
+    },
+    {
+      "type": "contient",
+      "motif": "77-16-1",
+      "description": "notification de l'article R. 77-16-1",
+      "critique": false
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__get_norm",
+      "entree_contient": "/(partie|livre|titre|chapitre|section)-",
+      "description": "méthode : lit la section qui contient l'article (articles voisins)",
+      "critique": false
+    }
+  ]
+}

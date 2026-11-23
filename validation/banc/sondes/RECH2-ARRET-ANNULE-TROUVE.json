@@ -1,0 +1,35 @@
+{
+  "id": "RECH2-ARRET-ANNULE-TROUVE",
+  "capacite": "recherche",
+  "origine": "refonte recherche : décision trouvée par l'agent puis défaite par sa suite (CAA Marseille, 6 mai 2025, n° 24MA00153, sur la réciprocité et l'élevage non déclaré, annulé par CE 2 juillet 2026 n° 505796)",
+  "consigne": "Notre client a obtenu un permis de construire une maison à quarante mètres d'une bergerie, dans les Hautes-Alpes. L'éleveur voisin attaque le permis devant le tribunal administratif de Marseille en invoquant la règle de réciprocité de l'article L. 111-3 du code rural et de la pêche maritime. Son élevage n'a jamais fait l'objet de la déclaration préalable prévue par le règlement sanitaire départemental. Rédige le paragraphe du mémoire en défense qui répond à ce moyen, avec la jurisprudence administrative la plus récente et la plus proche, lue à la source, numéros à l'appui. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "budget_minutes": 15,
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "111-3",
+      "description": "article L. 111-3 du code rural"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "505796",
+        "^(?![\\s\\S]*24ma00153)"
+      ],
+      "description": "n'invoque pas l'arrêt annulé sans dire qu'il l'est"
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__get_decision",
+      "description": "lit les décisions",
+      "critique": false
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__search_decisions",
+      "entree_contient": "legal_article",
+      "description": "méthode : cherche la jurisprudence par l'article (legal_article)",
+      "critique": false
+    }
+  ]
+}

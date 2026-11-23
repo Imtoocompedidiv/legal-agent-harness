@@ -1,0 +1,11 @@
+Version : v49-cass
+Issue réelle : non
+
+**Oui, 80 %.**
+
+1. L'arrêt de Nîmes a statué sur la discrimination syndicale au vu des conclusions de février 2023. Il a écarté celles du 18 juin 2024 pour deux raisons : le dispositif de l'arrêt mixte du 3 octobre 2023 n'invitait pas à conclure, et aucune révocation de la clôture n'avait été prononcée. Les deux raisons supposent que l'ordonnance de clôture produisait encore ses effets après le sursis.
+2. La deuxième chambre civile a jugé le contraire dans [Civ. 2e, 5 juin 1996, n° 93-20.885](https://librejustice.fr/decision/9COXGhb7mLfX), arrêt publié. Une cour d'appel avait sursis à statuer, par arrêt, après la clôture, dans l'attente d'une décision pénale. La Cour a jugé que ce sursis avait mis fin aux effets de la clôture : elle n'avait pas à être révoquée et les conclusions déposées après l'événement attendu étaient recevables. Le fait décisif se retrouve ici, puisque le sursis a été prononcé par arrêt, après la clôture et dans l'attente d'une autre décision.
+3. Les deux motifs de Nîmes ne répondent donc pas à la vraie question. Le moyen vise à juste titre les articles 378, 802 et 803 du code de procédure civile. L'arrêt ne contient aucun autre motif qui justifierait l'irrecevabilité. Le grief est réel : la salariée a été jugée sur des écritures antérieures à l'arrêt de la Cour de cassation du 20 décembre 2023. La cassation devrait atteindre l'irrecevabilité et, par voie de conséquence, le débouté au titre de la discrimination, les dépens et l'article 700.
+4. La société Nextalk invoquera Civ. 3e, 7 septembre 2017, n° 16-18.777, d'après son sommaire. Une réouverture des débats sans révocation de la clôture y laisse irrecevables les conclusions postérieures. L'hypothèse est différente : une réouverture des débats n'est pas un sursis, qui suspend l'instance. Ce qui retient l'estimation sous 90 %, c'est que la règle de 1996 est ancienne et que je n'ai pas trouvé de confirmation récente.
+
+J'ai lu en entier le dossier remis, l'arrêt attaqué et l'arrêt du 5 juin 1996. Je n'ai lu que le sommaire des autres décisions, et je n'ai pas lu les articles 378, 802 et 803 à la source.

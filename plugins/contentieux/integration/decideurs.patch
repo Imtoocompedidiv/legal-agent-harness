@@ -1,0 +1,160 @@
+--- a/scripts/gate.py
++++ b/scripts/gate.py
+@@ -396,6 +396,12 @@
+         CAMPAGNE.controler_theorie(racine, ecriture, c)
+         CAMPAGNE.controler_sequence(racine, ecriture, fiche, c)
+ 
++    # Les décideurs : profil de la juridiction qui recevra l'acte et de l'institution adverse, et lecture à froid rendue
++    # sur ce profil (skill lecture-des-decideurs ; structure et règles dans decideurs.py).
++    if juridictionnel:
++        import decideurs as DECIDEURS
++        DECIDEURS.controler(racine, ecriture, fiche, c)
++
+     # Le récit : théorie du cas écrite et éprouvée par un lecteur profane sur la version exacte.
+     if juridictionnel:
+         recit = L.lire_json(racine / "ecritures/controle" / f"{ecriture.stem}.recit.json")
+--- a/scripts/hook.py
++++ b/scripts/hook.py
+@@ -92,6 +92,13 @@
+         lignes.append(f"Théorie de l'affaire ({theorie.get('date')}) : question « {retenue.get('question')} » ; qualification « {retenue.get('qualification')} ».")
+     else:
+         lignes.append("Aucune théorie de l'affaire (strategie/theorie.json) : l'établir sur pièces avant la séquence et toute écriture.")
++    profil = L.lire_json(racine / "strategie/decideurs.json") or {}
++    if isinstance(profil.get("decideurs"), list) and profil["decideurs"]:
++        d0 = next((d for d in profil["decideurs"] if isinstance(d, dict) and d.get("nature") == "juridiction"), profil["decideurs"][0])
++        lignes.append(f"Profil des décideurs ({profil.get('date')}) : {d0.get('institution')}, {d0.get('formation')} ; contrôle "
++                      f"{(d0.get('standard_de_controle') or {}).get('niveau')} ; adversaire « {(profil.get('adversaire') or {}).get('designation')} ».")
++    else:
++        lignes.append("Aucun profil des décideurs (strategie/decideurs.json) : l'établir avant tout acte juridictionnel (skill lecture-des-decideurs).")
+     sequence = L.lire_json(racine / "strategie/sequence.json") or {}
+     coups = [k for k in sequence.get("ordre_des_coups", []) or [] if isinstance(k, dict) and k.get("statut") not in ("joue", "abandonne")]
+     if coups:
+@@ -322,6 +329,16 @@
+         if alertes:
+             contexte("PostToolUse", "Fiche d'analyse écrite, avec des alertes :\n- " + "\n- ".join(alertes[:10]))
+         sys.exit(0)
++    if rel == "strategie/decideurs.json":
++        import decideurs as DECIDEURS
++        _, constats = DECIDEURS.charger(racine)
++        bloquants = [f"{k['code']} : {k['message']}" for k in constats if k["gravite"] == "BLOQUANT"]
++        alertes = [f"{k['code']} : {k['message']}" for k in constats if k["gravite"] == "ALERTE"]
++        if bloquants:
++            sortie({"decision": "block", "reason": "Profil des décideurs invalide, à reprendre maintenant :\n- " + "\n- ".join(bloquants[:20])})
++        if alertes:
++            contexte("PostToolUse", "Profil des décideurs enregistré, avec des alertes :\n- " + "\n- ".join(alertes[:10]))
++        sys.exit(0)
+     if rel in L.SCHEMAS:
+         erreurs = L.valider_fichier(racine, rel)
+         if rel == "preuves/matrice.json" and not erreurs:
+--- a/scripts/juridiction.py
++++ b/scripts/juridiction.py
+@@ -7,7 +7,7 @@
+   python juridiction.py conditions --type refere_suspension
+ 
+ Écrit dans le dossier d'affaire courant :
+-  procedure/profil_<code>.md            issues, motifs de tri, juges, exemples
++  procedure/profil_<code>.md            issues, motifs de tri, exemples (aucun nom ni taux de magistrat : CJA, art. L. 10)
+   procedure/calibrage_<code>.md         calibrage équilibré du juge simulé : taux observés, refus et accueils au filtre et après
+                                         instruction, en nombre égal, tous antérieurs à la borne, la décision de l'affaire exclue
+   procedure/exemples_tri_<code>.md      motifs littéraux des seules ordonnances de tri (ancien calibrage, conservé pour mémoire)
+@@ -106,13 +106,9 @@
+         motifs.append("doute_serieux")
+     if re.search(r"irrecevab|r\. ?522-1|requête distincte", considerants):
+         motifs.append("irrecevabilite")
+-    juge = None
+-    m = re.search(r"a désigné (M\.|Mme|Monsieur|Madame) ([A-ZÉÈ][\w'\-]+(?: [A-ZÉÈ][\w'\-]+)?)", t)
+-    if m:
+-        juge = m.group(2)
+     decisifs = [p for p in propres if re.search(r"doute sérieux|urgence|irrecevab|522-3|rejet|annul|erreur|examen|illégal|méconn", p.lower())]
+     motif_txt = " ".join(decisifs[-2:]) if decisifs else (" ".join(propres[-2:]) if propres else "")
+-    return {"issue": issue, "motifs": motifs, "juge": juge, "motif_texte": motif_txt[:1400]}
++    return {"issue": issue, "motifs": motifs, "motif_texte": motif_txt[:1400]}
+ 
+ 
+ def classer_fond(t: str) -> dict:
+@@ -163,7 +159,7 @@
+     bas = t.lower()
+     arts = articles_dispositif(t)
+     corps = " ".join(arts).lower()
+-    if arts and any(ACCUEIL.search(a.lower()) for a in arts):
++    if arts and any(ACCUEIL.search(a.lower()) and "amende" not in a.lower() for a in arts):
+         issue = "accueil"
+     elif arts and re.search(r"rejet|irrecevable|n.est pas admis|non-admission", corps):
+         issue = "refus"
+@@ -398,7 +394,7 @@
+         try:
+             t = texte(a.code, s["Identification"], cache)
+         except Exception as e:  # noqa: BLE001
+-            lignes.append({**s, "issue": "inaccessible", "motifs": [], "juge": None, "motif_texte": str(e)[:200]})
++            lignes.append({**s, "issue": "inaccessible", "motifs": [], "motif_texte": str(e)[:200]})
+             continue
+         refere = "juge des référés" in t.lower() or "l. 521-" in t.lower()
+         lignes.append({**s, **(classer(t) if refere else {**classer(t), **classer_fond(t)}), "refere": refere,
+@@ -406,20 +402,16 @@
+     refs = [l for l in lignes if l.get("refere")]
+     issues = collections.Counter(l["issue"] for l in refs)
+     motifs = collections.Counter(m for l in refs if l["issue"] == "tri" for m in l["motifs"])
+-    juges = collections.defaultdict(collections.Counter)
+-    for l in refs:
+-        juges[l.get("juge") or "non identifié"][l["issue"]] += 1
++    # Aucun décompte par magistrat : la réutilisation de son identité pour analyser ou prédire ses pratiques est un délit
++    # (CJA, art. L. 10, al. 4 ; COJ, art. L. 111-13 ; C. pén., art. 226-18).
+     out = [f"# Profil de {a.code} sur les requêtes {', '.join(repr(q) for q in a.requete)}",
+            "", f"Décisions publiées lues depuis le {a.depuis} : {len(lignes)}, dont {len(refs)} en référé. Classement automatique par motifs du texte, à contrôler sur les exemples avant usage. Base ouverte incomplète et diffusée avec retard ; ces nombres décrivent la pratique publiée, pas la chance d'un dossier.",
+            "", "## Issues des référés", ""]
+     out += [f"- {k} : {v}" for k, v in issues.most_common()]
+     out += ["", "## Motifs des ordonnances de tri", ""] + [f"- {k} : {v}" for k, v in motifs.most_common()]
+-    out += ["", "## Par juge désigné", ""]
+-    for j, c in sorted(juges.items(), key=lambda x: -sum(x[1].values())):
+-        out.append(f"- {j} : " + ", ".join(f"{k} {v}" for k, v in c.most_common()))
+-    out += ["", "## Décisions", "", "| Date | N° | Issue | Motifs | Juge |", "| --- | --- | --- | --- | --- |"]
++    out += ["", "## Décisions", "", "| Date | N° | Issue | Motifs |", "| --- | --- | --- | --- |"]
+     for l in refs:
+-        out.append(f"| {l.get('Date_Lecture')} | {l.get('Numero_Dossier')} | {l['issue']} | {', '.join(l['motifs'])} | {l.get('juge') or ''} |")
++        out.append(f"| {l.get('Date_Lecture')} | {l.get('Numero_Dossier')} | {l['issue']} | {', '.join(l['motifs'])} |")
+     (racine / "procedure").mkdir(exist_ok=True)
+     (racine / f"procedure/profil_{a.code}.md").write_text("\n".join(out) + "\n", encoding="utf-8")
+     ex = [f"# Comment {a.code} trie : motifs littéraux d'ordonnances de tri publiées", "",
+--- a/skills/controle-avant-depot/SKILL.md
++++ b/skills/controle-avant-depot/SKILL.md
+@@ -26,7 +26,7 @@
+ 
+ ## 1 bis. Préalables exigés par le contrôle
+ 
+-Pour toute écriture juridictionnelle, `gate.py` bloque tant que manquent : les canaux de notification relevés dans leur fréquence (`etat/canaux.json`, `affaire.py canal controle`) ; un audit de terrain récent (`terrain/audit.json`, moins de trois jours pour un référé, quatorze sinon, skill `action-sur-le-reel`) ; une ligne stratégique complète et postérieure à la dernière pièce citée (`strategie/ligne.json`, skill `strategie-contentieuse`) ; une revue de charpente du dossier entier par l'`architecte-strategique`, postérieure à la ligne, couvrant l'acte, sans point dirimant ouvert ; le récit (`<nom>.recit.json`) et sa lecture par le `lecteur-profane` sur l'empreinte exacte (skill `recit-judiciaire`). Un moyen qui s'appuie sur une déclaration de l'adversaire la référence dans la fiche (`declarations_adverses`) ; le registre `adverse/declarations.json`, tenu par l'`analyste-adverse`, doit en donner le paragraphe entier et les autres pièces du même auteur lues, et ne pas la dire contredite.
++Pour toute écriture juridictionnelle, `gate.py` bloque tant que manquent : les canaux de notification relevés dans leur fréquence (`etat/canaux.json`, `affaire.py canal controle`) ; un audit de terrain récent (`terrain/audit.json`, moins de trois jours pour un référé, quatorze sinon, skill `action-sur-le-reel`) ; une ligne stratégique complète et postérieure à la dernière pièce citée (`strategie/ligne.json`, skill `strategie-contentieuse`) ; une revue de charpente du dossier entier par l'`architecte-strategique`, postérieure à la ligne, couvrant l'acte, sans point dirimant ouvert ; le récit (`<nom>.recit.json`) et sa lecture par le `lecteur-profane` sur l'empreinte exacte (skill `recit-judiciaire`) ; le profil des décideurs (`strategie/decideurs.json`, skill `lecture-des-decideurs`), valide, de moins de 180 jours, couvrant l'acte, désignant la juridiction qui le recevra avec un calibrage qui montre ce qui passe et ce qui échoue devant elle, et antérieur à la ligne ou inscrit dans `profil_decideurs_applique`. Un moyen qui s'appuie sur une déclaration de l'adversaire la référence dans la fiche (`declarations_adverses`) ; le registre `adverse/declarations.json`, tenu par l'`analyste-adverse`, doit en donner le paragraphe entier et les autres pièces du même auteur lues, et ne pas la dire contredite.
+ 
+ ## 1 ter. Preuve documentaire
+ 
+@@ -38,7 +38,7 @@
+ 
+ ## 3. Lecture à froid
+ 
+-Produire l'extrait de tri et l'empreinte par `affaire.py extrait-tri <brouillon>`. Lancer le sous-agent `juge-simule` en lui donnant seulement le chemin de l'extrait, le chemin du brouillon, l'empreinte, le chemin de sortie `ecritures/controle/<nom>.lecture_froid.json`, le type de juge, le fichier de calibrage de la juridiction (`juridiction.py profil`, ordonnances de tri pour un référé, jugements au fond pour une instance au fond), les pièces telles qu'elles seront produites et, hors des stades de filtrage, la défense écrite d'abord par le sous-agent `avocat-adverse`, qui ne voit que l'acte et les pièces, comme le juge réel statue après l'échange des mémoires. Ne lui donner ni nos notes, ni la fiche, ni notre espoir. Il écrit `decision_claire`, `question_claire`, `demande_claire`, `issue_au_tri`, `issue`, `motifs`, `ordonnance_probable`. Le hook n'autorise que ce sous-agent à écrire la lecture à froid, et que le contradicteur à écrire la contradiction ; la session principale peut seulement porter le statut des points tranchés. Si l'écriture d'un sous-agent est refusée, vérifier que le dossier n'est pas rangé dans le répertoire du plugin, que Claude Code protège.
++Produire l'extrait de tri et l'empreinte par `affaire.py extrait-tri <brouillon>`. Lancer le sous-agent `juge-simule` en lui donnant seulement le chemin de l'extrait, le chemin du brouillon, l'empreinte, le chemin de sortie `ecritures/controle/<nom>.lecture_froid.json`, le type de juge, le fichier de calibrage de la juridiction (`juridiction.py profil`, ordonnances de tri pour un référé, jugements au fond pour une instance au fond), la fiche du décideur produite par `decideurs.py fiche-juge` (`procedure/calibrage_decideur_<id>.md` : standard de contrôle, taux de base, culture, ce qui passe et ce qui échoue, sans nos leviers ni nos choix), dont il reporte l'empreinte dans `profil_decideur_sha256`, les pièces telles qu'elles seront produites et, hors des stades de filtrage, la défense écrite d'abord par le sous-agent `avocat-adverse`, qui ne voit que l'acte et les pièces, comme le juge réel statue après l'échange des mémoires. Ne lui donner ni nos notes, ni la fiche, ni notre espoir. Il écrit `decision_claire`, `question_claire`, `demande_claire`, `issue_au_tri`, `issue`, `motifs`, `ordonnance_probable`. Le hook n'autorise que ce sous-agent à écrire la lecture à froid, et que le contradicteur à écrire la contradiction ; la session principale peut seulement porter le statut des points tranchés. Si l'écriture d'un sous-agent est refusée, vérifier que le dossier n'est pas rangé dans le répertoire du plugin, que Claude Code protège.
+ 
+ Le juge simulé est un garde-fou, pas un oracle. Non calibré, il s'est montré plus indulgent que le juge réel lors des essais (`docs/ESSAIS.md`) : le calibrer sur la juridiction par `juridiction.py profil` et lui donner les exemples de tri produits. Son issue favorable ne lève jamais un bloquant, et son issue défavorable en crée un.
+ 
+--- a/tests/test_contentieux.py
++++ b/tests/test_contentieux.py
+@@ -329,13 +329,19 @@
+         ecrire(self.r / "strategie/sequence.json", sequence_conforme(maintenant, "ref", "refere_suspension", maintenant))
+         ecrire(self.r / "ecritures/controle/ref.recit.json", {"theorie_du_cas": "t", "fil": ["f"], "neutralisation_adverse": "n",
+                                                              "pourquoi_accorder_est_sur": "p", "theorie_date": maintenant})
++        import decideurs as DEC
++        from test_decideurs import profil_complet
++        profil = profil_complet()
++        profil.update({"date": maintenant, "actes_couverts": ["ref"]})
++        ecrire(self.r / "strategie/decideurs.json", profil)
+         v = gate.controler(f)
+         self.assertEqual(self.codes(v), {"LECTURE_PROFANE_ABSENTE", "LECTURE_FROID_ABSENTE", "CONTRADICTION_ABSENTE"})
+         sha = L.sha256_fichier(f)
+         ecrire(self.r / "ecritures/controle/ref.lecture_profane.json", {"sha256": sha, "a_compris_la_demande": True,
+                "restitution": "Un avis médical du 10 mars 2026 préconise un aménagement que le directeur n'a pas examiné."})
+         ecrire(self.r / "ecritures/controle/ref.lecture_froid.json", {"sha256": sha, "decision_claire": True, "question_claire": True,
+-                                                                      "demande_claire": True, "issue": "audience", "motifs": []})
++                                                                      "demande_claire": True, "issue": "audience", "motifs": [],
++                                                                      "profil_decideur_sha256": DEC.empreinte_fiche(profil, profil["decideurs"][0])})
+         ecrire(self.r / "ecritures/controle/ref.contradiction.json", {"points": [{"id": 1, "objection": "o", "statut": "applique"}]})
+         v = gate.controler(f)
+         self.assertEqual(v["verdict"], "PASS", v["constats"])

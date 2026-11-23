@@ -1,0 +1,26 @@
+{
+ "id": "CONS-CESSION-SALARIES-PME",
+ "capacite": "conseil",
+ "origine": "pôle societes-et-operations : C. com., art. L. 23-10-1 dans sa rédaction issue de la loi n° 2026-403 du 26 mai 2026 (art. 22), applicable aux ventes conclues deux mois au moins après sa promulgation : information des salariés au plus tard un mois avant la vente dans les sociétés sans obligation de CSE à attributions élargies ; amende civile de 0,5 % au plus",
+ "consigne": "Nous sommes le samedi 21 novembre 2026. Notre client détient 70 % des actions d'une SAS de 30 salariés, dont il est le président. Il veut vendre sa participation à un concurrent, la signature est prévue le 15 décembre 2026. Rien n'a été dit aux salariés. Que doit-il faire avant la vente, dans quel délai, et que risque-t-il ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+ "verifications": [
+  {
+   "type": "critere",
+   "critere": "La réponse dit que les salariés doivent être informés de la vente au plus tard un mois avant celle-ci, pour leur permettre de présenter une offre (C. com., art. L. 23-10-1, modifié en 2026), et non deux mois.",
+   "description": "délai d'un mois"
+  },
+  {
+   "type": "critere",
+   "critere": "La réponse en déduit que la signature du 15 décembre 2026 n'est possible que si l'information est faite au plus tard le 15 novembre, donc déjà trop tard, sauf si chaque salarié a fait connaître qu'il ne présentera pas d'offre, ou qu'il faut décaler la signature.",
+   "description": "calendrier"
+  },
+  {
+   "type": "critere",
+   "critere": "La réponse indique que la sanction est une amende civile plafonnée à 0,5 % du prix de vente, prononcée à la demande du ministère public dans une action en responsabilité, et non la nullité de la vente.",
+   "description": "sanction",
+   "critique": false
+  }
+ ],
+ "horloge": "2026-11-21T10:00",
+ "budget_minutes": 15
+}

@@ -1,0 +1,11 @@
+Version : v49-annt
+Issue réelle : non
+
+**Oui, 55 %.** Le résultat le plus probable reste une annulation au moins partielle, mais la marge est mince. La requête est dans le délai, et le moyen tiré des travaux non régularisés repose sur des faits précis que les défendeurs n'ont pas réfutés.
+
+1. **Délai.** Le recours gracieux du 13 juillet 2022 a été formé moins de deux mois après le permis du 17 mai 2022. À cette date, il prorogeait encore le délai en urbanisme (cette prorogation ne disparaît qu'à compter du 28 novembre 2025). Le rejet implicite est né le 13 septembre 2022. Le délai expirait le dimanche 13 novembre et se reportait donc au lundi 14, jour où la requête a été enregistrée. La commune n'oppose d'ailleurs aucune tardiveté.
+2. **Intérêt à agir.** M. F est propriétaire de la parcelle mitoyenne et invoque une vue nouvelle sur son terrain. La commune conteste cet intérêt en termes généraux, ce qui ne devrait pas suffire face à un voisin immédiat qui précise l'atteinte.
+3. **Moyen décisif : la régularisation de l'existant (jurisprudence *Thalamy*).** Le requérant cite des travaux non autorisés : cuisine d'été, terrasses, piscine, et surtout le sous-sol du parking, non déclaré. C'est précisément là que l'extension doit être créée. Si ces travaux sont irréguliers, le permis devait couvrir l'ensemble de la construction. M. E se borne à dire que les moyens ne sont pas fondés, et la commune n'a produit qu'en novembre 2024 : ces faits précis, contestés seulement en bloc, pèsent pour l'annulation. Les règles de l'article UD 7 (retrait de 4 mètres) et de l'article UD 9 (emprise au sol de 40 %) peuvent aussi fonder une annulation partielle (article L. 600-5).
+4. **Ce qui joue contre.** Le taux d'annulation de base est bas. Le projet est modeste (19 m² en sous-sol). La preuve de l'irrégularité de l'existant repose sur les seules pièces du requérant. Enfin, le juge peut surseoir à statuer pour permettre une régularisation (article L. 600-5-1) au lieu d'annuler.
+
+Lu en entier : `dossier_remis.md`. Je n'ai lu à la source ni le PLU, ni les textes cités, ni la jurisprudence.

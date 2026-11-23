@@ -1,0 +1,38 @@
+{
+  "id": "RECH2-JURISPRUDENCE-CERTIFICAT-TACITE",
+  "capacite": "recherche",
+  "origine": "refonte recherche : décision récente trouvée par l'article qu'elle interprète (CE, 2 mars 2026, n° 508188, mentionné aux tables : R. 811-1-1 s'applique au refus de certificat de permis tacite, jugement en dernier ressort, cassation)",
+  "consigne": "Par un jugement du 2 octobre 2026, notifié le 6 octobre, le tribunal administratif de Toulon a annulé le refus implicite du maire d'Hyères de délivrer à une société le certificat attestant qu'elle est titulaire d'un permis de construire tacite pour un immeuble de vingt logements, et lui a enjoint de le délivrer. La requête avait été enregistrée le 20 septembre 2024. La commune, notre cliente, veut contester ce jugement. Quelle voie de recours, devant quelle juridiction et dans quel délai ? Appuie la réponse sur les textes et la jurisprudence lus à la source, avec le numéro des décisions. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier. Termine par une ligne de la forme « JURIDICTION : <juridiction à saisir> ».",
+  "budget_minutes": 15,
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "508188",
+      "description": "trouve la décision du Conseil d'État qui tranche le cas du certificat"
+    },
+    {
+      "type": "contient",
+      "motif": "juridiction \\*{0,2} ?: ?\\*{0,2} ?(le )?conseil d.[ée]tat",
+      "description": "désigne le Conseil d'État"
+    },
+    {
+      "type": "contient",
+      "motif": "cassation",
+      "description": "voie de la cassation"
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__search_decisions",
+      "entree_contient": "legal_article",
+      "description": "cherche la jurisprudence par l'article",
+      "critique": false
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__get_norm",
+      "entree_contient": "/(partie|livre|titre|chapitre|section)-",
+      "description": "méthode : lit la section qui contient l'article (articles voisins)",
+      "critique": false
+    }
+  ]
+}

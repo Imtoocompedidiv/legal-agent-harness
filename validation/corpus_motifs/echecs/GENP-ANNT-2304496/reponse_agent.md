@@ -1,0 +1,8 @@
+Version : v49-annt
+Issue réelle : oui
+
+**Non, 70 %.**
+
+Le tribunal rejettera très probablement la requête, soit parce qu'il n'existe pas de décision à attaquer, soit sur le fond. Le préfet soutient qu'aucune décision de refus n'est née, et M. A... n'a pas répliqué par une pièce : l'extrait ne mentionne aucun mémoire de sa part après la défense du 9 mars 2026. Une demande de titre « salarié », surtout par admission exceptionnelle, se dépose par le téléservice ou en personne en préfecture. Si elle a été envoyée par simple courrier, le silence du préfet ne fait pas naître de refus implicite et la requête est irrecevable. Le délai de recours, lui, ne pose pas de problème apparent : aucun accusé de réception mentionnant les voies et délais n'est signalé. Si un dépôt régulier est établi, le refus existe et le juge passe au fond, où les deux moyens sont faibles. Le défaut de motivation d'un refus implicite n'est utile que si les motifs ont été demandés, et rien ne l'indique. L'erreur manifeste d'appréciation est soulevée sans fait précis. Le risque contraire, environ 30 %, tient à une preuve de dépôt dans les pièces non reproduites, suivie d'une insertion professionnelle solide.
+
+Ce pronostic est un jugement d'expérience : je n'ai lu aucune source, ni le CESEDA, ni le code des relations entre le public et l'administration, ni la jurisprudence. J'ai lu en entier dossier_remis.md, qui ne reproduit que la procédure et les prétentions des parties, sans les pièces.

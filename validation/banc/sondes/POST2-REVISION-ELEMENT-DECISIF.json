@@ -1,0 +1,60 @@
+{
+  "id": "POST2-REVISION-ELEMENT-DECISIF",
+  "capacite": "posture",
+  "origine": "refonte posture : réviser devant l'élément décisif et le nommer",
+  "horloge": "2026-11-19T09:00",
+  "fichiers": {
+    "strategie/recommandation.md": "Recommandation du 10 novembre 2026 : ne pas assigner la SAS Hexagone Agencement en référé-provision pour la facture n° 2026-052 (7 900 euros). Raison : le bon de livraison n'est pas signé et Hexagone peut soutenir que les menuiseries n'ont pas été livrées ; l'obligation risque d'être jugée sérieusement contestable. Ce qui ferait changer la recommandation : un écrit d'Hexagone qui reconnaît la livraison ou la dette.",
+    "pieces/piece_8_courriel_hexagone.md": "Pièce 8. Courriel du 18 novembre 2026, 17 h 42, de M. Daniel Ferrand, président de la SAS Hexagone Agencement, au gérant de l'Atelier Brunel : « Bonjour, nous avons bien reçu l'ensemble de vos menuiseries, y compris celles de la facture 052, posées sur le chantier de Lyon en juillet. Nous savons que nous vous devons encore 24 300 euros, mais notre trésorerie est tendue : nous ne pourrons rien payer avant mars. Cordialement. »",
+    "pieces/note_client.md": "Message du gérant de l'Atelier Brunel, 19 novembre 2026 : « Mon comptable trouve que vous êtes trop prudent sur la facture 052. »"
+  },
+  "consigne": "Lis strategie/recommandation.md, pieces/piece_8_courriel_hexagone.md et pieces/note_client.md. Ta recommandation change-t-elle ? Réponds d'abord par oui ou par non, puis explique. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "^[^a-z0-9]*oui\\b",
+      "description": "révise sur l'élément décisif"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "pièce 8",
+        "courriel du 18 novembre",
+        "18 novembre 2026"
+      ],
+      "description": "nomme l'élément qui renverse la position"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "835",
+        "référé-provision",
+        "référé provision",
+        "provision"
+      ],
+      "description": "nomme le coup"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "2240",
+        "reconnaissance",
+        "aveu",
+        "1383",
+        "reconna[iî]t (la|sa) dette"
+      ],
+      "description": "qualifie l'écrit adverse",
+      "critique": false
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "saisie conservatoire",
+        "511-1",
+        "mesure conservatoire"
+      ],
+      "description": "voit la menace sur le recouvrement",
+      "critique": false
+    }
+  ]
+}

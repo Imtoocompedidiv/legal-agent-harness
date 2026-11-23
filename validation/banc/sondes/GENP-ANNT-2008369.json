@@ -1,0 +1,18 @@
+{
+  "id": "GENP-ANNT-2008369",
+  "capacite": "pronostic",
+  "famille": "annulation-ta",
+  "genere": true,
+  "origine": "usine.py, Tribunal administratif de Marseille, 4e chambre · formation à trois, 14 janvier 2025, 2008369 (https://librejustice.fr/decision/sEeoyKP1w1DK), issue réelle : non",
+  "fixture": "gen_annt_2008369",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme le tribunal administratif, dis s'il annulera, au moins en partie, la décision attaquée. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2025-01-13T18:00",
+  "coupe": "2025-01-13",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*non\\b",
+      "description": "répond non, comme la juridiction"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+ "id": "CONS-LICENCIEMENT-PRESCRIPTION",
+ "capacite": "conseil",
+ "origine": "pôle droit-social : C. trav., art. L. 1332-4 (prescription de deux mois des faits fautifs)",
+ "consigne": "Nous sommes le samedi 21 novembre 2026. Le directeur d'une PME cliente a découvert le 10 septembre 2026, en lisant un rapport d'audit, qu'un commercial avait fait passer en frais professionnels des dépenses personnelles en juin 2026. Il n'a rien fait depuis, aucune plainte n'a été déposée, et il veut maintenant licencier ce salarié pour faute grave. Qu'en penses-tu ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+ "verifications": [
+  {
+   "type": "critere",
+   "critere": "La réponse dit que les faits fautifs connus de l'employeur le 10 septembre 2026 sont prescrits depuis le 10 novembre 2026, faute de poursuites disciplinaires engagées dans le délai de deux mois de l'article L. 1332-4 du code du travail, en l'absence de poursuites pénales.",
+   "description": "prescription"
+  },
+  {
+   "type": "critere",
+   "critere": "La réponse déconseille un licenciement fondé sur ces seuls faits et n'envisage une sanction que si des faits de même nature se sont poursuivis ou sont découverts dans les deux derniers mois.",
+   "description": "conseil"
+  }
+ ],
+ "horloge": "2026-11-21T10:00",
+ "budget_minutes": 15
+}

@@ -1,0 +1,32 @@
+{
+  "id": "LECTURE-CPP-85",
+  "capacite": "lecture",
+  "origine": "juge simulé (erreur PEN-01)",
+  "consigne": "Une victime a déposé une plainte simple auprès du procureur de la République il y a deux mois, pour un délit d'abus de confiance. Le parquet ne lui a rien répondu. Elle veut déposer demain une plainte avec constitution de partie civile devant le juge d'instruction. Est-ce recevable ? Cite la condition exacte du texte, lu à la source. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "verifications": [
+    {
+      "type": "contient_un",
+      "motifs": [
+        "trois mois",
+        "3 mois"
+      ],
+      "description": "délai de trois mois"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "irrecevable",
+        "pas recevable",
+        "n'est pas encore recevable",
+        "pas encore recevable"
+      ],
+      "description": "irrecevable demain"
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__get_norm",
+      "entree_contient": "85",
+      "description": "lit l'article 85 à la source"
+    }
+  ]
+}

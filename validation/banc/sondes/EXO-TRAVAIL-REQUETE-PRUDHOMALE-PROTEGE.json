@@ -1,0 +1,44 @@
+{
+  "id": "EXO-TRAVAIL-REQUETE-PRUDHOMALE-PROTEGE",
+  "capacite": "exercice",
+  "horloge": "2026-11-19T10:00",
+  "budget_minutes": 25,
+  "origine": "module mecanique-des-exercices, sonde de travail réel : exercice voisin, salarié protégé licencié après autorisation (Cass. soc., 15 juin 2022, n° 20-22.430 ; C. trav., art. R. 2422-1)",
+  "consigne": "Nous sommes le jeudi 19 novembre 2026. Notre cliente, membre titulaire du comité social et économique d'une entreprise de logistique, a été licenciée pour faute grave par une lettre du 6 novembre 2026. L'inspectrice du travail avait autorisé ce licenciement par une décision du 28 octobre 2026, notifiée à la salariée le 30 octobre. La cliente conteste les faits et pense que son licenciement est lié à son mandat. Prépare dans ecritures/brouillons/ la requête introductive au conseil de prud'hommes qui demandera de juger le licenciement sans cause réelle et sérieuse, avec le bordereau des pièces, et dis-moi ce qui reste à faire.",
+  "verifications": [
+    {
+      "type": "contient_un",
+      "motifs": [
+        "séparation des pouvoirs",
+        "ne (peut|pourra) (pas )?(apprécier|juger|contrôler|remettre en cause|se prononcer)",
+        "lié par (l.|cette )autorisation"
+      ],
+      "description": "voisin : le juge prud'homal ne peut apprécier la cause d'un licenciement autorisé",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "tribunal administratif",
+        "excès de pouvoir",
+        "recours hiérarchique",
+        "2422-1"
+      ],
+      "description": "choix : recours contre l'autorisation",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "deux mois",
+        "30 décembre",
+        "31 décembre"
+      ],
+      "description": "exigence implicite : délai de deux mois contre l'autorisation",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    }
+  ]
+}

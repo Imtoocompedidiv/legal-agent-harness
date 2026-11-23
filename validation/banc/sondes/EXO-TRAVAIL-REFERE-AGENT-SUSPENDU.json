@@ -1,0 +1,45 @@
+{
+  "id": "EXO-TRAVAIL-REFERE-AGENT-SUSPENDU",
+  "capacite": "exercice",
+  "horloge": "2026-11-19T10:00",
+  "budget_minutes": 25,
+  "origine": "module mecanique-des-exercices, sonde de travail réel : référé préparé alors que l'urgence tombe (traitement maintenu, délai légal de quatre mois ; CE, réf., 27 septembre 2022, n° 467617)",
+  "consigne": "Nous sommes le jeudi 19 novembre 2026. Notre client, ingénieur territorial, a été suspendu de ses fonctions à titre conservatoire par un arrêté du maire du 2 novembre 2026, notifié le 4 novembre, dans l'attente d'une procédure disciplinaire pour des faits qu'il conteste. L'arrêté maintient l'intégralité de son traitement. Il veut retrouver son poste au plus vite et dit que son absence nuit à sa réputation auprès des élus. Prépare dans ecritures/brouillons/ la requête en référé-suspension et sa fiche de l'acte, prêtes pour le contrôle avant dépôt, puis dis-moi où nous en sommes et ce que je dois dire au client.",
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "(traitement.{0,250}urgence|urgence.{0,250}traitement)",
+      "description": "condition décisive : l'urgence face au traitement maintenu",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    },
+    {
+      "type": "contient",
+      "motif": "quatre mois",
+      "description": "exigence implicite : rétablissement de droit au terme de quatre mois",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "ne pas déposer",
+        "déconseill",
+        "ne (le |la )?dépose(rai|rais|rons)? pas",
+        "pas de référé",
+        "ne recommande pas",
+        "en réserve",
+        "(rejet|rejeté|rejetée|tri|trié|triée).{0,60}(faute|défaut) d.urgence",
+        "(faute|défaut) d.urgence.{0,120}(rejet|tri)",
+        "urgence.{0,80}(fait|fera|ferait) défaut",
+        "chances? (faibles?|minces?|réduites?)",
+        "rejet(é|ée)?s? au tri",
+        "l.urgence manque",
+        "perdre (notre|sa|votre|la) seule"
+      ],
+      "description": "choix : ne pas déposer le référé, ou dire qu'il échouera faute d'urgence",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "RECH2-REQUETE-DUP-ROUTIERE",
+  "capacite": "recherche",
+  "origine": "sonde durcie : rédaction d'une requête adressée à la mauvaise juridiction, avec une formalité nouvelle créée hors de l'article de compétence (CJA, R. 311-5, I, 2° et II : cour administrative d'appel en premier et dernier ressort ; R. 77-16-1 : notification du recours dans les quinze jours à peine d'irrecevabilité ; actes pris à compter du 1er juillet 2026)",
+  "consigne": "Rédige la requête de l'association de riverains, créée en 2019 pour la protection du cadre de vie de la commune, devant le tribunal administratif de Toulouse, contre l'arrêté du 15 septembre 2026, publié au recueil des actes administratifs de la préfecture le 6 octobre 2026, par lequel le préfet de la Haute-Garonne a déclaré d'utilité publique les travaux de création d'une déviation routière de sept kilomètres, d'un coût estimé à 38 millions d'euros hors taxes, projet soumis à évaluation environnementale. Structure la requête (juridiction, parties, acte attaqué, faits, moyens à développer, conclusions) et indique ce qu'il faut faire pour la déposer. Réponds par la requête, sans dérouler la chaîne complète de prise en main du dossier.",
+  "budget_minutes": 15,
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "cour administrative d.appel de toulouse",
+      "description": "corrige la juridiction : cour administrative d'appel de Toulouse"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "311-5",
+        "premier et dernier ressort"
+      ],
+      "description": "fonde la compétence de la cour"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "77-16-1",
+        "notifi[\\s\\S]{0,250}(quinze|15) jours"
+      ],
+      "description": "prévoit la notification du recours à peine d'irrecevabilité"
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__get_norm",
+      "entree_contient": "/(partie|livre|titre|chapitre|section)-",
+      "description": "méthode : lit la section qui contient l'article (articles voisins)",
+      "critique": false
+    }
+  ]
+}

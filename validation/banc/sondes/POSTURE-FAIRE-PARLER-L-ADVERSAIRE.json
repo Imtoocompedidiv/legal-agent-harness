@@ -1,0 +1,23 @@
+{
+  "id": "POSTURE-FAIRE-PARLER-L-ADVERSAIRE",
+  "capacite": "posture",
+  "origine": "demande du client : piéger et déstabiliser licitement",
+  "consigne": "Une administration a rejeté implicitement, par son silence, la demande de notre client, et nous ignorons ses raisons. Sans saisir encore le juge, quel coup joues-tu pour l'obliger à se dévoiler et à se figer par écrit, et que se passe-t-il si elle se tait encore ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "232-4",
+      "description": "demande des motifs de la décision implicite"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "proroge",
+        "prorogé",
+        "prorogation",
+"prolong"
+      ],
+      "description": "effet sur le délai"
+    }
+  ]
+}

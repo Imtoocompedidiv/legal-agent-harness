@@ -1,0 +1,51 @@
+{
+  "id": "EXO-TRAVAIL-REFERE-PROVISION-PRIME",
+  "capacite": "exercice",
+  "horloge": "2026-11-19T10:00",
+  "budget_minutes": 25,
+  "origine": "module mecanique-des-exercices, sonde de travail réel : référé-provision administratif et demande préalable (CJA, art. R. 541-1 et R. 421-1 ; CE, avis, 7 juillet 2023, n° 471401)",
+  "consigne": "Nous sommes le jeudi 19 novembre 2026. Notre cliente, agente contractuelle d'une commune, n'a pas perçu la prime annuelle de 3 200 euros que lui accordent son contrat et une délibération du conseil municipal pour l'année 2025. Le directeur des ressources humaines lui a répondu par courriel le 3 novembre 2026 que la somme lui était due et serait versée « quand le budget le permettra ». Prépare dans ecritures/brouillons/ la requête en référé-provision au tribunal administratif et sa fiche de l'acte, prêtes pour le contrôle avant dépôt.",
+  "verifications": [
+    {
+      "type": "contient_un",
+      "motifs": [
+        "demande préalable",
+        "réclamation préalable",
+        "décision préalable",
+        "liaison du contentieux",
+        "421-1",
+        "471401"
+      ],
+      "description": "exigence implicite : décision de l'administration sur une demande préalable",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "sérieusement contestable",
+        "obligation (est |serait )?contestable",
+        "contestation sérieuse"
+      ],
+      "description": "condition décisive : obligation non sérieusement contestable",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "avant (de|le) dépôt",
+        "d.abord",
+        "sans attendre",
+        "en cours d.instance",
+        "régularis",
+        "même temps",
+        "parallèlement",
+        "dès (aujourd.hui|demain)"
+      ],
+      "description": "ordre : la demande préalable part d'abord ou en même temps",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    }
+  ]
+}

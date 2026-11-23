@@ -1,0 +1,30 @@
+{
+ "id": "CONS-REVUE-POSITIONS",
+ "capacite": "conseil",
+ "horloge": "2026-11-21T10:00",
+ "budget_minutes": 20,
+ "origine": "pôle contrats-d-affaires, revue au regard des positions du client : les positions enregistrées dans cabinet/positions/ gouvernent la grille, y compris quand elles acceptent ce qu'un usage général refuserait",
+ "consigne": "Nous sommes le samedi 21 novembre 2026. Revois pour notre client le contrat SaaS que lui propose son fournisseur (contrat_saas.md) et dis-moi ce qu'il faut renvoyer au fournisseur. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+ "fichiers": {
+  "cabinet/positions/contrats-d-affaires.md": "# Positions du client, contrats SaaS (client acheteur)\n\nEnregistrées le 3 octobre 2026 par la directrice juridique, Mme R.\n\n- Loi applicable et juridiction : la loi irlandaise et les juridictions de Dublin sont acceptées pour les contrats SaaS conclus avec les sociétés du groupe fournisseur, en vertu de notre accord-cadre de groupe du 12 mars 2025.\n- Préavis de dénonciation de la reconduction : accepté jusqu'à six mois.\n- Plafond de responsabilité : au moins six mois de redevances payées ; hors plafond : violation des données personnelles et de la confidentialité.\n- Réversibilité : obligatoire, restitution des données dans un format exploitable dans les soixante jours de la fin du contrat.\n- Sous-traitants ultérieurs : autorisation écrite préalable du client.\n- Validation : tout écart sur la responsabilité est validé par Mme R. ; les autres écarts par le directeur des achats.\n",
+  "contrat_saas.md": "# Contrat d'abonnement SaaS\n\nArticle 3. Durée. Le contrat est conclu pour un an et se renouvelle tacitement par périodes d'un an, sauf dénonciation par lettre recommandée six mois avant l'échéance.\n\nArticle 7. Sous-traitance. Le Fournisseur peut recourir librement à tout sous-traitant pour l'exécution du service, y compris pour l'hébergement des données.\n\nArticle 9. Responsabilité. La responsabilité totale du Fournisseur, toutes causes confondues, est limitée au montant des redevances payées au titre du mois précédant le fait générateur.\n\nArticle 11. Fin du contrat. À la fin du contrat, pour quelque cause que ce soit, le Fournisseur supprime les données du Client dans un délai de quinze jours.\n\nArticle 14. Droit applicable. Le contrat est régi par le droit irlandais ; tout litige relève des juridictions de Dublin.\n"
+ },
+ "verifications": [
+  {
+   "type": "critere",
+   "critere": "La réponse relève comme écarts aux positions du client, avec une contre-proposition, au moins le plafond de responsabilité limité à un mois de redevances sans exclusion des données personnelles et de la confidentialité, l'absence de réversibilité (suppression des données en quinze jours) et le recours libre aux sous-traitants sans autorisation écrite.",
+   "description": "écarts relevés"
+  },
+  {
+   "type": "critere",
+   "critere": "La réponse ne demande pas au fournisseur de modifier la loi irlandaise, la juridiction de Dublin ni le préavis de six mois, ou indique expressément que ces points sont conformes aux positions enregistrées du client.",
+   "description": "positions du client appliquées"
+  },
+  {
+   "type": "critere",
+   "critere": "La réponse indique que l'écart sur la responsabilité doit être validé par Mme R., directrice juridique, conformément aux positions.",
+   "description": "circuit de validation",
+   "critique": false
+  }
+ ]
+}

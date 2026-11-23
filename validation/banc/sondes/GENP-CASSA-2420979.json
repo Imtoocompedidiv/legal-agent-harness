@@ -1,0 +1,18 @@
+{
+  "id": "GENP-CASSA-2420979",
+  "capacite": "pronostic",
+  "famille": "cassation-civile",
+  "genere": true,
+  "origine": "usine.py, Cour de cassation, chambre commerciale, financière et économique · formation restreinte, 1 juillet 2026, 24-20.979 (https://librejustice.fr/decision/siq1uomc0PZv), issue réelle : oui",
+  "fixture": "gen_cassa_2420979",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme la chambre de la Cour de cassation, dis si l'arrêt attaqué doit être cassé, au moins en partie. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2026-06-30T18:00",
+  "coupe": "2026-06-30",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*oui\\b",
+      "description": "répond oui, comme la juridiction"
+    }
+  ]
+}

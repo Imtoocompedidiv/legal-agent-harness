@@ -1,0 +1,24 @@
+{
+  "id": "GENM-MOY-2411295",
+  "capacite": "moyen",
+  "famille": "moyen-gagnant",
+  "genere": false,
+  "origine": "usine.py, Cour de cassation, 1re chambre civile · formation restreinte, 17 décembre 2025, 24-11.295 (https://librejustice.fr/decision/tdYMKs-Iy08L), grief retenu par la Cour",
+  "fixture": "gen_moy_2411295",
+  "consigne": "Lis dossier_remis.md. Tu es avocat aux Conseils, chargé du pourvoi décrit en tête du dossier contre l'arrêt qui suit. Propose au plus trois moyens de cassation, du plus fort au plus faible : pour chacun, le texte ou le principe invoqué, le cas d'ouverture et le chef de l'arrêt critiqué, en cinq lignes au plus. Réponds directement, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2025-12-16T18:00",
+  "coupe": "2025-12-16",
+  "verifications": [
+    {
+      "type": "critere",
+      "description": "trouve le grief que la Cour a retenu",
+      "critere": "Au moins un des moyens proposés correspond au grief que la Cour de cassation a retenu pour casser l'arrêt : même texte ou même principe, appliqué au même point de l'arrêt. Grief retenu par la Cour : « Vu les articles L. 212-1, alinéa 1er, et R. 212-1, 6° et 7°, du code de la consommation, dans leur rédaction issue respectivement de l'ordonnance n° 2016-131 du 10 février 2016 et du décret n° 2016-884 du 29 juin 2016 : 6. Aux termes du premier texte, dans les contrats conclus entre professionnels et consommateurs, sont abusives les clauses qui ont pour objet ou pour effet de créer, au détriment du consommateur, un déséquilibre significatif entre les droits et obligations des parties au contrat. 7. Par application du second, sont de manière irréfragable présumées abusives et dès lors interdites, les clauses de ces contrats ayant pour objet ou pour effet, conformément au 6°, de supprimer ou réduire le droit à réparation du préjudice subi par le consommateur en cas de manquement par le professionnel à l'une quelconque de ses obligations, et conformément au 7° d'interdire au consommateur le droit de demander la résolution ou la résiliation du contrat en cas d'inexécution par le professionnel de ses obligations de délivrance ou de garantie d'un bien ou de son obligation de fourniture d'un service. 8. Pour écarter le caractère abusif de la clause, l'arrêt relève que le contrat souscrit entre les parties comporte un risque à la charge de M. [R] en ce qu'il lui revient d'examiner le véhicule lors de sa prise en charge, aucune disposition ne lui interdisant de recourir à un sachant, et que son attention a été attirée sur l'examen nécessaire du véhicule, ce qui permet de rétablir l'équilibre entre les parties sur ce point. 9. En se déterminant ainsi, sans rechercher si la clause par laquelle le locataire reconnaît la délivrance du véhicule dans un état satisfaisant aux conditions imposées par le code de la route, sans réserver les désordres non apparents au moment de la prise en »"
+    },
+    {
+      "type": "critere",
+      "critique": false,
+      "description": "le place en premier",
+      "critere": "Le premier moyen proposé est ce grief retenu par la Cour (même texte ou même principe, même point de l'arrêt)."
+    }
+  ]
+}

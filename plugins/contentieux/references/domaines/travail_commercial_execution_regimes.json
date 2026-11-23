@@ -1,0 +1,454 @@
+[
+  {
+    "type_acte": "saisine_prudhommes",
+    "domaine": "travail",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": ["contrat_de_travail_entre_les_parties", "competence_territoriale", "action_non_prescrite_selon_la_nature_de_chaque_demande", "interet_et_qualite", "chefs_de_demande_motives_et_pieces"],
+    "texte": "C. trav., art. L. 1411-1, L. 1411-4, R. 1412-1, R. 1452-1, R. 1452-2, R. 1453-1, R. 1453-2, L. 1471-1, L. 3245-1, L. 1134-5, L. 1235-7, L. 1237-14, L. 1234-20 ; CPC, art. 54, 57, 122 ; C. civ., art. 2228, 2229, 2241",
+    "sources": [
+      {"reference": "C. trav., art. L. 1411-1 (version du 1er mai 2008)", "url": "https://librejustice.fr/norm/fr/code-du-travail/l1411-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. trav., art. L. 1411-4 (version du 1er mai 2008)", "url": "https://librejustice.fr/norm/fr/code-du-travail/l1411-4", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. trav., art. R. 1412-1 (version du 1er mai 2008)", "url": "https://librejustice.fr/norm/fr/code-du-travail/r1412-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. trav., art. R. 1452-1 (version du 1er janvier 2020)", "url": "https://librejustice.fr/norm/fr/code-du-travail/r1452-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. trav., art. R. 1452-2 (version du 1er octobre 2026)", "url": "https://librejustice.fr/norm/fr/code-du-travail/r1452-2", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. trav., art. R. 1453-1 et R. 1453-2", "url": "https://librejustice.fr/norm/fr/code-du-travail/r1453-2", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. trav., art. L. 1471-1 (version du 1er avril 2018)", "url": "https://librejustice.fr/norm/fr/code-du-travail/l1471-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. trav., art. L. 3245-1 (version du 17 juin 2013)", "url": "https://librejustice.fr/norm/fr/code-du-travail/l3245-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. trav., art. L. 1134-5 (version du 1er janvier 2017)", "url": "https://librejustice.fr/norm/fr/code-du-travail/l1134-5", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. trav., art. L. 1235-7 (version du 22 décembre 2017)", "url": "https://librejustice.fr/norm/fr/code-du-travail/l1235-7", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. trav., art. L. 1237-14 (version du 27 juin 2008)", "url": "https://librejustice.fr/norm/fr/code-du-travail/l1237-14", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. trav., art. L. 1234-20 (version du 27 juin 2008)", "url": "https://librejustice.fr/norm/fr/code-du-travail/l1234-20", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPC, art. 57 (version du 1er janvier 2020)", "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/57", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. civ., art. 2228 et 2229", "url": "https://librejustice.fr/norm/fr/code-civil/2229", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Cass. soc., 18 févr. 2026, n° 24-22.645, F-D (texte intégral)", "url": "https://librejustice.fr/decision/54ONjUsM9Rxl", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Cass. soc., 9 oct. 2024, n° 23-11.360, F-B (texte intégral)", "url": "https://librejustice.fr/decision/gAK_mYiSaxEB", "lu_en_entier": true, "lu_le": "2026-11-20"},
+      {"reference": "Cass. soc., 7 oct. 2026, n° 25-11.362, FS-B (texte intégral)", "url": "https://librejustice.fr/decision/KOY2VEexZqha", "lu_en_entier": true, "lu_le": "2026-11-20"}
+    ],
+    "pieges": [
+      "Le délai de douze mois de l'action portant sur la rupture court de la notification de la rupture (L. 1471-1, al. 2) ; la chambre sociale exclut le jour de l'événement et vise la réception de la lettre recommandée (Cass. soc., 18 févr. 2026, inédit). Retenir la date la plus courte, calculée depuis l'envoi de la lettre.",
+      "Chaque chef de demande a son propre délai : rupture (12 mois), exécution (2 ans), salaire (3 ans), discrimination (5 ans à compter de la révélation), licenciement économique (12 mois), rupture conventionnelle (12 mois depuis l'homologation). Qualifier chaque demande avant de conclure qu'elle n'est pas prescrite.",
+      "Harcèlement moral : cinq ans (C. civ., art. 2224), y compris pour la rupture fondée sur lui (Cass. soc., 9 oct. 2024, n° 23-11.360) ; manquement à l'obligation de prévention du harcèlement moral : deux ans, comme toute action portant sur l'exécution du contrat (L. 1471-1 ; Cass. soc., 7 oct. 2026, n° 25-11.362). Le délai du harcèlement sexuel n'a pas été vérifié.",
+      "La requête porte les mentions de l'article 57 du CPC à peine de nullité, un exposé sommaire des motifs, chacun des chefs de demande, un bordereau de pièces et le dernier bulletin de salaire (R. 1452-2).",
+      "Les litiges d'accident du travail et de maladie professionnelle attribués par le code de la sécurité sociale échappent au conseil de prud'hommes (L. 1411-4, al. 2).",
+      "Le reçu pour solde de tout compte non dénoncé dans les six mois est libératoire pour les sommes qui y figurent (L. 1234-20)."
+    ]
+  },
+  {
+    "type_acte": "refere_prudhommal",
+    "domaine": "travail",
+    "juge": "judiciaire",
+    "refere": true,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": ["contrat_de_travail_entre_les_parties", "obligation_non_serieusement_contestable"],
+    "texte": "C. trav., art. R. 1455-7, R. 1455-9, R. 1455-10, R. 1455-11, L. 1411-1",
+    "sources": [
+      {"reference": "C. trav., art. R. 1455-1 à R. 1455-11 (chapitre V, lu en entier)", "url": "https://librejustice.fr/norm/fr/code-du-travail/partie-reglementaire/premiere-partie-les-relations/livre-iv/titre-v/chapitre-v", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. trav., art. R. 1455-7", "url": "https://librejustice.fr/norm/fr/code-du-travail/r1455-7", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "R. 1455-7 ne pose pas de condition d'urgence ; il exige que l'existence de l'obligation ne soit pas sérieusement contestable. Les pièces qui établissent la relation de travail et l'obligation invoquée doivent être au dossier.",
+      "Une demande qui suppose de trancher l'existence ou l'étendue du droit relève du fond ; la demander en référé expose au rejet.",
+      "Saisine par acte de commissaire de justice avec copie au greffe au plus tard la veille de l'audience, ou par requête selon R. 1452-1 à R. 1452-4 (R. 1455-9).",
+      "Appel dans les quinze jours (R. 1455-11)."
+    ]
+  },
+  {
+    "type_acte": "refere_prudhommal_urgence",
+    "domaine": "travail",
+    "juge": "judiciaire",
+    "refere": true,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": ["contrat_de_travail_entre_les_parties", "urgence", "absence_de_contestation_serieuse_ou_differend"],
+    "texte": "C. trav., art. R. 1455-5, R. 1455-8, R. 1455-9",
+    "sources": [
+      {"reference": "C. trav., art. R. 1455-5", "url": "https://librejustice.fr/norm/fr/code-du-travail/r1455-5", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. trav., art. R. 1455-8", "url": "https://librejustice.fr/norm/fr/code-du-travail/r1455-8", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "L'urgence doit être établie par des faits datés ; elle n'est pas présumée.",
+      "Le renvoi au bureau de jugement suppose l'accord de toutes les parties et une tentative de conciliation (R. 1455-8)."
+    ]
+  },
+  {
+    "type_acte": "refere_prudhommal_trouble",
+    "domaine": "travail",
+    "juge": "judiciaire",
+    "refere": true,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": ["contrat_de_travail_entre_les_parties", "trouble_manifestement_illicite_ou_dommage_imminent", "mesure_conservatoire_ou_de_remise_en_etat"],
+    "texte": "C. trav., art. R. 1455-6",
+    "sources": [
+      {"reference": "C. trav., art. R. 1455-6", "url": "https://librejustice.fr/norm/fr/code-du-travail/r1455-6", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Le texte permet d'agir même en présence d'une contestation sérieuse, mais seulement pour des mesures conservatoires ou de remise en état ; une condamnation pécuniaire relève de R. 1455-7."
+    ]
+  },
+  {
+    "type_acte": "appel_jugement_prudhomal",
+    "domaine": "travail",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": true,
+    "fond_distinct": false,
+    "conditions": ["jugement_rendu_en_premier_ressort", "appel_dans_le_delai_d_un_mois", "representation_par_avocat_ou_defenseur_syndical"],
+    "texte": "C. trav., art. R. 1461-1, R. 1461-2, R. 1462-1, D. 1462-3, R. 1454-26 ; CPC, art. 528, 668, 680, 643",
+    "sources": [
+      {"reference": "C. trav., art. R. 1461-1 (version du 26 mai 2016)", "url": "https://librejustice.fr/norm/fr/code-du-travail/r1461-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. trav., art. R. 1461-2", "url": "https://librejustice.fr/norm/fr/code-du-travail/r1461-2", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. trav., art. R. 1462-1 et D. 1462-3", "url": "https://librejustice.fr/norm/fr/code-du-travail/d1462-3", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. trav., art. R. 1454-26 (version du 1er juillet 2024)", "url": "https://librejustice.fr/norm/fr/code-du-travail/r1454-26", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPC, art. 528 et 668", "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/668", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Le conseil statue en dernier ressort jusqu'à 5 000 euros de prétentions (R. 1462-1, D. 1462-3) ; l'appel est alors fermé.",
+      "Le délai court de la réception de la lettre recommandée de notification (CPC, art. 668) ; il est augmenté pour l'appelant qui demeure outre-mer ou à l'étranger (CPC, art. 643)."
+    ]
+  },
+  {
+    "type_acte": "assignation_commerciale",
+    "domaine": "commercial",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": ["competence_d_attribution_commerciale", "absence_de_competence_exclusive_d_une_autre_juridiction", "action_non_prescrite", "interet_et_qualite", "fondement_de_la_pretention"],
+    "texte": "C. com., art. L. 721-3, L. 110-4, R. 145-23 ; COJ, art. R. 211-3-26 ; CPC, art. 54, 56, 853 à 858, 860-1, 75, 122 ; C. civ., art. 2224",
+    "sources": [
+      {"reference": "C. com., art. L. 721-3 (version du 1er janvier 2022)", "url": "https://librejustice.fr/norm/fr/code-de-commerce/l721-3", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "COJ, art. R. 211-3-26 (version du 1er janvier 2020)", "url": "https://librejustice.fr/norm/fr/code-de-l-organisation-judiciaire/r211-3-26", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. com., art. R. 145-23 (version du 1er janvier 2020)", "url": "https://librejustice.fr/norm/fr/code-de-commerce/r145-23", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPC, art. 56 (version du 1er octobre 2026)", "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/56", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPC, art. 853 à 878-1 (titre III du livre II, lu en entier)", "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/livre-ii/titre-iii", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. com., art. L. 110-4 (version du 17 juin 2013)", "url": "https://librejustice.fr/norm/fr/code-de-commerce/l110-4", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Loi n° 2023-1059 du 20 novembre 2023, art. 26 (tribunal des activités économiques)", "url": "https://librejustice.fr/norm/fr/loi-n-2023-1059-du-20-novembre-2023-d-orientation-et-de-programmation-du/26", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Les baux commerciaux (sauf fixation du prix), les baux professionnels et les conventions d'occupation précaire en matière commerciale relèvent exclusivement du tribunal judiciaire (COJ, art. R. 211-3-26, 11° ; C. com., art. R. 145-23) : la matière se vérifie en plus de la qualité des parties.",
+      "Assignation délivrée quinze jours au moins avant l'audience (CPC, art. 856) et copie remise au greffe au plus tard huit jours avant, sous peine de caducité (CPC, art. 857).",
+      "Mentions à peine de nullité : articles 54, 56 (rédaction applicable depuis le 1er octobre 2026) et 855 du CPC.",
+      "Avocat obligatoire au-delà de 10 000 euros hors cas de dispense (CPC, art. 853).",
+      "Le point de départ de la prescription quinquennale de L. 110-4 n'est pas fixé par ce texte ; celui de l'article 2224 du code civil n'a pas été confronté à une décision (non vérifié)."
+    ]
+  },
+  {
+    "type_acte": "refere_commercial_provision",
+    "domaine": "commercial",
+    "juge": "judiciaire",
+    "refere": true,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": ["competence_d_attribution_commerciale", "obligation_non_serieusement_contestable"],
+    "texte": "CPC, art. 873, al. 2, 873-1, 490, 855, 856",
+    "sources": [
+      {"reference": "CPC, art. 873 (version du 23 juin 1987)", "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/873", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPC, art. 873-1", "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/873-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPC, art. 490 (version du 19 mars 1986)", "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/490", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Si l'existence de l'obligation est sérieusement contestable, la provision ne peut être accordée (CPC, art. 873, al. 2) ; l'existence de l'obligation doit ressortir des pièces produites.",
+      "Le renvoi à une audience au fond par le juge des référés suppose la demande d'une partie et l'urgence (CPC, art. 873-1).",
+      "Appel dans les quinze jours (CPC, art. 490)."
+    ]
+  },
+  {
+    "type_acte": "refere_commercial_urgence",
+    "domaine": "commercial",
+    "juge": "judiciaire",
+    "refere": true,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": ["competence_d_attribution_commerciale", "urgence", "absence_de_contestation_serieuse_ou_differend"],
+    "texte": "CPC, art. 872, 490",
+    "sources": [
+      {"reference": "CPC, art. 872", "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/872", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": ["L'urgence et l'absence de contestation sérieuse sont cumulatives, sauf mesure justifiée par un différend (CPC, art. 872)."]
+  },
+  {
+    "type_acte": "refere_commercial_trouble",
+    "domaine": "commercial",
+    "juge": "judiciaire",
+    "refere": true,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": ["competence_d_attribution_commerciale", "trouble_manifestement_illicite_ou_dommage_imminent", "mesure_conservatoire_ou_de_remise_en_etat"],
+    "texte": "CPC, art. 873, al. 1, 490",
+    "sources": [
+      {"reference": "CPC, art. 873 (version du 23 juin 1987)", "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/873", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": ["Le texte ouvre des mesures conservatoires ou de remise en état, pas une condamnation au paiement."]
+  },
+  {
+    "type_acte": "requete_injonction_payer",
+    "domaine": "commercial",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": ["creance_contractuelle_statutaire_ou_cambiaire", "montant_determine_et_decompte", "competence_d_attribution_du_juge_saisi", "competence_territoriale_lieu_du_debiteur", "documents_justificatifs_de_la_creance"],
+    "texte": "CPC, art. 1405 à 1411, 1413, 1425",
+    "sources": [
+      {"reference": "CPC, art. 1405 à 1422 (section I, lue en entier)", "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/livre-iii/titre-iv/chapitre-ii/section-i", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPC, art. 1411 (version du 1er avril 2026, applicable aux ordonnances rendues à compter du 1er septembre 2026)", "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/1411", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPC, art. 1411 (version du 1er mars 2022 au 31 mars 2026, lue à la date du 1er juin 2025)", "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/1411", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPC, art. 1425 (version du 20 décembre 2008)", "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/1425", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Compétence territoriale du lieu où demeure le débiteur, d'ordre public et relevée d'office (CPC, art. 1406).",
+      "Ordonnance non avenue si elle n'est pas signifiée dans les trois mois (ordonnances rendues depuis le 1er septembre 2026) ou six mois (régime antérieur) de sa date (CPC, art. 1411).",
+      "Devant le tribunal de commerce, consignation des frais dans les quinze jours de la demande, à peine de caducité (CPC, art. 1425).",
+      "Le rejet de la requête est sans recours, sauf à agir selon le droit commun (CPC, art. 1409)."
+    ]
+  },
+  {
+    "type_acte": "opposition_injonction_payer",
+    "domaine": "commercial",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": true,
+    "fond_distinct": false,
+    "conditions": ["opposition_dans_le_delai", "opposition_portee_devant_la_juridiction_auteur_de_l_ordonnance", "forme_et_mentions_de_l_opposition", "moyens_de_defense_au_fond"],
+    "texte": "CPC, art. 1412 à 1422, 1425",
+    "sources": [
+      {"reference": "CPC, art. 1416 (version du 1er janvier 1982)", "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/1416", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPC, art. 1405 à 1422 (section I, lue en entier)", "url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/livre-iii/titre-iv/chapitre-ii/section-i", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Cass. 2e civ., 6 mars 2025, n° 22-18.166, publié au Bulletin (sommaire officiel)", "url": "https://librejustice.fr/decision/wMFmkWwhrkA1", "lu_en_entier": false, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Le délai d'un mois court de la signification lorsqu'elle est faite à personne ; sinon, du premier acte signifié à personne ou de la première mesure d'exécution rendant les biens indisponibles (CPC, art. 1416).",
+      "L'opposition mentionne l'adresse du débiteur à peine de nullité ; le mandataire non avocat justifie d'un pouvoir spécial (CPC, art. 1415).",
+      "Lire l'acte de signification : il indique si la remise a été faite à personne, ce qui fixe le point de départ."
+    ]
+  },
+  {
+    "type_acte": "declaration_creance",
+    "domaine": "procedures_collectives",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": ["creance_soumise_a_declaration", "declaration_dans_le_delai", "pouvoir_du_declarant", "montant_et_suretes_justifies"],
+    "texte": "C. com., art. L. 622-24, L. 622-25, L. 641-3, R. 622-21 à R. 622-24",
+    "sources": [
+      {"reference": "C. com., art. L. 622-24 (version du 31 décembre 2025)", "url": "https://librejustice.fr/norm/fr/code-de-commerce/l622-24", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. com., art. L. 622-25 (version du 1er octobre 2021)", "url": "https://librejustice.fr/norm/fr/code-de-commerce/l622-25", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. com., art. R. 622-21 à R. 622-26 (section 4, lue en entier)", "url": "https://librejustice.fr/norm/fr/code-de-commerce/partie-reglementaire/livre-vi/titre-ii/chapitre-ii/section-4", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. com., art. L. 641-3 (version du 24 mai 2019)", "url": "https://librejustice.fr/norm/fr/code-de-commerce/l641-3", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Deux mois à compter de la publication au BODACC, plus deux mois pour le créancier qui ne demeure pas sur le territoire métropolitain lorsque la procédure y est ouverte (R. 622-24).",
+      "Le créancier titulaire d'une sûreté publiée court de la notification de l'avertissement personnel (L. 622-24, al. 1).",
+      "En liquidation, la déclaration est adressée au liquidateur (L. 641-3).",
+      "Certaines dispositions de L. 622-24 ne s'appliquent qu'aux procédures ouvertes à compter du 1er janvier 2027 : relire la version applicable selon la date d'ouverture."
+    ]
+  },
+  {
+    "type_acte": "requete_releve_forclusion",
+    "domaine": "procedures_collectives",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": ["action_en_releve_dans_le_delai_de_six_mois", "defaillance_non_imputable_au_creancier_ou_omission_de_la_liste_du_debiteur", "creance_non_declaree_dans_le_delai"],
+    "texte": "C. com., art. L. 622-26, L. 622-6, L. 622-24, R. 622-24, R. 622-25, R. 621-21",
+    "sources": [
+      {"reference": "C. com., art. L. 622-26 (version du 1er octobre 2021)", "url": "https://librejustice.fr/norm/fr/code-de-commerce/l622-26", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. com., art. L. 622-6 (version du 15 mai 2022)", "url": "https://librejustice.fr/norm/fr/code-de-commerce/l622-6", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. com., art. R. 621-21 (version du 1er janvier 2020)", "url": "https://librejustice.fr/norm/fr/code-de-commerce/r621-21", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Cass. com., 23 mai 2024, n° 23-10.699, F-D (texte intégral)", "url": "https://librejustice.fr/decision/B7ZfnnLS204B", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Cass. com., 27 mars 2024, n° 22-21.016, publié au Bulletin (sommaire officiel)", "url": "https://librejustice.fr/decision/3jTs3z0P_H_T", "lu_en_entier": false, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Le délai de six mois court de la publication du jugement d'ouverture ; le seul report prévu tient à l'impossibilité de connaître l'obligation du débiteur avant l'expiration de ce délai (L. 622-26, al. 3).",
+      "L'impossibilité doit être caractérisée ; l'ignorance de l'ouverture de la procédure ou de l'immatriculation du débiteur ne suffit pas (Cass. com., 23 mai 2024, inédit).",
+      "L'omission du créancier sur la liste du débiteur est un motif de relevé (al. 1) ; l'alinéa 3 ne prévoit pas d'autre report du point de départ que l'impossibilité de connaître l'obligation.",
+      "Relevé obtenu, le délai de déclaration court de la notification de la décision et il est réduit de moitié (L. 622-24, al. 1)."
+    ]
+  },
+  {
+    "type_acte": "reponse_contestation_creance",
+    "domaine": "procedures_collectives",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": ["reponse_dans_les_trente_jours_de_la_reception", "justification_de_la_creance_declaree"],
+    "texte": "C. com., art. L. 622-27, R. 624-1, L. 624-1, L. 624-2, R. 624-5, R. 624-7, R. 661-3",
+    "sources": [
+      {"reference": "C. com., art. L. 622-27 (version du 1er juillet 2014)", "url": "https://librejustice.fr/norm/fr/code-de-commerce/l622-27", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. com., art. R. 624-1 (version du 2 juillet 2014)", "url": "https://librejustice.fr/norm/fr/code-de-commerce/r624-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. com., art. L. 624-2 (version du 1er octobre 2021)", "url": "https://librejustice.fr/norm/fr/code-de-commerce/l624-2", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. com., art. R. 624-5 (version du 1er septembre 2017)", "url": "https://librejustice.fr/norm/fr/code-de-commerce/r624-5", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. com., art. R. 624-7 et R. 661-3", "url": "https://librejustice.fr/norm/fr/code-de-commerce/r661-3", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Sans réponse dans les trente jours de la réception de la lettre du mandataire, le créancier ne peut plus contester la proposition, sauf si la discussion porte sur la régularité de la déclaration (L. 622-27, R. 624-1).",
+      "Après renvoi pour contestation sérieuse ou incompétence, la juridiction compétente doit être saisie dans le mois, à peine de forclusion (R. 624-5)."
+    ]
+  },
+  {
+    "type_acte": "demande_revendication",
+    "domaine": "procedures_collectives",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": ["demande_dans_les_trois_mois_de_la_publication", "demande_adressee_a_l_administrateur_ou_au_debiteur", "saisine_du_juge_commissaire_dans_le_delai", "bien_revendique_identifie"],
+    "texte": "C. com., art. L. 624-9, R. 624-13, L. 622-6",
+    "sources": [
+      {"reference": "C. com., art. L. 624-9 (version du 15 février 2009)", "url": "https://librejustice.fr/norm/fr/code-de-commerce/l624-9", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. com., art. R. 624-13 (version du 27 mars 2007)", "url": "https://librejustice.fr/norm/fr/code-de-commerce/r624-13", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "La demande va à l'administrateur ou, à défaut, au débiteur, avec copie au mandataire judiciaire (R. 624-13, al. 1).",
+      "À défaut d'acquiescement dans le mois de la réception, le juge-commissaire doit être saisi dans le mois suivant, sous peine de forclusion (R. 624-13, al. 2).",
+      "Les conditions de fond (réserve de propriété, présence en nature, articles L. 624-10 et suivants) n'ont pas été lues : non vérifié."
+    ]
+  },
+  {
+    "type_acte": "recours_ordonnance_juge_commissaire",
+    "domaine": "procedures_collectives",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": true,
+    "fond_distinct": false,
+    "conditions": ["recours_dans_les_dix_jours", "forme_du_recours_au_greffe", "juridiction_de_recours_selon_l_objet_de_l_ordonnance"],
+    "texte": "C. com., art. R. 621-21, R. 624-7, R. 661-3",
+    "sources": [
+      {"reference": "C. com., art. R. 621-21 (version du 1er janvier 2020)", "url": "https://librejustice.fr/norm/fr/code-de-commerce/r621-21", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. com., art. R. 624-7", "url": "https://librejustice.fr/norm/fr/code-de-commerce/r624-7", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Recours devant le tribunal dans les dix jours de la communication ou de la notification (R. 621-21) ; les ordonnances statuant sur l'admission des créances relèvent de la cour d'appel (R. 624-7)."
+    ]
+  },
+  {
+    "type_acte": "requete_saisie_conservatoire",
+    "domaine": "execution",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": ["creance_paraissant_fondee_en_son_principe", "circonstances_menacant_le_recouvrement", "competence_juge_du_lieu_du_debiteur", "montant_et_biens_vises"],
+    "texte": "CPCE, art. L. 511-1 à L. 511-4, R. 511-1 à R. 511-8, L. 512-1, R. 512-1, R. 523-3 ; COJ, art. L. 213-6",
+    "sources": [
+      {"reference": "CPCE, art. L. 511-1 à L. 511-4 (chapitre lu en entier)", "url": "https://librejustice.fr/norm/fr/code-des-procedures-civiles-d-execution/partie-legislative/livre-v/titre-i/chapitre-i", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPCE, art. R. 511-1 à R. 511-8 (chapitre lu en entier)", "url": "https://librejustice.fr/norm/fr/code-des-procedures-civiles-d-execution/partie-reglementaire/livre-v/titre-i/chapitre-i", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPCE, art. L. 512-1, R. 512-1, R. 512-2", "url": "https://librejustice.fr/norm/fr/code-des-procedures-civiles-d-execution/r512-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPCE, art. R. 523-3 (version du 1er janvier 2021)", "url": "https://librejustice.fr/norm/fr/code-des-procedures-civiles-d-execution/r523-3", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "COJ, art. L. 213-6 (version du 28 mai 2026)", "url": "https://librejustice.fr/norm/fr/code-de-l-organisation-judiciaire/l213-6", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Les deux conditions de L. 511-1 sont cumulatives et le créancier en a la charge de la preuve (R. 512-1).",
+      "Vérifier, pièces à l'appui, que la créance conserve une apparence de fondement au jour de la requête ; la mainlevée peut être ordonnée à tout moment si une condition fait défaut (L. 512-1).",
+      "Exécuter la mesure dans les trois mois de l'ordonnance (R. 511-6), engager la procédure au fond dans le mois de l'exécution (R. 511-7), dénoncer la saisie de créances au débiteur dans les huit jours (R. 523-3).",
+      "Le juge compétent est celui du lieu où demeure le débiteur ; l'incompétence est relevée d'office (R. 511-2, R. 511-3)."
+    ]
+  },
+  {
+    "type_acte": "demande_mainlevee_mesure_conservatoire",
+    "domaine": "execution",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": true,
+    "fond_distinct": false,
+    "conditions": ["juge_competent_pour_la_mainlevee", "defaut_d_une_condition_de_validite_de_la_mesure"],
+    "texte": "CPCE, art. L. 512-1, R. 512-1, R. 512-2, R. 121-11, R. 121-18",
+    "sources": [
+      {"reference": "CPCE, art. L. 512-1 (version du 1er juin 2012)", "url": "https://librejustice.fr/norm/fr/code-des-procedures-civiles-d-execution/l512-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPCE, art. R. 512-2 (version du 1er juin 2012)", "url": "https://librejustice.fr/norm/fr/code-des-procedures-civiles-d-execution/r512-2", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "La demande va au juge qui a autorisé la mesure ; sans autorisation, au juge de l'exécution du lieu où demeure le débiteur (R. 512-2).",
+      "La preuve des conditions pèse sur le créancier (R. 512-1, al. 2)."
+    ]
+  },
+  {
+    "type_acte": "contestation_saisie_attribution",
+    "domaine": "execution",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": true,
+    "fond_distinct": false,
+    "conditions": ["contestation_dans_le_mois_de_la_denonciation", "denonciation_au_commissaire_de_justice_le_jour_meme_ou_le_premier_jour_ouvrable", "information_du_tiers_saisi_et_remise_au_greffe", "motif_de_contestation"],
+    "texte": "CPCE, art. R. 211-11, R. 121-11 ; COJ, art. L. 213-6",
+    "sources": [
+      {"reference": "CPCE, art. R. 211-11 (version du 11 mai 2017)", "url": "https://librejustice.fr/norm/fr/code-des-procedures-civiles-d-execution/r211-11", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPCE, art. R. 121-11 à R. 121-22 (paragraphe lu en entier)", "url": "https://librejustice.fr/norm/fr/code-des-procedures-civiles-d-execution/partie-reglementaire/livre-i/titre-ii/chapitre-i/section-unique/sous-section-2/paragraphe-2", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Irrecevabilité si l'assignation est délivrée après le mois de la dénonciation ou si la contestation n'est pas dénoncée au commissaire de justice saisissant dans le délai (R. 211-11, al. 1).",
+      "Caducité de l'assignation dont la copie n'est pas remise au greffe au plus tard le jour de l'audience (R. 211-11, al. 2)."
+    ]
+  },
+  {
+    "type_acte": "assignation_jex",
+    "domaine": "execution",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": ["competence_du_juge_de_l_execution", "titre_executoire_ou_mesure_d_execution_en_cause", "fondement_de_la_demande"],
+    "texte": "COJ, art. L. 213-6 ; CPCE, art. L. 121-4, R. 121-6, R. 121-11 à R. 121-22",
+    "sources": [
+      {"reference": "COJ, art. L. 213-6 (version du 28 mai 2026)", "url": "https://librejustice.fr/norm/fr/code-de-l-organisation-judiciaire/l213-6", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPCE, art. L. 121-4 (version du 1er juillet 2025) et R. 121-6", "url": "https://librejustice.fr/norm/fr/code-des-procedures-civiles-d-execution/l121-4", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPCE, art. R. 121-11 à R. 121-22 (paragraphe lu en entier)", "url": "https://librejustice.fr/norm/fr/code-des-procedures-civiles-d-execution/partie-reglementaire/livre-i/titre-ii/chapitre-i/section-unique/sous-section-2/paragraphe-2", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "L'assignation reproduit les articles R. 121-8 à R. 121-10 et mentionne les conditions de représentation, à peine de nullité (R. 121-11).",
+      "Appel dans les quinze jours de la notification, sans effet suspensif (R. 121-20, R. 121-21)."
+    ]
+  },
+  {
+    "type_acte": "assignation_liquidation_astreinte",
+    "domaine": "execution",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": ["competence_du_juge_de_la_liquidation", "decision_ordonnant_l_astreinte_signifiee_et_executoire", "periode_de_cours_de_l_astreinte", "inexecution_ou_retard_constate"],
+    "texte": "CPCE, art. L. 131-1 à L. 131-4, R. 131-1 à R. 131-4, R. 121-11",
+    "sources": [
+      {"reference": "CPCE, art. L. 131-1 à L. 131-4 (titre lu en entier)", "url": "https://librejustice.fr/norm/fr/code-des-procedures-civiles-d-execution/partie-legislative/livre-i/titre-iii", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CPCE, art. R. 131-1 à R. 131-4 (chapitre lu en entier)", "url": "https://librejustice.fr/norm/fr/code-des-procedures-civiles-d-execution/partie-reglementaire/livre-i/titre-iii/chapitre-unique", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Le juge de l'exécution liquide l'astreinte, sauf si le juge qui l'a ordonnée reste saisi ou s'est réservé ce pouvoir (L. 131-3) ; l'incompétence est relevée d'office (R. 131-2).",
+      "L'astreinte ne court pas avant le jour où la décision est devenue exécutoire (R. 131-1) : partir de la signification et du délai fixé par la décision.",
+      "Liquidation de l'astreinte provisoire selon le comportement du débiteur et ses difficultés ; suppression en cas de cause étrangère (L. 131-4)."
+    ]
+  },
+  {
+    "type_acte": "assignation_paiement_credit_consommation",
+    "domaine": "consommation",
+    "juge": "judiciaire",
+    "refere": false,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": ["competence_juge_des_contentieux_de_la_protection", "action_dans_les_deux_ans_de_l_evenement", "decheance_du_terme_regulierement_acquise", "clauses_non_abusives", "decompte_de_la_creance"],
+    "texte": "C. consom., art. R. 312-35, L. 312-39, R. 632-1, L. 212-1, L. 241-1 ; COJ, art. L. 213-4-5",
+    "sources": [
+      {"reference": "C. consom., art. R. 312-35 (version du 1er janvier 2020)", "url": "https://librejustice.fr/norm/fr/code-de-la-consommation/r312-35", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. consom., art. L. 312-39 (version du 10 octobre 2016)", "url": "https://librejustice.fr/norm/fr/code-de-la-consommation/l312-39", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. consom., art. R. 632-1 (version du 1er juillet 2016)", "url": "https://librejustice.fr/norm/fr/code-de-la-consommation/r632-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. consom., art. L. 212-1 et L. 241-1", "url": "https://librejustice.fr/norm/fr/code-de-la-consommation/l212-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "COJ, art. L. 213-4-5 (version du 1er janvier 2020)", "url": "https://librejustice.fr/norm/fr/code-de-l-organisation-judiciaire/l213-4-5", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Cass. 1re civ., 28 oct. 2015, n° 14-23.267, publié au Bulletin (sommaire officiel, ancien article L. 311-37)", "url": "https://librejustice.fr/decision/7VkcnnMMkKu6", "lu_en_entier": false, "lu_le": "2026-11-18"},
+      {"reference": "Cass. 1re civ., 22 mars 2023, n° 21-16.476, publié au Bulletin (sommaire officiel)", "url": "https://librejustice.fr/decision/eNJrMdsfLZs6", "lu_en_entier": false, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Le point de départ de la forclusion est le premier incident de paiement non régularisé, déterminé sur l'historique après imputation des paiements, et non la déchéance du terme lorsque l'incident est antérieur (R. 312-35).",
+      "Le juge relève d'office la forclusion et les autres dispositions du code de la consommation (R. 632-1).",
+      "Une clause de déchéance du terme sans mise en demeure ni préavis raisonnable doit être examinée d'office au regard des clauses abusives (Cass. 1re civ., 22 mars 2023, prêt immobilier).",
+      "Un réaménagement ou rééchelonnement convenu reporte le point de départ au premier incident postérieur ; un report d'échéances décidé par le seul prêteur ne le reporte pas selon la jurisprudence rendue sous l'ancien texte (Cass. 1re civ., 28 oct. 2015)."
+    ]
+  }
+]

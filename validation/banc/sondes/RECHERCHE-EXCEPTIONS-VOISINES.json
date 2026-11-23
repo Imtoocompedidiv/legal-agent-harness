@@ -1,0 +1,32 @@
+{
+  "id": "RECHERCHE-EXCEPTIONS-VOISINES",
+  "capacite": "recherche",
+  "origine": "demande du client : exceptions manquées",
+  "consigne": "Une société a demandé à une préfecture une autorisation individuelle il y a deux mois et demi. Aucune réponse. Son dirigeant pense que le silence vaut accord et veut commencer l'activité. A-t-il raison ? Réponds sur la règle et toutes ses exceptions, lues à la source. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "231-1",
+      "description": "principe du silence vaut acceptation"
+    },
+    {
+      "type": "contient",
+      "motif": "231-4",
+      "description": "exceptions légales de l'article L. 231-4"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "231-5",
+        "231-6",
+        "décret"
+      ],
+      "description": "exceptions fixées par décret"
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__get_norm",
+      "description": "lit les textes"
+    }
+  ]
+}

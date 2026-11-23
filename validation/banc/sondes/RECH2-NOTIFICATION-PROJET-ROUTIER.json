@@ -1,0 +1,47 @@
+{
+  "id": "RECH2-NOTIFICATION-PROJET-ROUTIER",
+  "capacite": "recherche",
+  "origine": "refonte recherche : règle voisine créée hors de l'article lu (CJA, R. 77-16-1, issu de l'art. 5 du décret n° 2026-302 : notification du recours à peine d'irrecevabilité pour les décisions du champ de R. 311-5, dont les infrastructures de transport soumises à évaluation environnementale de plus de 5 M€ ; actes pris à compter du 1er juillet 2026 ; R. 311-5, II : cour administrative d'appel en premier et dernier ressort)",
+  "consigne": "Par un arrêté du 15 septembre 2026, publié au recueil des actes administratifs de la préfecture le 6 octobre 2026, le préfet de la Haute-Garonne a déclaré d'utilité publique les travaux de création d'une déviation routière de sept kilomètres, d'un coût estimé à 38 millions d'euros hors taxes, projet soumis à évaluation environnementale. Une association de riverains, créée en 2019 pour la protection du cadre de vie de la commune, veut le contester. Dis-lui devant quelle juridiction agir, dans quel délai, et tout ce que sa requête doit respecter pour être recevable, textes lus à la source. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier. Termine par une ligne de la forme « JURIDICTION : <juridiction à saisir> ».",
+  "budget_minutes": 15,
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "77-16-1",
+      "description": "trouve l'obligation de notification de l'article R. 77-16-1 du CJA"
+    },
+    {
+      "type": "contient",
+      "motif": "juridiction \\*{0,2} ?: ?\\*{0,2} ?(la )?cour administrative d.appel",
+      "description": "désigne la cour administrative d'appel"
+    },
+    {
+      "type": "contient",
+      "motif": "notifi",
+      "description": "dit qu'il faut notifier le recours",
+      "critique": false
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "quinze jours",
+        "15 jours"
+      ],
+      "description": "délai de notification",
+      "critique": false
+    },
+    {
+      "type": "contient",
+      "motif": "311-5",
+      "description": "compétence de l'article R. 311-5",
+      "critique": false
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__get_norm",
+      "entree_contient": "/(partie|livre|titre|chapitre|section)-",
+      "description": "méthode : lit la section qui contient l'article (articles voisins)",
+      "critique": false
+    }
+  ]
+}

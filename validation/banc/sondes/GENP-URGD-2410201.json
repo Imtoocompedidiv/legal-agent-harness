@@ -1,0 +1,18 @@
+{
+  "id": "GENP-URGD-2410201",
+  "capacite": "pronostic",
+  "famille": "titre-renouvellement-delai",
+  "genere": true,
+  "origine": "usine.py, Tribunal administratif de Lyon, magistrat désigné, 16 octobre 2024, 2410201 (https://librejustice.fr/decision/cOCwqp7yyYhP), issue réelle : non",
+  "fixture": "gen_urgd_2410201",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme le juge des référés, dis si la condition d'urgence de ce référé-suspension est remplie. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2024-10-15T18:00",
+  "coupe": "2024-10-15",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*non\\b",
+      "description": "répond non, comme la juridiction"
+    }
+  ]
+}

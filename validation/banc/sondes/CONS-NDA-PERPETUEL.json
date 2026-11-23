@@ -1,0 +1,29 @@
+{
+ "id": "CONS-NDA-PERPETUEL",
+ "capacite": "conseil",
+ "origine": "pôle contrats-d-affaires : C. civ., art. 1210 (engagements perpétuels prohibés) et art. 1231-5 (pénalité manifestement excessive modérable)",
+ "consigne": "Nous sommes le samedi 21 novembre 2026. Un prospect nous adresse son accord de confidentialité (accord_prospect.md) à signer lundi, avant une démonstration de notre logiciel. Nous sommes une SAS éditrice de logiciels ; le prospect est une société cliente potentielle. Fais le tri de cet accord et dis-moi ce que je signe, ce que je renvoie et quoi proposer. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+ "fichiers": {
+  "accord_prospect.md": "# Accord de confidentialité\n\n1. Objet. Le Prestataire s'engage à garder strictement confidentielles toutes les informations, de quelque nature que ce soit, communiquées par le Client, oralement ou par écrit, marquées ou non.\n\n2. Durée. Les obligations du présent accord s'appliquent sans limitation de durée et survivent indéfiniment à la fin des discussions.\n\n3. Non-sollicitation. Pendant cinq ans, le Prestataire s'interdit d'embaucher ou de solliciter tout salarié du Client.\n\n4. Clause pénale. Toute violation, même minime, entraîne le paiement par le Prestataire d'une somme forfaitaire de 500 000 euros par manquement.\n\n5. Engagement unilatéral. Le Client ne prend aucun engagement de confidentialité.\n\n6. Juridiction. Tout litige relève exclusivement du tribunal des activités économiques de Lille.\n"
+ },
+ "verifications": [
+  {
+   "type": "critere",
+   "critere": "La réponse signale que l'engagement de confidentialité sans limitation de durée est un engagement perpétuel prohibé par l'article 1210 du code civil, ou à tout le moins dangereux, et demande une durée déterminée.",
+   "description": "engagement perpétuel"
+  },
+  {
+   "type": "critere",
+   "critere": "La réponse signale que la pénalité de 500 000 euros par manquement peut être modérée par le juge si elle est manifestement excessive (C. civ., art. 1231-5), et demande sa suppression ou sa réduction.",
+   "description": "clause pénale"
+  },
+  {
+   "type": "critere",
+   "critere": "La réponse refuse de signer l'accord en l'état et propose des modifications précises ou un accord réciproque.",
+   "description": "décision",
+   "critique": false
+  }
+ ],
+ "horloge": "2026-11-21T10:00",
+ "budget_minutes": 15
+}

@@ -1,0 +1,44 @@
+--- a/scripts/gate.py
++++ b/scripts/gate.py
+@@ -409,6 +409,11 @@
+     import negociation as NEGOCIATION
+     NEGOCIATION.controler(racine, ecriture, fiche, c, juridictionnel=juridictionnel, texte=texte)
+ 
++    # L'exercice : sa mécanique propre diagnostiquée avant la production (juge et stade, condition décisive et sa preuve,
++    # cible, exigences implicites, voisin écarté), et l'envoi qui doit protéger un délai (skill mecanique-des-exercices).
++    import exercices as EXERCICES
++    EXERCICES.controler(racine, ecriture, fiche, texte, c)
++
+     # Les positions tenues devant le client : chacune a son fondement et ce qui la ferait changer, et une révision nomme
+     # l'élément nouveau qui la cause, jamais un simple désaccord (skill rapport-de-force, section 5).
+     import positions as POSITIONS
+--- a/scripts/hook.py
++++ b/scripts/hook.py
+@@ -409,6 +409,15 @@
+         if erreurs:
+             sortie({"decision": "block", "reason": "Fichier d'état invalide, à corriger maintenant :\n- " + "\n- ".join(erreurs[:20])})
+         sys.exit(0)
++    if re.fullmatch(r"ecritures/controle/[^/]+\.fiche\.json", rel):
++        import exercices as EXERCICES
++        fiche = L.lire_json(racine / rel) or {}
++        if isinstance(fiche, dict) and fiche.get("type_acte"):
++            constats = EXERCICES.valider(fiche.get("exercice"), fiche, contexte=EXERCICES.contexte_dossier(racine))
++            if constats:
++                contexte("PostToolUse", "Diagnostic d'exercice de la fiche, à compléter avant le dépôt (skill mecanique-des-exercices) :\n- "
++                         + "\n- ".join(f"{k['gravite']} {k['code']} : {k['message']}" for k in constats[:12]))
++        sys.exit(0)
+     rl = rel.lower()
+     if rl.startswith("ecritures/") and rl.endswith(".md") and "/final/" not in rl and "/controle/" not in rl:
+         import lint_ecriture as LINT
+--- a/tests/test_contentieux.py
++++ b/tests/test_contentieux.py
+@@ -331,6 +331,9 @@
+         preuve_documentaire(self.r, 2, "Avis médical du 10 mars 2026.\nUn aménagement des épreuves est préconisé.\n",
+                             "Un aménagement des épreuves est préconisé.", "F1", "L'avis médical du 10 mars 2026 préconise un aménagement.")
+         maintenant = L.maintenant().isoformat(timespec="minutes")
++        from test_exercices import bloc_refere_suspension
++        fiche["exercice"] = bloc_refere_suspension(maintenant)
++        ecrire(self.r / "ecritures/controle/ref.fiche.json", fiche)
+         canaux = L.lire_json(self.r / "etat/canaux.json")
+         for c in canaux["canaux"]:
+             c["dernier_controle"] = maintenant

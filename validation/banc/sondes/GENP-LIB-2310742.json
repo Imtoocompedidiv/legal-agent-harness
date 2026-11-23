@@ -1,0 +1,18 @@
+{
+  "id": "GENP-LIB-2310742",
+  "capacite": "pronostic",
+  "famille": "refere-liberte",
+  "genere": true,
+  "origine": "usine.py, Tribunal administratif de Nantes, magistrat désigné, 25 juillet 2023, 2310742 (https://librejustice.fr/decision/P79UGyXC3-uP), issue réelle : oui",
+  "fixture": "gen_lib_2310742",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme le juge des référés, dis s'il fera droit, au moins en partie, à cette demande de référé-liberté. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2023-07-24T18:00",
+  "coupe": "2023-07-24",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*oui\\b",
+      "description": "répond oui, comme la juridiction"
+    }
+  ]
+}

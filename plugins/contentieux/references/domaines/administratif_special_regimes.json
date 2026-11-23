@@ -1,0 +1,340 @@
+[
+  {
+    "type_acte": "requete_fiscale",
+    "domaine": "fiscal",
+    "juge": "admin",
+    "refere": false,
+    "acte": true,
+    "fond_distinct": false,
+    "conditions": [
+      "imposition_relevant_du_juge_administratif",
+      "reclamation_prealable_adressee_au_service_competent",
+      "reclamation_presentee_dans_le_delai",
+      "reclamation_conforme_aux_mentions_obligatoires",
+      "decision_sur_reclamation_ou_expiration_du_delai_de_six_mois",
+      "requete_dans_les_deux_mois_de_la_reception_de_la_decision",
+      "impositions_identiques_a_celles_visees_dans_la_reclamation",
+      "decision_ou_reclamation_jointe_a_la_requete"
+    ],
+    "texte": "LPF, art. L. 190, L. 199, R.* 190-1, R.* 196-1, R.* 196-2, R.* 196-3, R.* 197-1, R.* 197-3, R.* 198-10, R.* 199-1, R.* 200-2 ; CJA, art. R. 411-1, R. 412-1, R. 431-3 (2°), R. 811-1 (4° et 5°)",
+    "sources": [
+      {"reference": "LPF, art. R.* 190-1 (version en vigueur depuis le 2 juin 2024)", "url": "https://librejustice.fr/norm/fr/livre-des-procedures-fiscales/r190-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "LPF, art. L. 199 (version en vigueur jusqu'au 31 décembre 2026, puis version issue de l'ordonnance n° 2025-1247 à compter du 1er janvier 2027)", "url": "https://librejustice.fr/norm/fr/livre-des-procedures-fiscales/l199", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "LPF, art. L. 190 (version en vigueur jusqu'au 31 décembre 2026 et version applicable au 1er janvier 2027)", "url": "https://librejustice.fr/norm/fr/livre-des-procedures-fiscales/l190", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "LPF, art. R.* 196-1 (version issue du décret n° 2026-692 du 27 juillet 2026)", "url": "https://librejustice.fr/norm/fr/livre-des-procedures-fiscales/r196-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "LPF, art. R.* 196-2 (version issue du décret n° 2026-692 du 27 juillet 2026)", "url": "https://librejustice.fr/norm/fr/livre-des-procedures-fiscales/r196-2", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "LPF, art. R.* 196-3", "url": "https://librejustice.fr/norm/fr/livre-des-procedures-fiscales/r196-3", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "LPF, art. R.* 197-1", "url": "https://librejustice.fr/norm/fr/livre-des-procedures-fiscales/r197-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "LPF, art. R.* 197-3", "url": "https://librejustice.fr/norm/fr/livre-des-procedures-fiscales/r197-3", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "LPF, art. R.* 198-10", "url": "https://librejustice.fr/norm/fr/livre-des-procedures-fiscales/r198-10", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "LPF, art. R.* 199-1", "url": "https://librejustice.fr/norm/fr/livre-des-procedures-fiscales/r199-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "LPF, art. R.* 200-2", "url": "https://librejustice.fr/norm/fr/livre-des-procedures-fiscales/r200-2", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CJA, art. R. 412-1", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r412-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CJA, art. R. 431-3", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r431-3", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CJA, art. R. 811-1", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r811-1", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Le juge de l'impôt n'est saisi qu'après une réclamation adressée au service compétent (R.* 190-1) et la décision prise sur elle ou l'expiration du délai de six mois (R.* 198-10, R.* 199-1). Le délai de réclamation se compte à partir de la mise en recouvrement, du versement ou de l'événement qui la motive (R.* 196-1) ; l'article L. 190, al. 2, n'admet une réclamation dès la réponse aux observations du contribuable que pour les erreurs affectant un déficit ou un excédent de TVA déductible.",
+      "Le délai de réclamation dépend de la nature de l'impôt : 31 décembre de la deuxième année suivant la mise en recouvrement pour les impôts d'État (R.* 196-1), 31 décembre de l'année suivante pour les impôts directs locaux et taxes annexes (R.* 196-2). Une réclamation tardive rend la requête irrecevable sans régularisation possible.",
+      "Le juge ne peut être saisi d'impositions différentes de celles visées par la réclamation (R.* 200-2, al. 2).",
+      "La requête doit être accompagnée de la décision de rejet ou, à défaut, de la pièce justifiant la date de dépôt de la réclamation (CJA, R. 412-1) ; une requête non signée et sans ces pièces est rejetée après demande de régularisation restée sans réponse.",
+      "Les droits d'enregistrement, l'impôt sur la fortune immobilière, la taxe de publicité foncière, les droits de timbre et les contributions indirectes relèvent du tribunal judiciaire (LPF, L. 199, al. 2) ; la rédaction applicable au 1er janvier 2027 conserve cette dérogation en la reformulant.",
+      "Les litiges relatifs aux impôts locaux (sauf contribution économique territoriale) et aux remises gracieuses sont jugés en premier et dernier ressort (CJA, R. 811-1, 4° et 5°) : la voie de recours est la cassation.",
+      "Le ministère d'avocat n'est pas obligatoire devant le tribunal pour les contributions directes et les taxes sur le chiffre d'affaires (CJA, R. 431-3, 2°), mais il l'est en appel (CJA, R. 811-7)."
+    ]
+  },
+  {
+    "type_acte": "recours_urbanisme",
+    "domaine": "urbanisme",
+    "juge": "admin",
+    "refere": false,
+    "acte": true,
+    "fond_distinct": false,
+    "conditions": [
+      "interet_a_agir_atteinte_directe_aux_conditions_d_occupation_du_bien",
+      "interet_apprecie_a_la_date_d_affichage_en_mairie_de_la_demande",
+      "titre_d_occupation_ou_de_detention_du_bien_produit",
+      "statuts_et_recepisse_de_declaration_pour_une_association",
+      "association_declaree_un_an_avant_l_affichage_de_la_demande",
+      "notification_du_recours_a_l_auteur_et_au_titulaire_dans_quinze_jours_francs",
+      "notification_du_recours_administratif_prealable",
+      "recours_dans_le_delai_a_compter_de_l_affichage_sur_le_terrain",
+      "recours_administratif_forme_dans_le_mois",
+      "action_avant_six_mois_apres_achevement",
+      "moyens_presentes_avant_la_cristallisation"
+    ],
+    "texte": "C. urb., art. L. 600-1-1, L. 600-1-2, L. 600-1-3, L. 600-12-2, R.* 600-1, R.* 600-2, R.* 600-3, R.* 600-4, R. 600-5, R.* 424-15, A. 424-17 ; CJA, art. R. 421-1, R. 811-1-1",
+    "sources": [
+      {"reference": "C. urb., art. L. 600-1-2 (version en vigueur depuis le 1er janvier 2019)", "url": "https://librejustice.fr/norm/fr/code-de-l-urbanisme/l600-1-2", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. urb., art. L. 600-1-3", "url": "https://librejustice.fr/norm/fr/code-de-l-urbanisme/l600-1-3", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. urb., art. L. 600-1-1", "url": "https://librejustice.fr/norm/fr/code-de-l-urbanisme/l600-1-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. urb., art. L. 600-12-2 (créé par la loi n° 2025-1129 du 26 novembre 2025, en vigueur depuis le 28 novembre 2025)", "url": "https://librejustice.fr/norm/fr/code-de-l-urbanisme/l600-12-2", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Loi n° 2025-1129 du 26 novembre 2025, art. 26", "url": "https://librejustice.fr/norm/fr/loi-n-2025-1129-du-26-novembre-2025-de-simplification-du-droit-de-l-urbanisme-et/26", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. urb., art. R.* 600-1", "url": "https://librejustice.fr/norm/fr/code-de-l-urbanisme/r600-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. urb., art. R.* 600-2", "url": "https://librejustice.fr/norm/fr/code-de-l-urbanisme/r600-2", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. urb., art. R.* 600-3", "url": "https://librejustice.fr/norm/fr/code-de-l-urbanisme/r600-3", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. urb., art. R.* 600-4", "url": "https://librejustice.fr/norm/fr/code-de-l-urbanisme/r600-4", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. urb., art. R. 600-5", "url": "https://librejustice.fr/norm/fr/code-de-l-urbanisme/r600-5", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. urb., art. R.* 424-15", "url": "https://librejustice.fr/norm/fr/code-de-l-urbanisme/r424-15", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. urb., art. A. 424-17", "url": "https://librejustice.fr/norm/fr/code-de-l-urbanisme/a424-17", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CJA, art. R. 811-1-1 (version issue du décret n° 2026-302 du 21 avril 2026)", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r811-1-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CE, 13 avril 2016, Bartolomei, n° 389798, publié au Recueil (analyse officielle lue, texte intégral non lu)", "url": "https://librejustice.fr/decision/l3dFHrEkDnsZ", "lu_en_entier": false, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Le recours contentieux et le recours administratif qui le précède doivent chacun être notifiés à l'auteur de la décision et au titulaire de l'autorisation, par lettre recommandée avec accusé de réception dans les quinze jours francs de leur dépôt, à peine d'irrecevabilité (R.* 600-1, al. 1 et 2).",
+      "La preuve de la notification est le certificat de dépôt de la lettre recommandée (R.* 600-1, al. 3) ; il faut le verser au dossier sans attendre la demande du greffe.",
+      "L'intérêt à agir du tiers doit être établi par des éléments suffisamment précis et étayés sur l'atteinte directe aux conditions d'occupation, d'utilisation ou de jouissance du bien (L. 600-1-2) ; le voisin immédiat justifie en principe d'un intérêt lorsqu'il fait état d'éléments relatifs à la nature, à l'importance ou à la localisation du projet (CE, Bartolomei, analyse).",
+      "La requête doit être accompagnée du titre de propriété, du bail ou de tout acte établissant l'occupation régulière (R.* 600-4) ; pour une association, des statuts et du récépissé de déclaration, la déclaration devant précéder d'au moins un an l'affichage de la demande (L. 600-1-1).",
+      "Depuis le 28 novembre 2025, le recours gracieux ou hiérarchique contre une autorisation d'urbanisme doit être formé dans le délai d'un mois et ne proroge plus le délai de recours contentieux (L. 600-12-2) ; l'application aux décisions antérieures à cette date n'a pas été vérifiée.",
+      "Passé deux mois après la communication du premier mémoire en défense, aucun moyen nouveau n'est recevable (R. 600-5) : tous les moyens doivent figurer dans la requête ou un mémoire rapide.",
+      "Pour certains permis de logements en zone tendue, le tribunal statue en premier et dernier ressort pour les recours introduits jusqu'au 31 décembre 2027 (CJA, R. 811-1-1) : la voie ouverte est la cassation."
+    ]
+  },
+  {
+    "type_acte": "refere_suspension_urbanisme",
+    "domaine": "urbanisme",
+    "juge": "admin",
+    "refere": true,
+    "acte": true,
+    "fond_distinct": true,
+    "conditions": [
+      "recours_au_fond_recevable_contre_l_autorisation",
+      "demande_presentee_avant_la_cristallisation_des_moyens",
+      "doute_serieux_sur_la_legalite"
+    ],
+    "texte": "C. urb., art. L. 600-3, L. 600-3-1, R. 600-5 ; CJA, art. L. 521-1 (texte de L. 521-1 non relu pour ce régime)",
+    "sources": [
+      {"reference": "C. urb., art. L. 600-3", "url": "https://librejustice.fr/norm/fr/code-de-l-urbanisme/l600-3", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. urb., art. R. 600-5", "url": "https://librejustice.fr/norm/fr/code-de-l-urbanisme/r600-5", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. urb., art. L. 600-3-1 (version du 28 novembre 2025)", "url": "https://librejustice.fr/norm/fr/code-de-l-urbanisme/l600-3-1", "lu_en_entier": true, "lu_le": "2026-11-20"},
+      {"reference": "Loi n° 2025-1129 du 26 novembre 2025, art. 26, IV (application de L. 600-3-1 aux référés introduits après la publication de la loi)", "url": "https://librejustice.fr/norm/fr/loi-n-2025-1129-du-26-novembre-2025-de-simplification-du-droit-de-l-urbanisme-et/26", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Contre un permis ou une non-opposition, le référé suspension n'est possible que jusqu'à l'expiration du délai de cristallisation des moyens devant le juge du fond (L. 600-3, al. 1).",
+      "L'urgence est présumée pour le tiers qui conteste un permis ou une non-opposition (L. 600-3, al. 2) ; il reste à établir un doute sérieux.",
+      "Le référé suppose une requête au fond recevable : les conditions du recours_urbanisme (notification R.* 600-1, intérêt L. 600-1-2) s'appliquent aussi à elle.",
+      "Contre une opposition à déclaration préalable ou un refus de permis de construire, d'aménager ou de démolir, l'urgence est présumée pour le référé-suspension introduit après la publication de la loi du 26 novembre 2025 (L. 600-3-1 ; loi n° 2025-1129, art. 26, IV) ; le doute sérieux reste à établir."
+    ]
+  },
+  {
+    "type_acte": "requete_oqtf",
+    "domaine": "etrangers",
+    "juge": "admin",
+    "refere": false,
+    "acte": true,
+    "fond_distinct": false,
+    "conditions": [
+      "regime_procedural_identifie_selon_la_situation_de_l_etranger",
+      "recours_dans_le_delai_du_regime_applicable",
+      "delai_non_proroge_par_un_recours_administratif",
+      "notification_mentionnant_les_voies_et_delais",
+      "aide_juridictionnelle_demandee_au_plus_tard_avec_le_recours",
+      "decision_attaquee_produite"
+    ],
+    "texte": "CESEDA, art. L. 614-1, L. 614-2, L. 614-3, L. 911-1, L. 921-1, L. 921-2, R. 614-3, R. 911-1, R. 921-1, R. 921-2-1, R. 922-27 ; CJA, art. R. 776-1, R. 421-5, R. 412-1",
+    "sources": [
+      {"reference": "CESEDA, art. L. 614-1 (version en vigueur depuis le 15 juillet 2024, applicable aux décisions prises à compter de cette date)", "url": "https://librejustice.fr/norm/fr/code-de-l-entree-et-du-sejour-des-etrangers-et-du-droit-d-asile/l614-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CESEDA, art. L. 614-2", "url": "https://librejustice.fr/norm/fr/code-de-l-entree-et-du-sejour-des-etrangers-et-du-droit-d-asile/l614-2", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CESEDA, art. L. 614-3", "url": "https://librejustice.fr/norm/fr/code-de-l-entree-et-du-sejour-des-etrangers-et-du-droit-d-asile/l614-3", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CESEDA, art. L. 911-1 (version en vigueur depuis le 8 juin 2026 et version du 15 juillet 2024 au 7 juin 2026)", "url": "https://librejustice.fr/norm/fr/code-de-l-entree-et-du-sejour-des-etrangers-et-du-droit-d-asile/l911-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CESEDA, art. R. 911-1 (version en vigueur depuis le 8 juin 2026 et version du 15 juillet 2024 au 7 juin 2026)", "url": "https://librejustice.fr/norm/fr/code-de-l-entree-et-du-sejour-des-etrangers-et-du-droit-d-asile/r911-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CESEDA, art. R. 614-3", "url": "https://librejustice.fr/norm/fr/code-de-l-entree-et-du-sejour-des-etrangers-et-du-droit-d-asile/r614-3", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CESEDA, art. L. 921-1", "url": "https://librejustice.fr/norm/fr/code-de-l-entree-et-du-sejour-des-etrangers-et-du-droit-d-asile/l921-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CESEDA, art. L. 921-2", "url": "https://librejustice.fr/norm/fr/code-de-l-entree-et-du-sejour-des-etrangers-et-du-droit-d-asile/l921-2", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CESEDA, art. R. 921-1", "url": "https://librejustice.fr/norm/fr/code-de-l-entree-et-du-sejour-des-etrangers-et-du-droit-d-asile/r921-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CESEDA, art. R. 921-2-1", "url": "https://librejustice.fr/norm/fr/code-de-l-entree-et-du-sejour-des-etrangers-et-du-droit-d-asile/r921-2-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CESEDA, art. R. 922-27", "url": "https://librejustice.fr/norm/fr/code-de-l-entree-et-du-sejour-des-etrangers-et-du-droit-d-asile/r922-27", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CJA, art. R. 776-1", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r776-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CJA, art. R. 776-2 (version du 1er mai 2021 au 15 juillet 2024, régime antérieur)", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r776-2", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CJA, art. R. 421-5", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r421-5", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Le délai dépend de la situation de l'étranger à la notification : un mois en procédure collégiale (L. 614-1, L. 911-1, R. 911-1), sept jours s'il est assigné à résidence ou détenu (L. 614-2, L. 614-3, L. 921-1), quarante-huit heures s'il est retenu (L. 614-2, al. 2, R. 921-2-1).",
+      "Le recours gracieux ou hiérarchique ne proroge pas le délai d'un mois (R. 911-1, al. 2).",
+      "Une assignation à résidence ou un placement en rétention notifiés pendant le délai l'interrompent et ouvrent le délai propre à la nouvelle situation (R. 921-1).",
+      "L'aide juridictionnelle se demande au plus tard lors de l'introduction du recours (L. 911-1, al. 2).",
+      "Les délais ne sont opposables que s'ils figurent, avec les voies de recours, dans la notification (CJA, R. 421-5).",
+      "Les décisions prises avant le 15 juillet 2024 relèvent du régime antérieur (CESEDA, note sous L. 614-1 ; CJA, R. 776-2 alors en vigueur : trente jours, quinze jours ou quarante-huit heures selon le cas).",
+      "Les décrets n° 2026-455 et 2026-456 du 6 juin 2026 ont modifié la fixation des délais à compter du 8 juin 2026, avec des règles propres aux demandeurs d'asile pour les décisions notifiées à compter du 12 juin 2026 : vérifier la version applicable à la date de notification."
+    ]
+  },
+  {
+    "type_acte": "refere_precontractuel",
+    "domaine": "commande_publique",
+    "juge": "admin",
+    "refere": true,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": [
+      "contrat_entrant_dans_le_champ_de_l_article_l551_1",
+      "contrat_non_signe_a_la_date_de_saisine",
+      "interet_a_conclure_le_contrat",
+      "manquement_aux_obligations_de_publicite_et_de_mise_en_concurrence",
+      "lesion_ou_risque_de_lesion_par_le_manquement",
+      "notification_du_recours_au_pouvoir_adjudicateur"
+    ],
+    "texte": "CJA, art. L. 551-1, L. 551-4, L. 551-10, R. 551-1, R. 551-5 ; CCP, art. R. 2181-1, R. 2181-3, R. 2182-1",
+    "sources": [
+      {"reference": "CJA, art. L. 551-1 (version en vigueur depuis le 1er septembre 2026 et version du 19 août 2015 au 31 août 2026)", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/l551-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CJA, art. L. 551-4", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/l551-4", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CJA, art. L. 551-10", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/l551-10", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CJA, art. R. 551-1", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r551-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CJA, art. R. 551-5", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r551-5", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CCP, art. R. 2181-1", "url": "https://librejustice.fr/norm/fr/code-de-la-commande-publique/r2181-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CCP, art. R. 2181-3", "url": "https://librejustice.fr/norm/fr/code-de-la-commande-publique/r2181-3", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CCP, art. R. 2182-1", "url": "https://librejustice.fr/norm/fr/code-de-la-commande-publique/r2182-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CE, 29 mars 2004, Communauté de communes du centre littoral, n° 258114, publié au Recueil", "url": "https://librejustice.fr/decision/xnjq_m9X01gL", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CE, Sect., 3 octobre 2008, SMIRGEOMES, n° 305420, publié au Recueil (analyse officielle lue, texte intégral non lu)", "url": "https://librejustice.fr/decision/7u1FPDWpZpNu", "lu_en_entier": false, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Le juge doit être saisi avant la conclusion du contrat (L. 551-1, dernier al.) ; ses pouvoirs ne peuvent plus être exercés après la conclusion (CE, 29 mars 2004, Communauté de communes du centre littoral).",
+      "Le délai minimal de onze jours (seize jours sans transmission électronique) entre l'envoi de la notification de rejet et la signature ne vaut que pour les procédures formalisées (CCP, R. 2182-1) ; en procédure adaptée, la signature peut intervenir sans délai minimal, de sorte que la requête doit être déposée dès la réception du rejet.",
+      "En procédure formalisée, la notification de rejet doit indiquer la date à partir de laquelle l'acheteur peut signer (CCP, R. 2181-3, 2°) : c'est la date limite pratique de dépôt.",
+      "Le requérant doit invoquer des manquements susceptibles de l'avoir lésé, fût-ce indirectement, compte tenu de leur portée et du stade de la procédure (CE, SMIRGEOMES, analyse) ; la seule critique de la valeur des offres ne suffit pas.",
+      "Le recours doit être notifié au pouvoir adjudicateur (R. 551-1) ; la sanction de l'omission n'est pas précisée par le texte (non vérifié en jurisprudence).",
+      "La saisine suspend la signature jusqu'à la notification de l'ordonnance (L. 551-4) ; une signature en violation de cette suspension ouvre le référé contractuel (L. 551-18, al. 3)."
+    ]
+  },
+  {
+    "type_acte": "refere_contractuel",
+    "domaine": "commande_publique",
+    "juge": "admin",
+    "refere": true,
+    "acte": false,
+    "fond_distinct": false,
+    "conditions": [
+      "contrat_conclu",
+      "interet_a_conclure_et_lesion_par_les_manquements",
+      "absence_de_refere_precontractuel_respecte_par_l_acheteur",
+      "saisine_dans_les_trente_et_un_jours_ou_les_six_mois",
+      "contrat_non_exclu_par_l_article_l551_15",
+      "manquement_ouvrant_les_sanctions_des_articles_l551_18_a_l551_20"
+    ],
+    "texte": "CJA, art. L. 551-13, L. 551-14, L. 551-15, L. 551-18, L. 551-20, R. 551-7",
+    "sources": [
+      {"reference": "CJA, art. L. 551-13", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/l551-13", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CJA, art. L. 551-14", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/l551-14", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CJA, art. L. 551-15", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/l551-15", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CJA, art. L. 551-18", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/l551-18", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CJA, art. L. 551-20", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/l551-20", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CJA, art. R. 551-7", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r551-7", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CE, 17 octobre 2016, Société Tribord, n° 400791, mentionné aux tables (analyse officielle lue, texte intégral non lu)", "url": "https://librejustice.fr/decision/iqiP1ZpXPkr3", "lu_en_entier": false, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Le référé contractuel est fermé au demandeur qui a exercé un référé précontractuel lorsque l'acheteur a respecté la suspension de l'article L. 551-4 et s'est conformé à l'ordonnance (L. 551-14, al. 2).",
+      "Délai : trente et un jours après la publication au Journal officiel de l'Union européenne d'un avis d'attribution conforme ou, pour les marchés fondés sur un accord-cadre, après une notification mentionnant le titulaire et les motifs du choix ; à défaut, six mois à compter du lendemain de la conclusion (R. 551-7).",
+      "Le recours est exclu pour les contrats non soumis à publicité préalable lorsque l'acheteur a publié son intention de conclure et observé onze jours (L. 551-15).",
+      "La nullité n'est encourue que dans les cas limités de l'article L. 551-18 ; une signature prématurée pendant la suspension peut aussi être sanctionnée par une pénalité ou une résiliation (L. 551-20).",
+      "Le référé précontractuel communiqué par Télérecours est réputé reçu par l'acheteur dès sa mise à disposition, de sorte qu'une signature postérieure méconnaît L. 551-4 (CE, Tribord, analyse)."
+    ]
+  },
+  {
+    "type_acte": "recours_tiers_contrat",
+    "domaine": "commande_publique",
+    "juge": "admin",
+    "refere": false,
+    "acte": true,
+    "fond_distinct": false,
+    "conditions": [
+      "qualite_de_tiers_elu_local_ou_representant_de_l_etat",
+      "interet_lese_de_facon_suffisamment_directe_et_certaine",
+      "recours_dans_les_deux_mois_des_mesures_de_publicite",
+      "vices_en_rapport_direct_avec_l_interet_lese_ou_d_ordre_public",
+      "contrat_signe_depuis_le_4_avril_2014"
+    ],
+    "texte": "CE, Ass., 4 avril 2014, Département de Tarn-et-Garonne, n° 358994 ; CJA, art. R. 431-2",
+    "sources": [
+      {"reference": "CE, Ass., 4 avril 2014, Département de Tarn-et-Garonne, n° 358994, publié au Recueil", "url": "https://librejustice.fr/decision/OH03O8cb18N1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CJA, art. R. 431-2", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r431-2", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Le recours doit être exercé dans les deux mois de l'accomplissement des mesures de publicité appropriées, notamment un avis mentionnant la conclusion du contrat et les modalités de sa consultation (Tarn-et-Garonne, cons. 2).",
+      "Le tiers autre que le préfet ou un élu de la collectivité ne peut invoquer que les vices en rapport direct avec l'intérêt lésé dont il se prévaut ou ceux d'une gravité telle que le juge devrait les relever d'office (cons. 3).",
+      "La légalité du choix du cocontractant, de la délibération autorisant la conclusion et de la décision de signer ne peut plus être contestée par un recours pour excès de pouvoir des tiers (cons. 2) ; seul le préfet conserve ce recours jusqu'à la conclusion.",
+      "Le recours ne vaut que pour les contrats signés à compter du 4 avril 2014 (cons. 5).",
+      "Des conclusions indemnitaires jointes tendent au paiement d'une somme d'argent et appellent le ministère d'avocat (CJA, R. 431-2) ; l'application de cet article aux seules conclusions en contestation de validité n'a pas été vérifiée."
+    ]
+  },
+  {
+    "type_acte": "requete_indemnitaire",
+    "domaine": "responsabilite",
+    "juge": "admin",
+    "refere": false,
+    "acte": true,
+    "fond_distinct": false,
+    "conditions": [
+      "demande_prealable_adressee_a_la_personne_publique",
+      "decision_expresse_ou_implicite_sur_la_demande",
+      "creance_non_prescrite",
+      "recours_dans_le_delai_si_rejet_expres_mentionnant_voies_et_delais",
+      "representation_par_avocat_sauf_dispense",
+      "fait_generateur_prejudice_et_lien_de_causalite"
+    ],
+    "texte": "CJA, art. R. 421-1, R. 421-2, R. 421-5, R. 431-2, R. 431-3, R. 811-1 (8°), R. 222-14 ; CRPA, art. L. 231-4 (3°), L. 112-6 ; loi n° 68-1250 du 31 décembre 1968, art. 1er, 2, 3 et 7 ; CSP, art. L. 1142-28",
+    "sources": [
+      {"reference": "CJA, art. R. 421-1 (version en vigueur depuis le 1er janvier 2020)", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r421-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CJA, art. R. 421-2", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r421-2", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CJA, art. R. 431-2", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r431-2", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CJA, art. R. 431-3 (version en vigueur depuis le 1er janvier 2025)", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r431-3", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CJA, art. R. 811-1 (version en vigueur depuis le 1er novembre 2025)", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r811-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CJA, art. R. 222-14", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r222-14", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CRPA, art. L. 231-4", "url": "https://librejustice.fr/norm/fr/code-des-relations-entre-le-public-et-l-administration/l231-4", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CRPA, art. L. 112-6", "url": "https://librejustice.fr/norm/fr/code-des-relations-entre-le-public-et-l-administration/l112-6", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Loi n° 68-1250 du 31 décembre 1968, art. 1er", "url": "https://librejustice.fr/norm/fr/loi-n-68-1250-du-31-decembre-1968-relative-a-la-prescription-des-creances-sur-l/1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Loi n° 68-1250 du 31 décembre 1968, art. 2", "url": "https://librejustice.fr/norm/fr/loi-n-68-1250-du-31-decembre-1968-relative-a-la-prescription-des-creances-sur-l/2", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Loi n° 68-1250 du 31 décembre 1968, art. 3", "url": "https://librejustice.fr/norm/fr/loi-n-68-1250-du-31-decembre-1968-relative-a-la-prescription-des-creances-sur-l/3", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Loi n° 68-1250 du 31 décembre 1968, art. 7", "url": "https://librejustice.fr/norm/fr/loi-n-68-1250-du-31-decembre-1968-relative-a-la-prescription-des-creances-sur-l/7", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CSP, art. L. 1142-28", "url": "https://librejustice.fr/norm/fr/code-de-la-sante-publique/l1142-28", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CE, Sect., avis, 27 mars 2019, Rollet, n° 426472, publié au Recueil", "url": "https://librejustice.fr/decision/6akpj1pqqFn-", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CE, 17 juin 2019, Centre hospitalier de Vichy, n° 413097, publié au Recueil (analyse officielle lue, texte intégral non lu)", "url": "https://librejustice.fr/decision/n7BPHI3FHHm4", "lu_en_entier": false, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Sans décision de l'administration sur une demande préalable, la requête pécuniaire est irrecevable, même si l'administration défend seulement au fond ; une décision intervenue avant que le juge statue régularise la requête (CE, avis Rollet, points 2 et 3).",
+      "Le silence de deux mois sur une demande à caractère financier vaut rejet (CRPA, L. 231-4, 3°) ; la date de dépôt de la demande doit être établie à l'appui de la requête (CJA, R. 421-2, al. 2).",
+      "La règle du délai raisonnable d'un an ne s'applique pas aux recours indemnitaires ; la sécurité juridique est assurée par la prescription quadriennale ou, pour les dommages corporels, par l'article L. 1142-28 du code de la santé publique (CE, Centre hospitalier de Vichy, analyse).",
+      "Prescription quadriennale : quatre ans à compter du 1er janvier suivant l'année d'acquisition des droits ; un recours juridictionnel n'interrompt que s'il porte sur le fait générateur, l'existence, le montant ou le paiement de la créance, et le nouveau délai court du 1er janvier suivant le passage en force de chose jugée (loi de 1968, art. 1er et 2).",
+      "L'administration doit invoquer la prescription avant que le juge du premier degré se prononce au fond (loi de 1968, art. 7).",
+      "Le ministère d'avocat est obligatoire pour une demande de somme d'argent (CJA, R. 431-2), sauf dispenses de l'article R. 431-3, notamment lorsque le défendeur est une collectivité territoriale, un de ses établissements publics ou un établissement public de santé (5°).",
+      "Hors commande publique, le tribunal statue en dernier ressort sur les actions indemnitaires n'excédant pas le montant fixé par les articles R. 222-14 et R. 222-15 (CJA, R. 811-1, 8°) ; R. 222-14 fixe 10 000 euros, R. 222-15 n'a pas été relu.",
+      "La condition de fond (fait générateur, préjudice, lien de causalité) est générale ; aucune décision de principe n'a été relue pour l'énoncer ici (non vérifié)."
+    ]
+  },
+  {
+    "type_acte": "requete_fonction_publique",
+    "domaine": "fonction_publique",
+    "juge": "admin",
+    "refere": false,
+    "acte": true,
+    "fond_distinct": false,
+    "conditions": [
+      "recours_administratif_prealable_obligatoire_exerce_si_militaire",
+      "decision_expresse_ou_implicite_sur_le_recours_prealable",
+      "saisine_de_la_commission_dans_les_deux_mois",
+      "mediation_prealable_obligatoire_si_applicable",
+      "recours_dans_le_delai_contentieux",
+      "tribunal_du_lieu_d_affectation"
+    ],
+    "texte": "C. défense, art. R. 4125-1, R. 4125-2, R. 4125-10 ; CJA, art. L. 213-11, R. 213-10, R. 213-12, R. 312-12, R. 421-1, R. 431-3 (3°) ; décret n° 2022-433 du 25 mars 2022, art. 2 et 3",
+    "sources": [
+      {"reference": "C. défense, art. R. 4125-1 (version en vigueur depuis le 1er mars 2018)", "url": "https://librejustice.fr/norm/fr/code-de-la-defense/r4125-1", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. défense, art. R. 4125-2", "url": "https://librejustice.fr/norm/fr/code-de-la-defense/r4125-2", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "C. défense, art. R. 4125-10", "url": "https://librejustice.fr/norm/fr/code-de-la-defense/r4125-10", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CJA, art. L. 213-11", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/l213-11", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CJA, art. R. 213-10", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r213-10", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CJA, art. R. 213-12", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r213-12", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Décret n° 2022-433 du 25 mars 2022, art. 2", "url": "https://librejustice.fr/norm/fr/decret-n-2022-433-du-25-mars-2022-relatif-a-la-procedure-de-mediation-prealable/2", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "Décret n° 2022-433 du 25 mars 2022, art. 3", "url": "https://librejustice.fr/norm/fr/decret-n-2022-433-du-25-mars-2022-relatif-a-la-procedure-de-mediation-prealable/3", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CJA, art. R. 312-12", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r312-12", "lu_en_entier": true, "lu_le": "2026-11-18"},
+      {"reference": "CJA, art. R. 431-3", "url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r431-3", "lu_en_entier": true, "lu_le": "2026-11-18"}
+    ],
+    "pieges": [
+      "Pour un militaire, tout recours contentieux contre un acte relatif à sa situation personnelle est irrecevable sans recours préalable devant la commission des recours des militaires (R. 4125-1, I), sauf recrutement, discipline, actes pris en application de L. 4139-15-1 et pensions (III).",
+      "Le juge ne peut être saisi qu'après la décision de la commission, qui se substitue à la décision initiale, ou après le rejet implicite né du silence de quatre mois (R. 4125-10).",
+      "La commission doit être saisie dans les deux mois de la notification de l'acte, par un moyen conférant date certaine, avec la copie de l'acte ; à défaut, forclusion ou renonciation réputée (R. 4125-2).",
+      "Les recours gracieux ou hiérarchiques autres que la saisine de la commission n'ont pas d'incidence sur le délai contentieux (R. 4125-1, I, al. 3).",
+      "Pour certaines décisions individuelles défavorables (rémunération, détachement, disponibilité, réintégration, classement, formation, handicap, aménagement de poste), une médiation préalable obligatoire s'impose aux agents des académies listées et des collectivités conventionnées (décret n° 2022-433, art. 2 et 3) ; la requête directe est rejetée par ordonnance et transmise au médiateur (CJA, R. 213-12).",
+      "Le tribunal compétent est celui du lieu d'affectation, ou de la nouvelle affectation en cas de mutation (CJA, R. 312-12, al. 2).",
+      "Le ministère d'avocat n'est pas requis devant le tribunal pour les litiges d'ordre individuel des agents publics (CJA, R. 431-3, 3°)."
+    ]
+  }
+]

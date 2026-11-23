@@ -1,0 +1,21 @@
+{
+ "id": "CONS-NON-CONCURRENCE",
+ "capacite": "conseil",
+ "origine": "pôle droit-social : Cass. soc., 10 juillet 2002, n° 00-45.135, Bulletin (conditions cumulatives de licéité, dont la contrepartie financière)",
+ "consigne": "Nous sommes le samedi 21 novembre 2026. Une salariée, ingénieure commerciale, démissionne. Son contrat contient une clause qui lui interdit pendant deux ans de travailler pour un concurrent sur toute la France, sans aucune indemnité prévue. Son employeur la menace de poursuites si elle rejoint un concurrent. Elle nous demande si elle peut accepter l'offre d'un concurrent. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+ "verifications": [
+  {
+   "type": "critere",
+   "critere": "La réponse dit que la clause de non-concurrence dépourvue de contrepartie financière est nulle (conditions cumulatives posées par la chambre sociale depuis 2002) et que la salariée peut rejoindre le concurrent.",
+   "description": "nullité"
+  },
+  {
+   "type": "critere",
+   "critere": "La réponse signale que la salariée peut, selon la jurisprudence, obtenir réparation du préjudice causé par une clause nulle qu'elle a respectée ou qu'on lui oppose, ou à défaut qu'elle n'a pas à la respecter, sans renoncer à vérifier les autres clauses (exclusivité, confidentialité).",
+   "description": "suites",
+   "critique": false
+  }
+ ],
+ "horloge": "2026-11-21T10:00",
+ "budget_minutes": 15
+}

@@ -1,0 +1,480 @@
+[
+  {
+    "type": "plainte_simple",
+    "si": {
+      "prealable_article_85": true
+    },
+    "libelle": "Expiration du délai de trois mois après la plainte simple déposée ou adressée au procureur (ouverture de la plainte avec constitution de partie civile, à défaut de réponse antérieure du procureur)",
+    "mois": 3,
+    "jours": 0,
+    "franc": false,
+    "depart": "date",
+    "texte": "CPP, art. 85, al. 2",
+    "effet": "Date à laquelle la plainte avec constitution de partie civile devient recevable au regard du préalable ; la date de départ est celle du dépôt devant le procureur contre récépissé ou de l'envoi recommandé de la plainte ou de sa copie.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/85",
+    "lu_en_entier": true
+  },
+  {
+    "type": "infraction",
+    "si": {
+      "nature": "delit"
+    },
+    "libelle": "Dernier jour utile avant la prescription de l'action publique d'un délit (délai de droit commun de six ans, sans acte interruptif ni suspension)",
+    "mois": 72,
+    "jours": 0,
+    "franc": false,
+    "depart": "date",
+    "texte": "CPP, art. 8, al. 1, 9-2, 9-3",
+    "effet": "Date indicative à recalculer après chaque acte interruptif (art. 9-2), suspension (art. 9-3) ou report du point de départ (art. 9-1 ; mineurs, art. 8, al. 2 à 5) ; au-delà, refus d'informer ou irrecevabilité des poursuites. Le report au premier jour ouvrable appliqué par le calcul n'est pas vérifié pour la prescription.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/8",
+    "lu_en_entier": true
+  },
+  {
+    "type": "infraction",
+    "si": {
+      "nature": "crime"
+    },
+    "libelle": "Dernier jour utile avant la prescription de l'action publique d'un crime (délai de droit commun de vingt ans, sans acte interruptif ni suspension)",
+    "mois": 240,
+    "jours": 0,
+    "franc": false,
+    "depart": "date",
+    "texte": "CPP, art. 7, al. 1, 9-2, 9-3",
+    "effet": "Date indicative ; délais de trente ans ou imprescriptibilité pour les crimes énumérés à l'article 7, alinéas 2 à 4 ; à recalculer après chaque acte interruptif ou suspension.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/7",
+    "lu_en_entier": true
+  },
+  {
+    "type": "infraction",
+    "si": {
+      "nature": "contravention"
+    },
+    "libelle": "Dernier jour utile avant la prescription de l'action publique d'une contravention (un an)",
+    "mois": 12,
+    "jours": 0,
+    "franc": false,
+    "depart": "date",
+    "texte": "CPP, art. 9, 9-2, 9-3",
+    "effet": "Date indicative à recalculer après chaque acte interruptif ou suspension.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/9",
+    "lu_en_entier": true
+  },
+  {
+    "type": "infraction",
+    "si": {
+      "nature": "presse"
+    },
+    "libelle": "Dernier jour utile avant la prescription de l'action publique et de l'action civile d'une infraction de presse (trois mois)",
+    "mois": 3,
+    "jours": 0,
+    "franc": false,
+    "depart": "date",
+    "texte": "Loi du 29 juillet 1881, art. 65",
+    "effet": "Le délai court du jour de la commission ou du dernier acte d'instruction ou de poursuite ; avant l'engagement des poursuites, seules les réquisitions aux fins d'enquête articulant et qualifiant les propos sont interruptives.",
+    "source_url": "https://librejustice.fr/norm/fr/loi-du-29-juillet-1881-sur-la-liberte-de-la-presse/65",
+    "lu_en_entier": true
+  },
+  {
+    "type": "citation_directe",
+    "si": {},
+    "libelle": "Première date d'audience compatible avec le délai minimal de citation (partie citée résidant en métropole ou dans le département d'outre-mer du tribunal)",
+    "mois": 0,
+    "jours": 15,
+    "franc": false,
+    "depart": "date",
+    "texte": "CPP, art. 552 (version en vigueur depuis le 23 octobre 2026)",
+    "effet": "Délai augmenté d'un mois pour les situations d'outre-mer visées et pour une résidence dans un autre État membre de l'Union, de deux mois pour une résidence hors de l'Union ; avant le 23 octobre 2026, le délai était de dix jours.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/552",
+    "lu_en_entier": true
+  },
+  {
+    "type": "mise_en_examen",
+    "si": {
+      "copie_du_dossier_demandee_dans_les_sept_jours": false
+    },
+    "libelle": "Fin du délai pour soulever la nullité des actes antérieurs à l'interrogatoire de première comparution ou de cet interrogatoire (requêtes formées depuis le 23 octobre 2026)",
+    "mois": 4,
+    "jours": 0,
+    "franc": false,
+    "depart": "notification",
+    "texte": "CPP, art. 173-1, al. 1 (version du 23 octobre 2026)",
+    "effet": "Au-delà, moyens irrecevables sauf impossibilité de les connaître ; pour les requêtes formées avant le 23 octobre 2026, le délai était de six mois à compter de la notification de la mise en examen.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/173-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "mise_en_examen",
+    "si": {
+      "copie_du_dossier_demandee_dans_les_sept_jours": true
+    },
+    "libelle": "Fin du délai pour soulever la nullité des actes antérieurs à l'interrogatoire de première comparution ou de cet interrogatoire, à compter de la délivrance de la première copie du dossier",
+    "mois": 4,
+    "jours": 0,
+    "franc": false,
+    "depart": "reception",
+    "texte": "CPP, art. 173-1, al. 1 (version du 23 octobre 2026)",
+    "effet": "La date de départ est celle de la délivrance de la première copie à l'avocat ou à la personne non assistée ; au-delà, moyens irrecevables sauf impossibilité de les connaître.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/173-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "interrogatoire_mis_en_examen",
+    "si": {},
+    "libelle": "Fin du délai pour soulever la nullité des actes postérieurs à l'interrogatoire de première comparution, à compter de cet interrogatoire ultérieur ou de la notification de l'acte",
+    "mois": 4,
+    "jours": 0,
+    "franc": false,
+    "depart": "date",
+    "texte": "CPP, art. 173-1, al. 1, dernière phrase (version du 23 octobre 2026)",
+    "effet": "Au-delà, moyens irrecevables sauf impossibilité de les connaître.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/173-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "audition_partie_civile",
+    "si": {},
+    "libelle": "Fin du délai de la partie civile pour soulever les nullités, à compter de son audition",
+    "mois": 4,
+    "jours": 0,
+    "franc": false,
+    "depart": "date",
+    "texte": "CPP, art. 173-1, al. 3 (version du 23 octobre 2026)",
+    "effet": "Au-delà, moyens irrecevables sauf impossibilité de les connaître.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/173-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "audition_temoin_assiste",
+    "si": {},
+    "libelle": "Fin du délai du témoin assisté pour soulever les nullités, à compter de son audition",
+    "mois": 4,
+    "jours": 0,
+    "franc": false,
+    "depart": "date",
+    "texte": "CPP, art. 173-1, al. 2 (version du 23 octobre 2026)",
+    "effet": "Au-delà, moyens irrecevables sauf impossibilité de les connaître.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/173-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "avis_fin_information",
+    "si": {
+      "personne_detenue": true
+    },
+    "libelle": "Fin du délai d'observations, de demandes d'actes et de requêtes en nullité après l'avis de fin d'information (personne mise en examen détenue)",
+    "mois": 1,
+    "jours": 0,
+    "franc": false,
+    "depart": "date",
+    "texte": "CPP, art. 175, al. 3 et 4",
+    "effet": "La date de départ est l'envoi de l'avis ; au-delà, les demandes et requêtes en nullité ne sont plus recevables ; un délai complémentaire de dix jours s'ouvre ensuite pour des observations complémentaires (art. 175, al. 5).",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/175",
+    "lu_en_entier": true
+  },
+  {
+    "type": "avis_fin_information",
+    "si": {
+      "personne_detenue": false
+    },
+    "libelle": "Fin du délai d'observations, de demandes d'actes et de requêtes en nullité après l'avis de fin d'information (autres cas)",
+    "mois": 3,
+    "jours": 0,
+    "franc": false,
+    "depart": "date",
+    "texte": "CPP, art. 175, al. 3 et 4",
+    "effet": "La date de départ est l'envoi de l'avis ; au-delà, les demandes et requêtes en nullité ne sont plus recevables ; un délai complémentaire de dix jours s'ouvre ensuite pour des observations complémentaires (art. 175, al. 5).",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/175",
+    "lu_en_entier": true
+  },
+  {
+    "type": "avis_fin_information",
+    "si": {
+      "personne_detenue": true
+    },
+    "libelle": "Fin du délai de dix jours pour les réquisitions et observations complémentaires (personne détenue)",
+    "mois": 1,
+    "jours": 10,
+    "franc": false,
+    "depart": "date",
+    "texte": "CPP, art. 175, al. 5",
+    "effet": "Le juge d'instruction peut ensuite rendre l'ordonnance de règlement (art. 175, al. 6).",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/175",
+    "lu_en_entier": true
+  },
+  {
+    "type": "avis_fin_information",
+    "si": {
+      "personne_detenue": false
+    },
+    "libelle": "Fin du délai de dix jours pour les réquisitions et observations complémentaires (autres cas)",
+    "mois": 3,
+    "jours": 10,
+    "franc": false,
+    "depart": "date",
+    "texte": "CPP, art. 175, al. 5",
+    "effet": "Le juge d'instruction peut ensuite rendre l'ordonnance de règlement (art. 175, al. 6).",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/175",
+    "lu_en_entier": true
+  },
+  {
+    "type": "ordonnance_juge_instruction",
+    "si": {},
+    "libelle": "Fin du délai d'appel d'une partie contre l'ordonnance du juge d'instruction",
+    "mois": 0,
+    "jours": 10,
+    "franc": false,
+    "depart": "notification",
+    "texte": "CPP, art. 186, al. 4, et 801 ; Crim., 27 mars 1995, n° 94-82.758 (départ au lendemain de l'expédition de la lettre recommandée)",
+    "effet": "Appel par déclaration au greffe (art. 502 et 503) ; au-delà, ordonnance de non-admission sans recours (art. 186, dernier al.). Déclarer l'appel pendant les heures d'ouverture du greffe.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/186",
+    "lu_en_entier": true
+  },
+  {
+    "type": "jugement_correctionnel",
+    "si": {
+      "delai_court_de": "prononce"
+    },
+    "libelle": "Fin du délai d'appel du jugement correctionnel contradictoire (départ au prononcé)",
+    "mois": 0,
+    "jours": 10,
+    "franc": false,
+    "depart": "prononce",
+    "texte": "CPP, art. 498, al. 1, et 801 ; Crim., 30 janvier 1973, n° 72-92.400",
+    "effet": "Appel par déclaration au greffe de la juridiction qui a statué (art. 502) ; au-delà, appel irrecevable comme tardif.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/498",
+    "lu_en_entier": true
+  },
+  {
+    "type": "jugement_correctionnel",
+    "si": {
+      "delai_court_de": "signification"
+    },
+    "libelle": "Fin du délai d'appel du jugement correctionnel (départ à la signification, dans les cas de l'article 498, al. 2)",
+    "mois": 0,
+    "jours": 10,
+    "franc": false,
+    "depart": "signification",
+    "texte": "CPP, art. 498, al. 2, et 801",
+    "effet": "Vérifier si l'article 498-1 s'applique (condamnation à l'emprisonnement ferme non signifiée à personne).",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/498",
+    "lu_en_entier": true
+  },
+  {
+    "type": "jugement_correctionnel",
+    "si": {
+      "delai_court_de": "prononce",
+      "appel_principal_d_une_autre_partie": true
+    },
+    "libelle": "Fin du délai d'appel incident après l'appel d'une autre partie (délai global de quinze jours après le prononcé)",
+    "mois": 0,
+    "jours": 15,
+    "franc": false,
+    "depart": "prononce",
+    "texte": "CPP, art. 500 et 801 ; Crim., 6 janvier 2009, n° 08-84.141",
+    "effet": "Au-delà, appel incident irrecevable comme tardif.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/500",
+    "lu_en_entier": true
+  },
+  {
+    "type": "jugement_correctionnel",
+    "si": {
+      "condamnation": true
+    },
+    "libelle": "Fin du délai d'appel du procureur général contre un jugement de condamnation",
+    "mois": 0,
+    "jours": 20,
+    "franc": false,
+    "depart": "prononce",
+    "texte": "CPP, art. 505",
+    "effet": "En cas d'appel du procureur général, les autres parties disposent de cinq jours pour un appel incident (art. 505, al. 2).",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/505",
+    "lu_en_entier": true
+  },
+  {
+    "type": "arret_cour_assises",
+    "si": {
+      "delai_court_de": "prononce"
+    },
+    "libelle": "Fin du délai d'appel de l'arrêt de cour d'assises (départ au prononcé)",
+    "mois": 0,
+    "jours": 10,
+    "franc": false,
+    "depart": "prononce",
+    "texte": "CPP, art. 380-9, al. 1, et 801",
+    "effet": "Déclaration au greffe de la cour d'assises (art. 380-12).",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/380-9",
+    "lu_en_entier": true
+  },
+  {
+    "type": "arret_cour_assises",
+    "si": {
+      "delai_court_de": "signification"
+    },
+    "libelle": "Fin du délai d'appel de l'arrêt de cour d'assises (partie absente non informée de la date du prononcé)",
+    "mois": 0,
+    "jours": 10,
+    "franc": false,
+    "depart": "signification",
+    "texte": "CPP, art. 380-9, al. 2, et 801",
+    "effet": "Déclaration au greffe de la cour d'assises (art. 380-12).",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/380-9",
+    "lu_en_entier": true
+  },
+  {
+    "type": "decision_penale_dernier_ressort",
+    "si": {
+      "delai_court_de": "prononce"
+    },
+    "libelle": "Fin du délai de pourvoi en cassation en matière pénale (dix jours francs après le prononcé)",
+    "mois": 0,
+    "jours": 10,
+    "franc": true,
+    "depart": "prononce",
+    "texte": "CPP, art. 568, al. 1 (version du 30 septembre 2024), et 801",
+    "effet": "Déclaration au greffe de la juridiction qui a statué (art. 576) ; mémoire dans les délais des articles 584 à 585-1. La date retenue sans le jour franc est la date prudente ; le calcul du jour franc n'a pas été vérifié. Avant le 30 septembre 2024, le délai était de cinq jours francs.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/568",
+    "lu_en_entier": true
+  },
+  {
+    "type": "decision_penale_dernier_ressort",
+    "si": {
+      "delai_court_de": "signification"
+    },
+    "libelle": "Fin du délai de pourvoi en cassation en matière pénale (départ à la signification, dans les cas de l'article 568, al. 2)",
+    "mois": 0,
+    "jours": 10,
+    "franc": true,
+    "depart": "signification",
+    "texte": "CPP, art. 568, al. 2 (version du 30 septembre 2024), et 801",
+    "effet": "Déclaration au greffe de la juridiction qui a statué (art. 576).",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/568",
+    "lu_en_entier": true
+  },
+  {
+    "type": "declaration_pourvoi_penal",
+    "si": {},
+    "libelle": "Fin du délai de dépôt du mémoire personnel au greffe de la juridiction qui a rendu la décision",
+    "mois": 0,
+    "jours": 10,
+    "franc": false,
+    "depart": "date",
+    "texte": "CPP, art. 584 et 585",
+    "effet": "Au-delà, seul le demandeur condamné pénalement peut transmettre lui-même son mémoire au greffe de la Cour de cassation ; les autres parties doivent recourir à un avocat à la Cour de cassation.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/584",
+    "lu_en_entier": true
+  },
+  {
+    "type": "declaration_pourvoi_penal",
+    "si": {
+      "demandeur_condamne_penalement": true
+    },
+    "libelle": "Date limite de réception du mémoire du demandeur condamné pénalement au greffe de la Cour de cassation",
+    "mois": 1,
+    "jours": 0,
+    "franc": false,
+    "depart": "date",
+    "texte": "CPP, art. 585-1",
+    "effet": "Sauf dérogation du président de la chambre criminelle ; même délai pour la déclaration de l'avocat qui se constitue.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/585-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "decision_interne_definitive",
+    "si": {},
+    "libelle": "Fin du délai de requête devant la Cour européenne des droits de l'homme (quatre mois, décision définitive du 1er février 2022 ou postérieure)",
+    "mois": 4,
+    "jours": 0,
+    "franc": false,
+    "depart": "date",
+    "texte": "Convention EDH, art. 35, § 1 ; Protocole n° 15, art. 4 et 8, § 3 ; Règlement de la Cour, art. 47, § 6 ; Sabri Güneş c. Turquie [GC], 29 juin 2012, n° 27396/06 (pas de report au jour ouvrable ; résumé juridique officiel lu, arrêt non lu en entier)",
+    "effet": "Délai de quatre mois pour les décisions définitives prises à compter du 1er février 2022, de six mois auparavant. La requête est réputée introduite à l'envoi d'un formulaire complet, cachet de la poste faisant foi. Retenir la date de la décision ; une décision de comité (N.Z. c. France, 2022) s'est référée à la date de connaissance de l'arrêt, sans règle de calcul exploitable. Le report au premier jour ouvrable appliqué par le calcul n'est pas vérifié pour ce délai.",
+    "source_url": "https://librejustice.fr/norm/intl/convention-de-sauvegarde-des-droits-de-l-homme-et-des-libertes-fondamentales/35",
+    "lu_en_entier": true,
+    "depart_a_partir_du": "2022-02-01",
+    "report_ouvrable": false
+  },
+  {
+    "type": "decision_interne_definitive",
+    "si": {},
+    "libelle": "Fin du délai de requête devant la Cour européenne des droits de l'homme (six mois, décision définitive antérieure au 1er février 2022)",
+    "mois": 6,
+    "jours": 0,
+    "franc": false,
+    "depart": "date",
+    "texte": "Convention EDH, art. 35, § 1 ; Protocole n° 15, art. 4 et 8, § 3 ; Règlement de la Cour, art. 47, § 6 ; Sabri Güneş c. Turquie [GC], 29 juin 2012, n° 27396/06 (pas de report au jour ouvrable ; résumé juridique officiel lu, arrêt non lu en entier)",
+    "effet": "Délai de quatre mois pour les décisions définitives prises à compter du 1er février 2022, de six mois auparavant. La requête est réputée introduite à l'envoi d'un formulaire complet, cachet de la poste faisant foi. Retenir la date de la décision ; une décision de comité (N.Z. c. France, 2022) s'est référée à la date de connaissance de l'arrêt, sans règle de calcul exploitable. Le report au premier jour ouvrable appliqué par le calcul n'est pas vérifié pour ce délai.",
+    "source_url": "https://librejustice.fr/norm/intl/convention-de-sauvegarde-des-droits-de-l-homme-et-des-libertes-fondamentales/35",
+    "lu_en_entier": true,
+    "depart_avant": "2022-02-01",
+    "report_ouvrable": false
+  },
+  {
+    "type": "arret_chambre_cedh",
+    "si": {},
+    "libelle": "Fin du délai de demande de renvoi devant la Grande Chambre",
+    "mois": 3,
+    "jours": 0,
+    "franc": false,
+    "depart": "date",
+    "texte": "Convention EDH, art. 43, § 1, et 44, § 2",
+    "effet": "Faute de demande, l'arrêt de chambre devient définitif trois mois après sa date.",
+    "source_url": "https://librejustice.fr/norm/intl/convention-de-sauvegarde-des-droits-de-l-homme-et-des-libertes-fondamentales/43",
+    "lu_en_entier": true
+  },
+  {
+    "type": "decision_transmission_qpc",
+    "si": {
+      "ordre": "judiciaire"
+    },
+    "libelle": "Fin du délai d'observations des parties devant la Cour de cassation sur une question transmise",
+    "mois": 1,
+    "jours": 0,
+    "franc": false,
+    "depart": "date",
+    "texte": "CPP, art. R*49-30",
+    "effet": "Observations signées par un avocat aux Conseils, sauf personne condamnée, partie civile en matière de presse et cas des articles 567-2, 574-1 et 574-2 ; délai réductible en cas d'urgence (art. R*49-32).",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-penale/r49-30",
+    "lu_en_entier": true
+  },
+  {
+    "type": "decision_transmission_qpc",
+    "si": {
+      "ordre": "administratif"
+    },
+    "libelle": "Fin du délai d'observations devant le Conseil d'État sur une question transmise",
+    "mois": 1,
+    "jours": 0,
+    "franc": false,
+    "depart": "notification",
+    "texte": "CJA, art. R*771-20",
+    "effet": "Sauf délai différent imparti par le président de la section du contentieux ou de la chambre ; avocat aux Conseils sauf dispense applicable devant la juridiction qui a transmis.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/partie-reglementaire-decrets-en-conseil/livre-vii/titre-vii/chapitre-i-bis/section-2",
+    "lu_en_entier": true
+  },
+  {
+    "type": "qpc_transmise_a_la_cour_supreme",
+    "si": {},
+    "libelle": "Délai imparti à la Cour de cassation ou au Conseil d'État pour se prononcer sur le renvoi au Conseil constitutionnel",
+    "mois": 3,
+    "jours": 0,
+    "franc": false,
+    "depart": "reception",
+    "texte": "Ord. n° 58-1067, art. 23-4 et 23-7",
+    "effet": "À défaut de décision dans ce délai, la question est transmise au Conseil constitutionnel ; pour une question soulevée directement en cassation, le délai court de la présentation du moyen (art. 23-5).",
+    "source_url": "https://librejustice.fr/norm/fr/ordonnance-n-58-1067-du-7-novembre-1958-portant-loi-organique-sur-le-conseil/23-4",
+    "lu_en_entier": true
+  },
+  {
+    "type": "saisine_conseil_constitutionnel",
+    "si": {},
+    "libelle": "Délai imparti au Conseil constitutionnel pour statuer sur la question prioritaire de constitutionnalité",
+    "mois": 3,
+    "jours": 0,
+    "franc": false,
+    "depart": "date",
+    "texte": "Ord. n° 58-1067, art. 23-10",
+    "effet": "Délai de jugement du Conseil ; les parties sont mises à même de présenter contradictoirement leurs observations.",
+    "source_url": "https://librejustice.fr/norm/fr/ordonnance-n-58-1067-du-7-novembre-1958-portant-loi-organique-sur-le-conseil/23-10",
+    "lu_en_entier": true
+  }
+]

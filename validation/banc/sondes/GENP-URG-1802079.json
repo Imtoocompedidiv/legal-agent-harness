@@ -1,0 +1,18 @@
+{
+  "id": "GENP-URG-1802079",
+  "capacite": "pronostic",
+  "famille": "urgence-l521-1",
+  "genere": true,
+  "origine": "usine.py, Tribunal administratif de Limoges, magistrat désigné, 21 janvier 2019, 1802079 (https://librejustice.fr/decision/VW4aKnYtFreo), issue réelle : non",
+  "fixture": "gen_urg_1802079",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme le juge des référés, dis si la condition d'urgence de ce référé-suspension est remplie. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2019-01-20T18:00",
+  "coupe": "2019-01-20",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*non\\b",
+      "description": "répond non, comme la juridiction"
+    }
+  ]
+}

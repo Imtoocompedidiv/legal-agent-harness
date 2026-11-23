@@ -1,0 +1,18 @@
+{
+  "id": "",
+  "intitule": "",
+  "client": "",
+  "adversaires": [],
+  "juridictions": [],
+  "objectif": "",
+  "instances": [],
+  "legal_harness_matter_id": "",
+  "consignes": {
+    "citations_interdites": [],
+    "affirmations_interdites": [],
+    "materiaux_exclus": [],
+    "ponctuation_interdite_textes_client": [],
+    "identifiants_prives": [],
+    "termes_internes": ["Codex", "Claude", "ChatGPT", "GPT", "brouillon", "draft", "Phase", "huis clos"]
+  }
+}

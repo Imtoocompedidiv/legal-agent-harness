@@ -1,0 +1,302 @@
+[
+  {
+    "type": "fin_annee_mise_en_recouvrement",
+    "si": {"impot": "etat"},
+    "libelle": "Fin du délai de réclamation fiscale (impôts autres que les impôts directs locaux) : 31 décembre de la deuxième année suivant la mise en recouvrement",
+    "mois": 24, "jours": 0, "franc": false, "depart": "date",
+    "texte": "LPF, art. R.* 196-1, a) et b)",
+    "effet": "Saisir comme date de l'événement le 31 décembre de l'année de mise en recouvrement du rôle, de notification de l'avis de mise en recouvrement ou du versement. Au-delà, la réclamation est irrecevable et la requête qui la suit aussi.",
+    "source_url": "https://librejustice.fr/norm/fr/livre-des-procedures-fiscales/r196-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "fin_annee_mise_en_recouvrement",
+    "si": {"impot": "local"},
+    "libelle": "Fin du délai de réclamation fiscale (impôts directs locaux et taxes annexes) : 31 décembre de l'année suivant la mise en recouvrement",
+    "mois": 12, "jours": 0, "franc": false, "depart": "date",
+    "texte": "LPF, art. R.* 196-2, a) et e)",
+    "effet": "Saisir comme date de l'événement le 31 décembre de l'année de mise en recouvrement du rôle, de notification de l'avis de mise en recouvrement, d'émission du titre de perception ou du versement. Au-delà, la réclamation est irrecevable.",
+    "source_url": "https://librejustice.fr/norm/fr/livre-des-procedures-fiscales/r196-2",
+    "lu_en_entier": true
+  },
+  {
+    "type": "fin_annee_evenement_motivant_reclamation",
+    "si": {"impot": "etat"},
+    "libelle": "Fin du délai de réclamation fondé sur la réalisation de l'événement qui la motive (impôts d'État)",
+    "mois": 24, "jours": 0, "franc": false, "depart": "date",
+    "texte": "LPF, art. R.* 196-1, c)",
+    "effet": "Saisir le 31 décembre de l'année de l'événement. Une décision juridictionnelle ou un avis mentionnés aux troisième et cinquième alinéas de l'article L. 190 ne constitue pas un tel événement.",
+    "source_url": "https://librejustice.fr/norm/fr/livre-des-procedures-fiscales/r196-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "fin_annee_evenement_motivant_reclamation",
+    "si": {"impot": "local"},
+    "libelle": "Fin du délai de réclamation fondé sur la réalisation de l'événement qui la motive (impôts directs locaux)",
+    "mois": 12, "jours": 0, "franc": false, "depart": "date",
+    "texte": "LPF, art. R.* 196-2, b)",
+    "effet": "Saisir le 31 décembre de l'année de l'événement. Une décision juridictionnelle ou un avis mentionnés aux troisième et cinquième alinéas de l'article L. 190 ne constitue pas un tel événement.",
+    "source_url": "https://librejustice.fr/norm/fr/livre-des-procedures-fiscales/r196-2",
+    "lu_en_entier": true
+  },
+  {
+    "type": "reclamation_fiscale",
+    "si": {},
+    "libelle": "Expiration du délai d'instruction de six mois : le tribunal peut être saisi sans décision de l'administration",
+    "mois": 6, "jours": 0, "franc": false, "depart": "date",
+    "texte": "LPF, art. R.* 198-10, al. 2, et R.* 199-1, al. 2",
+    "effet": "Date d'ouverture de la saisine du juge à défaut de décision. L'administration peut, avant l'expiration, annoncer un délai complémentaire qui ne peut excéder trois mois. Saisir la date de présentation de la réclamation.",
+    "source_url": "https://librejustice.fr/norm/fr/livre-des-procedures-fiscales/r199-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "decision_reclamation_fiscale",
+    "si": {},
+    "libelle": "Fin du délai de saisine du tribunal après la décision prise sur la réclamation",
+    "mois": 2, "jours": 0, "franc": false, "depart": "reception",
+    "texte": "LPF, art. R.* 199-1, al. 1",
+    "effet": "Requête tardive au-delà. Le texte fait courir le délai du jour de la réception de l'avis notifiant la décision ; son caractère franc n'a pas été vérifié, la date retenue est la date prudente.",
+    "source_url": "https://librejustice.fr/norm/fr/livre-des-procedures-fiscales/r199-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "depot_recours_urbanisme",
+    "si": {},
+    "libelle": "Fin du délai de notification du recours contentieux à l'auteur de la décision et au titulaire de l'autorisation",
+    "mois": 0, "jours": 15, "franc": true, "depart": "date",
+    "texte": "C. urb., art. R.* 600-1, al. 1 à 3",
+    "effet": "Notification par lettre recommandée avec accusé de réception, réputée faite à la date d'envoi prouvée par le certificat de dépôt. À défaut, irrecevabilité du recours. Saisir la date d'enregistrement de la requête.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-l-urbanisme/r600-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "depot_recours_administratif_urbanisme",
+    "si": {},
+    "libelle": "Fin du délai de notification du recours gracieux ou hiérarchique à l'auteur de la décision et au titulaire de l'autorisation",
+    "mois": 0, "jours": 15, "franc": true, "depart": "date",
+    "texte": "C. urb., art. R.* 600-1, al. 1 et 2",
+    "effet": "À défaut, le recours contentieux formé ensuite contre le rejet du recours administratif est irrecevable.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-l-urbanisme/r600-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "affichage_terrain",
+    "si": {"qualite": "tiers"},
+    "libelle": "Fin du délai de recours contentieux des tiers contre un permis ou une non-opposition à déclaration préalable",
+    "mois": 2, "jours": 0, "franc": true, "depart": "affichage",
+    "texte": "C. urb., art. R.* 600-2 ; CJA, art. R. 421-1 ; caractère franc : CE, 19 septembre 2014, n° 362568 (analyse officielle)",
+    "effet": "Le délai court du premier jour d'une période continue de deux mois d'affichage sur le terrain des pièces prévues à l'article R.* 424-15. Il n'est plus prorogé par un recours gracieux ou hiérarchique depuis le 28 novembre 2025 (L. 600-12-2).",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-l-urbanisme/r600-2",
+    "lu_en_entier": true
+  },
+  {
+    "type": "affichage_terrain",
+    "si": {"qualite": "tiers", "recours_administratif_envisage": true},
+    "libelle": "Fin du délai d'un mois pour former un recours gracieux ou hiérarchique contre une autorisation d'urbanisme",
+    "mois": 1, "jours": 0, "franc": false, "depart": "affichage",
+    "texte": "C. urb., art. L. 600-12-2, al. 1 et 2 (loi n° 2025-1129 du 26 novembre 2025)",
+    "effet": "Le texte fixe la durée d'un mois sans préciser le point de départ ; le premier jour d'affichage est retenu par prudence (point de départ non vérifié). Le silence de deux mois vaut rejet, et le délai contentieux n'est pas prorogé par ce recours.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-l-urbanisme/l600-12-2",
+    "lu_en_entier": true
+  },
+  {
+    "type": "achevement_travaux",
+    "si": {},
+    "libelle": "Fin de toute action en annulation d'un permis de construire ou d'aménager ou d'une non-opposition : six mois après l'achèvement",
+    "mois": 6, "jours": 0, "franc": false, "depart": "date",
+    "texte": "C. urb., art. R.* 600-3",
+    "effet": "Sauf preuve contraire, l'achèvement est la date de réception de la déclaration attestant l'achèvement (R. 462-1).",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-l-urbanisme/r600-3",
+    "lu_en_entier": true
+  },
+  {
+    "type": "communication_premier_memoire_defense",
+    "si": {"matiere": "urbanisme"},
+    "libelle": "Cristallisation des moyens et dernier jour pour assortir le recours d'un référé suspension",
+    "mois": 2, "jours": 0, "franc": false, "depart": "date",
+    "texte": "C. urb., art. R. 600-5 et L. 600-3, al. 1",
+    "effet": "Plus aucun moyen nouveau après cette date, sauf nouvelle date fixée par le président de la formation de jugement ; le référé suspension contre un permis ou une non-opposition n'est plus recevable.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-l-urbanisme/r600-5",
+    "lu_en_entier": true
+  },
+  {
+    "type": "notification_oqtf",
+    "si": {"procedure": "L911-1"},
+    "libelle": "Fin du délai de recours contre l'obligation de quitter le territoire et les décisions qui l'accompagnent (procédure collégiale spéciale)",
+    "mois": 1, "jours": 0, "franc": false, "depart": "notification",
+    "texte": "CESEDA, art. L. 614-1, L. 911-1, R. 614-3 et R. 911-1",
+    "effet": "Délai non prorogé par un recours administratif (R. 911-1, al. 2) ; aide juridictionnelle à demander au plus tard lors de l'introduction du recours (L. 911-1, al. 2). Caractère franc non vérifié.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-l-entree-et-du-sejour-des-etrangers-et-du-droit-d-asile/r911-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "notification_oqtf",
+    "si": {"procedure": "L921-1"},
+    "libelle": "Fin du délai de recours de sept jours (étranger assigné à résidence ou détenu)",
+    "mois": 0, "jours": 7, "franc": false, "depart": "notification",
+    "texte": "CESEDA, art. L. 614-2, al. 1, L. 614-3 et L. 921-1",
+    "effet": "Le tribunal statue dans les quinze jours de l'introduction du recours. Caractère franc non vérifié.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-l-entree-et-du-sejour-des-etrangers-et-du-droit-d-asile/l921-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "notification_oqtf",
+    "si": {"procedure": "L921-2"},
+    "libelle": "Fin du délai de recours de quarante-huit heures (étranger placé en rétention)",
+    "mois": 0, "jours": 2, "franc": false, "depart": "notification",
+    "texte": "CESEDA, art. L. 614-2, al. 2, L. 921-2 et R. 921-2-1, al. 1",
+    "effet": "Délai exprimé en heures : le calcul en jours est indicatif, l'heure de notification fait foi. Dérogations de cinq jours (R. 921-2-1, al. 2) et de sept jours pour les décisions de transfert (al. 3).",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-l-entree-et-du-sejour-des-etrangers-et-du-droit-d-asile/r921-2-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "information_interruption_delai_oqtf",
+    "si": {"nouvelle_situation": "assignation_residence"},
+    "libelle": "Nouveau délai de sept jours après l'interruption du délai d'un mois par une assignation à résidence",
+    "mois": 0, "jours": 7, "franc": false, "depart": "notification",
+    "texte": "CESEDA, art. R. 921-1, al. 1",
+    "effet": "Saisir la date à laquelle l'administration informe l'étranger de l'interruption. En cas de placement en rétention, le délai applicable est celui de l'article R. 921-2-1 (R. 921-1, al. 2).",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-l-entree-et-du-sejour-des-etrangers-et-du-droit-d-asile/r921-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "notification_oqtf",
+    "si": {"procedure": "anterieure_2024_07_15_avec_delai"},
+    "libelle": "Régime antérieur (décision prise avant le 15 juillet 2024) : fin du délai de trente jours contre une obligation de quitter le territoire avec délai de départ (3°, 5° ou 6° de L. 611-1 ou L. 251-1)",
+    "mois": 0, "jours": 30, "franc": false, "depart": "notification",
+    "texte": "CJA, art. R. 776-2, I, al. 1 (version du 1er mai 2021 au 15 juillet 2024)",
+    "effet": "Délai de quinze jours pour les cas 1°, 2° ou 4° de L. 611-1 (R. 776-2, I, al. 2) ; quarante-huit heures pour une obligation sans délai notifiée par voie administrative (R. 776-2, II).",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r776-2",
+    "lu_en_entier": true
+  },
+  {
+    "type": "jugement_ta_etrangers",
+    "si": {"procedure": "juge_unique"},
+    "libelle": "Fin du délai d'appel contre un jugement rendu selon une procédure à juge unique du livre IX du CESEDA",
+    "mois": 1, "jours": 0, "franc": false, "depart": "notification",
+    "texte": "CESEDA, art. R. 922-27",
+    "effet": "Quinze jours pour le jugement relatif à un refus d'entrée au titre de l'asile. Pour la procédure collégiale de L. 911-1, aucune disposition dérogatoire n'a été trouvée : le délai de deux mois de l'article R. 811-2 du CJA s'appliquerait (non vérifié).",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-l-entree-et-du-sejour-des-etrangers-et-du-droit-d-asile/r922-27",
+    "lu_en_entier": true
+  },
+  {
+    "type": "envoi_notification_rejet_offre",
+    "si": {"procedure": "formalisee", "transmission": "electronique"},
+    "libelle": "Date au plus tôt de signature du marché : le référé précontractuel doit être enregistré avant la signature",
+    "mois": 0, "jours": 11, "franc": false, "depart": "date",
+    "texte": "CCP, art. R. 2182-1, al. 1 ; CJA, art. L. 551-1, dernier al., et L. 551-4",
+    "effet": "Après la signature, le référé précontractuel est irrecevable ; une fois saisi, le juge suspend la signature (L. 551-4). La notification de rejet doit indiquer cette date (CCP, R. 2181-3, 2°).",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-la-commande-publique/r2182-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "envoi_notification_rejet_offre",
+    "si": {"procedure": "formalisee", "transmission": "non_electronique"},
+    "libelle": "Date au plus tôt de signature du marché lorsque la notification n'a pas été transmise par voie électronique",
+    "mois": 0, "jours": 16, "franc": false, "depart": "date",
+    "texte": "CCP, art. R. 2182-1, al. 2 ; CJA, art. L. 551-1, dernier al.",
+    "effet": "Après la signature, le référé précontractuel est irrecevable.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-la-commande-publique/r2182-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "envoi_notification_rejet_offre",
+    "si": {"procedure": "adaptee"},
+    "libelle": "Procédure adaptée : aucun délai minimal de signature n'est imposé par l'article R. 2182-1, la signature peut intervenir à tout moment",
+    "mois": 0, "jours": 0, "franc": false, "depart": "date",
+    "texte": "CCP, art. R. 2182-1 (limité aux procédures formalisées) ; CJA, art. L. 551-1, dernier al.",
+    "effet": "Déposer le référé précontractuel dès réception du rejet ; un dépôt postérieur à la signature est irrecevable (CJA, art. L. 551-1, dernier al.).",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-la-commande-publique/r2182-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "publication_avis_attribution",
+    "si": {"support": "JOUE"},
+    "libelle": "Fin du délai du référé contractuel après publication d'un avis d'attribution au Journal officiel de l'Union européenne",
+    "mois": 0, "jours": 31, "franc": false, "depart": "publication",
+    "texte": "CJA, art. R. 551-7, al. 1",
+    "effet": "La juridiction peut être saisie au plus tard le trente et unième jour suivant la publication. Pour un marché fondé sur un accord-cadre, le délai court de la notification de la conclusion si elle mentionne le titulaire et les motifs du choix.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r551-7",
+    "lu_en_entier": true
+  },
+  {
+    "type": "conclusion_contrat",
+    "si": {"avis_attribution_publie": false},
+    "libelle": "Fin du délai du référé contractuel en l'absence d'avis d'attribution ou de notification conforme",
+    "mois": 6, "jours": 1, "franc": false, "depart": "date",
+    "texte": "CJA, art. R. 551-7, al. 2",
+    "effet": "Six mois à compter du lendemain du jour de la conclusion du contrat ; saisir la date de conclusion.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r551-7",
+    "lu_en_entier": true
+  },
+  {
+    "type": "avis_conclusion_contrat",
+    "si": {},
+    "libelle": "Fin du délai du recours des tiers en contestation de la validité du contrat",
+    "mois": 2, "jours": 0, "franc": false, "depart": "publication",
+    "texte": "CE, Ass., 4 avril 2014, Département de Tarn-et-Garonne, n° 358994, cons. 2",
+    "effet": "Le délai court de l'accomplissement des mesures de publicité appropriées, notamment un avis mentionnant la conclusion du contrat et les modalités de sa consultation. Caractère franc non vérifié.",
+    "source_url": "https://librejustice.fr/decision/OH03O8cb18N1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "demande_prealable_indemnitaire",
+    "si": {},
+    "libelle": "Naissance de la décision implicite de rejet d'une demande à caractère financier",
+    "mois": 2, "jours": 0, "franc": false, "depart": "reception",
+    "texte": "CRPA, art. L. 231-4, 3° ; CJA, art. R. 421-1, al. 2, et R. 421-2",
+    "effet": "La requête pécuniaire devient recevable ; une décision intervenue en cours d'instance régularise une requête prématurée (CE, Sect., avis, 27 mars 2019, Rollet, n° 426472). La date de dépôt de la demande doit être établie à l'appui de la requête.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r421-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "fin_annee_acquisition_droits",
+    "si": {"debiteur": "personne_publique"},
+    "libelle": "Acquisition de la prescription quadriennale",
+    "mois": 48, "jours": 0, "franc": false, "depart": "date",
+    "texte": "Loi n° 68-1250 du 31 décembre 1968, art. 1er, 2 et 3",
+    "effet": "Saisir le 31 décembre de l'année au cours de laquelle les droits ont été acquis. Tout acte interruptif de l'article 2 fait courir un nouveau délai à compter du 1er janvier suivant ; s'il s'agit d'un recours juridictionnel, à compter du 1er janvier suivant le passage en force de chose jugée. La prescription ne court pas contre le créancier qui ne peut agir ou ignore légitimement sa créance (art. 3).",
+    "source_url": "https://librejustice.fr/norm/fr/loi-n-68-1250-du-31-decembre-1968-relative-a-la-prescription-des-creances-sur-l/1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "consolidation_dommage",
+    "si": {"responsabilite_medicale": true},
+    "libelle": "Prescription décennale des actions en responsabilité médicale",
+    "mois": 120, "jours": 0, "franc": false, "depart": "date",
+    "texte": "CSP, art. L. 1142-28",
+    "effet": "Dix ans à compter de la consolidation du dommage, pour les actions contre les professionnels et établissements de santé publics ou privés et les demandes à l'ONIAM visées par le texte.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-la-sante-publique/l1142-28",
+    "lu_en_entier": true
+  },
+  {
+    "type": "notification_acte_militaire",
+    "si": {},
+    "libelle": "Fin du délai de saisine de la commission des recours des militaires",
+    "mois": 2, "jours": 0, "franc": false, "depart": "notification",
+    "texte": "C. défense, art. R. 4125-2, al. 1 ; R. 4125-1, I",
+    "effet": "Saisine par tout moyen conférant date certaine, avec la copie de l'acte. Au-delà, le président de la commission constate la forclusion, et le recours contentieux est irrecevable faute de recours préalable. Le délai court aussi de la publication ou de la naissance d'un rejet implicite.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-la-defense/r4125-2",
+    "lu_en_entier": true
+  },
+  {
+    "type": "saisine_commission_recours_militaires",
+    "si": {},
+    "libelle": "Naissance de la décision implicite de rejet de la commission des recours des militaires ; avant cette date sans décision expresse, le recours contentieux est prématuré",
+    "mois": 4, "jours": 0, "franc": false, "depart": "date",
+    "texte": "C. défense, art. R. 4125-10",
+    "effet": "La décision prise sur le recours se substitue à la décision initiale. Le délai de recours contentieux court ensuite (CJA, R. 421-1 et R. 421-2).",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-la-defense/r4125-10",
+    "lu_en_entier": true
+  },
+  {
+    "type": "notification_decision_agent",
+    "si": {"mediation_prealable_obligatoire": true},
+    "libelle": "Fin du délai pour engager la médiation préalable obligatoire",
+    "mois": 2, "jours": 0, "franc": true, "depart": "notification",
+    "texte": "CJA, art. R. 213-10 (renvoi à R. 421-1 et R. 421-7) ; décret n° 2022-433 du 25 mars 2022, art. 2 et 3 ; caractère franc : CE, 19 septembre 2014, n° 362568 (analyse officielle)",
+    "effet": "Si la notification ne mentionne pas l'obligation et les coordonnées du médiateur, le délai ne court pas. Une requête directe est rejetée par ordonnance et transmise au médiateur, réputé saisi à la date d'enregistrement (R. 213-12).",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r213-10",
+    "lu_en_entier": true
+  }
+]

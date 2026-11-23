@@ -1,0 +1,14 @@
+Version : ech-v50
+Issue réelle : oui
+
+**Non, 60 %.** J'arrive au même résultat en me plaçant au siège du juge : l'urgence sera admise, mais rien dans le dossier ne remplit la seconde condition.
+
+1. **Urgence : probablement admise.** À Mayotte, le recours contre une obligation de quitter le territoire ne suspend pas son exécution. L'obligation, prononcée sans délai, peut donc être exécutée à tout moment, et l'assignation à résidence la prépare. Une mesure s'impose dans les 48 heures, et rien ne montre une négligence de la requérante : elle a saisi le juge le 31 mai, quatre jours après l'arrêté du 27 mai.
+2. **Ce qui décide : l'atteinte grave et manifestement illégale au droit à la vie privée et familiale (article 8 de la Convention).** Pour la constater, le juge doit voir sur pièces des liens familiaux intenses, que l'éloignement romprait de façon manifestement disproportionnée. La requête invoque l'article 8, mais rien de ce qui est reproduit ne nomme d'enfant, de conjoint, de durée de séjour ou de scolarisation.
+3. **Le meilleur argument de la requérante.** L'instruction est close et le préfet s'est borné à dire que les moyens « ne sont pas fondés ». Le juge peut donc tenir pour établies les allégations précises, datées et appuyées de pièces que l'administration n'a pas contestées. Mais ce silence ne vaut pas acquiescement, et une allégation générale n'est jamais tenue pour établie. La requérante gagnerait si son dossier contient ces preuves, par exemple des enfants scolarisés ou français, ou un conjoint en séjour régulier. Rien de ce qui est reproduit ne le montre.
+4. **Ce qui manque au dossier.** Il ne fait apparaître ni élément nouveau survenu depuis l'arrêté, comme une naissance ou un certificat médical, ni exécution de l'éloignement après la saisine du juge (article L. 761-9 du code des étrangers). Ce sont les deux situations où l'atteinte se caractérise le plus sûrement.
+5. **Les demandes accessoires.** Même en cas de succès, la demande d'autorisation provisoire de séjour sous 4 jours et de réexamen sous 2 mois dépasse ce que ce juge ordonne en urgence. Il se limiterait à suspendre l'obligation de quitter le territoire, l'interdiction de retour et l'assignation à résidence.
+
+L'issue la plus probable est donc un rejet : l'urgence est admise, mais l'atteinte manifestement illégale n'est pas démontrée. Je n'inverserais ce pronostic que si les pièces familiales, absentes de l'extrait, sont précises et non contestées.
+
+J'ai lu en entier `dossier_remis.md`. Je n'ai lu à la source ni les textes ni les décisions : les règles ci-dessus viennent de la fiche sur la mécanique du référé-liberté.

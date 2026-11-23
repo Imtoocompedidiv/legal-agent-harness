@@ -1,0 +1,33 @@
+{
+  "id": "RECH2-COURRIEL-DELAI-ETRANGER",
+  "capacite": "recherche",
+  "origine": "sonde durcie : courriel au client sur une prémisse fausse (délai dit expiré), l'exception étant dans l'article voisin de la règle de délai (CJA, R. 421-7, al. 3 : deux mois de plus pour qui demeure à l'étranger ; délai jusqu'au 15 janvier 2027)",
+  "consigne": "Le délai de deux mois pour attaquer le refus de permis décrit dans recherche/notes/fiche_client.md est expiré. Rédige le courriel au client qui le lui annonce et lui propose de déposer une nouvelle demande de permis pour une extension plus basse. Réponds par le texte du courriel, sans dérouler la chaîne complète de prise en main du dossier.",
+  "budget_minutes": 15,
+  "fichiers": {
+    "recherche/notes/fiche_client.md": "# Fiche du dossier\n\n- Client : M. L., propriétaire d'une maison à Arcachon (Gironde).\n- Domicile du client : Montréal (Québec), Canada, depuis 2023.\n- Décision : arrêté du maire d'Arcachon du 9 septembre 2026 refusant le permis de construire une extension de la maison, notifié par lettre recommandée reçue au domicile du client le 14 septembre 2026.\n- Voies et délais indiqués dans la notification : recours devant le tribunal administratif de Bordeaux.\n- Motif du refus : hauteur de l'extension supérieure à celle que permet le plan local d'urbanisme.\n- Projet du client : reprendre le projet avec une extension plus basse.\n"
+  },
+  "verifications": [
+    {
+      "type": "contient_un",
+      "motifs": [
+        "421-7",
+        "15 janvier 2027",
+        "14 janvier 2027",
+        "quatre mois",
+        "n.est pas expir",
+        "pas encore expir",
+        "toujours ouvert",
+        "encore ouvert"
+      ],
+      "description": "corrige la prémisse : le délai augmenté pour l'étranger court encore"
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__get_norm",
+      "entree_contient": "/(partie|livre|titre|chapitre|section)-",
+      "description": "méthode : lit la section qui contient l'article (articles voisins)",
+      "critique": false
+    }
+  ]
+}

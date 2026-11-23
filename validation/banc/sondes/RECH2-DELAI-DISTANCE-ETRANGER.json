@@ -1,0 +1,35 @@
+{
+  "id": "RECH2-DELAI-DISTANCE-ETRANGER",
+  "capacite": "recherche",
+  "origine": "refonte recherche : exception placée dans l'article voisin (CJA, R. 421-7, al. 3 : délai de R. 421-1 augmenté de deux mois pour les personnes qui demeurent à l'étranger ; notification reçue le 14 septembre 2026, délai jusqu'au 15 janvier 2027, alors que le délai de droit commun est expiré)",
+  "consigne": "Notre client, de nationalité française, vit à Montréal depuis 2023 et possède une maison à Arcachon. Par un arrêté du 9 septembre 2026, notifié à son adresse canadienne et reçu le 14 septembre 2026, le maire d'Arcachon lui a refusé un permis de construire une extension. La lettre de notification indique les voies et délais de recours. Il nous consulte aujourd'hui pour contester ce refus devant le tribunal administratif de Bordeaux. Est-il encore temps, et jusqu'à quelle date ? Lis les textes applicables à la source. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier. Termine par une ligne de la forme « DÉLAI : OUVERT » ou « DÉLAI : EXPIRÉ ».",
+  "budget_minutes": 15,
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "421-7",
+      "description": "trouve l'augmentation de délai de l'article R. 421-7 du CJA"
+    },
+    {
+      "type": "contient",
+      "motif": "d[ée]lai \\*{0,2} ?: ?\\*{0,2} ?ouvert",
+      "description": "le délai n'est pas expiré"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "14 janvier 2027",
+        "15 janvier 2027"
+      ],
+      "description": "date limite",
+      "critique": false
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__get_norm",
+      "entree_contient": "/(partie|livre|titre|chapitre|section)-",
+      "description": "méthode : lit la section qui contient l'article (articles voisins)",
+      "critique": false
+    }
+  ]
+}

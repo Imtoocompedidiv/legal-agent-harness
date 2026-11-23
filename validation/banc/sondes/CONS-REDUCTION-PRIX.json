@@ -1,0 +1,15 @@
+{
+ "id": "CONS-REDUCTION-PRIX",
+ "capacite": "conseil",
+ "origine": "pôle conformite-et-produits : C. conso., art. L. 112-1-1 (prix antérieur : prix le plus bas des trente derniers jours)",
+ "consigne": "Nous sommes le samedi 21 novembre 2026. Un site de vente en ligne client vend une enceinte 70 euros depuis septembre. Il l'a affichée à 100 euros du 16 au 20 novembre et veut annoncer pour le Black Friday « −40 % : 60 euros au lieu de 100 euros ». Est-ce permis ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+ "verifications": [
+  {
+   "type": "critere",
+   "critere": "La réponse dit que l'annonce de réduction doit indiquer comme prix antérieur le prix le plus bas pratiqué au cours des trente derniers jours, soit 70 euros, et que l'annonce « 60 euros au lieu de 100 euros » est illicite et trompeuse.",
+   "description": "prix de référence"
+  }
+ ],
+ "horloge": "2026-11-21T10:00",
+ "budget_minutes": 15
+}

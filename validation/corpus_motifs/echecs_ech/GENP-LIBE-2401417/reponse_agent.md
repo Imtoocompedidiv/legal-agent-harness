@@ -1,0 +1,12 @@
+Version : ech-v50
+Issue réelle : oui
+
+**Non, 60 %.** Je maintiens cette issue. Une fois l'instruction close, le juge ne tient pour établies que les allégations précises, datées et étayées que l'administration n'a pas contestées. Or la requête, telle qu'elle est reproduite, n'invoque l'article 8 qu'en termes généraux, et le préfet en conteste expressément l'atteinte.
+
+1. **L'urgence particulière sera admise.** À Mayotte, le recours contre une obligation de quitter le territoire ne suspend pas l'éloignement. M. C, qui n'a pas encore été éloigné puisqu'il était à l'audience, peut l'être dans les quarante-huit heures. Rien ne montre une négligence de sa part : l'arrêté date du 29 juillet et la requête du 30. Le préfet ne discute l'urgence que pour l'interdiction de retour, ce qui ne remplit pas cette condition à sa place mais ne la conteste pas non plus pour l'obligation de quitter le territoire.
+2. **L'atteinte grave et manifestement illégale décidera, et c'est là que la demande pèche.** Le juge ne peut exiger la preuve de ce que le requérant avance, mais il lui faut des faits précis : enfant français à charge, vie commune ancienne, résidence prouvée. Les moyens reproduits ne contiennent aucun de ces faits. Le préfet conteste l'atteinte en défense et l'a discutée à l'audience. Des affirmations générales et contestées ne seront pas tenues pour établies.
+3. **Il n'y a pas d'autre voie de succès visible.** Rien n'indique un éloignement exécuté malgré la saisine, qui aurait porté atteinte au droit au recours effectif. Rien n'indique non plus un élément nouveau sérieux que le préfet aurait omis de réexaminer.
+4. **La meilleure réponse adverse.** Le préfet dira que M. C n'établit ni l'ancienneté ni l'intensité de ses liens en France, et que l'arrêté ne méconnaît pas manifestement l'article 8. C'est le terrain naturel du juge du référé-liberté, qui contrôle l'illégalité manifeste et non l'erreur d'appréciation.
+5. **Ce qui renverserait l'issue.** Si les pièces versées, que le dossier remis ne reproduit pas, établissent un enfant français ou une longue résidence que le préfet n'a pas contestés précisément, le juge suspendrait l'arrêté et ordonnerait un réexamen. Il refuserait en tout état de cause l'autorisation provisoire de séjour avec droit au travail.
+
+J'ai lu le dossier remis en entier et la fiche de l'exercice. Je n'ai lu à la source ni les textes ni les décisions citées, et je ne dispose d'aucune pièce sur la situation personnelle de M. C.

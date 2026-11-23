@@ -1,0 +1,43 @@
+{
+  "id": "DOCT-THESE-PRESCRIPTION-DELAI",
+  "capacite": "doctrine",
+  "origine": "demande du client : accès aux travaux universitaires (thèse récente, statut de lecture)",
+  "consigne": "Dossier pénal : notre client est poursuivi pour des faits anciens, et nous voulons soutenir que l'allongement de la prescription de l'action publique se heurte au droit d'être jugé dans un délai raisonnable. Une thèse de doctorat soutenue en France en 2025 a étudié l'articulation de la prescription et du délai raisonnable en matière pénale, en comparant le droit français avec celui d'un autre pays européen. Retrouve-la. Donne sa référence complète vérifiée (identifiant national de la thèse, auteur, établissement, date de soutenance, direction), le pays de comparaison, la thèse que défend l'auteur, ce que tu en as réellement lu (texte intégral, extraits, résumé ou notice) et l'usage que nous pouvons en faire dans nos écritures. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "outils": "Agent,Task,Read,Write,Edit,Glob,Grep,Bash,PowerShell,TodoWrite,mcp__librejustice__search_decisions,mcp__librejustice__get_decision,mcp__librejustice__search_norms,mcp__librejustice__get_norm,mcp__hal__search_hal,mcp__hal__lookup_reference,mcp__shs_fr__theses_search,mcp__shs_fr__theses_get,mcp__shs_fr__isidore_search,mcp__shs_fr__sudoc_search,mcp__shs_fr__gallica_search,mcp__academic_papers__search_openalex,mcp__academic_papers__search_crossref,mcp__academic_papers__get_crossref_paper_by_doi,mcp__academic_papers__search_semantic,mcp__academic_papers__search_core,mcp__academic_papers__search_base,mcp__academic_papers__search_doaj,mcp__academic_papers__search_hal,mcp__academic_papers__search_ssrn,mcp__academic_papers__search_unpaywall,mcp__academic_papers__read_hal_paper,mcp__academic_papers__read_ssrn_paper,mcp__academic_papers__get_citing_papers,mcp__academic_papers__get_referenced_papers,mcp__asta__search_paper_by_title,mcp__asta__get_paper,mcp__asta__search_papers_by_relevance,mcp__asta__snippet_search",
+  "budget_minutes": 12,
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "2025PA100060",
+      "description": "retrouve la thèse par son identifiant national"
+    },
+    {
+      "type": "contient",
+      "motif": "ital",
+      "description": "donne le pays de comparaison"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "parizot",
+        "caianiello"
+      ],
+      "description": "donne la direction lue sur la notice",
+      "critique": false
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "résumé",
+        "notice"
+      ],
+      "description": "dit que la lecture porte sur la notice ou le résumé"
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__shs_fr__theses",
+      "description": "interroge theses.fr",
+      "critique": false
+    }
+  ]
+}

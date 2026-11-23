@@ -1,0 +1,24 @@
+{
+  "id": "GENM-MOY-2414061",
+  "capacite": "moyen",
+  "famille": "moyen-gagnant",
+  "genere": false,
+  "origine": "usine.py, Cour de cassation, 2e chambre civile · formation restreinte, 24 septembre 2026, 24-14.061 (https://librejustice.fr/decision/w8HOYS7OEYaB), grief retenu par la Cour",
+  "fixture": "gen_moy_2414061",
+  "consigne": "Lis dossier_remis.md. Tu es avocat aux Conseils, chargé du pourvoi décrit en tête du dossier contre l'arrêt qui suit. Propose au plus trois moyens de cassation, du plus fort au plus faible : pour chacun, le texte ou le principe invoqué, le cas d'ouverture et le chef de l'arrêt critiqué, en cinq lignes au plus. Réponds directement, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2026-09-23T18:00",
+  "coupe": "2026-09-23",
+  "verifications": [
+    {
+      "type": "critere",
+      "description": "trouve le grief que la Cour a retenu",
+      "critere": "Au moins un des moyens proposés correspond au grief que la Cour de cassation a retenu pour casser l'arrêt : même texte ou même principe, appliqué au même point de l'arrêt. Grief retenu par la Cour : « Vu l'article R. 243-59 du code de la sécurité sociale, dans sa rédaction applicable au litige : 4. Selon les dispositions de ce texte, les employeurs sont tenus de présenter aux agents chargés du contrôle tout document et de permettre l'accès à tout support qui leur sont demandés par ces agents comme nécessaires à l'exercice du contrôle. 5. Il résulte de ces mêmes dispositions, qui sont d'application stricte, que les inspecteurs du recouvrement ne sont pas autorisés à rechercher eux-mêmes les documents dont ils ont besoin et à les emporter pour examen sans en avoir informé l'employeur et avoir obtenu son accord. 6. Pour juger régulière la procédure de contrôle, l'arrêt relève qu'il ressort de l'avis de contrôle que l'employeur devait mettre à la disposition de l'inspectrice du recouvrement les livres de paie et fiches individuelles de salaire, que ces documents figurent dans la liste des documents consultés mentionnés dans la lettre d'observations, que le droit de présentation autorise l'organisme à copier les documents examinés et que la sortie de ces copies par l'inspectrice du recouvrement ne peut en elle-même constituer une irrégularité. Il ajoute qu'ayant conservé les originaux, la société gardait la possibilité de discuter des conséquences qui pouvaient en être tirées et que tous les documents ont été restitués avant la mise en recouvrement. 7. En se déterminant ainsi, sans vérifier, comme elle était invitée à le faire, si l'agent chargé du contrôle avait informé la société cotisante et obtenu son autorisation pour emporter ces documents, même en copie, la cour d'appel a privé sa décision de base légale. »"
+    },
+    {
+      "type": "critere",
+      "critique": false,
+      "description": "le place en premier",
+      "critere": "Le premier moyen proposé est ce grief retenu par la Cour (même texte ou même principe, même point de l'arrêt)."
+    }
+  ]
+}

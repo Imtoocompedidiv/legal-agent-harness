@@ -1,0 +1,12 @@
+Version : ech-v50
+Issue réelle : non
+
+**Oui, 55 %.** Le recours est recevable et la question se tranche sur le fond, où le requérant a un léger avantage.
+
+1. **La recevabilité ne fait pas obstacle.** La décision du 31 janvier 2022 a été attaquée le 14 février 2022, dans le délai de deux mois. Elle fait grief, puisqu'elle prive M. I de la qualification pour l'année 2022. Le ministre n'oppose aucune fin de non-recevoir.
+2. **Le moyen le plus fort est l'effet rétroactif de l'annulation.** Le jugement du 26 novembre 2021 a fait disparaître depuis l'origine la radiation du 10 février 2020. M. I doit donc être replacé dans la situation où il aurait été sans cette radiation. Lui refuser la qualification parce qu'il n'a pas suivi la formation de 2021, alors qu'il était radié à cette date, lui oppose une conséquence de l'acte annulé. Le motif repose en outre sur un fait que le requérant conteste : on lui reproche de ne pas s'être inscrit en 2021. Le ministre ne produit aucune pièce montrant qu'un expert radié pouvait s'inscrire à cette formation.
+3. **La meilleure défense du ministre est la compétence liée.** Selon l'article R. 326-11 du code de la route, la qualification est acquise « après une formation ». L'annulation ne peut pas faire exister une formation qui n'a pas eu lieu. Si le tribunal retient cette lecture, tous les autres moyens deviennent inopérants et la requête est rejetée. C'est le vrai risque, et la raison pour laquelle je ne dépasse pas 55 %.
+4. **Ce qui fait pencher vers l'annulation :** la compétence liée suppose que la condition manque sans aucune discussion possible. Ici, c'est l'administration elle-même qui a empêché le requérant de la remplir. Selon les écritures du requérant, une dérogation a aussi été accordée en 2021 aux experts qui n'avaient pas pu suivre la formation de 2020. Le ministre ne conteste pas ce point dans ses deux mémoires.
+5. **Les autres moyens ne devraient pas aboutir :** l'incompétence de l'auteur de l'acte (le décret n° 2005-850 donne une délégation au délégué interministériel), l'irrecevabilité du mémoire en défense et la sanction déguisée. En cas d'annulation, le tribunal ordonnera plus probablement un réexamen que l'octroi direct de la qualification, et l'astreinte est incertaine.
+
+Lu en entier : le dossier remis, l'arrêté du 29 avril 2009 et l'article R. 326-11 du code de la route dans leur version au 31 janvier 2022. Non lus : l'arrêté qui fixe la formation annuelle, le jugement du 26 novembre 2021, le décret n° 2005-850 et la jurisprudence.

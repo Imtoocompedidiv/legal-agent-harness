@@ -1,0 +1,18 @@
+{
+  "id": "GENP-ANNT-2204389",
+  "capacite": "pronostic",
+  "famille": "annulation-ta",
+  "genere": true,
+  "origine": "usine.py, Tribunal administratif de Rouen, 3e chambre · formation à trois, 10 octobre 2024, 2204389 (https://librejustice.fr/decision/jsJBr4wCWEAw), issue réelle : non",
+  "fixture": "gen_annt_2204389",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme le tribunal administratif, dis s'il annulera, au moins en partie, la décision attaquée. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2024-10-09T18:00",
+  "coupe": "2024-10-09",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*non\\b",
+      "description": "répond non, comme la juridiction"
+    }
+  ]
+}

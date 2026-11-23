@@ -1,0 +1,624 @@
+[
+  {
+    "type": "jugement_civil",
+    "si": {
+      "matiere": "contentieuse",
+      "dernier_ressort": false
+    },
+    "libelle": "Fin du délai d'appel d'un jugement rendu en matière contentieuse",
+    "mois": 1,
+    "jours": 0,
+    "franc": false,
+    "depart": "notification",
+    "texte": "CPC, art. 538, 528, 640 à 642",
+    "effet": "Au-delà, appel irrecevable comme tardif ; fin de non-recevoir d'ordre public relevée d'office (CPC, art. 125). Délai prorogé au premier jour ouvrable s'il expire un samedi, un dimanche ou un jour férié.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/538",
+    "lu_en_entier": true
+  },
+  {
+    "type": "jugement_civil",
+    "si": {
+      "matiere": "contentieuse",
+      "dernier_ressort": false,
+      "juridiction_metropole": true,
+      "residence": "outre_mer"
+    },
+    "libelle": "Fin du délai d'appel augmenté du délai de distance (partie demeurant dans une collectivité d'outre-mer énumérée)",
+    "mois": 2,
+    "jours": 0,
+    "franc": false,
+    "depart": "notification",
+    "texte": "CPC, art. 538 et 643, 1",
+    "effet": "Délai d'un mois augmenté d'un mois pour la partie qui demeure dans une collectivité énumérée à l'article 643.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/643",
+    "lu_en_entier": true
+  },
+  {
+    "type": "jugement_civil",
+    "si": {
+      "matiere": "contentieuse",
+      "dernier_ressort": false,
+      "juridiction_metropole": true,
+      "residence": "etranger"
+    },
+    "libelle": "Fin du délai d'appel augmenté du délai de distance (partie demeurant à l'étranger)",
+    "mois": 3,
+    "jours": 0,
+    "franc": false,
+    "depart": "notification",
+    "texte": "CPC, art. 538 et 643, 2",
+    "effet": "Délai d'un mois augmenté de deux mois pour la partie qui demeure à l'étranger.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/643",
+    "lu_en_entier": true
+  },
+  {
+    "type": "jugement_civil",
+    "si": {
+      "matiere": "gracieuse"
+    },
+    "libelle": "Fin du délai d'appel d'une décision gracieuse",
+    "mois": 0,
+    "jours": 15,
+    "franc": false,
+    "depart": "notification",
+    "texte": "CPC, art. 538, 528, 640 à 642",
+    "effet": "Au-delà, appel irrecevable comme tardif.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/538",
+    "lu_en_entier": true
+  },
+  {
+    "type": "ordonnance_refere_civil",
+    "si": {
+      "dernier_ressort": false
+    },
+    "libelle": "Fin du délai d'appel de l'ordonnance de référé",
+    "mois": 0,
+    "jours": 15,
+    "franc": false,
+    "depart": "notification",
+    "texte": "CPC, art. 490, 528, 640 à 642",
+    "effet": "Appel fermé contre l'ordonnance du premier président ou rendue en dernier ressort ; l'appel suit le circuit à bref délai (CPC, art. 906, 2°).",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/490",
+    "lu_en_entier": true
+  },
+  {
+    "type": "ordonnance_refere_civil",
+    "si": {
+      "dernier_ressort": true,
+      "par_defaut": true
+    },
+    "libelle": "Fin du délai d'opposition contre l'ordonnance de référé rendue en dernier ressort par défaut",
+    "mois": 0,
+    "jours": 15,
+    "franc": false,
+    "depart": "notification",
+    "texte": "CPC, art. 490",
+    "effet": "Opposition irrecevable au-delà.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/490",
+    "lu_en_entier": true
+  },
+  {
+    "type": "ordonnance_sur_requete",
+    "si": {
+      "sens": "rejet"
+    },
+    "libelle": "Fin du délai d'appel contre l'ordonnance rejetant la requête",
+    "mois": 0,
+    "jours": 15,
+    "franc": false,
+    "depart": "notification",
+    "texte": "CPC, art. 496, al. 1er",
+    "effet": "Appel formé, instruit et jugé comme en matière gracieuse ; fermé contre l'ordonnance du premier président. Le point de départ retenu est celui de l'article 528 : non vérifié pour une ordonnance non notifiée.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/496",
+    "lu_en_entier": true
+  },
+  {
+    "type": "ordonnance_sur_requete",
+    "si": {
+      "fondement": "145",
+      "sens": "accueil",
+      "rendue_depuis_2026_10_01": true
+    },
+    "libelle": "Fin du délai d'exécution de l'ordonnance rendue sur requête au titre de l'article 145",
+    "mois": 3,
+    "jours": 0,
+    "franc": false,
+    "depart": "prononce",
+    "texte": "CPC, art. 495, al. 4 ; décret n° 2026-683, art. 21",
+    "effet": "Caducité relevée d'office si la mesure n'est pas exécutée, sauf délai différent fixé par le juge ; règle applicable aux décisions rendues à compter du 1er octobre 2026.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/495",
+    "lu_en_entier": true
+  },
+  {
+    "type": "ordonnance_sur_requete",
+    "si": {
+      "fondement": "145",
+      "sens": "accueil",
+      "signifiee": true,
+      "rendue_depuis_2026_10_01": true
+    },
+    "libelle": "Fin du délai pour saisir le juge d'une demande de rétractation de l'ordonnance rendue au titre de l'article 145",
+    "mois": 1,
+    "jours": 0,
+    "franc": false,
+    "depart": "signification",
+    "texte": "CPC, art. 496, al. 3 ; décret n° 2026-683, art. 21",
+    "effet": "Demande de rétractation irrecevable au-delà ; règle applicable aux décisions rendues à compter du 1er octobre 2026.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/496",
+    "lu_en_entier": true
+  },
+  {
+    "type": "avis_greffe_902",
+    "si": {
+      "circuit": "mise_en_etat",
+      "appel_forme_depuis_2024_09_01": true
+    },
+    "libelle": "Fin du délai de signification de la déclaration d'appel à l'intimé non constitué",
+    "mois": 1,
+    "jours": 0,
+    "franc": false,
+    "depart": "reception",
+    "texte": "CPC, art. 902, al. 3",
+    "effet": "Caducité de la déclaration d'appel relevée d'office. Point de départ : réception de l'avis du greffe adressé à l'avocat de l'appelant.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/902",
+    "lu_en_entier": true
+  },
+  {
+    "type": "avis_fixation_bref_delai",
+    "si": {
+      "circuit": "bref_delai",
+      "appel_forme_depuis_2024_09_01": true
+    },
+    "libelle": "Fin du délai de signification de la déclaration d'appel (circuit à bref délai)",
+    "mois": 0,
+    "jours": 20,
+    "franc": false,
+    "depart": "reception",
+    "texte": "CPC, art. 906-1, al. 1er",
+    "effet": "Caducité relevée d'office ; copie de l'avis de fixation à joindre ; notification à l'avocat si l'intimé a constitué avant la signification.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/906-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "avis_fixation_bref_delai",
+    "si": {
+      "circuit": "bref_delai",
+      "appel_forme_depuis_2024_09_01": true
+    },
+    "libelle": "Fin du délai de remise des conclusions de l'appelant (circuit à bref délai)",
+    "mois": 2,
+    "jours": 0,
+    "franc": false,
+    "depart": "reception",
+    "texte": "CPC, art. 906-2, al. 1er",
+    "effet": "Caducité de la déclaration d'appel relevée d'office ; délai modifiable par le président de chambre ; sanction écartée en cas de force majeure.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/906-2",
+    "lu_en_entier": true
+  },
+  {
+    "type": "notification_conclusions_appelant",
+    "si": {
+      "circuit": "bref_delai",
+      "appel_forme_depuis_2024_09_01": true
+    },
+    "libelle": "Fin du délai de remise des conclusions de l'intimé et d'appel incident ou provoqué (circuit à bref délai)",
+    "mois": 2,
+    "jours": 0,
+    "franc": false,
+    "depart": "notification",
+    "texte": "CPC, art. 906-2, al. 2",
+    "effet": "Conclusions de l'intimé irrecevables d'office.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/906-2",
+    "lu_en_entier": true
+  },
+  {
+    "type": "declaration_appel_civil",
+    "si": {
+      "circuit": "mise_en_etat",
+      "appel_forme_depuis_2024_09_01": true
+    },
+    "libelle": "Fin du délai de remise au greffe des conclusions de l'appelant (procédure avec mise en état)",
+    "mois": 3,
+    "jours": 0,
+    "franc": false,
+    "depart": "date",
+    "texte": "CPC, art. 908 et 911",
+    "effet": "Caducité de la déclaration d'appel relevée d'office ; notification aux avocats dans le même délai ; signification aux parties non constituées au plus tard dans le mois suivant l'expiration ; délai modifiable par le conseiller de la mise en état ; sanction écartée en cas de force majeure (CPC, art. 911). Point de départ : date de la déclaration d'appel.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/908",
+    "lu_en_entier": true
+  },
+  {
+    "type": "notification_conclusions_appelant",
+    "si": {
+      "circuit": "mise_en_etat",
+      "appel_forme_depuis_2024_09_01": true
+    },
+    "libelle": "Fin du délai de remise des conclusions de l'intimé et d'appel incident ou provoqué (procédure avec mise en état)",
+    "mois": 3,
+    "jours": 0,
+    "franc": false,
+    "depart": "notification",
+    "texte": "CPC, art. 909 et 911",
+    "effet": "Conclusions de l'intimé irrecevables d'office.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/909",
+    "lu_en_entier": true
+  },
+  {
+    "type": "notification_appel_incident_ou_provoque",
+    "si": {
+      "circuit": "mise_en_etat",
+      "appel_forme_depuis_2024_09_01": true
+    },
+    "libelle": "Fin du délai de remise des conclusions de l'intimé à l'appel incident ou provoqué",
+    "mois": 3,
+    "jours": 0,
+    "franc": false,
+    "depart": "notification",
+    "texte": "CPC, art. 910, al. 1er",
+    "effet": "Conclusions irrecevables d'office.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/910",
+    "lu_en_entier": true
+  },
+  {
+    "type": "ordonnance_cme",
+    "si": {
+      "deferable": true,
+      "appel_forme_depuis_2024_09_01": true
+    },
+    "libelle": "Fin du délai de déféré contre l'ordonnance du conseiller de la mise en état",
+    "mois": 0,
+    "jours": 15,
+    "franc": false,
+    "depart": "prononce",
+    "texte": "CPC, art. 913-8",
+    "effet": "Déféré par requête à la cour, contenant à peine d'irrecevabilité l'indication de la décision déférée et un exposé des moyens ; ouvert pour les ordonnances qui mettent fin à l'instance, statuent sur la caducité, la recevabilité de l'appel ou des conclusions, une exception de procédure relative à l'appel ou des mesures provisoires de divorce ou de séparation de corps.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/913-8",
+    "lu_en_entier": true
+  },
+  {
+    "type": "ordonnance_president_bref_delai",
+    "si": {
+      "appel_forme_depuis_2024_09_01": true
+    },
+    "libelle": "Fin du délai de déféré contre l'ordonnance du président de chambre (circuit à bref délai)",
+    "mois": 0,
+    "jours": 15,
+    "franc": false,
+    "depart": "prononce",
+    "texte": "CPC, art. 906-3",
+    "effet": "Déféré à la cour dans les quinze jours de la date de l'ordonnance.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/906-3",
+    "lu_en_entier": true
+  },
+  {
+    "type": "arret_ca",
+    "si": {},
+    "libelle": "Fin du délai de pourvoi en cassation",
+    "mois": 2,
+    "jours": 0,
+    "franc": false,
+    "depart": "notification",
+    "texte": "CPC, art. 612, 528, 640 à 643",
+    "effet": "Avocat au Conseil d'État et à la Cour de cassation obligatoire (CPC, art. 973) ; délais de distance de l'article 643.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/612",
+    "lu_en_entier": true
+  },
+  {
+    "type": "jugement_civil",
+    "si": {
+      "dernier_ressort": true
+    },
+    "libelle": "Fin du délai de pourvoi en cassation contre un jugement rendu en dernier ressort",
+    "mois": 2,
+    "jours": 0,
+    "franc": false,
+    "depart": "notification",
+    "texte": "CPC, art. 605, 612, 528",
+    "effet": "Les jugements en dernier ressort qui ne tranchent pas le fond ne sont pas en principe attaquables indépendamment du jugement sur le fond (CPC, art. 608).",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/612",
+    "lu_en_entier": true
+  },
+  {
+    "type": "declaration_pourvoi_civil",
+    "si": {},
+    "libelle": "Fin du délai de remise et de notification du mémoire ampliatif",
+    "mois": 4,
+    "jours": 0,
+    "franc": false,
+    "depart": "date",
+    "texte": "CPC, art. 978",
+    "effet": "Déchéance constatée par ordonnance du premier président ; signification au défendeur non constitué au plus tard dans le mois suivant. Point de départ : date du pourvoi.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-procedure-civile/978",
+    "lu_en_entier": true
+  },
+  {
+    "type": "connaissance_des_faits",
+    "si": {
+      "action": "personnelle_ou_mobiliere"
+    },
+    "libelle": "Fin du délai de prescription de droit commun",
+    "mois": 60,
+    "jours": 0,
+    "franc": false,
+    "depart": "connaissance",
+    "texte": "C. civ., art. 2224",
+    "effet": "Action prescrite ; interruption par la demande en justice, même en référé ou devant un juge incompétent (C. civ., art. 2241) ; suspension pendant une médiation, une conciliation ou une procédure participative (C. civ., art. 2238).",
+    "source_url": "https://librejustice.fr/norm/fr/code-civil/2224",
+    "lu_en_entier": true
+  },
+  {
+    "type": "consolidation_dommage_corporel",
+    "si": {
+      "action": "responsabilite_dommage_corporel"
+    },
+    "libelle": "Fin du délai de prescription de l'action en réparation d'un dommage corporel",
+    "mois": 120,
+    "jours": 0,
+    "franc": false,
+    "depart": "date",
+    "texte": "C. civ., art. 2226, al. 1er",
+    "effet": "Point de départ : consolidation du dommage initial ou aggravé ; vingt ans dans les cas de l'alinéa 2.",
+    "source_url": "https://librejustice.fr/norm/fr/code-civil/2226",
+    "lu_en_entier": true
+  },
+  {
+    "type": "decision_admin",
+    "si": {
+      "voies_delais_mentionnes": true
+    },
+    "libelle": "Fin du délai de recours contentieux",
+    "mois": 2,
+    "jours": 0,
+    "franc": true,
+    "depart": "notification",
+    "texte": "CJA, art. R. 421-1 et R. 421-5 ; caractère franc : CE, 19 septembre 2014, n° 362568",
+    "effet": "Recours pour excès de pouvoir et, avec lui, référé-suspension. Départ à la notification ou à la publication ; interruption par un recours gracieux ou hiérarchique formé dans le délai (CRPA, art. L. 411-2). Délai franc, prorogé au premier jour ouvrable s'il expire un samedi, un dimanche ou un jour férié ou chômé (CE, 19 septembre 2014, n° 362568, lu en entier) ; la date retenue reste celle calculée sans jour franc, la date franche est donnée à côté.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r421-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "decision_admin",
+    "si": {
+      "voies_delais_mentionnes": true,
+      "residence": "outre_mer",
+      "juridiction_metropole": true
+    },
+    "libelle": "Fin du délai de recours contentieux augmenté du délai de distance (outre-mer)",
+    "mois": 3,
+    "jours": 0,
+    "franc": true,
+    "depart": "notification",
+    "texte": "CJA, art. R. 421-1 et R. 421-7, al. 1er ; caractère franc : CE, 19 septembre 2014, n° 362568",
+    "effet": "Délai de deux mois augmenté d'un mois. L'article R. 421-7 augmente le délai de l'article R. 421-1, qui est franc (CE, 19 septembre 2014, n° 362568, lu en entier) ; la date retenue reste celle calculée sans jour franc, la date franche est donnée à côté.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r421-7",
+    "lu_en_entier": true
+  },
+  {
+    "type": "decision_admin",
+    "si": {
+      "voies_delais_mentionnes": true,
+      "residence": "etranger"
+    },
+    "libelle": "Fin du délai de recours contentieux augmenté du délai de distance (étranger)",
+    "mois": 4,
+    "jours": 0,
+    "franc": true,
+    "depart": "notification",
+    "texte": "CJA, art. R. 421-1 et R. 421-7, al. 3 ; caractère franc : CE, 19 septembre 2014, n° 362568",
+    "effet": "Délai de deux mois augmenté de deux mois. L'article R. 421-7 augmente le délai de l'article R. 421-1, qui est franc (CE, 19 septembre 2014, n° 362568, lu en entier) ; la date retenue reste celle calculée sans jour franc, la date franche est donnée à côté.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r421-7",
+    "lu_en_entier": true
+  },
+  {
+    "type": "decision_admin",
+    "si": {
+      "voies_delais_mentionnes": false,
+      "decision_individuelle_connue": true
+    },
+    "libelle": "Fin du délai raisonnable de recours, à défaut de mention des voies et délais",
+    "mois": 12,
+    "jours": 0,
+    "franc": false,
+    "depart": "connaissance",
+    "texte": "CE, Ass., 13 juillet 2016, Czabaj, n° 387763 ; CJA, art. R. 421-5",
+    "effet": "Règle générale sauf circonstances particulières invoquées par le requérant ; point de départ : notification ou connaissance établie de la décision expresse. Non applicable rétroactivement aux instances introduites avant le 13 juillet 2016 (CEDH, 13 février 2025, Sellam c. France).",
+    "source_url": "https://librejustice.fr/decision/Ye9s-UgHzbOV",
+    "lu_en_entier": true
+  },
+  {
+    "type": "demande_admin",
+    "si": {
+      "regime_silence": "rejet"
+    },
+    "libelle": "Naissance de la décision implicite de rejet",
+    "mois": 2,
+    "jours": 0,
+    "franc": false,
+    "depart": "reception",
+    "texte": "CRPA, art. L. 231-4",
+    "effet": "La décision attaquable naît à cette date ; le délai de recours court ensuite (règle de type decision_implicite_rejet). Caractère franc du délai non vérifié sur texte : date calculée sans jour franc, la plus prudente.",
+    "source_url": "https://librejustice.fr/norm/fr/code-des-relations-entre-le-public-et-l-administration/l231-4",
+    "lu_en_entier": true
+  },
+  {
+    "type": "demande_admin",
+    "si": {
+      "regime_silence": "acceptation"
+    },
+    "libelle": "Naissance de la décision implicite d'acceptation",
+    "mois": 2,
+    "jours": 0,
+    "franc": false,
+    "depart": "reception",
+    "texte": "CRPA, art. L. 231-1",
+    "effet": "Vérifier que la demande ne relève pas d'une exception de l'article L. 231-4.",
+    "source_url": "https://librejustice.fr/norm/fr/code-des-relations-entre-le-public-et-l-administration/l231-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "decision_implicite_rejet",
+    "si": {
+      "accuse_reception_conforme": true
+    },
+    "libelle": "Fin du délai de recours contre la décision implicite de rejet",
+    "mois": 2,
+    "jours": 0,
+    "franc": false,
+    "depart": "date",
+    "texte": "CJA, art. R. 421-2 ; CRPA, art. L. 112-6",
+    "effet": "Point de départ : date de naissance de la décision implicite ; une décision explicite de rejet intervenue avant l'expiration fait à nouveau courir le délai ; sans accusé de réception conforme, délai inopposable (CRPA, art. L. 112-6). Caractère franc du délai non vérifié sur texte : date calculée sans jour franc, la plus prudente.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r421-2",
+    "lu_en_entier": true
+  },
+  {
+    "type": "recours_administratif",
+    "si": {
+      "regime_silence": "rejet"
+    },
+    "libelle": "Naissance du rejet implicite du recours gracieux ou hiérarchique",
+    "mois": 2,
+    "jours": 0,
+    "franc": false,
+    "depart": "reception",
+    "texte": "CRPA, art. L. 231-4, 2° ; CRPA, art. L. 411-2",
+    "effet": "Le silence sur un recours administratif vaut rejet ; le délai de recours contentieux interrompu recommence à courir à compter de ce rejet. Caractère franc du délai non vérifié sur texte : date calculée sans jour franc, la plus prudente.",
+    "source_url": "https://librejustice.fr/norm/fr/code-des-relations-entre-le-public-et-l-administration/l411-2",
+    "lu_en_entier": true
+  },
+  {
+    "type": "rejet_recours_administratif",
+    "si": {
+      "recours_forme_dans_le_delai": true
+    },
+    "libelle": "Fin du délai de recours contentieux après rejet du recours administratif",
+    "mois": 2,
+    "jours": 0,
+    "franc": true,
+    "depart": "notification",
+    "texte": "CRPA, art. L. 411-2 ; CJA, art. R. 421-1 ; caractère franc : CE, 19 septembre 2014, n° 362568",
+    "effet": "Si un recours gracieux et un recours hiérarchique ont été formés, le délai ne recommence à courir qu'après le rejet de l'un et de l'autre ; en cas de rejet implicite, départ à la date de sa naissance. Le délai qui recommence est celui de l'article R. 421-1, qui est franc (CE, 19 septembre 2014, n° 362568, lu en entier) ; la date retenue reste celle calculée sans jour franc, la date franche est donnée à côté.",
+    "source_url": "https://librejustice.fr/norm/fr/code-des-relations-entre-le-public-et-l-administration/l411-2",
+    "lu_en_entier": true
+  },
+  {
+    "type": "jugement_ta",
+    "si": {
+      "premier_et_dernier_ressort": false
+    },
+    "libelle": "Fin du délai d'appel devant la cour administrative d'appel",
+    "mois": 2,
+    "jours": 0,
+    "franc": false,
+    "depart": "notification",
+    "texte": "CJA, art. R. 811-2",
+    "effet": "Délai couru contre chaque partie à compter de sa propre notification. Caractère franc du délai non vérifié sur texte : date calculée sans jour franc, la plus prudente.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r811-2",
+    "lu_en_entier": true
+  },
+  {
+    "type": "jugement_ta",
+    "si": {
+      "premier_et_dernier_ressort": true
+    },
+    "libelle": "Fin du délai de pourvoi en cassation contre un jugement rendu en premier et dernier ressort",
+    "mois": 2,
+    "jours": 0,
+    "franc": false,
+    "depart": "notification",
+    "texte": "CJA, art. R. 811-1 et R. 821-1",
+    "effet": "Litiges énumérés à l'article R. 811-1 ; avocat au Conseil d'État ; procédure d'admission (CJA, art. L. 822-1). Caractère franc du délai non vérifié sur texte : date calculée sans jour franc, la plus prudente.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r821-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "decision_dernier_ressort",
+    "si": {},
+    "libelle": "Fin du délai de pourvoi en cassation devant le Conseil d'État",
+    "mois": 2,
+    "jours": 0,
+    "franc": false,
+    "depart": "notification",
+    "texte": "CJA, art. R. 821-1 ; CJA, art. L. 822-1",
+    "effet": "Le défaut de mention d'un délai inférieur à deux mois emporte application du délai de deux mois ; procédure préalable d'admission. Caractère franc du délai non vérifié sur texte : date calculée sans jour franc, la plus prudente.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r821-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "ordonnance_refere_admin",
+    "si": {
+      "fondement": "L521-1"
+    },
+    "libelle": "Fin du délai de pourvoi en cassation contre l'ordonnance de référé-suspension",
+    "mois": 0,
+    "jours": 15,
+    "franc": false,
+    "depart": "notification",
+    "texte": "CJA, art. L. 523-1 et R. 523-1",
+    "effet": "Ordonnance rendue en dernier ressort ; une nouvelle ordonnance rejetant une demande de même objet prive le pourvoi d'objet (CE, Sect., 22 septembre 2023, n° 472210). Caractère franc du délai non vérifié sur texte : date calculée sans jour franc, la plus prudente.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r523-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "ordonnance_refere_admin",
+    "si": {
+      "fondement": "L521-3"
+    },
+    "libelle": "Fin du délai de pourvoi en cassation contre l'ordonnance de référé mesures utiles",
+    "mois": 0,
+    "jours": 15,
+    "franc": false,
+    "depart": "notification",
+    "texte": "CJA, art. L. 523-1 et R. 523-1",
+    "effet": "Ordonnance rendue en dernier ressort. Caractère franc du délai non vérifié sur texte : date calculée sans jour franc, la plus prudente.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r523-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "ordonnance_refere_admin",
+    "si": {
+      "instruite": false
+    },
+    "libelle": "Fin du délai de pourvoi en cassation contre l'ordonnance de tri (L. 522-3), quel que soit le référé",
+    "mois": 0,
+    "jours": 15,
+    "franc": false,
+    "depart": "notification",
+    "texte": "CJA, art. L. 522-3, L. 523-1 et R. 523-1",
+    "effet": "Une ordonnance de référé-liberté prise par tri relève du pourvoi en cassation, et non de l'appel. Caractère franc du délai non vérifié sur texte : date calculée sans jour franc, la plus prudente.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/l523-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "ordonnance_refere_admin",
+    "si": {
+      "fondement": "L521-2",
+      "instruite": true
+    },
+    "libelle": "Fin du délai d'appel devant le juge des référés du Conseil d'État (référé-liberté)",
+    "mois": 0,
+    "jours": 15,
+    "franc": false,
+    "depart": "notification",
+    "texte": "CJA, art. L. 523-1, al. 2",
+    "effet": "Le juge d'appel statue dans les quarante-huit heures. Caractère franc du délai non vérifié sur texte : date calculée sans jour franc, la plus prudente.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/l523-1",
+    "lu_en_entier": true
+  },
+  {
+    "type": "ordonnance_refere_admin",
+    "si": {
+      "fondement": "L521-1",
+      "rejet_faute_moyen_serieux": true,
+      "pourvoi_forme": false
+    },
+    "libelle": "Fin du délai pour confirmer le maintien de la requête au fond",
+    "mois": 1,
+    "jours": 0,
+    "franc": false,
+    "depart": "notification",
+    "texte": "CJA, art. R. 612-5-2",
+    "effet": "À défaut de confirmation, le requérant est réputé s'être désisté de sa requête au fond ; la notification de l'ordonnance doit le mentionner.",
+    "source_url": "https://librejustice.fr/norm/fr/code-de-justice-administrative/r612-5-2",
+    "lu_en_entier": true
+  }
+]

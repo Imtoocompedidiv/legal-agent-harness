@@ -1,0 +1,7 @@
+{
+  "canaux": [
+    {"id": "courrier", "nom": "Courrier postal et avis de passage à chaque adresse connue de l'adversaire", "adresse": "", "frequence_heures": 48, "dernier_controle": null},
+    {"id": "courriel", "nom": "Messageries électroniques, indésirables et quarantaine compris", "adresse": "", "frequence_heures": 24, "dernier_controle": null},
+    {"id": "juridiction", "nom": "Téléprocédure de la juridiction (Télérecours, RPVA, portail du justiciable)", "adresse": "", "frequence_heures": 24, "dernier_controle": null}
+  ]
+}

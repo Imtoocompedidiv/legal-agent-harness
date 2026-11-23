@@ -1,0 +1,20 @@
+{
+ "id": "CONS-RUPTURE-BRUTALE",
+ "capacite": "conseil",
+ "origine": "pôle contrats-d-affaires : C. com., art. L. 442-1, II (version du 20 août 2026) : préavis écrit tenant compte de la durée de la relation ; préavis de dix-huit mois exonératoire",
+ "consigne": "Nous sommes le samedi 21 novembre 2026. Notre client, un distributeur de matériel médical, achète depuis neuf ans, sans contrat écrit et par commandes régulières, la quasi-totalité de ses gants à un fabricant français. Il a trouvé moins cher en Asie et veut écrire lundi au fabricant qu'il cesse toute commande à la fin du mois de décembre 2026. Que lui conseilles-tu ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+ "verifications": [
+  {
+   "type": "critere",
+   "critere": "La réponse identifie le risque de rupture brutale d'une relation commerciale établie (C. com., art. L. 442-1, II) : un préavis d'environ un mois après neuf ans de relation engage la responsabilité du client.",
+   "description": "rupture brutale"
+  },
+  {
+   "type": "critere",
+   "critere": "La réponse recommande un préavis écrit tenant compte de la durée de la relation, plusieurs mois, et mentionne que la responsabilité pour durée insuffisante ne peut être engagée si un préavis de dix-huit mois est respecté.",
+   "description": "préavis"
+  }
+ ],
+ "horloge": "2026-11-21T10:00",
+ "budget_minutes": 15
+}

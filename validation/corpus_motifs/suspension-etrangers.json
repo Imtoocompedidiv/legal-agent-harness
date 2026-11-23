@@ -1,0 +1,598 @@
+[
+  {
+    "condition": "urgence",
+    "sens": "tombe",
+    "texte": "Premier refus, demande sur un fondement nouveau ou renouvellement présenté hors délai : faute de présomption, le requérant doit prouver des circonstances particulières imposant une mesure à très bref délai, et le juge rejette au tri de l'article L. 522-3, sans examiner le doute sérieux, les allégations générales (précarité, emploi incertain, vie familiale, risque d'éloignement, dettes non chiffrées) comme tout refus qui n'a pas modifié la situation antérieure d'un demandeur déjà sans droit au séjour. Le placement en situation irrégulière et l'atteinte à la situation professionnelle et financière ne suffisent pas sans pièce établissant une perte imminente.",
+    "marqueurs": [
+      "première demande",
+      "premier titre",
+      "jamais (?:été )?titulaire",
+      "admission exceptionnelle",
+      "l\\.? ?435-1",
+      "refus implicite de délivrance"
+    ],
+    "sources": [
+      {
+        "juridiction": "TA Grenoble, juge des référés",
+        "date": "2026-11-16",
+        "numero": "2611773",
+        "url": "https://librejustice.fr/decision/kCw92w0OEJiZ",
+        "point": "pts 3 et 4 : difficultés financières non établies ; « la décision en litige n'a pas modifié sa situation antérieure »",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "CE, 2e et 7e ch. réunies (tables)",
+        "date": "2025-02-07",
+        "numero": "497396",
+        "url": "https://librejustice.fr/decision/PUQ66MS0oqBY",
+        "point": "pts 3 et 6 : situation irrégulière, atteinte professionnelle, financière et au logement jugées insuffisantes (appréciation souveraine)",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Paris, juge des référés",
+        "date": "2025-11-03",
+        "numero": "2530799",
+        "url": "https://librejustice.fr/decision/9dAHU7TOuCrI",
+        "point": "risque de perte d'emploi et OQTF invoqués par « considérations générales »",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TA Montreuil, 2 juin 2026, n° 2609159, pt 4 : urgence retenue pour une première demande quand le refus met fin à un séjour régulier et entraîne un licenciement établi par pièce.",
+    "frequence": "28 sur 66 ordonnances de rejet vues",
+    "depuis": "CE, Sect., 14 mars 2001, n° 229773 ; formule « à très bref délai » reprise par CE, 7 févr. 2025, n° 497396, pt 3"
+  },
+  {
+    "condition": "urgence",
+    "sens": "remplit",
+    "texte": "Pour un premier refus, l'urgence est retenue quand le refus interrompt une situation jusque-là régulière ou prise en charge et que la perte est datée et prouvée : séjour régulier sous visa ou sous récépissés suivi d'un licenciement ou d'une mise en demeure écrite de l'employeur, fin du contrat jeune majeur ou de la prise en charge par l'aide sociale à l'enfance privant d'hébergement et de ressources. La pièce décisive est la lettre de l'employeur ou de la structure d'accueil postérieure au refus ; l'objection du préfet sans pièce, telle une convocation prétendument non honorée, ne l'emporte pas.",
+    "marqueurs": [
+      "mise en demeure",
+      "licenci",
+      "rupture (?:de son|du) contrat",
+      "aide sociale à l'enfance",
+      "contrat jeune majeur",
+      "visa de long séjour",
+      "récépissés? (?:de demande|régulièrement renouvel)"
+    ],
+    "sources": [
+      {
+        "juridiction": "TA Montreuil, juge des référés",
+        "date": "2026-06-02",
+        "numero": "2609159",
+        "url": "https://librejustice.fr/decision/Wt0uSN3HmXiO",
+        "point": "pt 4 : entrée et séjour réguliers, vie commune avec un Français, licenciement pour défaut de document ; allégation préfectorale non établie",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Paris, juge des référés",
+        "date": "2025-07-28",
+        "numero": "2520867",
+        "url": "https://librejustice.fr/decision/dM5gDGQbdMCP",
+        "point": "pt 5 : récépissés depuis 2022, CDI, mise en demeure de l'employeur du 18 juillet 2025",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Cergy-Pontoise, juge des référés",
+        "date": "2026-11-16",
+        "numero": "2620350",
+        "url": "https://librejustice.fr/decision/mfQBsqpld7p_",
+        "point": "pt 6 : refus faisant obstacle à la prise en charge ASE en contrat jeune majeur, perte d'hébergement et de ressources",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CE, 7 févr. 2025, n° 497396, pt 6 (tables) : situation irrégulière et atteinte à la situation professionnelle et financière jugées insuffisantes ; TA Grenoble, 16 nov. 2026, n° 2611773.",
+    "frequence": "21 sur 65 ordonnances de suspension vues",
+    "depuis": "CE, Sect., 14 mars 2001, n° 229773 (circonstances particulières) ; illustrations lues de 2025 et 2026"
+  },
+  {
+    "condition": "doute_serieux",
+    "sens": "partage",
+    "texte": "Parent d'enfant français (L. 423-7) : le doute naît des pièces établissant la contribution effective du demandeur depuis la naissance ou depuis deux ans et, si la filiation résulte d'une reconnaissance, celle du parent français, une décision de justice relative à cette contribution suffisant quelles qu'en soient les mentions et même inexécutée (L. 423-8). Il tombe devant des factures antérieures à la séparation, un simple droit de visite, un enfant placé sans lien établi, une pension isolée ou des versements tardifs, surtout lorsqu'une condamnation pour violences intrafamiliales s'y ajoute.",
+    "marqueurs": [
+      "enfant français",
+      "l\\.? ?423-7",
+      "l\\.? ?423-8",
+      "entretien et (?:à )?l'éducation",
+      "371-2",
+      "reconnaissance",
+      "pension alimentaire",
+      "juge aux affaires familiales"
+    ],
+    "sources": [
+      {
+        "juridiction": "CE, avis, 2e et 7e ch. réunies (tables)",
+        "date": "2022-10-27",
+        "numero": "464655",
+        "url": "https://librejustice.fr/decision/gE-v8reYDR-r",
+        "point": "pt 2 : décision de justice suffisante quelles qu'en soient les mentions, exécution sans incidence",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Paris, juge des référés",
+        "date": "2026-11-13",
+        "numero": "2633478",
+        "url": "https://librejustice.fr/decision/qIvMpmWbGh2y",
+        "point": "pt 5 : erreur d'appréciation sur la contribution du père, doute sérieux",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Limoges, juge des référés",
+        "date": "2026-02-23",
+        "numero": "2600270",
+        "url": "https://librejustice.fr/decision/nJZYXdI6gmvY",
+        "point": "pt 6 : factures antérieures à la rupture du PACS, retrait de l'autorité parentale, condamnation pour violences",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Orléans, juge des référés",
+        "date": "2026-04-28",
+        "numero": "2602274",
+        "url": "https://librejustice.fr/decision/8zkd4VXpHXzl",
+        "point": "pt 6 : aucun doute, enfant placé à l'ASE sans droit de visite, condamnations pour violences conjugales",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Les deux sens sont dans les sources : suspension à Paris (n° 2633478), rejets à Limoges et Orléans (n° 2600270 et 2602274), selon les pièces de contribution.",
+    "frequence": "7 sur 65 ordonnances de suspension vues ; 12 sur 66 ordonnances de rejet vues (une recherche ciblait les rejets)",
+    "depuis": "CESEDA, art. L. 423-7 et L. 423-8 depuis le 1er mai 2021 ; CE, avis, 27 oct. 2022, n° 464655"
+  },
+  {
+    "condition": "doute_serieux",
+    "sens": "remplit",
+    "texte": "Refus implicite d'une demande de titre : lorsque l'étranger a demandé les motifs dans le délai de recours et que le préfet n'a pas répondu dans le mois, le défaut de motivation crée à lui seul un doute sérieux (CRPA, art. L. 232-4), sans examen du droit au séjour au fond. Le dossier doit contenir la demande de motifs, sa date et la preuve de sa réception, et montrer qu'aucune réponse ni décision explicite n'est intervenue à la date de l'audience.",
+    "marqueurs": [
+      "communication des motifs",
+      "l\\.? ?232-4",
+      "demande de motifs",
+      "décision implicite de rejet",
+      "silence gardé",
+      "rejet implicite"
+    ],
+    "sources": [
+      {
+        "juridiction": "CE, 7e ch.",
+        "date": "2025-10-24",
+        "numero": "505151",
+        "url": "https://librejustice.fr/decision/R9hZ19zFa0XC",
+        "point": "pt 8 : demande de motifs reçue le 20 janvier 2025 restée sans réponse, doute sérieux",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Montreuil, juge des référés",
+        "date": "2026-06-02",
+        "numero": "2609159",
+        "url": "https://librejustice.fr/decision/Wt0uSN3HmXiO",
+        "point": "pt 5 : absence de réponse à la demande de communication des motifs",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CE, 8 juin 2011, n° 329537 (tables) et TA Rennes, 27 août 2025, n° 2505456, pt 4 : une décision explicite postérieure rend le moyen inopérant.",
+    "frequence": "17 sur 65 ordonnances de suspension vues (une recherche ciblait ce moyen)",
+    "depuis": "CRPA, art. L. 232-4, en vigueur depuis le 1er janvier 2016 (reprise de l'article 5 de la loi du 11 juillet 1979) ; en référé-séjour, CE, 24 oct. 2025, n° 505151"
+  },
+  {
+    "condition": "doute_serieux",
+    "sens": "remplit",
+    "texte": "Le défaut de saisine de la commission du titre de séjour, ou l'absence de convocation écrite quinze jours avant la séance (L. 432-15), crée un doute sérieux lorsque l'étranger remplit effectivement les conditions d'un titre de plein droit énuméré à l'article L. 432-13 ou justifie de plus de dix ans de résidence habituelle à l'appui d'une demande d'admission exceptionnelle (L. 435-1) ; la menace pour l'ordre public invoquée par le préfet ne le dispense pas de cette saisine. Le dossier doit prouver chaque condition du titre de plein droit ou la résidence habituelle année par année.",
+    "marqueurs": [
+      "commission du titre de séjour",
+      "l\\.? ?432-13",
+      "l\\.? ?432-15",
+      "plus de dix ans",
+      "depuis (?:plus de )?dix ans",
+      "admission exceptionnelle"
+    ],
+    "sources": [
+      {
+        "juridiction": "CE, 2e et 7e ch. réunies (tables)",
+        "date": "2021-10-28",
+        "numero": "441708",
+        "url": "https://librejustice.fr/decision/E3IGbgzpDlI0",
+        "point": "pt 3 : la menace à l'ordre public ne dispense pas de saisir la commission",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Paris, juge des référés",
+        "date": "2025-07-28",
+        "numero": "2520867",
+        "url": "https://librejustice.fr/decision/dM5gDGQbdMCP",
+        "point": "pts 6 et 7 : dix ans de résidence, avis défavorable rendu sans convocation de l'intéressée",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Melun, juge des référés",
+        "date": "2025-07-21",
+        "numero": "2508410",
+        "url": "https://librejustice.fr/decision/X9CE0eKPXba3",
+        "point": "pts 8 et 9 : commission non saisie avant un refus fondé sur l'ordre public",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TA Limoges, 23 févr. 2026, n° 2600270, pts 7 et 8 : pas de doute quand l'étranger ne remplit pas effectivement les conditions du titre de plein droit.",
+    "frequence": "15 sur 65 ordonnances de suspension vues (une recherche ciblait ce moyen)",
+    "depuis": "CESEDA, art. L. 432-13 depuis le 1er mai 2021, version issue de la loi n° 2024-42 en vigueur depuis le 28 janvier 2024 ; CE, 28 oct. 2021, n° 441708 pour l'ordre public"
+  },
+  {
+    "condition": "doute_serieux",
+    "sens": "partage",
+    "texte": "Refus de renouveler une carte de résident, renouvelable de plein droit sauf menace grave (L. 433-2), ou un titre pour menace à l'ordre public : le doute est retenu quand le préfet n'invoque aucun motif d'ordre public, motive par une formule dépourvue de faits, ou s'appuie sur des faits isolés punis d'un sursis simple chez un étranger présent depuis plus de dix ans. Il tombe quand la menace repose sur des condamnations récentes ou des violences conjugales réitérées, appréciées avec l'ensemble du comportement, les condamnations n'étant à elles seules ni nécessaires ni suffisantes.",
+    "marqueurs": [
+      "carte de résident",
+      "l\\.? ?433-2",
+      "ordre public",
+      "condamn",
+      "sursis",
+      "classée? sans suite",
+      "l\\.? ?412-5"
+    ],
+    "sources": [
+      {
+        "juridiction": "CE, 7e ch.",
+        "date": "2024-12-12",
+        "numero": "497389",
+        "url": "https://librejustice.fr/decision/5rMX04bbIoQt",
+        "point": "pt 9 : refus motivé par une atteinte grave à l'ordre public sans considérations de fait, doute sérieux sur la motivation et l'appréciation",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Paris, juge des référés",
+        "date": "2026-02-13",
+        "numero": "2602309",
+        "url": "https://librejustice.fr/decision/41l0SSC-yvS9",
+        "point": "pt 7 : aucun motif d'ordre public opposé au renouvellement d'une carte de résident",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Melun, juge des référés",
+        "date": "2025-07-21",
+        "numero": "2508410",
+        "url": "https://librejustice.fr/decision/X9CE0eKPXba3",
+        "point": "pts 6 et 9 : simple menace insuffisante après dix ans de séjour régulier ; faits isolés, sursis simple",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Bordeaux, juge des référés",
+        "date": "2026-01-08",
+        "numero": "2508732",
+        "url": "https://librejustice.fr/decision/AcjEX6WzqzyS",
+        "point": "pts 3 et 4 : condamnation de 2022 et antécédents de violences intraconjugales, aucun doute",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Les deux sens sont dans les sources : TA Bordeaux, 8 janv. 2026, n° 2508732 (rejet) contre TA Melun, n° 2508410, et CE, n° 497389 (suspension).",
+    "frequence": "8 sur 65 ordonnances de suspension vues ; 4 sur 66 ordonnances de rejet vues",
+    "depuis": "CESEDA, art. L. 433-2 depuis le 1er mai 2021 (« menace grave ») ; CE, 12 déc. 2024, n° 497389"
+  },
+  {
+    "condition": "urgence",
+    "sens": "partage",
+    "texte": "Document provisoire remis après un refus de renouvellement : le Conseil d'État juge qu'une attestation de prolongation d'instruction ne s'oppose pas à la présomption, mais l'écarte lorsqu'un récépissé de renouvellement de six mois, délivré après l'introduction du référé, atteste la reprise de l'instruction, et les juges du fond se divisent sur l'APS remise après le refus de renouveler une carte de résident (droits équivalents pendant sa validité, ou document provisoire sans équivalence avec un titre de dix ans). Cette ligne corrige la présomption de la fiche, qui tient récépissés et APS pour toujours insuffisants : comparer nature, durée et droits du document avec le titre refusé, et rechercher s'il révèle une reprise d'instruction.",
+    "marqueurs": [
+      "attestation de prolongation d'instruction",
+      "autorisation provisoire de séjour",
+      "récépissé de demande de renouvellement",
+      "reprise de l'instruction",
+      "\\bapi\\b",
+      "\\baps\\b"
+    ],
+    "sources": [
+      {
+        "juridiction": "CE, 7e ch.",
+        "date": "2025-06-17",
+        "numero": "503085",
+        "url": "https://librejustice.fr/decision/HorulD_C8CGN",
+        "point": "pt 8 : récépissé de six mois attestant la reprise de l'instruction, présomption écartée",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "CE, 7e ch.",
+        "date": "2025-10-24",
+        "numero": "505151",
+        "url": "https://librejustice.fr/decision/R9hZ19zFa0XC",
+        "point": "pt 7 : attestation de prolongation d'instruction sans effet sur la présomption",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Cergy-Pontoise, juge des référés",
+        "date": "2026-10-15",
+        "numero": "2619307",
+        "url": "https://librejustice.fr/decision/wwPXBea3FmRm",
+        "point": "pt 4 : APS conférant des droits équivalents, travail compris, présomption renversée",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Paris, juge des référés",
+        "date": "2026-02-13",
+        "numero": "2602309",
+        "url": "https://librejustice.fr/decision/41l0SSC-yvS9",
+        "point": "pt 5 : attestation sans équivalence avec une carte de résident de dix ans",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Melun, juge des référés",
+        "date": "2025-07-21",
+        "numero": "2508410",
+        "url": "https://librejustice.fr/decision/X9CE0eKPXba3",
+        "point": "pt 4 : APS provisoire, sans les droits personnels et professionnels d'une carte de résident",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Les deux sens sont dans les sources ; au Conseil d'État, n° 503085 (présomption écartée) et n° 505151 (présomption maintenue), rendus par la même chambre à quatre mois d'intervalle.",
+    "frequence": "5 sur 66 ordonnances de rejet vues ; 4 sur 65 ordonnances de suspension vues",
+    "depuis": "CE, 17 juin 2025, n° 503085 ; CE, 24 oct. 2025, n° 505151"
+  },
+  {
+    "condition": "decision_administrative_susceptible_de_recours",
+    "sens": "tombe",
+    "texte": "Conclusions de suspension visant l'obligation de quitter le territoire, le pays de renvoi ou l'interdiction de retour : irrecevables, le recours au fond suspendant l'éloignement (CESEDA, art. L. 722-7 et L. 722-8) et la procédure spéciale des articles L. 614-1 et suivants excluant le livre V du CJA, hors changement de circonstances postérieur au jugement ou à l'expiration du délai de recours. Seul le refus de séjour se suspend, et pour un premier refus le risque d'éloignement ne fonde plus l'urgence.",
+    "marqueurs": [
+      "obligation de quitter le territoire",
+      "\\boqtf\\b",
+      "pays de renvoi",
+      "pays de destination",
+      "interdiction de retour",
+      "l\\.? ?722-7"
+    ],
+    "sources": [
+      {
+        "juridiction": "CE, juge des référés",
+        "date": "2025-02-03",
+        "numero": "500998",
+        "url": "https://librejustice.fr/decision/3POpFiTpHMMW",
+        "point": "pt 3 : procédure des articles L. 614-1 et suivants exclusive du livre V, sauf changement de circonstances",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Paris, juge des référés",
+        "date": "2025-11-03",
+        "numero": "2530799",
+        "url": "https://librejustice.fr/decision/9dAHU7TOuCrI",
+        "point": "conclusions contre l'OQTF et le pays de renvoi « rejetées comme irrecevables »",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Limoges, juge des référés",
+        "date": "2026-02-23",
+        "numero": "2600270",
+        "url": "https://librejustice.fr/decision/nJZYXdI6gmvY",
+        "point": "pts 2 et 3 : OQTF et interdiction de retour",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "aucune trouvée",
+    "frequence": "5 sur 66 ordonnances de rejet vues (motif accessoire) ; 1 sur 65 ordonnances de suspension vues (seul le refus de séjour suspendu)",
+    "depuis": "CESEDA, art. L. 722-7 et L. 722-8, en vigueur depuis le 1er mai 2021, inchangés par la loi n° 2024-42 ; CE, réf., 3 févr. 2025, n° 500998"
+  },
+  {
+    "condition": "urgence",
+    "sens": "tombe",
+    "texte": "La présomption cède quand la requête au fond est déjà inscrite à une audience très proche et que le requérant y est convoqué, surtout si le référé n'a été formé que des mois après la requête au fond. Vérifier l'avis d'audience au fond avant de plaider l'urgence.",
+    "marqueurs": [
+      "inscrit(?:e)? à l'audience",
+      "audience collégiale",
+      "avis d'audience",
+      "très brève échéance",
+      "requête au fond enregistrée le"
+    ],
+    "sources": [
+      {
+        "juridiction": "TA Paris, juge des référés",
+        "date": "2025-06-05",
+        "numero": "2514369",
+        "url": "https://librejustice.fr/decision/sTFQc9aWhEuw",
+        "point": "pt 3 : référé six mois après le fond, audience collégiale fixée trois semaines plus tard, présomption renversée",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "aucune trouvée",
+    "frequence": "4 sur 66 ordonnances de rejet vues",
+    "depuis": "TA Paris, 5 juin 2025, n° 2514369 ; appréciation globale de l'urgence selon CE, Sect., 28 févr. 2001, n° 229562, déjà cité par la fiche"
+  },
+  {
+    "condition": "urgence",
+    "sens": "partage",
+    "texte": "L'ancienneté du refus de renouvellement ne renverse pas la présomption, pas plus que l'impossibilité d'éloigner l'intéressé, et le préfet qui a laissé l'étranger sous récépissés pendant deux ans ne peut lui reprocher d'avoir tardé à attaquer le refus implicite ; certains juges du fond rejettent pourtant au tri un référé formé près de dix mois après le refus implicite, la requérante n'ayant plus aucun document depuis des mois. Pour cette famille, la ligne générale « retard du requérant à agir » se discute donc sur pièces : dates des récépissés et de l'expiration du dernier document, diligences accomplies.",
+    "marqueurs": [
+      "décision implicite",
+      "rejet implicite",
+      "silence gardé",
+      "ancienneté de la décision",
+      "dix mois"
+    ],
+    "sources": [
+      {
+        "juridiction": "CE, 7e ch.",
+        "date": "2025-06-17",
+        "numero": "503085",
+        "url": "https://librejustice.fr/decision/HorulD_C8CGN",
+        "point": "pt 5 : ancienneté de la décision et impossibilité d'éloigner insuffisantes pour écarter la présomption",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "CE, 7e ch.",
+        "date": "2024-12-12",
+        "numero": "497389",
+        "url": "https://librejustice.fr/decision/5rMX04bbIoQt",
+        "point": "pt 8 : récépissés délivrés pendant deux ans, le ministre ne peut reprocher le retard à contester",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Nice, juge des référés",
+        "date": "2026-11-04",
+        "numero": "2607601",
+        "url": "https://librejustice.fr/decision/0fL8bOQv0pa0",
+        "point": "pt 5 : référé près de dix mois après le refus implicite, rejet au tri",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TA Nice, 4 nov. 2026, n° 2607601, contraire à la règle posée par CE, n° 503085, pt 5.",
+    "frequence": "2 sur 66 ordonnances de rejet vues ; 1 sur 65 ordonnances de suspension vues",
+    "depuis": "CE, 12 déc. 2024, n° 497389 ; CE, 17 juin 2025, n° 503085"
+  },
+  {
+    "condition": "urgence",
+    "sens": "tombe",
+    "texte": "Demande d'un titre sur un fondement différent du titre détenu (étudiant vers recherche d'emploi ou création d'entreprise, soins vers vie privée ou salarié) : c'est une demande de nouveau titre, la présomption ne joue pas et l'urgence suit le régime du premier refus. Si l'étranger a demandé à titre principal le renouvellement sur le même fondement et à titre subsidiaire un changement de statut, la présomption demeure et l'absence d'examen de la demande subsidiaire peut fonder le doute sérieux.",
+    "marqueurs": [
+      "changement de statut",
+      "recherche d'emploi",
+      "création d'entreprise",
+      "l\\.? ?422-10",
+      "fondement différent",
+      "changement de fondement"
+    ],
+    "sources": [
+      {
+        "juridiction": "CE, 2e et 7e ch. réunies (tables)",
+        "date": "2025-02-07",
+        "numero": "497396",
+        "url": "https://librejustice.fr/decision/PUQ66MS0oqBY",
+        "point": "pt 5 : titre « recherche d'emploi » après carte « étudiant », nouveau titre, pas de présomption",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Paris, juge des référés",
+        "date": "2025-11-03",
+        "numero": "2530799",
+        "url": "https://librejustice.fr/decision/9dAHU7TOuCrI",
+        "point": "demande de changement de statut « de nature à remettre en cause la présomption »",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TA Paris, 10 juill. 2025, n° 2517662 : renouvellement d'un titre pour soins avec demande subsidiaire de changement de statut, présomption maintenue et défaut d'examen de la demande subsidiaire retenu comme doute sérieux.",
+    "frequence": "2 sur 66 ordonnances de rejet vues",
+    "depuis": "CE, 7 févr. 2025, n° 497396 (tables)"
+  },
+  {
+    "condition": "urgence",
+    "sens": "tombe",
+    "texte": "La présomption cède quand le requérant s'est placé lui-même dans l'urgence en ne produisant pas la pièce que le préfet lui réclamait pour instruire le renouvellement, telle l'autorisation de travail exigée après un changement d'employeur. L'argument échoue quand le retard vient de l'administration, qui a délivré des récépissés pendant deux ans avant de statuer.",
+    "marqueurs": [
+      "autorisation de travail",
+      "pièces? manquantes?",
+      "dossier incomplet",
+      "classement sans suite",
+      "s'est (?:lui|elle)-même placée? dans"
+    ],
+    "sources": [
+      {
+        "juridiction": "TA Paris, juge des référés",
+        "date": "2023-11-22",
+        "numero": "2325812",
+        "url": "https://librejustice.fr/decision/r3owOttfDPa3",
+        "point": "pt 4 : autorisation de travail réclamée le 1er juin 2023 jamais fournie, présomption renversée",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CE, 12 déc. 2024, n° 497389, pt 8 : le ministre ne peut reprocher au requérant de s'être placé en urgence quand le préfet a mis deux ans à statuer.",
+    "frequence": "2 sur 66 ordonnances de rejet vues",
+    "depuis": "TA Paris, 22 nov. 2023, n° 2325812"
+  },
+  {
+    "condition": "doute_serieux",
+    "sens": "tombe",
+    "texte": "Une décision explicite de rejet prise après le refus implicite, même en cours d'instance et même sans réponse à la demande de motifs, se substitue à lui : les conclusions de suspension sont regardées comme dirigées contre elle et le moyen tiré du défaut de communication des motifs devient inopérant. Contrôler avant l'audience si un arrêté explicite a été pris ou produit en défense, et diriger alors les moyens contre ses motifs.",
+    "marqueurs": [
+      "décision explicite",
+      "s'est substituée",
+      "se substitue",
+      "communication des motifs",
+      "l\\.? ?232-4"
+    ],
+    "sources": [
+      {
+        "juridiction": "CE, 2e et 7e sous-sections réunies (tables)",
+        "date": "2011-06-08",
+        "numero": "329537",
+        "url": "https://librejustice.fr/decision/BOORgVaoqu-h",
+        "point": "1er considérant : décision explicite substituée, moyen tiré de l'article 5 de la loi du 11 juillet 1979 inopérant",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Rennes, juge des référés",
+        "date": "2025-08-27",
+        "numero": "2505456",
+        "url": "https://librejustice.fr/decision/Qn5eQXzHkvGJ",
+        "point": "pt 4 : décision explicite du 21 août 2025 prise en cours d'instance, conclusions redirigées contre elle",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "aucune trouvée",
+    "frequence": "1 sur 66 ordonnances de rejet vues (règle appliquée aussi par 9 jugements au fond relevés dans la même recherche, hors décompte)",
+    "depuis": "CE, 8 juin 2011, n° 329537 (tables), sous l'article 5 de la loi du 11 juillet 1979 ; appliquée sous l'article L. 232-4 du CRPA"
+  },
+  {
+    "condition": "doute_serieux",
+    "sens": "tombe",
+    "texte": "Le moyen tiré du défaut de saisine de la commission tombe quand l'étranger ne remplit pas effectivement les conditions du titre de plein droit, et, pour le refus de renouveler une carte de séjour pluriannuelle, hors du seul cas de l'article L. 412-10 (manquement au contrat d'engagement au respect des principes de la République), même si l'étranger remplit encore les conditions de la carte temporaire antérieure. Le 5° de l'article L. 432-13 vise dans les mêmes termes le renouvellement de la carte de résident, point que les décisions du Conseil d'État lues ne tranchent pas.",
+    "marqueurs": [
+      "carte de séjour pluriannuelle",
+      "carte pluriannuelle",
+      "l\\.? ?412-10",
+      "contrat d'engagement",
+      "commission du titre de séjour"
+    ],
+    "sources": [
+      {
+        "juridiction": "CE, 2e et 7e ch. réunies (tables)",
+        "date": "2025-11-13",
+        "numero": "500420",
+        "url": "https://librejustice.fr/decision/7iVF3Of6j7k4",
+        "point": "pt 3 : commission obligatoire pour une carte pluriannuelle dans le seul cas de l'article L. 412-10",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "CE, 2e et 7e ch. réunies (tables)",
+        "date": "2021-10-28",
+        "numero": "441708",
+        "url": "https://librejustice.fr/decision/E3IGbgzpDlI0",
+        "point": "pt 3 : saisine due aux seuls étrangers remplissant effectivement les conditions",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TA Limoges, juge des référés",
+        "date": "2026-02-23",
+        "numero": "2600270",
+        "url": "https://librejustice.fr/decision/nJZYXdI6gmvY",
+        "point": "pts 6 à 8 : contribution non prouvée, saisine non requise",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TA Melun, 21 juill. 2025, n° 2508410, pts 8 et 9 : défaut de saisine retenu pour le renouvellement d'une carte de résident refusé pour ordre public, ordonnance antérieure à CE, n° 500420.",
+    "frequence": "1 sur 66 ordonnances de rejet vues",
+    "depuis": "CE, 28 oct. 2021, n° 441708 ; CESEDA, art. L. 432-13, 5°, issu de la loi n° 2024-42 (en vigueur le 28 janvier 2024) ; CE, 13 nov. 2025, n° 500420"
+  },
+  {
+    "condition": "urgence",
+    "sens": "remplit",
+    "texte": "Refus de renouveler une autorisation provisoire de séjour qui, par ses caractéristiques, donne droit au séjour (parent d'enfant malade, L. 425-10 ; protection temporaire) : l'urgence est présumée comme pour un titre, et le juge ne peut l'écarter parce que la famille est logée et aidée ou que le refus n'emporte pas d'éloignement. La présomption ne règle pas le doute sérieux, que le Conseil d'État a écarté dans les deux affaires, contre l'avis du collège de médecins de l'OFII et contre une menace à l'ordre public.",
+    "marqueurs": [
+      "autorisation provisoire de séjour",
+      "l\\.? ?425-10",
+      "enfant malade",
+      "protection temporaire",
+      "l\\.? ?581-3"
+    ],
+    "sources": [
+      {
+        "juridiction": "CE, 2e et 7e ch. réunies (tables)",
+        "date": "2025-03-06",
+        "numero": "498497",
+        "url": "https://librejustice.fr/decision/XVaML3BS7bwC",
+        "point": "pts 5 et 9 : APS de l'article L. 425-10 assimilée à un titre ; demande rejetée faute de doute sérieux",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "CE, 2e et 7e ch. réunies (tables)",
+        "date": "2024-01-29",
+        "numero": "471605",
+        "url": "https://librejustice.fr/decision/F0WV9ohfp9ht",
+        "point": "pts 6 et 8 : APS de protection temporaire ; logement, aides et absence d'OQTF inopérants ; doute sérieux écarté",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "aucune trouvée",
+    "frequence": "1 sur 65 ordonnances de suspension vues",
+    "depuis": "CE, 29 janv. 2024, n° 471605 (tables) ; CE, 6 mars 2025, n° 498497 (tables)"
+  }
+]

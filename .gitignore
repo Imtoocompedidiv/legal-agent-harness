@@ -1,0 +1,15 @@
+__pycache__/
+.pytest_cache/
+*.egg-info/
+.venv*/
+.env
+
+# Résultats et sessions du banc : régénérés, jamais versionnés
+banc_runs/
+validation/banc/resultats/
+
+# Dossiers d'affaire, pièces et coffres de pseudonymisation : jamais dans le dépôt
+affaires/
+cabinet/
+*.chiffree
+*.cle

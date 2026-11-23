@@ -1,0 +1,18 @@
+{
+  "id": "GENP-CASSN-2413929",
+  "capacite": "pronostic",
+  "famille": "cassation-a-chercher",
+  "genere": true,
+  "origine": "usine.py, Cour de cassation, 2e chambre civile · formation restreinte, 12 novembre 2026, 24-13.929 (https://librejustice.fr/decision/h9e3uXCL7JGt), issue réelle : non",
+  "fixture": "gen_cassn_2413929",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme la chambre de la Cour de cassation, dis si l'arrêt attaqué doit être cassé, au moins en partie. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2026-11-11T18:00",
+  "coupe": "2026-11-11",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*non\\b",
+      "description": "répond non, comme la juridiction"
+    }
+  ]
+}

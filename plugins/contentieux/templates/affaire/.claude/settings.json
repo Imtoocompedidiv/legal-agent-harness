@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "deny": [
+      "Artifact", "ArtifactComments", "ArtifactData", "CronCreate", "CronDelete", "CronList", "DesignSync",
+      "EnterWorktree", "ExitWorktree", "ListAgents", "ListMcpResourcesTool", "Monitor", "NotebookEdit",
+      "PushNotification", "ReadMcpResourceDirTool", "ReadMcpResourceTool", "RemoteTrigger", "ReportFindings",
+      "ScheduleWakeup", "SendMessage", "SendToProject", "SendToProjectContext", "TaskCreate", "TaskGet",
+      "TaskList", "TaskUpdate", "Workflow"
+    ]
+  }
+}

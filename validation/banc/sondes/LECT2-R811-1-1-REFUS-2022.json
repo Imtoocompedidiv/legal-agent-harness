@@ -1,0 +1,43 @@
+{
+  "id": "LECT2-R811-1-1-REFUS-2022",
+  "capacite": "lecture",
+  "origine": "refonte recherche : texte lu dans la version applicable au recours (R. 811-1-1 avant le décret n° 2022-929 : refus exclus, CE 3 mars 2021 n° 441112 ; art. 3 du décret : ancienne rédaction pour les recours introduits jusqu'au 31 août 2022 ; recours du 15 mars 2022 contre un refus, donc appel ouvert)",
+  "consigne": "Nous reprenons un dossier. Le tribunal administratif de Nice a rejeté, par un jugement du 28 novembre 2024 notifié le 2 décembre 2024, la requête de notre client, enregistrée le 15 mars 2022, contre l'arrêté du 10 janvier 2022 par lequel le maire de Vallauris lui a refusé un permis de construire un immeuble de quinze logements. Le confrère précédent a formé appel devant la cour administrative d'appel de Marseille le 27 janvier 2025. Était-ce la bonne voie de recours ? Lis les textes applicables à la source. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier. Termine par une ligne de la forme « VERDICT : OUI » ou « VERDICT : NON ».",
+  "budget_minutes": 15,
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "811-1-1",
+      "description": "article R. 811-1-1 du CJA"
+    },
+    {
+      "type": "contient",
+      "motif": "verdict \\*{0,2} ?: ?\\*{0,2} ?oui",
+      "description": "l'appel était la bonne voie"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "441112",
+        "2022-929",
+        "31 août 2022",
+        "1er septembre 2022"
+      ],
+      "description": "applique la rédaction antérieure et sa jurisprudence"
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__get_norm",
+      "entree_contient": "/(partie|livre|titre|chapitre|section)-",
+      "description": "méthode : lit la section qui contient l'article (articles voisins)",
+      "critique": false
+    },
+    {
+      "type": "outil",
+      "outil": "mcp__librejustice__search_decisions",
+      "entree_contient": "legal_article",
+      "description": "méthode : cherche la jurisprudence par l'article (legal_article)",
+      "critique": false
+    }
+  ]
+}

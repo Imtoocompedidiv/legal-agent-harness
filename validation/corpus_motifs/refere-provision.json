@@ -1,0 +1,646 @@
+[
+  {
+    "condition": "obligation_non_serieusement_contestable",
+    "sous_domaine": "bail commercial : exception d'inexécution du preneur écartée",
+    "sens": "remplit",
+    "texte": "Le preneur qui suspend ses loyers en invoquant un manquement du bailleur à son obligation de délivrance n'élève pas de contestation sérieuse lorsque les locaux restent exploitables : la suspension suppose des lieux rendus impropres à leur destination, et des désordres partiels dont l'origine et la charge des travaux restent indéterminées laissent la provision intégrale. Signal : le preneur a poursuivi son activité dans les lieux, ou ne produit aucun élément comptable rattachant la baisse de son chiffre d'affaires aux désordres.",
+    "marqueurs": [
+      "exception d'inex[ée]cution",
+      "suspen\\w* (?:le paiement|le r[èe]glement) des loyers",
+      "obligation de d[ée]livrance",
+      "poursuivi son activit[ée]|maintenir son activit[ée]|continu[ée] (?:d'|[àa] )exploiter",
+      "impossibilit[ée] totale d'(?:utiliser|exploiter)"
+    ],
+    "sources": [
+      {
+        "juridiction": "CA Versailles, ch. 1-5 (référé)",
+        "date": "2026-10-01",
+        "numero": "26/00138",
+        "url": "https://librejustice.fr/decision/W4ek6Vl45UVR",
+        "point": "activité de boulangerie maintenue malgré l'humidité : manquement non caractérisé avec l'évidence requise, provision de 9 020,04 euros confirmée",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Cass. civ. 3e",
+        "date": "2023-07-06",
+        "numero": "22-15.923",
+        "url": "https://librejustice.fr/decision/U1GCx5P9b0uh",
+        "point": "§ 8-9 : l'exception n'est justifiée qu'après recherche de l'impropriété des locaux à leur usage (Bulletin)",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CA Saint-Denis de la Réunion, 6 mai 2026, n° 25/00515 : infiltrations filmées et signalées avant le commandement, provision et clause résolutoire écartées (https://librejustice.fr/decision/_EJeupPbMFmn).",
+    "frequence": "6 sur 12 arrêts de cours d'appel vus en 2025-2026 sur l'exception d'inexécution du preneur commercial (requête dédiée)",
+    "depuis": "C. civ., art. 1219, depuis le 1er octobre 2016 ; critère de l'impropriété réaffirmé par Cass. 3e civ., 6 juillet 2023, n° 22-15.923"
+  },
+  {
+    "condition": "obligation_non_serieusement_contestable",
+    "sous_domaine": "bail commercial : exception d'inexécution du preneur accueillie",
+    "sens": "tombe",
+    "texte": "L'exception d'inexécution devient une contestation sérieuse, qui interdit à la fois la provision sur loyers et le constat de la clause résolutoire, lorsque le preneur prouve par pièces datées des désordres relevant du bailleur (clos et couvert, grosses réparations) qui rendent les lieux impropres à l'accueil du public, et qu'il les a signalés avant le commandement. Le preneur n'a pas à justifier d'une mise en demeure préalable pour suspendre les loyers à compter de l'impropriété.",
+    "marqueurs": [
+      "infiltrations?",
+      "toiture",
+      "impropres? (?:[àa]) (?:l'usage|leur destination|sa destination)",
+      "moisissures",
+      "constat (?:de |d')(?:commissaire de justice|huissier)",
+      "grosses r[ée]parations"
+    ],
+    "sources": [
+      {
+        "juridiction": "CA Saint-Denis de la Réunion, ch. commerciale (référé)",
+        "date": "2026-05-06",
+        "numero": "25/00515",
+        "url": "https://librejustice.fr/decision/_EJeupPbMFmn",
+        "point": "courriels de mars 2024 et vidéos des infiltrations : contestation sérieuse, ordonnance infirmée en totalité, n'y avoir lieu à référé",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Cass. civ. 3e",
+        "date": "2025-09-18",
+        "numero": "23-24.005",
+        "url": "https://librejustice.fr/decision/vxBOkHngTvVJ",
+        "point": "§ 12 : refus de payer opposable dès le jour où les locaux sont impropres, sans mise en demeure préalable (Bulletin)",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CA Versailles, 1er octobre 2026, n° 26/00138 : exploitation poursuivie, exception écartée et provision confirmée (https://librejustice.fr/decision/W4ek6Vl45UVR).",
+    "frequence": "6 sur 12 arrêts de cours d'appel vus (requête dédiée) ; dans 1 des 6, connu par son résumé seul, l'exception bloque la clause résolutoire mais la provision sur loyers est allouée",
+    "depuis": "Cass. 3e civ., 18 septembre 2025, n° 23-24.005 (absence de mise en demeure préalable) ; C. civ., art. 1219, depuis le 1er octobre 2016"
+  },
+  {
+    "condition": "montant_non_serieusement_contestable",
+    "sous_domaine": "bail d'habitation : délais de paiement et suspension de la clause résolutoire",
+    "sens": "remplit",
+    "texte": "Les délais de l'article 24, V, de la loi du 6 juillet 1989 n'entament pas la provision sur l'arriéré, allouée pour le montant du décompte actualisé non contesté ; ils n'en échelonnent l'exigibilité, jusqu'à trois ans avec suspension de la clause résolutoire, que si le locataire a repris le versement intégral du loyer courant avant l'audience et peut régler sa dette. Signal : le dernier décompte établit ou non le paiement du loyer courant des mois précédant l'audience ; un chèque remis la veille et non confirmé par le bailleur ne suffit pas.",
+    "marqueurs": [
+      "repris le (?:versement|paiement) int[ée]gral du loyer courant",
+      "article 24,? (?:v|vii)\\b",
+      "d[ée]lais de paiement",
+      "suspension des effets de la clause r[ée]solutoire",
+      "loi du 6 juillet 1989"
+    ],
+    "sources": [
+      {
+        "juridiction": "TJ Marseille, pôle de proximité (référé, juge des contentieux de la protection)",
+        "date": "2026-01-15",
+        "numero": "25/05941",
+        "url": "https://librejustice.fr/decision/EAUq-8sRQpZ2",
+        "point": "audience du 15 janvier 2026, ordonnance du 12 mars 2026 : reprise du loyer courant non établie, délais et suspension refusés, provision de 4 401,50 euros",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TJ Marseille, ordonnance après audience du 15 janvier 2026, n° 25/05840 : reprise du loyer courant établie, 36 mensualités de 92 euros et provision de 3 335 euros (https://librejustice.fr/decision/qBfzZ9-dVqd5).",
+    "frequence": "7 sur 10 ordonnances de référé vues (requête dédiée) refusent les délais faute de reprise du loyer courant ; 3 sur 10 les accordent ; la provision sur l'arriéré est allouée dans les 10",
+    "depuis": "Loi n° 2023-668 du 27 juillet 2023, en vigueur le 29 juillet 2023 (art. 24, V et VII, de la loi du 6 juillet 1989)"
+  },
+  {
+    "condition": "montant_non_serieusement_contestable",
+    "sous_domaine": "bail commercial : majorations conventionnelles et clause pénale",
+    "sens": "tombe",
+    "texte": "Le juge des référés, qui ne peut modérer une clause pénale, refuse toute provision sur une majoration conventionnelle (indemnité d'occupation majorée, intérêts majorés, conservation du dépôt de garantie) dès que son montant peut être jugé manifestement excessif, notamment lorsqu'elle se cumule avec l'indemnité d'occupation sans préjudice particulier ; l'indemnité d'occupation provisionnelle est alors fixée au loyer augmenté des charges. Limite : la provision sur une clause pénale reste possible pour la part qui paraît justifiée, et une pénalité forfaitaire claire et modérée peut être allouée.",
+    "marqueurs": [
+      "clause p[ée]nale",
+      "major[ée]e? de (?:plein droit )?(?:et [àa] titre irr[ée]ductible )?(?:de )?\\d+ ?%",
+      "indemnit[ée] d'occupation (?:major[ée]e|[ée]gale au double)",
+      "manifestement excessi(?:f|ve)",
+      "d[ée]p[ôo]t de garantie (?:restera|demeurera|sera) acquis"
+    ],
+    "sources": [
+      {
+        "juridiction": "CA Versailles, ch. 1-5 (référé)",
+        "date": "2026-10-01",
+        "numero": "26/00138",
+        "url": "https://librejustice.fr/decision/W4ek6Vl45UVR",
+        "point": "majoration irréductible de 12 % cumulée avec l'indemnité d'occupation : clause pénale modérable, contestation sérieuse",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TJ Paris, référés",
+        "date": "2026-01-27",
+        "numero": "25/57962",
+        "url": "https://librejustice.fr/decision/22JDdk5IWkSS",
+        "point": "majoration de l'indemnité d'occupation et des intérêts, conservation du dépôt de garantie : n'y avoir lieu à référé ; pénalité de 10 % jugée claire et modérée allouée",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Cass. civ. 3e",
+        "date": "1988-12-14",
+        "numero": "87-14.424",
+        "url": "https://librejustice.fr/decision/RXXGVv-GD0GJ",
+        "point": "le juge des référés ne peut modérer la clause pénale mais alloue la somme qui lui paraît justifiée (Bulletin)",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TJ Paris, 27 janvier 2026, n° 25/57962, pour la pénalité forfaitaire de 10 % ; Cass. 3e civ., 14 décembre 1988, n° 87-14.424 (https://librejustice.fr/decision/RXXGVv-GD0GJ).",
+    "frequence": "12 sur 12 ordonnances et arrêts vus (requête dédiée, 2025-2026) écartent la majoration conventionnelle ; 1 sur 12 alloue en outre une pénalité forfaitaire de 10 %",
+    "depuis": "C. civ., art. 1231-5, depuis le 1er octobre 2016 (ancien art. 1152) ; Cass. 3e civ., 14 décembre 1988, n° 87-14.424"
+  },
+  {
+    "condition": "obligation_non_serieusement_contestable",
+    "sous_domaine": "commercial : factures de fournitures et de prestations",
+    "sens": "remplit",
+    "texte": "La créance de factures est non sérieusement contestable lorsque chaque facture se rattache à un bon de livraison signé, à un bon de commande signé ou à un écrit du débiteur chiffrant ce qu'il doit ; le paiement allégué sans pièce et la contestation globale sont écartés. La provision se calcule facture par facture : celle qui ne repose que sur une lettre de voiture sans désignation des biens, un bon non signé ou une estimation unilatérale sort du montant, et l'indemnité forfaitaire de 40 euros n'est due que pour les factures retenues.",
+    "marqueurs": [
+      "bons? de livraison sign[ée]s?",
+      "factures? impay[ée]es?",
+      "indemnit[ée] forfaitaire (?:pour frais )?de recouvrement",
+      "l\\.? ?441-10",
+      "reconna[îi]t (?:la|sa) dette|reconnu (?:la|sa) dette|nous (?:te|vous) devons"
+    ],
+    "sources": [
+      {
+        "juridiction": "CA Paris, pôle 1 ch. 8 (référé)",
+        "date": "2024-12-06",
+        "numero": "24/07744",
+        "url": "https://librejustice.fr/decision/QSyfKcu0dG5A",
+        "point": "factures appuyées de bons signés allouées ; lettres de voiture sans désignation et bons non signés écartés ; provision ramenée à 48 055,22 euros et 40 euros pour 8 factures",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "CA Paris, pôle 1 ch. 2 (référé)",
+        "date": "2024-07-04",
+        "numero": "23/19493",
+        "url": "https://librejustice.fr/decision/jB1nIZLxfDuf",
+        "point": "courriel du débiteur fixant la somme due selon le processus habituel : obligation incontestable ; facture estimée hors ce processus : contestable",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CA Lyon, 28 mai 2025, n° 24/03151 : réclamations écrites et répétées sans réponse du prestataire, provision infirmée (https://librejustice.fr/decision/adNuLleVhMxe).",
+    "frequence": "12 sur 12 ordonnances et arrêts vus sur des factures appuyées de bons de livraison (requête dédiée) allouent la provision ; elle est réduite facture par facture dans 2 d'entre eux",
+    "depuis": "C. civ., art. 1353, depuis le 1er octobre 2016 ; indemnité forfaitaire : C. com., art. L. 441-10, II, dans sa version en vigueur depuis le 26 avril 2019"
+  },
+  {
+    "condition": "obligation_non_serieusement_contestable",
+    "sous_domaine": "commercial : prestations contestées dès leur exécution",
+    "sens": "tombe",
+    "texte": "Le client élève une contestation sérieuse lorsqu'il produit des réclamations écrites, précises et répétées, émises dès l'exécution et antérieures à la mise en demeure, auxquelles le prestataire ne justifie ni avoir remédié ni avoir répondu ; les pièces du prestataire antérieures à ces réclamations (rapport d'intervention, feuilles de présence, envoi des codes d'accès) ne les neutralisent pas. Signal : une série de courriels de réclamation datés, sans réponse adverse versée aux débats.",
+    "marqueurs": [
+      "r[ée]clamations? (?:constantes?|r[ée]it[ée]r[ée]es?|successives?)",
+      "ex[ée]cution d[ée]fectueuse",
+      "(?:jamais|pas) (?:[ée]t[ée] )?op[ée]rationnels?",
+      "sans (?:y )?(?:avoir )?(?:donn[ée] suite|r[ée]pondu)",
+      "prestations? (?:non conformes?|incompl[èe]tes?|non r[ée]alis[ée]es?)"
+    ],
+    "sources": [
+      {
+        "juridiction": "CA Lyon, 8e ch. (référé)",
+        "date": "2025-05-28",
+        "numero": "24/03151",
+        "url": "https://librejustice.fr/decision/adNuLleVhMxe",
+        "point": "cinq courriels de réclamation de février à avril 2021, sans preuve de réponse : provision de 18 373,43 euros infirmée",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CA Paris, 6 décembre 2024, n° 24/07744 : contestation formulée sans précision ni pièce, écartée (https://librejustice.fr/decision/QSyfKcu0dG5A).",
+    "frequence": "3 sur 12 décisions vues de la requête sur la prestation contestée rejettent pour exécution défectueuse étayée ; 4 autres pour compensation ou exception proportionnée ; 5 sur 12 allouent",
+    "depuis": "C. civ., art. 1219, depuis le 1er octobre 2016 ; CPC, art. 873, al. 2"
+  },
+  {
+    "condition": "obligation_non_serieusement_contestable",
+    "sous_domaine": "général : compensation avec une créance réciproque probable",
+    "sens": "tombe",
+    "texte": "L'éventualité d'une compensation rend la provision sérieusement contestable lorsque la créance réciproque est rendue probable par les pièces : factures du débiteur dont le créancier ne discute ni le principe ni le montant, pratique habituelle de compensation entre les parties, règlements comptabilisés qui ne s'expliquent que par elle. Le juge des référés ne prononce pas la compensation ; il en apprécie le sérieux.",
+    "marqueurs": [
+      "compensation",
+      "cr[ée]ances? r[ée]ciproques?",
+      "connexit[ée]",
+      "solde (?:en sa faveur|cr[ée]diteur)",
+      "compte(?:s)? entre les parties"
+    ],
+    "sources": [
+      {
+        "juridiction": "CA Dijon, 2e ch. civ. (référé)",
+        "date": "2023-11-16",
+        "numero": "23/00591",
+        "url": "https://librejustice.fr/decision/BQn-hfzDptxc",
+        "point": "factures réciproques non discutées, compensations antérieures comptabilisées : provision de 34 238,35 euros refusée",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Cass. civ. 3e",
+        "date": "1978-11-22",
+        "numero": "77-14.040",
+        "url": "https://librejustice.fr/decision/W5-wuqbq9qMo",
+        "point": "le juge des référés apprécie si l'éventualité d'une compensation rend sérieuse la contestation (Bulletin)",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TAE Nanterre (président, référé), 24 juillet 2026, n° 2026R00718 : indemnité de non-concurrence non encore demandée au fond, compensation écartée (https://librejustice.fr/decision/LAxayGU1P_GV).",
+    "frequence": "4 sur 8 décisions vues où la compensation est opposée (requêtes sur la prestation contestée et le bail commercial) la retiennent comme contestation sérieuse",
+    "depuis": "Cass. 3e civ., 22 novembre 1978, n° 77-14.040 ; C. civ., art. 1347 et 1348-1, depuis le 1er octobre 2016"
+  },
+  {
+    "condition": "obligation_non_serieusement_contestable",
+    "sous_domaine": "général : compensation avec une créance seulement alléguée",
+    "sens": "remplit",
+    "texte": "La compensation n'est pas une contestation sérieuse lorsque la créance opposée reste une prétention : indemnité pour violation d'une clause de non-concurrence que le débiteur n'a pas encore demandée au juge du fond et dont il reconnaît lui-même qu'elle ne relève pas de l'évidence, créance dont ni la nature ni le montant ne sont précisés. Le débiteur qui ne discute pas la prestation facturée doit alors la provision, avec les pénalités de retard stipulées et l'indemnité de 40 euros.",
+    "marqueurs": [
+      "compensation",
+      "clause de non-concurrence",
+      "juge du fond sera saisi",
+      "ni certaine,? ni liquide,? ni exigible",
+      "pas encore (?:[ée]t[ée] )?demand[ée]e? au juge du fond"
+    ],
+    "sources": [
+      {
+        "juridiction": "TAE Nanterre (président, référé)",
+        "date": "2026-07-24",
+        "numero": "2026R00718",
+        "url": "https://librejustice.fr/decision/LAxayGU1P_GV",
+        "point": "indemnité de 60 000 euros non exigible faute de demande au fond : provision de 9 000 euros, pénalités et 40 euros",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Cass. civ. 3e",
+        "date": "1978-11-22",
+        "numero": "77-14.040",
+        "url": "https://librejustice.fr/decision/W5-wuqbq9qMo",
+        "point": "créance réciproque invoquée sans nature ni caractère précisés : obligation non sérieusement contestable",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CA Dijon, 16 novembre 2023, n° 23/00591 : créance réciproque probable, provision refusée (https://librejustice.fr/decision/BQn-hfzDptxc).",
+    "frequence": "4 sur 8 décisions vues où la compensation est opposée l'écartent et allouent la provision",
+    "depuis": "Cass. 3e civ., 22 novembre 1978, n° 77-14.040 ; C. civ., art. 1347-1, depuis le 1er octobre 2016"
+  },
+  {
+    "condition": "obligation_non_serieusement_contestable",
+    "sous_domaine": "travaux : solde de marché et malfaçons sous expertise",
+    "sens": "tombe",
+    "texte": "L'entrepreneur n'obtient pas de provision sur le solde du marché quand le maître de l'ouvrage retient le paiement dans une proportion raisonnable au regard de désordres multiples que l'expertise judiciaire en cours n'a pas écartés ; symétriquement, le maître de l'ouvrage n'obtient pas de provision sur le coût des reprises tant que les responsabilités et l'imputabilité ne sont pas tranchées, un devis établi pour l'expertise ne suffisant pas. Signal : expertise judiciaire sans rapport définitif, absence de réception expresse, constat privé non invalidé par l'expert.",
+    "marqueurs": [
+      "solde du march[ée]",
+      "malfa[çc]ons?|non-fa[çc]ons?",
+      "expertise (?:judiciaire )?(?:en cours|toujours en cours)",
+      "note aux parties",
+      "r[ée]ception (?:expresse|tacite)",
+      "retenue (?:de garantie|des paiements|appliqu[ée]e)"
+    ],
+    "sources": [
+      {
+        "juridiction": "CA Colmar, 2e ch. civ. (référé)",
+        "date": "2025-03-20",
+        "numero": "23/04025",
+        "url": "https://librejustice.fr/decision/kB_mwVse46IM",
+        "point": "exception d'inexécution proportionnée aux malfaçons : provision de 33 819,20 euros refusée ; provision du maître de l'ouvrage refusée avant partage des responsabilités",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TJ Bordeaux, 21 septembre 2026, n° 26/01712 : contre l'assureur dommages-ouvrage, les notes de l'expert judiciaire suffisent à fonder la provision (https://librejustice.fr/decision/apuQ5RG71E1O).",
+    "frequence": "3 sur 3 arrêts vus sur un solde de marché ou d'honoraires contesté pour désordres sous expertise rejettent la provision",
+    "depuis": "C. civ., art. 1219 et 1223, depuis le 1er octobre 2016 ; CPC, art. 873, al. 2"
+  },
+  {
+    "condition": "obligation_non_serieusement_contestable",
+    "sous_domaine": "assurance dommages-ouvrage et décennale : préfinancement des reprises",
+    "sens": "remplit",
+    "texte": "L'assureur dommages-ouvrage doit une provision égale au coût des reprises validées par l'expert judiciaire dès que les notes de celui-ci caractérisent, avec l'évidence requise, une atteinte à la solidité ou une impropriété à la destination ; il ne peut opposer le caractère multifactoriel des désordres ni l'absence de rapport définitif, sa garantie jouant hors recherche des responsabilités. Limite : les postes que l'expert n'a pas validés et les recours contre les sous-traitants restent hors provision.",
+    "marqueurs": [
+      "dommages-ouvrage",
+      "pr[ée]financement",
+      "l\\.? ?242-1",
+      "d[ée]cennale?",
+      "atteinte (?:[àa]) la solidit[ée]",
+      "impropre (?:[àa]) (?:sa|leur) destination"
+    ],
+    "sources": [
+      {
+        "juridiction": "TJ Bordeaux (référé)",
+        "date": "2026-09-21",
+        "numero": "26/01712",
+        "url": "https://librejustice.fr/decision/apuQ5RG71E1O",
+        "point": "notes n° 3 et 5 de l'expert préconisant des micropieux et validant les devis : provision de 267 896,06 euros",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CA Colmar, 20 mars 2025, n° 23/04025 : hors assurance dommages-ouvrage, la provision du maître de l'ouvrage contre l'entrepreneur attend le partage des responsabilités (https://librejustice.fr/decision/kB_mwVse46IM).",
+    "frequence": "9 sur 10 décisions vues (requête dédiée, référé et mise en état) allouent une provision sur des désordres décennaux établis par expertise, souvent limitée aux postes non contestés",
+    "depuis": "C. assur., art. L. 242-1, régime issu de la loi n° 78-12 du 4 janvier 1978, en vigueur depuis le 1er janvier 1979 (texte non relu ce jour) ; C. civ., art. 1792"
+  },
+  {
+    "condition": "obligation_non_serieusement_contestable",
+    "sous_domaine": "assurance de dommages : garantie contestée pour fausse déclaration du risque",
+    "sens": "tombe",
+    "texte": "La discordance objective entre les déclarations faites à la souscription et un relevé d'information d'un précédent assureur, qui révèle des sinistres omis, suffit à rendre la garantie sérieusement contestable ; l'appréciation de l'intention et de l'incidence sur l'opinion du risque relève du juge du fond. La provision tombe alors, même allouée en première instance contre un assureur défaillant.",
+    "marqueurs": [
+      "fausse d[ée]claration",
+      "l\\.? ?113-8",
+      "relev[ée] d'information",
+      "nullit[ée] du contrat d'assurance",
+      "r[ée]ticence"
+    ],
+    "sources": [
+      {
+        "juridiction": "CA Aix-en-Provence, ch. 1-2 (référé)",
+        "date": "2024-03-14",
+        "numero": "23/04006",
+        "url": "https://librejustice.fr/decision/1S_MytnzyN97",
+        "point": "relevé d'information mentionnant quatre sinistres non déclarés : provision de 17 945 euros infirmée",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TJ Paris, 23 juillet 2024, n° 24/51135 : déchéance pour fausse déclaration du sinistre non étayée, provision allouée (https://librejustice.fr/decision/VPSPznMHNN4K).",
+    "frequence": "3 sur 4 décisions de référé vues sur une garantie refusée par l'assureur (requête dédiée) rejettent la provision",
+    "depuis": "C. assur., art. L. 113-8, dans sa rédaction en vigueur depuis le 8 janvier 1981"
+  },
+  {
+    "condition": "obligation_non_serieusement_contestable",
+    "sous_domaine": "assurance de dommages : déchéance pour fausse déclaration du sinistre",
+    "sens": "remplit",
+    "texte": "Lorsque le sinistre entre avec évidence dans une garantie aux clauses claires, la déchéance pour fausse déclaration du sinistre n'est une contestation sérieuse que si l'assureur, qui en supporte la preuve, apporte des éléments rendant plausible la mauvaise foi ; une version des faits peut-être inexacte, maintenue de façon constante par l'assuré, ne suffit pas. La provision se calcule alors sur les stipulations claires de la police (valeur à dire d'expert, majoration, franchise).",
+    "marqueurs": [
+      "d[ée]ch[ée]ance (?:de|du) (?:tout )?droit (?:[àa]) garantie|d[ée]chu",
+      "mauvaise foi",
+      "d[ée]claration de sinistre",
+      "valeur de remplacement",
+      "l\\.? ?211-13"
+    ],
+    "sources": [
+      {
+        "juridiction": "TJ Paris, référés",
+        "date": "2024-07-23",
+        "numero": "24/51135",
+        "url": "https://librejustice.fr/decision/VPSPznMHNN4K",
+        "point": "mauvaise foi non démontrée, garantie tous risques claire : provision de 19 045 euros avec intérêts doublés",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CA Aix-en-Provence, 14 mars 2024, n° 23/04006 : fausse déclaration du risque objectivée, provision refusée (https://librejustice.fr/decision/1S_MytnzyN97).",
+    "frequence": "1 sur 4 décisions de référé vues sur une garantie refusée par l'assureur",
+    "depuis": "C. civ., art. 1103, depuis le 1er octobre 2016 ; C. assur., art. L. 211-13 pour les intérêts doublés"
+  },
+  {
+    "condition": "obligation_non_serieusement_contestable",
+    "sous_domaine": "responsabilité : accident de la circulation, faute plausible du conducteur victime",
+    "sens": "tombe",
+    "texte": "La provision du conducteur victime tombe lorsque des éléments rendent plausible une faute de sa part ayant contribué à son préjudice, appréciée sans égard au comportement de l'autre conducteur : circonstances indéterminées sur la priorité ou les vitesses, supplément d'information ordonné par la juridiction pénale, constat amiable défavorable. Les provisions déjà versées par l'assureur n'y changent rien.",
+    "marqueurs": [
+      "conducteur victime",
+      "loi (?:n° ?85-677 )?du 5 juillet 1985",
+      "article 4 de la loi",
+      "suppl[ée]ment d'information",
+      "refus de priorit[ée]|d[ée]faut de ma[îi]trise"
+    ],
+    "sources": [
+      {
+        "juridiction": "TJ Chartres (référé)",
+        "date": "2026-01-05",
+        "numero": "25/00266",
+        "url": "https://librejustice.fr/decision/EYBoUUd_uJrP",
+        "point": "supplément d'information ordonné sur la priorité et les vitesses : provision de 150 000 euros refusée",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Cass. civ. 2e",
+        "date": "2016-03-03",
+        "numero": "15-14.285",
+        "url": "https://librejustice.fr/decision/35S3tozgD6kq",
+        "point": "faute du conducteur victime appréciée en faisant abstraction du comportement de l'autre conducteur (Bulletin)",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CA Toulouse, 30 avril 2025, n° 24/02350 : aucune faute invoquée par l'assureur, provision allouée (https://librejustice.fr/decision/t0L5uDjYD-Xw).",
+    "frequence": "4 sur 10 décisions de référé vues (requête dédiée) rejettent pour faute possible du conducteur victime ; 2 autres limitent la provision",
+    "depuis": "Loi n° 85-677 du 5 juillet 1985, art. 4 ; méthode fixée par Cass. 2e civ., 3 mars 2016, n° 15-14.285"
+  },
+  {
+    "condition": "obligation_non_serieusement_contestable",
+    "sous_domaine": "responsabilité : accident de la circulation, aucune faute articulée contre la victime",
+    "sens": "remplit",
+    "texte": "L'assureur du véhicule impliqué doit une provision au conducteur victime lorsqu'il n'articule aucune faute de celui-ci et que le constat amiable désigne l'autre conducteur comme débiteur de la priorité ; le fait que la responsabilité ne soit pas encore jugée ne vaut pas contestation. Limite : la provision est arrêtée aux postes que l'expertise rattache à l'accident, sous déduction des sommes versées, les soins postérieurs non rattachés en étant exclus.",
+    "marqueurs": [
+      "v[ée]hicule impliqu[ée]",
+      "constat amiable",
+      "priorit[ée] (?:[àa]) droite|grill[ée] (?:la |une )?priorit[ée]",
+      "conducteur victime",
+      "provision (?:[àa] valoir sur|sur) (?:l'indemnisation|la r[ée]paration)"
+    ],
+    "sources": [
+      {
+        "juridiction": "CA Toulouse, 3e ch. (référé)",
+        "date": "2025-04-30",
+        "numero": "24/02350",
+        "url": "https://librejustice.fr/decision/t0L5uDjYD-Xw",
+        "point": "aucune faute invoquée, priorité à droite reconnue au constat : provision de 3 500 euros moins 1 000 euros déjà versés",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TJ Chartres, 5 janvier 2026, n° 25/00266 : circonstances indéterminées, provision refusée (https://librejustice.fr/decision/EYBoUUd_uJrP).",
+    "frequence": "6 sur 10 décisions de référé vues allouent une provision, dont 2 limitées au montant non contestable",
+    "depuis": "Loi n° 85-677 du 5 juillet 1985, art. 4 ; Cass. 2e civ., 3 mars 2016, n° 15-14.285"
+  },
+  {
+    "condition": "obligation_non_serieusement_contestable",
+    "sous_domaine": "prêt : cautionnement contesté avec pièces, nullité précise",
+    "sens": "tombe",
+    "texte": "La provision réclamée à la caution tombe lorsque celle-ci étaye une défense qui touche à l'existence ou à l'étendue de son engagement : disproportion manifeste démontrée par pièces sur ses revenus et son patrimoine à la date de l'acte, conditions de souscription faisant douter de sa compréhension, nullité tirée de l'absence d'une mention légale identifiée. Signal : caution non avertie, prêt important, avis d'imposition et patrimoine produits.",
+    "marqueurs": [
+      "caution (?:solidaire|personne physique)",
+      "manifestement disproportionn[ée]",
+      "l\\.? ?332-1|article 2300",
+      "mention manuscrite|mention (?:prescrite|requise)",
+      "nullit[ée] (?:du cautionnement|du mandat|de l'acte)"
+    ],
+    "sources": [
+      {
+        "juridiction": "TJ Paris, référés",
+        "date": "2025-07-03",
+        "numero": "24/56192",
+        "url": "https://librejustice.fr/decision/999nTt3f2enV",
+        "point": "engagement manifestement disproportionné et compréhension douteuse : provision de 108 674,49 euros refusée",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Cass. civ. 1re",
+        "date": "2016-07-06",
+        "numero": "15-18.763",
+        "url": "https://librejustice.fr/decision/kTYQ40Qp31iE",
+        "point": "nullité tirée de l'absence de la mention réglementaire du garant : contestation sérieuse, cassation sans renvoi (Bulletin)",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CA Montpellier, 5 mai 2026, n° 25/05035 : disproportion non établie et nullité alléguée sans désigner la mention manquante, provision allouée (https://librejustice.fr/decision/BgZcJ0zFqCj0).",
+    "frequence": "4 sur 6 décisions de référé vues sur des cautions (requête dédiée) rejettent la provision",
+    "depuis": "C. consom., art. L. 332-1, pour les cautionnements conclus avant le 1er janvier 2022 ; C. civ., art. 2300 (réduction), depuis le 1er janvier 2022 ; Cass. 1re civ., 6 juillet 2016, n° 15-18.763"
+  },
+  {
+    "condition": "obligation_non_serieusement_contestable",
+    "sous_domaine": "prêt : cautionnement contesté sans preuve",
+    "sens": "remplit",
+    "texte": "La caution supporte la preuve de la disproportion : des avis d'imposition sans justification du patrimoine et une attestation sur l'honneur ne la font pas ressortir avec évidence, et la nullité alléguée sans désigner la mention manquante n'est pas sérieuse lorsque la caution a écrit le montant en chiffres et en lettres. Limite : le défaut d'information de la caution retire de la provision les intérêts de la période concernée.",
+    "marqueurs": [
+      "caution",
+      "attestation sur l'honneur",
+      "patrimoine",
+      "d[ée]faut d'information|information annuelle",
+      "quittance subrogative"
+    ],
+    "sources": [
+      {
+        "juridiction": "CA Montpellier, 1re ch. civ. (référé)",
+        "date": "2026-05-05",
+        "numero": "25/05035",
+        "url": "https://librejustice.fr/decision/BgZcJ0zFqCj0",
+        "point": "preuve de la disproportion non rapportée : provision de 14 209,87 euros, déduction des intérêts de la période sans information",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TJ Paris, 3 juillet 2025, n° 24/56192 : disproportion établie par pièces, provision refusée (https://librejustice.fr/decision/999nTt3f2enV).",
+    "frequence": "2 sur 6 décisions de référé vues sur des cautions allouent la provision",
+    "depuis": "C. consom., art. L. 332-1, pour les cautionnements conclus avant le 1er janvier 2022 ; C. civ., art. 2300, depuis le 1er janvier 2022"
+  },
+  {
+    "condition": "obligation_non_serieusement_contestable",
+    "sous_domaine": "travaux et services fournis à un consommateur : prescription biennale",
+    "sens": "tombe",
+    "texte": "La prescription plausible de la créance est une contestation sérieuse : l'action du professionnel contre un consommateur se prescrit par deux ans à compter de l'achèvement des travaux, et les protestations et réserves de l'entrepreneur dans le référé-expertise engagé par le client n'interrompent pas ce délai faute de demande propre. Signal : réception ou fin des travaux plus de deux ans avant l'assignation en provision, sans demande antérieure de l'entrepreneur.",
+    "marqueurs": [
+      "l\\.? ?218-2",
+      "prescription biennale|se prescrit par deux ans",
+      "ach[èe]vement des travaux",
+      "protestations et r[ée]serves",
+      "fin de non-recevoir tir[ée]e de la prescription"
+    ],
+    "sources": [
+      {
+        "juridiction": "TJ Toulouse (référé)",
+        "date": "2026-04-07",
+        "numero": "25/01844",
+        "url": "https://librejustice.fr/decision/3nDOxCh7ZEuW",
+        "point": "réception du 7 avril 2022, assignation du 13 octobre 2025 : prescription manifeste, provision de 17 921,56 euros refusée",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Cass. civ. 3e",
+        "date": "2023-03-01",
+        "numero": "21-23.176",
+        "url": "https://librejustice.fr/decision/XL9RQ0eeovbt",
+        "point": "§ 10 : point de départ fixé à l'achèvement des travaux ou à l'exécution des prestations (Bulletin)",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "Aucune trouvée parmi les décisions lues ; dans 2 des 9 référés vus par leur résumé, la prescription est écartée mais la provision refusée pour un autre motif.",
+    "frequence": "7 sur 9 décisions de référé vues où la prescription est discutée (requête dédiée) la retiennent comme contestation sérieuse",
+    "depuis": "C. consom., art. L. 218-2 ; point de départ à l'achèvement des travaux depuis Cass. 3e civ., 1er mars 2023, n° 21-23.176"
+  },
+  {
+    "condition": "obligation_non_serieusement_contestable",
+    "sous_domaine": "copropriété : charges impayées et preuve de la créance",
+    "sens": "tombe",
+    "texte": "L'approbation des comptes non contestée dans le délai de l'article 42 rend exigible la quote-part de charges, mais le syndicat doit la prouver par le procès-verbal signé approuvant les comptes ou le budget de chaque exercice, le compte individuel et le décompte de répartition. Un procès-verbal vierge, l'absence d'approbation du budget de l'exercice en cours, un appel trimestriel qui ne correspond pas au quart du budget ou un solde absent du compte individuel réduisent la provision aux seules sommes justifiées, voire l'excluent.",
+    "marqueurs": [
+      "syndicat des copropri[ée]taires",
+      "approbation des comptes",
+      "budget pr[ée]visionnel",
+      "d[ée]compte de r[ée]partition",
+      "compte individuel",
+      "article 42"
+    ],
+    "sources": [
+      {
+        "juridiction": "TJ Bobigny (référé)",
+        "date": "2024-08-07",
+        "numero": "24/01104",
+        "url": "https://librejustice.fr/decision/IhhqvK9Dvf0z",
+        "point": "procès-verbal vierge et budget non approuvé : n'y avoir lieu à référé sur 10 787,35 euros",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "CA Versailles, ch. 1-5 (référé)",
+        "date": "2025-12-18",
+        "numero": "25/01603",
+        "url": "https://librejustice.fr/decision/FF9CBVE_uM-L",
+        "point": "sans décompte de répartition ni compte individuel à jour, provision ramenée de 9 368,92 à 223,87 euros (fonds de travaux)",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Cass. civ. 3e",
+        "date": "2018-02-01",
+        "numero": "16-26.992",
+        "url": "https://librejustice.fr/decision/wJUG-cOj36zX",
+        "point": "l'approbation des comptes du syndicat ne vaut pas approbation du compte individuel de chaque copropriétaire",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TJ Avignon, 19 octobre 2026, n° 26/00251 (procédure accélérée au fond) : procès-verbaux, appels de fonds et décompte actualisé suffisent (https://librejustice.fr/decision/0GTdZdRgL8Dm).",
+    "frequence": "3 sur 12 décisions vues (requête dédiée) refusent ou réduisent la provision faute de pièces ; 9 sur 12 allouent sur procès-verbaux, appels et décompte",
+    "depuis": "Loi du 10 juillet 1965, art. 42 ; Cass. 3e civ., 1er février 2018, n° 16-26.992"
+  },
+  {
+    "condition": "competence_du_juge_des_referes",
+    "sous_domaine": "commercial : convention d'arbitrage",
+    "sens": "tombe",
+    "texte": "En présence d'une convention d'arbitrage, le juge des référés n'accorde une provision avant la constitution du tribunal arbitral qu'en cas d'urgence : la durée d'une expertise, l'ancienneté ou le montant de la créance, les difficultés financières d'un débiteur toujours en activité ou son siège à l'étranger ne la caractérisent pas. Limite : l'urgence est admise quand une attestation d'expert-comptable établit que le défaut de paiement compromet la trésorerie et la poursuite de l'activité à court terme.",
+    "marqueurs": [
+      "clause compromissoire",
+      "convention d'arbitrage",
+      "article 1449",
+      "tribunal arbitral (?:n'est pas|non) (?:encore )?constitu[ée]",
+      "chambre arbitrale|chambre de commerce internationale"
+    ],
+    "sources": [
+      {
+        "juridiction": "CA Aix-en-Provence, ch. 3-1 (référé)",
+        "date": "2025-01-15",
+        "numero": "24/03601",
+        "url": "https://librejustice.fr/decision/c_knKd1vJpCL",
+        "point": "expertise longue, montant élevé et siège à Taïwan : urgence non caractérisée, incompétence confirmée",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Cass. civ. 2e",
+        "date": "2002-06-13",
+        "numero": "00-20.077",
+        "url": "https://librejustice.fr/decision/kUJlvSBTKZ06",
+        "point": "la compétence exceptionnelle du juge des référés en présence d'une convention d'arbitrage est subordonnée à l'urgence (Bulletin)",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "CA Paris, 4 juillet 2024, n° 23/19493 : attestation de l'expert-comptable sur la trésorerie, urgence retenue et provision partielle (https://librejustice.fr/decision/jB1nIZLxfDuf).",
+    "frequence": "5 sur 9 décisions vues (requête dédiée) refusent la provision faute d'urgence ou de mesure provisoire ; 4 sur 9 retiennent la compétence",
+    "depuis": "Cass. 2e civ., 13 juin 2002, n° 00-20.077 ; CPC, art. 1449, al. 2, dans sa rédaction en vigueur depuis le 1er janvier 2020"
+  },
+  {
+    "condition": "competence_du_juge_des_referes",
+    "sous_domaine": "copropriété : exigibilité anticipée des provisions (loi du 10 juillet 1965, art. 19-2)",
+    "sens": "tombe",
+    "texte": "La condamnation aux provisions non échues de l'exercice et aux arriérés rendus exigibles par l'article 19-2 relève du président statuant selon la procédure accélérée au fond ; en référé, seules les sommes déjà exigibles et justifiées peuvent être provisionnées. La voie accélérée est elle-même irrecevable si la mise en demeure préalable ne précise pas la nature et le montant des provisions réclamées, n'est pas adressée à chaque copropriétaire indivis ou n'est pas accompagnée du décompte qu'elle annonce.",
+    "marqueurs": [
+      "article 19-2",
+      "proc[ée]dure acc[ée]l[ée]r[ée]e au fond",
+      "provisions? non (?:encore )?[ée]chues?",
+      "mise en demeure rest[ée]e infructueuse",
+      "d[ée]lai de trente jours"
+    ],
+    "sources": [
+      {
+        "juridiction": "TJ Nanterre (président, procédure accélérée au fond)",
+        "date": "2025-04-08",
+        "numero": "24/00792",
+        "url": "https://librejustice.fr/decision/7eOC41B_169A",
+        "point": "mise en demeure globale sans le décompte annoncé et non adressée à la coïndivisaire : action irrecevable",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "Cass. civ. 3e, avis",
+        "date": "2024-12-12",
+        "numero": "24-70.007",
+        "url": "https://librejustice.fr/decision/vSWd8UXGHBfD",
+        "point": "la mise en demeure de l'article 19-2 précise la nature et le montant des provisions réclamées, à peine d'irrecevabilité (Bulletin)",
+        "lu_en_entier": true
+      },
+      {
+        "juridiction": "TJ Avignon (président, procédure accélérée au fond)",
+        "date": "2026-10-19",
+        "numero": "26/00251",
+        "url": "https://librejustice.fr/decision/0GTdZdRgL8Dm",
+        "point": "condamnation prononcée selon la procédure accélérée au fond sur procès-verbaux, appels de fonds et mise en demeure",
+        "lu_en_entier": true
+      }
+    ],
+    "contre": "TJ Avignon, 19 octobre 2026, n° 26/00251 : action recevable et condamnation lorsque mise en demeure et approbations sont produites (https://librejustice.fr/decision/0GTdZdRgL8Dm).",
+    "frequence": "8 sur 10 jugements de procédure accélérée au fond vus (requête dédiée) déclarent l'action irrecevable pour mise en demeure imprécise ; 2 sur 10 condamnent",
+    "depuis": "Procédure accélérée au fond pour les demandes introduites depuis le 1er janvier 2020 (ordonnance n° 2019-738 du 17 juillet 2019, art. 17 et 30) ; exigence de précision depuis l'avis du 12 décembre 2024, n° 24-70.007"
+  }
+]

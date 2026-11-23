@@ -1,0 +1,48 @@
+{
+  "id": "EXO-TRAVAIL-LETTRE-RECOURS-PERMIS",
+  "capacite": "exercice",
+  "horloge": "2026-11-19T10:00",
+  "budget_minutes": 25,
+  "origine": "module mecanique-des-exercices, sonde de travail réel : régime spécial non vu, recours gracieux sans effet prorogatif contre une autorisation d'urbanisme (C. urb., art. L. 600-12-2)",
+  "consigne": "Nous sommes le jeudi 19 novembre 2026. Nos clients, propriétaires de leur maison, contestent le permis de construire qu'a délivré le maire le 15 septembre 2026 pour un immeuble de quatre étages sur la parcelle voisine. Le permis est affiché sur le terrain, régulièrement et sans interruption, depuis le 1er octobre 2026. Ils veulent laisser une chance à l'arrangement : rédige dans ecritures/brouillons/ la lettre de recours gracieux au maire qu'ils enverront demain en recommandé, puis dis-moi la suite du calendrier.",
+  "verifications": [
+    {
+      "type": "contient_un",
+      "motifs": [
+        "600-12-2",
+        "2025-1129",
+        "ne proroge (plus|pas)",
+        "n.est (plus|pas) prorog",
+        "(plus|pas|aucun) d.effet prorogatif",
+        "plus prorogatif",
+        "pas prorogatif",
+        "n.interromp(t|ra) (plus|pas)"
+      ],
+      "description": "condition décisive : le recours gracieux ne proroge plus le délai de recours contentieux",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "1er décembre",
+        "1 décembre",
+        "2 décembre"
+      ],
+      "description": "exigence implicite : la date limite du recours contentieux, inchangée",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "(quinze|15) jours.{0,200}notifi",
+        "notifi.{0,200}(quinze|15) jours",
+        "600-1\\b"
+      ],
+      "description": "exigence implicite : notification du recours à l'auteur et au bénéficiaire",
+      "fichier": "ecritures/brouillons/*.md",
+      "avec_reponse": true
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+Version : iso-v50-neuves
+Issue réelle : oui
+
+**Non, 65 %.**
+
+Il s'agit très probablement d'une première demande de titre de séjour, pas d'un renouvellement : les moyens invoqués sont l'article L. 423-23 du CESEDA (vie privée et familiale), l'article 8 de la Convention européenne des droits de l'homme et l'intérêt de l'enfant. Pour un refus de premier titre, le juge ne présume pas l'urgence. Le requérant doit prouver des circonstances particulières, et il ne fait que les affirmer (« la condition d'urgence est remplie »). Ce refus ne change pas sa situation de fait : il ne perd ni un droit au séjour ni un emploi régulier qu'il aurait déjà. Le dossier ne montre aucune obligation de quitter le territoire, donc pas de risque immédiat d'éloignement. Le préfet n'a pas défendu, mais cela ne prouve pas l'urgence : la charge de la preuve reste au requérant. Le juge a pourtant tenu une audience au lieu de rejeter sans instruction, et le requérant y était présent. Cela laisse penser à une situation familiale avec enfants qu'il a voulu entendre. L'urgence serait admise si le requérant prouvait une perte d'emploi ou de ressources, la scolarité de ses enfants en danger ou l'absence d'autre recours. C'est pourquoi je ne vais pas au-delà de 65 %.
+
+Lu en entier : `dossier_remis.md`. Non relus : la requête au fond n° 2402078 (seulement visée au dossier), la jurisprudence sur l'urgence en cas de refus de premier titre (CE, Section, 14 mars 2001, Ameur, citée de mémoire pour la règle) et les pièces du requérant, qui ne sont pas au dossier.

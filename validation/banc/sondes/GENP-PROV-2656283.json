@@ -1,0 +1,18 @@
+{
+  "id": "GENP-PROV-2656283",
+  "capacite": "pronostic",
+  "famille": "refere-provision-civil",
+  "genere": true,
+  "origine": "usine.py, Tribunal judiciaire de Paris, chambre des référés · juge unique, 4 novembre 2026, 26/56283 (https://librejustice.fr/decision/j0o4KjWykcJS), issue réelle : non",
+  "fixture": "gen_prov_2656283",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme le juge des référés, dis s'il allouera, au moins en partie, la provision demandée. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2026-11-03T18:00",
+  "coupe": "2026-11-03",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*non\\b",
+      "description": "répond non, comme la juridiction"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "GENP-PROV-2354210",
+  "capacite": "pronostic",
+  "famille": "refere-provision-civil",
+  "genere": true,
+  "origine": "usine.py, Tribunal judiciaire de Paris, chambre des référés · juge unique, 21 décembre 2023, 23/54210 (https://librejustice.fr/decision/tC9UC0U-truU), issue réelle : non",
+  "fixture": "gen_prov_2354210",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme le juge des référés, dis s'il allouera, au moins en partie, la provision demandée. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2023-12-20T18:00",
+  "coupe": "2023-12-20",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*non\\b",
+      "description": "répond non, comme la juridiction"
+    }
+  ]
+}

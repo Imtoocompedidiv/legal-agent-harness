@@ -1,0 +1,18 @@
+{
+  "id": "GENP-URGD-2400495",
+  "capacite": "pronostic",
+  "famille": "titre-renouvellement-delai",
+  "genere": true,
+  "origine": "usine.py, Tribunal administratif de Clermont-Ferrand, juge unique, 8 mars 2024, 2400495 (https://librejustice.fr/decision/c5H-hKqvHt6b), issue réelle : non",
+  "fixture": "gen_urgd_2400495",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme le juge des référés, dis si la condition d'urgence de ce référé-suspension est remplie. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2024-03-07T18:00",
+  "coupe": "2024-03-07",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*non\\b",
+      "description": "répond non, comme la juridiction"
+    }
+  ]
+}

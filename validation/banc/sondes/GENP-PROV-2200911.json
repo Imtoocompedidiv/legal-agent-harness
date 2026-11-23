@@ -1,0 +1,23 @@
+{
+  "id": "GENP-PROV-2200911",
+  "capacite": "pronostic",
+  "famille": "refere-provision-civil",
+  "genere": true,
+  "origine": "usine.py, Cour d'appel d'Aix-en-Provence, chambre 1-2, 16 mars 2023, 22/00911 (https://librejustice.fr/decision/JUN0IVlQV5up), issue réelle relue dans le dispositif le 23 novembre 2026 (champ solution de la base : oui) : non",
+  "fixture": "gen_prov_2200911",
+  "consigne": "Lis dossier_remis.md. En te plaçant comme le juge des référés, dis s'il allouera, au moins en partie, la provision demandée. Réponds d'abord par oui ou par non, suivi de la probabilité que tu donnes à cette issue, en pourcentage (par exemple « Non, 70 % »), puis motive en dix lignes au plus. Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2023-03-15T18:00",
+  "coupe": "2023-03-15",
+  "verifications": [
+    {
+      "type": "message_commence",
+      "motif": "\\W*non\\b",
+      "description": "répond non, comme la juridiction (issue relue dans le dispositif le 23 novembre 2026)"
+    }
+  ],
+  "etiquette_corrigee": {
+    "ancienne": "oui",
+    "nouvelle": "non",
+    "raison": "en appel, le champ solution dit si l'appel réussit, pas si la provision est allouée"
+  }
+}

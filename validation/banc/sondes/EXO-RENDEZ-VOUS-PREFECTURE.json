@@ -1,0 +1,43 @@
+{
+  "id": "EXO-RENDEZ-VOUS-PREFECTURE",
+  "capacite": "exercice",
+  "horloge": "2026-11-19T10:00",
+  "budget_minutes": 12,
+  "origine": "module mecanique-des-exercices : aucune décision à suspendre, mesures utiles (CE, 9 juin 2022, n° 453391 ; CE, Sect., 5 février 2016, n° 393540)",
+  "consigne": "Nous sommes le jeudi 19 novembre 2026. Notre client, ressortissant étranger, est titulaire d'une carte de séjour pluriannuelle qui expire le 31 décembre 2026. La préfecture de son département n'accepte le dépôt de la demande de renouvellement de ce titre que sur rendez-vous pris sur son site internet. Depuis le 15 septembre, il s'est connecté à de nombreuses reprises, à des jours et des heures variés, sans jamais obtenir de créneau ; il a gardé des captures d'écran datées de chaque tentative. Il n'a reçu aucune décision de la préfecture. Son employeur lui a dit qu'il ne pourrait pas le garder sans titre valide. Quel acte engages-tu, devant qui, pour obtenir quoi, et quelle condition décide de son succès ? Réponds directement, de façon précise et motivée, sans dérouler la chaîne complète de prise en main du dossier. Termine par une ligne de la forme « EXERCICE RETENU : … » qui nomme l'acte ou la démarche que tu engages en premier, avec son texte.",
+  "verifications": [
+    {
+      "type": "contient",
+      "motif": "exercice retenu.{0,200}(521-3|mesures utiles)",
+      "description": "choix : référé mesures utiles"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "tentatives",
+        "captures d.écran",
+        "connexions"
+      ],
+      "description": "condition décisive : dysfonctionnement prouvé par des tentatives répétées et datées"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "aucune décision",
+        "pas de décision",
+        "absence de décision",
+        "obstacle"
+      ],
+      "description": "exigence implicite : aucune décision à laquelle la mesure ferait obstacle"
+    },
+    {
+      "type": "contient_un",
+      "motifs": [
+        "renouvellement.{0,200}urgence",
+        "urgence.{0,200}renouvellement"
+      ],
+      "description": "urgence liée au renouvellement",
+      "critique": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "GENM-MOY-2420979",
+  "capacite": "moyen",
+  "famille": "moyen-gagnant",
+  "genere": false,
+  "origine": "usine.py, Cour de cassation, chambre commerciale, financière et économique · formation restreinte, 1 juillet 2026, 24-20.979 (https://librejustice.fr/decision/siq1uomc0PZv), grief retenu par la Cour",
+  "fixture": "gen_moy_2420979",
+  "consigne": "Lis dossier_remis.md. Tu es avocat aux Conseils, chargé du pourvoi décrit en tête du dossier contre l'arrêt qui suit. Propose au plus trois moyens de cassation, du plus fort au plus faible : pour chacun, le texte ou le principe invoqué, le cas d'ouverture et le chef de l'arrêt critiqué, en cinq lignes au plus. Réponds directement, sans dérouler la chaîne complète de prise en main du dossier.",
+  "horloge": "2026-06-30T18:00",
+  "coupe": "2026-06-30",
+  "verifications": [
+    {
+      "type": "critere",
+      "description": "trouve le grief que la Cour a retenu",
+      "critere": "Au moins un des moyens proposés correspond au grief que la Cour de cassation a retenu pour casser l'arrêt : même texte ou même principe, appliqué au même point de l'arrêt. Grief retenu par la Cour : « Vu l'article 1347, alinéa 2, du code civil, dans sa rédaction issue de l'ordonnance du 10 février 2016 : 5. Il résulte de ce texte que la compensation produit son effet extinctif à la date à laquelle ses conditions sont réunies et non à celle à laquelle elle est invoquée. 6. Pour écarter l'exception de compensation et condamner la Société des basaltes du Centre au paiement de factures impayées, l'arrêt, après avoir relevé que la demande de compensation avait été formée plus de cinq années après l'émission de factures par cette société, retient qu'elle est prescrite. 8. En statuant ainsi, la cour d'appel a violé le texte susvisé. »"
+    },
+    {
+      "type": "critere",
+      "critique": false,
+      "description": "le place en premier",
+      "critere": "Le premier moyen proposé est ce grief retenu par la Cour (même texte ou même principe, même point de l'arrêt)."
+    }
+  ]
+}

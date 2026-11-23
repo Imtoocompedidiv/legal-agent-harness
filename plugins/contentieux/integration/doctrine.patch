@@ -1,0 +1,77 @@
+--- a/hooks/hooks.json
++++ b/hooks/hooks.json
+@@ -31,7 +31,7 @@
+     ],
+     "PreToolUse": [
+       {
+-        "matcher": "Write|Edit|MultiEdit|NotebookEdit|Bash|PowerShell|WebFetch|WebSearch|mcp__librejustice__.*|mcp__hal__.*|mcp__shs_fr__.*|mcp__academic_papers__.*|mcp__asta__.*",
++        "matcher": "Write|Edit|MultiEdit|NotebookEdit|Bash|PowerShell|WebFetch|WebSearch|mcp__librejustice__.*|mcp__hal__.*|mcp__shs_fr__.*|mcp__academic_papers__.*|mcp__asta__.*|mcp__annas_archive__.*",
+         "hooks": [
+           {
+             "type": "command",
+--- a/scripts/gate.py
++++ b/scripts/gate.py
+@@ -409,6 +409,12 @@
+     import negociation as NEGOCIATION
+     NEGOCIATION.controler(racine, ecriture, fiche, c, juridictionnel=juridictionnel, texte=texte)
+ 
++    # La doctrine : chaque travail cité a sa fiche de lecture valide ; aucune citation entre guillemets d'un travail non lu ;
++    # aucune règle fondée sur la seule doctrine (skill recherche-doctrinale ; règles dans doctrine.py). Bloquant devant un juge,
++    # alerte pour un courrier.
++    import doctrine as DOCTRINE
++    DOCTRINE.controler(racine, ecriture, fiche, c, juridictionnel=juridictionnel)
++
+     # Le récit : théorie du cas écrite et éprouvée par un lecteur profane sur la version exacte.
+     if juridictionnel:
+         recit = L.lire_json(racine / "ecritures/controle" / f"{ecriture.stem}.recit.json")
+--- a/scripts/hook.py
++++ b/scripts/hook.py
+@@ -99,6 +99,11 @@
+                       f"{(d0.get('standard_de_controle') or {}).get('niveau')} ; adversaire « {(profil.get('adversaire') or {}).get('designation')} ».")
+     else:
+         lignes.append("Aucun profil des décideurs (strategie/decideurs.json) : l'établir avant tout acte juridictionnel (skill lecture-des-decideurs).")
++    fiches_doctrine = sorted((racine / "recherche/doctrine").glob("*.json")) if (racine / "recherche/doctrine").is_dir() else []
++    if fiches_doctrine:
++        lus = sum(1 for f in fiches_doctrine if ((L.lire_json(f) or {}).get("lecture") or {}).get("statut") in ("texte_integral", "extraits"))
++        lignes.append(f"Doctrine : {len(fiches_doctrine)} fiche(s) de lecture dans recherche/doctrine/, dont {lus} sur texte lu ; "
++                      "les autres ne se citent pas entre guillemets (skill recherche-doctrinale).")
+     nego = L.lire_json(racine / "strategie/negociation.json") or {}
+     if isinstance(nego, dict) and nego.get("etat"):
+         jour = L.maintenant().date().isoformat()
+@@ -178,6 +183,9 @@
+     prompt = ev.get("prompt") or ""
+     if "?" in prompt:
+         lignes.append("Une question du client appelle une réponse argumentée sur le fond, sources lues à l'appui. "
++                      "Une décision qui commande la réponse se lit avec ses conclusions ou son rapport (champ commentaries de get_decision) ; "
++                      "quand la portée d'un texte, une jurisprudence en mouvement, la fiabilité d'une preuve, un fait d'expérience ou une "
++                      "technique décide, chercher et lire les travaux savants qui l'établissent (skill recherche-doctrinale). "
+                       "Maintenir ou changer la recommandation selon les arguments, et nommer l'élément qui la fait changer.")
+     if lignes:
+         contexte("UserPromptSubmit", "\n".join(lignes))
+@@ -256,6 +264,12 @@
+     outil = ev.get("tool_name", "")
+     ti = ev.get("tool_input") or {}
+     plugin = os.environ.get("CLAUDE_PLUGIN_ROOT", "<plugin>")
++    # Aucune voie qui contourne le droit d'auteur : outils Sci-Hub et Anna's Archive, option use_scihub, adresses de ces services
++    # (skill recherche-doctrinale ; règle dans doctrine.py).
++    import doctrine as DOCTRINE
++    if DOCTRINE.outil_illicite(outil, ti):
++        refuser("Source qui contourne le droit d'auteur refusée (Sci-Hub, Anna's Archive, LibGen ou option use_scihub). Lire le texte en accès "
++                "ouvert (HAL, OpenEdition, dépôt de l'auteur, PDF officiel) ; à défaut, travailler sur la notice et le résumé et le dire.")
+     if outil in ("WebFetch", "WebSearch") or outil.startswith(("mcp__librejustice__", "mcp__hal__", "mcp__shs_fr__", "mcp__academic_papers__", "mcp__asta__")):
+         brut = json.dumps(ti, ensure_ascii=False).lower()
+         fuites = [i for i in identifiants_prives(racine) if i.lower() in brut]
+@@ -360,6 +374,13 @@
+         if alertes:
+             contexte("PostToolUse", "Plan de négociation enregistré, avec des alertes :\n- " + "\n- ".join(alertes[:10]))
+         sys.exit(0)
++    if re.fullmatch(r"recherche/doctrine/[^/]+\.json", rel):
++        import doctrine as DOCTRINE
++        constats = DOCTRINE.valider(L.lire_json(racine / rel), Path(rel).stem)
++        bloquants = [f"{k['code']} : {k['message']}" for k in constats if k["gravite"] == "BLOQUANT"]
++        if bloquants:
++            sortie({"decision": "block", "reason": "Fiche de lecture doctrinale invalide, à reprendre maintenant :\n- " + "\n- ".join(bloquants[:20])})
++        sys.exit(0)
+     if rel in L.SCHEMAS:
+         erreurs = L.valider_fichier(racine, rel)
+         if rel == "preuves/matrice.json" and not erreurs:

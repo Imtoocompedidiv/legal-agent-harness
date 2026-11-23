@@ -1,0 +1,188 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "analyse_piece/1",
+  "title": "Fiche d'analyse d'une pièce (pieces/analyses/<cote>.json)",
+  "description": "Écrite par le sous-agent analyste-documentaire. Les règles que JSON Schema n'exprime pas (extrait retrouvé sur sa page, couverture des pages, indices mécaniques examinés, empreinte conforme au bordereau, dates cohérentes) sont contrôlées par scripts/pieces.py.",
+  "type": "object",
+  "required": ["schema", "cote", "fichier", "sha256", "lecture", "nature", "auteur", "signataire", "destinataires", "dates", "canal", "objet", "extraits", "prouve", "ne_prouve_pas", "indices_examines", "anomalies", "contradictions_internes", "coherence", "documents_mentionnes", "preuves_a_obtenir", "questions_ouvertes"],
+  "properties": {
+    "schema": {"const": "analyse_piece/1"},
+    "cote": {"type": "string", "minLength": 1},
+    "fichier": {"type": "string", "minLength": 1},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "analyste": {"type": "string"},
+    "analyse_le": {"type": "string"},
+    "lecture": {
+      "type": "object",
+      "required": ["pages_total", "pages_lues", "pages_vues_en_image", "mode", "limites"],
+      "properties": {
+        "pages_total": {"type": "integer", "minimum": 1},
+        "pages_lues": {"type": "array", "items": {"type": "integer", "minimum": 1}},
+        "pages_vues_en_image": {"type": "array", "items": {"type": "integer", "minimum": 1}},
+        "mode": {"enum": ["texte_natif", "couche_ocr", "ocr", "visuel", "mixte"]},
+        "limites": {"type": "string"}
+      }
+    },
+    "nature": {
+      "type": "object",
+      "required": ["type", "intitule", "forme"],
+      "properties": {
+        "type": {"enum": ["decision_administrative", "decision_juridictionnelle", "acte_de_procedure", "courrier", "courriel", "formulaire", "attestation", "certificat", "contrat", "facture_ou_piece_comptable", "constat", "proces_verbal", "rapport_ou_avis", "publication", "capture_ou_photo", "preuve_d_envoi_ou_de_reception", "autre"]},
+        "intitule": {"type": "string", "minLength": 1},
+        "forme": {"enum": ["original", "copie", "copie_certifiee", "impression_d_un_document_numerique", "numerique_natif", "capture", "inconnue"]}
+      }
+    },
+    "auteur": {"$ref": "#/$defs/personne"},
+    "signataire": {
+      "type": "object",
+      "required": ["nom", "qualite", "delegation", "mode", "page", "observation"],
+      "properties": {
+        "nom": {"type": "string"},
+        "qualite": {"type": "string"},
+        "delegation": {"type": "string"},
+        "mode": {"enum": ["manuscrite", "electronique_avec_certificat", "image_de_signature", "cachet_seul", "absente", "illisible", "sans_objet", "non_examinee"]},
+        "page": {"type": ["integer", "null"], "minimum": 1},
+        "observation": {"type": "string"}
+      }
+    },
+    "destinataires": {"type": "array", "items": {
+      "type": "object", "required": ["nom", "qualite", "adresse", "en_copie"],
+      "properties": {"nom": {"type": "string"}, "qualite": {"type": "string"}, "adresse": {"type": "string"}, "en_copie": {"type": "boolean"}}
+    }},
+    "dates": {
+      "type": "object",
+      "required": ["acte", "envoi", "reception", "connaissance", "autres"],
+      "properties": {
+        "acte": {"$ref": "#/$defs/date"},
+        "envoi": {"$ref": "#/$defs/date"},
+        "reception": {"$ref": "#/$defs/date"},
+        "connaissance": {"$ref": "#/$defs/date"},
+        "autres": {"type": "array", "items": {
+          "type": "object", "required": ["valeur", "objet", "extrait"],
+          "properties": {"valeur": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"}, "objet": {"type": "string", "minLength": 1}, "extrait": {"type": ["string", "null"]}}
+        }}
+      }
+    },
+    "canal": {
+      "type": "object",
+      "required": ["mode", "numero_envoi", "preuve", "observation"],
+      "properties": {
+        "mode": {"enum": ["lettre_recommandee_avec_ar", "lettre_recommandee_electronique", "lettre_simple", "remise_en_main_propre", "courriel", "plateforme_ou_teleservice", "signification", "notification_par_le_greffe", "affichage_ou_publication", "inconnu", "sans_objet"]},
+        "numero_envoi": {"type": "string"},
+        "preuve": {"type": "string"},
+        "observation": {"type": "string"}
+      }
+    },
+    "objet": {"type": "string", "minLength": 1},
+    "extraits": {"type": "array", "items": {
+      "type": "object", "required": ["id", "page", "citation", "lu_sur"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^E\\d+$"},
+        "page": {"type": "integer", "minimum": 1},
+        "citation": {"type": "string", "minLength": 1},
+        "localisation": {"type": "string"},
+        "lu_sur": {"enum": ["texte", "rendu"]}
+      }
+    }},
+    "prouve": {"type": "array", "items": {
+      "type": "object", "required": ["fait", "extraits", "portee"],
+      "properties": {
+        "fait": {"type": "string", "minLength": 1},
+        "extraits": {"type": "array", "items": {"type": "string"}},
+        "constat_visuel": {"type": "object", "required": ["page", "description"], "properties": {"page": {"type": "integer", "minimum": 1}, "description": {"type": "string", "minLength": 1}}},
+        "portee": {"type": "string", "minLength": 1}
+      }
+    }},
+    "ne_prouve_pas": {"type": "array", "minItems": 1, "items": {
+      "type": "object", "required": ["point", "raison"],
+      "properties": {"point": {"type": "string", "minLength": 1}, "raison": {"type": "string", "minLength": 1}}
+    }},
+    "mentions": {"type": "array", "items": {
+      "type": "object", "required": ["mention", "regle", "etat"],
+      "properties": {
+        "mention": {"type": "string", "minLength": 1},
+        "regle": {"type": "string", "minLength": 1},
+        "etat": {"enum": ["presente", "absente", "incomplete", "illisible"]},
+        "page": {"type": ["integer", "null"]},
+        "extrait": {"type": ["string", "null"]}
+      }
+    }},
+    "formulaire": {
+      "type": "object", "required": ["cases"],
+      "properties": {"cases": {"type": "array", "items": {
+        "type": "object", "required": ["page", "rubrique", "etat", "vu_sur"],
+        "properties": {
+          "page": {"type": "integer", "minimum": 1},
+          "rubrique": {"type": "string", "minLength": 1},
+          "etat": {"enum": ["cochee", "vide", "illisible", "ambigue"]},
+          "vu_sur": {"enum": ["rendu", "champ_pdf"]},
+          "observation": {"type": "string"}
+        }
+      }}}
+    },
+    "indices_examines": {"type": "array", "items": {
+      "type": "object", "required": ["id", "conclusion", "raison"],
+      "properties": {"id": {"type": "string", "pattern": "^M\\d+$"}, "conclusion": {"enum": ["retenu", "ecarte"]}, "raison": {"type": "string", "minLength": 1}}
+    }},
+    "anomalies": {"type": "array", "items": {
+      "type": "object", "required": ["type", "description", "page", "gravite", "origine"],
+      "properties": {
+        "type": {"enum": ["date_impossible", "date_incoherente", "mention_manquante", "signature", "cachet", "case_formulaire", "version_successive", "metadonnees", "typographie", "pagination", "alteration", "incoherence_interne", "autre"]},
+        "description": {"type": "string", "minLength": 1},
+        "page": {"type": ["integer", "null"]},
+        "gravite": {"enum": ["majeure", "mineure", "indice"]},
+        "origine": {"enum": ["mecanique", "lecture"]},
+        "extraits": {"type": "array", "items": {"type": "string"}}
+      }
+    }},
+    "contradictions_internes": {"type": "array", "items": {
+      "type": "object", "required": ["description", "extraits"],
+      "properties": {"description": {"type": "string", "minLength": 1}, "extraits": {"type": "array", "minItems": 2, "items": {"type": "string"}}}
+    }},
+    "coherence": {"type": "array", "items": {
+      "type": "object", "required": ["cote", "relation", "description", "extraits", "extraits_autre"],
+      "properties": {
+        "cote": {"type": "string", "minLength": 1},
+        "relation": {"enum": ["confirme", "complete", "nuance", "contredit"]},
+        "description": {"type": "string", "minLength": 1},
+        "extraits": {"type": "array", "items": {"type": "string"}},
+        "extraits_autre": {"type": "array", "items": {"type": "string"}}
+      }
+    }},
+    "documents_mentionnes": {"type": "array", "items": {
+      "type": "object", "required": ["designation", "page", "extrait", "au_dossier", "cote", "detenteur"],
+      "properties": {
+        "designation": {"type": "string", "minLength": 1},
+        "page": {"type": ["integer", "null"]},
+        "extrait": {"type": ["string", "null"]},
+        "au_dossier": {"type": "boolean"},
+        "cote": {"type": ["string", "null"]},
+        "detenteur": {"enum": ["adversaire", "tiers", "client", "juridiction", "inconnu"]}
+      }
+    }},
+    "preuves_a_obtenir": {"type": "array", "items": {
+      "type": "object", "required": ["objet", "detenteur", "moyens_possibles", "raison"],
+      "properties": {
+        "objet": {"type": "string", "minLength": 1},
+        "detenteur": {"enum": ["adversaire", "tiers", "client", "juridiction", "inconnu"]},
+        "moyens_possibles": {"type": "array", "minItems": 1, "items": {"enum": ["communication_de_document_administratif", "demande_amiable", "sommation_de_communiquer", "injonction_de_produire", "mesure_d_instruction_avant_proces", "constat_de_commissaire_de_justice", "attestation", "sommation_interpellative", "droit_d_acces_aux_donnees_personnelles", "expertise", "plainte_ou_requisition", "autre"]}},
+        "raison": {"type": "string", "minLength": 1}
+      }
+    }},
+    "questions_ouvertes": {"type": "array", "items": {"type": "string"}}
+  },
+  "$defs": {
+    "personne": {
+      "type": "object", "required": ["nom", "qualite", "organisme", "fondement"],
+      "properties": {"nom": {"type": "string"}, "qualite": {"type": "string"}, "organisme": {"type": "string"}, "fondement": {"type": "string", "minLength": 1}}
+    },
+    "date": {
+      "type": "object", "required": ["valeur", "extrait", "observation"],
+      "properties": {
+        "valeur": {"type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+        "extrait": {"type": ["string", "null"]},
+        "observation": {"type": "string"}
+      }
+    }
+  }
+}
