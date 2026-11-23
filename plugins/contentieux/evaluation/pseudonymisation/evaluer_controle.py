@@ -5,6 +5,7 @@ généralisent hors des formes sur lesquelles elles ont été mises au point.
 """
 from __future__ import annotations
 
+import json
 import re
 import sys
 from pathlib import Path
@@ -43,6 +44,11 @@ JEUX["controle3"] = (
      "courrier de la caisse": ["Rania Belkacem"], "constat d'un échange en ligne": ["Mathilde Vernhes"],
      "avis d'expert-comptable": ["Transports Chabert et Fils"]})
 ORGANISATIONS = {"Logistique Garonne Express", "Les Hauts de Talant", "Boulangerie Le Fournil d'Antan", "Transports Chabert et Fils"}
+# Jeux écrits à l'aveugle le 23 novembre 2026 par un agent sans accès à l'outil, chacun avec ses références et ses parties en JSON.
+for _f in sorted(ICI.glob("controle*.json")):
+    _spec = json.loads(_f.read_text(encoding="utf-8"))
+    JEUX[_f.stem] = (_spec["doit_rester"], _spec["parties"])
+    ORGANISATIONS |= set(_spec.get("organisations") or [])
 
 
 def pieces(jeu: str = "controle") -> list[tuple[str, str, list[tuple[int, int, str]]]]:

@@ -65,20 +65,29 @@ commande la compétence) ; elle est pseudonymisée dans une adresse et comme lie
 
 ## Mesures
 
-Mesuré le 22 novembre 2026, couches 1 à 5, sans modèle (aucun modèle n'était installé sur le poste de mesure) :
+Mesuré le 23 novembre 2026, couches 1 à 5, sans modèle. Trois jeux de huit pièces chacun (`controle4` à `controle6`, 67 à 69
+données) ont été écrits à l'aveugle par un agent qui n'avait accès ni au code ni aux jeux précédents, avec des noms de toutes
+origines, des surnoms, des adresses en plusieurs morceaux, des commerces sans forme sociale et des numéros de toute sorte. Chaque
+jeu a d'abord été mesuré tel quel, puis a servi à corriger les règles. Seule la première mesure de chaque jeu dit ce que l'outil
+vaut sur des pièces qu'il n'a jamais vues.
 
-| Jeu | Rappel automatique | Avec la relecture des mots signalés | Références juridiques altérées |
-|---|---|---|---|
-| Corpus généré, 400 pièces de huit genres, trois tirages | 0,986 à 0,989 à froid ; 0,991 à 0,995 avec les parties déclarées | 0,991 à 1,000 | 0 sur environ 650 |
-| Contrôle écrit à la main, jamais corrigé ensuite (`controle3.md`, 27 données) | 0,852 à froid ; 0,889 avec les parties déclarées | 0,889 ; 0,926 | 0 |
+| Jeu, première mesure | Parties non déclarées | Parties déclarées | Avec la relecture des mots signalés | Références altérées |
+|---|---|---|---|---|
+| `controle4`, outil du 22 novembre | 0,64 | 0,77 | 0,84 | 3 |
+| `controle5`, après le premier lot de corrections | 0,81 | 0,84 | 0,90 | 0 |
+| `controle6`, après le deuxième lot | 0,75 | 0,79 | 0,87 | 0 |
+| `controle6`, outil du 22 novembre, pour comparaison | 0,60 | 0,66 | 0,75 | 0 |
 
-Le second chiffre est celui qui compte : les règles ont été mises au point sur le générateur et sur deux premiers jeux de contrôle,
-qui ne mesurent donc plus la généralisation. Sur des formes neuves, les règles seules manquent encore environ une donnée sur dix ;
-les manques mesurés ont été un commerce sans forme sociale non déclaré, un nom vietnamien de trois mots, une zone d'activité et un
-pseudonyme en ligne (les trois derniers sont couverts depuis, sans nouvelle mesure indépendante). D'où trois exigences :
-déclarer avant l'import toutes les personnes connues du dossier ; relire chaque rapport ; installer la couche modèle quand le
-cabinet le peut. Les jeux de mesure et les scripts sont dans `evaluation/pseudonymisation/` ; un cabinet devrait mesurer l'outil
-sur ses propres pièces types avant de s'y fier.
+Après le troisième lot, l'outil fait 0,88 et 0,96 sur `controle6` avec les parties déclarées, mais ce jeu a servi à le corriger.
+Sur le corpus généré (400 pièces), le rappel est de 0,987 à froid et 0,992 avec les parties déclarées, sans aucune des 668
+références juridiques altérée ni aucun faux remplacement. Il faut compter une quinzaine de millisecondes par pièce.
+
+La principale cause d'échec était une classe de lettres limitée aux accents du français : « Szczepańska », « Yıldırım » ou
+« Nguyễn » échappaient même après « Mme ». Ce qui manque encore relève surtout du surnom et du diminutif (« Momo », « Nono »), du
+nom de famille homonyme d'un mot ou d'une ville (« Fontaine », « Paris ») et des initiales. Trois exigences en découlent. Il faut
+déclarer avant l'import toutes les personnes connues du dossier, relire chaque rapport et, quand le cabinet le peut, installer la
+couche modèle. Les jeux et les scripts sont dans `evaluation/pseudonymisation/`, et un cabinet devrait mesurer l'outil sur ses
+propres pièces types avant de s'y fier.
 
 ## Cadre
 

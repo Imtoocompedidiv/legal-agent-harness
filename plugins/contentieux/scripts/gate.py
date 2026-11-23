@@ -120,7 +120,7 @@ def controler(ecriture: Path) -> dict:
         constats.append({"code": code, "gravite": gravite, "message": message, **extra})
 
     if fiche is None:
-        c("FICHE_ABSENTE", "BLOQUANT", f"Fiche de l'acte absente ou illisible : {ch['fiche'].relative_to(racine).as_posix()}. "
+        c("FICHE_ABSENTE", "BLOQUANT", f"Fiche de l'acte absente ou illisible : {(L.relatif(racine, ch['fiche']) or ch['fiche'].as_posix())}. "
           "Elle fixe le régime, l'acte attaqué, la question, les conditions, les moyens et les conclusions (skill controle-avant-depot).")
         fiche = {}
     type_acte = fiche.get("type_acte")
@@ -531,7 +531,8 @@ def controler(ecriture: Path) -> dict:
     conservatoire = CAMPAGNE.appliquer_conservatoire(constats, fiche, refere, c) if juridictionnel else False
     bloquants = [k for k in constats if k["gravite"] == "BLOQUANT"]
     verdict = {
-        "ecriture": ecriture.relative_to(racine).as_posix(),
+        # Chemin court et chemin long d'un même dossier (Windows, « RUNNER~1 ») : la comparaison se fait sur les chemins résolus.
+        "ecriture": L.relatif(racine, ecriture) or ecriture.as_posix(),
         "sha256": empreinte,
         "controle_le": L.horodatage(),
         "type_acte": type_acte,

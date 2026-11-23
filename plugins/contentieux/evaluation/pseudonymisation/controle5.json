@@ -1,0 +1,35 @@
+{
+  "doit_rester": [
+    "tribunal judiciaire de Laval",
+    "avocat au barreau de Laval",
+    "article 1792 du code civil",
+    "41 870 euros",
+    "14 janvier 2027 à 9 h 30",
+    "le préfet de la Guadeloupe",
+    "tribunal correctionnel de Pointe-à-Pitre",
+    "article 8 de la convention européenne de sauvegarde des droits de l'homme et des libertés fondamentales",
+    "Basse-Terre",
+    "hôpital Jean-Verdier",
+    "article R. 4127-76 du code de la santé publique",
+    "juge aux affaires familiales du tribunal judiciaire de Bobigny",
+    "article 373-2-2 du code civil",
+    "place de la République",
+    "M.S.S. c. Belgique et Grèce, n° 30696/09",
+    "règlement (UE) n° 604/2013",
+    "cours Émile-Zola",
+    "article R. 417-10 du code de la route",
+    "tribunal de commerce de Lyon",
+    "l'URSSAF Rhône-Alpes"
+  ],
+  "parties": {
+    "assignation en garantie décennale": ["Siobhán O'Sullivan", "Bâti-Mayenne Rénovation"],
+    "mémoire en défense du préfet": ["Wesner Jean-Baptiste"],
+    "certificat médical initial": ["Fatou Kiné Sarr", "Moussa Ndiaye"],
+    "requête au juge aux affaires familiales": ["Giulia Ferraro", "Gaëtan Paris"],
+    "extrait de conversation telegram": ["Oksana Kovaltchouk", "Mihai Constantinescu"],
+    "dossier de demande d'asile": ["Rojhat Aydoğan"],
+    "rapport de police municipale": ["CHEN Xiaoyu", "Wenzhou Market", "ROUSSEAU Kévin"],
+    "jugement d'ouverture de liquidation": ["Kavitha Selvarajah", "Le Comptoir de Saint-Jean", "Konstantinos Andreadis"]
+  },
+  "organisations": ["Bâti-Mayenne Rénovation", "Wenzhou Market", "Le Comptoir de Saint-Jean"]
+}

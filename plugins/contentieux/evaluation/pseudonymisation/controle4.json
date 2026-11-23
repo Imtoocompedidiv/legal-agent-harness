@@ -1,0 +1,35 @@
+{
+  "doit_rester": [
+    "le préfet du Morbihan",
+    "article L. 1232-6 du code du travail",
+    "2 146,80 euros",
+    "article 202 du code de procédure civile",
+    "conseil de prud'hommes de Lorient",
+    "la mairie de Lanester",
+    "procureur de la République près le tribunal judiciaire de Quimper",
+    "rue Jean-Jaurès",
+    "article 373-2-12 du code civil",
+    "CAF du Morbihan",
+    "Audience du 8 décembre 2026",
+    "article 22 de la loi n° 89-462 du 6 juillet 1989",
+    "CA Rennes, 4e ch., 9 février 2023, M. K. c/ SCI P., RG n° 21/05532",
+    "Le logement étant situé à Brest",
+    "article 700 du code de procédure civile",
+    "commissaire de justice à la résidence de Vannes",
+    "TRIBUNAL JUDICIAIRE DU MANS",
+    "la CPAM de la Sarthe",
+    "article 1242, alinéa 1er, du code civil",
+    "18 450,60 euros"
+  ],
+  "parties": {
+    "lettre de licenciement": ["Mehmet Ali Yıldırım", "Aux Délices de Léa", "Léa Marchand"],
+    "attestation de témoin": ["Iñaki Etxeberria Goikoetxea", "Clémence Fauvel"],
+    "échange whatsapp transcrit": ["Voahangy Rasoanaivo Andriamanantena", "Armor Frais Logistique"],
+    "procès-verbal d'audition": ["Nour al-Haddad", "Dylan Petit"],
+    "rapport d'enquête sociale": ["Nguyễn Thị Thu Hằng", "Karim ben Hadj Salah"],
+    "conclusions d'avocat": ["Agnieszka Szczepańska", "Hugues de Kerlavec"],
+    "rapport de commissaire de justice": ["Joost van der Elst", "Garage Ferreira", "João Pedro Ferreira da Silva"],
+    "jugement civil mal anonymisé": ["Marie-Thérèse du Plessis-Morand"]
+  },
+  "organisations": ["Aux Délices de Léa", "Armor Frais Logistique", "Garage Ferreira"]
+}

@@ -53,13 +53,26 @@ CIVILITES = (r"(?:M\.|MM\.|Mme|Mmes|Mlle|Mlles|Me|Dr|Pr|(?i:monsieur|messieurs|m
              r"professeur|le docteur|la docteure))")
 FONCTION = r"(?:le|la|les|l['’])\s"
 PARTICULE = r"(?:de|du|des|d['’]|le|la|van|von|der|ben|bin|ibn|el|al|da|di|dos|do|ould|ait|aït)"
-MAJ = "A-ZÀÂÄÇÉÈÊËÎÏÔÖÙÛÜŸÆŒ"
-MIN = "a-zàâäçéèêëîïôöùûüÿæœß"
+def _lettres(categorie: str) -> str:
+    """Toutes les lettres latines d'une casse, accents de toutes langues compris : un nom polonais, turc ou vietnamien
+    (« Szczepańska », « Yıldırım », « Nguyễn ») échappait aux classes limitées aux accents du français (jeu aveugle du
+    23 novembre 2026 : rappel 0,64 à froid)."""
+    plages = ((0x41, 0x5A), (0x61, 0x7A), (0xC0, 0x24F), (0x1E00, 0x1EFF))
+    return "".join(chr(c) for a, b in plages for c in range(a, b + 1) if unicodedata.category(chr(c)) == categorie)
+
+
+MAJ = _lettres("Lu")
+MIN = _lettres("Ll")
 MOT_NOM = (rf"(?:[{MAJ}]['’][{MAJ}][{MIN}]+|[{MAJ}][{MIN}]+(?:[-’'][{MAJ}]?[{MIN}]+)*|[{MAJ}]{{2,}}(?:[-’'][{MAJ}]{{2,}})*|"
            rf"[{MAJ}]['’][{MAJ}]{{2,}}|[{MAJ}]\.)")
-SUITE_NOM = rf"(?:{PARTICULE}[ \t]+)?{MOT_NOM}(?:[ \t]+(?:{PARTICULE}[ \t]+)?{MOT_NOM}){{0,3}}"
+# Particules en minuscules, une ou plusieurs, séparées par une espace ou un trait d'union : « van der Elst », « al-Haddad ».
+SEP_PARTICULE = rf"(?:d['’][ \t]*|{PARTICULE}(?:[ \t]+|-))"
+SUITE_NOM = rf"{SEP_PARTICULE}*{MOT_NOM}(?:[ \t]+{SEP_PARTICULE}*{MOT_NOM}){{0,3}}"
 MOIS = r"(?:janvier|février|fevrier|mars|avril|mai|juin|juillet|août|aout|septembre|octobre|novembre|décembre|decembre)"
 DATE = rf"(?:\d{{1,2}}(?:er)?\s+{MOIS}\s+\d{{4}}|\d{{1,2}}[/.-]\d{{1,2}}[/.-](?:\d{{4}}|\d{{2}}))"
+CITATION = re.compile(rf"\b(?:CA|CAA|TA|TJ|TGI|TI|CPH|CE|Cass\.(?:[ \t]*(?:civ|com|soc|crim|ass\.?[ \t]*plén|ch\.?[ \t]*mixte)\.?"
+                      rf"(?:[ \t]*\d(?:re|e|ème))?)?|Cons\.[ \t]*const\.)(?![\w])[^()\n;]{{0,80}}?\d{{1,2}}(?:er)?[ \t]+{MOIS}[ \t]+\d{{4}}"
+                      rf"[^()\n;]{{0,80}}?(?:RG[ \t]*)?n°[ \t]*[\w./-]*\w")
 # Types de voie. Avec un numéro, tous ; sans numéro, seulement ceux qui ne sont pas aussi des mots courants (« au cours de »,
 # « par voie de », « à la place de » restent du texte), et suivis d'un nom à majuscule.
 VOIES = (r"(?:rue|avenue|av\.|boulevard|bd|bld|chemin|allée|allee|impasse|place|route|rte|quai|cours|square|passage|sentier|"
@@ -189,23 +202,29 @@ class Trouvaille:
 MOTIFS = [
     ("EMAIL", re.compile(r"[\w.+-]+@[\w-]+(?:\.[\w-]+)+"), None),
     ("PSEUDONYME_EN_LIGNE", re.compile(r"(?<![\w@])@[A-Za-z0-9_.]{3,30}\b"), None),
+    # Pseudonyme sans @, introduit par le compte ou le profil, reconnaissable à un point, un tiret bas ou un chiffre (« dyl.ptt29 »).
+    ("PSEUDONYME_EN_LIGNE", re.compile(r"(?i)\b(?:compte|pseudo(?:nyme)?|profil|identifiant|utilisateur)\b[^\n.]{0,40}?[«\"“]?[ \t]*"
+                                       r"((?=[\w.]*[._\d])[A-Za-z][\w.]{2,29}[A-Za-z0-9])\b"), None),
     ("IBAN", re.compile(r"\b[A-Z]{2}\d{2}(?:[ ]?[A-Z0-9]{4}){2,7}(?:[ ]?[A-Z0-9]{1,4})?\b"), iban_valide),
     ("CARTE_BANCAIRE", re.compile(r"\b(?:\d{4}[ -]?){3}\d{1,4}\b"), lambda t: 13 <= len(_chiffres(t)) <= 19 and luhn(_chiffres(t))),
     ("NIR", re.compile(r"\b[12378][ ]?\d{2}[ ]?(?:0[1-9]|1[0-2]|[2-9]\d)[ ]?(?:\d{2}|2[AB])[ ]?\d{3}[ ]?\d{3}(?:[ ]?\d{2})?\b", re.I), nir_valide),
     ("SIRET", re.compile(r"\b\d{3}[ ]?\d{3}[ ]?\d{3}[ ]?\d{5}\b"), siret_valide),
-    ("SIREN", re.compile(r"(?i)\b(?:siren|rcs[^\n\d]{0,30}|immatriculée? sous le (?:numéro|n°))\s*:?\s*(\d{3}[ ]?\d{3}[ ]?\d{3})\b"), lambda t: luhn(_chiffres(t))),
+    ("SIREN", re.compile(r"(?i)\b(?:siren|rcs[^\n\d]{0,30}|immatriculée? sous le (?:numéro|n°))\s*:?\s*(\d{3}[ ]?\d{3}[ ]?\d{3})\b"), None),  # désigné : pris même si sa clé est fausse
     ("TELEPHONE", re.compile(r"(?<![\d+])(?:(?:\+|00)33[ ]?\(?0?\)?[ ]?|0)[1-9](?:[ .-]?\d{2}){4}(?!\d)|(?<![\d+])\+(?!33)\d{1,3}(?:[ .-]?\d{2,4}){3,5}(?!\d)"), None),
+    ("IMMATRICULATION", re.compile(r"(?i)\b(?:immatricul\w*|plaque)\b(?:[^\n\d]{0,40}?)\b((?-i:[A-Z]{1,3}[- ]?\d{1,4}[- ]?[A-Z]{1,4}))\b"), None),
+    ("CADASTRE", re.compile(r"(?i)\bsection[ \t]+((?-i:[A-Z]{1,2})[ \t]*,?[ \t]*(?:n°|numéro|parcelle)?[ \t]*\d{1,5})\b"), None),
     ("IP", re.compile(r"\b(?:(?:25[0-5]|2[0-4]\d|1?\d?\d)\.){3}(?:25[0-5]|2[0-4]\d|1?\d?\d)\b"), None),
     ("IMMATRICULATION", re.compile(r"\b[A-HJ-NP-TV-Z]{2}[- ]\d{3}[- ][A-HJ-NP-TV-Z]{2}\b"), None),
     ("NUMERO_AFFAIRE", re.compile(r"(?i)\bPortalis\s+[A-Z0-9]{4}-[A-Z]-[A-Z0-9]{3}-[A-Z0-9-]{3,10}\b|\bRG\s*(?:n°|no|:)?\s*([A-Z]?[ ]?\d{2}/\d{3,6})\b"), None),
     ("IDENTIFIANT", re.compile(r"(?i)\b(?:passeport|carte (?:nationale )?d['’]identité|CNI|titre de séjour|carte de (?:séjour|résident)|"
                                r"récépissé|AGDREF|(?:numéro|n°) (?:d['’])?étranger|(?:numéro|n°) (?:d['’])?allocataire|allocataire|"
                                r"(?:numéro|n°) fiscal|identifiant fiscal|SPI|matricule|(?:numéro|n°) de (?:dossier|client|contrat|police|compte|adhérent)|"
-                               r"référence (?:client|dossier)|permis de conduire)(?:[^\d\n]{0,60}?)(?:n°|no|numéro|nº)?\s*:?\s*([A-Z0-9][A-Z0-9 ./-]{4,24}[A-Z0-9])"), None),
+                               r"référence (?:client|dossier)|dossier(?: de surendettement| ordinal| d['’]instruction)?(?=[ 	]+(?:n°|nº|numéro))|permis de conduire)(?:[^\d\n]{0,60}?)(?:n°|no|numéro|nº)?\s*:?\s*([A-Z0-9][A-Z0-9 ./-]{4,24}[A-Z0-9])"), None),
 ]
 
 
-CONTEXTE_NIR = re.compile(r"(?i)(?:NIR|sécurité sociale|n°\s*SS|numéro\s+SS|INSEE|immatriculation)\W{0,12}$")
+CONTEXTE_NIR = re.compile(r"(?i)(?:NIR|sécurité sociale|n°\s*SS|numéro\s+SS|INSEE|immatriculation|"
+                          r"immatriculée?\s+(?:sous\s+le\s+)?(?:numéro|n°))\W{0,12}$")
 CONTEXTE_COMPTE = re.compile(r"(?i)(?:IBAN|RIB|compte|virement|prélèvement|coordonnées bancaires)[^\n]{0,30}$")
 
 
@@ -305,6 +324,10 @@ def personnes(texte: str) -> list[Trouvaille]:
         # « l'enfant Abdelhakim », « sa fille Mai ») ; seuls les mots grammaticaux s'excluent.
         if all(plier(w) not in MOTS_GRAMMATICAUX for w in m.group(1).split()):
             out.append(Trouvaille(m.start(1), m.end(1), "PERSONNE", m.group(1), "lien"))
+    # Un prénom suivi de l'âge désigne une personne, souvent un enfant (« Enfants concernés : Linh, 10 ans »).
+    for m in re.finditer(rf"\b([{MAJ}][{MIN}]+(?:-[{MAJ}][{MIN}]+)?)[ \t]*,[ \t]*(?:âgée?[ \t]+de[ \t]+)?\d{{1,2}}[ \t]+ans\b", texte):
+        if _nom_valide(m.group(1)) and plier(m.group(1)) not in MOTS_GRAMMATICAUX:
+            out.append(Trouvaille(m.start(1), m.end(1), "PERSONNE", m.group(1), "age"))
     # Locuteur d'une transcription : « [03/03 21:20] Marjolaine : », « 21:14 - Kévin : ».
     for m in re.finditer(rf"(?m)^[ \t]*(?:\[[^\]\n]{{3,30}}\]|\d{{1,2}}[:h]\d{{2}}(?:[ \t]*[-–])?)[ \t]*((?:[{MAJ}][{MIN}]+(?:[- ][{MAJ}][{MIN}]+)?|[{MAJ}]{{2,}}))[ \t]*:", texte):
         if plier(m.group(1)) not in MOTS_GRAMMATICAUX and _nom_valide(m.group(1)):
@@ -338,7 +361,36 @@ def organisations(texte: str) -> list[Trouvaille]:
         val = " ".join(mots)
         if val and (_nom_valide(mots[0]) or len(mots) > 1):
             out.append(Trouvaille(m.start(1), m.start(1) + len(val), "ORGANISATION", val, "forme_sociale"))
+    for m in re.finditer(rf"\b([{MAJ}][\w{MAJ}{MIN}'’-]+(?:[ \t]+(?:et|&|de|du|des|[{MAJ}][\w{MAJ}{MIN}'’-]+)){{0,4}})[ \t]+"
+                         rf"(?:SA|SAS|SASU|SARL|EURL|SNC|SCI|SCP|SELARL|SELAS|GIE)\b", texte):
+        mots = m.group(1).split()
+        if any(_nom_valide(w) for w in mots) and plier(mots[0]) not in NON_NOMS_PLIES:
+            out.append(Trouvaille(m.start(), m.end(), "ORGANISATION", m.group(0), "forme_sociale"))
+    for m in re.finditer(rf"\b[{MAJ}][\w{MAJ}{MIN}'’-]+(?:[ \t]+[{MAJ}][\w{MAJ}{MIN}'’-]+){{0,3}}[ \t]+(?:et|&)[ \t]+(?:Fils|Frères|Associés|Cie)\b", texte):
+        out.append(Trouvaille(m.start(), m.end(), "ORGANISATION", m.group(0), "forme_sociale"))
+    # Un commerce sans forme sociale se nomme par son enseigne (« sous l'enseigne « Garage Ferreira » ») ou se présente en tête
+    # de courrier suivi de son activité (« Aux Délices de Léa, boulangerie-pâtisserie »).
+    for m in re.finditer(r"(?i:\b(?:enseigne|nom commercial)\b)[^«\"“\n]{0,12}[«\"“][ \t]*([^»\"”\n]{2,60}?)[ \t]*[»\"”]", texte):
+        out.append(Trouvaille(m.start(1), m.end(1), "ORGANISATION", m.group(1), "enseigne"))
+    for m in re.finditer(rf"(?m)^[ \t]*([{MAJ}][\w{MAJ}{MIN}'’ -]{{2,50}}?)[ \t]*,[ \t]*(?i:{COMMERCES})\b", texte):
+        if any(_nom_valide(w) for w in m.group(1).split()):
+            out.append(Trouvaille(m.start(1), m.end(1), "ORGANISATION", m.group(1), "commerce"))
+    for m in re.finditer(rf"\b(?i:{COMMERCES})[ \t]+(?:«[ \t]*)?([{MAJ}][\w{MAJ}{MIN}'’&-]+(?:[ \t]+(?:(?:de|du|des|la|le|d['’])[ \t]*)?[{MAJ}][\w{MAJ}{MIN}'’&-]+){{0,3}})", texte):
+        if _nom_valide(m.group(1).split()[0]):
+            out.append(Trouvaille(m.start(1), m.end(1), "ORGANISATION", m.group(1), "commerce"))
+    for m in re.finditer(rf"\b[{MAJ}][\w{MAJ}{MIN}'’-]+[ \t]+(?i:club)[ \t]+[{MAJ}][\w{MAJ}{MIN}'’-]+(?:[ \t]+[{MAJ}][\w{MAJ}{MIN}'’-]+){{0,2}}", texte):
+        out.append(Trouvaille(m.start(), m.end(), "ORGANISATION", m.group(0), "etablissement"))
+    # L'établissement que fréquente un enfant le situe : école, collège, crèche, club.
+    for m in re.finditer(rf"\b(?i:école|collège|lycée|crèche|halte-garderie|micro-crèche|centre de loisirs|accueil de loisirs|club)"
+                         rf"(?:[ \t]+(?i:maternelle|élémentaire|primaire|privée?|publique|municipale|sportif|nautique|de football|de rugby|de judo))?"
+                         rf"[ \t]+(?:(?:du|de la|des|de l['’]|de|d['’])[ \t]*)?[{MAJ}][\w{MAJ}{MIN}'’-]+"
+                         rf"(?:[ \t-]+(?:(?:de|du|des|la|le|les|d['’])[ \t-]*)?[{MAJ}][\w{MAJ}{MIN}'’-]+){{0,3}}", texte):
+        out.append(Trouvaille(m.start(), m.end(), "ORGANISATION", m.group(0), "etablissement"))
     return out
+
+
+COMMERCES = (r"(?:bar-tabac|boulangerie-pâtisserie|boulangerie|pâtisserie|garage|restaurant|café|bar|brasserie|salon|pharmacie|épicerie|boucherie|"
+             r"charcuterie|librairie|hôtel|auto-école|boutique|magasin|atelier|traiteur|fleuriste|pressing|tabac|supérette|commerce)")
 
 
 def adresses(texte: str) -> list[Trouvaille]:
@@ -349,22 +401,37 @@ def adresses(texte: str) -> list[Trouvaille]:
         for m in re.finditer(motif, texte):
             val = re.sub(rf"(?:[ \t]+(?:{PARTICULE}))+$", "", m.group(0).rstrip(" ,.;"))
             out.append(Trouvaille(m.start(), m.start() + len(val), "ADRESSE", val, "adresse"))
-    for m in re.finditer(rf"\b(?:F-)?\d{{5}}[ \t]+[{MAJ}][\w{MAJ}{MIN}'’-]+(?:[ \t-]+(?:sur|sous|en|lès|les|le|la|de|du)?[ \t-]*[{MAJ}][\w{MAJ}{MIN}'’-]+){{0,3}}(?:[ \t]+Cedex(?:[ \t]+\d{{1,2}})?)?", texte):
+    for m in re.finditer(rf"\b(?:F-)?\d{{5}}[ \t]+[{MAJ}][\w{MAJ}{MIN}'’-]+(?:[ \t-]+(?:sur|sous|en|lès|les|le|la|de|du)?[ \t-]*[{MAJ}][\w{MAJ}{MIN}'’-]+){{0,3}}(?:[ \t]+(?i:cedex)(?:[ \t]+\d{{1,2}})?)?", texte):
         out.append(Trouvaille(m.start(), m.end(), "ADRESSE", m.group(0), "code_postal"))
+    for m in re.finditer(r"(?i)\b(?:bât(?:iment)?\.?|esc(?:alier)?\.?|apt\.?|appartement|porte|étage)[ \t]+(?-i:[A-Z0-9]\w{0,4})\b", texte):
+        out.append(Trouvaille(m.start(), m.end(), "ADRESSE", m.group(0), "immeuble"))
     for m in re.finditer(r"(?i)\b(?:BP|boîte postale|CS)[ \t]*\d{2,6}\b", texte):
         out.append(Trouvaille(m.start(), m.end(), "ADRESSE", m.group(0), "boite_postale"))
+    # La commune de résidence ou d'installation, sans code postal : « demeurant à Riantec », « situé ZA de Kerfontaine, à Pluneret ».
+    commune = rf"[{MAJ}][{MIN}'’-]+(?:[ \t-]+(?:sur|sous|en|lès|les|le|la|de|du)?[ \t-]*[{MAJ}][{MIN}'’-]+){{0,3}}"
+    # Avec un verbe de résidence, la commune suit directement ; avec « situé », seulement après une adresse (voie, numéro, zone),
+    # car « le logement étant situé à Brest » fixe la compétence et doit rester.
+    for m in re.finditer(rf"(?i:\b(?:demeurant|domiciliée?s?|résidant|habitant|réside|vit)\b)[ \t]+(?i:à|au)[ \t]+((?-i:{commune}))|"
+                         rf"(?i:\b(?:installée?s?|situées?|situés?|sise?s?)\b)[ \t,]+(?=[^.\n;]{{0,90}}?(?:\d|(?i:{VOIES}|ZA|ZI|ZAC|lot)\b))"
+                         rf"[^.\n;]{{1,90}}?,[ \t]*(?i:à|au)[ \t]+((?-i:{commune}))", texte):
+        g = 1 if m.group(1) else 2
+        if _nom_valide(m.group(g)) and plier(m.group(g).split()[0]) not in NON_NOMS_PLIES:
+            out.append(Trouvaille(m.start(g), m.end(g), "ADRESSE", m.group(g), "commune"))
     # Immeubles et ensembles nommés, bâtiment, escalier, appartement : « Résidence Les Mimosas, Bât. C, apt 12 ».
-    for m in re.finditer(rf"\b(?:(?i:résidence|residence|immeuble|cité|domaine|lotissement|hameau|villa|tour|ZA|ZI|ZAC|ZAE|parc d['’]activités?|"
+    # « à la résidence de Vannes » est le siège d'un officier ministériel, pas un immeuble.
+    for m in re.finditer(rf"(?<!à la )\b(?:(?i:résidence|residence|immeuble|cité|domaine|lotissement|hameau|villa|tour|ZA|ZI|ZAC|ZAE|parc d['’]activités?|"
                          rf"zone d['’]activités?|zone industrielle|zone artisanale)[ \t]+(?:(?:les?|la|l['’]|du|des|de|d['’])[ \t]*)?"
-                         rf"[{MAJ}][\w{MAJ}{MIN}'’-]*(?:[ \t]+[{MAJ}][\w{MAJ}{MIN}'’-]*){{0,3}})(?:[ \t]*,?[ \t]*(?i:bât(?:iment)?\.?|esc(?:alier)?\.?|"
-                         rf"apt\.?|appartement|porte|étage)[ \t]*[\w]{{1,4}})*", texte):
+                         rf"[{MAJ}][\w{MAJ}{MIN}'’-]*(?:[ \t]+[{MAJ}][\w{MAJ}{MIN}'’-]*){{0,3}})(?:[ \t]*,?[ \t]*(?:(?i:bât(?:iment)?\.?|esc(?:alier)?\.?|"
+                         rf"apt\.?|appartement|porte|étage|lot|cellule|local)[ \t]*[\w]{{1,4}}|\d{{1,2}}(?:e|er|ème|è|re)[ \t]+(?i:étage)))*", texte):
         out.append(Trouvaille(m.start(), m.end(), "ADRESSE", m.group(0), "immeuble"))
     return out
 
 
 def naissances(texte: str) -> list[Trouvaille]:
     out = []
-    for m in re.finditer(rf"(?i)\b(?:né|née|né\(e\)|nés|nées)[ \t]+le[ \t]+({DATE})(?:[ \t]+à[ \t]+((?-i:{SUITE_NOM})))?|date de naissance\s*:?\s*({DATE})", texte):
+    # Le lieu garde sa précision entre parenthèses (« Quimperlé (Finistère) », « Hô Chi Minh-Ville (Viêt Nam) », « Sablé-sur-Sarthe (72) »).
+    for m in re.finditer(rf"(?i)\b(?:né|née|né\(e\)|nés|nées)[ \t]+le[ \t]+({DATE})(?:[ \t]+à[ \t]+((?-i:{SUITE_NOM})(?:[ \t]*\([^)\n]{{1,30}}\))?))?|"
+                         rf"date de naissance\s*:?\s*({DATE})", texte):
         for g, cat in ((1, "DATE_NAISSANCE"), (3, "DATE_NAISSANCE"), (2, "LIEU_NAISSANCE")):
             if m.group(g):
                 out.append(Trouvaille(m.start(g), m.end(g), cat, m.group(g), "naissance"))
@@ -456,6 +523,11 @@ def variantes(valeur: str, categorie: str) -> list[str]:
                            f"{prenoms[0][0]}. {nom}", f"{prenoms[0][0]}. {nom.upper()}"}
         elif not prenoms:
             formes |= {" ".join(w.capitalize() for w in mots)}
+        # Le prénom repris seul plus loin (« M. Iñaki Etxeberria Goikoetxea », puis « Iñaki m'a dit ») : premier mot qui n'est ni
+        # en capitales, ni une particule, ni un mot courant, d'un nom de deux mots au moins, lexique ou non.
+        tete = [w for w in mots[:-1] if not w.isupper() and len(w) >= 3 and not re.fullmatch(PARTICULE, w) and _nom_valide(w)]
+        if len(mots) >= 2 and tete:
+            formes.add(tete[0])
     if categorie in ("TELEPHONE", "IBAN", "NIR", "SIRET", "SIREN", "CARTE_BANCAIRE"):
         brut = re.sub(r"[\s.-]", "", v)
         formes |= {brut, " ".join(brut[i:i + 2] for i in range(0, len(brut), 2)), ".".join(brut[i:i + 2] for i in range(0, len(brut), 2))}
@@ -518,6 +590,11 @@ def _occurrences(forme: str, categorie: str, texte: str):
 def detecter(texte: str, table: Table | None = None, avec_modele: bool = True) -> list[Trouvaille]:
     trouvees = (identifiants(texte) + personnes(texte) + organisations(texte) + adresses(texte) + naissances(texte)
                 + (modele(texte) if avec_modele else []))
+    # Une décision publiée citée garde ses initiales et son numéro (« CA Rennes, 9 février 2023, M. K. c/ SCI P., RG n° 21/05532 ») ;
+    # les parties déclarées par l'avocat restent remplacées partout, citation comprise.
+    proteges = [(m.start(), m.end()) for m in CITATION.finditer(texte)]
+    if proteges:
+        trouvees = [t for t in trouvees if not any(t.debut < b and t.fin > a for a, b in proteges)]
     if table:
         for forme, jeton, cat in table.formes():
             for m in _occurrences(forme, cat, texte):
@@ -535,12 +612,23 @@ def _fusionner(trouvees: list[Trouvaille]) -> list[Trouvaille]:
     return sorted(choisies, key=lambda t: t.debut)
 
 
+def _joindre_adresses(texte: str, finales: list[Trouvaille]) -> list[Trouvaille]:
+    out: list[Trouvaille] = []
+    for t in finales:
+        p = out[-1] if out else None
+        if p and p.categorie == t.categorie == "ADRESSE" and re.fullmatch(r"[ \t]*,?[ \t]*", texte[p.fin:t.debut]):
+            out[-1] = Trouvaille(p.debut, t.fin, "ADRESSE", texte[p.debut:t.fin], p.couche)
+        else:
+            out.append(t)
+    return out
+
+
 def pseudonymiser(texte: str, table: Table, source: str = "", avec_modele: bool = True) -> tuple[str, list[Trouvaille]]:
     """Deux passes : la première trouve et enregistre, la seconde remplace chaque forme connue partout (propagation)."""
     for t in _fusionner(detecter(texte, table, avec_modele)):
         if t.couche != "dictionnaire":
             table.jeton(t.texte, t.categorie, source=source or t.couche)
-    finales = _fusionner(detecter(texte, table, avec_modele=False))
+    finales = _joindre_adresses(texte, _fusionner(detecter(texte, table, avec_modele=False)))
     morceaux, pos = [], 0
     for t in finales:
         morceaux += [texte[pos:t.debut], table.jeton(t.texte, t.categorie, source=source)]
